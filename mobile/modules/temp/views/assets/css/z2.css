@@ -1,0 +1,298 @@
+.decorate-conical-abode img {
+  display: block; }
+
+.decorate-conical-abode p {
+  margin: 0; }
+
+.decorate-conical-abode .head-img {
+  position: relative; }
+  .decorate-conical-abode .head-img:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 13%;
+    content: '';
+    height: 9.33333vw;
+    width: 11.6vw;
+    background: url("/images/18-6-29/decorate/logo.png") no-repeat center/cover; }
+  .decorate-conical-abode .head-img img {
+    height: 72.26667vw;
+    width: 100vw; }
+
+.decorate-conical-abode .nav-style {
+  height: 10.13333vw;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+  overflow: hidden;
+  padding: 0 4vw;
+  background: linear-gradient(to right, #CB2F31, #CC2F32);
+  font-size: 2.93333vw; }
+  .decorate-conical-abode .nav-style a {
+    display: block;
+    height: 6.93333vw;
+    width: 17.33333vw;
+    background-color: #5A070A;
+    color: #fff;
+    text-align: center;
+    line-height: 6.93333vw;
+    margin-right: 1.33333vw;
+    position: relative; }
+    .decorate-conical-abode .nav-style a:after {
+      display: block;
+      content: '';
+      height: 1.06667vw;
+      width: 1.33333vw;
+      background-color: #A21318;
+      position: absolute;
+      right: -1.33333vw;
+      top: 2.8vw; }
+    .decorate-conical-abode .nav-style a:last-child {
+      margin-right: 0; }
+      .decorate-conical-abode .nav-style a:last-child:after {
+        display: none; }
+  .decorate-conical-abode .nav-style .choice {
+    background-color: #fff;
+    color: #5A070A; }
+
+.decorate-conical-abode .fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99; }
+
+.decorate-conical-abode .title {
+  height: 6.66667vw;
+  background: url("/images/18-6-29/decorate/title1.png") no-repeat center;
+  background-size: 22.66667vw auto;
+  background-color: #fff; }
+  .decorate-conical-abode .title:nth-child(4) {
+    background: url("/images/18-6-29/decorate/title4.png") no-repeat center; }
+
+.decorate-conical-abode .decorate-body-container {
+  background-color: #751a1b; }
+
+.decorate-conical-abode .better-seckill {
+  overflow: hidden; }
+  .decorate-conical-abode .better-seckill .time {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-align-items: center;
+            align-items: center;
+    margin: 0 auto;
+    margin-top: 3.46667vw;
+    margin-bottom: 1.86667vw;
+    width: 44.8vw; }
+    .decorate-conical-abode .better-seckill .time span {
+      display: block;
+      height: 5.06667vw;
+      width: 5.06667vw;
+      border-radius: 5.06667vw;
+      color: rgba(206, 49, 51, 0.5);
+      font-size: 3.2vw;
+      font-weight: bold;
+      background-color: #fff;
+      margin-right: 2.26667vw;
+      text-align: center; }
+      .decorate-conical-abode .better-seckill .time span:last-child {
+        margin-right: 0; }
+    .decorate-conical-abode .better-seckill .time .time-on {
+      color: #ce3133; }
+  .decorate-conical-abode .better-seckill .product-box {
+    margin: 0 4vw;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+            justify-content: flex-start;
+    -webkit-align-self: flex-end;
+            align-self: flex-end; }
+    .decorate-conical-abode .better-seckill .product-box .item {
+      display: block;
+      position: relative;
+      margin-right: 2.4vw;
+      margin-bottom: 2.4vw; }
+      .decorate-conical-abode .better-seckill .product-box .item:nth-child(2n) {
+        margin-right: 0; }
+      .decorate-conical-abode .better-seckill .product-box .item:before {
+        display: block;
+        content: '';
+        height: 6.13333vw;
+        width: 16.53333vw;
+        background: url("/images/18-6-29/decorate/chaozhi_lable.png") no-repeat center/cover;
+        position: absolute;
+        top: 0;
+        left: 2.66667vw; }
+      .decorate-conical-abode .better-seckill .product-box .item .img-box {
+        height: 43.2vw;
+        width: 44.8vw;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+                align-items: center;
+        overflow: hidden;
+        background: url("/images/18-6-29/decorate/chanp_bg.jpg") no-repeat center/cover; }
+        .decorate-conical-abode .better-seckill .product-box .item .img-box .item-img {
+          height: 33.66667vw;
+          width: 35.66667vw;
+          margin: 0 auto;
+        }
+      .decorate-conical-abode .better-seckill .product-box .item .item-detail {
+        height: 16vw;
+        background-color: #c33133;
+        color: #fff;
+        width: 44.8vw;
+        overflow: hidden; }
+        .decorate-conical-abode .better-seckill .product-box .item .item-detail p {
+          font-size: 2.66667vw;
+          margin: 0 1.86667vw; }
+        .decorate-conical-abode .better-seckill .product-box .item .item-detail .item-name {
+          margin-top: 0.66667vw;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 2; }
+        .decorate-conical-abode .better-seckill .product-box .item .item-detail .item-footer {
+          margin: 0 1.86667vw;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-justify-content: space-between;
+                  justify-content: space-between;
+          -webkit-align-items: center;
+                  align-items: center; }
+          .decorate-conical-abode .better-seckill .product-box .item .item-detail .item-footer p {
+            margin: 0; }
+          .decorate-conical-abode .better-seckill .product-box .item .item-detail .item-footer .item-price span {
+            font-size: 3.46667vw; }
+
+.decorate-conical-abode .product-style {
+  margin-top: 2vw;
+  overflow: hidden; }
+  .decorate-conical-abode .product-style .product-box {
+    margin: 2.66667vw; }
+    .decorate-conical-abode .product-style .product-box .item {
+      display: -webkit-flex;
+      display: flex;
+      height: 27.2vw;
+      -webkit-justify-content: flex-start;
+              justify-content: flex-start;
+      margin-bottom: 2.66667vw;
+      -webkit-align-items: center;
+              align-items: center;
+      background-color: #A1282A; }
+      .decorate-conical-abode .product-style .product-box .item img {
+        height: 27.2vw;
+        width: 27.2vw; }
+      .decorate-conical-abode .product-style .product-box .item .item-detail {
+        height: 27.2vw;
+        padding-left: 4.4vw;
+        -webkit-flex: 1;
+                flex: 1;
+        position: relative;
+        overflow: hidden; }
+        .decorate-conical-abode .product-style .product-box .item .item-detail p {
+          color: #fff; }
+          .decorate-conical-abode .product-style .product-box .item .item-detail p:first-child {
+            margin-top: 2.66667vw;
+            font-size: 2.66667vw; }
+          .decorate-conical-abode .product-style .product-box .item .item-detail p:nth-child(2) {
+            font-size: 2.66667vw; }
+        .decorate-conical-abode .product-style .product-box .item .item-detail .discounts span {
+          font-size: 2.13333vw;
+          display: block; }
+        .decorate-conical-abode .product-style .product-box .item .item-detail .item-price {
+          position: absolute;
+          bottom: 0vw;
+          left: 4.4vw; }
+          .decorate-conical-abode .product-style .product-box .item .item-detail .item-price span {
+            font-size: 4vw; }
+        .decorate-conical-abode .product-style .product-box .item .item-detail .buy-now {
+          display: block;
+          height: 3.73333vw;
+          width: 13.33333vw;
+          background-color: #fff;
+          color: #a2282a;
+          text-align: center;
+          line-height: 3.73333vw;
+          border-radius: 0.8vw;
+          font-size: 2.4vw;
+          position: absolute;
+          right: 5.33333vw;
+          bottom: 1.33333vw; }
+
+.decorate-conical-abode .better-product .title {
+  background: url("/images/18-6-29/decorate/title2.png") no-repeat center;
+  background-size: 22.66667vw auto;
+  background-color: #fff; }
+
+.decorate-conical-abode .cushion .title {
+  background: url("/images/18-6-29/decorate/title3.png") no-repeat center;
+  background-size: 22.66667vw auto;
+  background-color: #fff; }
+
+.decorate-conical-abode .cushion .product-box .itme-special {
+  margin-top: 6.66667vw;
+  position: relative; }
+  .decorate-conical-abode .cushion .product-box .itme-special .itme-header {
+    position: absolute;
+    top: -4vw;
+    left: 0;
+    font-size: 2.66667vw;
+    background-color: #fde892;
+    width: 100%; }
+
+.decorate-conical-abode .decorate-product {
+  margin-top: 2vw;
+  overflow: hidden; }
+  .decorate-conical-abode .decorate-product .title {
+    background: url("/images/18-6-29/decorate/title4.png") no-repeat center;
+    background-size: 22.66667vw auto;
+    background-color: #fff; }
+  .decorate-conical-abode .decorate-product .product-box {
+    margin: 2.66667vw; }
+    .decorate-conical-abode .decorate-product .product-box .item {
+      display: -webkit-flex;
+      display: flex;
+      height: 32.4vw;
+      -webkit-justify-content: flex-start;
+              justify-content: flex-start;
+      margin-bottom: 2.66667vw;
+      -webkit-align-items: center;
+              align-items: center;
+      background-color: #A1282A; }
+      .decorate-conical-abode .decorate-product .product-box .item .item-detail {
+        -webkit-flex: 1;
+                flex: 1;
+        padding: 0;
+        text-align: left;
+        padding: 0 2.66667vw;
+        -webkit-align-self: center;
+                align-self: center; }
+        .decorate-conical-abode .decorate-product .product-box .item .item-detail .item-title {
+          font-size: 2.66667vw; }
+        .decorate-conical-abode .decorate-product .product-box .item .item-detail .item-describe {
+          font-size: 2.4vw;
+          color: #fff8b1; }
+      .decorate-conical-abode .decorate-product .product-box .item img:first-child {
+        height: 27.46667vw;
+        width: 23.73333vw;
+        position: relative;
+        top: -4vw;
+        left: 0;
+        margin-left: 4.53333vw; }
+      .decorate-conical-abode .decorate-product .product-box .item img:last-child {
+        height: 32.4vw;
+        width: 32.4vw; }
+
+.decorate-conical-abode .to-top {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 2.66667vw;
+  color: #fff;
+  padding: 4vw 0 2.93333vw; }

@@ -1,0 +1,148 @@
+@@include('head.inc') @@include('banner.inc') @@include('search.inc') @@include('main_nav.inc')
+<div class="container">
+    <div class="row">
+        <ol class="breadcrumb">
+            <li><a href="#">商城首页</a></li>
+            <li class="active">用户中心</li>
+        </ol>
+        @@include('account_aside.inc')
+        <div class="apx-acc-main">
+            <!-- adress edit start -->
+            <div class="apx-edit-address-wrap">
+                <h4 class="text-danger apx-edit-address-title">收货地址</h4>
+                <h5 class="apx-edit-address-subtitle">已保存的收货地址</h5>
+                <div class="apx-edit-address-box clearfix">
+                    <div class="col-xs-4">
+                        <div class="apx-cart-address default active">
+                            <h5>上海 虹口区<span>（淫笑惠收）</span></h5>
+                            <p>地址：上海虹口区城区欧阳路196号发蓝桥创意园26号楼2层</p>
+                            <p>电话：17300000000</p>
+                            <a href="#" class="btn btn-link btn-xs">修改</a>
+                            <a href="javascript:void(0)" class="btn btn-link btn-xs J_address_delete_btn">删除</a>
+                            <a href="#" class="btn btn-danger btn-xs pull-right">设置为默认</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="apx-cart-address">
+                            <h5>上海 虹口区<span>（淫笑惠收）</span></h5>
+                            <p>地址：上海虹口区城区欧阳路196号发蓝桥创意园26号楼2层</p>
+                            <p>电话：17300000000</p>
+                            <a href="#" class="btn btn-link btn-xs">修改</a>
+                            <a href="javascript:void(0)" class="btn btn-link btn-xs J_address_delete_btn">删除</a>
+                            <a href="#" class="btn btn-danger btn-xs pull-right">设置为默认</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="apx-cart-address">
+                            <h5>上海 虹口区<span>（淫笑惠收）</span></h5>
+                            <p>地址：上海虹口区城区欧阳路196号发蓝桥创意园26号楼2层</p>
+                            <p>电话：17300000000</p>
+                            <a href="#" class="btn btn-link btn-xs">修改</a>
+                            <a href="javascript:void(0)" class="btn btn-link btn-xs J_address_delete_btn">删除</a>
+                            <a href="#" class="btn btn-danger btn-xs pull-right">设置为默认</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="apx-cart-address">
+                            <h5>上海 虹口区<span>（淫笑惠收）</span></h5>
+                            <p>地址：上海虹口区城区欧阳路196号发蓝桥创意园26号楼2层</p>
+                            <p>电话：17300000000</p>
+                            <a href="#" class="btn btn-link btn-xs">修改</a>
+                            <a href="javascript:void(0)" class="btn btn-link btn-xs J_address_delete_btn">删除</a>
+                            <a href="#" class="btn btn-danger btn-xs pull-right">设置为默认</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="apx-cart-address">
+                            <h5>上海 虹口区<span>（淫笑惠收）</span></h5>
+                            <p>地址：上海虹口区城区欧阳路196号发蓝桥创意园26号楼2层</p>
+                            <p>电话：17300000000</p>
+                            <a href="#" class="btn btn-link btn-xs">修改</a>
+                            <a href="javascript:void(0)" class="btn btn-link btn-xs J_address_delete_btn">删除</a>
+                            <a href="#" class="btn btn-danger btn-xs pull-right">设置为默认</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <a class="pull-right" href="#">收起地址 <i class="glyphicon glyphicon-chevron-up"></i></a>
+                    </div>
+                </div>
+                <h5 class="apx-edit-address-subtitle">新增收货地址</h5>
+                <form class="apx-edit-address-form form-horizontal">
+                    <div class="collapse" id="collapseAddress">
+                        <div class="form-group">
+                            <label class="col-xs-3 control-label">收货人：</label>
+                            <div class="col-xs-2">
+                                <input type="text" class="form-control" id="name" placeholder="收货人姓名">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-3 control-label">所在地区：</label>
+                            <div class="col-xs-2 dropdown">
+                                <button class="btn btn-block btn-default dropdown-toggle" type="button" id="address_area" data-toggle="dropdown">
+                                    <span>省／直辖市</span>
+                                    <i class="glyphicon glyphicon-chevron-down"></i>
+                                </button>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="address_area">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">北京</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">上海</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-2 dropdown">
+                                <button class="btn btn-block btn-default dropdown-toggle" type="button" id="address_city" data-toggle="dropdown">
+                                    <span>市</span>
+                                    <i class="glyphicon glyphicon-chevron-down"></i>
+                                </button>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="address_city">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">北京</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">上海</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-2 dropdown">
+                                <button class="btn btn-block btn-default dropdown-toggle" type="button" id="address_district" data-toggle="dropdown">
+                                    <span>区</span>
+                                    <i class="glyphicon glyphicon-chevron-down"></i>
+                                </button>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="address_district">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">宝山区</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">虹口区</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-3 control-label">详细地址：</label>
+                            <div class="col-xs-7">
+                                <input type="text" class="form-control" id="name" placeholder="街道门牌楼层房间号">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-3 control-label">手机号码：</label>
+                            <div class="col-xs-3">
+                                <input type="text" class="form-control" id="name" placeholder="手机号">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-3 control-label">邮政编码：</label>
+                            <div class="col-xs-3">
+                                <input type="text" class="form-control" id="name" placeholder="请填写6位邮政编码">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-3 control-label">备注：</label>
+                            <div class="col-xs-7">
+                                <textarea type="text" class="form-control" id="name" placeholder="年"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group text-center">
+                            <div class="btn btn-lg btn-danger">保存收货地址</div>
+                        </div>
+                    </div>
+                    <div class="form-group text-center">
+                        <a href="#collapseAddress" data-toggle="collapse" class="btn btn-lg btn-success J_address_add">新增收货地址</a>
+                    </div>
+                </form>
+            </div>
+            <!-- adress edit end -->
+        </div>
+    </div>
+</div>
+@@include('ensurance.inc') @@include('sitemap.inc') @@include('footer.inc')

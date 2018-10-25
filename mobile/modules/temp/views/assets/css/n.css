@@ -1,0 +1,286 @@
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+body {
+  font: 12px/1.5 'sans-serif';
+  color: #333;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-overflow-scrolling: touch; }
+
+a {
+  text-decoration: none;
+  color: #333;
+  display: block; }
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+main.container,
+nav.bottom-nav {
+  max-width: 640px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 9999; }
+
+main.container {
+  top: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  background: #f2f2f2;
+  -webkit-overflow-scrolling: touch; }
+
+nav.top-nav {
+  background: #fff;
+  position: relative;
+  height: 44px;
+  font-size: 16px; }
+  nav.top-nav > a {
+    position: absolute;
+    top: 0;
+    min-width: 60px;
+    height: 44px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: center;
+            justify-content: center; }
+    nav.top-nav > a:first-child {
+      left: 0; }
+      nav.top-nav > a:first-child img {
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg); }
+  nav.top-nav .title {
+    line-height: 44px;
+    text-align: center;
+    font-weight: 600; }
+    nav.top-nav .title + a {
+      right: 0; }
+  nav.top-nav ~ main.container {
+    top: 44px; }
+
+nav.bottom-nav {
+  background: #fff;
+  box-shadow: 0 1px 4px #ccc;
+  height: 49px;
+  display: -webkit-flex;
+  display: flex; }
+  nav.bottom-nav + main.container {
+    bottom: 50px; }
+  nav.bottom-nav a {
+    -webkit-flex: 1 1 25%;
+            flex: 1 1 25%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    font-size: 0; }
+    nav.bottom-nav a:active {
+      background: #ccc; }
+    nav.bottom-nav a i {
+      display: block;
+      width: 27px;
+      min-height: 27px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat; }
+    nav.bottom-nav a.active span {
+      color: #ff9100;
+      background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#ff9100), to(#e53935));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    nav.bottom-nav a span {
+      font-size: 13px;
+      color: #b0b0b0; }
+    nav.bottom-nav a.home i {
+      background-image: url("/images/nav1_n.png"); }
+    nav.bottom-nav a.home.active i {
+      background-image: url("/images/nav1_on_n.png"); }
+    nav.bottom-nav a.brand i {
+      background-image: url("/images/nav2_n.png"); }
+    nav.bottom-nav a.brand.active i {
+      background-image: url("/images/nav2_on_n.png"); }
+    nav.bottom-nav a.cart i {
+      background-image: url("/images/nav3_n.png"); }
+    nav.bottom-nav a.cart.active i {
+      background-image: url("/images/nav3_on_.png"); }
+    nav.bottom-nav a.account i {
+      background-image: url("/images/nav4_n.png"); }
+    nav.bottom-nav a.account.active i {
+      background-image: url("/images/nav4_on_n.png"); }
+
+.bottom-nav.J_footer_menu {
+  border-top: 1px solid #f2f2f2; }
+
+.btn-block-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 44px;
+  background: #fff;
+  font-size: 16px;
+  text-align: center;
+  background-image: -webkit-gradient(linear, 100% 100%, 0 0, from(#e53935), to(#ff9101));
+  color: #fff; }
+  .btn-block-bottom:active {
+    background: linear-gradient(to bottom, #fff, #eee); }
+
+.hidden {
+  display: none !important; }
+
+.mask-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s;
+  overflow: hidden; }
+  .mask-container.in {
+    opacity: 1;
+    pointer-events: auto; }
+  .mask-container .mask-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); }
+
+.wechat-product-wenfeng img {
+  max-width: 100%;
+  vertical-align: top; }
+
+.wechat-product-wenfeng .content {
+  background: url("/images/wenfeng_brand/bg.jpg") no-repeat center top;
+  overflow: hidden; }
+  .wechat-product-wenfeng .content p {
+    margin: 0; }
+  .wechat-product-wenfeng .content .title {
+    width: 100%;
+    text-align: center;
+    background: url("/images/wenfeng_brand/title_bg.jpg") no-repeat center;
+    background-size: 100%;
+    margin-top: 5%; }
+    .wechat-product-wenfeng .content .title .cn {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      padding-top: 2%; }
+    .wechat-product-wenfeng .content .title .en {
+      font-size: 12px;
+      padding-bottom: 2%;
+      color: #666;
+      line-height: 12px; }
+  .wechat-product-wenfeng .content .pro {
+    margin-top: 6%;
+    margin: 6% 2%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .wechat-product-wenfeng .content .pro .item {
+      -webkit-flex: 1 0 48%;
+              flex: 1 0 48%;
+      margin: 4% 1%;
+      color: #fff;
+      text-align: center; }
+      .wechat-product-wenfeng .content .pro .item .h1 {
+        font-size: 16px; }
+      .wechat-product-wenfeng .content .pro .item .h2 {
+        margin-bottom: 3%; }
+      .wechat-product-wenfeng .content .pro .item .price {
+        background: #cf9d54;
+        text-align: left; }
+        .wechat-product-wenfeng .content .pro .item .price:before, .wechat-product-wenfeng .content .pro .item .price:after {
+          content: " ";
+          display: table; }
+        .wechat-product-wenfeng .content .pro .item .price:after {
+          clear: both; }
+        .wechat-product-wenfeng .content .pro .item .price span {
+          float: left;
+          font-size: 20px;
+          font-weight: 700;
+          padding: 2% 3%; }
+        .wechat-product-wenfeng .content .pro .item .price a {
+          float: right;
+          display: inline-block;
+          padding: 2% 3%;
+          margin: 4% 0;
+          margin-right: 4%;
+          background-image: linear-gradient(0deg, white 0%, #a67d42 100%); }
+  .wechat-product-wenfeng .content .item-2 {
+    border: 1px solid #666;
+    position: relative;
+    margin: 4% 2%; }
+    .wechat-product-wenfeng .content .item-2 > img {
+      max-width: 42%;
+      padding: 2%;
+      padding-left: 56%; }
+    .wechat-product-wenfeng .content .item-2 .text {
+      width: 50%;
+      position: absolute;
+      left: 4%;
+      top: 4%; }
+      .wechat-product-wenfeng .content .item-2 .text .h1 {
+        color: #fff;
+        font-size: 14px; }
+      .wechat-product-wenfeng .content .item-2 .text .h2 {
+        color: #dd6944;
+        font-size: 20px; }
+      .wechat-product-wenfeng .content .item-2 .text .pic {
+        width: 100%; }
+        .wechat-product-wenfeng .content .item-2 .text .pic:before, .wechat-product-wenfeng .content .item-2 .text .pic:after {
+          content: " ";
+          display: table; }
+        .wechat-product-wenfeng .content .item-2 .text .pic:after {
+          clear: both; }
+        .wechat-product-wenfeng .content .item-2 .text .pic .left {
+          width: 66%;
+          float: left; }
+          .wechat-product-wenfeng .content .item-2 .text .pic .left p {
+            color: #fff;
+            font-weight: 700;
+            font-size: 14px;
+            padding-left: 24%;
+            background: url("/images/wenfeng_brand/shape.png") no-repeat left center; }
+        .wechat-product-wenfeng .content .item-2 .text .pic .right {
+          float: left;
+          max-width: 30%; }
+          .wechat-product-wenfeng .content .item-2 .text .pic .right img {
+            max-width: 100%; }
+    .wechat-product-wenfeng .content .item-2 .btn {
+      position: absolute;
+      width: 100%;
+      bottom: 4%;
+      left: 2%; }
+      .wechat-product-wenfeng .content .item-2 .btn img {
+        width: 40%; }
+    .wechat-product-wenfeng .content .item-2.even img {
+      padding-left: 2%; }
+    .wechat-product-wenfeng .content .item-2.even .text {
+      left: 48%; }
+    .wechat-product-wenfeng .content .item-2.even .btn {
+      left: 52%; }
+
+@media screen and (max-width: 374px) {
+  .wechat-product-wenfeng .content .item-2 .text .h2 {
+    font-size: 14px; } }

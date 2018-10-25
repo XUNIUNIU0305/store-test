@@ -1,0 +1,203 @@
+@@include('head.inc')
+<!-- header start -->
+<header class="business-frame-header">
+    <nav class="navbar navbar-default">
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <i class="glyphicon glyphicon-time"></i>2005-11-11 19:38:07
+            </li>
+            <li>
+                <a href="javascript:void(0)"><i class="glyphicon glyphicon-wrench"></i>设置</a>
+            </li>
+            <li>
+                <i class="glyphicon glyphicon-map-marker"></i>上海松江
+            </li>
+            <li>
+                <i class="glyphicon glyphicon-user"></i>476644346@qq.com
+            </li>
+            <li>
+                <a href="javascript:void(0)"><i class="glyphicon glyphicon-off"></i>退出</a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="sub-nav">
+        <div class="pull-left">
+            ◀
+        </div>
+        <ul class="list-inline">
+            <li>品牌馆 <span>&times;</span></li>
+            <li class="active">品牌馆 <span>&times;</span></li>
+            <li>品牌馆 <span>&times;</span></li>
+        </ul>
+        <div class="pull-right">
+            ▶
+        </div>
+    </nav>
+</header>
+<!-- header end -->
+<!-- aside nav start -->
+<aside class="business-frame-aside">
+    <div class="aside-logo">
+        <img alt="logo" src="/images/logo_white.png" height="24">
+    </div>
+    <div class="aside-list">
+        <a data-toggle="collapse" href="#aside_panel_1" class="collapsed">
+            <i class="glyphicon glyphicon-home"></i> 主菜单#1 <i class="glyphicon glyphicon-chevron-down"></i>
+        </a>
+        <div class="collapse" id="aside_panel_1">
+            <ul class="list-unstyled clearfix">
+                <li class="active">
+                    <a href="#">子菜单#1</a>
+                </li>
+                <li>
+                    <a href="#">子菜单#2</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="aside-list">
+        <a data-toggle="collapse" href="#aside_panel_2" class="">
+            <i class="glyphicon glyphicon-tags"></i> 主菜单#2 <i class="glyphicon glyphicon-chevron-down"></i>
+        </a>
+        <div class="collapse in" id="aside_panel_2">
+            <ul class="list-unstyled clearfix">
+                <li class="active">
+                    <a href="#">子菜单#1</a>
+                </li>
+                <li>
+                    <a href="#">子菜单#2</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="aside-list">
+        <a data-toggle="collapse" href="#aside_panel_3" class="collapsed">
+            <i class="glyphicon glyphicon-star-empty"></i> 主菜单#3 <i class="glyphicon glyphicon-chevron-down"></i>
+        </a>
+        <div class="collapse" id="aside_panel_3">
+            <ul class="list-unstyled clearfix">
+                <li class="active">
+                    <a href="#">子菜单#1</a>
+                </li>
+                <li>
+                    <a href="#">子菜单#2</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</aside>
+<!-- aside nav end -->
+<!-- main area start -->
+<div class="business-frame-main">
+    <div class="business-main-wrap">
+        <div class="business-bank-bill">
+            <p class="title">我的账单<a href="" class="btn pull-right btn-back">返回上一级</a></p>
+            <div class="search-box clearfix">
+                <div class="pull-left time-box">
+                    <div class="date-selecter clearfix form-inline">
+                        <span>时间：</span>
+                        <div class="input-group">
+                            <input type="text" class="form-control date-picker" value="2017-03-01">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default date-icon" type="button"><i class="glyphicon glyphicon-calendar"></i></button>
+                            </span>
+                        </div>
+                        <span class="">到</span>
+                        <div class="input-group">
+                            <input type="text" class="form-control date-picker" value="2017-03-01">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default date-icon" type="button"><i class="glyphicon glyphicon-calendar"></i></button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pull-left stream">
+                    <div class="input-group">
+                        <label class="form-label">流水号：</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="pull-right">
+                    <span class="btn btn-business">查询</span>
+                </div>
+            </div>
+            <div class="tab-box">
+                <span class="tab-label">状态：</span>
+                <span class="btn btn-tab active">全部</span>
+                <span class="btn btn-tab">审核中</span>
+                <span class="btn btn-tab">银行处理中</span>
+                <span class="btn btn-tab">提现成功</span>
+            </div>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>创建时间</td>
+                            <td>分类</td>
+                            <td>银行卡</td>
+                            <td>卡号</td>
+                            <td>运营商名称</td>
+                            <td>流水号</td>
+                            <td>提现金额</td>
+                            <td>状态</td>
+                            <td>操作</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2021-08-26 15:51:45</td>
+                            <td>提现</td>
+                            <td>中国建设银行</td>
+                            <td>5165 5454 45454 454</td>
+                            <td>上海市某某某某某某某某某密码密码</td>
+                            <td>6516516516516515</td>
+                            <td>$11211.00</td>
+                            <td class="text-success">平台审核中.</td>
+                            <td><a href="">详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>2021-08-26 15:51:45</td>
+                            <td>提现</td>
+                            <td>中国建设银行</td>
+                            <td>5165 5454 45454 454</td>
+                            <td>上海市某某某某某某某某某密码密码</td>
+                            <td>6516516516516515</td>
+                            <td>$11211.00</td>
+                            <td>平台审核中.</td>
+                            <td><a href="">详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>2021-08-26 15:51:45</td>
+                            <td>提现</td>
+                            <td>中国建设银行</td>
+                            <td>5165 5454 45454 454</td>
+                            <td>上海市某某某某某某某某某密码密码</td>
+                            <td>6516516516516515</td>
+                            <td>$11211.00</td>
+                            <td>平台审核中.</td>
+                            <td><a href="">详情</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="footer text-right">
+                <!-- pagination -->
+                <ul class="pagination pagination-sm">
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><span>...</span></li>
+                    <li><a href="#">10</a></li>
+                </ul>
+                <div class="pagination-info">
+                    <span>共100页，到第<input type="text" maxlength="3">页</span>
+                    <a href="#" class="btn btn-danger btn-sm">确认</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('business_footer.inc')
+<script type="text/javascript">
+</script>

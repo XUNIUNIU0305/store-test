@@ -1,0 +1,78 @@
+.container-payment{
+    background-color: #ececec;
+    .payment-all{
+        .payment-prompt{
+            background-color: #FFFFFF;
+            text-align: center;
+            padding: 40px 10px;
+            margin-bottom: 8px;
+            div{
+                &:first-child{
+                    height: 26px;
+                    span{
+                        color: #4cd964;
+                        font-size: 17px;
+                        font-weight: bold;
+                        vertical-align: middle;
+                    }
+                    img{
+                        width: 20px;
+                        height: 20px;
+                        background-size: cover;
+                        vertical-align: middle;
+                    }
+                }
+                &:last-child{
+                    em{
+                        font-style: normal;
+                        font-size: 22px;
+                        font-weight: bold;
+                        color: #cf4d44;
+                    }
+                }
+            }
+
+        }
+        .payment-order{
+            background-color: #FFFFFF;
+            padding: 0px 15px;
+            font-size: 14px;
+            overflow: hidden;
+            font-weight: bold;
+            ul{
+                margin: 15px 0;
+                border-bottom: 1px dashed #999;
+                padding-bottom: 15px;
+                li{
+                    span{
+                        color: #999999;
+                    }
+                    em{
+                        font-style: normal;
+                        color: #333333;
+                        float: right;
+                    }
+                    .em-color{
+                        color: #cf4d44;
+                    }
+                }
+            }
+        }
+        .payment-but{
+            background-color: #FFFFFF;
+            padding-top: 20px;
+            a{
+                background-color: #cf4d44;
+                border: 0px;
+                width: calc(100% - 30px);
+                height: 44px;
+                text-align:center;
+                line-height:44px;
+                color: #FFFFFF;
+                margin: 20px 15px 0;
+                font-size: 16px;
+                border-radius: 3px;
+            }
+        }
+    }
+}

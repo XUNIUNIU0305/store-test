@@ -1,0 +1,495 @@
+@@include('head.inc')
+<!-- header start -->
+<header class="admin-frame-header">
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#top">
+                <img alt="logo" src="/images/logo_white.png" height="24">
+            </a>
+        </div>
+        <ul class="nav navbar-nav navbar-left">
+            <li>管理控制中心</li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                476644346@qq.com
+            </li>
+            <li>
+                <a href="javascript:void(0)">退出</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<!-- header end -->
+<!-- aside nav start -->
+<aside class="admin-frame-aside" id="aside-menu">
+    <ul class="nav nav-pills nav-stacked">
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_1">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_2">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_3">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+    </ul>
+    <ul id="aside_menu_1" class="list-unstyled child-list collapse">
+        <li class="active"><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+    </ul>
+    <ul id="aside_menu_2" class="list-unstyled child-list collapse">
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+    </ul>
+    <ul id="aside_menu_3" class="list-unstyled child-list collapse">
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+    </ul>
+</aside>
+<!-- aside nav end -->
+<!-- main area start -->
+<div class="admin-frame-main">
+    <div class="admin-main-wrap">
+        <div class="admin-coupon-container">
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a href="#coupon_inuse" data-toggle="tab">使用中</a>
+                </li>
+                <li>
+                    <a href="#coupon_expired" data-toggle="tab">已过期</a>
+                </li>
+            </ul>
+            <!--search bar-->
+            <div class="search-nav clearfix">
+                <form class="form-inline pull-left">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="输入名称／拼音首字母">
+                        <span class="input-group-btn">
+                            <button class="btn"><i class="glyphicon glyphicon-search"></i></button>
+                        </span>
+                    </div>
+                    <!-- /input-group -->
+                </form>
+                <button class="btn btn-danger btn-lg btn-round pull-right">
+                    <i class="glyphicon glyphicon-plus"></i> 生成优惠券
+                </button>
+            </div>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="coupon_inuse">
+                    <ul class="list-unstyled admin-coupon-list">
+                        <li class="clearfix">
+                            <div class="pull-left">优惠券</div>
+                            <div class="content clearfix">
+                                <div class="col-xs-4 text-danger">
+                                    <strong class="h2">1000</strong>元
+                                    <span>满5000元可用</span>
+                                </div>
+                                <div class="col-xs-3">
+                                    <ul class="list-unstyled">
+                                        <li>优惠券名称：代用名</li>
+                                        <li>使用对象：无限制</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-3">
+                                    <ul class="list-unstyled">
+                                        <li>有效期：2017.03.03-2017.05.05</li>
+                                        <li>发行数量：1255222</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-2 text-right">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="btn btn-danger">详情</a></li>
+                                        <li><a href="#" class="btn btn-default">删除</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="pull-left">优惠券</div>
+                            <div class="content clearfix">
+                                <div class="col-xs-4 text-danger">
+                                    <strong class="h2">1000</strong>元
+                                    <span>满5000元可用</span>
+                                </div>
+                                <div class="col-xs-3">
+                                    <ul class="list-unstyled">
+                                        <li>优惠券名称：代用名</li>
+                                        <li>使用对象：无限制</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-3">
+                                    <ul class="list-unstyled">
+                                        <li>有效期：2017.03.03-2017.05.05</li>
+                                        <li>发行数量：1255222</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-2 text-right">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="btn btn-danger">详情</a></li>
+                                        <li><a href="#" class="btn btn-default">删除</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="pull-left">优惠券</div>
+                            <div class="content clearfix">
+                                <div class="col-xs-4 text-danger">
+                                    <strong class="h2">1000</strong>元
+                                    <span>满5000元可用</span>
+                                </div>
+                                <div class="col-xs-3">
+                                    <ul class="list-unstyled">
+                                        <li>优惠券名称：代用名</li>
+                                        <li>使用对象：无限制</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-3">
+                                    <ul class="list-unstyled">
+                                        <li>有效期：2017.03.03-2017.05.05</li>
+                                        <li>发行数量：1255222</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-2 text-right">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="btn btn-danger">详情</a></li>
+                                        <li><a href="#" class="btn btn-default">删除</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="pull-left">优惠券</div>
+                            <div class="content clearfix">
+                                <div class="col-xs-4 text-danger">
+                                    <strong class="h2">1000</strong>元
+                                    <span>满5000元可用</span>
+                                </div>
+                                <div class="col-xs-3">
+                                    <ul class="list-unstyled">
+                                        <li>优惠券名称：代用名</li>
+                                        <li>使用对象：无限制</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-3">
+                                    <ul class="list-unstyled">
+                                        <li>有效期：2017.03.03-2017.05.05</li>
+                                        <li>发行数量：1255222</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-2 text-right">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="btn btn-danger">详情</a></li>
+                                        <li><a href="#" class="btn btn-default">删除</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="pull-left">优惠券</div>
+                            <div class="content clearfix">
+                                <div class="col-xs-4 text-danger">
+                                    <strong class="h2">1000</strong>元
+                                    <span>满5000元可用</span>
+                                </div>
+                                <div class="col-xs-3">
+                                    <ul class="list-unstyled">
+                                        <li>优惠券名称：代用名</li>
+                                        <li>使用对象：无限制</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-3">
+                                    <ul class="list-unstyled">
+                                        <li>有效期：2017.03.03-2017.05.05</li>
+                                        <li>发行数量：1255222</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-2 text-right">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="btn btn-danger">详情</a></li>
+                                        <li><a href="#" class="btn btn-default">删除</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="pull-left">优惠券</div>
+                            <div class="content clearfix">
+                                <div class="col-xs-4 text-danger">
+                                    <strong class="h2">1000</strong>元
+                                    <span>满5000元可用</span>
+                                </div>
+                                <div class="col-xs-3">
+                                    <ul class="list-unstyled">
+                                        <li>优惠券名称：代用名</li>
+                                        <li>使用对象：无限制</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-3">
+                                    <ul class="list-unstyled">
+                                        <li>有效期：2017.03.03-2017.05.05</li>
+                                        <li>发行数量：1255222</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-2 text-right">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="btn btn-danger">详情</a></li>
+                                        <li><a href="#" class="btn btn-default">删除</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="text-right">
+                        <!-- pagination -->
+                        <ul class="pagination pagination-sm">
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><span>...</span></li>
+                            <li><a href="#">10</a></li>
+                        </ul>
+                        <div class="pagination-info">
+                            <span>共100页，到第<input type="text" maxlength="3">页</span>
+                            <a href="#" class="btn btn-danger btn-sm">确认</a>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="coupon_expired">
+                    <ul class="list-unstyled admin-coupon-list">
+                        <li class="clearfix">
+                            <div class="pull-left">优惠券</div>
+                            <div class="content coupon-used clearfix">
+                                <div class="col-xs-4 text-danger">
+                                    <strong class="h2">1000</strong>元
+                                    <span>满5000元可用</span>
+                                </div>
+                                <div class="col-xs-3">
+                                    <ul class="list-unstyled">
+                                        <li>优惠券名称：代用名</li>
+                                        <li>使用对象：无限制</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-3">
+                                    <ul class="list-unstyled">
+                                        <li>有效期：2017.03.03-2017.05.05</li>
+                                        <li>发行数量：1255222</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-2 text-right">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="btn btn-danger">详情</a></li>
+                                        <li><a href="#" class="btn btn-default">删除</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="pull-left">优惠券</div>
+                            <div class="content coupon-used clearfix">
+                                <div class="col-xs-4 text-danger">
+                                    <strong class="h2">1000</strong>元
+                                    <span>满5000元可用</span>
+                                </div>
+                                <div class="col-xs-3">
+                                    <ul class="list-unstyled">
+                                        <li>优惠券名称：代用名</li>
+                                        <li>使用对象：无限制</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-3">
+                                    <ul class="list-unstyled">
+                                        <li>有效期：2017.03.03-2017.05.05</li>
+                                        <li>发行数量：1255222</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-2 text-right">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="btn btn-danger">详情</a></li>
+                                        <li><a href="#" class="btn btn-default">删除</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="pull-left">优惠券</div>
+                            <div class="content coupon-used clearfix">
+                                <div class="col-xs-4 text-danger">
+                                    <strong class="h2">1000</strong>元
+                                    <span>满5000元可用</span>
+                                </div>
+                                <div class="col-xs-3">
+                                    <ul class="list-unstyled">
+                                        <li>优惠券名称：代用名</li>
+                                        <li>使用对象：无限制</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-3">
+                                    <ul class="list-unstyled">
+                                        <li>有效期：2017.03.03-2017.05.05</li>
+                                        <li>发行数量：1255222</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-2 text-right">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="btn btn-danger">详情</a></li>
+                                        <li><a href="#" class="btn btn-default">删除</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="pull-left">优惠券</div>
+                            <div class="content coupon-used clearfix">
+                                <div class="col-xs-4 text-danger">
+                                    <strong class="h2">1000</strong>元
+                                    <span>满5000元可用</span>
+                                </div>
+                                <div class="col-xs-3">
+                                    <ul class="list-unstyled">
+                                        <li>优惠券名称：代用名</li>
+                                        <li>使用对象：无限制</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-3">
+                                    <ul class="list-unstyled">
+                                        <li>有效期：2017.03.03-2017.05.05</li>
+                                        <li>发行数量：1255222</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-2 text-right">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="btn btn-danger">详情</a></li>
+                                        <li><a href="#" class="btn btn-default">删除</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="pull-left">优惠券</div>
+                            <div class="content coupon-used clearfix">
+                                <div class="col-xs-4 text-danger">
+                                    <strong class="h2">1000</strong>元
+                                    <span>满5000元可用</span>
+                                </div>
+                                <div class="col-xs-3">
+                                    <ul class="list-unstyled">
+                                        <li>优惠券名称：代用名</li>
+                                        <li>使用对象：无限制</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-3">
+                                    <ul class="list-unstyled">
+                                        <li>有效期：2017.03.03-2017.05.05</li>
+                                        <li>发行数量：1255222</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-2 text-right">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="btn btn-danger">详情</a></li>
+                                        <li><a href="#" class="btn btn-default">删除</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="pull-left">优惠券</div>
+                            <div class="content coupon-used clearfix">
+                                <div class="col-xs-4 text-danger">
+                                    <strong class="h2">1000</strong>元
+                                    <span>满5000元可用</span>
+                                </div>
+                                <div class="col-xs-3">
+                                    <ul class="list-unstyled">
+                                        <li>优惠券名称：代用名</li>
+                                        <li>使用对象：无限制</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-3">
+                                    <ul class="list-unstyled">
+                                        <li>有效期：2017.03.03-2017.05.05</li>
+                                        <li>发行数量：1255222</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-2 text-right">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="btn btn-danger">详情</a></li>
+                                        <li><a href="#" class="btn btn-default">删除</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="text-right">
+                        <!-- pagination -->
+                        <ul class="pagination pagination-sm">
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><span>...</span></li>
+                            <li><a href="#">10</a></li>
+                        </ul>
+                        <div class="pagination-info">
+                            <span>共100页，到第<input type="text" maxlength="3">页</span>
+                            <a href="#" class="btn btn-danger btn-sm">确认</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- main area start -->
+<!-- 提示信息 -->
+<div class="apx-modal-admin-alert modal fade admin-management" id="apxModalAdminAlert" tabindex="-1">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span></a>
+                <h4 class="modal-title">提示信息</h4>
+            </div>
+            <div class="modal-body">
+                <div class="h4" style="padding: 36px 0;">确定要删除吗？</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-lg btn-danger">确认</button>
+                <button type="button" class="btn btn-lg btn-default" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('footer_admin.inc')
+<script>
+    $(function () {
+        // init the datepicker
+        $('.date-picker').datetimepicker({
+            locale: 'zh-cn',
+            format: "YYYY-MM-DD h:mm:ss",
+            defaultDate: new Date()
+        });
+        // show modal
+        $('#apxModalAdminAlert').modal('show');
+    })
+
+</script>

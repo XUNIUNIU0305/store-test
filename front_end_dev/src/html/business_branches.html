@@ -1,0 +1,157 @@
+@@include('head.inc')
+<!-- header start -->
+<header class="business-frame-header">
+    <nav class="navbar navbar-default">
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <i class="glyphicon glyphicon-time"></i>2005-11-11 19:38:07
+            </li>
+            <li>
+                <a href="javascript:void(0)"><i class="glyphicon glyphicon-wrench"></i>设置</a>
+            </li>
+            <li>
+                <i class="glyphicon glyphicon-map-marker"></i>上海松江
+            </li>
+            <li>
+                <i class="glyphicon glyphicon-user"></i>476644346@qq.com
+            </li>
+            <li>
+                <a href="javascript:void(0)"><i class="glyphicon glyphicon-off"></i>退出</a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="sub-nav">
+        <div class="pull-left">
+            ◀
+        </div>
+        <ul class="list-inline">
+            <li>品牌馆 <span>&times;</span></li>
+            <li class="active">品牌馆 <span>&times;</span></li>
+            <li>品牌馆 <span>&times;</span></li>
+        </ul>
+        <div class="pull-right">
+            ▶
+        </div>
+    </nav>
+</header>
+<!-- header end -->
+<!-- aside nav start -->
+<aside class="business-frame-aside">
+    <div class="aside-logo">
+        <img alt="logo" src="/images/logo_white.png" height="24">
+    </div>
+    <div class="aside-list">
+        <a data-toggle="collapse" href="#aside_panel_1" class="collapsed">
+            <i class="glyphicon glyphicon-home"></i> 主菜单#1 <i class="glyphicon glyphicon-chevron-down"></i>
+        </a>
+        <div class="collapse" id="aside_panel_1">
+            <ul class="list-unstyled clearfix">
+                <li class="active">
+                    <a href="#">子菜单#1</a>
+                </li>
+                <li>
+                    <a href="#">子菜单#2</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="aside-list">
+        <a data-toggle="collapse" href="#aside_panel_2" class="">
+            <i class="glyphicon glyphicon-tags"></i> 主菜单#2 <i class="glyphicon glyphicon-chevron-down"></i>
+        </a>
+        <div class="collapse in" id="aside_panel_2">
+            <ul class="list-unstyled clearfix">
+                <li class="active">
+                    <a href="#">子菜单#1</a>
+                </li>
+                <li>
+                    <a href="#">子菜单#2</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="aside-list">
+        <a data-toggle="collapse" href="#aside_panel_3" class="collapsed">
+            <i class="glyphicon glyphicon-star-empty"></i> 主菜单#3 <i class="glyphicon glyphicon-chevron-down"></i>
+        </a>
+        <div class="collapse" id="aside_panel_3">
+            <ul class="list-unstyled clearfix">
+                <li class="active">
+                    <a href="#">子菜单#1</a>
+                </li>
+                <li>
+                    <a href="#">子菜单#2</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</aside>
+<!-- aside nav end -->
+<!-- main area start -->
+<div class="business-frame-main">
+    <div class="business-main-wrap">
+        <!--branches container-->
+        <div class="business-branches-container">
+            <!--一级目录 start-->
+            <ul class="root">
+                <li>
+                    <!--二级目录 start-->
+                    <ul class="branch opened">
+                        <li>
+                            <!--三级目录 start-->
+                            <ul class="branch">
+                                <li>
+                                    <div class="content">
+                                        <i></i>
+                                        <span>三级目录</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content">
+                                        <i></i>
+                                        <span>三级目录</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!--三级目录 end-->
+                            <div class="content">
+                                <i></i>
+                                <span>二级目录（<span class="high-lighted">2</span>）</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content">
+                                <i></i>
+                                <span>二级目录</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <!--二级目录 end-->
+                    <div class="content">
+                        <i></i>
+                        <span>一级目录（<span class="high-lighted">2</span>）</span>
+                    </div>
+                </li>
+                <!--一级目录 end-->
+                <li>
+                    <div class="content">
+                        <i></i>
+                        <span>一级目录</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+@@include('business_footer.inc')
+
+<script>
+    $('.business-branches-container').on('click', '.content', function (e) {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        var $branch = $(this).siblings('.branch');
+        console.log($branch)
+        $branch.length && $branch.toggleClass('opened');
+    })
+
+</script>

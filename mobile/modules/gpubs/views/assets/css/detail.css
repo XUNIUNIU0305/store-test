@@ -1,0 +1,414 @@
+@charset "UTF-8";
+.group-activity-detail-container .pro-info {
+  margin-top: 2.66667vw;
+  background-color: #fff; }
+  .group-activity-detail-container .pro-info .info-header {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    -webkit-align-items: center;
+            align-items: center;
+    margin: 0 4vw;
+    border-bottom: 1px solid #dedfe0; }
+    .group-activity-detail-container .pro-info .info-header .user-name {
+      font-size: 3.46667vw;
+      line-height: 10.66667vw;
+      padding-left: 9.33333vw;
+      position: relative; }
+      .group-activity-detail-container .pro-info .info-header .user-name::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 1.33333vw;
+        width: 8vw;
+        height: 8vw;
+        background: #efeff4 url("/images/logo.png") no-repeat left center;
+        background-size: 8vw;
+        border-radius: 50px; }
+    .group-activity-detail-container .pro-info .info-header .pro-num {
+      margin: 1.33333vw 0;
+      position: relative; }
+      .group-activity-detail-container .pro-info .info-header .pro-num p {
+        margin: 0;
+        color: #9d9d9d; }
+      .group-activity-detail-container .pro-info .info-header .pro-num::before {
+        content: '自提拼购';
+        position: absolute;
+        left: -10.66667vw;
+        top: 0.53333vw;
+        color: #ff9641;
+        border: 1px solid #ff9641;
+        width: 2em;
+        padding: 0.26667vw 1.06667vw;
+        border-radius: 3px;
+        line-height: 1.2; }
+  .group-activity-detail-container .pro-info .pro-content {
+    margin: 0 4vw;
+    overflow: hidden; }
+  .group-activity-detail-container .pro-info .group-order-item {
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    margin: 8px 0;
+    padding: 4px; }
+    .group-activity-detail-container .pro-info .group-order-item aside {
+      -webkit-flex: 0 0 80px;
+              flex: 0 0 80px;
+      height: 80px;
+      min-width: 80px;
+      min-height: 80px;
+      margin-right: 8px;
+      border: 1px solid #ccc; }
+      .group-activity-detail-container .pro-info .group-order-item aside img {
+        max-width: 100%;
+        max-height: 100%; }
+    .group-activity-detail-container .pro-info .group-order-item main {
+      position: relative;
+      -webkit-flex: 0 0 65.33333vw;
+              flex: 0 0 65.33333vw; }
+      .group-activity-detail-container .pro-info .group-order-item main .description {
+        width: 65.33333vw;
+        font-size: 3.73333vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+      .group-activity-detail-container .pro-info .group-order-item main .group-price {
+        margin: 1.33333vw 0; }
+        .group-activity-detail-container .pro-info .group-order-item main .group-price span {
+          font-size: 4vw;
+          color: #eb2f2f; }
+      .group-activity-detail-container .pro-info .group-order-item main .param {
+        color: #999;
+        width: 65.33333vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+        .group-activity-detail-container .pro-info .group-order-item main .param span {
+          margin-right: 4px;
+          text-decoration: line-through; }
+
+.group-activity-detail-container .activity-info {
+  margin-top: 2.66667vw;
+  background-color: #fff;
+  overflow: hidden; }
+  .group-activity-detail-container .activity-info .balance-pro {
+    text-align: center;
+    font-size: 3.73333vw;
+    margin: 1.33333vw 0; }
+    .group-activity-detail-container .activity-info .balance-pro span {
+      color: #ff9641; }
+  .group-activity-detail-container .activity-info .user-list {
+    margin: 0 4vw; }
+    .group-activity-detail-container .activity-info .user-list li {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: space-between;
+              justify-content: space-between;
+      -webkit-align-items: center;
+              align-items: center;
+      margin: 4vw 0;
+      font-size: 3.73333vw; }
+      .group-activity-detail-container .activity-info .user-list li .img-box {
+        -webkit-flex: 0 0 10.66667vw;
+                flex: 0 0 10.66667vw;
+        height: 10.66667vw;
+        background: #efeff4;
+        border-radius: 80px; }
+        .group-activity-detail-container .activity-info .user-list li .img-box img {
+          max-width: 100%; }
+      .group-activity-detail-container .activity-info .user-list li .item-info {
+        -webkit-flex: 1;
+                flex: 1;
+        margin-left: 5.33333vw; }
+        .group-activity-detail-container .activity-info .user-list li .item-info p {
+          margin: 0;
+          line-height: 1.8; }
+      .group-activity-detail-container .activity-info .user-list li:first-child .img-box {
+        position: relative; }
+        .group-activity-detail-container .activity-info .user-list li:first-child .img-box::before {
+          content: '团长';
+          position: absolute;
+          top: -1.33333vw;
+          right: -4vw;
+          color: #fff;
+          font-size: 9px;
+          background-color: #eb2f2f;
+          border-radius: 20px;
+          padding: 0.26667vw 0.8vw; }
+  .group-activity-detail-container .activity-info .handle-box {
+    text-align: center;
+    color: #fff;
+    line-height: 3;
+    background-color: #eb2f2f;
+    margin: 0 4vw 4vw;
+    border-radius: 4px;
+    font-size: 14px; }
+  .group-activity-detail-container .activity-info .address-box {
+    border-top: 1px solid #dedfe0;
+    margin: 2.4vw 0; }
+    .group-activity-detail-container .activity-info .address-box p {
+      margin: 0.53333vw 4vw;
+      font-size: 14px;
+      position: relative; }
+      .group-activity-detail-container .activity-info .address-box p::before {
+        content: '*';
+        color: #eb2f2f; }
+
+.group-activity-detail-container .start-group-container {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #fff; }
+  .group-activity-detail-container .start-group-container .btn {
+    display: block;
+    text-align: center;
+    color: #fff;
+    line-height: 3;
+    background-color: #eb2f2f;
+    margin: 0 4vw 4vw;
+    border-radius: 4px;
+    font-size: 14px; }
+
+.group-activity-detail-container .group-rule {
+  margin-top: 2.66667vw;
+  background-color: #fff;
+  overflow: hidden; }
+  .group-activity-detail-container .group-rule .rule-title {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    margin: 0 4vw;
+    padding: 2.66667vw 0;
+    border-bottom: 1px solid #dedfe0; }
+    .group-activity-detail-container .group-rule .rule-title span:last-child {
+      color: #999;
+      padding-right: 2.66667vw;
+      background: url("/images/icon_jiantou@3x.png") no-repeat right center;
+      background-size: 2vw auto; }
+  .group-activity-detail-container .group-rule .rule-list {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+            justify-content: space-around;
+    margin: 2.4vw 0;
+    padding-top: 6.66667vw; }
+    .group-activity-detail-container .group-rule .rule-list span {
+      position: relative; }
+      .group-activity-detail-container .group-rule .rule-list span::before {
+        content: '1';
+        color: #fff;
+        background-color: #2cb8f2;
+        border-radius: 20px;
+        position: absolute;
+        top: -4.53333vw;
+        left: 1.06667vw;
+        width: 4.26667vw;
+        text-align: center;
+        line-height: 4.26667vw; }
+      .group-activity-detail-container .group-rule .rule-list span::after {
+        content: '';
+        width: 18.66667vw;
+        height: 1px;
+        background-color: #2cb8f2;
+        position: absolute;
+        top: -2.66667vw;
+        left: 120%; }
+      .group-activity-detail-container .group-rule .rule-list span:nth-child(1)::before {
+        content: '1'; }
+      .group-activity-detail-container .group-rule .rule-list span:nth-child(2)::before {
+        content: '2';
+        left: 4vw; }
+      .group-activity-detail-container .group-rule .rule-list span:nth-child(3)::before {
+        content: '3';
+        left: 4vw; }
+      .group-activity-detail-container .group-rule .rule-list span:nth-child(3)::after {
+        display: none; }
+
+.maskProDetail {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  float: left; }
+  .maskProDetail input:disabled {
+    background: #fff; }
+  .maskProDetail .goods_attr {
+    height: 290px;
+    overflow-x: scroll; }
+    .maskProDetail .goods_attr .goods_attr_items {
+      margin-left: 4vw;
+      margin-top: 5.33333vw; }
+    .maskProDetail .goods_attr div .has-error {
+      border: 2px solid #f49d00;
+      padding: 2px 0;
+      margin-left: -3px;
+      margin-right: -3px;
+      margin-top: 4px; }
+    .maskProDetail .goods_attr .maskLayersh-classification {
+      padding: 0px 10px; }
+      .maskProDetail .goods_attr .maskLayersh-classification span {
+        font-size: 3.46667vw; }
+      .maskProDetail .goods_attr .maskLayersh-classification input {
+        display: none; }
+      .maskProDetail .goods_attr .maskLayersh-classification ul {
+        padding: 0px 10px;
+        width: calc(100% - 20px);
+        border-bottom: 1px solid #dedfe0;
+        overflow: hidden;
+        padding-bottom: 5px;
+        margin-bottom: 5px; }
+        .maskProDetail .goods_attr .maskLayersh-classification ul li {
+          float: left;
+          width: calc(25% - 8px);
+          height: 30px;
+          text-align: center;
+          margin: 3px;
+          line-height: 30px;
+          overflow: hidden;
+          cursor: pointer;
+          background-color: #efeff3;
+          border-radius: 8px;
+          border: 1px solid transparent; }
+          .maskProDetail .goods_attr .maskLayersh-classification ul li button {
+            width: 100%;
+            background-color: #efeff3;
+            border: none;
+            outline: none; }
+        .maskProDetail .goods_attr .maskLayersh-classification ul .li-active {
+          color: #fff;
+          background-image: linear-gradient(-90deg, #e53935 0%, #ff9100 100%);
+          background-color: #ff9100; }
+        .maskProDetail .goods_attr .maskLayersh-classification ul .disabled {
+          border: 1px solid #dedfe0;
+          color: #ccc; }
+          .maskProDetail .goods_attr .maskLayersh-classification ul .disabled button {
+            background-color: #FFF; }
+  .maskProDetail .maskLayersh-shop {
+    width: 100%;
+    height: 500px;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    position: fixed;
+    border: 1px solid #eee;
+    background: #fff; }
+    .maskProDetail .maskLayersh-shop .maskLayersh-shop-top {
+      border-bottom: 1px solid #dedfe0; }
+      .maskProDetail .maskLayersh-shop .maskLayersh-shop-top .commodity-item {
+        display: -webkit-flex;
+        display: flex;
+        margin: 0; }
+        .maskProDetail .maskLayersh-shop .maskLayersh-shop-top .commodity-item aside {
+          width: 26.66667vw;
+          height: 26.66667vw;
+          min-width: 26.66667vw;
+          min-height: 26.66667vw;
+          margin: 4vw;
+          border: 1px solid #dedfe0;
+          background-color: #FFFFFF;
+          padding: 2px; }
+          .maskProDetail .maskLayersh-shop .maskLayersh-shop-top .commodity-item aside img {
+            max-width: 100%;
+            max-height: 100%; }
+        .maskProDetail .maskLayersh-shop .maskLayersh-shop-top .commodity-item main {
+          position: relative;
+          width: 100%; }
+          .maskProDetail .maskLayersh-shop .maskLayersh-shop-top .commodity-item main .description {
+            font-size: 4.53333vw;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            color: #ff9100;
+            margin-top: 8vw;
+            margin-bottom: 1.33333vw; }
+            .maskProDetail .maskLayersh-shop .maskLayersh-shop-top .commodity-item main .description em {
+              display: block;
+              width: 8vw;
+              height: 8vw;
+              background-image: url("/images/icons/close_58_icon.png");
+              background-size: 100%;
+              position: absolute;
+              top: 2.66667vw;
+              right: 4vw; }
+          .maskProDetail .maskLayersh-shop .maskLayersh-shop-top .commodity-item main .original-price-box {
+            font-size: 3.2vw;
+            color: #999;
+            text-decoration: line-through;
+            margin-bottom: 1.33333vw; }
+          .maskProDetail .maskLayersh-shop .maskLayersh-shop-top .commodity-item main .param {
+            font-size: 3.46667vw;
+            color: #333; }
+            .maskProDetail .maskLayersh-shop .maskLayersh-shop-top .commodity-item main .param em {
+              font-style: normal;
+              margin-left: 50px; }
+            .maskProDetail .maskLayersh-shop .maskLayersh-shop-top .commodity-item main .param input {
+              display: none; }
+    .maskProDetail .maskLayersh-shop .maskLayersh-num {
+      margin-left: 25px;
+      margin-right: 10px;
+      border-bottom: 1px solid #efeff3;
+      display: -webkit-flex;
+      display: flex; }
+      .maskProDetail .maskLayersh-shop .maskLayersh-num .mask-num {
+        font-size: 14px;
+        -webkit-flex: 1;
+                flex: 1; }
+      .maskProDetail .maskLayersh-shop .maskLayersh-num .num-add-sub {
+        width: 140px;
+        padding: 10px;
+        text-align: right;
+        display: -webkit-flex;
+        display: flex; }
+        .maskProDetail .maskLayersh-shop .maskLayersh-num .num-add-sub div {
+          width: 8vw;
+          height: 8vw;
+          font-size: 24px;
+          float: left;
+          line-height: 30px;
+          text-align: center; }
+          .maskProDetail .maskLayersh-shop .maskLayersh-num .num-add-sub div:nth-child(1) {
+            background: url("/images/icons/minus.png") no-repeat center;
+            background-size: 100%; }
+          .maskProDetail .maskLayersh-shop .maskLayersh-num .num-add-sub div:nth-child(3) {
+            background: url("/images/icons/add.png") no-repeat center;
+            background-size: 100%; }
+        .maskProDetail .maskLayersh-shop .maskLayersh-num .num-add-sub .input-number {
+          width: 50px;
+          width: 30px;
+          font-size: 16px;
+          border: none;
+          padding: 1.33333vw;
+          margin: 0 1.33333vw;
+          text-align: center; }
+    .maskProDetail .maskLayersh-shop .maskLayersh-but {
+      width: 100%;
+      height: 45px;
+      position: absolute;
+      top: calc(100% - 45px);
+      left: 0px; }
+      .maskProDetail .maskLayersh-shop .maskLayersh-but .but-cancel-datermine {
+        background-image: linear-gradient(-90deg, #e53935 0%, #ff9100 100%);
+        border: 0px;
+        width: 50%;
+        height: 45px;
+        font-size: 16px;
+        color: #FFFFFF;
+        float: left; }
+        .maskProDetail .maskLayersh-shop .maskLayersh-but .but-cancel-datermine:first-child {
+          background-color: #d9d9d9;
+          color: #707070;
+          background-image: none; }
+        .maskProDetail .maskLayersh-shop .maskLayersh-but .but-cancel-datermine.disabled {
+          pointer-events: none; }
+      .maskProDetail .maskLayersh-shop .maskLayersh-but .but-determine {
+        background-color: #cf4d44;
+        border: 0px;
+        width: 100%;
+        height: 45px;
+        font-size: 16px;
+        color: #FFFFFF; }

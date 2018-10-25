@@ -1,0 +1,591 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* share */
+body {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 750px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+* {
+  outline: 0;
+  -webkit-tap-highlight-color: transparent; }
+
+.scroll {
+  -webkit-overflow-scrolling: touch; }
+
+.mask-bg {
+  min-height: 177.86667vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  transition: opacity .2s; }
+  .mask-bg.hidden {
+    pointer-events: none;
+    opacity: 0; }
+
+.gift-container {
+  height: 100%;
+  background: #9edceb url(/images/lottery/theme_bg.jpg) center bottom no-repeat;
+  background-size: cover;
+  position: relative; }
+  .gift-container .btn-box {
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    font-size: 0;
+    width: 63.46667vw;
+    height: 32vw;
+    margin-left: -31.73333vw; }
+    .gift-container .btn-box .btn {
+      height: 16vw;
+      display: block; }
+    .gift-container .btn-box .btn-record {
+      background: url(/images/lottery/p5_btn1.png) center/contain no-repeat; }
+      .gift-container .btn-box .btn-record:active {
+        -webkit-transform: scale(1.05);
+                transform: scale(1.05); }
+    .gift-container .btn-box .btn-game {
+      margin-bottom: 2vw;
+      background: url(/images/lottery/p9_btn2.png) center/contain no-repeat; }
+      .gift-container .btn-box .btn-game:active {
+        -webkit-transform: scale(1.05);
+                transform: scale(1.05); }
+
+.broadcast-wrap {
+  width: 93.6vw;
+  height: 15.06667vw;
+  border-radius: 7.53333vw;
+  background-color: #74b7d7;
+  box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.2), inset 0px 0px 3px 0px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  top: 4.53333vw;
+  left: 50%;
+  margin-left: -46.8vw;
+  font-size: 3.46667vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .broadcast-wrap i {
+    font-size: 0;
+    display: inline-block;
+    background: url(/images/lottery/p5_bg3.png) center/contain no-repeat;
+    width: 12.26667vw;
+    height: 12vw;
+    margin: 0 2vw;
+    position: relative; }
+    .broadcast-wrap i:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 10.53333vw;
+      height: 10.4vw;
+      margin: auto;
+      background: url(/images/lottery/head.png) center/contain no-repeat; }
+  .broadcast-wrap .scroll-box {
+    position: relative;
+    width: 100%;
+    height: 2em;
+    overflow: hidden; }
+    .broadcast-wrap .scroll-box ul {
+      display: block;
+      position: absolute;
+      top: 0;
+      transition: all .5s; }
+    .broadcast-wrap .scroll-box li {
+      color: #fff;
+      line-height: 2;
+      height: 2em; }
+      .broadcast-wrap .scroll-box li span {
+        color: #ff522f; }
+
+.gift-content {
+  width: 89.73333vw;
+  height: 85.46667vw;
+  background: url(/images/lottery/p5_bg1.png) center/contain no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -60%);
+          transform: translate(-50%, -60%);
+  font-size: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .gift-content .title {
+    position: absolute;
+    width: 79.06667vw;
+    height: 20vw;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: -9.09091vw; }
+  .gift-content.empty .title {
+    background: url(/images/lottery/p9_t.png) center/contain no-repeat; }
+  .gift-content.not-empty .title {
+    background-image: url(/images/lottery/p5_t.png) center/contain no-repeat; }
+  .gift-content .gift-cash p,
+  .gift-content .gift-normal p,
+  .gift-content .gift-empty p {
+    font-weight: 600;
+    margin: 0;
+    font-size: 4.8vw;
+    width: 100%;
+    text-align: center;
+    line-height: 1.75; }
+  .gift-content .gift-empty .box {
+    width: 31.86667vw;
+    height: 29.6vw;
+    margin: 12% auto 2%;
+    background: url(/images/lottery/p9_gift.png) center/contain no-repeat; }
+  .gift-content .gift-normal .box {
+    width: 31.86667vw;
+    height: 29.6vw;
+    margin: 12% auto 2%;
+    position: relative; }
+    .gift-content .gift-normal .box:before, .gift-content .gift-normal .box:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0; }
+    .gift-content .gift-normal .box:before {
+      width: 100%;
+      height: 100%;
+      background: url(/images/lottery/p4_giftbg.png) center/contain no-repeat; }
+    .gift-content .gift-normal .box:after {
+      width: 21.33333vw;
+      height: 20.4vw;
+      margin: auto;
+      background: url(/images/lottery/gift.gif) center/contain no-repeat; }
+  .gift-content .gift-cash .box {
+    width: 26.66667vw;
+    height: 26.66667vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 22% auto 2.5%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative; }
+  .gift-content .gift-cash .cash i {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    background: transparent center/contain no-repeat;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards; }
+    .gift-content .gift-cash .cash i:nth-child(1) {
+      width: 8vw;
+      height: 5.2vw;
+      background-image: url(/images/lottery/qian_1.png);
+      -webkit-animation-name: money-fall-1;
+              animation-name: money-fall-1;
+      -webkit-animation-duration: 1.1s;
+              animation-duration: 1.1s; }
+    .gift-content .gift-cash .cash i:nth-child(2) {
+      width: 4.13333vw;
+      height: 3.86667vw;
+      background-image: url(/images/lottery/qian_2.png);
+      -webkit-animation-name: money-fall-2;
+              animation-name: money-fall-2;
+      -webkit-animation-duration: 1.2s;
+              animation-duration: 1.2s; }
+    .gift-content .gift-cash .cash i:nth-child(3) {
+      width: 3.6vw;
+      height: 6vw;
+      background-image: url(/images/lottery/qian_3.png);
+      -webkit-animation-name: money-fall-3;
+              animation-name: money-fall-3;
+      -webkit-animation-duration: 1.3s;
+              animation-duration: 1.3s; }
+    .gift-content .gift-cash .cash i:nth-child(4) {
+      width: 5.33333vw;
+      height: 2.93333vw;
+      background-image: url(/images/lottery/qian_4.png);
+      -webkit-animation-name: money-fall-4;
+              animation-name: money-fall-4;
+      -webkit-animation-duration: 1.3s;
+              animation-duration: 1.3s; }
+    .gift-content .gift-cash .cash i:nth-child(5) {
+      width: 5.33333vw;
+      height: 2.93333vw;
+      background-image: url(/images/lottery/qian_5.png);
+      -webkit-animation-name: money-fall-5;
+              animation-name: money-fall-5;
+      -webkit-animation-duration: 1.5s;
+              animation-duration: 1.5s; }
+    .gift-content .gift-cash .cash i:nth-child(6) {
+      width: 8.53333vw;
+      height: 5.73333vw;
+      background-image: url(/images/lottery/qian_6.png);
+      -webkit-animation-name: money-fall-6;
+              animation-name: money-fall-6;
+      -webkit-animation-duration: 1.5s;
+              animation-duration: 1.5s; }
+  .gift-content .gift-cash .bag {
+    width: 10.4vw;
+    height: 14vw;
+    background: url(/images/lottery/qiangdai.png) center/contain no-repeat;
+    -webkit-animation: bag-scale 1.2s linear forwards;
+            animation: bag-scale 1.2s linear forwards; }
+  .gift-content .footer {
+    position: absolute;
+    bottom: 6.4vw;
+    font-size: 3.46667vw;
+    text-align: center;
+    width: 100%;
+    line-height: 1.4;
+    color: #3a230a; }
+    .gift-content .footer a {
+      color: #3a230a; }
+
+@-webkit-keyframes bag-scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  30% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8); }
+  60% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes bag-scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  30% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8); }
+  60% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@-webkit-keyframes money-fall-1 {
+  0% {
+    -webkit-transform: translate(13.33333vw, -40vw);
+            transform: translate(13.33333vw, -40vw);
+    opacity: 1; }
+  50% {
+    -webkit-transform: translate(-1.33333vw, -20vw);
+            transform: translate(-1.33333vw, -20vw);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0; } }
+
+@keyframes money-fall-1 {
+  0% {
+    -webkit-transform: translate(13.33333vw, -40vw);
+            transform: translate(13.33333vw, -40vw);
+    opacity: 1; }
+  50% {
+    -webkit-transform: translate(-1.33333vw, -20vw);
+            transform: translate(-1.33333vw, -20vw);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0; } }
+
+@-webkit-keyframes money-fall-2 {
+  0% {
+    -webkit-transform: translate(-20vw, -20vw);
+            transform: translate(-20vw, -20vw);
+    opacity: 1; }
+  40% {
+    -webkit-transform: translate(-13.33333vw, -13.33333vw);
+            transform: translate(-13.33333vw, -13.33333vw); }
+  60% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0; } }
+
+@keyframes money-fall-2 {
+  0% {
+    -webkit-transform: translate(-20vw, -20vw);
+            transform: translate(-20vw, -20vw);
+    opacity: 1; }
+  40% {
+    -webkit-transform: translate(-13.33333vw, -13.33333vw);
+            transform: translate(-13.33333vw, -13.33333vw); }
+  60% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0; } }
+
+@-webkit-keyframes money-fall-3 {
+  0% {
+    -webkit-transform: translate(24vw, -32vw);
+            transform: translate(24vw, -32vw);
+    opacity: 1; }
+  60% {
+    -webkit-transform: translate(5.33333vw, -13.33333vw);
+            transform: translate(5.33333vw, -13.33333vw);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0; } }
+
+@keyframes money-fall-3 {
+  0% {
+    -webkit-transform: translate(24vw, -32vw);
+            transform: translate(24vw, -32vw);
+    opacity: 1; }
+  60% {
+    -webkit-transform: translate(5.33333vw, -13.33333vw);
+            transform: translate(5.33333vw, -13.33333vw);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0; } }
+
+@-webkit-keyframes money-fall-4 {
+  0% {
+    -webkit-transform: translate(10.66667vw, -32vw);
+            transform: translate(10.66667vw, -32vw);
+    opacity: 1; }
+  60% {
+    -webkit-transform: translate(4vw, -14.66667vw);
+            transform: translate(4vw, -14.66667vw);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0; } }
+
+@keyframes money-fall-4 {
+  0% {
+    -webkit-transform: translate(10.66667vw, -32vw);
+            transform: translate(10.66667vw, -32vw);
+    opacity: 1; }
+  60% {
+    -webkit-transform: translate(4vw, -14.66667vw);
+            transform: translate(4vw, -14.66667vw);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0; } }
+
+@-webkit-keyframes money-fall-5 {
+  0% {
+    -webkit-transform: translate(-10.66667vw, -26.66667vw);
+            transform: translate(-10.66667vw, -26.66667vw);
+    opacity: 1; }
+  60% {
+    -webkit-transform: translate(-4vw, -13.33333vw);
+            transform: translate(-4vw, -13.33333vw);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0; } }
+
+@keyframes money-fall-5 {
+  0% {
+    -webkit-transform: translate(-10.66667vw, -26.66667vw);
+            transform: translate(-10.66667vw, -26.66667vw);
+    opacity: 1; }
+  60% {
+    -webkit-transform: translate(-4vw, -13.33333vw);
+            transform: translate(-4vw, -13.33333vw);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0; } }
+
+@-webkit-keyframes money-fall-6 {
+  0% {
+    -webkit-transform: translate(-13.33333vw, -37.33333vw);
+            transform: translate(-13.33333vw, -37.33333vw);
+    opacity: 1; }
+  50% {
+    -webkit-transform: translate(-8vw, -17.33333vw);
+            transform: translate(-8vw, -17.33333vw);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0; } }
+
+@keyframes money-fall-6 {
+  0% {
+    -webkit-transform: translate(-13.33333vw, -37.33333vw);
+            transform: translate(-13.33333vw, -37.33333vw);
+    opacity: 1; }
+  50% {
+    -webkit-transform: translate(-8vw, -17.33333vw);
+            transform: translate(-8vw, -17.33333vw);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0; } }

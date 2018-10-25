@@ -1,0 +1,221 @@
+body {
+  overflow-x: hidden; }
+
+.bg-muted {
+  background: #f2f2f2; }
+
+.table-fix {
+  table-layout: fixed; }
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.container {
+  width: 1190px;
+  max-width: none !important; }
+
+.high-lighted {
+  color: #df483d; }
+
+.custom-account-view {
+  min-height: 100vh;
+  background: #f6f6f6; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0; }
+
+.apx-modal-free-lunch .modal-dialog {
+  height: 758px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto; }
+
+.apx-modal-free-lunch .close-btn {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 100px;
+  right: 140px;
+  background: url("/images/free_lunch/new_cloes_icon.png") center no-repeat; }
+
+.apx-modal-free-lunch .sub-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none; }
+  .apx-modal-free-lunch .sub-content.in {
+    display: block; }
+
+.apx-modal-free-lunch .img-box {
+  position: relative; }
+  .apx-modal-free-lunch .img-box p {
+    position: absolute;
+    left: 12px;
+    right: 0;
+    width: 523px;
+    bottom: 14px;
+    font-size: 34px;
+    color: #2e5c9e;
+    margin: 0 auto; }
+
+.apx-modal-free-lunch .img-responsive {
+  margin: 0 auto 60px; }
+
+.apx-modal-free-lunch .btn-row {
+  text-align: center; }
+
+.apx-modal-free-lunch .btn {
+  background: transparent url("/images/free_lunch/pingpai_but_bg.png") center no-repeat;
+  padding: 0;
+  width: 228px;
+  height: 101px;
+  line-height: 80px;
+  margin: 0 36px;
+  color: #fff;
+  font-size: 36px;
+  transition: transform .1s; }
+  .apx-modal-free-lunch .btn:hover {
+    transform: scale(1.02); }
+  .apx-modal-free-lunch .btn:active {
+    transform: scale(0.98); }
+
+.hot-summer-container {
+  min-width: 1190px;
+  background: url("/images/hot_summer/beijing.png") no-repeat center/cover;
+  overflow: hidden;
+  position: relative; }
+  .hot-summer-container ul {
+    padding: 0; }
+    .hot-summer-container ul li {
+      list-style: none; }
+  .hot-summer-container .head-img {
+    width: 100%; }
+  .hot-summer-container .quick-nav {
+    position: fixed;
+    right: 0;
+    top: 35%;
+    width: 112px; }
+    .hot-summer-container .quick-nav a {
+      display: block; }
+      .hot-summer-container .quick-nav a img {
+        display: block;
+        width: 112px;
+        height: 84px; }
+      .hot-summer-container .quick-nav a .top-img {
+        height: 14px;
+        width: 58px;
+        margin: 0 auto;
+        margin-top: 10px; }
+  .hot-summer-container .pro-item-container {
+    overflow: hidden;
+    width: 100%;
+    text-align: center; }
+    .hot-summer-container .pro-item-container h2 {
+      margin: 0;
+      height: 150px;
+      width: 100%;
+      padding-top: 34px;
+      background-color: #fff;
+      background: url("/images/hot_summer/miaosha.png") no-repeat center;
+      background-size: 586px auto;
+      padding-bottom: 60px; }
+    .hot-summer-container .pro-item-container ul {
+      width: 1000px;
+      height: 676px;
+      margin: 0 auto 80px;
+      margin-top: 20px; }
+      .hot-summer-container .pro-item-container ul li {
+        width: 236px;
+        height: 340px;
+        float: left;
+        position: relative;
+        margin: 0 7px 16px;
+        background: #ffffff; }
+        .hot-summer-container .pro-item-container ul li img {
+          width: 236px;
+          height: 236px;
+          display: block;
+          border: none; }
+        .hot-summer-container .pro-item-container ul li strong {
+          font-weight: normal;
+          font-size: 14px;
+          color: #808080;
+          display: block;
+          height: 20px;
+          line-height: 20px;
+          padding-top: 5px; }
+        .hot-summer-container .pro-item-container ul li span {
+          font-size: 26px;
+          color: #f43043;
+          bottom: 26px;
+          left: 16px;
+          position: absolute; }
+    .hot-summer-container .pro-item-container .list2 {
+      height: 1016px; }
+    .hot-summer-container .pro-item-container .list3 {
+      width: 1020px;
+      height: 300px; }
+      .hot-summer-container .pro-item-container .list3 li {
+        width: 324px;
+        height: 146px; }
+        .hot-summer-container .pro-item-container .list3 li img {
+          width: 146px;
+          height: 146px;
+          top: 0;
+          left: 0;
+          position: absolute; }
+        .hot-summer-container .pro-item-container .list3 li strong {
+          width: 178px;
+          height: 20px;
+          line-height: 20px;
+          top: 5px;
+          right: 0;
+          position: absolute;
+          text-align: left;
+          box-sizing: border-box;
+          padding: 0 10px; }
+        .hot-summer-container .pro-item-container .list3 li span {
+          bottom: 10px;
+          right: 10px;
+          position: absolute;
+          height: auto;
+          text-align: right; }
+  .hot-summer-container .small-pro {
+    background: url("/images/hot_summer/haowubeijing.png") no-repeat center/cover; }
+    .hot-summer-container .small-pro h2 {
+      background: url("/images/hot_summer/biyan.png") no-repeat center #fff;
+      background-size: 586px auto;
+      height: 150px;
+      padding-top: 34px;
+      padding-bottom: 34px; }
+  .hot-summer-container .store-nec {
+    background: url("/images/hot_summer/haowubeijing.png") no-repeat center/cover; }
+    .hot-summer-container .store-nec h2 {
+      background: url("/images/hot_summer/dapinpai.png") no-repeat center #fff;
+      background-size: 586px auto;
+      height: 150px; }
+  .hot-summer-container .gift-pro h2 {
+    background: url("/images/hot_summer/maichanpin.png") no-repeat center;
+    background-size: 586px auto;
+    height: 150px; }
+  .hot-summer-container .big-title {
+    height: 446px;
+    background: url("/images/hot_summer/dabiaoti.png") no-repeat center/cover;
+    width: 100%; }
+  .hot-summer-container .to-top {
+    display: block;
+    width: 418px;
+    height: 38px;
+    background: url("/images/hot_summer/fahui.png") no-repeat center/cover;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px; }

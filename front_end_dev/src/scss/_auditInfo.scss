@@ -1,0 +1,167 @@
+.apx-acc-audit-info {
+    .error-msg{
+        background: rgb(253, 144, 38);
+        color: #fff;
+        line-height: 50px;
+        margin: 0 -20px;
+        padding: 0 20px;
+        display: none;
+        &.in{
+            display: block;
+        }
+    }
+    .panel-body {
+        padding-left: 60px;
+        padding-right: 120px;
+    }
+    .form-horizontal {
+        margin: 20px 0;
+    }
+    .form-group {
+        label {
+            font-weight: 400;
+            text-align: left;
+            line-height: 32px;
+            margin-bottom: 0;
+            position: relative;
+            &.no {
+                &:before {
+                    content: ' ';
+                    position: absolute;
+                    left: 0;
+                    color: $brand-danger;
+                }
+            }
+            &:before{
+                content: '*';
+                position: absolute;
+                left: 0;
+                color: $brand-danger;
+            }
+            &.optional{
+                &:before {
+                    content: none;
+                }
+            }
+        }
+        .btn-default.btn-block {
+            background: #eee;
+        }
+    }
+    .btn-lg {
+        width: 140px;
+        margin: 0 auto 80px;
+    }
+    .img-upload-box {
+        .lint {
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            line-height: 40px;
+            background: rgba(#000, .6);
+            text-align: center;
+            color: #fff;
+        }
+        margin: 0 4px 0 0;
+        position: relative;
+        border-radius: 8px;
+        border: 1px solid #b3b3b3;
+        overflow: hidden;
+        cursor: pointer;
+        display: inline-block;
+        img {
+            background: #fff;
+            display: inline-block;
+            margin: 0 auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    input[type="file"] {
+        position: absolute;
+        clip: rect(0, 0, 0, 0);
+        pointer-events: none;
+    }
+    .dropdown-menu {
+        max-height: 300px!important;
+    }
+    .checkbox{
+        input{
+            margin-top: 10px;
+        }
+        a{
+            color: lightskyblue;
+        }
+    }
+}
+
+
+.apx-modal-agreement {
+    border-radius: 10px;
+    .modal-dialog {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+    .modal-dialog {
+        height: 640px;
+    }
+    .modal-content {
+        border-radius: 10px;
+    }
+    .modal-header {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-size: 18px;
+        box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.08),inset 0px -1px 0px 0px rgba(222, 223, 224, 0.004);
+        .modal-title {
+            font-weight: 700;
+        }
+    }
+    .modal-body {
+        height: 470px;        
+        padding: 20px 50px;
+        text-align: left;
+        line-height: 1.5;
+        overflow: auto;
+        font-size: 14px;
+        .title {
+            text-indent: 28px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            padding-left: 28px;
+        }
+        .detail {
+            padding-left: 28px;
+        }
+    }
+    .modal-footer {
+        border-top: 0;
+        padding: 20px 15px 20px;
+        text-align: center;
+        .btn {
+            width: 100px;
+            padding: 6px 16px;
+            margin: 0 20px;
+        }
+    }
+    .btn-agreement {
+        background: rgb(255, 145, 0);
+        color: #fff;
+    }   
+}

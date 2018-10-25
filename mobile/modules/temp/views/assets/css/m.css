@@ -1,0 +1,159 @@
+@charset "UTF-8";
+html {
+  font-size: 50px; }
+
+.wechat-product-wsb {
+  /*--------------主体内容---------------*/
+  /*----------------*/ }
+  .wechat-product-wsb .clear {
+    clear: both; }
+  .wechat-product-wsb a {
+    display: inline-block; }
+  .wechat-product-wsb .flt {
+    float: left !important; }
+  .wechat-product-wsb .frt {
+    float: right !important; }
+  .wechat-product-wsb .main {
+    max-width: 640px;
+    margin: 0 auto; }
+  .wechat-product-wsb .nav {
+    text-align: center;
+    padding: 0.28rem 0;
+    position: relative; }
+  .wechat-product-wsb .nav a {
+    margin: 0 0.38rem; }
+  .wechat-product-wsb .nav img {
+    width: 2.04rem;
+    height: 0.84rem; }
+  .wechat-product-wsb .nav .tag {
+    width: 0.48rem;
+    height: 1.40rem;
+    background: #000;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -0.24rem;
+    color: #fff;
+    font-size: 0.22rem;
+    text-align: center; }
+  .wechat-product-wsb .product-item .title img {
+    width: 100%; }
+  .wechat-product-wsb .item1 ul {
+    margin-top: 0.30rem; }
+  .wechat-product-wsb .item1 ul li {
+    position: relative;
+    overflow: hidden; }
+  .wechat-product-wsb .item1 ul li img {
+    float: right; }
+  .wechat-product-wsb .item1 ul li .text, .wechat-product-wsb .pic-item .text {
+    position: absolute; }
+  .wechat-product-wsb .item1 ul li .text h4, .wechat-product-wsb .pic-item .text h4 {
+    color: #f9a41d;
+    font-size: 0.30rem;
+    font-weight: bold;
+    position: relative; }
+  .wechat-product-wsb .item1 ul li .text h4:before, .wechat-product-wsb .item1 ul li .text h4:after, .wechat-product-wsb .pic-item .text h4:before, .wechat-product-wsb .pic-item .text h4:after {
+    content: '';
+    display: block;
+    width: 0.17rem;
+    height: 0.13rem;
+    background: url(/images/wanshibo_brand/7.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: -0.15rem;
+    top: -0.05rem; }
+  .wechat-product-wsb .item1 ul li .text h4:after, .wechat-product-wsb .pic-item .text h4:after {
+    background: url(/images/wanshibo_brand/8.png) no-repeat;
+    left: 2.64rem;
+    top: 0.40rem;
+    background-size: 100% 100%; }
+  .wechat-product-wsb .item1 ul li .text h4 span, .wechat-product-wsb .pic-item .text h4 span {
+    width: 2.64rem;
+    height: 1px;
+    background: #333;
+    position: absolute;
+    left: -0.05rem;
+    bottom: -0.05rem; }
+  .wechat-product-wsb .item1 ul li .text .price, .wechat-product-wsb .pic-item .text .price {
+    font-size: 0.58rem;
+    margin-bottom: 0.10rem; }
+  .wechat-product-wsb .item1 ul li .text .buy a, .wechat-product-wsb .pic-item .text .buy a {
+    display: block;
+    width: 1.60rem;
+    height: 0.50rem;
+    background: #333;
+    color: #fff;
+    font-size: 0.24rem;
+    line-height: 0.50rem;
+    text-align: center; }
+  .wechat-product-wsb .item1 ul li .text .price span, .wechat-product-wsb .pic-item .text .price span {
+    font-size: 0.18rem; }
+  .wechat-product-wsb .item1 ul li .text p, .wechat-product-wsb .pic-item .text p {
+    font-size: 0.18rem;
+    margin: 0.10rem 0; }
+  .wechat-product-wsb .item1 ul li:nth-child(1) img {
+    width: 3.82rem;
+    height: 6.37rem; }
+  .wechat-product-wsb .product-item ul li:nth-child(1) .text {
+    left: 0.20rem;
+    top: 1.30rem; }
+  .wechat-product-wsb .item1 ul li:nth-child(2) img {
+    width: 3.99rem;
+    height: 6.77rem;
+    float: left; }
+  .wechat-product-wsb .item1 ul li:nth-child(2), .wechat-product-wsb .product-item ul li:nth-child(3) {
+    margin-top: -1.80rem; }
+  .wechat-product-wsb .item1 ul li:nth-child(2) .text {
+    right: 0.20rem;
+    top: 1.30rem;
+    text-align: right; }
+  .wechat-product-wsb .item1 ul li:nth-child(3) img {
+    width: 3.81rem;
+    height: 5.38rem; }
+  .wechat-product-wsb .item1 ul li:nth-child(3) .text {
+    left: 0.20rem;
+    top: 1.50rem; }
+  .wechat-product-wsb .sub {
+    width: 100%;
+    position: relative; }
+  .wechat-product-wsb .sub p {
+    width: 3.40rem;
+    height: 0.60rem;
+    background: #a1521e;
+    font-size: 0.26rem;
+    color: #fff;
+    text-align: center;
+    line-height: 0.60rem;
+    margin: 0.22rem auto;
+    position: relative;
+    z-index: 100; }
+  .wechat-product-wsb .sub:before {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #333;
+    width: 6.40rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -1px 0 0 -3.20rem; }
+  .wechat-product-wsb .pic-item {
+    width: 100%;
+    position: relative; }
+  .wechat-product-wsb .pic-item img {
+    width: 6.00rem;
+    height: 5.35rem;
+    float: right;
+    margin-right: 2px; }
+  .wechat-product-wsb .pic-item .text {
+    top: 2.65rem;
+    left: 0.50rem; }
+  .wechat-product-wsb .show-pic {
+    text-align: center;
+    margin-top: 0.50rem; }
+  .wechat-product-wsb .show-pic img {
+    width: 6.40rem;
+    height: 4.66rem; }
+  .wechat-product-wsb .return-top img {
+    width: 100%;
+    height: 0.84rem; }

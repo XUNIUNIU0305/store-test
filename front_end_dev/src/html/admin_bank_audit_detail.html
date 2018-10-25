@@ -1,0 +1,177 @@
+@@include('head.inc')
+<!-- header start -->
+<header class="admin-frame-header">
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#top">
+                <img alt="logo" src="/images/logo_white.png" height="24">
+            </a>
+        </div>
+        <ul class="nav navbar-nav navbar-left">
+            <li>管理控制中心</li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                476644346@qq.com
+            </li>
+            <li>
+                <a href="javascript:void(0)">退出</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<!-- header end -->
+<!-- aside nav start -->
+<aside class="admin-frame-aside" id="aside-menu">
+    <ul class="nav nav-pills nav-stacked">
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_1">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_2">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_3">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+    </ul>
+    <ul id="aside_menu_1" class="list-unstyled child-list collapse">
+        <li class="active"><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+    </ul>
+    <ul id="aside_menu_2" class="list-unstyled child-list collapse">
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+    </ul>
+    <ul id="aside_menu_3" class="list-unstyled child-list collapse">
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+    </ul>
+</aside>
+<!-- aside nav end -->
+<!-- main area start -->
+<div class="admin-frame-main">
+    <div class="admin-main-wrap">
+        <div class="bank-audit-detail">
+            <div class="pay-box">
+                <div class="form-inline clearfix collapse" id="collapseExample">
+                    <div class="form-group pull-left">
+                        <label for="">充值金额：</label>
+                        <input type="text" class="form-control">&nbsp;元
+                    </div>
+                    <div class="form-group pull-left">
+                        <label for="">验证码：</label>
+                        <input type="text" class="form-control">
+                        <span class="btn btn-code">获取验证码</span>
+                    </div>
+                    <div class="form-group pull-left">
+                        <span class="btn btn-danger btn-money">确定充值</span>
+                    </div>
+                </div>
+                <div class="pay-handle">
+                    <span class="h4">账户余额：8000.00</span>
+                    <span class="go-pay" role="button" data-toggle="collapse" href="#collapseExample">去充值<span class="icon">&gt;</span></span>
+                </div>
+            </div>
+            <div class="title"><span class="btn">返回列表</span></div>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>银行</td>
+                        <td>南京银行</td>
+                    </tr>
+                    <tr>
+                        <td>开户支行</td>
+                        <td>三门路支行</td>
+                    </tr>
+                    <tr>
+                        <td>银行卡号</td>
+                        <td>1651651651651***45</td>
+                    </tr>
+                    <tr>
+                        <td>运营商名称</td>
+                        <td>上海宝山区运营商</td>
+                    </tr>
+                    <tr>
+                        <td>实收金额</td>
+                        <td>15115.15</td>
+                    </tr>
+                    <tr>
+                        <td>服务费</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>提现金额</td>
+                        <td>1212.00</td>
+                    </tr>
+                    <tr>
+                        <td>留言板</td>
+                        <td>上海宝山区运营商</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="handle-box">
+                <span class="btn btn-danger">通过</span>
+                <span class="btn btn-danger">驳回</span>
+            </p>
+        </div>
+    </div>
+</div>
+<div class="apx-modal-admin-alert modal fade admin-management" id="apxModalAdminAlertReject" tabindex="-1">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span></a>
+                <h4 class="modal-title">提示信息</h4>
+            </div>
+            <div class="modal-body management-textarea">
+                <div class="form">
+                    <div class="form-group form-group-sm">
+                        <p class="h4 text-center">操作成功！<span id="J_second">4</span>s后返回列表页！</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-lg btn-danger">立即返回</button>
+                <button type="button" class="btn btn-lg btn-default" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- main area start -->
+@@include('footer_admin.inc')
+<script type="text/javascript">
+    $('#collapseExample').on('hidden.bs.collapse', function () {
+        $('.go-pay').removeClass('active')
+    }).on('show.bs.collapse', function() {
+        $('.go-pay').addClass('active')
+    })
+    var timer;
+    $('#apxModalAdminAlertReject').on('show.bs.modal', function() {
+        var cont = 4;
+        timer = setInterval(function() {
+            cont--;
+            $('#J_second').html(cont);
+            if (cont === 0) {
+                alert(1)
+                clearInterval(timer)
+            }
+        }, 1000)
+    }).on('hidden.bs.modal', function() {
+        clearInterval(timer)
+    })
+    $('#apxModalAdminAlertReject').modal('show');
+</script>

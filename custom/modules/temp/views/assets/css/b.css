@@ -1,0 +1,197 @@
+body {
+  overflow-x: hidden; }
+
+.bg-muted {
+  background: #f2f2f2; }
+
+.table-fix {
+  table-layout: fixed; }
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.container {
+  width: 1190px;
+  max-width: none !important; }
+
+.high-lighted {
+  color: #df483d; }
+
+.custom-account-view {
+  min-height: 100vh;
+  background: #f6f6f6; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0; }
+
+.brand-activity-bill img {
+  max-width: 100%;
+  vertical-align: top; }
+
+.brand-activity-bill .bill-container {
+  overflow: hidden;
+  background-color: #d6f2fd; }
+  .brand-activity-bill .bill-container .big-bg {
+    position: absolute; }
+
+.brand-activity-bill .bill-product {
+  width: 1028px;
+  margin: 0 auto; }
+  .brand-activity-bill .bill-product > img {
+    -webkit-transform: translatey(45px);
+            transform: translatey(45px); }
+  .brand-activity-bill .bill-product .item {
+    position: relative;
+    background: #abe7ff;
+    margin: 45px 0;
+    height: 384px;
+    margin-bottom: 89px; }
+    .brand-activity-bill .bill-product .item .img {
+      position: absolute;
+      left: -72px;
+      top: -57px; }
+      .brand-activity-bill .bill-product .item .img.img-2 {
+        left: -110px;
+        top: -47px; }
+      .brand-activity-bill .bill-product .item .img.img-3 {
+        left: -115px;
+        top: -27px; }
+    .brand-activity-bill .bill-product .item .text {
+      padding-left: 460px; }
+      .brand-activity-bill .bill-product .item .text .h1 {
+        font-size: 34px;
+        color: #1397fc;
+        margin: 10px 0;
+        padding-top: 10px; }
+      .brand-activity-bill .bill-product .item .text .h2 {
+        width: 391px;
+        font-size: 50px;
+        font-weight: 700;
+        margin: 0;
+        padding: 20px 0;
+        text-align: center;
+        color: #24a848;
+        background: url("/images/activity-bill/bg_greentea.png") no-repeat center; }
+      .brand-activity-bill .bill-product .item .text .detail {
+        font-size: 32px;
+        color: #1397fc; }
+        .brand-activity-bill .bill-product .item .text .detail i {
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          background: #1397fc;
+          border-radius: 30px;
+          vertical-align: middle;
+          margin-right: 10px; }
+        .brand-activity-bill .bill-product .item .text .detail span {
+          padding-right: 20px; }
+      .brand-activity-bill .bill-product .item .text .btn {
+        font-size: 38px;
+        line-height: 58px;
+        background: #1397fc;
+        border-radius: 50px;
+        text-align: center;
+        color: #fff;
+        padding: 0 30px;
+        position: absolute;
+        bottom: 20px; }
+      .brand-activity-bill .bill-product .item .text.text-2 .h2 {
+        width: 391px;
+        font-size: 50px;
+        font-weight: 700;
+        margin: 0;
+        padding: 20px 0;
+        text-align: center;
+        text-indent: 50px;
+        color: #f6d107;
+        background: url("/images/activity-bill/bg_lemon.png") no-repeat center; }
+      .brand-activity-bill .bill-product .item .text.text-2 .detail {
+        margin-top: 10px; }
+      .brand-activity-bill .bill-product .item .text.text-3 .h2 {
+        width: 500px;
+        font-size: 50px;
+        font-weight: 700;
+        margin: 0;
+        padding-bottom: 40px;
+        text-align: center;
+        color: #fff;
+        background: url("/images/activity-bill/bg_airsponge.png") no-repeat center bottom;
+        background-size: 100%; }
+      .brand-activity-bill .bill-product .item .text.text-3 .detail {
+        margin-top: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        .brand-activity-bill .bill-product .item .text.text-3 .detail i {
+          width: 46px;
+          height: 40px;
+          border-radius: 0;
+          background: url("/images/activity-bill/chose.png") no-repeat left center; }
+        .brand-activity-bill .bill-product .item .text.text-3 .detail span {
+          padding-right: 30px;
+          -webkit-box-flex: 0;
+              -ms-flex: 0 0 33%;
+                  flex: 0 0 33%; }
+    .brand-activity-bill .bill-product .item .bottom-img {
+      position: absolute;
+      left: 84px;
+      bottom: -92px;
+      z-index: 2; }
+    .brand-activity-bill .bill-product .item.right .bottom-img {
+      left: 855px; }
+
+.brand-activity-bill .br {
+  background-color: #d6f2fd; }
+
+.brand-activity-bill .bg-box {
+  background-image: linear-gradient(0deg, #c6efff 0%, #89deff 100%);
+  overflow: hidden; }
+
+.brand-activity-bill .activity-explain {
+  position: relative;
+  width: 1190px;
+  margin: 20px auto; }
+  .brand-activity-bill .activity-explain .content {
+    padding: 60px;
+    background-color: #d6f2fd;
+    font-size: 20px;
+    color: #1397fc; }
+    .brand-activity-bill .activity-explain .content span {
+      color: #ee585d; }
+    .brand-activity-bill .activity-explain .content .title {
+      height: 166px;
+      padding: 25px 0;
+      padding-left: 240px;
+      background: url("/images/activity-bill/decpration_boxes.png") no-repeat left center;
+      background-size: 200px 166px;
+      font-size: 24px; }
+  .brand-activity-bill .activity-explain .detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .brand-activity-bill .activity-explain .detail .item {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 50%;
+              flex: 0 0 50%;
+      padding: 10px 2%; }
+      .brand-activity-bill .activity-explain .detail .item .tip {
+        font-size: 20px;
+        color: #ff84af;
+        height: 54px;
+        line-height: 54px;
+        background: url("/images/activity-bill/bg_question.png") no-repeat left center; }
+        .brand-activity-bill .activity-explain .detail .item .tip span {
+          color: #fff;
+          font-size: 24px;
+          display: inline-block;
+          width: 54px;
+          text-align: center;
+          margin-right: 10px; }

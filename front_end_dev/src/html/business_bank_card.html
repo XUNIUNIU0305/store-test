@@ -1,0 +1,186 @@
+@@include('head.inc')
+<!-- header start -->
+<header class="business-frame-header">
+    <nav class="navbar navbar-default">
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <i class="glyphicon glyphicon-time"></i>2005-11-11 19:38:07
+            </li>
+            <li>
+                <a href="javascript:void(0)"><i class="glyphicon glyphicon-wrench"></i>设置</a>
+            </li>
+            <li>
+                <i class="glyphicon glyphicon-map-marker"></i>上海松江
+            </li>
+            <li>
+                <i class="glyphicon glyphicon-user"></i>476644346@qq.com
+            </li>
+            <li>
+                <a href="javascript:void(0)"><i class="glyphicon glyphicon-off"></i>退出</a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="sub-nav">
+        <div class="pull-left">
+            ◀
+        </div>
+        <ul class="list-inline">
+            <li>品牌馆 <span>&times;</span></li>
+            <li class="active">品牌馆 <span>&times;</span></li>
+            <li>品牌馆 <span>&times;</span></li>
+        </ul>
+        <div class="pull-right">
+            ▶
+        </div>
+    </nav>
+</header>
+<!-- header end -->
+<!-- aside nav start -->
+<aside class="business-frame-aside">
+    <div class="aside-logo">
+        <img alt="logo" src="/images/logo_white.png" height="24">
+    </div>
+    <div class="aside-list">
+        <a data-toggle="collapse" href="#aside_panel_1" class="collapsed">
+            <i class="glyphicon glyphicon-home"></i> 主菜单#1 <i class="glyphicon glyphicon-chevron-down"></i>
+        </a>
+        <div class="collapse" id="aside_panel_1">
+            <ul class="list-unstyled clearfix">
+                <li class="active">
+                    <a href="#">子菜单#1</a>
+                </li>
+                <li>
+                    <a href="#">子菜单#2</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="aside-list">
+        <a data-toggle="collapse" href="#aside_panel_2" class="">
+            <i class="glyphicon glyphicon-tags"></i> 主菜单#2 <i class="glyphicon glyphicon-chevron-down"></i>
+        </a>
+        <div class="collapse in" id="aside_panel_2">
+            <ul class="list-unstyled clearfix">
+                <li class="active">
+                    <a href="#">子菜单#1</a>
+                </li>
+                <li>
+                    <a href="#">子菜单#2</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="aside-list">
+        <a data-toggle="collapse" href="#aside_panel_3" class="collapsed">
+            <i class="glyphicon glyphicon-star-empty"></i> 主菜单#3 <i class="glyphicon glyphicon-chevron-down"></i>
+        </a>
+        <div class="collapse" id="aside_panel_3">
+            <ul class="list-unstyled clearfix">
+                <li class="active">
+                    <a href="#">子菜单#1</a>
+                </li>
+                <li>
+                    <a href="#">子菜单#2</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</aside>
+<!-- aside nav end -->
+<!-- main area start -->
+<div class="business-frame-main">
+    <div class="business-main-wrap">
+        <div class="business-bank-card">
+            <div class="title">
+                我的银行卡
+                <p class="tip">
+                    如何绑定新卡？
+                    <span>每个账户限绑定一张默认银行卡，如需更换，首先点击下方“解除绑定”按钮进行解除此卡信息！</span>
+                </p>
+            </div>
+            <div class="bank-card">
+                <a href="" class="hidden">
+                    <div class="card">
+                        <p>添加新的银行卡</p>
+                    </div>
+                </a>
+                <div class="have-card">
+                    <div class="head clearfix">
+                        <div class="logo pull-left">
+                            <img src="/images/bank/jianshe_logo.png">
+                        </div>
+                        <div class="bank-name pull-left">
+                            <p>中国建设银行</p>
+                            <p>个人账户</p>
+                        </div>
+                        <span class="status text-danger pull-right">未激活</span>
+                    </div>
+                    <p class="number">4866*********8832</p>
+                    <div class="detail clearfix">
+                        <div class="pull-left">
+                            <p>归属地区</p>
+                            <p class="h4">上海浦东</p>
+                        </div>
+                        <div class="pull-left">
+                            <p>开户支行</p>
+                            <p class="h4">北蔡支行</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="handle-box">
+                <span class="btn btn-yellow">激活此卡</span>
+                <span class="btn btn-yellow">解除绑定</span>
+            </div>
+            <div class="handle-box">
+                <div class="form-group">
+                    <label>请输入金额</label>
+                    <input type="text" class="form-control" placeholder="请输入金额">
+                    <span class="btn btn-default">取消</span>
+                    <span class="btn btn-primary">确定</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="apx-modal-business-alert modal fade" tabindex="-1" role="dialog" id="modalBandkConfirm">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content modal-sm">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">提示窗口</h4>
+            </div>
+            <div class="modal-body">
+                <p>我是提示文字</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="apx-modal-business-alert modal fade bank-modal-card" tabindex="-1" role="dialog" id="modalBandkTip">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content modal-sm">
+            <div class="modal-header hidden">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">提示窗口</h4>
+            </div>
+            <div class="modal-body">
+                <img src="/images/bank/disconnect_icon.png">
+                <p class="h3">解除绑定？</p>
+                <p class="h4" style="margin: 0 20px;">您确定解除绑定的银行卡吗？解除后不可恢复，解除后可添加一张新的卡片信息！</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('business_footer.inc')
+<script type="text/javascript">
+    // $('#modalBandkConfirm').modal('show');
+    $('#modalBandkTip').modal('show');
+</script>

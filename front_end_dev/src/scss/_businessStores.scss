@@ -1,0 +1,100 @@
+.business-stores {
+    width: 98%;
+    min-width: 1100px;
+    margin: 0 auto;
+    .business-stores-top {
+        border-bottom: 8px solid #e9eef2;
+        .form-group {
+            margin: 20px 0;
+            .dropdown-toggle {
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+            &.error {
+                .error-msg {
+                    display: block;
+                }
+            }
+            .input-group {
+                float: right;
+                width: 340px;
+                margin: 10px 0;
+                input {
+                    height: 34px;
+                }
+                .btn-search {
+                    border: 1px solid #0080ff;
+                    background-color: #0080ff;
+                    color: #fff;
+                }
+            }
+        }
+        .form-control {
+            color: #333;
+        }
+        .error-msg {
+            color: #cf4d44;
+            display: none;
+            line-height: 1;
+            margin-top: 10px;
+        }
+        .btn-business {
+            background-color: #0080ff;
+            color: #fff;
+            border-radius: 15px;
+            font-size: 12px;
+            float: right;
+        }
+    }
+    .business-account-list {
+        .header {
+            height: 50px;
+            font-size: 14px;
+            text-align: center;
+            span {
+                font-weight: 700;
+                padding-left: 30px;
+                line-height: 50px;
+            }
+            .btn-business {
+                width: 70px;
+                background-color: #0080ff;
+                color: #fff;
+                border-radius: 15px;
+                font-size: 12px;
+                float: right;
+                margin-right: 30px;
+                margin-top: 10px;
+            }
+        }
+        .list-content {
+            margin: 20px 0;
+            height: auto;
+            .store-list {
+                width: 100%;
+                text-align: center;
+                th {
+                    text-align: center;
+                    font-size: 18px;
+                    font-weight: normal;
+                    background-color: #f8f9fa;
+                }
+                td,
+                th {
+                    line-height: 40px;
+                    border: 1px solid #d9d9d9;
+                }
+                tbody {
+                    tr {
+                        &:nth-child(2n) {
+                            background-color: #f8f9fa;
+                        }
+                        a {
+                            color: #459ae9;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

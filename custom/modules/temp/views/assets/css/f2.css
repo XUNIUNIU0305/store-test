@@ -1,0 +1,284 @@
+ul, ol, li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a:hover {
+  text-decoration: none; }
+
+.electronic-branch-field-box {
+  background: #000036 url("/images/electronic_branch_field/bg.png") no-repeat;
+  background-size: 1920px auto;
+  padding-bottom: 43px;
+  overflow: hidden; }
+  .electronic-branch-field-box .top-pic {
+    height: 1060px;
+    background: url("/images/electronic_branch_field/banner.jpg") no-repeat center top;
+    background-size: 1920px auto; }
+  .electronic-branch-field-box .electronic-branch-field {
+    width: 1100px;
+    margin: 0 auto;
+    position: relative; }
+    .electronic-branch-field-box .electronic-branch-field .collage-special-nav {
+      position: fixed;
+      top: 12%;
+      right: 0;
+      margin-right: -730px; }
+      .electronic-branch-field-box .electronic-branch-field .collage-special-nav-pic {
+        margin-bottom: -30px; }
+      .electronic-branch-field-box .electronic-branch-field .collage-special-nav-list {
+        padding-top: 32px;
+        background-color: #de0068;
+        border-radius: 15px; }
+        .electronic-branch-field-box .electronic-branch-field .collage-special-nav-list > li {
+          padding: 10px 10px 0 10px;
+          font-size: 20px;
+          text-align: center; }
+          .electronic-branch-field-box .electronic-branch-field .collage-special-nav-list > li.main-venue {
+            padding-left: 0;
+            padding-right: 0;
+            background-color: #b20355;
+            border-radius: 0 0 15px 15px;
+            margin-top: -2px; }
+            .electronic-branch-field-box .electronic-branch-field .collage-special-nav-list > li.main-venue > a {
+              border-bottom-style: none;
+              background: url("/images/electronic_branch_field/back_icon.png") no-repeat 30px 5px;
+              padding-left: 20px; }
+          .electronic-branch-field-box .electronic-branch-field .collage-special-nav-list > li > a {
+            color: #fff;
+            display: block;
+            border-bottom: 2px solid #b70257;
+            padding-bottom: 16px; }
+    .electronic-branch-field-box .electronic-branch-field .time-limit {
+      width: 1100px;
+      height: 752px;
+      background: url("/images/electronic_branch_field/bg1.png") no-repeat;
+      background-size: 1100px auto;
+      position: relative; }
+      .electronic-branch-field-box .electronic-branch-field .time-limit-alone {
+        margin-top: -340px; }
+      .electronic-branch-field-box .electronic-branch-field .time-limit .time-limit-nav {
+        width: 644px;
+        height: 36px;
+        padding: 4px 26px;
+        background-color: #fff;
+        border-radius: 20px;
+        position: absolute;
+        top: 128px;
+        left: 228px; }
+        .electronic-branch-field-box .electronic-branch-field .time-limit .time-limit-nav > li {
+          float: left;
+          color: #fff;
+          width: 136px;
+          height: 28px;
+          line-height: 28px;
+          font-size: 24px;
+          text-align: center;
+          border-radius: 20px;
+          background-color: rgba(249, 0, 0, 0.5);
+          letter-spacing: 2px;
+          cursor: pointer; }
+          .electronic-branch-field-box .electronic-branch-field .time-limit .time-limit-nav > li:nth-child(2) {
+            margin: 0 92px; }
+          .electronic-branch-field-box .electronic-branch-field .time-limit .time-limit-nav > li.active {
+            background-color: #f90000; }
+      .electronic-branch-field-box .electronic-branch-field .time-limit > div .time-limit-product {
+        padding: 0 35px;
+        position: absolute;
+        top: 210px;
+        left: 0; }
+        .electronic-branch-field-box .electronic-branch-field .time-limit > div .time-limit-product > ul .product-item {
+          float: left;
+          width: 250px;
+          height: 241px;
+          background-color: #fff;
+          margin-left: 10px; }
+          .electronic-branch-field-box .electronic-branch-field .time-limit > div .time-limit-product > ul .product-item-cont {
+            display: block;
+            }
+            .electronic-branch-field-box .electronic-branch-field .time-limit > div .time-limit-product > ul .product-item-cont > img {
+              width: 100%;
+              height: 149px; }
+          .electronic-branch-field-box .electronic-branch-field .time-limit > div .time-limit-product > ul .product-item:nth-child(1) {
+            margin-left: 0;
+            height: 493px; }
+            .electronic-branch-field-box .electronic-branch-field .time-limit > div .time-limit-product > ul .product-item:nth-child(1) > a {
+              padding: 126px 10px; }
+          .electronic-branch-field-box .electronic-branch-field .time-limit > div .time-limit-product > ul .product-item:nth-child(n+5) {
+            margin-top: 11px; }
+          .electronic-branch-field-box .electronic-branch-field .time-limit > div .time-limit-product > ul .product-item > span {
+            display: inline-block;
+            width: 100%;
+            height: 24px;
+            text-align: center;
+            background-color: #fff;
+            padding-bottom: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap; }
+          .electronic-branch-field-box .electronic-branch-field .time-limit > div .time-limit-product > ul .product-item-describe {
+            color: #fff;
+            height: 63px;
+            background-color: #FF0033; }
+            .electronic-branch-field-box .electronic-branch-field .time-limit > div .time-limit-product > ul .product-item-describe > a {
+              color: #fff; }
+            .electronic-branch-field-box .electronic-branch-field .time-limit > div .time-limit-product > ul .product-item-describe-pic {
+              margin-top: 8px;
+              margin-left: 6px;
+              vertical-align: top; }
+            .electronic-branch-field-box .electronic-branch-field .time-limit > div .time-limit-product > ul .product-item-describe .describe-price {
+              font-size: 26px; }
+              .electronic-branch-field-box .electronic-branch-field .time-limit > div .time-limit-product > ul .product-item-describe .describe-price > span {
+                font-weight: bolder;
+                margin-left: -5px; }
+            .electronic-branch-field-box .electronic-branch-field .time-limit > div .time-limit-product > ul .product-item-describe .describe-purchase {
+              float: right;
+              margin-top: 10px;
+              margin-right: 6px;
+              font-weight: bolder;
+              font-size: 16px; }
+            .electronic-branch-field-box .electronic-branch-field .time-limit > div .time-limit-product > ul .product-item-describe-number {
+              color: #FFACBD;
+              margin-left: 15px; }
+              .electronic-branch-field-box .electronic-branch-field .time-limit > div .time-limit-product > ul .product-item-describe-number .describe-limit {
+                color: #fff;
+                float: right;
+                margin-right: 36px;
+                font-size: 12px; }
+    .electronic-branch-field-box .electronic-branch-field .star-product {
+      margin-top: 80px;
+      background-image: url("/images/electronic_branch_field/bg2.png"); }
+      .electronic-branch-field-box .electronic-branch-field .star-product-cont {
+        padding: 114px 16px 0 16px; }
+        .electronic-branch-field-box .electronic-branch-field .star-product-cont .star-item {
+          float: left;
+          margin-left: 8px; }
+          .electronic-branch-field-box .electronic-branch-field .star-product-cont .star-item > a {
+            display: block; }
+          .electronic-branch-field-box .electronic-branch-field .star-product-cont .star-item:nth-child(1) {
+            margin-left: 0; }
+          .electronic-branch-field-box .electronic-branch-field .star-product-cont .star-item:nth-child(n+4) {
+            margin-top: 10px; }
+    .electronic-branch-field-box .electronic-branch-field .collage-special-box {
+      margin-top: 75px;
+      background-image: url("/images/electronic_branch_field/bg3.png");
+      position: relative; }
+      .electronic-branch-field-box .electronic-branch-field .collage-special-box .boutique-regiment-nav {
+        position: absolute;
+        top: 106px;
+        left: 100px;
+        height: 50px; }
+        .electronic-branch-field-box .electronic-branch-field .collage-special-box .boutique-regiment-nav > li {
+          float: left;
+          width: 260px;
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          border-radius: 30px;
+          cursor: pointer; }
+          .electronic-branch-field-box .electronic-branch-field .collage-special-box .boutique-regiment-nav > li .group-tit {
+            color: #fff;
+            font-size: 28px;
+            font-weight: bolder; }
+            .electronic-branch-field-box .electronic-branch-field .collage-special-box .boutique-regiment-nav > li .group-tit > span {
+              color: #ccc;
+              font-size: 24px;
+              font-weight: normal; }
+          .electronic-branch-field-box .electronic-branch-field .collage-special-box .boutique-regiment-nav > li.jpt {
+            background-color: #CC3399; }
+          .electronic-branch-field-box .electronic-branch-field .collage-special-box .boutique-regiment-nav > li.lbt {
+            background-color: #FF6600;
+            margin: 0 60px; }
+          .electronic-branch-field-box .electronic-branch-field .collage-special-box .boutique-regiment-nav > li.cjt {
+            background-color: #FF0000; }
+      .electronic-branch-field-box .electronic-branch-field .collage-special-box > div .boutique-regiment-cont {
+        position: absolute;
+        top: 196px;
+        left: 0;
+        padding: 0 18px; }
+        .electronic-branch-field-box .electronic-branch-field .collage-special-box > div .boutique-regiment-cont > ul {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: row;
+              flex-direction: row;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+          .electronic-branch-field-box .electronic-branch-field .collage-special-box > div .boutique-regiment-cont > ul .goods-item {
+            width: 260px;
+            background-color: #fff;
+            margin-bottom: 8px; }
+            .electronic-branch-field-box .electronic-branch-field .collage-special-box > div .boutique-regiment-cont > ul .goods-item > a {
+              display: block; }
+              .electronic-branch-field-box .electronic-branch-field .collage-special-box > div .boutique-regiment-cont > ul .goods-item > a .goods-item-txt {
+                display: block;
+                padding: 12px 8px 10px 8px;
+                height: 30px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap; }
+              .electronic-branch-field-box .electronic-branch-field .collage-special-box > div .boutique-regiment-cont > ul .goods-item > a .goods-item-pic {
+                display: block;
+                width: 100%;
+                height: 157px;
+            }
+              .electronic-branch-field-box .electronic-branch-field .collage-special-box > div .boutique-regiment-cont > ul .goods-item > a .goods-item-total {
+                color: #fff;
+                height: 65px;
+                line-height: 65px;
+                background: url("/images/electronic_branch_field/b.jpg") no-repeat;
+                padding: 4px 0 5px 9px; }
+                .electronic-branch-field-box .electronic-branch-field .collage-special-box > div .boutique-regiment-cont > ul .goods-item > a .goods-item-total .original-price {
+                  font-size: 18px; }
+                .electronic-branch-field-box .electronic-branch-field .collage-special-box > div .boutique-regiment-cont > ul .goods-item > a .goods-item-total > div {
+                  width: 148px;
+                  font-size: 14px; }
+                  .electronic-branch-field-box .electronic-branch-field .collage-special-box > div .boutique-regiment-cont > ul .goods-item > a .goods-item-total > div .goods-item-progress {
+                    display: block;
+                    height: 9px;
+                    background-color: #fff;
+                    border-radius: 10px;
+                    margin-top: 4px;
+                    margin-bottom: 2px; }
+                    .electronic-branch-field-box .electronic-branch-field .collage-special-box > div .boutique-regiment-cont > ul .goods-item > a .goods-item-total > div .goods-item-progress > span {
+                      display: block;
+                      width: 88px;
+                      height: 9px;
+                      background-color: #b6b6b6;
+                      border-radius: 10px; }
+                  .electronic-branch-field-box .electronic-branch-field .collage-special-box > div .boutique-regiment-cont > ul .goods-item > a .goods-item-total > div .goods-item-price {
+                    float: right; }
+    .electronic-branch-field-box .electronic-branch-field .brand-activity-box {
+      height: 1047px;
+      margin-top: 90px;
+      background-image: url("/images/electronic_branch_field/bg4.png");
+      position: relative; }
+      .electronic-branch-field-box .electronic-branch-field .brand-activity-box .brand-activity-cont {
+        position: absolute;
+        top: 125px;
+        left: 0;
+        padding: 0 26px; }
+        .electronic-branch-field-box .electronic-branch-field .brand-activity-box .brand-activity-cont > ul {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: row;
+              flex-direction: row;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+          .electronic-branch-field-box .electronic-branch-field .brand-activity-box .brand-activity-cont > ul .brand-activity-item {
+            margin-bottom: 8px; }
+          .electronic-branch-field-box .electronic-branch-field .brand-activity-box .brand-activity-cont > ul > a {
+            display: block; }
+    .electronic-branch-field-box .electronic-branch-field .return-top {
+      display: block;
+      color: #fff;
+      width: 165px;
+      padding: 7px 30px 10px 30px;
+      margin: 18px auto 0;
+      font-size: 24px;
+      background-color: #DE0068;
+      border-radius: 20px;
+      letter-spacing: 2px; }

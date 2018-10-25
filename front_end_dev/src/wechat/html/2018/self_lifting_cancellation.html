@@ -1,0 +1,132 @@
+@@include('../head.inc')
+
+<div class="self-lifting-cancellation-box">
+    <div class="self-lifting-nav">
+        <span class="nav-tit">提货码</span>
+        <div class="nav-prompt">
+            <input class="nav-input" type="text" placeholder="请输入提货码"/>
+            <img class="nav-pic" src="/images/self_lifting_cancellation/scan_icon.png" alt="">
+        </div>
+        <a href="#" class="nav-btn" id="th-btn">提货</a>
+    </div>
+    <div class="filter-cont">
+        <span class="filter-txt" id="filter-txt">按条件筛选</span>
+    </div>
+    <ul class="self-lifting-section">
+        <li class="section-item">
+            <div class="section-tit">
+                <span class="section-txt">团编号</span>
+                <span class="section-txt">434343</span>
+                <span class="section-status">未提货</span>
+            </div>
+            <ul class="attribute-list">
+                <li class="attribute-item">
+                    <span class="attribte-tit">商品名称</span>
+                    <span class="attribute-cont">文本文本文本文本文本文本文本文本文本文本文本文本</span>
+                </li>
+                <li class="attribute-item">
+                    <span class="attribte-tit">商品属性</span>
+                    <span class="attribute-cont">xxxxxxx</span>
+                </li>
+                <li class="attribute-item">
+                    <span class="attribte-tit">门店账号</span>
+                    <span class="attribute-cont">xxxxxxx</span>
+                </li>
+                <li class="attribute-item">
+                    <span class="attribte-tit">手机号</span>
+                    <span class="attribute-cont">xxxxxxx</span>
+                </li>
+                <li class="attribute-item">
+                    <span class="attribte-tit">数量</span>
+                    <span class="attribute-cont">xxxxxxxxx</span>
+                </li>
+                <li class="attribute-item">
+                    <span class="attribte-tit">提货日期</span>
+                    <span class="attribute-cont">xxxxxxxx</span>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <div class="self-lifting-footer">
+        <span class="footer-line"></span>
+        <span class="footer-txt">我是有底线的~</span>
+        <span class="footer-line"></span>
+    </div>
+</div>
+
+<!-- 提货条件筛选 -->
+<div class="condition-screening-box hidden">
+    <div class="condition-screening">
+        <div class="order-status">
+            <span class="status-tit">订单状态</span>
+            <ul class="status-list" id="order-status">
+                <li class="status-item active">全部</li>
+                <li class="status-item">未提货</li>
+                <li class="status-item">部分提货</li>
+                <li class="status-item">全部提货</li>
+            </ul>
+        </div>
+        <div class="order-status">
+            <span class="status-tit">提货日期</span>
+            <ul class="status-list status-date" id="status-date">
+                <li class="status-item active">全部</li>
+                <li class="status-item">0-1个月</li>
+                <li class="status-item">1-3个月</li>
+                <li class="status-item">3-6个月</li>
+                <li class="status-item">6-12个月</li>
+                <li class="status-item">1年</li>
+                <li class="status-item">1年以上</li>
+            </ul>
+        </div>
+        <div class="order-attr">
+            <span class="order-attr-tit">商品名称</span>
+            <input class="order-attr-prompt" type="text" placeholder="请输入商品名称" />
+            <span class="order-attr-tit">拼购编号</span>
+            <input class="order-attr-prompt" type="text" placeholder="请输入拼购编号" />
+            <span class="order-attr-tit">门店账号</span>
+            <input class="order-attr-prompt" type="text" placeholder="请输入门店账号" />
+        </div>
+    </div>
+    <div class="order-footer">
+        <a href="#" class="order-btn btn-reset">重置</a>
+        <a href="#" class="order-btn btn-confirm" id="btn-confirm">确定</a>
+    </div>
+</div>
+
+<!-- 提货核销 -->
+<div class="pick-up-goods hidden">
+    <div class="goods-box">
+        <div class="goods-tit">
+            <span>提货核销</span>
+            <span class="goods-icon" id="goods-icon"></span>
+        </div>
+        <div class="goods-sec">
+            <div class="goods-pic"><img src="" alt=""></div>
+            <div class="goods-cont">
+                <span class="J-txt-1">文本文本文本文本文本文本<br>文本文本</span>
+                <span class="J-txt-2">规格：<span>24</span>瓶/件</span>
+                <span class="J-txt-2">香型：<span>6</span>种香型混合（各4瓶）</span>
+            </div>
+        </div>
+        <div class="goods-attr">
+            <span class="g-tit">订单总数量<span>5单</span></span>
+            <span class="g-tit">可提取数量<span>5件</span></span>
+        </div>
+        <div class="goods-number">
+            <span>提取数量</span>
+            <span class="btn-box">
+                <a class="number-btn" href="#" id="J-del">-</a>
+                <span class="number-btn btn-sty" id="J-number">1</span>
+                <a class="number-btn" href="#" id="J-add">+</a>
+            </span>
+        </div>
+    </div>
+    <div class="goods-footer">
+        <a href="#" class="order-btn btn-reset">重置</a>
+        <a href="#" class="order-btn btn-confirm">确定</a>
+    </div>
+</div>
+
+@@include('../footer.inc')
+
+<script src="/js/2018/self_lifting_cancellation.js"></script>

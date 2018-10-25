@@ -1,0 +1,104 @@
+body {
+  overflow-x: hidden; }
+
+.bg-muted {
+  background: #f2f2f2; }
+
+.table-fix {
+  table-layout: fixed; }
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.container {
+  width: 1190px;
+  max-width: none !important; }
+
+.high-lighted {
+  color: #df483d; }
+
+.admin-bank-audit-list-container {
+  min-width: 1200px; }
+  .admin-bank-audit-list-container .admin-audit-list-title {
+    margin-top: 30px;
+    line-height: 46px;
+    padding: 0 26px;
+    font-size: 14px;
+    background: #e5e5e5;
+    margin-bottom: 20px; }
+    .admin-bank-audit-list-container .admin-audit-list-title.bg-danger {
+      background: #fce7e6; }
+    .admin-bank-audit-list-container .admin-audit-list-title .apx-acc-order-nav {
+      border: 0;
+      margin: 0 -26px;
+      padding: 10px; }
+      .admin-bank-audit-list-container .admin-audit-list-title .apx-acc-order-nav a {
+        line-height: 30px; }
+    .admin-bank-audit-list-container .admin-audit-list-title .btn {
+      border-radius: 0; }
+    .admin-bank-audit-list-container .admin-audit-list-title .nav .pull-left {
+      margin-right: 20px; }
+    .admin-bank-audit-list-container .admin-audit-list-title .nav .btn {
+      border-radius: 4px; }
+    .admin-bank-audit-list-container .admin-audit-list-title .pull-left {
+      padding: 8px 0;
+      line-height: 1; }
+      .admin-bank-audit-list-container .admin-audit-list-title .pull-left .input-group {
+        max-width: 250px;
+        display: inline-table;
+        float: left;
+        margin-right: -2px; }
+        .admin-bank-audit-list-container .admin-audit-list-title .pull-left .input-group .form-control {
+          height: 34px;
+          border-radius: 0; }
+  .admin-bank-audit-list-container .table-panel {
+    border: 1px solid #ccc;
+    font-size: 12px; }
+    .admin-bank-audit-list-container .table-panel.dashed th,
+    .admin-bank-audit-list-container .table-panel.dashed td {
+      position: relative;
+      border-top: 1px dashed #ccc;
+      border-bottom: 1px dashed #ccc;
+      overflow: visible; }
+    .admin-bank-audit-list-container .table-panel thead {
+      background: #e6e6e6; }
+      .admin-bank-audit-list-container .table-panel thead th {
+        text-align: center !important; }
+    .admin-bank-audit-list-container .table-panel tbody tr {
+      cursor: pointer; }
+      .admin-bank-audit-list-container .table-panel tbody tr.active td {
+        background-color: #fce7e6; }
+    .admin-bank-audit-list-container .table-panel tbody td:last-child .link {
+      color: #df483d; }
+    .admin-bank-audit-list-container .table-panel tbody td:nth-child(2) {
+      max-width: 175;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+  .admin-bank-audit-list-container .pay-box {
+    border: 1px solid #fce7e6; }
+    .admin-bank-audit-list-container .pay-box .go-pay {
+      color: #459ae9;
+      margin: 0 20px;
+      cursor: pointer; }
+      .admin-bank-audit-list-container .pay-box .go-pay .icon {
+        font-size: 14px; }
+      .admin-bank-audit-list-container .pay-box .go-pay.active .icon {
+        display: inline-block;
+        -webkit-transform: rotate(-90deg);
+                transform: rotate(-90deg); }
+    .admin-bank-audit-list-container .pay-box .pay-handle {
+      background-color: #fce7e6;
+      padding: 16px 20px; }
+    .admin-bank-audit-list-container .pay-box .form-inline {
+      padding: 2px 0; }
+    .admin-bank-audit-list-container .pay-box .form-group {
+      margin: 10px 15px; }
+      .admin-bank-audit-list-container .pay-box .form-group .btn-code {
+        color: #df483d; }
+      .admin-bank-audit-list-container .pay-box .form-group .btn {
+        border: 1px solid #df483d; }
+    .admin-bank-audit-list-container .pay-box .btn-money {
+      margin-left: 30px; }

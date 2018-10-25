@@ -1,0 +1,101 @@
+.part-of-express {
+  border-bottom: 3px solid #df483d;
+  overflow: hidden;
+}
+.part-of-express li.active {
+  background: #df483d;
+}
+.part-of-express li.active a {
+  color: #fff !important;
+}
+.part-of-express li {
+  border-radius: 4px 4px 0 0;
+  margin-right: 20px;
+  background: #fce7e6;
+}
+.part-of-express li a {
+  border: none !important;
+  background: transparent !important;
+  color: #000;
+}
+
+#search {
+  padding: 15px 0;
+}
+#search > div {
+  position: relative;
+  display: inline-block;
+}
+#search > div > div > ul {
+  position: absolute;
+  width: 100%;
+  max-height: 180px;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  list-style: none;
+  overflow: auto;
+}
+#search > div > div > ul > li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  cursor: pointer;
+}
+#search > div > div > ul > li:hover {
+  background-color: #03a9f4;
+  color: #fff;
+}
+#search > div > div > ul > li:hover span {
+  color: #fff !important;
+}
+#search input {
+  padding-left: 5px;
+}
+#search > button {
+  padding: 3px 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: #df483d;
+  color: #fff;
+}
+
+#settingForExpress table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+#settingForExpress table th,
+#settingForExpress table td {
+  padding: 10px 0;
+  padding-left: 15px;
+}
+#settingForExpress table thead {
+  border-bottom: 1px solid #ccc;
+}
+#settingForExpress table thead button {
+  padding: 0;
+  margin-left: 10px;
+  border: none;
+  border-bottom: 1px solid #df483d;
+  background-color: transparent;
+  color: #df483d;
+  font-size: 12px;
+}
+#settingForExpress table tbody tr {
+  border-bottom: 1px dashed #ccc;
+}
+#settingForExpress table label {
+  cursor: pointer;
+}
+#settingForExpress table label input {
+  margin-right: 10px;
+  cursor: pointer;
+}
+#settingForExpress table tbody button {
+  border: 1px solid #df483d;
+  color: #df483d;
+  background-color: transparent;
+  border-radius: 3px;
+}

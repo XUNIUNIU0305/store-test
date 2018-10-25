@@ -1,0 +1,437 @@
+@@include('head.inc') 
+@@include('banner_seller.inc')
+<div class="container">
+    <div class="row">
+        @@include('seller_aside.inc')
+        <div class="apx-has-seller-aside">
+            <div class="apx-seller-form-wrap clearfix">
+                <div class="apx-seller-form-title">
+                    <i class="glyphicon glyphicon-edit"></i>填写商品信息
+                    <span class="pull-right"><sup class="high-lighted">*</sup>表示该项必填</span>
+                </div>
+                <div class="apx-seller-form-info">
+                    <!-- 左侧信息 -->
+                    <strong>产品信息</strong>
+                    <p>
+                        类目：<span>汽车/用品/配件/改装</span> > <span>车用清洗用品/清洗工具</span> > <span>车用洗车机/设备</span> > <span>安德龙</span>
+                        <a href="#" class="btn btn-xs btn-default">编辑类目</a>
+                    </p>
+                </div>
+                <!-- 表单 -->
+                <form class="apx-seller-form form-horizontal clearfix">
+                    <div class="h4">1. 商品基本信息</div>
+                    <div class="form-group form-group-sm">
+                        <label class="col-xs-1 control-label">商品属性:</label>
+                        <div class="col-xs-11">
+                            <div class="apx-seller-form-box clearfix">
+                                <div class="form-group form-group-sm">
+                                    <p class="form-control-static text-muted">填错商品属性，可能会引起商品下架，影响您的正常销售。请认真准确填写</p>
+                                </div>
+                                <div class="form-group form-group-sm">
+                                    <label for="brand" class="col-xs-1 control-label">品牌:</label>
+                                    <div class="col-xs-5 apx-form-must">
+                                        <select id="brand" class="form-control ">
+                                            <option>AIDIVEI/艾迪威</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <label for="series" class="col-xs-1 control-label">型号:</label>
+                                    <div class="col-xs-5">
+                                        <input type="text" class="form-control" id="series">
+                                    </div>
+                                </div>
+                                <div class="form-group form-group-sm">
+                                    <p class="form-control-static text-muted">如果没有您需要的品牌，您可以点此<a href="">申请添加品牌</a></p>
+                                </div>
+                                <div class="form-group form-group-sm">
+                                    <label for="pattern" class="col-xs-1 control-label">图案:</label>
+                                    <div class="col-xs-5">
+                                        <select id="pattern" class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group form-group-sm">
+                                    <label for="material" class="col-xs-1 control-label">材质:</label>
+                                    <div class="col-xs-5 apx-form-must">
+                                        <select id="material" class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group form-group-sm">
+                                    <label for="service" class="col-xs-1 control-label">服务内容:</label>
+                                    <div class="col-xs-5">
+                                        <select id="service" class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group form-group-sm">
+                                    <label for="type" class="col-xs-1 control-label">贴膜类型:</label>
+                                    <div class="col-xs-5 apx-form-must">
+                                        <select id="type" class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label for="title" class="col-xs-1 control-label">商品标题:</label>
+                        <div class="col-xs-8 apx-form-must">
+                            <input type="text" class="form-control" id="title">
+                        </div>
+                        <div class="col-xs-3">
+                            <p class="form-control-static">还能输入 <span class="high-lighted">30</span> 字</p>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label for="spotlight" class="col-xs-1 control-label">商品卖点:</label>
+                        <div class="col-xs-8">
+                            <textarea rows="3" class="form-control" id="spotlight"></textarea>
+                        </div>
+                        <div class="col-xs-3">
+                            <p class="form-control-static">还能输入 <span class="high-lighted">150</span> 字</p>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label for="price" class="col-xs-1 control-label">一口价:</label>
+                        <div class="col-xs-2 apx-form-must">
+                            <input type="text" class="form-control" id="price">
+                        </div>
+                        <div class="col-xs-1">
+                            <p class="form-control-static">元</p>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label class="col-xs-1 control-label">商品规格:</label>
+                        <div class="col-xs-11">
+                            <div class="apx-seller-form-box clearfix">
+                                <p>颜色分类</p>
+                                <ul class="list-unstyled row">
+                                	<li class="col-xs-3">
+                                	  <input type="checkbox"/><span class="pal pal-0"></span>军绿色
+                                	</li>
+                                	<li class="col-xs-3">
+                                	  <input type="checkbox"/><span class="pal pal-1"></span>天蓝色
+                                	</li>
+                                	<li class="col-xs-3">
+                                	  <input type="checkbox"/><span class="pal pal-2"></span>巧克力色
+                                	</li>
+                                	<li class="col-xs-3">
+                                	  <input type="checkbox"/><span class="pal pal-3"></span>桔色
+                                	</li>
+                                	<li class="col-xs-3">
+                                	  <input type="checkbox"/><span class="pal pal-4"></span>浅灰色
+                                	</li>
+                                	<li class="col-xs-3">
+                                	  <input type="checkbox"/><span class="pal pal-5"></span>浅绿色
+                                	</li>
+                                	<li class="col-xs-3">
+                                	  <input type="checkbox"/><span class="pal pal-6"></span>浅黄色
+                                	</li>
+                                	<li class="col-xs-3">
+                                	  <input type="checkbox"/><span class="pal pal-7"></span>深卡其布色
+                                	</li>
+                                	<li class="col-xs-3">
+                                	  <input type="checkbox"/><span class="pal pal-8"></span>深灰色
+                                	</li>
+                                	<li class="col-xs-3">
+                                	  <input type="checkbox"/><span class="pal pal-9"></span>深紫色
+                                	</li>
+                                	<li class="col-xs-3">
+                                	  <input type="checkbox"/><span class="pal pal-10"></span>深蓝色
+                                	</li>
+                                	<li class="col-xs-3">
+                                	  <input type="checkbox"/><span class="pal pal-11"></span>白色
+                                	</li>
+                                	<li class="col-xs-3">
+                                	  <input type="checkbox"/><span class="pal pal-12"></span>粉红色
+                                	</li>
+                                	<li class="col-xs-3">
+                                	  <input type="checkbox"/><span class="pal pal-13"></span>紫罗兰
+                                	</li>
+                                	<li class="col-xs-3">
+                                	  <input type="checkbox"/><span class="pal pal-14"></span>紫色
+                                	</li>
+                                	<li class="col-xs-3">
+                                	  <input type="checkbox"/><span class="pal pal-15"></span>红色
+                                	</li>
+                                	<li class="col-xs-3">
+                                	  <input type="checkbox"/><span class="pal pal-16"></span>绿色
+                                	</li>
+                                	<li class="col-xs-3">
+                                	  <input type="checkbox"/><span class="pal pal-17"></span>花色
+                                	</li>
+                                	<li class="col-xs-3">
+                                	  <input type="checkbox"/><span class="pal pal-18"></span>蓝色
+                                	</li>
+                                	<li class="col-xs-3">
+                                	  <input type="checkbox"/><span class="pal pal-19"></span>褐色
+                                	</li>
+                                	<li class="col-xs-3">
+                                	  <input type="checkbox"/><span class="pal pal-20"></span>透明
+                                	</li>
+                                	<li class="col-xs-3">
+                                	  <input type="checkbox"/><span class="pal pal-21"></span>酒红色
+                                	</li>
+                                	<li class="col-xs-3">
+                                	  <input type="checkbox"/><span class="pal pal-22"></span>黄色
+                                	</li>
+                                	<li class="col-xs-3">
+                                	  <input type="checkbox"/><span class="pal pal-23"></span>黑色
+                                	</li>
+                                	<li class="col-xs-3">
+                                	  <input type="checkbox"/><span class="pal"></span>全选
+                                	</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label for="ammount" class="col-xs-1 control-label">商品库存:</label>
+                        <div class="col-xs-2 apx-form-must">
+                            <input type="text" class="form-control" id="ammount">
+                        </div>
+                        <div class="col-xs-1">
+                            <p class="form-control-static">件</p>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label for="locale" class="col-xs-1 control-label">采购地:</label>
+                        <div class="col-xs-11 apx-form-must">
+                            <label class="radio-inline">
+                                <input type="radio" name="locale" id="inlineRadio1" value="option1"> 国内
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="locale" id="inlineRadio2" value="option2"> 海外及港澳台
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label for="code" class="col-xs-1 control-label">商品编码:</label>
+                        <div class="col-xs-5">
+                            <input type="text" class="form-control" id="code">
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label for="qrcode" class="col-xs-1 control-label">商品条形码:</label>
+                        <div class="col-xs-5">
+                            <input type="text" class="form-control" id="qrcode">
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label class="col-xs-1 control-label">商品图片:</label>
+                        <div class="col-xs-11">
+                            <div class="apx-seller-form-box pic-box clearfix">
+                                <div class="title">本地上传</div>
+                                <div class="text-center">选择本地图片:
+                                <span class="input_file_btn btn btn-default btn-sm">
+                                	文件上传
+                                	<input type="file" name="img_upload" id="img_upload">
+                                </span>
+                                
+                                <ol class="text-muted text-left">
+                                    <li>本地上传图片大小不能超过3M。</li>
+                                    <li>本类目下您最多可以上传5张图片。</li>
+                                </ol>
+                                </div>
+                                <div class="pic-box-gallary">
+                                    <p><span class="high-lighted">700*700</span>以上图片可以在详情页主图提供图片放大功能</p>
+                                    <div class="pic-box-item">
+                                        <!-- <img src="#" alt="" class="img-responsive"> -->
+                                    </div>
+                                    <div class="pic-box-item">
+                                        <!-- <img src="#" alt="" class="img-responsive"> -->
+                                    </div>
+                                    <div class="pic-box-item">
+                                        <!-- <img src="#" alt="" class="img-responsive"> -->
+                                    </div>
+                                    <div class="pic-box-item">
+                                        <!-- <img src="#" alt="" class="img-responsive"> -->
+                                    </div>
+                                    <div class="pic-box-item">
+                                        <!-- <img src="#" alt="" class="img-responsive"> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label class="col-xs-1 control-label">商品描述:</label>
+                        <div class="col-xs-11 edit-box">
+                            <!--nav tabs-->
+                            <ul class="apx-seller-form-box clearfix nav nav-tabs">
+                                <li class="editor-title active">
+                                    <a href="#tab_pc" data-toggle="tab">电脑端</a>
+                                </li>
+                                <li class="editor-title">
+                                    <a href="#tab_mobile" data-toggle="tab">手机端</a>
+                                </li>
+                            </ul>
+                            <label class="radio-inline">
+                                <input type="radio" name="editor" id="editor" value="editor" checked> 文本编辑
+                            </label>
+                            <!--tabs-->
+                            <div class="tab-content">
+                                <div id="tab_pc" class="tab-pane fade in active">
+                                    <textarea id="apx_editor" name="content" style="width: 100%; height: 420px">
+                                    </textarea>
+                    		        <span>当前屏数: 0 <i class="glyphicon glyphicon-question-sign text-success"></i></span>
+                                </div>
+                                <div id="tab_mobile" class="tab-pane fade">
+                                    <textarea id="apx_editor_mobile" name="content" style="width: 100%;height: 420px">
+                                    </textarea>
+                                    <span>当前屏数: 0 <i class="glyphicon glyphicon-question-sign text-success"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h4">2. 商品物流及售后</div>
+                    <div class="form-group form-group-sm">
+                        <label for="code" class="col-xs-1 control-label apx-form-must">提取方式:</label>
+                        <div class="col-xs-2">
+                            <div class="checkbox"><input type="checkbox">运费设置</div>
+                        </div>
+                        <div class="col-xs-4">
+                            <select id="template" class="form-control">
+                                <option>请选择运费模板</option>
+                                <option>2</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-2">
+                            <a href="#" class="btn btn-default btn-sm btn-block">新建运费模板</a>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label for="code" class="col-xs-1 control-label apx-form-must">提取方式:</label>
+                        <div class="col-xs-2">
+                            <div class="checkbox"><input type="checkbox">运费设置</div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="form-control-static"><a href="#">电子凭证管理后台</a></div>
+                        </div>
+                        <div class="col-xs-5">
+                            <div class="form-control-static"><a href="#">了解详情</a></div>
+                        </div>
+                        <div class="col-xs-6 col-xs-offset-1">
+	                        <div class="apx-form-border-box clearfix">
+	                            <div class="form-group form-group-sm">
+	                                <label for="body" class="col-xs-4 control-label">物流体积(m<sup>3</sup>):</label>
+	                                <div class="col-xs-8">
+	                                    <input type="text" class="form-control" id="body">
+	                                </div>
+	                            </div>
+	                            <div class="form-group form-group-sm">
+	                                <label for="weight" class="col-xs-4 control-label">物流重量(Kg):</label>
+	                                <div class="col-xs-8">
+	                                    <input type="text" class="form-control" id="weight">
+	                                </div>
+	                            </div>
+	                        </div>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label for="checklist" class="col-xs-1 control-label">发票:</label>
+                        <div class="col-xs-11 apx-form-must">
+                            <label class="radio-inline">
+                                <input type="radio" name="checklist" id="checklist_yes" value="option1"> 无
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="checklist" id="checklist_no" value="option2"> 有
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label for="ensurance" class="col-xs-1 control-label">保修:</label>
+                        <div class="col-xs-11 apx-form-must">
+                            <label class="radio-inline">
+                                <input type="radio" name="ensurance" id="ensurance_yes" value="option1"> 无
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="ensurance" id="ensurance_no" value="option2"> 有
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label for="countWay" class="col-xs-1 control-label">库存计数:</label>
+                        <div class="col-xs-11 apx-form-must">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="countWay" id="countWay1" value="option1"> 拍下减库存
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="countWay" id="countWay2" value="option2"> 付款减库存
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h4">3. 其他信息</div>
+                    <div class="form-group form-group-sm">
+                        <label for="startTime" class="col-xs-1 control-label">开始时间:</label>
+                        <div class="col-xs-11 apx-form-must">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="startTime" id="startTime1" value="option1"> 立即
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="startTime" id="startTime2" value="option2"> 设定
+                                    <select>
+                                    	<option>2017年10月27日</option>
+                                    </select>
+                                    <select>
+                                    	<option>22</option>
+                                    </select>
+                                    时
+                                    <select>
+                                    	<option>22</option>
+                                    </select>
+                                    分
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="startTime" id="startTime3" value="option3"> 放入仓库
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-5 col-sm-2">
+                            <button type="submit" class="btn btn-primary btn-block">发布</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 新增商品关键字添加 -->
+    <div class="goods-key-words">
+        <p class="key-title">商品关键字</p>
+        <div class="key-ipt-list">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+        </div>
+        <span class="button key-words-btn">确认修改</span>
+    </div>
+    <!-- 新增商品关键字添加结束 -->
+</div>
+<script src="/scripts/vender/kindeditor/kindeditor-all-min.js"></script>
+@@include('footer_seller.inc')

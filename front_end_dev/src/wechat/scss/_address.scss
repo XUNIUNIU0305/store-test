@@ -1,0 +1,128 @@
+.wechat-address-container {
+    position: fixed;
+    top: 10px;
+    right: 0;
+    // bottom: 44px;
+    bottom:0;
+    left: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    .address-form {
+        li {
+            line-height: 44px;
+            background: #fff;
+            margin-bottom: 1px;
+            padding: 0 5%;
+            font-size: 16px;
+            display: flex;
+            justify-content: space-between;
+            select {
+                width: 25%;
+                border: 0;
+                background: #fff url('/images/account/arrow-right.png') no-repeat right center;
+                background-size: auto 14px;
+                appearance:none;
+                -moz-appearance:none;
+                -webkit-appearance:none;
+            }
+            &.split {
+                height: 8px;
+                background: transparent;
+            }
+        }
+        label {
+            min-width: 80px;
+        }
+        input,
+        textarea,
+        select {
+            border: 0;
+            flex: 1 1 auto;
+            outline: 0;
+            line-height: normal;
+        }
+        textarea {
+            margin: 11px 0;
+            padding: 0 4px;
+            resize: none;
+        }
+        .switch-btn {
+            align-self: center;
+            min-width: auto;
+        }
+    }
+}
+
+.address-item {
+    background: #fff;
+    margin-bottom: 8px;
+    font-size: 15px;
+    padding: 8px 5% 0;
+    color: #333;
+    &.selected {
+        border-image: repeating-linear-gradient(-45deg, #ff0000 0, #ff0000 1.5em, transparent 0, transparent 3em, #07b6ff 0, #07b6ff 4.5em, transparent 0, transparent 6em) 6 0 0 0/4px;
+    }
+    .title {
+        span.J_mobile {
+            margin-left: 12px;
+            float: right;
+        }
+    }
+    .detail {
+        padding: 8px 0;
+    }
+    .option-bar {
+        display: none;
+        border-top: 1px solid #f2f2f2;
+        &.in {
+            display: flex;
+        }
+        a {
+            max-width: 33.33333%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 44px;
+            position: relative;
+            flex: 1 1 auto;
+            &:first-child {
+                &:before {
+                    width: 0;
+                }
+            }
+            &:nth-child(2), &:nth-child(3) {
+                font-size: 13px;
+            }
+            i {
+                height: 16px;
+                width: 16px;
+                display: inline-block;
+                background-size: contain;
+                margin-right: 8px;
+                background-repeat: no-repeat;
+            }
+        }
+        .default {
+            i {
+                border: 1px solid #f2f2f2;
+                border-radius: 50px;
+            }
+            &.active {
+                color: #ff9100;
+                i {
+                    background-image: url('/images/icons/icon01.png');
+                }
+            }
+        }
+        .edit {
+            i {
+                background-image: url('/images/address/edit.png');
+            }
+        }
+        .delete {
+            i {
+                background-image: url('/images/address/delete.png');
+            }
+        }
+    }
+}

@@ -1,0 +1,131 @@
+@include('head.inc')
+<div class="admin-main-wrap">
+    <!--management main content-->
+    <div class="admin-management-container">
+        <div class="clearfix">
+            用户管理
+            <input type="text" />
+            <button>搜索</button>
+        </div>
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="admin-management-panel">
+                    <div class="header">
+                        <div class="col-xs-12 text-left">用户信息</div>
+                    </div>
+                    <div class="iscroll_container with-header" style="touch-action: none;">
+                        <ul class="list-unstyled has-col-8" id="J_department_users" style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+
+                            <li>账户头像：<img src="" /></li>
+                            <li><span>店铺名称：</span><span>aaaaaa</span></li>
+                            <li><span>账户昵称：</span><span>aaaaddd</span></li>
+                            <li><span>用户ID：</span><span>dddddd</span></li>
+                            <li><span>所属运营商：</span><span>aaaaaaa</span></li>
+                            <li><span>门店所属区域：</span><span>aaaaaaaaaaa</span></li>
+                            <li><span>联系游戏：</span><span>aaaaaaa</span></li>
+                            <li><span>手机号：</span><span>aaaaaaaa</span></li>
+                            <li><span>绑定微信：</span><span>aaaaaaaaaa</span></li>
+                        </ul>
+                        <div class="iScrollVerticalScrollbar iScrollLoneScrollbar" style="overflow: hidden; pointer-events: none;">
+                            <div class="iScrollIndicator" style="transition-duration: 0ms; display: none; height: 658px; transform: translate(0px, 0px) translateZ(0px); transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1);"></div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <button class="btn btn-sm btn-danger J_add_btn" disabled data-add="add">修改信息</button>
+                        <button class="btn btn-sm btn-danger J_update_btn" data-update="update">修改密码</button>
+                        <button class="btn btn-sm btn-danger J_update_btn" disabled data-update="update">解绑微信</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="admin-management-panel">
+                    <div class="header">
+                        <div class="col-xs-12 text-left">消费记录</div>
+                    </div>
+                    <div class="header">
+                        <div class="col-xs-2">序号</div>
+                        <div class="col-xs-2">部门</div>
+                        <div class="col-xs-6 text-left"></div>
+                        <div class="col-xs-2">操作</div>
+                    </div>
+                    <div class="iscroll_container with-header with-footer" style="touch-action: none;">
+                        <ul class="list-unstyled dashed-split" id="J_department_list" style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+                            <li class="J_department" data-id="64">
+                                <div class="col-xs-2">64</div>
+                                <div class="col-xs-2 J_department_name">测试</div>
+                                <div class="col-xs-6 text-left"></div>
+                                <div class="col-xs-2"><a href="" data-toggle="modal" data-target="#apxModalAdminDepartmentDel" class="btn btn-danger J_del_department">删除</a></div>
+                            </li>
+                            <li class="J_department" data-id="63">
+                                <div class="col-xs-2">63</div>
+                                <div class="col-xs-2 J_department_name">物资</div>
+                                <div class="col-xs-6 text-left"></div>
+                                <div class="col-xs-2"><a href="" data-toggle="modal" data-target="#apxModalAdminDepartmentDel" class="btn btn-danger J_del_department">删除</a></div>
+                            </li>
+                            <li class="J_department" data-id="39">
+                                <div class="col-xs-2">39</div>
+                                <div class="col-xs-2 J_department_name">研发</div>
+                                <div class="col-xs-6 text-left"></div>
+                                <div class="col-xs-2"><a href="" data-toggle="modal" data-target="#apxModalAdminDepartmentDel" class="btn btn-danger J_del_department">删除</a></div>
+                            </li>
+                            <li class="J_department" data-id="36">
+                                <div class="col-xs-2">36</div>
+                                <div class="col-xs-2 J_department_name">后勤</div>
+                                <div class="col-xs-6 text-left"></div>
+                                <div class="col-xs-2"><a href="" data-toggle="modal" data-target="#apxModalAdminDepartmentDel" class="btn btn-danger J_del_department">删除</a></div>
+                            </li>
+                            <li class="J_department" data-id="35">
+                                <div class="col-xs-2">35</div>
+                                <div class="col-xs-2 J_department_name">行政部</div>
+                                <div class="col-xs-6 text-left"></div>
+                                <div class="col-xs-2"><a href="" data-toggle="modal" data-target="#apxModalAdminDepartmentDel" class="btn btn-danger J_del_department">删除</a></div>
+                            </li>
+                            <li class="J_department" data-id="34">
+                                <div class="col-xs-2">34</div>
+                                <div class="col-xs-2 J_department_name">董办</div>
+                                <div class="col-xs-6 text-left"></div>
+                                <div class="col-xs-2"><a href="" data-toggle="modal" data-target="#apxModalAdminDepartmentDel" class="btn btn-danger J_del_department">删除</a></div>
+                            </li>
+                            <li class="J_department" data-id="32">
+                                <div class="col-xs-2">32</div>
+                                <div class="col-xs-2 J_department_name">市场部</div>
+                                <div class="col-xs-6 text-left"></div>
+                                <div class="col-xs-2"><a href="" data-toggle="modal" data-target="#apxModalAdminDepartmentDel" class="btn btn-danger J_del_department">删除</a></div>
+                            </li>
+                            <li class="J_department" data-id="26">
+                                <div class="col-xs-2">26</div>
+                                <div class="col-xs-2 J_department_name">销售部</div>
+                                <div class="col-xs-6 text-left"></div>
+                                <div class="col-xs-2"><a href="" data-toggle="modal" data-target="#apxModalAdminDepartmentDel" class="btn btn-danger J_del_department">删除</a></div>
+                            </li>
+                            <li class="J_department" data-id="14">
+                                <div class="col-xs-2">14</div>
+                                <div class="col-xs-2 J_department_name">测试4</div>
+                                <div class="col-xs-6 text-left"></div>
+                                <div class="col-xs-2"><a href="" data-toggle="modal" data-target="#apxModalAdminDepartmentDel" class="btn btn-danger J_del_department">删除</a></div>
+                            </li>
+                            <li class="J_department" data-id="8">
+                                <div class="col-xs-2">8</div>
+                                <div class="col-xs-2 J_department_name">业务部</div>
+                                <div class="col-xs-6 text-left"></div>
+                                <div class="col-xs-2"><a href="" data-toggle="modal" data-target="#apxModalAdminDepartmentDel" class="btn btn-danger J_del_department">删除</a></div>
+                            </li>
+                        </ul>
+                        <div class="iScrollVerticalScrollbar iScrollLoneScrollbar" style="overflow: hidden; pointer-events: none;">
+                            <div class="iScrollIndicator" style="transition-duration: 0ms; display: none; height: 608px; transform: translate(0px, 0px) translateZ(0px); transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1);"></div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="pull-right department_page">
+                            <ul class="pagination" id="J_page_box" data-max="1">
+                                <li class="active" data-page="1"><a href="javascript:;">1</a></li>
+                            </ul>
+                            <div class="pagination-info" id="J_page_search"> <span>共1页，到第<input type="text" maxlength="3" onfocus="this.select()" value="1">页</span> <a href="javascript:;" class="btn btn-default">确认</a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@include('footer_admin.inc')

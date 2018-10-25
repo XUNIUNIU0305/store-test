@@ -1,0 +1,330 @@
+<?php
+$this->params = ['css' => 'css/p.css', 'js' => 'js/p.js'];
+?>
+<div class="apex-ximei-container">
+
+  <div class="banner" id="top"></div>
+
+  <div class="body-container">
+
+    <!-- 爆款项目 -->
+    <div class="hot-project">
+
+      <div class="title">
+        <img src="/images/ximei180410/baokuanxiangmu.png" alt="">
+      </div>
+
+      <div class="project-detail">
+        <div class="hot-left"></div>
+
+        <a class="hot-right" href="/product?id=1523">
+          <img src="/images/ximei180410/2.png" alt="">
+          <p>奔瑞可视空调清洗套装</p>
+          <p>活动价： ￥
+            <span class="price">39.9</span>
+          </p>
+          <p class="buy-now">立即购买</p>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- 特价好货 -->
+    <div class="discount-goods">
+      <div class="title">
+        <img src="/images/ximei180410/tejiahaohuo.png" alt="">
+      </div>
+
+      <div class="goods-detail">
+
+        <a href="/product?id=930" class="item-detail">
+          <img src="/images/ximei180410/3.png" alt="">
+          <p>奔瑞特级水晶蜡皇（5盒起订）</p>
+          <p>
+            <span class="old-price">原价：45</span>
+            <span class="now-price">活动价:￥
+              <span>19.9</span>
+            </span>
+          </p>
+          <p class="buy-now">立即购买</p>
+        </a>
+
+        <a href="/product?id=1611" class="item-detail">
+          <img src="/images/ximei180410/4.png" alt="">
+          <p>肖勒羊毛盘（2个起订）</p>
+          <p>
+            <span class="old-price">原价：172</span>
+            <span class="now-price">活动价:￥
+              <span>69</span>
+            </span>
+          </p>
+          <p class="buy-now">立即购买</p>
+        </a>
+
+        <a href="/product?id=1609" class="item-detail">
+          <img src="/images/ximei180410/5.png" alt="">
+          <p>肖勒海绵切痕盘（2个起订）</p>
+          <p>
+            <span class="old-price">原价：123</span>
+            <span class="now-price">活动价:￥
+              <span>49</span>
+            </span>
+          </p>
+          <p class="buy-now">立即购买</p>
+        </a>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- 更多优惠 -->
+
+    <div class="more-preferential">
+
+      <div class="title">
+        <img src="/images/ximei180410/gengduoyouhui.png" alt="">
+      </div>
+
+      <div class="goods-detail">
+        <div class="goods-top">
+
+          <div class="goods-top-left">
+            <img src="/images/ximei180410/6.png" alt="">
+          </div>
+
+          <div class="goods-top-right">
+            <a href="/product?id=929" class="item-detail">
+              <img src="/images/ximei180410/7.png" alt="">
+              <p>奔瑞晶钻镀晶V-8</p>
+              <p>
+                <span class="now-price">活动价:￥
+                  <span>135</span>
+                </span>
+              </p>
+              <p class="buy-now">立即购买</p>
+            </a>
+            <a href="/product?id=1583" class="item-detail">
+              <img class="img-title" src="/images/ximei180410/8.png" alt="">
+              <p>阿斯卡特免擦拭洗车液（20KG）</p>
+              <p>
+                <span class="now-price">活动价:￥
+                  <span>450</span>
+                </span>
+              </p>
+              <p class="buy-now">立即购买</p>
+            </a>
+
+            <a href="/product?id=1582" class="item-detail">
+              <img src="/images/ximei180410/9.png" alt="">
+              <p>阿斯卡特免擦拭洗车粉（2袋）</p>
+              <p>
+                <span class="now-price">活动价:￥
+                  <span>66</span>
+                </span>
+              </p>
+              <p class="buy-now">立即购买</p>
+            </a>
+
+            <a href="/product?id=1614" class="item-detail">
+              <img src="/images/ximei180410/10.png" alt="">
+              <p>【特价】肖勒-硬车漆抛光四件套</p>
+              <p>
+                <span class="now-price">活动价:￥
+                  <span>520</span>
+                </span>
+              </p>
+              <p class="buy-now">立即购买</p>
+            </a>
+
+            <a href="/product?id=1613" class="item-detail">
+              <img src="/images/ximei180410/11.png" alt="">
+              <p>【特价】肖勒-软车漆抛光套包 四件套</p>
+              <p>
+                <span class="now-price">活动价:￥
+                  <span>520</span>
+                </span>
+              </p>
+              <p class="buy-now">立即购买</p>
+            </a>
+
+            <a href="/product?id=1615" class="item-detail">
+              <img src="/images/ximei180410/12.png" alt="">
+              <p>【特价】肖勒-智能快抛</p>
+              <p>
+                <span class="now-price">活动价:￥
+                  <span>34</span>
+                </span>
+              </p>
+              <p class="buy-now">立即购买</p>
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="goods-middle">
+          <div class="goods-middle-left">
+            <img src="/images/ximei180410/13.png" alt="">
+          </div>
+          <div class="goods-middle-right">
+            <a href="/product?id=1161" class="item-detail item-special">
+              <img src="/images/ximei180410/14.png" alt="">
+              <p>阿斯卡特全效自洁素大桶（20KG/1桶）</p>
+              <p>
+                <span class="now-price">活动价:￥
+                  <span>160</span>
+                </span>
+              </p>
+              <p class="buy-now">立即购买</p>
+            </a>
+            <a href="/product?id=907" class="item-detail">
+              <img src="/images/ximei180410/15.png" alt="">
+              <p>好顺—轮毂清洗剂（24支）</p>
+              <p>
+                <span class="now-price">活动价:￥
+                  <span>252</span>
+                </span>
+              </p>
+              <p class="buy-now">立即购买</p>
+            </a>
+            <a href="/product?id=937" class="item-detail">
+              <img src="/images/ximei180410/16.png" alt="">
+              <p>奔瑞轮胎专用除锈剂（3.7L）</p>
+              <p>
+                <span class="now-price">活动价:￥
+                  <span>225</span>
+                </span>
+              </p>
+              <p class="buy-now">立即购买</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="goods-middle">
+          <div class="goods-middle-left">
+            <img src="/images/ximei180410/17.png" alt="">
+          </div>
+          <div class="goods-middle-right">
+            <a href="/product?id=1433" class="item-detail">
+              <img src="/images/ximei180410/18.png" alt="">
+              <p>阿斯卡特大桶太阳膜黏胶清除剂（4L）</p>
+              <p>
+                <span class="now-price">活动价:￥
+                  <span>88</span>
+                </span>
+              </p>
+              <p class="buy-now">立即购买</p>
+            </a>
+            <a href="/product?id=910" class="item-detail">
+              <img src="/images/ximei180410/19.png" alt="">
+              <p>好顺—天窗养护套装（12支）</p>
+              <p>
+                <span class="now-price">活动价:￥
+                  <span>318</span>
+                </span>
+              </p>
+              <p class="buy-now">立即购买</p>
+            </a>
+            <a href="/product?id=919" class="item-detail">
+              <img src="/images/ximei180410/20.png" alt="">
+              <p>奔瑞玻璃驱水剂（24瓶）</p>
+              <p>
+                <span class="now-price">活动价:￥
+                  <span>192</span>
+                </span>
+              </p>
+              <p class="buy-now">立即购买</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="goods-middle">
+          <div class="goods-middle-left">
+            <img src="/images/ximei180410/21.png" alt="">
+          </div>
+          <div class="goods-middle-right">
+            <a href="/product?id=932" class="item-detail">
+              <img src="/images/ximei180410/22.png" alt="">
+              <p>奔瑞强力室内清洗剂（3.7L）</p>
+              <p>
+                <span class="now-price">活动价:￥
+                  <span>200</span>
+                </span>
+              </p>
+              <p class="buy-now">立即购买</p>
+            </a>
+            <a href="/product?id=1431" class="item-detail">
+              <img src="/images/ximei180410/23.png" alt="">
+              <p>阿斯卡特大桶塑料件上光剂（4L）</p>
+              <p>
+                <span class="now-price">活动价:￥
+                  <span>150</span>
+                </span>
+              </p>
+              <p class="buy-now">立即购买</p>
+            </a>
+            <a href="/product?id=935" class="item-detail">
+              <img src="/images/ximei180410/24.png" alt="">
+              <p>奔瑞皮革保护剂</p>
+              <p>
+                <span class="now-price">活动价:￥
+                  <span>85</span>
+                </span>
+              </p>
+              <p class="buy-now">立即购买</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="goods-middle">
+          <div class="goods-middle-left">
+            <img src="/images/ximei180410/25.png" alt="">
+          </div>
+          <div class="goods-middle-right">
+            <a href="/product?id=1174" class="item-detail">
+              <img src="/images/ximei180410/26.png" alt="">
+              <p>决策圈定制毛巾（1箱）</p>
+              <p>
+                <span class="now-price">活动价:￥
+                  <span>360</span>
+                </span>
+              </p>
+              <p class="buy-now">立即购买</p>
+            </a>
+            <a href="/product?id=993" class="item-detail">
+              <img src="/images/ximei180410/27.png" alt="">
+              <p>6"进口聚合物去污盘（2个）</p>
+              <p>
+                <span class="now-price">活动价:￥
+                  <span>150</span>
+                </span>
+              </p>
+              <p class="buy-now">立即购买</p>
+            </a>
+            <a href="/product?id=1226" class="item-detail">
+              <img src="/images/ximei180410/28.png" alt="">
+              <p>奔瑞研磨剂分配瓶</p>
+              <p>
+                <span class="now-price">活动价:￥
+                  <span>3.5</span>
+                </span>
+              </p>
+              <p class="buy-now">立即购买</p>
+            </a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="to-top">
+      <a href="#top">
+        <img src="/images/ximei180410/fanhuidingbu.png" alt="">
+      </a>
+    </div>
+
+  </div>
+</div>

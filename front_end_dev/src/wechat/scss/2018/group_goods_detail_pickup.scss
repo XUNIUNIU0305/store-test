@@ -1,0 +1,1141 @@
+$baseV: 1 / 750 * 100vw;
+* {
+    margin: 0 ;
+    padding: 0;
+}
+.container {
+    width: 100%;;
+    height: 100%;
+    .fast-guid,.back-top {
+        position: fixed;
+        right: 0;
+        z-index: 300;
+        width: 80 * $baseV;
+        height: 80 * $baseV;
+    }
+    // 快速导航
+    .fast-guid {
+        bottom: 308 * $baseV;
+        background: url("/images/group_goods_detail/fast_guid.png") no-repeat;
+        background-size: cover;
+    }
+    // 快速导航列表
+    .fast-guid-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 400;
+        width: 750 * $baseV;
+        background: rgba(0,0,0,0.4);
+        .guid-list {
+            height: 166 * $baseV;
+            position: absolute;
+            right: 0;
+            bottom: 264 * $baseV;
+            overflow: hidden;
+            .pack-up {
+                float: left;
+                margin-top: 43 * $baseV;
+                width: 80 * $baseV;
+                height: 80 * $baseV;
+                background: url("/images/group_goods_detail/pack_up.png") no-repeat;
+                background-size: cover;
+            }
+            .list {
+                float: left;
+                background: #fff;
+                border-top-left-radius: 8 * $baseV;
+                    border-bottom-left-radius: 8 * $baseV;
+                li {
+                    float: left;
+                    width: 130 * $baseV;
+                    height: 166 * $baseV;
+                }
+                .pingou-index {
+                    
+                    background: url("/images/group_goods_detail/pingpu_shouye_guid.png") no-repeat;
+                    background-size: cover;
+                    
+                }
+                .search {
+                    background: url("/images/group_goods_detail/search.png") no-repeat;
+                    background-size: cover;
+                }
+                .my-pingou {
+                    background: url("/images/group_goods_detail/my_pingou.png") no-repeat;
+                    background-size: cover;
+                }
+                .ziti-pingou-tihuo {
+                    background: url("/images/group_goods_detail/ziti_pingou_tihuo.png") no-repeat;
+                    background-size: cover;
+                }
+            }
+        }
+
+    }
+    // 返回顶部
+    .back-top {
+        bottom: 220 * $baseV;
+        background: url("/images/group_goods_detail/back_top.png") no-repeat;
+        background-size: cover;
+    }
+}
+.wechat-group-goods-detail-pickup {
+    background: #fff;
+    .goods-detail-wrap {
+        position: relative;
+        width:100%;
+        height: 100%;
+        background: #fff;
+        // 空白条 
+        .empty {
+            width: 100%;
+            height: 20 * $baseV;
+            background: #EFEFF4;
+        }
+        // 详情页大图
+        .goods-detail-image {
+            position: relative;
+            width: 750 * $baseV;
+            height:750 * $baseV;
+            background: cyan;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            .goods-detail-pages {
+                position: absolute;
+                right: 32 * $baseV;
+                bottom: 32 * $baseV;
+                width: 80 * $baseV;
+                height: 48 * $baseV;
+                border-radius: 24 * $baseV;
+                background: rgba(0,0,0,0.2);
+                .pages {
+                    width: 100%;
+                    height: 100%;
+                    color: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 24 * $baseV;
+                    .change-pages {
+                        font-size: 28 * $baseV;
+                    }
+                }
+            }
+        }
+        // 拼购倒计时
+        .goods-detail-count-down {
+            width: 750 * $baseV;
+            height: 107 * $baseV;
+            background: url("/images/group_goods_detail/djs.png") no-repeat;
+            background-size: cover;
+            position: relative;
+            .left {
+                float: left;
+                color: #fff;
+                .title {
+                    float: left;
+                    margin: 0;
+                    padding: 0;
+                    font-size: 54 * $baseV;
+                    margin-top: 10 * $baseV;
+                    margin-left: 30 * $baseV;
+                }
+                .mess {
+                    float: left;
+                    font-size: 24 * $baseV;
+                    margin-top: 50 * $baseV;
+                    margin-left: 20 * $baseV;
+                }
+            }
+            // 倒计时剩余时间
+            .count-down {
+                float:right;
+                width: 300 * $baseV;
+                height: 100%;
+                color: #fff;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: absolute;
+                top: 45%;
+                right: 0;
+                .timer {
+                    width: 252 * $baseV;
+                    display: flex;
+                    justify-content: space-around;
+                    .same {
+                        height: 44 * $baseV;
+                        line-height: 44 * $baseV;
+                        font-weight: bold;
+                    }
+                    .timer-bg {
+                        color: #000;
+                        font-size: 22 * $baseV;
+                        text-align: center;
+                        border-radius: 5 * $baseV;
+                        width: 40 * $baseV;
+                        background: url("/images/group_goods_detail/timer-bg.jpg") no-repeat;
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+        // 商品信息
+        .goods-detail-mess {
+            width: 750 * $baseV;
+            .mess {
+                padding: 32 * $baseV 30 * $baseV 38 * $baseV 30 * $baseV;
+                // 价格
+                .goods-detail-price {
+                    font-size: 24 * $baseV;
+                    .new-price {
+                        color: red;
+                        font-weight: bold;
+                        .price {
+                            font-size: 32 * $baseV;
+                        }
+                    }
+                    .old-price {
+                        color: #AAA;
+                        text-decoration: line-through;
+                    }
+                }
+                // 起拼-送货
+                .spell-delivery {
+                    overflow: hidden;
+                    margin-top: 30 * $baseV;
+                    .same {
+                        height: 30 * $baseV;
+                        font-size: 22 * $baseV;
+                        text-align: center;
+                        line-height: 30 * $baseV;
+                        border-radius: 30 * $baseV;
+                    }
+                    // 起拼
+                    .spell {
+                        float: left;
+                        width: 136 * $baseV;
+                        background: #F5222D;
+                        color: #fff;
+                    }
+                    // 送货
+                    .delivery {
+                        float: left;
+                        width: 62 * $baseV;
+                        height: 30 * $baseV;
+                        margin-left: 10 * $baseV;
+                        font-size: 22 * $baseV;
+                        color: #F5222D;
+                        // background: url("/images/group_goods_detail/button-1.png") no-repeat;
+                        background: url("/images/group_goods_detail/ziti_button.png") no-repeat;
+                        background-size: cover;
+                    }
+                }
+                // 商品介绍
+                .goods-intro {
+                    width: 690 * $baseV;
+                    height: 88 * $baseV;
+                    overflow: hidden;
+                    font-size: 30 * $baseV;
+                    line-height: 42 * $baseV;
+                    margin-top: 18 * $baseV;
+                }
+                .goods-intro-mess {
+                    width: 690 * $baseV;
+                    height: 68 * $baseV;
+                    font-size: 24 * $baseV;
+                    line-height: 34 * $baseV;
+                    margin-top: 12 * $baseV;
+                    overflow: hidden;
+                }
+            }
+        }
+        // 规格-地址
+        .specifications-address {
+            width: 750 * $baseV;
+            border-bottom: 1 * $baseV solid #DEDFE0;
+            .common {
+                padding: 36 * $baseV 30 * $baseV;
+                overflow: hidden;
+                color: #AAA;
+                font-size: 26 * $baseV;
+                .title {
+                    float: left;
+                }
+                .choose{
+                    float: right;
+                    width: 588 * $baseV;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .choose-one {
+                        color:#333;
+                    }
+                    .more {
+                        width: 28 * $baseV;
+                        height: 28 * $baseV;
+                        
+                    }
+                }
+            }
+            // 规格
+            .specifications {
+                // 选择规格
+                .choose{
+                    .choose-one {
+                        width: 340 * $baseV;
+                    }
+                    .more {
+                        background: url("/images/group_goods_detail/guige_more_icon.png") no-repeat;
+                        background-size: contain;
+                        background-position-y: 50%;
+                    }
+                }
+                // 规格信息
+                .specifications-mess {
+                    float: right;
+                    width: 590 * $baseV;
+                    color: #333;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .mess {
+                        display: inline-block;
+                        font-size: 26 * $baseV;
+                        width: 360 * $baseV;
+                        display: flex;
+                        align-items: center;
+
+                        .main{
+                            display: inline-block;
+                            width: 204 * $baseV;
+                            text-align: right;
+                            font-weight: bold;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+                        .color {
+                            font-weight: bold;
+                        }
+                    }
+                    .more {
+                        display: inline-block;
+                        width: 28 * $baseV;
+                        height: 28 * $baseV;
+                        background: url("/images/group_goods_detail/guige_more_icon.png") no-repeat;
+                        background-size: contain;
+                        background-position-x: 100%;
+                        background-position-y: 50%;
+                    }
+                }
+            }
+            // 地址
+            .address {
+                // 选择自提点
+                .choose{
+                    .choose-one {
+                        width: 504 * $baseV;
+                    }
+                    .more {
+                        background: url("/images/group_goods_detail/arrows_24_icon.png") no-repeat;
+                        background-size: contain;
+                        background-position-x: 100%;
+                        background-position-y: 50%;
+                    }
+                }
+                // 自提点信息
+                .self-site-mess {
+                    float: right;
+                    width: 590 * $baseV;
+                    color: #333;
+                    display: flex;
+                    justify-content: space-between;
+                    .mess {
+                        display: inline-block;
+                        font-weight: bold;
+                        width: 508 * $baseV;
+                    }
+                    .more {
+                        display: inline-block;
+                        width: 28 * $baseV;
+                        height: 28 * $baseV;
+                        margin-top: 8 * $baseV;
+                        background: url("/images/group_goods_detail/arrows_24_icon.png") no-repeat;
+                        background-size: contain;
+                        background-position-x: 100%;
+                        background-position-y: 50%;
+                    }
+                }
+            }
+        }
+        // 规格详情
+        .specifications-detail-wrap {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 100;
+            width: 750 * $baseV;
+            background: rgba(0,0,0,0.4);
+            .specifications-detail {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 750 * $baseV;
+                min-height: 1000 * $baseV;
+                background: #fff;
+                .specifications-detail-mess {
+                    padding: 30 * $baseV 32 * $baseV;
+                    overflow: hidden;
+                    .detail-img {
+                        float: left;
+                        clear: both;
+                        overflow: hidden;
+                        width: 160 * $baseV;
+                        height: 160 * $baseV;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .detail-mess {
+                        position: relative;
+                        float: left;
+                        margin-left: 20 * $baseV;
+                        .close {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            width: 44 * $baseV;
+                            height: 44 * $baseV;
+                            background: url("/images/group_goods_detail/close.png") no-repeat;
+                            background-size: contain; 
+                        }
+                        // 起拼-送货
+                        .spell-delivery {
+                            overflow: hidden;
+                            margin-top: 54 * $baseV;
+                            .same {
+                                height: 30 * $baseV;
+                                font-size: 22 * $baseV;
+                                text-align: center;
+                                line-height: 30 * $baseV;
+                                border-radius: 30 * $baseV;
+                            }
+                            // 起拼
+                            .spell {
+                                float: left;
+                                width: 136 * $baseV;
+                                background: #F5222D;
+                                color: #fff;
+                            }
+                            // 送货
+                            .delivery {
+                                float: left;
+                                width: 62 * $baseV;
+                                height: 30 * $baseV;
+                                margin-left: 10 * $baseV;
+                                font-size: 22 * $baseV;
+                                color: #F5222D;
+                                // background: url("/images/group_goods_detail/button-1.png") no-repeat;
+                                background: url("/images/group_goods_detail/ziti_button.png") no-repeat;
+                                background-size: cover;
+                            }
+                        }
+                        .detail-newprice {
+                            font-size: 16 * $baseV;
+                            color: #333;
+                            margin-top: 6 * $baseV ;
+                            font-weight: bold;
+                            .new-price {
+                                font-size: 24 * $baseV;
+                            }
+                        }
+                        .detail-oldprice {
+                            font-size: 18 * $baseV;
+                            color: #AAA;
+                            margin-top: 2 * $baseV;
+                            width: 500 * $baseV;
+                            display: flex;
+                            justify-content: space-between;
+                            // align-items: center;
+                            span{
+                                display: inline-block;
+                            }
+                            .old-price {
+                                text-decoration: line-through;
+                            }
+                        }
+                    }
+                    // 请选择规格-颜色
+                    .choose-specifications-color {
+                        float: left;
+                        font-size: 26 * $baseV;
+                        color: #333;
+                        margin-top: 42 * $baseV;
+                    }
+                }
+
+                .detail-main {
+                    margin: 0 30 * $baseV;
+                    .same {
+                        margin-top: 20 * $baseV;
+                        .title {
+                            font-size: 24 * $baseV;
+                                font-weight: bold;
+                                color: #7D7D7D;
+                        }
+                    }
+                    .standard {
+                        .item {
+                            overflow: hidden;
+                            .active {
+                                color: #F5222D;
+                                border: 2 * $baseV solid #F5222D;
+                            }
+                            li {
+                                float: left;
+                                padding: 20 * $baseV 40 *$baseV;
+                                margin: 20 * $baseV 0;
+                                margin-right: 20 * $baseV;
+                                border: 2 * $baseV solid #E5E5E5;
+                                border-radius: 1 * $baseV;
+                                font-size: 24 * $baseV;
+                                color: #333;
+                                &:active {
+                                    color: #F5222D;
+                                    border: 2 * $baseV solid #F5222D;
+                                }
+                            }
+                            li:last-child {
+                                border: 2 * $baseV dashed #F1F1F1;
+                                background: #FBFAFB;
+                                color: #DEDEDE;
+                            }
+                        }
+                    }
+                    .color {
+                        .item {
+                            overflow: hidden;
+                            .active {
+                                color: #F5222D;
+                                border: 2 * $baseV solid #F5222D;
+                            }
+                            li {float: left;
+                                width: 130 * $baseV;
+                                height: 60 * $baseV;
+                                text-align: center;
+                                line-height: 60 * $baseV;
+                                margin: 20 * $baseV 0;
+                                margin-right: 20 * $baseV;
+                                border: 2 * $baseV solid #E5E5E5;
+                                border-radius: 1 * $baseV;
+                                font-size: 24 * $baseV;
+                                color: #333;
+                            }
+                            li:last-child {
+                                border: 2 * $baseV dashed #F1F1F1;
+                                background: #FBFAFB;
+                                color: #DEDEDE;
+                            }
+                        }
+                    }
+                    .number {
+                        margin-bottom: 140 * $baseV;
+                        .number-tile {
+                            margin-bottom: 20 * $baseV;
+                        }
+                        .number-button {
+                            width: 100%;
+                            overflow: hidden;
+                            .button {
+                                float: right;
+                                width: 214 * $baseV;
+                                height: 60 * $baseV;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                .reduce,.add {
+                                    display: inline-block;
+                                    width: 60 * $baseV;
+                                    height: 60 * $baseV;
+                                    // background-size: 50%/50%;
+                                }
+                                .reduce {
+                                    background: url("/images/group_goods_detail/reduce_failure.png") no-repeat;
+                                    background-size: contain;
+                                }
+                                .add {
+                                    background: url("/images/group_goods_detail/add.png") no-repeat;
+                                    background-size: contain;
+                                }
+                                .text {
+                                    width: 82 * $baseV;
+                                    height: 60 * $baseV;
+                                    outline: none;
+                                    border: none;
+                                    background: #F5F5F5;
+                                    text-align: center;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+
+                // 确定按钮
+                .confirm {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    z-index: 100;
+                    width: 100%;
+                    height: 98 * $baseV;
+                    text-align: center;
+                    line-height: 98 * $baseV;
+                    color: #fff;
+                    letter-spacing: 2 * $baseV;
+                    font-size: 34 * $baseV;
+                    font-weight: 300;
+                    background: url("/images/group_goods_detail/queding-button.png") no-repeat;
+                    background-size: cover;
+                }
+                // 底部
+                .footer {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    z-index: 100;
+                    width: 100%;
+                    height: 98 * $baseV;
+                    .same {
+                        float: left;
+                        width: 50%;
+                        height: 100%;
+                        color: #fff;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        .price {
+                            font-size: 30 * $baseV;
+                            font-weight: 200;
+                        }
+                        .text {
+                            font-size: 24 * $baseV;
+                        }
+                    }
+                    .purchased-separately {
+                        background-color: #333;
+                    }
+                    .open-group {
+                        background: url("/images/group_goods_detail/wykaituan-button-bg.png") no-repeat;
+                        background-size: cover;
+                    }
+                }
+            }
+
+        }
+
+        // 服务说明
+        .service-policy {
+            padding: 26 * $baseV 30 * $baseV;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .policy {
+                width: 595 * $baseV;
+                float: left;
+                overflow: hidden;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .item {
+                    float: left;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: #585C64;
+                    .icon {
+                        display: inline-block;
+                        width: 28 * $baseV;
+                        height: 28 * $baseV;
+                        margin-right: 8 * $baseV;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+            .more {
+                float: right;
+                width: 28 * $baseV;
+                height: 28 * $baseV;
+                background: url("/images/group_goods_detail/guige_more_icon.png") no-repeat;
+                background-size: contain;
+                background-position-y: 50%;
+            }
+        }
+        // 服务说明详情
+        .service-policy-detail-wrap {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 100;
+            width: 750 * $baseV;
+            background: rgba(0,0,0,0.4);
+            .service-policy-detail {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                min-height: 880 * $baseV;
+                background: #fff;
+                .title {
+                    position: relative;
+                    width: 100%;
+                    height: 98 * $baseV;
+                    font-size: 36 * $baseV;
+                    text-align: center;
+                    line-height: 98 * $baseV;
+                    border-bottom: 1 * $baseV solid #DEDFE0;
+                    .close {
+                        position: absolute;
+                        top: 50%;
+                        right: 40 * $baseV;
+                        margin-top: -12.5 * $baseV;
+                        width: 25 * $baseV;
+                        height: 25 * $baseV;
+                        background: url("/images/group_goods_detail/close.png") no-repeat;
+                        background-size: cover;
+                    }
+                }
+                .mess {
+                    width: 100%;
+                    .mess-item {
+                        margin: 0 30 * $baseV;
+                        padding: 24 * $baseV 0;
+                        border-bottom: 1 * $baseV solid #DEDFE0;
+                        .mess-title {
+                            font-size: 30 * $baseV;
+                            color: #333;
+                            font-weight: bold;
+                            img {
+                                width: 28 * $baseV;
+                                height: 28 * $baseV;
+                                vertical-align: middle;
+                                margin-right: 10 * $baseV;
+                            }
+                        }
+                        .mess-main {
+                            margin-left: 38 * $baseV;
+                            margin-right: 104 * $baseV;
+                            font-size: 24 * $baseV;
+                            color: #AAA;
+
+                        }
+                    }
+                }
+            }
+        }
+        // 拼购人数
+        .count-down-mess-wrap {
+            width: 750 * $baseV;
+            .count-down-mess {
+                margin: 0 30 * $baseV;
+                // 拼购总人数
+                .title-mess {
+                    padding: 35 * $baseV 0; 
+                    border-bottom: 1 * $baseV solid #DEDFE0;
+                    overflow: hidden;
+                    .title{
+                        float: left;
+                        width: 150 * $baseV;
+                        height: 30 * $baseV;
+                        img {
+                            width: 100%;
+                            height: 100%；
+                        }
+                    }
+                    .totle-count {
+                        float: right;
+                        font-size: 24 * $baseV;
+                        .people-num {
+                            color: #F5222D;
+                        }
+                    }
+                }
+                // 拼购人数每一个
+                .count-down-one {
+                    // 每一个拼购人
+                    .one-mess {
+                        overflow: hidden;
+                        margin: 20 * $baseV 0;
+                        .left {
+                            float: left;
+                            display: flex;
+                            align-items: center;
+                            .head-portrait {
+                                float: left;
+                                width: 70 *$baseV;
+                                height: 70 * $baseV;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                            .user-tuan {
+                                float: left;
+                                margin-left: 14 * $baseV;
+                            }
+                        }
+                        .right {
+                            float: right;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            // 还差几人
+                            .almost {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                // align-items: space-between;
+                                .almost-people {
+                                    font-size: 26 * $baseV;
+                                    color: #333;
+                                    .num {
+                                        color: #F5222D;
+                                    }
+                                }
+                                .almost-time {
+                                    font-size: 22 * $baseV;
+                                    color: #979797;
+                                    text-align: right;
+                                }
+                            }
+                            // 去参团按钮
+                            .tuxedo {
+                                width: 134 * $baseV;
+                                height: 60 * $baseV;
+                                margin-left: 30 * $baseV;
+                                text-align: center;
+                                line-height: 60 * $baseV;
+                                color: #fff;
+                                background: url("/images/group_goods_detail/button.png")no-repeat;
+                                background-size: cover;
+                            }
+                        }
+                    }
+                    // 还未开团
+                    .notyet-group {
+                        height: 100 * $baseV;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .title {
+                            font-size: 30 * $baseV;
+                            color: #333;
+                            font-weight: 200;
+                        }
+                        .my-open-group {
+                            width: 160 * $baseV;
+                            height: 70 * $baseV;
+                            color: #fff;
+                            font-size: 26 * $baseV;
+                            text-align: center;
+                            line-height: 70 * $baseV;
+                            background: url("/images/group_goods_detail/button.png")no-repeat;
+                            background-size: cover;
+                        }
+                    }
+                }
+            }
+
+        }
+        // 拼购规则
+        .count-down-rule-wrap {
+            width: 750 * $baseV;
+            .count-down-rule {
+                // height: 100 * $baseV;
+                margin: 0 30 * $baseV;
+                padding: 35 * $baseV 0;
+                .rule-title {
+                    line-height: 30 * $baseV;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .title {
+                        font-size: 28 * $baseV;
+                        color: #414141;
+                    }
+                    .rule-more {
+                        width: 132 * $baseV;
+                        font-size: 24 * $baseV;
+                        color: #AAA;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .more-icon {
+                            width: 28 * $baseV;
+                            height: 28 * $baseV;
+                            background: url("/images/group_goods_detail/arrows_24_icon.png") no-repeat;
+                            background-size: contain;
+                            background-position: 100%;
+                        }
+
+                    }
+                }
+                .rule-main {
+                    margin-top: 30 * $baseV;
+                    margin-bottom: 10 * $baseV;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    .main-item {
+                        .num {
+                            display: inline-block;
+                            width: 30 * $baseV;
+                            height: 30 * $baseV;
+                            text-align: center;
+                            line-height: 30 * $baseV;
+                            border-radius: 50%;
+                            color: #fff;
+                            font-size: 24 * $baseV;
+                            background-color: #F5222D;
+                            margin-right: 12 * $baseV;
+                        }
+                    }
+                    .arr-right {
+                        width: 22 * $baseV;
+                        height: 22 * $baseV;
+                        background: url("/images/group_goods_detail/arrows_24_icon.png") no-repeat ;
+                        background-size: contain;
+                        background-position-x: 50%; 
+                    }
+                }
+            }
+        }
+        // 拼购规则详情
+        .count-down-rule-detail-wrap {
+            position: fixed;
+            z-index: 150;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #fff;
+            .count-down-rule-detail {
+                padding: 46 * $baseV 30 * $baseV;
+                color: #333;
+                .rule-detail-title {
+                    font-size: 30 * $baseV;
+                    font-weight: bold;
+                }
+                .rule-detail-mess {
+                    margin-top: 18 * $baseV;
+                    .rule-detail-mess-item {
+                        font-size: 26 * $baseV;
+                        line-height: 58 * $baseV;
+                    }
+                    
+                }
+                .pickup-flow {
+                    margin-top: 38 * $baseV; 
+                    .flow-title {
+                        font-size: 30 * $baseV;
+                        font-weight: bold;
+                    }
+                    .flow-mess {
+                        .rule-detail-mess-item {
+                            font-size: 26 * $baseV;
+                            line-height: 58 * $baseV;
+                        }
+                    }
+                    
+                }
+                .other {
+                    margin-top: 38 * $baseV; 
+                    .other-title {
+                        font-size: 30 * $baseV;
+                        font-weight: bold;
+                    }
+                    .rule-detail-mess-item {
+                        font-size: 26 * $baseV;
+                        line-height: 58 * $baseV;
+                    }
+                }
+            }
+        }
+        // 爱车屋
+        .acw-wrap {
+            width: 750 * $baseV;
+            height: 118 * $baseV;
+            .acw {
+                margin: 0 30 * $baseV;
+                overflow: hidden;
+                .left {
+                    float: left;
+                    margin: 30 * $baseV 0;
+                    overflow: hidden;
+                    .logo {
+                        float: left;
+                        width: 144 * $baseV;
+                        height: 62 * $baseV;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .acw-main {
+                        float: left;
+                        margin-left: 14 * $baseV;
+                        .title {
+                            color: #414141;
+                        }
+                        .location {
+                            color: #AAA;
+                        }
+                    }
+
+                }
+                .right {
+                    float: right;
+                    width: 196 * $baseV;
+                    margin: 28 * $baseV 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-left: 1 * $baseV solid #DEDFE0;
+                    .good-num {
+                        font-size: 30 * $baseV;
+                        color: #5C5C5C;
+                    }
+                    .all-good {
+                        font-size: 20 * $baseV;
+                        color: #AAA;
+                    }
+                }
+            }
+        }
+        // 商品参数
+        .good-params-wrap {
+            width: 750 * $baseV;
+            
+            .good-params {
+                margin: 0 30 * $baseV;
+                height: 100 * $baseV;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .params-more {
+                    width: 28 * $baseV;
+                    height: 28 * $baseV;
+                    background: url("/images/group_goods_detail/guige_more_icon.png") no-repeat;
+                    background-size: contain;
+                    background-position-y: 50%;
+                }
+            }
+        }
+        // 商品详情
+        .good-detail-wrap {
+            width: 750 * $baseV;
+            .good-detail {
+                width: 100%;
+                .detail-title {
+                    width: 100%;
+                    height: 100 * $baseV;
+                    font-size: 34 * $baseV;
+                    text-align: center;
+                    line-height: 100* $baseV;
+                    color: #333;
+                    border-bottom: 1 * $baseV solid #DEDFE0;
+                }
+                .detail-main {
+                    padding: 20 * $baseV 10 * $baseV;
+                    .item {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        // 到底提示
+        .footer-hint-wrap {
+            width: 750 * $baseV;
+            margin-bottom: 98 * $baseV;
+            .footer-hint {
+                padding: 40 * $baseV 60 * $baseV;
+                .hint {
+                    width: 630 * $baseV;
+                    height: 24 * $baseV;
+                    background: url("/images/group_goods_detail/footer-hint.png") no-repeat;
+                    background-size: contain;
+                }
+            }
+        }
+        // 底部导航
+        .footer-wrap {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            z-index: 50;
+            width: 750 * $baseV;
+            height: 98 * $baseV;
+            border-top: 1 * $baseV solid #DEDFE0;
+            background: #fff;
+            .footer {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                .pingou-index-button {
+                    background: url("/images/group_goods_detail/pingou-index-logo.png") no-repeat center;
+                }
+                .contact-service-button {
+                    background: url("/images/group_goods_detail/contact-service-logo.png") no-repeat center;
+                }
+                .logo {
+                    float: left;
+                    width: 140 * $baseV;
+                    height: 98 * $baseV;
+                    background-size: 50%;
+
+                }
+                .same {
+                    float: left;
+                    color: #fff;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .purchased-separately {
+                    width: 220 * $baseV;
+                    height: 98 * $baseV;
+                    background-color: #333;
+                }
+                .open-group {
+                    width: 250 * $baseV;
+                    height: 98 * $baseV;
+                    background:url("/images/group_goods_detail/wykaituan-button-bg.png") no-repeat;
+                    background-size: cover;
+
+                }
+                
+            }
+        }
+    }
+}

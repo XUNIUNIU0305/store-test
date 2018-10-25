@@ -1,0 +1,160 @@
+.apx-acc-wechat-detail {
+    .top-title {
+        padding-left: 0;
+        &::before{
+            display: none;
+        }
+        .img-symbol {
+            display: inline-block;
+            vertical-align: bottom;
+            height: 20px;
+            width: 20px;
+            background: url(/images/jinru.png) no-repeat;
+        }
+        .article-title {
+            font-weight: normal;
+            font-size: 14px;
+            color: #999;
+        }
+    }
+    margin: 0 30px;
+    @include clearfix;
+    .pull-left {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+        &::before {
+            content: '';
+            position: absolute;
+            left: -50px;
+            top: -11px;
+            background-color: #f6f6f6;
+            width: 112%;
+            height: 10px;
+        }
+        .article-box {
+            padding: 0 20px;
+            img {
+                max-width: 100%;
+                display: block;
+                margin: 12px auto;
+            }
+            table {
+                width: 100%!important;
+            }
+            .title {
+                text-align: left;
+                font-size: 18px;
+                font-weight: 600;
+                margin: 24px auto;
+                margin-bottom: 80px;
+                strong {
+                    p {
+                        color: #333;
+                        font-size: 20px;
+                        vertical-align: middle;
+                        margin-bottom: 20px;
+                    }
+                }
+                p {
+                    font-size: 12px;
+                    font-weight: normal;
+                    color: #999;
+                }
+            }
+            .footer {
+                position: relative;
+                border-top: 1px dashed #ccc;
+                padding: 20px 0;
+                &:before {
+                    content: '页脚';
+                    position: absolute;
+                    font-size: 12px;
+                    width: 30px;
+                    text-align: center;
+                    line-height: 1;
+                    background: #fff;
+                    left: 50%;
+                    margin-left: -12px;
+                    top: -6px;
+                    color: #808080;
+                }
+                .ke-container {
+                    margin-bottom: 20px;
+                }
+                .ke-edit {
+                    height: 120px;
+                }
+                .ke-statusbar {
+                    display: none;
+                }
+                .btn-link {
+                    color: #808080;
+                    margin-bottom: 20px;
+                }
+                .btn {
+                    outline: none;
+                }
+                .btn-default {
+                    border-radius: 5px;
+                    min-width: 50px;
+                    color: #fff;
+                    background-color: #eb2f2f;
+                    margin-bottom: 20px;
+                    &:hover {
+                        background: $brand-danger;
+                        color: #fff;
+                    }
+                }
+                .btn-cancel {
+                    border: 1px solid #e3e4e5;
+                    border-radius: 5px;
+                    min-width: 50px;
+                    color: #333;
+                    background-color: #f6f6f6;
+                    margin-bottom: 20px;
+                    text-decoration: none;
+                }
+                .btn-compile {
+                    background-color: #fff;
+                    color: #eb2f2f;
+                    border: 1px solid #eb2f2f;                    
+                }
+                .list-unstyled {
+                    margin-bottom: 20px;
+                    li {
+                        line-height: 2;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .aside {
+        position: absolute;
+        top: 0;
+        right:0;
+        .btn-block {
+            max-width: 150px;
+            border-radius: 16px;
+            margin: 0 auto 50px;
+            i {
+                transform: scaleX(-1);
+            }
+        }
+        .qr-box {
+            width: 94px;
+            height: 114px;
+            margin: 0 auto;
+            border: 1px solid #999;
+            p {
+                margin: 0;
+                color: #999;
+            }
+            img {
+                width: 68px;
+                height: 68px;
+            }
+        }
+    }
+}

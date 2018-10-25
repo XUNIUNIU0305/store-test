@@ -1,0 +1,106 @@
+.admin-data-summary {
+    padding: 20px 0;
+    // nav
+    .datepicker-nav {
+        line-height: 46px;
+        padding: 0 26px;
+        font-size: 14px;
+        background: #fce7e6;
+        margin-bottom: 20px;
+        border-bottom: 0;
+        box-shadow: 6px 6px 6px darken(#fce7e6, 5%);
+        .pull-right {
+            padding: 8px 0;
+            line-height: 1;
+            .form-control {
+                width: 120px;
+                display: inline-block;
+            }
+            >div {
+                display: none;
+                >span {
+                    margin: 0 8px;
+                }
+                &.in {
+                    display: inline-block;
+                }
+                >.btn-default {
+                    margin-left: 8px;
+                }
+            }
+            .input-group {
+                float: none;
+                vertical-align: middle;
+                display: inline-table;
+                max-width: 150px;
+                &:last-child {
+                    margin-left: 4px;
+                }
+                .form-control {
+                    height: 33px;
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+    >.row {
+        margin: 0;
+        padding: 0 20px;
+        .col-xs-6 {
+            padding: 40px;
+        }
+    }
+    .panel {
+        border: 1px solid #ccc;
+        margin: 0;
+        &.red {
+            border-color: $brand-danger;
+            .panel-heading {
+                border-color: $brand-danger;
+            }
+        }
+        &.yellow {
+            border-color: $brand-warning;
+            .panel-heading {
+                border-color: $brand-warning;
+            }
+        }
+        &.green {
+            border-color: $brand-success;
+            .panel-heading {
+                border-color: $brand-success;
+            }
+        }
+        &.blue {
+            border-color: $brand-primary;
+            .panel-heading {
+                border-color: $brand-primary;
+            }
+        }
+        .panel-heading {
+            padding: 20px 15px;
+            font-size: 16px;
+            color: #808080;
+            border-bottom: 1px solid #ccc;
+        }
+        .panel-body {
+            padding: 30px 50px;
+        }
+        .media-left {
+            padding-right: 60px;
+        }
+        .piggy-bank {
+            width: 120px;
+            height: 120px;
+            text-align: center;
+            img {
+                width: auto;
+                max-height: 100%;
+            }
+        }
+    }
+    .chartGauge {
+        width: 120px;
+        height: 120px;
+    }
+}

@@ -1,0 +1,243 @@
+.apex-maintenance-1801315 {
+  min-width: 1190px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  .float-nav {
+    position: fixed;
+    right: 50px;
+    top: 50%;
+    z-index: 9999;
+    .nav {
+      background: url('/images/maintenance_180315/right_nav_bg.png') no-repeat center;
+      li {
+        a {
+          height: 68px;
+          width: 203px;
+          &:hover,
+          &:focus {
+            background-color: rgba(255,255,255,0);
+          }
+        }
+        &:nth-child(1) {
+          background: url('/images/maintenance_180315/text1.png') no-repeat center;
+        }
+        &:nth-child(2) {
+          background: url('/images/maintenance_180315/text2.png') no-repeat center;
+        }
+        &:nth-child(3) {
+          background: url('/images/maintenance_180315/text3.png') no-repeat center;
+        }
+        &:nth-child(4) {
+          background: url('/images/maintenance_180315/text4.png') no-repeat center;
+        }
+        &:nth-child(5) {
+          background: url('/images/maintenance_180315/text5.png') no-repeat center;
+        }
+        &:nth-child(6) {
+          background: url('/images/maintenance_180315/text6.png') no-repeat center;
+        }
+      }
+    }
+  }
+  
+  .banner {
+    height: 990px;
+    background: url('/images/maintenance_180315/banner.jpg') center/cover no-repeat;
+  }
+
+  .row-container {
+    min-width: 1190px;
+    margin: 0 auto;
+    background: url('/images/maintenance_180315/bg.jpg');
+    a {
+      text-decoration: none;
+    }
+    .row-detail {
+      width: 1190px;
+      margin: 0 auto;
+      padding-top: 60px;
+      .maintenance-control {
+        width: 100%;
+        text-align: center;
+        .title {
+          height: 72px;
+          width: 895px;
+          margin: 0 auto;
+          margin-bottom: 44px;
+          background: url('/images/maintenance_180315/title.png') no-repeat;
+        }
+        .two-goods {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin-bottom: 30px;
+          .goods-box {
+            background: url('/images/maintenance_180315/585_bg.png');
+            margin-bottom: 30px;
+            a {
+              display: block;
+              height: 598px;
+              width: 585px;
+              background: url('/images/maintenance_180315/right_icon.png') no-repeat top right ,url('/images/maintenance_180315/left_icon.png') no-repeat bottom left;
+              img {
+                margin-top: 20px;
+              }
+              span:nth-child(2) {
+                display: block;
+                height: 17px;
+                width: 518px;
+                margin: 0 auto;
+                margin-bottom: 20px;
+                background: url('/images/maintenance_180315/504_line.png') no-repeat center;
+              }
+              p {
+                color: #fff;
+                font-size: 36px;
+                &:nth-child(4) {
+                  font-size: 20px;
+                  margin-bottom: 18px;
+                }
+              }
+              .price {
+                font-size: 36px;
+                color: #ed880c;
+              }
+              .buy-now {
+                height: 50px;
+                width: 220px;
+                background: url('/images/maintenance_180315/buy.png') no-repeat center;
+              }
+            }
+          }
+        }
+        .three-goods {
+          display: flex;
+          flex-wrap: wrap;
+          margin-bottom: 30px;
+          .goods-box {
+            background: url('/images/maintenance_180315/380_bg.png') no-repeat center;
+            margin-right: 25px;
+            margin-bottom: 30px;
+            &:nth-child(3n) {
+              margin-right: 0;
+            }
+            a {
+              display: block;
+              height: 550px;
+              width: 380px;
+              background: url('/images/maintenance_180315/right_icon.png') no-repeat top right ,url('/images/maintenance_180315/left_icon.png') no-repeat bottom left;
+              img {
+                margin-top: 20px;
+              }
+              span:nth-child(2) {
+                display: block;
+                height: 17px;
+                width: 314px;
+                margin: 0 auto;
+                margin-bottom: 20px;
+                background: url('/images/maintenance_180315/396_ pro_line.png') no-repeat center;
+              }
+              p {
+                color: #fff;
+                font-size: 20px;
+                &:nth-child(4) {
+                  font-size: 20px;
+                  margin-bottom: 18px;
+                }
+              }
+              .price {
+                font-size: 36px;
+                color: #ed880c;
+              }
+              .buy-now {
+                height: 50px;
+                width: 220px;
+                background: url('/images/maintenance_180315/buy.png') no-repeat center;
+              }
+            }
+          }
+        }
+      }
+      .maintenance-control:nth-child(2) {
+        .title {
+          background: url('/images/maintenance_180315/title2.png') no-repeat;
+        }
+        .two-goods {
+          .goods-box {
+            a {
+              .buy-now {
+                background: url('/images/maintenance_180315/buy2.png') no-repeat center;
+              }
+            }
+          }
+        }
+
+        .three-goods {
+          .goods-box {
+            a {
+              .buy-now {
+                background: url('/images/maintenance_180315/buy2.png') no-repeat center;
+              }
+            }
+          }
+        }
+
+      }
+
+      .maintenance-control:nth-child(3) {
+        .title {
+          background: url('/images/maintenance_180315/title3.png') no-repeat;
+        }
+        .two-goods {
+          .goods-box {
+            a {
+              .buy-now {
+                background: url('/images/maintenance_180315/buy3.png') no-repeat center;
+              }
+            }
+          }
+        }
+
+        .three-goods {
+          .goods-box {
+            a {
+              .buy-now {
+                background: url('/images/maintenance_180315/buy3.png') no-repeat center;
+              }
+            }
+          }
+        }
+      }
+
+      .maintenance-control:nth-child(4) {
+        .title {
+          background: url('/images/maintenance_180315/title4.png') no-repeat;
+        }
+        .two-goods {
+          .goods-box {
+            a {
+              .buy-now {
+                background: url('/images/maintenance_180315/buy3.png') no-repeat center;
+              }
+            }
+          }
+        }
+
+        .three-goods {
+          .goods-box {
+            a {
+              .buy-now {
+                background: url('/images/maintenance_180315/buy3.png') no-repeat center;
+              }
+            }
+          }
+        }
+      }
+
+
+    }
+  }
+
+
+}

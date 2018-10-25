@@ -1,0 +1,221 @@
+@charset "UTF-8";
+body {
+  overflow-x: hidden; }
+
+.bg-muted {
+  background: #f2f2f2; }
+
+.table-fix {
+  table-layout: fixed; }
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.container {
+  width: 1190px;
+  max-width: none !important; }
+
+.high-lighted {
+  color: #df483d; }
+
+.custom-account-view {
+  min-height: 100vh;
+  background: #f6f6f6; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0; }
+
+.apx-zodiac-container {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  bottom: 70px;
+  padding: 0; }
+  .apx-zodiac-container ~ footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .apx-zodiac-container .row {
+    height: 140px;
+    border-bottom: 2px solid #d8d8d8;
+    display: table-cell;
+    width: 2000px;
+    vertical-align: middle; }
+    .apx-zodiac-container .row [class^='col-'] {
+      padding: 0;
+      text-align: center; }
+  .apx-zodiac-container .list-unstyled {
+    display: none;
+    position: absolute;
+    top: 140px;
+    right: 0;
+    left: 0;
+    bottom: 80px;
+    margin-bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 15px; }
+    .apx-zodiac-container .list-unstyled li {
+      text-align: center;
+      padding: 10px 10px;
+      float: left;
+      width: 12.5%; }
+      .apx-zodiac-container .list-unstyled li.title {
+        padding: 20px 0;
+        font-size: 22px;
+        width: 100%;
+        font-weight: 600;
+        border-bottom: 1px dashed #ccc;
+        margin-bottom: 12px; }
+        .apx-zodiac-container .list-unstyled li.title i {
+          font-size: 36px;
+          vertical-align: middle;
+          margin-right: 12px; }
+      .apx-zodiac-container .list-unstyled li label {
+        font-size: 18px;
+        background: #fff;
+        text-indent: 4px;
+        letter-spacing: 4px;
+        text-align: center;
+        outline: none !important; }
+        .apx-zodiac-container .list-unstyled li label.disabled {
+          background: #ccc;
+          color: #fff; }
+        .apx-zodiac-container .list-unstyled li label.active {
+          background: #cf4044;
+          border-color: #cf4044;
+          color: #fff; }
+      .apx-zodiac-container .list-unstyled li input[type='checkbox'] {
+        position: absolute;
+        clip: rect(0, 0, 0, 0);
+        pointer-events: none; }
+  .apx-zodiac-container .apx-zodiac-submit {
+    position: absolute;
+    border-top: 2px solid #d8d8d8;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 80px; }
+    .apx-zodiac-container .apx-zodiac-submit .btn-row {
+      position: absolute;
+      top: 50%;
+      margin-top: -22px;
+      right: 0; }
+    .apx-zodiac-container .apx-zodiac-submit .btn {
+      margin-left: 20px;
+      min-width: 200px; }
+
+.apx-zodiac-list-picked .btn {
+  cursor: default;
+  box-shadow: none; }
+
+.apx-zodiac-loading {
+  display: block;
+  position: absolute;
+  top: 140px;
+  right: 0;
+  left: 0;
+  bottom: 80px;
+  background: #fff; }
+  .apx-zodiac-loading i {
+    -webkit-animation: spin 1s ease-in-out infinite;
+            animation: spin 1s ease-in-out infinite;
+    color: #d45458;
+    font-size: 68px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -34px;
+    margin-top: -34px; }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+.zodiac-icon {
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+  position: relative;
+  background: url("/images/zodiac/zodiac-disabled.png"); }
+  .zodiac-icon.active {
+    background: url("/images/zodiac/zodiac.png");
+    color: #cf4044; }
+  .zodiac-icon:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -24px;
+    line-height: 24px;
+    text-align: center; }
+  .zodiac-icon.aries {
+    background-position: -64px -0px; }
+    .zodiac-icon.aries:after {
+      content: '白羊座'; }
+  .zodiac-icon.taurus {
+    background-position: -0px -128px; }
+    .zodiac-icon.taurus:after {
+      content: '金牛座'; }
+  .zodiac-icon.gemini {
+    background-position: -0px -64px; }
+    .zodiac-icon.gemini:after {
+      content: '双子座'; }
+  .zodiac-icon.cancer {
+    background-position: -64px -64px; }
+    .zodiac-icon.cancer:after {
+      content: '巨蟹座'; }
+  .zodiac-icon.leo {
+    background-position: -128px -0px; }
+    .zodiac-icon.leo:after {
+      content: '狮子座'; }
+  .zodiac-icon.virgo {
+    background-position: -128px -64px; }
+    .zodiac-icon.virgo:after {
+      content: '处女座'; }
+  .zodiac-icon.libra {
+    background-position: -0px -0px; }
+    .zodiac-icon.libra:after {
+      content: '天秤座'; }
+  .zodiac-icon.scorpio {
+    background-position: -64px -128px; }
+    .zodiac-icon.scorpio:after {
+      content: '天蝎座'; }
+  .zodiac-icon.sagittarius {
+    background-position: -128px -128px; }
+    .zodiac-icon.sagittarius:after {
+      content: '射手座'; }
+  .zodiac-icon.capricorn {
+    background-position: -192px -0px; }
+    .zodiac-icon.capricorn:after {
+      content: '摩羯座'; }
+  .zodiac-icon.aquarius {
+    background-position: -192px -64px; }
+    .zodiac-icon.aquarius:after {
+      content: '水瓶座'; }
+  .zodiac-icon.pisces {
+    background-position: -192px -128px; }
+    .zodiac-icon.pisces:after {
+      content: '双鱼座'; }
+
+.apx-search-nav,
+.apx-index-ensurance,
+.apx-index-site-map {
+  display: none; }

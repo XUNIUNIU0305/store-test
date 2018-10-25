@@ -1,0 +1,289 @@
+// container
+.apx-mat-week-container{
+    background: rgb(203,240,252) url('/images/mat_week/bg_bottom.jpg') bottom center no-repeat;
+    .mat-week-banner{
+        min-height: 580px;
+        background: url('/images/mat_week/banner.jpg') center no-repeat;
+    }
+    .mat-week-nav{
+        position: relative;
+        text-align: center;
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+        }
+        &:before {
+            top: 0;
+            left: -260px;
+            width: 260px;
+            height: 234px;
+            background: url('/images/mat_week/decoration_tree01.png') center no-repeat;
+        }
+        &:after {
+            width: 197px;
+            height: 321px;
+            right: -196px;
+            top: 50%;
+            margin-top: -160px;
+            background: url('/images/mat_week/decoration.png') center no-repeat;
+        }
+        img{
+            margin: 0 auto
+        }
+        .board-box{
+            position: relative;
+            background: url('/images/mat_week/bg_board.png') center no-repeat;
+            min-height: 398px;
+            margin-top: 24px;
+            padding-top: 36px;
+            &:before{
+                content: '';
+                position: absolute;
+                width: 160px;
+                height: 170px;
+                background: url('/images/mat_week/test.png') center no-repeat;
+                top: -40px;
+                left: 40px;
+            }
+            .question{
+                margin-bottom: 32px;
+            }
+        }
+        .list-inline{
+            font-size: 0;
+            padding: 0 8%;
+            li{
+                width: 20%;
+            }
+            .img-rounded{
+                border-radius: 50%;
+                border: 2px solid rgb(147,182,218);
+            }
+        }
+    }
+    .mat-week-products{
+        img{
+            margin: 0 auto
+        }
+        .media{
+            margin: 16px 0;
+        }
+        .media-left{
+            height: 290px;
+            text-align: center;
+            min-width: 330px;
+            padding: 0;
+            background: rgb(77, 183, 250);
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            .img-rounded{
+                max-width: 101px;
+                border-radius: 50%;
+                border: 2px solid #000;
+            }
+            .list-inline{
+                font-size: 0;
+                li{
+                    font-size: 20px;
+                    margin: 20px 9px 28px;
+                    width: 60px;
+                    line-height: 36px;
+                    border: 1px dashed;
+                    border-radius: 4px;
+                    background: #fff;
+                }
+            }
+            .btn-detail{
+                background: url('/images/mat_week/button_detail.png') center no-repeat;
+                width: 151px;
+                line-height: 62px;
+                display: inline-block;
+                font-size: 24px;
+                text-decoration: none;
+                color: #d55430;
+            }
+        }
+        .media-body{
+            background: #fff;
+            padding: 0 42px;
+            .question{
+                img{
+                    margin: 24px 0 0;
+                }
+            }
+            .text-indent{
+                padding-left: 100px;
+            }
+            .title{
+                font-size: 28px;
+                border-bottom: 1px dashed;
+                padding: 14px 0;
+                white-space: nowrap;
+                img{
+                    display: inline-block;
+                }
+            }
+            .list-inline{
+                color: #d55430;
+                font-size: 22px;
+                line-height: 2;
+                margin: 12px 0;
+                li{
+                    margin-right: 8px;
+                    padding-left: 20px;
+                    position: relative;
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        margin-top: -4px;
+                        width: 8px;
+                        height: 8px;
+                        background: #d55430;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            .pull-left{
+                margin-right: 12px;
+            }
+            .btn-buy{
+                background: url('/images/mat_week/button_buy_normal.png') center no-repeat;
+                width: 227px;
+                height: 77px;
+                display: inline-block;
+                &:active{
+                    background-image: url('/images/mat_week/button_buy_click.png')
+                }
+                &.btn-buy-xs{
+                    width: 174px;
+                    height: 77 / 227 * 174px;
+                    background-size: 100% auto;
+                }
+            }
+        }
+    }
+    .mat-week-footer{
+        padding-bottom: 165px;
+        img{
+            margin: 0 auto
+        }
+        .footer-item{
+            margin-top: 84px;
+            position: relative;
+            border: 1px solid #4fd1d9;
+            background: #fff;
+            min-height: 184px;
+            padding: 28px 0 0 72px;
+            &:before{
+                content: '';
+                position: absolute;
+                top: -34px;
+                left: -1px;
+                width: 68px;
+                height: 68px;
+                background: #fff;
+                border: 1px solid #4fd1d9;
+                border-radius: 50%;
+            }
+            &:after{
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: #fff;
+            }
+            >*{
+                position: relative;
+                z-index: 1;
+            }
+            >span{
+                position: absolute;
+                top: -30px;
+                left: 3px;
+                width: 60px;
+                line-height: 60px;
+                font-size: 44px;
+                background: #4fd1d9;
+                color: #fff;
+                font-weight: 600;
+                text-align: center;
+                border-radius: 50%;
+            }
+            .aside{
+                position: absolute;
+                left: 0;
+                font-size: 44px;
+                line-height: 1.2;
+                width: 0;
+                color: #4fd1d9;
+                top: 50%;
+                left: 12px;
+                margin-top: -52px;
+            }
+            ul{
+                z-index: 1;
+            }
+            li{
+                color: #6a6a6a;
+                font-size: 30px;
+            }
+        }
+    }
+}
+// modal
+.apx-modal-mat-week{
+    .modal-content{
+        background: transparent url('/images/mat_week/modal/bg2.png') center no-repeat;
+        border: 0;
+        box-shadow: none;
+        width: 547px;
+        height: 542px;
+        margin: 0 auto;
+        margin-top: 247px;
+        box-sizing: content-box;
+    } 
+    .modal-header{
+        padding: 0;
+        text-align: center;
+        border: 0;
+        position: relative;
+        img{
+            margin: -220px auto 0;
+        }
+        .h3{
+            margin: 0;
+            margin-top: -27px;
+        }
+        .close{
+            position: absolute;
+            width: 53px;
+            height: 53px;
+            background: url('/images/mat_week/modal/icon_close.png') center no-repeat;
+            cursor: pointer;
+            opacity: 1;
+            top: 0;
+            right: -69px - 27;
+        }
+    }
+    .modal-body{
+        font-size: 16px;
+        line-height: 26px;
+        padding: 28px 28 + 25px;
+        p{
+            margin: 0 0 28px;
+        }
+        >.high-lighted{
+            margin-top: 8px; 
+        }
+        .list-unstyled{
+            margin-top: -8px;
+            margin-bottom: 36px;
+            padding-left: 120px;
+        }
+    }
+}

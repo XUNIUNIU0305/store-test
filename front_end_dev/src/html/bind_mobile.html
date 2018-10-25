@@ -1,0 +1,113 @@
+@@include('head.inc') @@include('banner.inc') @@include('search.inc') @@include('main_nav.inc')
+<div class="container">
+    <div class="row">
+        <ol class="breadcrumb">
+            <li><a href="#">商城首页</a></li>
+            <li class="active">用户中心</li>
+        </ol>
+        @@include('account_aside.inc')
+        <div class="apx-acc-main">
+            <div class="apx-acc-title bg-danger"><strong>手机绑定</strong></div>
+            <div class="panel panel-default apx-acc-bind-mobile">
+                <div class="panel-body">
+                    <ul class="nav nav-tabs apx-add-order-nav" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#tab_mobile_binded" role="tab" data-toggle="tab">已绑定手机</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#tab_bind_mobile" role="tab" data-toggle="tab">未绑定手机</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade in active" id="tab_mobile_binded">
+                            <form class="form-horizontal" role="form">
+                                <div class="form-group">
+                                    <label class="col-xs-3" for="new_mobile">新手机号：</label>
+                                    <div class="col-xs-9">
+                                        <input type="text" class="form-control" id="new_mobile" placeholder="请填写新手机号">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-xs-3" for="verify_old">旧手机验证码：</label>
+                                    <div class="col-xs-7">
+                                        <input type="text" class="form-control" id="verify_old">
+                                    </div>
+                                    <div class="col-xs-2"><button class="btn btn-block btn-default J_get_verify_sms">获取验证码</button></div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-xs-3" for="verify_new"> 新手机验证码：</label>
+                                    <div class="col-xs-7">
+                                        <input type="text" class="form-control" id="verify_new">
+                                    </div>
+                                    <div class="col-xs-2"><button class="btn btn-block btn-default J_get_verify_sms">获取验证码</button></div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-9 col-xs-offset-3">
+                                        <p class="text-danger">警告：您输入的手机不符合规定！</p>
+                                    </div>
+                                </div>
+                            </form>
+                            <button class="btn btn-danger btn-lg btn-block">确认绑定</button>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="tab_bind_mobile">
+                            <form class="form-horizontal" role="form">
+                                <div class="form-group">
+                                    <label class="col-xs-3" for="new_mobile2">新手机号：</label>
+                                    <div class="col-xs-9">
+                                        <input type="text" class="form-control" id="new_mobile2" placeholder="请填写新手机号">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-xs-3" for="verify"> 手机验证码：</label>
+                                    <div class="col-xs-7">
+                                        <input type="text" class="form-control" id="verify">
+                                    </div>
+                                    <div class="col-xs-2"><button class="btn btn-block btn-default J_get_verify_sms">获取验证码</button></div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-9 col-xs-offset-3">
+                                        <p class="text-danger">警告：您输入的手机不符合规定！</p>
+                                    </div>
+                                </div>
+                            </form>
+                            <button class="btn btn-danger btn-lg btn-block">确认绑定</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('ensurance.inc') @@include('sitemap.inc') @@include('footer.inc')
+
+<script>
+    $(function () {
+        // get sms
+        var timerAll = [],
+            intervalAll = [];
+        $('.J_get_verify_sms').click(function (e) {
+            var timer, interval;
+            e.preventDefault();
+            var $this = $(this);
+            var countDown = 60;
+            // disable it
+            if ($this.hasClass('disabled')) return;
+            $this.addClass('disabled');
+            // revert changes after 60s
+            timer = setTimeout(function () {
+                $this.text('点击获取');
+                $this.removeClass('disabled');
+                interval && clearInterval(interval);
+            }, 60 * 1000);
+            timerAll.push(timer);
+            // set count down text
+            $this.text(countDown + '秒后重试');
+            interval = setInterval(function () {
+                countDown--;
+                $this.text(countDown + '秒后重试');
+            }, 1000);
+            intervalAll.push(interval);
+        })
+    })
+
+</script>

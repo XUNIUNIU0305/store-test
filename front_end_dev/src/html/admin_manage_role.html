@@ -1,0 +1,793 @@
+@@include('head.inc')
+<!-- header start -->
+<header class="admin-frame-header">
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#top">
+                <img alt="logo" src="/images/logo_white.png" height="24">
+            </a>
+        </div>
+        <ul class="nav navbar-nav navbar-left">
+            <li>管理控制中心</li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                476644346@qq.com
+            </li>
+            <li>
+                <a href="javascript:void(0)">退出</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<!-- header end -->
+<!-- aside nav start -->
+<aside class="admin-frame-aside" id="aside-menu">
+    <ul class="nav nav-pills nav-stacked">
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_1">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_2">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_3">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+    </ul>
+    <ul id="aside_menu_1" class="list-unstyled child-list collapse">
+        <li class="active"><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+    </ul>
+    <ul id="aside_menu_2" class="list-unstyled child-list collapse">
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+    </ul>
+    <ul id="aside_menu_3" class="list-unstyled child-list collapse">
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+    </ul>
+</aside>
+<!-- aside nav end -->
+<!-- main area start -->
+<div class="admin-frame-main">
+    <div class="admin-main-wrap">
+        <!--management main content-->
+        <div class="admin-management-container">
+            <div class="clearfix">
+                <form class="form-inline pull-left">
+                    <div class="form-group">
+                        <label>部门：</label>
+                        <select class="form-control">
+                            <option value="全部">全部</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>身份／角色：</label>
+                        <select class="form-control">
+                            <option value="全部">全部</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="输入名称／拼音首字母">
+                        <span class="input-group-btn">
+                            <button class="btn"><i class="glyphicon glyphicon-search"></i></button>
+                        </span>
+                    </div>
+                    <!-- /input-group -->
+                </form>
+                <button class="btn btn-danger btn-lg btn-round pull-right">添加新用户</button>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="admin-management-panel">
+                        <div class="header">
+                            <div class="col-xs-3">
+                                <div class="row">
+                                    <div class="col-xs-4">序号</div>
+                                    <div class="col-xs-4">姓名</div>
+                                    <div class="col-xs-4">部门</div>
+                                </div>
+                            </div>
+                            <div class="col-xs-7 text-left">
+                                <div class="row">
+                                    <div class="col-xs-2">手机</div>
+                                    <div class="col-xs-3">邮箱</div>
+                                    <div class="col-xs-2">身份／角色</div>
+                                    <div class="col-xs-5">权限</div>
+                                </div>
+                            </div>
+                            <div class="col-xs-2">操作</div>
+                        </div>
+                        <div class="iscroll_container with-header with-footer">
+                            <ul class="list-unstyled dashed-split">
+                                <!--single li-->
+                                <li class="active">
+                                    <div class="col-xs-3">
+                                        <div class="row">
+                                            <div class="col-xs-4">001</div>
+                                            <div class="col-xs-4">代用名</div>
+                                            <div class="col-xs-4">部门</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7 text-left">
+                                        <div class="row">
+                                            <div class="col-xs-2">13388888888</div>
+                                            <div class="col-xs-3">yongming@9daye.com</div>
+                                            <div class="col-xs-2">客服</div>
+                                            <div class="col-xs-5">订单系统，退货系统</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <a href="" class="btn btn-warning">修改</a>
+                                        <a href="" class="btn btn-danger">删除</a>
+                                    </div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-3">
+                                        <div class="row">
+                                            <div class="col-xs-4">001</div>
+                                            <div class="col-xs-4">代用名</div>
+                                            <div class="col-xs-4">部门</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7 text-left">
+                                        <div class="row">
+                                            <div class="col-xs-2">13388888888</div>
+                                            <div class="col-xs-3">yongming@9daye.com</div>
+                                            <div class="col-xs-2">客服</div>
+                                            <div class="col-xs-5">订单系统，退货系统</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <a href="" class="btn btn-warning">修改</a>
+                                        <a href="" class="btn btn-danger">删除</a>
+                                    </div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-3">
+                                        <div class="row">
+                                            <div class="col-xs-4">001</div>
+                                            <div class="col-xs-4">代用名</div>
+                                            <div class="col-xs-4">部门</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7 text-left">
+                                        <div class="row">
+                                            <div class="col-xs-2">13388888888</div>
+                                            <div class="col-xs-3">yongming@9daye.com</div>
+                                            <div class="col-xs-2">客服</div>
+                                            <div class="col-xs-5">订单系统，退货系统</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <a href="" class="btn btn-warning">修改</a>
+                                        <a href="" class="btn btn-danger">删除</a>
+                                    </div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-3">
+                                        <div class="row">
+                                            <div class="col-xs-4">001</div>
+                                            <div class="col-xs-4">代用名</div>
+                                            <div class="col-xs-4">部门</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7 text-left">
+                                        <div class="row">
+                                            <div class="col-xs-2">13388888888</div>
+                                            <div class="col-xs-3">yongming@9daye.com</div>
+                                            <div class="col-xs-2">客服</div>
+                                            <div class="col-xs-5">订单系统，退货系统</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <a href="" class="btn btn-warning">修改</a>
+                                        <a href="" class="btn btn-danger">删除</a>
+                                    </div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-3">
+                                        <div class="row">
+                                            <div class="col-xs-4">001</div>
+                                            <div class="col-xs-4">代用名</div>
+                                            <div class="col-xs-4">部门</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7 text-left">
+                                        <div class="row">
+                                            <div class="col-xs-2">13388888888</div>
+                                            <div class="col-xs-3">yongming@9daye.com</div>
+                                            <div class="col-xs-2">客服</div>
+                                            <div class="col-xs-5">订单系统，退货系统</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <a href="" class="btn btn-warning">修改</a>
+                                        <a href="" class="btn btn-danger">删除</a>
+                                    </div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-3">
+                                        <div class="row">
+                                            <div class="col-xs-4">001</div>
+                                            <div class="col-xs-4">代用名</div>
+                                            <div class="col-xs-4">部门</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7 text-left">
+                                        <div class="row">
+                                            <div class="col-xs-2">13388888888</div>
+                                            <div class="col-xs-3">yongming@9daye.com</div>
+                                            <div class="col-xs-2">客服</div>
+                                            <div class="col-xs-5">订单系统，退货系统</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <a href="" class="btn btn-warning">修改</a>
+                                        <a href="" class="btn btn-danger">删除</a>
+                                    </div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-3">
+                                        <div class="row">
+                                            <div class="col-xs-4">001</div>
+                                            <div class="col-xs-4">代用名</div>
+                                            <div class="col-xs-4">部门</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7 text-left">
+                                        <div class="row">
+                                            <div class="col-xs-2">13388888888</div>
+                                            <div class="col-xs-3">yongming@9daye.com</div>
+                                            <div class="col-xs-2">客服</div>
+                                            <div class="col-xs-5">订单系统，退货系统</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <a href="" class="btn btn-warning">修改</a>
+                                        <a href="" class="btn btn-danger">删除</a>
+                                    </div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-3">
+                                        <div class="row">
+                                            <div class="col-xs-4">001</div>
+                                            <div class="col-xs-4">代用名</div>
+                                            <div class="col-xs-4">部门</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7 text-left">
+                                        <div class="row">
+                                            <div class="col-xs-2">13388888888</div>
+                                            <div class="col-xs-3">yongming@9daye.com</div>
+                                            <div class="col-xs-2">客服</div>
+                                            <div class="col-xs-5">订单系统，退货系统</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <a href="" class="btn btn-warning">修改</a>
+                                        <a href="" class="btn btn-danger">删除</a>
+                                    </div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-3">
+                                        <div class="row">
+                                            <div class="col-xs-4">001</div>
+                                            <div class="col-xs-4">代用名</div>
+                                            <div class="col-xs-4">部门</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7 text-left">
+                                        <div class="row">
+                                            <div class="col-xs-2">13388888888</div>
+                                            <div class="col-xs-3">yongming@9daye.com</div>
+                                            <div class="col-xs-2">客服</div>
+                                            <div class="col-xs-5">订单系统，退货系统</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <a href="" class="btn btn-warning">修改</a>
+                                        <a href="" class="btn btn-danger">删除</a>
+                                    </div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-3">
+                                        <div class="row">
+                                            <div class="col-xs-4">001</div>
+                                            <div class="col-xs-4">代用名</div>
+                                            <div class="col-xs-4">部门</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7 text-left">
+                                        <div class="row">
+                                            <div class="col-xs-2">13388888888</div>
+                                            <div class="col-xs-3">yongming@9daye.com</div>
+                                            <div class="col-xs-2">客服</div>
+                                            <div class="col-xs-5">订单系统，退货系统</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <a href="" class="btn btn-warning">修改</a>
+                                        <a href="" class="btn btn-danger">删除</a>
+                                    </div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-3">
+                                        <div class="row">
+                                            <div class="col-xs-4">001</div>
+                                            <div class="col-xs-4">代用名</div>
+                                            <div class="col-xs-4">部门</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7 text-left">
+                                        <div class="row">
+                                            <div class="col-xs-2">13388888888</div>
+                                            <div class="col-xs-3">yongming@9daye.com</div>
+                                            <div class="col-xs-2">客服</div>
+                                            <div class="col-xs-5">订单系统，退货系统</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <a href="" class="btn btn-warning">修改</a>
+                                        <a href="" class="btn btn-danger">删除</a>
+                                    </div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-3">
+                                        <div class="row">
+                                            <div class="col-xs-4">001</div>
+                                            <div class="col-xs-4">代用名</div>
+                                            <div class="col-xs-4">部门</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7 text-left">
+                                        <div class="row">
+                                            <div class="col-xs-2">13388888888</div>
+                                            <div class="col-xs-3">yongming@9daye.com</div>
+                                            <div class="col-xs-2">客服</div>
+                                            <div class="col-xs-5">订单系统，退货系统</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <a href="" class="btn btn-warning">修改</a>
+                                        <a href="" class="btn btn-danger">删除</a>
+                                    </div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-3">
+                                        <div class="row">
+                                            <div class="col-xs-4">001</div>
+                                            <div class="col-xs-4">代用名</div>
+                                            <div class="col-xs-4">部门</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7 text-left">
+                                        <div class="row">
+                                            <div class="col-xs-2">13388888888</div>
+                                            <div class="col-xs-3">yongming@9daye.com</div>
+                                            <div class="col-xs-2">客服</div>
+                                            <div class="col-xs-5">订单系统，退货系统</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <a href="" class="btn btn-warning">修改</a>
+                                        <a href="" class="btn btn-danger">删除</a>
+                                    </div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-3">
+                                        <div class="row">
+                                            <div class="col-xs-4">001</div>
+                                            <div class="col-xs-4">代用名</div>
+                                            <div class="col-xs-4">部门</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7 text-left">
+                                        <div class="row">
+                                            <div class="col-xs-2">13388888888</div>
+                                            <div class="col-xs-3">yongming@9daye.com</div>
+                                            <div class="col-xs-2">客服</div>
+                                            <div class="col-xs-5">订单系统，退货系统</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <a href="" class="btn btn-warning">修改</a>
+                                        <a href="" class="btn btn-danger">删除</a>
+                                    </div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-3">
+                                        <div class="row">
+                                            <div class="col-xs-4">001</div>
+                                            <div class="col-xs-4">代用名</div>
+                                            <div class="col-xs-4">部门</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7 text-left">
+                                        <div class="row">
+                                            <div class="col-xs-2">13388888888</div>
+                                            <div class="col-xs-3">yongming@9daye.com</div>
+                                            <div class="col-xs-2">客服</div>
+                                            <div class="col-xs-5">订单系统，退货系统</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <a href="" class="btn btn-warning">修改</a>
+                                        <a href="" class="btn btn-danger">删除</a>
+                                    </div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-3">
+                                        <div class="row">
+                                            <div class="col-xs-4">001</div>
+                                            <div class="col-xs-4">代用名</div>
+                                            <div class="col-xs-4">部门</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7 text-left">
+                                        <div class="row">
+                                            <div class="col-xs-2">13388888888</div>
+                                            <div class="col-xs-3">yongming@9daye.com</div>
+                                            <div class="col-xs-2">客服</div>
+                                            <div class="col-xs-5">订单系统，退货系统</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <a href="" class="btn btn-warning">修改</a>
+                                        <a href="" class="btn btn-danger">删除</a>
+                                    </div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-3">
+                                        <div class="row">
+                                            <div class="col-xs-4">001</div>
+                                            <div class="col-xs-4">代用名</div>
+                                            <div class="col-xs-4">部门</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7 text-left">
+                                        <div class="row">
+                                            <div class="col-xs-2">13388888888</div>
+                                            <div class="col-xs-3">yongming@9daye.com</div>
+                                            <div class="col-xs-2">客服</div>
+                                            <div class="col-xs-5">订单系统，退货系统</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <a href="" class="btn btn-warning">修改</a>
+                                        <a href="" class="btn btn-danger">删除</a>
+                                    </div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-3">
+                                        <div class="row">
+                                            <div class="col-xs-4">001</div>
+                                            <div class="col-xs-4">代用名</div>
+                                            <div class="col-xs-4">部门</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7 text-left">
+                                        <div class="row">
+                                            <div class="col-xs-2">13388888888</div>
+                                            <div class="col-xs-3">yongming@9daye.com</div>
+                                            <div class="col-xs-2">客服</div>
+                                            <div class="col-xs-5">订单系统，退货系统</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <a href="" class="btn btn-warning">修改</a>
+                                        <a href="" class="btn btn-danger">删除</a>
+                                    </div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-3">
+                                        <div class="row">
+                                            <div class="col-xs-4">001</div>
+                                            <div class="col-xs-4">代用名</div>
+                                            <div class="col-xs-4">部门</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7 text-left">
+                                        <div class="row">
+                                            <div class="col-xs-2">13388888888</div>
+                                            <div class="col-xs-3">yongming@9daye.com</div>
+                                            <div class="col-xs-2">客服</div>
+                                            <div class="col-xs-5">订单系统，退货系统</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <a href="" class="btn btn-warning">修改</a>
+                                        <a href="" class="btn btn-danger">删除</a>
+                                    </div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-3">
+                                        <div class="row">
+                                            <div class="col-xs-4">001</div>
+                                            <div class="col-xs-4">代用名</div>
+                                            <div class="col-xs-4">部门</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7 text-left">
+                                        <div class="row">
+                                            <div class="col-xs-2">13388888888</div>
+                                            <div class="col-xs-3">yongming@9daye.com</div>
+                                            <div class="col-xs-2">客服</div>
+                                            <div class="col-xs-5">订单系统，退货系统</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <a href="" class="btn btn-warning">修改</a>
+                                        <a href="" class="btn btn-danger">删除</a>
+                                    </div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-3">
+                                        <div class="row">
+                                            <div class="col-xs-4">001</div>
+                                            <div class="col-xs-4">代用名</div>
+                                            <div class="col-xs-4">部门</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7 text-left">
+                                        <div class="row">
+                                            <div class="col-xs-2">13388888888</div>
+                                            <div class="col-xs-3">yongming@9daye.com</div>
+                                            <div class="col-xs-2">客服</div>
+                                            <div class="col-xs-5">订单系统，退货系统</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <a href="" class="btn btn-warning">修改</a>
+                                        <a href="" class="btn btn-danger">删除</a>
+                                    </div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-3">
+                                        <div class="row">
+                                            <div class="col-xs-4">001</div>
+                                            <div class="col-xs-4">代用名</div>
+                                            <div class="col-xs-4">部门</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7 text-left">
+                                        <div class="row">
+                                            <div class="col-xs-2">13388888888</div>
+                                            <div class="col-xs-3">yongming@9daye.com</div>
+                                            <div class="col-xs-2">客服</div>
+                                            <div class="col-xs-5">订单系统，退货系统</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <a href="" class="btn btn-warning">修改</a>
+                                        <a href="" class="btn btn-danger">删除</a>
+                                    </div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-3">
+                                        <div class="row">
+                                            <div class="col-xs-4">001</div>
+                                            <div class="col-xs-4">代用名</div>
+                                            <div class="col-xs-4">部门</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7 text-left">
+                                        <div class="row">
+                                            <div class="col-xs-2">13388888888</div>
+                                            <div class="col-xs-3">yongming@9daye.com</div>
+                                            <div class="col-xs-2">客服</div>
+                                            <div class="col-xs-5">订单系统，退货系统</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <a href="" class="btn btn-warning">修改</a>
+                                        <a href="" class="btn btn-danger">删除</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer">
+                            <!-- pagination -->
+                            <ul class="pagination pagination-sm">
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><span>...</span></li>
+                                <li><a href="#">10</a></li>
+                            </ul>
+                            <div class="pagination-info">
+                                <span>共100页，到第<input type="text" maxlength="3">页</span>
+                                <a href="#" class="btn btn-danger btn-sm">确认</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- main area start -->
+
+<!-- 删除提示 -->
+<div class="apx-modal-admin-alert modal fade admin-management" id="apxModalAdminAlert" tabindex="-1">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span></a>
+                <h4 class="modal-title">提示信息</h4>
+            </div>
+            <div class="modal-body">
+                <div class="h4">确定要删除该用户吗？</div>
+                <div class="text-left row">
+                    <div class="col-xs-8 col-xs-offset-4">姓名：<span>九大爷</span></div>
+                    <div class="col-xs-8 col-xs-offset-4">部门：<span>客服部</span></div>
+                    <div class="col-xs-8 col-xs-offset-4">电话：<span>13012345678</span></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-lg btn-danger">确认</button>
+                <button type="button" class="btn btn-lg btn-default" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="apx-modal-admin-manage-role modal fade" id="apxModalManageRoleAdd" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content modal-lg">
+            <div class="modal-header">
+                <a type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span></a>
+                <h4 class="modal-title">添加用户</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-inline">
+                    <div class="form-group form-group-sm">
+                        <label for="name">姓名：</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label for="mobile">手机：</label>
+                        <input type="text" class="form-control" id="mobile">
+                    </div>
+                    <div class="form-group form-group-sm has-feedback">
+                        <label class="control-label" for="pwd_1">设置密码：</label>
+                        <input type="password" class="form-control" id="pwd_1">
+                        <span class="glyphicon glyphicon-eye-open form-control-feedback" onclick="$(this).toggleClass('glyphicon-eye-close');$(this).siblings('input').attr('type')==='password'?$(this).siblings('input').attr('type','text'):$(this).siblings('input').attr('type', 'password')"></span>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label for="department">部门：</label>
+                        <select id="department" class="form-control">
+                            <option value="">全部</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label for="mobile">邮箱：</label>
+                        <input type="text" class="form-control" id="mobile">
+                    </div>
+                    <div class="form-group form-group-sm has-feedback">
+                        <label class="control-label" for="pwd_2">&nbsp;</label>
+                        <input type="password" class="form-control" id="pwd_2">
+                        <span class="glyphicon glyphicon-eye-open form-control-feedback" onclick="$(this).toggleClass('glyphicon-eye-close');$(this).siblings('input').attr('type')==='password'?$(this).siblings('input').attr('type','text'):$(this).siblings('input').attr('type', 'password')"></span>
+                    </div>
+                </div>
+                <div class="form">
+                    <div class="form-group">
+                        <label>身份／角色</label>
+                    </div>
+                    <div class="form-inline">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" checked>
+                                客服
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">
+                                会计
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">
+                                产品经理
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">
+                                销售经理
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form">
+                    <div class="form-group">
+                        <label>权限</label>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li>订单系统</li>
+                        <li>财务系统</li>
+                        <li>退货系统</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn btn-danger">确认</button>
+                <button type="button" class="btn btn btn-default" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('footer_admin.inc')
+
+<script>
+    $(function () {
+        var scrolls = [];
+        $('.iscroll_container').each(function () {
+            scrolls.push(new IScroll(this, {
+                mouseWheel: true,
+                scrollbars: true,
+                scrollbars: 'custom'
+            }))
+        })
+        // refresh api
+        scrolls.forEach(function (scroll) {
+            scroll.refresh();
+        })
+        // modal show for presentation 
+        // need to remove later
+        $('#apxModalAdminAlert').modal('show');
+        $('#apxModalManageRoleAdd').modal('show');
+    })
+
+</script>

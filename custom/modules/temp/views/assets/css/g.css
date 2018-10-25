@@ -1,0 +1,78 @@
+.contact-container {
+    width: 1200px;
+    margin: 50px auto;
+    display: flex;
+}
+.contact-container .nav-tabs {
+    border: none;
+    flex: 0 0 200px;
+    padding-right: 26px;
+    margin-right: 110px;
+}
+.contact-container .nav-tabs li a {
+    width: 200px;
+    font-weight: bold;
+    border-radius: 0;
+    padding: 15px 15px 15px 30px;
+    border: none;
+    border-bottom: 1px solid #b3b3b3;
+    position: relative;
+}
+.contact-container .nav-tabs li a::after {
+    content: ' ';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 14px;
+    right: 15px;
+    background: url(/images/icons/jinru_2.png) no-repeat center right;
+}
+.contact-container .nav-tabs li.active a::after {
+    background-image: url(/images/icons/jinru.png);
+}
+.contact-container .nav-tabs li a:hover {
+    background-color: transparent;
+}
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:focus {
+    color: #FFF;
+    cursor: default;
+    background-color: #EB2F2F;
+    border: none;
+    border-bottom-color: transparent;
+}
+.contact-container .title span,
+.contact-container .title small {
+    font-size: 34px;
+    color: #333;
+    font-weight: bold;
+    line-height: 1;
+}
+.contact-container .title small {
+    font-size: 14px;
+    color: #999;
+    font-weight: bold;
+}
+.contact-container .contact-us {
+    margin-top: 25px;
+    font-size: 16px;
+    color: #333;
+}
+.contact-container .contact-us img {
+    margin-top: 20px;
+}
+.company-profile {
+    width: 856px;
+    margin-top: 20px;
+    padding: 42px;
+    border: 1px solid #b3b3b3;
+}
+.company-profile p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-indent: 2em;
+}

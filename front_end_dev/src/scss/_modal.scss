@@ -1,0 +1,1093 @@
+.modal-sm {
+    width: 460px !important;
+}
+
+@mixin customModalMsg() {
+    border-top: 1px dashed #ccc;
+    line-height: 60px;
+    font-size: 12px;
+    i {
+        margin-right: 8px;
+    }
+}
+
+@mixin customModal() {
+    .modal-dialog {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+    label.control-label {
+        font-weight: 400;
+    }
+    .modal-content {
+        border: 4px solid rgba(#fff, .5);
+        border-radius: 0;
+    }
+    .modal-header {
+        padding: 0 15px 0 50px;
+        background: #e6e6e6;
+        .close {
+            font-size: 36px;
+            color: #999;
+            outline: 0;
+            opacity: 1;
+            &:hover {
+                color: $brand-danger;
+            }
+        }
+    }
+    .modal-title {
+        .h3 {
+            color: $brand-danger;
+            line-height: 40px;
+            font-size: 18px;
+        }
+    }
+    .modal-body {
+        padding: 50px 118px 10px 78px;
+    }
+    .modal-footer {
+        padding: 0;
+        padding-top: 15px;
+        border-top: 0;
+        text-align: center;
+        .btn {
+            width: 150px;
+            line-height: 40px;
+            padding: 0;
+            color: #fff;
+            font-size: 16px;
+            letter-spacing: 4px;
+            outline: 0;
+            margin-bottom: 36px;
+        }
+        .info-msg {
+            @include customModalMsg();
+            color: #666;
+        }
+        .error-msg {
+            @include customModalMsg();
+            color: $brand-danger;
+        }
+    }
+}
+
+.apx-modal-get-cash {
+    .modal-content {
+        border-radius: 12px;
+        overflow: hidden;
+    }
+    .modal-header {
+        background: #dcdcdc;
+        padding-left: 32px;
+        padding-right: 32px;
+        .close {
+            font-size: 32px;
+            font-weight: 700;
+            color: #fff;
+            opacity: 1;
+            outline: 0 !important;
+        }
+        img {
+            margin-right: 8px;
+            vertical-align: text-bottom;
+        }
+    }
+    legend {
+        border-bottom: 0;
+        margin-top: 12px;
+    }
+    label {
+        font-weight: 400;
+        &.radio-inline {
+            font-size: 16px;
+            padding-top: 12.5px;
+            padding-bottom: 12.5px;
+        }
+    }
+    .form-control {
+        border-radius: 0;
+    }
+    .form-control-static {
+        &.h4 {
+            margin: 0;
+            padding-left: 0;
+            font-size: 22px;
+            line-height: 1;
+            color: red;
+        }
+    }
+    .modal-footer {
+        border-top: 0;
+        text-align: left;
+        padding: 0 0 60px;
+        .btn {
+            // border-radius: 0;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            width: 184px;
+            border-color: $apx-theme-color;
+            background: $apx-theme-color;
+            color: #fff;
+            font-weight: 700;
+        }
+    }
+    .cash-after {
+        position: relative;
+        &:after {
+            content: "元";
+            position: absolute;
+            right: -8px;
+            top: 0;
+            line-height: 44px;
+        }
+    }
+}
+
+.apx-modal-acc-pwd {
+    @include customModal();
+    .modal-dialog {
+        height: 459px;
+    }
+    [class^='col-'] {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .validate-box {
+        height: 34px;
+        border: 1px solid $btn-default-border;
+        border-radius: 4px;
+        line-height: 32px;
+        text-align: center;
+    }
+}
+
+.apx-modal-acc-recharge {
+    @include customModal();
+    .modal-dialog {
+        height: 444px;
+    }
+    [class^='col-'] {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .modal-body {
+        padding-top: 90px;
+        padding-bottom: 60px;
+    }
+    input[type="radio"] {
+        margin-top: 6px;
+        margin-left: -28px;
+        margin-right: 8px;
+    }
+    .btn-xs {
+        min-width: 64px;
+        line-height: 22px;
+    }
+    .btn-info {
+        background: #00a9f2;
+        border-color: #00a9f2;
+        &:hover,
+        &:focus {
+            background: #00a9f2;
+            border-color: #00a9f2;
+        }
+    }
+    .btn-success {
+        background: #3cb034;
+        border-color: #3cb034;
+        &:hover,
+        &:focus {
+            background: #3cb034;
+            border-color: #3cb034;
+        }
+    }
+}
+
+.apx-modal-supply-shop-info {
+    @include customModal();
+    .modal-dialog {
+        height: 514px;
+    }
+    .modal-body {
+        padding: 40px 60px 12px;
+        label {
+            padding: 0;
+        }
+        .media,
+        .media-body {
+            overflow: visible;
+        }
+        [class^="col-xs-"] {
+            padding: 0 6px;
+        }
+    }
+    .modal-footer {
+        .btn {
+            margin: 0 16px 16px;
+        }
+        .btn-default {
+            background: #e6e6e6;
+            color: #333
+        }
+    }
+    .media {
+        .apx-update-photo {
+            width: 132px;
+            height: 132px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 60px;
+                height: 4px;
+                margin-left: -30px;
+                margin-top: -1px;
+                background: #ccc;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                height: 60px;
+                width: 4px;
+                margin-top: -30px;
+                margin-left: -1px;
+                background: #ccc;
+            }
+            img {
+                position: relative;
+                z-index: 1;
+                width: 130px;
+                height: 130px;
+            }
+        }
+        input[type='file'] {
+            position: absolute;
+            clip: rect(0, 0, 0, 0);
+            pointer-events: none;
+        }
+    }
+    .form-group:last-child {
+        margin-bottom: 0;
+    }
+}
+
+// warranty
+.apx-modal-warranty {
+    .result {
+        display: none;
+    }
+    @include customModal();
+    .modal-dialog {
+        height: 370px;
+    }
+    .modal-body {
+        padding: 12px;
+        >p {
+            height: 200px;
+            display: table-cell;
+            width: 2000px;
+            vertical-align: middle;
+            .h2 {
+                display: inline-block;
+                margin-top: 18px;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .modal-footer {
+        padding-bottom: 28px;
+        .btn {
+            margin: 0 50px;
+            width: 100px;
+            height: 34px;
+            line-height: 34px;
+        }
+        .btn-default {
+            background: #666;
+        }
+    }
+}
+
+@mixin adminModal($height) {
+    border-radius: 10px;
+    .modal-dialog {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+    .modal-dialog {
+        height: $height;
+    }
+    .modal-content {
+        border-radius: 10px;
+    }
+    .modal-header {
+        color: #fff;
+        background: $brand-danger;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-size: 16px;
+        .close {
+            font-size: 36px;
+            font-weight: 100;
+            width: 24px;
+            height: 24px;
+            color: #fff;
+            opacity: .5;
+            outline: 0;
+            position: relative;
+            right: 5px;
+            span {
+                display: block;
+                height: 24px;
+                line-height: 20px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@mixin businessModal($height) {
+    border-radius: 10px;
+    .modal-dialog {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+    .modal-dialog {
+        height: $height;
+    }
+    .modal-content {
+        border-radius: 10px;
+    }
+    .modal-header {
+        color: #fff;
+        background: #0080ff;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-size: 16px;
+        .close {
+            font-size: 36px;
+            font-weight: 100;
+            width: 24px;
+            height: 24px;
+            color: #fff;
+            opacity: .5;
+            outline: 0;
+            position: relative;
+            right: 5px;
+            span {
+                display: block;
+                height: 24px;
+                line-height: 20px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+// order_panel点击操作弹出框
+.apx-modal-deal-order {
+    @include adminModal(450px);
+    .modal-body {
+        letter-spacing: 1px;
+        padding-top: 43px;
+        .form-group {
+            margin-bottom: 10px;
+        }
+        .col-xs-3 {
+            padding-right: 30px;
+        }
+        .col-xs-3+.col-xs-3,
+        .col-xs-8 {
+            padding-left: 0;
+            margin-left: -25px;
+        }
+        .h3{
+            margin: 0;
+        }
+    }
+    .modal-footer {
+        padding: 5px 0 40px;
+        border: 0;
+        text-align: center;
+        .btn {
+            min-width: 120px;
+        }
+    }
+}
+
+.apx-modal-admin-add-type {
+    @include adminModal(368px);
+    .modal-body {
+        padding: 60px 40px;
+        font-size: 16px;
+        .form-group {
+            margin-bottom: 0;
+        }
+        label {
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+        input.form-control {
+            border-radius: 20px;
+            height: 44px;
+            font-size: 16px;
+            padding: 6px 20px;
+        }
+    }
+    .modal-footer {
+        border-top: 0;
+        padding: 20px 15px 60px;
+        .btn-block {
+            width: 208px;
+            margin: 0 auto;
+            border-radius: 18px;
+            height: 36px;
+        }
+    }
+}
+
+.apx-modal-admin-add-attr-detail {
+    @include adminModal(400px);
+    .modal-body {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .form-group-attr-box {
+        background: #eee;
+        display: table-cell;
+        width: 2000px;
+        vertical-align: middle;
+        height: 40px;
+        border: 1px solid #999;
+        .form-group,
+        label {
+            margin-bottom: 0;
+        }
+        label {
+            line-height: 30px;
+            padding: 0;
+        }
+        .detail-promo-ammount {
+            width: 170px;
+            padding-left: 15px;
+            .form-control {
+                width: 90px;
+            }
+        }
+        .input-group-addon {
+            background: linear-gradient(180deg, #fdfdfd, #dadada);
+            cursor: pointer;
+        }
+    }
+    .attr-detail-box {
+        margin-top: 24px;
+    }
+    .form-control {
+        border-radius: 0;
+    }
+    .modal-footer {
+        border-top: 0;
+        text-align: center;
+        padding: 0 0 20px;
+        .btn {
+            min-width: 100px;
+            margin: 0 12px;
+        }
+    }
+}
+
+// admin alert modal
+.apx-modal-admin-alert {
+    @include adminModal(300px);
+    .modal-body {
+        i {
+            color: $brand-danger;
+            font-size: 36px;
+            font-weight: 400;
+            margin: 12px 0;
+            &:before {
+                vertical-align: middle;
+                margin-right: 12px;
+            }
+        }
+        padding: 20px 0px;
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.5;
+    }
+    .modal-footer {
+        border-top: 0;
+        padding: 40px 15px 60px;
+        text-align: center;
+        .btn {
+            width: 100px;
+            padding: 6px 16px;
+            margin: 0 20px;
+        }
+    }
+    // management pages
+    &.admin-management {
+        .modal-body {
+            font-size: 14px;
+            padding-bottom: 0;
+            >.h4 {
+                margin-top: 16px;
+                +.row {
+                    margin-top: 18px;
+                }
+            }
+            .col-xs-8.col-xs-offset-4 {
+                line-height: 28px;
+            }
+            // manage authen
+            &.management-authen {
+                padding: 48px 120px 20px;
+                strong {
+                    white-space: nowrap;
+                    display: inline-block;
+                    padding: 28px 0;
+                }
+                .form {
+                    text-align: left;
+                    label {
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+            &.management-textarea {
+                padding: 48px 80px 0;
+                strong {
+                    white-space: nowrap;
+                    display: inline-block;
+                    padding: 28px 0;
+                }
+                .form-group {
+                    margin-bottom: 0;
+                }
+                .form {
+                    text-align: left;
+                    label {
+                        margin-bottom: 12px;
+                    }
+                    textarea{
+                        min-height: 60px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+        .modal-footer {
+            padding-bottom: 44px;
+        }
+    }
+}
+
+// admin brand image upload
+.apx-modal-admin-brand-img {
+    @include adminModal(360px);
+    .modal-body {
+        padding: 50px 80px 20px;
+        label {
+            font-weight: 400;
+        }
+        .form-horizontal>.form-group:first-child {
+            label {
+                line-height: 70px - 7;
+            }
+            .text-danger {
+                margin-left: -40px;
+                line-height: 70px;
+            }
+        }
+    }
+    .modal-footer {
+        border: 0;
+        padding-bottom: 50px;
+        .btn-block {
+            margin: 0 auto;
+            width: 200px;
+        }
+    }
+    // 上传图标
+    .upload-box {
+        width: 70px;
+        height: 70px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        position: relative;
+        &:after {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            content: '+';
+            text-align: center;
+            font-weight: 100;
+            font-size: 60px;
+            color: #ccc;
+            line-height: 1;
+            cursor: pointer;
+        }
+        img {
+            display: block;
+            width: 69px;
+            height: 69px;
+        }
+    }
+    input[type='file'] {
+        position: absolute;
+        clip: rect(0, 0, 0, 0);
+        pointer-events: none;
+    }
+}
+
+// admin选择商品
+.apx-modal-admin-select-pro {
+    @include adminModal(600px);
+    .modal-content {
+        width: 800px;
+        .modal-body {
+            .input-box {
+                margin: 10px 0 20px;
+                position: relative;
+                input {
+                    width: 320px;
+                    height: 30px;
+                    border-radius: 4px;
+                    border: 1px solid #ccc;
+                    padding: 0 25px 0 10px;
+                    background: url('/images/admin/shop/icon_sousuo.png') no-repeat 300px center;
+                }
+                span {
+                    position: absolute;
+                    left: 280px;
+                    top: 0;
+                    width: 40px;
+                    height: 30px;
+                    cursor: pointer;
+                }
+            }
+            .select-pro-list {
+                margin: 0 20px;
+                max-height: 430px;
+                overflow: auto;
+                table {
+                    width: 100%;
+                    thead {
+                        tr {
+                            border-bottom: 1px solid #ccc;
+                        }
+                        th {
+                            text-align: center;
+                            padding: 12px 0;
+                        }
+                    }
+                    tr {
+                        border-bottom: 1px dashed #ccc;
+                        td {
+                            padding: 10px 0;
+                            text-align: center;
+                        }
+                    }
+                    .img {
+                        img {
+                            width: 80px;
+                            height: 80px;
+                        }
+                    }
+                    .checkbox {
+                        position: relative;
+                        span {
+                            display: inline-block;
+                            width: 20px;
+                            height: 20px;
+                            border: 1px solid #ccc;
+                            border-radius: 20px;
+                        }
+                        &.active {
+                            span {
+                                border: 1px solid transparent;
+                                background: url('/images/admin/shop/icon_xuanzhong.png') no-repeat;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .modal-footer {
+        text-align: center;
+    }
+}
+
+// admin manage role
+.apx-modal-admin-manage-role {
+    @include adminModal(500px);
+    .modal-dialog {
+        width: 800px;
+        .modal-lg {
+            width: 800px;
+        }
+    }
+    .modal-body {
+        padding: 20px 30px 0;
+        >div {
+            border-bottom: 1px solid #ccc;
+        }
+        >.form-inline {
+            span.glyphicon {
+                cursor: pointer;
+                pointer-events: auto;
+            }
+            .form-group {
+                margin-bottom: 20px;
+                &:nth-child(3n+1) {
+                    width: 170px;
+                    margin-right: 36px;
+                    .form-control {
+                        width: 120px;
+                    }
+                }
+                &:nth-child(3n+2) {
+                    .form-control {
+                        width: 200px;
+                    }
+                }
+                &:nth-child(3n) {
+                    float: right;
+                }
+            }
+        }
+        >.form {
+            padding: 20px 0;
+            .checkbox {
+                margin-right: 36px;
+            }
+            .list-unstyled {
+                width: 750px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                white-space: nowrap;
+                margin-bottom: 0;
+                li {
+                    line-height: 28px;
+                    flex: 1 1 12.5%;
+                    padding-right: 36px;
+                }
+            }
+        }
+    }
+    .modal-footer {
+        padding: 36px;
+        border: 0;
+        text-align: center;
+        .btn {
+            width: 100px;
+            margin: 0 18px;
+        }
+    }
+}
+
+// admin withdraw audit
+.apx-modal-admin-withdraw-audit {
+    @include adminModal(480px);
+    .modal-body {
+        padding: 50px 80px 20px;
+        label {
+            font-weight: 400;
+        }
+        .radio-box {
+            text-align: center;
+            label {
+                font-size: 16px;
+            }
+            .radio {
+                display: inline-block;
+                margin: 0 12px 30px;
+            }
+        }
+        textarea {
+            resize: none;
+        }
+    }
+    .modal-footer {
+        border: 0;
+        padding-bottom: 50px;
+        text-align: center;
+        .btn {
+            margin: 0 15px;
+            min-width: 100px;
+        }
+    }
+}
+
+.apx-modal-admin-manage-staff {
+    @include adminModal(445px);
+    .modal-body {
+        padding: 50px 80px 20px;
+        label {
+            margin-bottom: 0;
+            line-height: 30px;
+            white-space: nowrap
+        }
+    }
+    textarea {
+        resize: none;
+    }
+    .modal-footer {
+        border: 0;
+        padding-bottom: 50px;
+        text-align: center;
+        .btn {
+            margin: 0 15px;
+            min-width: 100px;
+        }
+    }
+}
+
+.apx-modal-admin-manage-store {
+    @include adminModal(460px);
+    .modal-body {
+        margin: 20px 0;
+        padding: 0 40px;
+        // search bar
+        .input-group {
+            width: 100%;
+            input {
+                border-radius: 17px;
+                padding-right: 40px;
+                background: transparent;
+            }
+            .input-group-btn {
+                line-height: 30px;
+            }
+            .btn {
+                position: relative;
+                z-index: 3;
+                margin-left: -40px;
+                background: transparent;
+            }
+        }
+        .admin-management-panel {
+            height: 260px;
+            margin-top: 20px;
+        }
+    }
+    .modal-footer {
+        border: 0;
+        padding: 0;
+        margin: 20px 0;
+        text-align: center;
+        .btn {
+            margin: 0 15px;
+            min-width: 100px;
+        }
+    }
+}
+
+// business alert modal
+.apx-modal-business-alert {
+    @include businessModal(300px);
+    .modal-body {
+        i {
+            color: $brand-danger;
+            font-size: 36px;
+            font-weight: 400;
+            margin: 12px 0;
+            &:before {
+                vertical-align: middle;
+                margin-right: 12px;
+            }
+        }
+        padding: 20px 0px;
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.5;
+    }
+    .modal-footer {
+        border-top: 0;
+        padding: 40px 15px 60px;
+        text-align: center;
+        .btn {
+            width: 100px;
+            padding: 6px 16px;
+            margin: 0 20px;
+        }
+    }
+    // management pages
+    &.business-management {
+        .modal-body {
+            font-size: 14px;
+            padding-bottom: 0;
+            >.h4 {
+                margin-top: 16px;
+                +.row {
+                    margin-top: 18px;
+                }
+            }
+            .col-xs-8.col-xs-offset-4 {
+                line-height: 28px;
+            }
+            // manage authen
+            &.management-authen {
+                padding: 48px 120px 20px;
+                strong {
+                    white-space: nowrap;
+                    display: inline-block;
+                    padding: 28px 0;
+                }
+                .form {
+                    text-align: left;
+                    label {
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+        }
+        .modal-footer {
+            padding-bottom: 44px;
+            .btn-business {
+                background-color: #0080ff;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.apx-modal-business-manage-staff {
+    @include businessModal(445px);
+    .modal-body {
+        padding: 50px 80px 20px;
+        label {
+            margin-bottom: 0;
+            line-height: 30px;
+            white-space: nowrap
+        }
+    }
+    textarea {
+        resize: none;
+    }
+    .modal-footer {
+        border: 0;
+        padding-bottom: 50px;
+        text-align: center;
+        .btn {
+            margin: 0 15px;
+            min-width: 100px;
+        }
+        .btn-business {
+            color: #fff;
+            background-color: #0080ff;
+        }
+    }
+}
+
+.apx-modal-business-manage-store {
+    @include businessModal(460px);
+    .modal-body {
+        margin: 20px 0;
+        padding: 0 40px;
+        // search bar
+        .input-group {
+            width: 100%;
+            input {
+                border-radius: 17px;
+                padding-right: 40px;
+                background: transparent;
+            }
+            .input-group-btn {
+                line-height: 30px;
+            }
+            .btn {
+                position: relative;
+                z-index: 3;
+                margin-left: -40px;
+                background: transparent;
+            }
+        }
+        .business-management-panel {
+            height: 260px;
+            margin-top: 20px;
+        }
+    }
+    .modal-footer {
+        border: 0;
+        padding: 0;
+        margin: 20px 0;
+        text-align: center;
+        .btn {
+            margin: 0 15px;
+            min-width: 100px;
+        }
+    }
+    .btn-business {
+        color: #fff;
+        background-color: #0080ff;
+    }
+}
+
+.apx-modal-business-water {
+    .modal-dialog {
+        height: 265px;
+    }
+    .modal-header,
+    .modal-content {
+        border-radius: 0;
+    }
+    .modal-content {
+        border: 2px solid #b3b3b3;
+    }
+    .modal-header {
+        background: #fff;
+        border-bottom: 2px solid #144fcc;
+        .close {
+            color: #144fcc;
+            font-weight: 400;
+            opacity: 1;
+        }
+    }
+    .modal-body {
+        padding: 55px 0;
+        font-size: 20px;
+        font-weight: 600;
+        img {
+            margin-right: 18px;
+            vertical-align: middle;
+        }
+    }
+    .modal-footer {
+        padding: 0 0 36px;
+        .btn-business {
+            border-radius: 17px;
+            background: #0080ff;
+            min-width: 100px;
+            color: #fff;
+        }
+    }
+}

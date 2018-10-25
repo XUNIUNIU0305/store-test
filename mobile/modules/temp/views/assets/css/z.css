@@ -1,0 +1,67 @@
+.free-shipping {
+  background-color: #d2345d; }
+  .free-shipping img {
+    max-width: 100%;
+    vertical-align: top; }
+  .free-shipping .banner1 {
+    height: 77.33333vw; }
+  .free-shipping .banner2 {
+    width: 94.5vw;
+    height: 16vw;
+    margin: 0 2.66667vw;
+    margin-bottom: 6vw; }
+  .free-shipping .goods-contain {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+    padding: 0 2.66667vw; }
+    .free-shipping .goods-contain .goods-detail {
+      -webkit-flex: 0 0 46vw;
+              flex: 0 0 46vw;
+      height: 60vw;
+      background-color: #fff;
+      margin-bottom: 2.66667vw;
+      position: relative; }
+      .free-shipping .goods-contain .goods-detail:nth-child(2n+1) {
+        margin-right: 2.66667vw; }
+      .free-shipping .goods-contain .goods-detail .baoyou-img {
+        position: absolute;
+        top: 0;
+        left: 2.66667vw;
+        height: 6vw;
+        width: 7.2vw; }
+      .free-shipping .goods-contain .goods-detail .goods-img {
+        width: 46vw;
+        height: 44vw; }
+      .free-shipping .goods-contain .goods-detail .cut-line {
+        display: block;
+        height: 1px;
+        width: 46vw;
+        background-color: #d2345d;
+        margin-bottom: 2.66667vw; }
+      .free-shipping .goods-contain .goods-detail .price {
+        padding: 0 2.66667vw;
+        display: block;
+        color: #f22289;
+        font-size: 4vw; }
+        .free-shipping .goods-contain .goods-detail .price span {
+          font-size: 2.66667vw; }
+      .free-shipping .goods-contain .goods-detail .describe {
+        display: block;
+        width: 40.66667vw;
+        font-size: 3.46667vw;
+        padding: 0 2.66667vw;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis; }
+  .free-shipping .to-img {
+    position: fixed;
+    bottom: 40vw;
+    right: 1.33333vw;
+    width: 12.8vw;
+    height: 12.8vw; }
+  .free-shipping .ceiling-img {
+    position: fixed;
+    top: 0;
+    left: 0; }

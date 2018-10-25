@@ -1,0 +1,163 @@
+body {
+  overflow-x: hidden; }
+
+.bg-muted {
+  background: #f2f2f2; }
+
+.table-fix {
+  table-layout: fixed; }
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.container {
+  width: 1190px;
+  max-width: none !important; }
+
+.high-lighted {
+  color: #df483d; }
+
+.admin-frame-header {
+  background: #2a2f36; }
+  .admin-frame-header .navbar {
+    height: 50px;
+    margin-bottom: 0;
+    border: 0; }
+  .admin-frame-header .navbar-header {
+    height: 100%; }
+  .admin-frame-header .navbar-nav {
+    margin: 0; }
+  .admin-frame-header .navbar-brand {
+    width: 180px;
+    height: 100%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-right: 1px solid #15181a;
+    border-bottom: 1px solid #15181a; }
+    .admin-frame-header .navbar-brand img {
+      margin: 0 auto; }
+  .admin-frame-header .navbar-nav.navbar-right > li {
+    border-left: 1px solid #15181a; }
+    .admin-frame-header .navbar-nav.navbar-right > li a {
+      color: #fff;
+      padding: 0;
+      line-height: 45px;
+      display: block; }
+      .admin-frame-header .navbar-nav.navbar-right > li a:hover, .admin-frame-header .navbar-nav.navbar-right > li a:focus, .admin-frame-header .navbar-nav.navbar-right > li a:active {
+        color: #ccc; }
+  .admin-frame-header .navbar-nav > li {
+    color: #fff;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 20px;
+    transition: color .2s linear; }
+
+.admin-frame-aside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 180px;
+  padding-top: 50px; }
+  .admin-frame-aside .child-list {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    left: 180px;
+    width: 180px;
+    margin: 0;
+    box-shadow: 2px 2px 4px #ccc;
+    background: #fff;
+    z-index: 9;
+    display: block !important;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    height: auto !important;
+    box-shadow: none;
+    background: #f2f2f2; }
+    .admin-frame-aside .child-list.collapsing, .admin-frame-aside .child-list.in {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      z-index: 10; }
+    .admin-frame-aside .child-list li {
+      position: relative;
+      font-size: 12px; }
+      .admin-frame-aside .child-list li:not(:last-child):after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: #e1e2e5; }
+      .admin-frame-aside .child-list li:hover, .admin-frame-aside .child-list li.active {
+        background: #fff; }
+    .admin-frame-aside .child-list a {
+      display: block;
+      line-height: 45px;
+      padding: 0;
+      text-align: center;
+      text-decoration: none; }
+  .admin-frame-aside .nav {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    bottom: 0;
+    width: 180px;
+    background: #2a2f36;
+    color: #fff;
+    z-index: 11; }
+    .admin-frame-aside .nav > li {
+      margin: 0;
+      border-top: 1px solid #15181a; }
+      .admin-frame-aside .nav > li:first-child {
+        border-top: 0; }
+      .admin-frame-aside .nav > li:after {
+        position: absolute;
+        content: ' ';
+        right: 0;
+        top: 50%;
+        margin-top: -6px;
+        border-right: 6px solid #f2f2f2;
+        border-top: 6px solid transparent;
+        border-bottom: 6px solid transparent;
+        opacity: 1;
+        transition: opacity 0s .2s linear; }
+      .admin-frame-aside .nav > li.collapsed > a {
+        background: transparent; }
+      .admin-frame-aside .nav > li.collapsed:after {
+        opacity: 0; }
+      .admin-frame-aside .nav > li > a {
+        border-radius: 0;
+        padding: 0;
+        line-height: 44px;
+        height: 44px;
+        display: block;
+        background: #ce4e45;
+        color: #fff;
+        text-align: center;
+        font-size: 12px; }
+        .admin-frame-aside .nav > li > a.hover, .admin-frame-aside .nav > li > a:hover, .admin-frame-aside .nav > li > a.active {
+          background: #ce4e45; }
+
+.admin-frame-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-x: auto;
+  overflow-y: auto;
+  margin: 50px 0 0 180px;
+  font-size: 0; }
+
+.admin-main-wrap {
+  min-width: 1190px;
+  padding: 0 30px;
+  font-size: 14px; }
+
+body {
+  overflow-x: auto; }

@@ -1,0 +1,143 @@
+.brand-activity-bill {
+	font-size: 12px;
+	background-color: #d6f2fd;
+	margin-bottom: 50px;
+	img {
+		max-width: 100%;
+		vertical-align: top;
+	}
+	p {
+		margin: 0;
+	}
+	.bill-product {
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+		img.left {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 30%;
+		}
+		img.right {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 30%;
+		}
+		.pro-title {
+			margin: 0 15px;
+			transform: translatey(30px);
+		}
+		.item {
+			display: flex;
+			padding: 10px;
+			margin: 30px 15px;
+			background-color: #c1eeff;
+			color: #1397fc;
+			position: relative;
+			.img {
+				flex: 0 0 46%;
+			}
+			.text {
+				padding-left: 16px;
+				.h1 {
+					font-size: 1.4em;
+					font-weight: 700;
+				}
+				.detail {
+					display: flex;
+					flex-wrap: wrap;
+					margin-top: 6px;
+					i {
+						display: inline-block;
+						width: 4px;
+						height: 4px;
+						background-color: #1397fc;
+						border-radius: 10px;
+						vertical-align: middle;
+						margin-right: 2px;
+					}
+					span {
+						margin-right: 10px;
+						flex: 1 1 auto;
+					}
+				}
+				.detail-3 {
+					i {
+						display: inline-block;
+						width: 10px;
+						height: 10px;
+						background: url('/images/activity-bill/gougou_icon.png') no-repeat left center;
+						background-size: 10px;
+					}
+					span {
+						padding-right: 2px;
+					}
+				}
+				.btn {
+					display: block;
+					width: (146px / 2);
+					background-color: #1397fc;
+					border-radius: 50px;
+					text-align: center;
+					color: #fff;
+					font-size: 1em;
+					padding: 6px;
+					margin-left: 10px;
+					position: absolute;
+					bottom: 10px;
+					box-shadow: -1px 5px 0px -2px #fff;
+				}
+			}
+		}
+	}
+	.bill-explain {
+		margin-top: 20px;
+		padding: 0 15px;
+		.content {
+			overflow: hidden;
+			background-color: #c1eeff;
+			padding: 0 15px;
+			color: #1397fc;
+			p {
+				margin: 2px 0;
+			}
+			span {
+				color: #ff5e5e;
+			}
+			.title {
+				padding: 10px 0;
+			}
+			.item {
+				padding: 6px 0;
+				.tip {
+					font-weight: 700;
+				}
+			}
+		}
+	}
+	img.footer {
+		margin-top: -20px;
+	}
+}
+@media screen and (min-width: 375px) {
+    .brand-activity-bill {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 414px) {
+    .brand-activity-bill {
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 568px) {
+    .brand-activity-bill {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 667px) {
+    .brand-activity-bill {
+        font-size: 24px;
+    }
+}

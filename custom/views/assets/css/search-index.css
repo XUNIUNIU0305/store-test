@@ -1,0 +1,261 @@
+.search-contain {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+  .search-contain li {
+    list-style: none; }
+  .search-contain a {
+    text-decoration: none; }
+  .search-contain .red {
+    color: #e01222; }
+  .search-contain .main {
+    width: 1192px;
+    margin: 0 auto; }
+  .search-contain .mian-serachcont {
+    height: 50px;
+    line-height: 50px; }
+    .search-contain .mian-serachcont a:hover {
+      color: red; }
+  .search-contain .mian-serachcont .fa-angle-right {
+    padding: 0 12px 0 17px; }
+  .search-contain .main-brand {
+    border: 1px solid #f2f2f2; }
+  .search-contain .main-brand:before, .search-contain .main-brand:after {
+    content: '';
+    display: table;
+    clear: both; }
+  .search-contain .main-brand > p {
+    float: left;
+    width: 160px;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 8px 0 0 12px;
+    color: #575757; }
+  .search-contain .main-brandlist {
+    float: left;
+    padding: 3px 1px 10px;
+    width: 870px; }
+  .search-contain .main-brandlist > li {
+    margin: 9px 0 0 9px;
+    float: left;
+    width: 78px;
+    height: 78px;
+    border: 1px solid #f2f2f2; }
+    .search-contain .main-brandlist > li img {
+      display: block;
+      width: 76px;
+      height: 76px; }
+  .search-contain .main-brandlist > li:hover {
+    border: 1px solid #e01222; }
+  .search-contain .mian-more {
+    float: right;
+    width: 57px;
+    height: 23px;
+    border: 1px solid #dfdfdf;
+    text-align: center;
+    line-height: 23px;
+    margin: 6px 13px;
+    color: #999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .search-contain .main-category {
+    border: 1px solid #f2f2f2;
+    border-top: none;
+    min-height: 44px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .search-contain .main-category span {
+      height: 44px;
+      line-height: 44px;
+      font-size: 16px;
+      margin-right: 30px;
+      cursor: pointer; }
+    .search-contain .main-category .sort_tilte {
+      float: left;
+      color: #575757;
+      cursor: auto;
+      width: 142px;
+      margin: 0 0 0 13px; }
+    .search-contain .main-category .category-box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .search-contain .mian-cont {
+    padding-top: 30px; }
+  .search-contain .mian-cont:before, .search-contain .mian-cont:after {
+    display: table;
+    clear: both;
+    content: ''; }
+  .search-contain .main-shopping {
+    float: left;
+    width: 960px;
+    max-height: 1935px;
+    overflow: hidden;
+    padding: 0; }
+    .search-contain .main-shopping img {
+      height: 210px;
+      width: 210px; }
+    .search-contain .main-shopping .prev-img {
+      position: absolute;
+      width: 8px;
+      height: 13px;
+      left: 3px;
+      top: 13px;
+      cursor: pointer; }
+    .search-contain .main-shopping .next-img {
+      position: absolute;
+      width: 8px;
+      height: 13px;
+      right: 3px;
+      top: 13px;
+      cursor: pointer; }
+  .search-contain .main-shopping > li {
+    cursor: pointer;
+    float: left;
+    margin: 0 26px 28px 0;
+    width: 210px;
+    height: 360px;
+    border: 1px solid transparent;
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s; }
+  .search-contain .main-shopping > li:hover {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+    border: 1px solid #ececec;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3); }
+  .search-contain .main-shopping-thumbnail:before, .search-contain .main-shopping-thumbnail:after {
+    display: table;
+    clear: both;
+    content: ''; }
+  .search-contain .min-images {
+    padding: 0;
+    margin-top: 5px;
+    overflow: hidden;
+    height: 40px;
+    position: relative; }
+  .search-contain .main-shopping-thumbnail {
+    position: relative;
+    margin-top: 5px; }
+    .search-contain .main-shopping-thumbnail .min-contain {
+      width: 210px;
+      padding: 0;
+      height: 41px;
+      position: relative;
+      overflow: hidden; }
+      .search-contain .main-shopping-thumbnail .min-contain ul {
+        height: 41px;
+        padding: 0;
+        position: absolute; }
+        .search-contain .main-shopping-thumbnail .min-contain ul li {
+          border: 1px solid #dfdfdf;
+          float: left;
+          margin-right: 5px;
+          padding: 1px;
+          box-sizing: border-box;
+          height: 40px;
+          width: 40px; }
+          .search-contain .main-shopping-thumbnail .min-contain ul li.active {
+            border: 1px solid #e01222; }
+          .search-contain .main-shopping-thumbnail .min-contain ul li:hover {
+            border: 1px solid #e01222; }
+          .search-contain .main-shopping-thumbnail .min-contain ul li img {
+            display: block;
+            max-width: 36px;
+            height: 100%; }
+  .search-contain .moreimg {
+    margin-left: 17px; }
+  .search-contain .main-shopping-thumbnail > li:hover {
+    border: 1px solid #e01222; }
+  .search-contain .main-shopping-price {
+    color: #e01222;
+    padding: 13px 0 0 5px;
+    line-height: 14px;
+    margin-bottom: 2px; }
+  .search-contain .main-shopping-describe {
+    margin: 0;
+    width: 210px;
+    height: 45px;
+    line-height: 45px;
+    overflow: hidden;
+    padding: 5px 6px 0;
+    line-height: 19px;
+    color: #666;
+    font-size: 12px; }
+  .search-contain .main-shopping-describe:hover {
+    color: #e01222; }
+  .search-contain .main-shopping-category {
+    color: #999;
+    font-size: 12px;
+    padding: 2px 6px; }
+  .search-contain .main-shopping-tuijian {
+    float: right;
+    width: 230px;
+    border: 1px solid #dfdfdf;
+    box-sizing: border-box;
+    padding: 10px 0 0 4px; }
+    .search-contain .main-shopping-tuijian .star-img {
+      margin-left: 18px; }
+  .search-contain .main-shopping-tuijian-list {
+    padding: 0; }
+    .search-contain .main-shopping-tuijian-list img {
+      display: block;
+      width: 180px;
+      height: 180px;
+      margin-left: 20px; }
+  .search-contain .main-shopping-tuijian-list li {
+    padding: 0;
+    padding-top: 8px; }
+  .search-contain .main-shopping-tuijian-list p {
+    color: #666;
+    line-height: 20px;
+    margin-left: 15px;
+    width: 195px;
+    text-align: left;
+    max-height: 45px;
+    margin-bottom: 10px; }
+  .search-contain .footer {
+    margin-right: 235px; }
+  .search-contain .error-contain {
+    margin-top: 140px;
+    text-align: center;
+    margin-bottom: 290px; }
+    .search-contain .error-contain .error-body .error-goods {
+      margin-bottom: 110px; }
+      .search-contain .error-contain .error-body .error-goods .error-describe {
+        color: #b6b6ba;
+        font-size: 26px; }
+        .search-contain .error-contain .error-body .error-goods .error-describe span {
+          margin: 0 5px; }
+    .search-contain .error-contain .error-body .error-tuijian {
+      margin-top: 44px; }
+      .search-contain .error-contain .error-body .error-tuijian .error-title {
+        margin-bottom: 44px; }
+      .search-contain .error-contain .error-body .error-tuijian .error-goods {
+        width: 1040px;
+        margin: 0 auto;
+        margin-bottom: 110px; }
+        .search-contain .error-contain .error-body .error-tuijian .error-goods li {
+          list-style: none;
+          float: left;
+          width: 180px;
+          margin-right: 20px; }
+          .search-contain .error-contain .error-body .error-tuijian .error-goods li img {
+            display: inline-block;
+            height: 180px;
+            width: 180px; }
+          .search-contain .error-contain .error-body .error-tuijian .error-goods li p {
+            font-size: 14px;
+            color: #666;
+            margin-top: 10px;
+            text-align: left;
+            max-height: 40px;
+            margin-bottom: 10px;
+            overflow: hidden; }
+          .search-contain .error-contain .error-body .error-tuijian .error-goods li .main-shopping-price {
+            color: #f00; }

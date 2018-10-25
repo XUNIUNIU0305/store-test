@@ -1,0 +1,15 @@
+.mask-bg {
+    min-height: 1334 / 750 * 100vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(#000, .5);
+    opacity: 1;
+    transition: opacity .2s;
+    &.hidden {
+        pointer-events: none;
+        opacity: 0;
+    }
+}

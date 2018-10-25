@@ -1,0 +1,151 @@
+$base: 1 / 375 * 100vw;
+.ximei-container {
+    padding-top: 485 / 2 * $base;
+    background: #3cba94 url('/images/ximei/banner.png') no-repeat top center/100%;
+    img {
+        max-width: 100%;
+        vertical-align: top;
+    }
+    .title {
+        text-align: center;
+        padding: 2 * $base 0 10 * $base;
+        img {
+            width: 50%;
+        }
+    }
+    a {
+        font-weight: bold;
+    }
+    section {
+        padding: 10 * $base;
+        .single-item {
+            display: flex;
+            align-items: center;
+            padding: 10 * $base 0;
+            .img {
+                width: 100 * $base;
+                height: 100 * $base;
+                overflow: hidden;
+                background-color: #fff;
+            }
+            .content {
+                flex: 1;
+                margin-left: 2 * $base;
+                padding-bottom: 2 * $base;
+                background: #fff;
+            }
+            .c-title {
+                font-size: 12 * $base;
+                color: #3cba9c;
+                padding: 2 * $base 8 * $base 0;
+                margin: 0;
+                border-bottom: 1 * $base solid #3cba94;
+            }
+            .c-detail {
+                height: 7.5em;
+                line-height: 1.5;
+                overflow: hidden;
+                padding: 0 8 * $base;
+                font-size: 7 * $base;
+            }
+            .c-buy {
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                padding: 0 8 * $base;
+                .c-price {
+                    flex: 1;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: baseline;
+                    padding: 0 20 * $base 0 0;
+                    color: #3cba94;
+                    font-size: 8 * $base;
+                    span {
+                        font-size: 12 * $base;
+                    }
+                    .del {
+                        text-decoration: line-through;
+                    }
+                }
+                .buy-btn {
+                    flex: 0 0 66 * $base;
+                    text-align: center;
+                    color: #fff;
+                    font-size: 11 * $base;
+                    background-color: #3cba94;
+                }
+            }
+        }
+        .item-box {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            .item {
+                flex: 0 0 166 * $base;
+                box-sizing: border-box;
+                margin: 5 * $base;
+                text-align: center;
+                background-color: #fff;
+                a {
+                    color: #3cba94;
+                }
+                .img {
+                    height: 166 * $base;
+                }
+                .item-title {
+                    font-size: 12 * $base;
+                    border-bottom: 1 * $base solid #3cba94;
+                    margin: 0;
+                }
+                .item-price {
+                    text-align: right;
+                    padding-right: 8 * $base;
+                    font-size: 8 * $base;
+                    span {
+                        font-size: 12 * $base;
+                    }
+                }
+                .buy-btn {
+                    color: #fff;
+                    line-height: 2;
+                    background-color: #3cba9c;
+                    margin: 6 * $base 4 * $base;
+                }
+                .tip-1 {
+                    position: relative;
+                    &::before {
+                        position: absolute;
+                        content: "【超划算】买2桶送1桶";
+                        width: 100%;
+                        line-height: 1.5em;
+                        background-color: rgba(0, 0, 0, 0.67);
+                        top: -1.5em;
+                        left: 0;
+                        color: #fff;
+                    }
+                }
+                .tip-2 {
+                    position: relative;
+                    &::before {
+                        position: absolute;
+                        content: "【超划算】买6袋送1袋";
+                        width: 100%;
+                        line-height: 1.5em;
+                        background-color: rgba(0, 0, 0, 0.67);
+                        top: -1.5em;
+                        left: 0;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .footer-back {
+        text-align: center;
+        padding: 12 * $base 0;
+        img {
+            width: 50%;
+        }
+    }
+}

@@ -1,0 +1,609 @@
+@charset "UTF-8";
+.wechat-account {
+  background: #f2f2f2;
+  /*user-info*/
+  /* order-list*/
+  /*latest order*/
+  /*balance info*/
+  /*shop info*/
+  /* coupon section */ }
+  .wechat-account .panel {
+    margin-bottom: 8px;
+    background: #fff;
+    padding: 0 5%;
+    overflow: hidden; }
+    .wechat-account .panel h4 {
+      margin: 0;
+      font-size: 16px;
+      line-height: 2.5;
+      color: #333;
+      font-weight: 400; }
+    .wechat-account .panel .panel-heading {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+              align-items: center;
+      -webkit-justify-content: space-between;
+              justify-content: space-between;
+      position: relative; }
+      .wechat-account .panel .panel-heading:after {
+        content: ' ';
+        width: 106%;
+        height: 1px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: #dedfe0; }
+      .wechat-account .panel .panel-heading a {
+        font-size: 15px;
+        color: #999;
+        padding-right: 1em;
+        background: url("/images/account/arrow-right.png") no-repeat center right;
+        background-size: auto 60%; }
+  .wechat-account .pg-box .pg-list {
+    font-size: 3.8vw;
+    background-color: #F2F2F2; }
+  .wechat-account .pg-box .pg-list .pg-item {
+    font-size: 16px;
+    height: 12vw;
+    line-height: 12vw;
+    padding: 0 6vw;
+    border-bottom: 0.2vw solid #efeff4;
+    background-color: #fff; }
+  .wechat-account .pg-box .pg-list .pg-item:nth-child(2n) {
+   margin-bottom: 2.5vw;}
+  .wechat-account .pg-box .pg-list .pg-item .pg-link {
+    font-size: 15px;
+    color: #999;
+    float: right;
+    padding-right: 4vw;
+    margin-right: -1vw;
+    background: url("/images/account/arrow-right.png") no-repeat center right;
+    background-size: auto 29%; }
+  .wechat-account .pg-box .pg-list .pg-item .pg-link i {
+    display: inline-block;
+    background: url("/images/account/arrow-right.png") no-repeat center right;
+    background-size: auto 32%; }
+  .wechat-account h3 {
+    margin: 0; }
+  .wechat-account .user-info {
+    color: #fff;
+    background: #fff url("/images/account/head_bg.jpg") no-repeat center bottom;
+    background-size: cover;
+    overflow: hidden;
+    padding: 15px 0 30px 92px;
+    font-size: 14px;
+    position: relative;
+    min-height: 14.4vw; }
+    .wechat-account .user-info h3 {
+      margin: 8px 0; }
+    .wechat-account .user-info p {
+      margin: 0; }
+    .wechat-account .user-info .user-avatar {
+      position: absolute;
+      left: 10px;
+      top: 20px;
+      width: 60px;
+      height: 60px;
+      border: 2px solid;
+      border-radius: 50%;
+      overflow: hidden; }
+      .wechat-account .user-info .user-avatar img {
+        width: 60px;
+        height: 60px; }
+    .wechat-account .user-info .name {
+      min-height: 27px;
+      font-size: 18px;
+      margin-top: 10px; }
+    .wechat-account .user-info .mobile-link p {
+      color: #fff;
+      margin: 4px 0;
+      font-size: 12px;
+      text-decoration: underline; }
+  .wechat-account .order-list {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    border-top: 1px solid #f2f2f2;
+    margin-top: -1px; }
+    .wechat-account .order-list a {
+      -webkit-flex: 1 1 20%;
+              flex: 1 1 20%;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+              align-items: center;
+      -webkit-justify-content: center;
+              justify-content: center;
+      -webkit-flex-direction: column;
+              flex-direction: column;
+      padding: 8px 0;
+      position: relative;
+      color: #9d9d9d; }
+      .wechat-account .order-list a i {
+        width: 25px;
+        min-height: 25px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .wechat-account .order-list a:first-child:before {
+        width: 0; }
+      .wechat-account .order-list a:first-child i {
+        background-image: url("/images/account/obligation_44_icon.png"); }
+      .wechat-account .order-list a:nth-child(2) i {
+        background-image: url("/images/account/shipments_44_icon.png"); }
+      .wechat-account .order-list a:nth-child(3) i {
+        background-image: url("/images/account/wait_receiving_44_icon.png"); }
+      .wechat-account .order-list a:nth-child(4) i {
+        background-image: url("/images/account/received_44_icon.png"); }
+      .wechat-account .order-list a:nth-child(5) i {
+        background-image: url("/images/account/shouhou.png"); }
+  .wechat-account .acc-latest-order .title {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    -webkit-align-items: baseline;
+            align-items: baseline;
+    line-height: 2; }
+    .wechat-account .acc-latest-order .title .h5 {
+      font-size: 12px; }
+    .wechat-account .acc-latest-order .title span {
+      color: #999; 
+      font-size: 12px; }
+  .wechat-account .acc-latest-order .border-box {
+    margin: 0 -4px; }
+    .wechat-account .acc-latest-order .border-box .order-item {
+      border-top: 1px solid #f2f2f2; }
+      .wechat-account .acc-latest-order .border-box .order-item:last-child {
+        border-bottom: 1px solid #f2f2f2; }
+  .wechat-account .acc-latest-order > small {
+    font-size: 12px;
+    display: block;
+    text-align: right;
+    line-height: 2.5; }
+  .wechat-account .acc-balance-info {
+    padding: 24px 0 12px;
+    text-align: center;
+    font-size: 30px;
+    color: #ff9100; }
+    .wechat-account .acc-balance-info .btn {
+      display: inline-block;
+      padding: 5px 16px;
+      font-size: 12px;
+      color: #9d9d9d;
+      border: 1px solid #9d9d9d;
+      border-radius: 50px; }
+  .wechat-account .acc-shop-info {
+    padding: .5em 0 1em;
+    font-size: 14px; }
+    .wechat-account .acc-shop-info li {
+      line-height: 2; }
+  .wechat-account .acc-address-info .title {
+    color: #333;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px 0; }
+    .wechat-account .acc-address-info .title .tip {
+      margin-right: 7px;
+      color: #fff;
+      font-weight: 400;
+      padding: 0 4px;
+      border-radius: 4px;
+      background-color: #1397fc; }
+  .wechat-account .acc-address-info .person {
+    margin: 0;
+    margin-bottom: 10px;
+    color: #9d9d9d; }
+  .wechat-account .acc-address-info .btn {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: #1397fc;
+    font-size: 1.2em;
+    line-height: 1.5;
+    padding: 6px 0;
+    background: url("/images/account/add_40_blue_icon.png") no-repeat 36% center;
+    background-size: 20px; }
+  .wechat-account .acc-coupon-info {
+    /* coupon item */ }
+    .wechat-account .acc-coupon-info .coupon-item {
+      margin: 10px auto;
+      width: 100%;
+      padding-top: 48.784%;
+      background: #fff;
+      border: 1px solid #dedfe0;
+      position: relative;
+      border-radius: 4px;
+      box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.06); }
+      .wechat-account .acc-coupon-info .coupon-item:before {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url("/images/account/new_teb.png") no-repeat top;
+        background-size: cover; }
+      .wechat-account .acc-coupon-info .coupon-item.disabled {
+        color: #ccc; }
+        .wechat-account .acc-coupon-info .coupon-item.disabled > .text-center {
+          background: #ccc; }
+          .wechat-account .acc-coupon-info .coupon-item.disabled > .text-center a {
+            cursor: default;
+            pointer-events: none; }
+      .wechat-account .acc-coupon-info .coupon-item .pull-left {
+        padding: 2% 4%;
+        position: absolute;
+        top: 1%;
+        left: 0;
+        display: -webkit-flex;
+        display: flex; }
+        .wechat-account .acc-coupon-info .coupon-item .pull-left .price {
+          -webkit-flex: 0 0 25%;
+                  flex: 0 0 25%;
+          text-align: right; }
+          .wechat-account .acc-coupon-info .coupon-item .pull-left .price .big {
+            margin-top: 8px;
+            color: #e53935; }
+            .wechat-account .acc-coupon-info .coupon-item .pull-left .price .big label {
+              font-size: 24px; }
+          .wechat-account .acc-coupon-info .coupon-item .pull-left .price p {
+            margin: 0;
+            margin-top: -4px;
+            color: #9d9d9d; }
+        .wechat-account .acc-coupon-info .coupon-item .pull-left .info {
+          -webkit-flex: 0 0 58%;
+                  flex: 0 0 58%;
+          padding-left: 16%;
+          color: #333; }
+          .wechat-account .acc-coupon-info .coupon-item .pull-left .info p {
+            margin: 0; }
+            .wechat-account .acc-coupon-info .coupon-item .pull-left .info p:nth-child(1) {
+              margin-top: 14px;
+              font-size: 15px; }
+            .wechat-account .acc-coupon-info .coupon-item .pull-left .info p:nth-child(2) {
+              font-size: 12px; }
+      .wechat-account .acc-coupon-info .coupon-item > .text-center {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding-top: 16%; }
+        .wechat-account .acc-coupon-info .coupon-item > .text-center .chain {
+          padding: 4px 0;
+          position: absolute;
+          top: -4px;
+          bottom: 0;
+          width: 100%;
+          height: 2px;
+          left: 8px;
+          font-size: 0; }
+          .wechat-account .acc-coupon-info .coupon-item > .text-center .chain s {
+            display: inline-block;
+            width: 1.775%;
+            height: 1px;
+            background: #dedfe0;
+            margin: 0 0.74%; }
+        .wechat-account .acc-coupon-info .coupon-item > .text-center:before, .wechat-account .acc-coupon-info .coupon-item > .text-center:after {
+          content: '';
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: #fff;
+          border: 1px solid transparent;
+          left: -5px;
+          -webkit-transform: rotate(45deg);
+                  transform: rotate(45deg); }
+        .wechat-account .acc-coupon-info .coupon-item > .text-center:before {
+          left: auto;
+          right: -6px;
+          top: -7px;
+          border-bottom: 1px solid #dedfe0;
+          border-left: 1px solid #dedfe0; }
+        .wechat-account .acc-coupon-info .coupon-item > .text-center:after {
+          left: -6px;
+          top: -7px;
+          border-top: 1px solid #dedfe0;
+          border-right: 1px solid #dedfe0; }
+        .wechat-account .acc-coupon-info .coupon-item > .text-center a {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0; }
+          .wechat-account .acc-coupon-info .coupon-item > .text-center a span {
+            color: #e53935;
+            line-height: 1.4;
+            position: absolute;
+            font-size: 16px;
+            width: 100%;
+            top: 50%;
+            left: 0;
+            text-align: center;
+            margin-left: -5px;
+            -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%); }
+
+.wechat-activity-0904 .close-btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 12px;
+  right: 12px;
+  background: url("/images/account/x.png") center/contain no-repeat;
+  z-index: 99; }
+
+.wechat-activity-0904 .sub-content {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  left: 0;
+  display: none;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-flex-direction: column;
+          flex-direction: column; }
+  .wechat-activity-0904 .sub-content.in {
+    display: -webkit-flex;
+    display: flex; }
+
+.wechat-activity-0904 .img-box {
+  position: relative; }
+  .wechat-activity-0904 .img-box p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 218px;
+    bottom: 50px;
+    font-size: 14px;
+    color: #2e5c9e;
+    margin: 0 auto; }
+
+.wechat-activity-0904 .img-responsive {
+  width: 278px;
+  margin: 0 auto 30px; }
+
+.wechat-activity-0904 .entrance .img-responsive {
+  width: 290px;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 2; }
+
+.wechat-activity-0904 .btn-row {
+  display: -webkit-flex;
+  display: flex;
+  text-align: center;
+  position: absolute;
+  left: 21%;
+  bottom: 0;
+  z-index: 3; }
+
+.wechat-activity-0904 .btn {
+  padding: 0;
+  width: 180.5px;
+  height: 192px;
+  line-height: 35px;
+  margin: 0 15px;
+  color: #fff;
+  font-size: 15px;
+  transition: -webkit-transform .1s;
+  transition: transform .1s;
+  transition: transform .1s, -webkit-transform .1s; }
+  .wechat-activity-0904 .btn:active {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98); }
+
+.wechat-activity-0904 img.left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%; }
+
+.wechat-activity-0904 img.right {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.order-item {
+  display: -webkit-flex;
+  display: flex;
+  margin: 0 4px;
+  padding: 4px; }
+  .order-item aside {
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    min-height: 80px;
+    margin-right: 8px;
+    border: 1px solid #ccc; }
+    .order-item aside img {
+      max-width: 100%;
+      max-height: 100%; }
+  .order-item main {
+    position: relative;
+    -webkit-flex: auto;
+            flex: auto; }
+    .order-item main .description {
+      font-size: 14px;
+      height: 21px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2; }
+    .order-item main .param {
+      color: #999; }
+      .order-item main .param span {
+        margin-right: 4px; }
+    .order-item main .price {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      font-size: 13px; }
+      .order-item main .price span {
+        color: #ff9100; }
+    .order-item main .ammount {
+      position: absolute;
+      right: 0;
+      bottom: 0; }
+      .order-item main .ammount:before {
+        content: '×'; }
+
+.acc-latest-order-group {
+  padding: 0;
+  background-color: #FFFFFF;
+  margin-bottom: 10px; }
+  .acc-latest-order-group .title {
+    font-size: 13px;
+    line-height: 40px;
+    padding: 0 10px; }
+    .acc-latest-order-group .title span:first-child {
+      display: inline-block;
+      padding-left: 22px;
+      background: url("/images/icons/shop_38_icon.png") no-repeat left center;
+      background-size: 17px; }
+    .acc-latest-order-group .title span:last-child {
+      float: right;
+      font-size: 15px;
+      color: #ff9100; }
+  .acc-latest-order-group .group-info {
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    padding: 0 10px; }
+    .acc-latest-order-group .group-info .img-box {
+      margin: 2.66667vw 0; }
+      .acc-latest-order-group .group-info .img-box span {
+        display: inline-block;
+        width: 6.4vw;
+        height: 6.4vw;
+        border: 1px #eb2f2f solid;
+        border-radius: 50px;
+        background: url("/images/logo.png") no-repeat center;
+        background-size: 6.4vw;
+        position: relative; }
+        .acc-latest-order-group .group-info .img-box span:nth-child(1) {
+          z-index: 5; }
+          .acc-latest-order-group .group-info .img-box span:nth-child(1)::before {
+            content: '团长';
+            font-size: 1.6vw;
+            position: absolute;
+            left: -1.6vw;
+            top: -0.66667vw;
+            color: #fff;
+            padding: 0 0.66667vw;
+            border-radius: 6.66667vw;
+            background-color: #eb2f2f; }
+        .acc-latest-order-group .group-info .img-box span:nth-child(2) {
+          left: -10px;
+          z-index: 4; }
+        .acc-latest-order-group .group-info .img-box span:nth-child(3) {
+          left: -20px;
+          z-index: 3; }
+        .acc-latest-order-group .group-info .img-box span:nth-child(4) {
+          left: -30px;
+          z-index: 2; }
+        .acc-latest-order-group .group-info .img-box span:nth-child(5) {
+          left: -40px;
+          z-index: 1; }
+    .acc-latest-order-group .group-info .num-box {
+      color: #9d9d9d; }
+      .acc-latest-order-group .group-info .num-box .tip {
+        color: #ff9641;
+        border: 1px solid #ff9641;
+        border-radius: 4px;
+        padding: 0 4px; }
+  .acc-latest-order-group .border-box {
+    background-color: #fafafa; }
+    .acc-latest-order-group .border-box a {
+      margin-bottom: 5px; }
+      .acc-latest-order-group .border-box a:last-child {
+        border-bottom: 0px; }
+      .acc-latest-order-group .border-box a .order-item {
+        display: -webkit-flex;
+        display: flex;
+        margin: 0;
+        padding: 5px;
+        border-bottom: 5px solid #fff; }
+        .acc-latest-order-group .border-box a .order-item aside {
+          width: 80px;
+          height: 80px;
+          min-width: 80px;
+          min-height: 80px;
+          margin-right: 8px;
+          border: none;
+          background-color: #FFF; }
+          .acc-latest-order-group .border-box a .order-item aside img {
+            max-width: 100%;
+            max-height: 100%; }
+        .acc-latest-order-group .border-box a .order-item main {
+          position: relative;
+          width: 100%; }
+          .acc-latest-order-group .border-box a .order-item main .description {
+            height: 41px;
+            font-size: 14px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2; }
+          .acc-latest-order-group .border-box a .order-item main .param {
+            width: 72vw;
+            color: #999;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap; }
+            .acc-latest-order-group .border-box a .order-item main .param span {
+              margin-right: 4px; }
+          .acc-latest-order-group .border-box a .order-item main .price {
+            font-size: 13px; }
+            .acc-latest-order-group .border-box a .order-item main .price span {
+              color: #fe5e5e; }
+          .acc-latest-order-group .border-box a .order-item main .ammount {
+            position: absolute;
+            right: 40px;
+            bottom: 0; }
+            .acc-latest-order-group .border-box a .order-item main .ammount:before {
+              content: 'x'; }
+  .acc-latest-order-group small {
+    text-align: right;
+    line-height: 2.5;
+    display: block;
+    font-size: 12px; }
+  .acc-latest-order-group .total-info {
+    display: -webkit-flex;
+    display: flex;
+    line-height: 44px; }
+    .acc-latest-order-group .total-info span {
+      -webkit-flex: 1;
+              flex: 1; }
+      .acc-latest-order-group .total-info span:first-child {
+        margin-left: 10px; }
+      .acc-latest-order-group .total-info span:last-child {
+        color: #333;
+        text-align: right;
+        margin-right: 10px; }
+  .acc-latest-order-group .handle-btn {
+    line-height: 44px;
+    border-top: 1px solid #f2f2f2;
+    margin: 0 10px;
+    text-align: right; }
+
+
+main.container{
+  position:static;
+}
+
+.pg-box{
+  padding-bottom:15vw;
+}

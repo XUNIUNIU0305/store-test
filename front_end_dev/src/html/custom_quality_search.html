@@ -1,0 +1,832 @@
+@@include('head_only.inc')
+<style>
+    body {
+        background-color: #e5e5e9;
+        overflow: scroll;
+    }
+
+</style>
+<div class="custom-quality-search">
+    <div class="head">
+        <img class="logo" src="/images/quality_search/logo_2.png" />
+        <p class="h-title">九大爷平台质保单查询</p>
+    </div>
+    <div class="contents">
+        <div class="details">
+            <p class="c-title">请选择合适您的搜索条件</p>
+            <div class="d-contents">
+                <ul class="list">
+                    <li class="li-clicksty">
+                        <i class="clickstyle"></i>
+                        <p>按质保单号，管芯号，车架号，车主手机号</p>
+                    </li>
+                    <li>
+                        <i></i>
+                        <p>按质保单号</p>
+                    </li>
+                    <li>
+                        <i></i>
+                        <p>按质保单号，车主姓名，车架号，车主手机号</p>
+                    </li>
+                    <li>
+                        <i></i>
+                        <p>按管芯号</p>
+                    </li>
+                </ul>
+                <div class="shadowbox"></div>
+                <div class="details-contents-container">
+                    <div class="detail-contents-ft">
+                        <form class="list-contents">
+                            <p>
+                                搜索条件
+                                <span>（*为必填项）</span>
+                            </p>
+                            <div class="layout">
+                                <p>*<span>质保单号</span></p>
+                                <input type="text" id="list-order-no">
+                                <i>*请输入质保单号</i>
+                            </div>
+                            <div class="layout">
+                                <p>*<span>管芯号</span></p>
+                                <input type="text" id="list-code">
+                                <i>*请输入管芯号</i>
+                            </div>
+                            <div class="layout">
+                                <p>*<span>车架号（后五位）</span></p>
+                                <input type="text" id="list-mobile">
+                                <i>*请输入车架号（后五位）</i>
+                            </div>
+                            <div class="layout">
+                                <p>*<span>车主手机号码</span></p>
+                                <input type="text" id="list-mobile">
+                                <i>*请输入车架号</i>
+                            </div>
+                            <div class="layout">
+                                <p>*<span>手机验证码：</span></p>
+                                <input type="text">
+                                <div class="mobile-confcode">
+                                    <a class="mobile-ms-btn">获取验证码
+                                    </a>
+                                </div>
+                                <i>*手机验证码错误</i>
+                            </div>
+                            <div class="button">
+                                <span class="rest">重置</span>
+                                <span class="next order-code-mobile">验证</span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="order-no">
+                        <div class="order-no-container">
+                            <p>
+                                搜索条件
+                                <span>（*为必填项）</span>
+                            </p>
+                            <div class="layout">
+                                <p>*<span>质保单号:</span></p>
+                                <input type="text">
+                                <i>*请输入质保单号</i>
+                            </div>
+                            <div class="layout">
+                                <p>*<span>验证码：</span></p>
+                                <input type="text" id="ms-code-ipt">
+                                <div class="ms-code">
+                                    <img class="ms-details" src="/captcha" />
+                                    <a href="javascript:;" class="changcode">
+                                        看不清?楚换一张
+                                    </a>
+                                </div>
+                                <i id="error-i" class="error-ms">*验证码错误</i>
+                            </div>
+                            <div class="order-conf-btn">
+                                <span class="rest">重置</span>
+                                <span class="confirm-btn next order-no-btn">验证</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-name-car">
+                        <form class="onc-contents">
+                            <p>
+                                搜索条件
+                                <span>（*为必填项）</span>
+                            </p>
+                            <div class="layout">
+                                <p>*<span>质保单号</span></p>
+                                <input type="text">
+                                <i>*请输入质保单号</i>
+                            </div>
+                            <div class="layout">
+                                <p>*<span>车主姓名</span></p>
+                                <input type="text">
+                                <i>*请输入车主姓名</i>
+                            </div>
+                            <div class="layout">
+                                <p>*<span>车主手机号码</span></p>
+                                <input type="text">
+                                <i>*请输入车主手机号码</i>
+                            </div>
+                            <div class="layout">
+                                <p>*<span>手机验证码：</span></p>
+                                <input type="text">
+                                <div class="mobile-confcode">
+                                    <a class="mobile-ms-btn">获取验证码
+                                    </a>
+                                </div>
+                                <i>*手机验证码错误</i>
+                            </div>
+                            <div class="button">
+                                <span class="rest">重置</span>
+                                <span class="next order-name-car-btn">验证</span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="code-no">
+                        <div class="code-no-container">
+                            <p>
+                                搜索条件
+                                <span>（*为必填项）</span>
+                            </p>
+                            <div class="layout">
+                                <p>*<span>管芯号:</span></p>
+                                <input type="text" id="code-no-ipt">
+                                <i>*请输入管芯号</i>
+                            </div>
+                            <div class="layout">
+                                <p>*<span>验证码：</span></p>
+                                <input type="text" id="ms-code-ipt">
+                                <div class="ms-code">
+                                    <img class="ms-details" src="/captcha" />
+                                    <a href="javascript:;" class="changcode">
+                                        看不清?楚换一张
+                                    </a>
+                                </div>
+                                <i id="error-i" class="error-ms">*验证码错误</i>
+                            </div>
+                            <div class="code-conf-btn">
+                                <span class="rest">重置</span>
+                                <span class="confirm-btn next code-no-btn">验证</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- all -->
+    <div class="quality-query-container">
+        <div class="dashed-line"></div>
+        <span class="show-title">查询结果</span>
+        <!-- content start -->
+        <div class="container">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    车主信息
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            车主姓名：
+                            <span class="J_owner_name"></span>
+                        </div>
+                        <div class="col-xs-6">
+                            电话：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="J_owner_telephone"></span>
+                        </div>
+                        <div class="col-xs-6">
+                            手机号：&nbsp;&nbsp;&nbsp;
+                            <span class="J_owner_mobile"></span>
+                        </div>
+                        <div class="col-xs-6">
+                            邮箱：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="J_owner_email"></span>
+                        </div>
+                        <div class="col-xs-6">
+                            车主地址：
+                            <span class="J_owner_address"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    产品信息
+                </div>
+                <div class="panel-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th>管芯号</th>
+                                <th>质保单号</th>
+                                <th>产品</th>
+                                <th>施工部位</th>
+                                <th>导购</th>
+                                <th>技师</th>
+                            </tr>
+                        </thead>
+                        <tbody id="J_pro_list">
+                            <script type="text/template" id="J_tpl_list">
+                                {@each goods as it, index}
+                                <tr>
+                                    <td>${index - 0 + 1}</td>
+                                    <td>${it.code}</td>
+                                    <td class="J_quality_code"></td>
+                                    <td>${it.package_name}</td>
+                                    <td>${it.place_name}</td>
+                                    <td>${it.sales}</td>
+                                    <td>${it.technician}</td>
+                                </tr>
+                                {@/each}
+                            </script>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    车辆信息
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            车牌号码：
+                            <span class="J_car_number"></span>
+                        </div>
+                        <div class="col-xs-12">
+                            车型：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="J_type_name"></span>
+                        </div>
+                        <div class="col-xs-12">
+                            车架号码：
+                            <span class="J_car_frame"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    施工信息
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            施工单位：
+                            <span class="J_shop_name"></span>
+                        </div>
+                        <div class="col-xs-12">
+                            施工日期：
+                            <span class="J_construct_date"></span>
+                        </div>
+                        <div class="col-xs-12">
+                            完成日期：
+                            <span class="J_finished_date"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn btn-block btn-bottom">返回</a>
+
+        </div>
+        <!-- content end -->
+    </div>
+    <!-- result -->
+    <div class="quality-query-container">
+        <!-- content start -->
+        <div class="container">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    车主信息
+                </div>
+                <div class="panel-body">
+                    车主姓名：
+                    <span class="J_owner_name"></span>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    产品信息
+                </div>
+                <div class="panel-body">
+                    质保卡号：
+                    <span class="J_quality_code"></span>
+                </div>
+            </div>
+
+            <a href="#" class="btn btn-block btn-bottom" style="margin-top: 180px">返回</a>
+        </div>
+        <!-- content end -->
+    </div>
+    <!-- detail -->
+    <div class="quality-query-container">
+
+        <!-- content start -->
+        <div class="container">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    产品信息
+                </div>
+                <div class="panel-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th>管芯号</th>
+                                <th>质保单号</th>
+                                <th>产品</th>
+                                <th>施工部位</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <script type="text/template" id="J_tpl_list">
+                                {@each items as it , index}
+                                <tr>
+                                    <td>${index - 0 + 1}</td>
+                                    <td>${it.code}</td>
+                                    <td class="J_quality_code"></td>
+                                    <td>${it.package_name}</td>
+                                    <td>${it.place_name}</td>
+                                    <td>${it.sales}</td>
+                                    <td>${it.technician}</td>
+                                </tr>
+                                {@/each}
+                            </script>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    车辆信息
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            车型：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="J_type_name"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    施工信息
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            施工单位：
+                            <span class="J_shop_name"></span>
+                        </div>
+                        <div class="col-xs-12">
+                            施工日期：
+                            <span class="J_construct_date"></span>
+                        </div>
+                        <div class="col-xs-12">
+                            完成日期：
+                            <span class="J_finished_date"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn btn-block btn-bottom">返回</a>
+
+        </div>
+        <!-- content end -->
+    </div>
+    <!-- search -->
+    <div class="quality-query-container">
+        <!-- content start -->
+        <div class="container">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    产品信息
+                </div>
+                <div class="panel-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>质保单号</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <script type="text/template" id="J_tpl_list">
+                                {@each items as it,index}
+                                <tr>
+                                    <td>${it.code}</td>
+                                </tr>
+                                {@/each}
+                            </script>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <a href="#" class="btn btn-block btn-bottom">返回</a>
+
+        </div>
+        <!-- content end -->
+    </div>
+</div>
+@@include('footer_only.inc')
+
+<script type="text/javascript">
+    $(function () {
+        $(".detail-contents-ft").css({
+            "display": "block",
+            "opacity": 1,
+            "left": 0
+        });
+        $("li").click(function () {
+            var index = $(this).index();
+            $(this).addClass("li-clicksty").siblings().removeClass("li-clicksty").addClass("li-small");
+            $(".details-contents-container").children("div").not(".prompt").eq(index).show().animate({
+                    "left": "0",
+                    "opacity": "1"
+                }, 1000)
+                .siblings().hide().css({
+                    "left": "-400px",
+                    "opacity": "0"
+                }).stop(false, true);
+        });
+        //重置
+        $(".rest").click(function () {
+            $(this).parent().parent().find("input").val("");
+        });
+        //上一步
+        $(".back-btn").click(function () {
+            back_requery();
+        });
+
+        //重新查询
+        $(".requery").click(function () {
+            back_requery();
+        });
+        //返回，重新查询
+        function back_requery() {
+            var li_index = $(".li-clicksty").index();
+            switch (li_index) {
+                case 0:
+                    $(".detail-contents-ft").show().animate({
+                        "left": "0",
+                        "opacity": "1"
+                    }, 1000).siblings().hide();
+                    break;
+                case 1:
+                    $(".order-no").show().animate({
+                        "left": "0",
+                        "opacity": "1"
+                    }, 1000).siblings().hide();
+                    break;
+                case 2:
+                    $(".order-name-car").animate({
+                        "left": "0",
+                        "opacity": "1"
+                    }, 1000).show().siblings().hide();
+                    break;
+                case 3:
+                    $(".code-no").show().animate({
+                        "left": "0",
+                        "opacity": "1"
+                    }, 1000).siblings().hide();
+                    break;
+            }
+        }
+        //非空判断
+        function isEmpty(str) {
+            var $str_empty = $("." + str).find("input");
+            var i = 0;
+            $str_empty.each(function () {
+                if ($(this).val() == '') {
+                    $(this).next("i").show();
+                    $("#error-i").show();
+                    i++;
+                } else {
+                    $(this).next("i").hide();
+                    $("#error-i").hide();
+                }
+            })
+            return i;
+        }
+
+        //质保单、管芯号、车主手机
+        $(".order-code-mobile").click(function () {
+            var order_no_str = $("#list-order-no").val();
+            var code_str = $("#list-code").val();
+            var mobile_str = $("#list-mobile").val();
+            console.log(order_no_str, code_str, mobile_str);
+            var str_name = $(this).parent().parent().attr('class');
+            isEmpty(str_name);
+            if (isEmpty(str_name) < 1) {
+                var data = {
+                    type: 1,
+                    order_no: order_no_str,
+                    code: code_str,
+                    mobile: mobile_str
+                };
+                requestUrl('/quality-search/search-detail', 'get', data, function (res) {
+                    $("detail-contents-ft").hide();
+                    $(".car-no-conf").show().animate({
+                        "left": "0",
+                        "opacity": "1"
+                    }, 1000).siblings().hide();
+                }, function (res) {
+                    $(".detail-contents-error").show().animate({
+                        "left": "0",
+                        "opacity": "1"
+                    }, 1000).siblings().hide();
+                });
+            }
+        });
+
+        //车架号验证
+        $(".car-no-btn").click(function () {
+            var str_name = $(this).parent().parent().attr('class');
+            var order_no_str = $("#list-order-no").val();
+            var code_str = $("#list-code").val();
+            var mobile_str = $("#list-mobile").val();
+            var car_frame_str = $("#car-no-int").val();
+            isEmpty(str_name);
+            var data = {
+                type: 1,
+                order_no: order_no_str,
+                code: code_str,
+                mobile: mobile_str,
+                car_frame: car_frame_str
+            };
+            if (isEmpty(str_name) < 1) {
+                requestUrl('/quality-search/search-detail', 'get', data, function (res) {
+                    window.location.href = '/quality-search/all?type=' + 1 + "&order_no=" +
+                        order_no_str + "&code=" + code_str +
+                        "&mobile=" + mobile_str + "&car_frame=" + car_frame_str;
+                }, function (res) {
+                    $(".detail-contents-error").show().animate({
+                        "left": "0",
+                        "opacity": "1"
+                    }, 1000).siblings().hide();
+                });
+            }
+        });
+
+        //按质保单号
+        $(".order-no-btn").click(function (event) {
+            var order_no_str = $(".order-no").find('input').val();
+            var str_name = $(this).parent().parent().attr('class');
+            isEmpty(str_name);
+            if (isEmpty(str_name) < 1) {
+                var data = {
+                    type: 2,
+                    order_no: order_no_str
+                };
+                requestUrl('/quality-search/search-detail', 'get', data, function (res) {
+                    $(".order-no").hide();
+                    $(".confirm-ms-code").show().animate({
+                        "left": "0",
+                        "opacity": "1"
+                    }, 1000);
+                }, function (res) {
+                    $(".detail-contents-error").show().animate({
+                        "left": "0",
+                        "opacity": "1"
+                    }, 1000).siblings().hide();
+                });
+            }
+        });
+
+        //更新验证码
+        $(".ms-details").click(function () {
+            getCaptchaImg();
+        });
+
+        //更新验证码
+        function getCaptchaImg() {
+            $.ajax({
+                    url: "http://custom.apex.com/index/captcha",
+                    method: "GET",
+                    data: {
+                        'refresh': Math.random() + ''
+                    }
+                })
+                .done(function (data) {
+                    $('.ms-details').attr('src', data.url);
+                })
+                .fail(function () {
+                    setTimeout(function () {
+                        getCaptchaImg();
+                    }, 3000);
+                })
+        }
+
+        $(".changcode").click(function () {
+            getCaptchaImg();
+        });
+
+        //验证
+        $(".confirm-ms-code-btn").off('click').on('click', function () {
+            var str_name = $(this).parent().parent().attr('class');
+            var li_index = $(".li-clicksty").index();
+            var ms_code_str = $("#ms-code-ipt").val();
+            var order_no_str = $(".order-no").find('input').val();
+            var code_str = $("#code-no-ipt").val();
+            isEmpty(str_name);
+            if (isEmpty(str_name) < 1) {
+                if (li_index == 1) {
+                    var data = {
+                        type: 2,
+                        order_no: order_no_str,
+                        captcha: ms_code_str
+                    };
+                    requestUrl('/quality-search/search-detail', 'get', data, function (res) {
+                        $("#ms-code-ipt").val("");
+                        console.log(res);
+                        alert(1);
+                        return;
+                        window.location.href = '/quality-search/result?name=' + res[0].owner_name +
+                            '&code=' + res[0].owner_name;
+                    }, function (res) {
+                        $("#ms-code-ipt").val("");
+                        $("#error-i").show();
+                    });
+                } else if (li_index == 3) {
+                    var _data = {
+                        type: 4,
+                        code: code_str,
+                        captcha: ms_code_str
+                    }
+                    requestUrl('/quality-search/search-detail', 'get', _data, function (res) {
+                        console.log(res);
+                        alert(2);
+                        return;
+                        $("#ms-code-ipt").val("");
+                        window.location.href = '/quality-search/search?id=' + res[0].id;
+                    }, function (res) {
+                        $("#ms-code-ipt").val("");
+                        $("#error-i").show();
+                    })
+                }
+
+            }
+        });
+
+        //按质保单号、车主姓名、车架号
+        $(".order-name-car-btn").click(function () {
+            var str_name = $(this).parent().parent().attr('class');
+            var order_no_str = $(".onc-contents").find("input").eq(0).val();
+            var owner_name_str = $(".onc-contents").find("input").eq(1).val();
+            var car_frame_str = $(".onc-contents").find("input").eq(2).val();
+            isEmpty(str_name);
+            if (isEmpty(str_name) < 1) {
+                var data = {
+                    type: 3,
+                    order_no: order_no_str,
+                    owner_name: owner_name_str,
+                    car_frame: car_frame_str
+                };
+                requestUrl("/quality-search/search-detail", 'get', data, function (res) {
+                    $(".order-name-car").hide();
+                    $(".confirm-ms-mobile").show().animate({
+                        "left": "0",
+                        "opacity": "1"
+                    }, 1000).siblings().hide();
+                    var mobile_str = "*******" + res.mobile.slice(7);
+                    console.log(mobile_str);
+                    $(".mobile-num").find("i").text(mobile_str);
+                }, function (res) {
+                    $(".detail-contents-error").show().animate({
+                        "left": "0",
+                        "opacity": "1"
+                    }, 1000).siblings().hide();
+                });
+            }
+        });
+
+        //手机号验证
+        $(".mobile-ms-conf-btn").click(function () {
+            var str_name = $(this).parent().parent().attr('class');
+            var order_no_str = $(".onc-contents").find("input").eq(0).val();
+            var owner_name_str = $(".onc-contents").find("input").eq(1).val();
+            var car_frame_str = $(".onc-contents").find("input").eq(2).val();
+            var mobile_captcha_str = $(".mobile-container").find("input").val();
+            isEmpty(str_name);
+            if (isEmpty(str_name) < 1) {
+                var data = {
+                    type: 3,
+                    order_no: order_no_str,
+                    owner_name: owner_name_str,
+                    car_frame: car_frame_str,
+                    mobile_captcha: mobile_captcha_str
+                };
+                requestUrl("/quality-search/search-detail", 'get', data, function (res) {
+                    window.location.href = '/quality-search/result?type=' + 3 + "&order_no=" +
+                        order_no_str +
+                        "&owner_name=" + owner_name_str + "&car_frame=" + car_frame_str +
+                        "&mobile_captcha" + mobile_captcha_str;
+                }, function (res) {
+                    $(".detail-contents-error").show().animate({
+                        "left": "0",
+                        "opacity": "1"
+                    }, 1000).siblings().hide();
+                });
+            }
+        });
+
+        //获取手机验证码
+        $(".mobile-ms-btn").on('click', function () {
+            var $this = $(this);
+            startTimer($this);
+            // var data={
+
+            // };
+            // requestUrl('/sms/register','POST',data,function(){
+
+            // },function(){})
+        })
+        //开启
+        var timerAll = [],
+            intervalAll = [];
+        //启用计时启
+        function startTimer(dom) {
+            var timer, interval;
+            var $this = dom;
+            var countDown = 60;
+            // disable it
+            if ($this.hasClass('disabled')) return;
+            $this.addClass('disabled');
+            // revert changes after 60s
+            timer = setTimeout(function () {
+                $this.text('获取验证码');
+                $this.removeClass('disabled');
+                interval && clearInterval(interval);
+            }, 60 * 1000);
+            timerAll.push(timer);
+            // set count down text
+            $this.text(countDown + '秒后重试');
+            interval = setInterval(function () {
+                countDown--;
+                $this.text(countDown + '秒后重试');
+            }, 1000);
+            intervalAll.push(interval);
+        }
+
+        //从新获取验证码
+        // $(".retrieve").click(function(){
+        // 	var timer = 
+        // });
+        var clock = '';
+        var nums = 60;
+        var btn;
+
+        function sendCode() {
+            $(".retrieve").text(nums + 's后可重新获取');
+            clock = setInterval(doLoop, 1000); //一秒执行一次
+        }
+
+        function doLoop() {
+            nums--;
+            if (nums > 0) {
+                $(".retrieve").text(nums + '秒后可重新获取');
+            } else {
+                clearInterval(clock); //清除js定时器
+                nums = 60; //重置时间
+            }
+        }
+
+        //按管芯号
+        $(".code-no-btn").click(function () {
+            var str_name = $(this).parent().parent().attr('class');
+            var code_str = $(".code-no").find('input').val();
+            isEmpty(str_name);
+            if (isEmpty(str_name) < 1) {
+                var data = {
+                    type: 4,
+                    code: code_str
+                };
+                requestUrl('/quality-search/search-detail', 'get', data, function (res) {
+                    $(".code-no").hide();
+                    $(".confirm-ms-code").show().animate({
+                        "left": "0",
+                        "opacity": "1"
+                    }, 1000);
+                }, function (res) {
+                    $(".detail-contents-error").show().animate({
+                        "left": "0",
+                        "opacity": "1"
+                    }, 1000).siblings().hide();
+                });
+            }
+        });
+    })
+
+</script>

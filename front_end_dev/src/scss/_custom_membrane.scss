@@ -1,0 +1,201 @@
+.apex-membran{
+	ul {
+		list-style: none;
+		padding:0;
+	}
+	a {
+		text-decoration: none;
+	}
+	.container{
+		width: 1190px;
+		.fir-h{
+			margin-top: 22px;
+			margin-bottom: 18px;
+			padding-left: 10px;
+			font-size: 16px;
+			font-weight: bold;
+		}
+
+		.address-box{
+			background: #fff;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			padding: 10px 7px;
+			.col-xs-4,
+			.col-xs-12{
+				padding: 10px 8px;
+			}
+			.col-xs-4{
+				width: 25%;
+			}
+			.col-xs-12{
+				font-size: 12px;
+			}
+			a{
+				&.text-danger{
+					color: #cf4d44;
+				}
+				text-decoration: none;
+			}
+			.apx-cart-address{
+				height: 170px;
+				cursor: pointer;
+				p{
+					margin-bottom: 0px;
+					&:last-of-type{
+						margin-bottom: 8px;
+					}
+				}
+				&.active{
+					.btn-danger{
+						display: none;
+					}
+					&:after{
+						display: none;
+					}
+				}
+				.position{
+					width: 88%;
+					position: absolute;
+					bottom: 15px;
+				}
+				.address {
+					height: 34px;
+					overflow: hidden;
+				}
+			}
+			.popover-content{
+				padding: 20px;
+				text-align: center;
+				.btn{
+					width: 46px;
+					height: 24px;
+					font-size: 12px;
+					padding: 0;
+					margin: 0 5px;
+				}
+				.J_adress_delete-confirm{
+					border: 1px solid;
+					background: #fce7e6;
+					color: #cf4d44
+				}
+				.J_adress_delete-cancel{
+					border: 1px solid #b2b2b2;
+					background: #e5e5e5;
+				}
+			}
+			.address-handle{
+				margin-top: 10px;
+				padding: 10px;
+				.address-add{
+					color: #cf4d44;
+				}
+				.address-all{
+					float: right;
+				}
+			}
+		}
+		.payment{
+			border:1px solid #b3b3b3;
+			padding:0 30px;
+			li{
+				width: 100%;
+				padding-bottom:15px;
+				margin-top: 20px;
+				border-bottom:1px solid #b3b3b3;
+				.pay-money{
+					width: 100px;
+					float: left;
+					margin-right: 20px;
+					img{
+						width: 44px;
+						height: 44px;
+						margin-left: 28px;
+						margin-bottom: 15px;
+					}
+					button{
+						width: 100px;
+						height: 30px;
+						border:0;
+						font-size: 12px;
+						background:#e6e6e6;
+						&.active,
+						&:hover{
+							color:#fff;
+							background-color: #cf4d44
+						}
+					}
+				}
+				p{
+					color: #cf4d44;
+					line-height: 80px;
+					font-weight: bold;
+				}
+			}
+			.last-payment{
+				border:none;
+			}
+		}
+		.sub-order{
+			margin-top: 26px;
+			padding:16px 30px;
+			height: 120px;
+			border:1px solid #b3b3b3;
+			position:relative;
+			.order-msg{
+				position:absolute;
+				right: 20px;
+				top: 14px;
+				.pro-msg{
+					float: right;
+					.pro-account{
+						float: left;
+					}
+					.pro-money{
+						margin-left: 30px;
+						float: right;
+						p{
+							span{
+								margin-left: 60px;
+							}
+						}
+						.receive-money{
+							position:relative;
+							span{
+								position:absolute;
+								top: 0;
+								right: 0;
+								color: #cf4d44;
+								font-size: 18px;
+								font-weight: bold;
+
+							}
+
+						}
+
+					}
+				}
+				.order-address{
+					margin-top: 60px;
+				}
+			}
+		}
+		.sub-btn{
+			width: 100%;
+			height: 50px;
+			background: #e6e6e6;
+			margin-top:10px;
+			a {
+				width:180px;
+				height: 50px;
+				float: right;
+				background:#cf4d44;
+				font-size: 20px;
+				color: #fff;
+			}
+		}
+	}
+}
+
+
+

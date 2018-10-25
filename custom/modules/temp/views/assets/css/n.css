@@ -1,0 +1,274 @@
+.apex-car-decoration-container {
+  min-width: 1190px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto; }
+  .apex-car-decoration-container .float-nav {
+    position: fixed;
+    right: 28px;
+    top: 40%;
+    z-index: 9999; }
+    .apex-car-decoration-container .float-nav .nav {
+      background-color: #C4E6C5;
+      padding-left: 10px; }
+      .apex-car-decoration-container .float-nav .nav li a {
+        height: 66px;
+        width: 170px;
+        text-align: center;
+        color: #FFF;
+        font-size: 28px;
+        font-weight: bold;
+        background-color: #3C9B71;
+        margin-bottom: 10px; }
+        .apex-car-decoration-container .float-nav .nav li a:hover, .apex-car-decoration-container .float-nav .nav li a:focus {
+          background-color: #3C9B71; }
+      .apex-car-decoration-container .float-nav .nav li:last-child a {
+        margin-bottom: 0px; }
+  .apex-car-decoration-container .banner {
+    height: 684px;
+    background: url("/images/car_decoration/top.jpg") no-repeat center/cover; }
+  .apex-car-decoration-container .row-container {
+    min-width: 1190px;
+    margin: 0 auto;
+    background-color: #F0F7E7; }
+    .apex-car-decoration-container .row-container .new .title {
+      height: 69px;
+      width: 547px;
+      background: url("/images/car_decoration/title.png");
+      margin: 0 auto; }
+    .apex-car-decoration-container .row-container .decortaion-control {
+      width: 100%;
+      text-align: center;
+      margin: 0 auto; }
+      .apex-car-decoration-container .row-container .decortaion-control .title {
+        height: 69px;
+        width: 686px;
+        background: url("/images/car_decoration/title2.png");
+        margin: 0 auto;
+        margin-top: 64px; }
+      .apex-car-decoration-container .row-container .decortaion-control .goods-box {
+        width: 1206px;
+        height: 622px;
+        margin: 0 auto;
+        background: url("/images/car_decoration/bg1.png") no-repeat center; }
+        .apex-car-decoration-container .row-container .decortaion-control .goods-box .detail-container {
+          padding-top: 100px; }
+          .apex-car-decoration-container .row-container .decortaion-control .goods-box .detail-container .detail-items {
+            display: inline-block;
+            margin-right: 35px; }
+            .apex-car-decoration-container .row-container .decortaion-control .goods-box .detail-container .detail-items:nth-child(2) {
+              margin-right: 0; }
+            .apex-car-decoration-container .row-container .decortaion-control .goods-box .detail-container .detail-items a {
+              display: block;
+              height: 572px;
+              position: relative;
+              text-decoration: none; }
+              .apex-car-decoration-container .row-container .decortaion-control .goods-box .detail-container .detail-items a .date {
+                font-size: 26px;
+                color: #DF5645;
+                position: absolute;
+                top: 20px;
+                left: 20px; }
+              .apex-car-decoration-container .row-container .decortaion-control .goods-box .detail-container .detail-items a .describe {
+                position: absolute;
+                bottom: 110px;
+                width: 380px;
+                left: 26px; }
+                .apex-car-decoration-container .row-container .decortaion-control .goods-box .detail-container .detail-items a .describe p {
+                  margin: 0;
+                  padding: 0; }
+                .apex-car-decoration-container .row-container .decortaion-control .goods-box .detail-container .detail-items a .describe .title-describe {
+                  font-size: 26px;
+                  color: #3e9a72;
+                  font-weight: bold;
+                  text-align: center; }
+                .apex-car-decoration-container .row-container .decortaion-control .goods-box .detail-container .detail-items a .describe .underline {
+                  border-bottom: 2px solid #85c2a2;
+                  font-size: 18px;
+                  color: #85c2a2;
+                  margin: 12px 0; }
+                .apex-car-decoration-container .row-container .decortaion-control .goods-box .detail-container .detail-items a .describe .delete-price {
+                  font-size: 20px;
+                  color: #DF5645;
+                  text-decoration: line-through;
+                  text-align: left; }
+                .apex-car-decoration-container .row-container .decortaion-control .goods-box .detail-container .detail-items a .describe .price-box {
+                  color: #DF5645;
+                  font-size: 20px;
+                  text-align: left; }
+                  .apex-car-decoration-container .row-container .decortaion-control .goods-box .detail-container .detail-items a .describe .price-box p {
+                    display: inline-block; }
+                  .apex-car-decoration-container .row-container .decortaion-control .goods-box .detail-container .detail-items a .describe .price-box .price {
+                    font-size: 34px;
+                    font-weight: bold;
+                    margin-right: 12px; }
+                  .apex-car-decoration-container .row-container .decortaion-control .goods-box .detail-container .detail-items a .describe .price-box .buy-now {
+                    height: 36px;
+                    line-height: 36px;
+                    text-align: center;
+                    width: 130px;
+                    color: #fff;
+                    font-size: 24px;
+                    font-weight: bold;
+                    background-color: #DF5645;
+                    border-radius: 5px; }
+      .apex-car-decoration-container .row-container .decortaion-control .goods-box:nth-child(3) {
+        background: url("/images/car_decoration/bg2.png") no-repeat center; }
+        .apex-car-decoration-container .row-container .decortaion-control .goods-box:nth-child(3) .detail-container {
+          padding-top: 86px; }
+      .apex-car-decoration-container .row-container .decortaion-control .goods-box:nth-child(4) {
+        background: url("/images/car_decoration/bg_3.png") no-repeat center; }
+        .apex-car-decoration-container .row-container .decortaion-control .goods-box:nth-child(4) .detail-container {
+          padding-top: 80px; }
+    .apex-car-decoration-container .row-container .decortaion-control:nth-child(3) .title {
+      background: url("/images/car_decoration/title_3.png"); }
+    .apex-car-decoration-container .row-container .decortaion-control:nth-child(3) .goods-box .detail-container .detail-items .describe {
+      bottom: 115px; }
+      .apex-car-decoration-container .row-container .decortaion-control:nth-child(3) .goods-box .detail-container .detail-items .describe .title-describe {
+        text-align: center;
+        font-size: 26px;
+        margin-bottom: 15px; }
+      .apex-car-decoration-container .row-container .decortaion-control:nth-child(3) .goods-box .detail-container .detail-items .describe p {
+        text-align: left;
+        font-size: 20px; }
+      .apex-car-decoration-container .row-container .decortaion-control:nth-child(3) .goods-box .detail-container .detail-items .describe .red {
+        color: #fd5645;
+        font-size: 24px;
+        font-weight: bold; }
+      .apex-car-decoration-container .row-container .decortaion-control:nth-child(3) .goods-box .detail-container .detail-items .describe .price-box {
+        position: absolute;
+        top: 45px;
+        right: 40px;
+        font-weight: bold;
+        color: #fd5645;
+        font-size: 20px; }
+        .apex-car-decoration-container .row-container .decortaion-control:nth-child(3) .goods-box .detail-container .detail-items .describe .price-box .J_pro_price {
+          font-size: 34px; }
+    .apex-car-decoration-container .row-container .decortaion-control:nth-child(3) .goods-box:nth-child(3) .detail-container .detail-items .describe {
+      bottom: 170px; }
+      .apex-car-decoration-container .row-container .decortaion-control:nth-child(3) .goods-box:nth-child(3) .detail-container .detail-items .describe .red-df {
+        font-size: 20px;
+        color: #fd5645;
+        font-weight: bold; }
+      .apex-car-decoration-container .row-container .decortaion-control:nth-child(3) .goods-box:nth-child(3) .detail-container .detail-items .describe .price-box {
+        top: 105px;
+        right: 45px; }
+    .apex-car-decoration-container .row-container .decortaion-control:nth-child(4) .title {
+      background: url("/images/car_decoration/title3.png"); }
+    .apex-car-decoration-container .row-container .decortaion-control:nth-child(4) .goods-box .detail-container .detail-items .describe {
+      bottom: 155px; }
+      .apex-car-decoration-container .row-container .decortaion-control:nth-child(4) .goods-box .detail-container .detail-items .describe .describe-red {
+        font-size: 42px;
+        color: #fd5645;
+        margin: 0 14px; }
+      .apex-car-decoration-container .row-container .decortaion-control:nth-child(4) .goods-box .detail-container .detail-items .describe .btn-join {
+        height: 38px;
+        width: 130px;
+        line-height: 38px;
+        background-color: #3e9a72;
+        color: #fff;
+        font-size: 26px;
+        font-weight: bold;
+        margin: 0 auto;
+        border-radius: 5px;
+        margin-top: 10px; }
+    .apex-car-decoration-container .row-container .full_reduction_control {
+      width: 100%;
+      text-align: center;
+      margin: 0 auto; }
+      .apex-car-decoration-container .row-container .full_reduction_control .title {
+        height: 69px;
+        width: 686px;
+        background: url("/images/car_decoration/title4.png") no-repeat center center;
+        margin: 0 auto;
+        margin-top: 64px;
+        margin-bottom: 64px; }
+      .apex-car-decoration-container .row-container .full_reduction_control .goods-box {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        width: 1190px;
+        margin: 0 auto; }
+        .apex-car-decoration-container .row-container .full_reduction_control .goods-box .goods-item {
+          margin-right: 22px;
+          width: 382px;
+          height: 382px;
+          margin-bottom: 48px;
+          overflow: hidden; }
+          .apex-car-decoration-container .row-container .full_reduction_control .goods-box .goods-item a {
+            position: relative; }
+            .apex-car-decoration-container .row-container .full_reduction_control .goods-box .goods-item a .describe {
+              position: absolute;
+              top: 90px;
+              left: 0;
+              width: 100%; }
+              .apex-car-decoration-container .row-container .full_reduction_control .goods-box .goods-item a .describe .title-describe {
+                font-size: 26px;
+                color: #3e9a72;
+                font-weight: bold;
+                text-align: center; }
+              .apex-car-decoration-container .row-container .full_reduction_control .goods-box .goods-item a .describe .buy-now {
+                height: 38px;
+                width: 130px;
+                line-height: 38px;
+                background-color: #fd5645;
+                color: #fff;
+                font-size: 26px;
+                font-weight: bold;
+                margin: 0 auto;
+                border-radius: 5px;
+                margin-top: 10px; }
+        .apex-car-decoration-container .row-container .full_reduction_control .goods-box .goods-item:nth-child(3n) {
+          margin-right: 0px; }
+      .apex-car-decoration-container .row-container .full_reduction_control .explain {
+        text-align: left;
+        width: 1190px;
+        margin: 0 auto;
+        padding: 28px 20px;
+        background-color: #fff;
+        margin-bottom: 48px; }
+        .apex-car-decoration-container .row-container .full_reduction_control .explain .title-red {
+          font-size: 18px;
+          color: #fd5645;
+          font-weight: bold; }
+        .apex-car-decoration-container .row-container .full_reduction_control .explain .detail-msg {
+          font-size: 14px;
+          color: #3e9a72; }
+      .apex-car-decoration-container .row-container .full_reduction_control .uls {
+        width: 1190px;
+        margin: 0 auto;
+        padding: 0;
+        text-align: left; }
+        .apex-car-decoration-container .row-container .full_reduction_control .uls li {
+          list-style: none;
+          width: 100%;
+          height: 130px;
+          margin-bottom: 18px;
+          padding: 16px 0;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+          .apex-car-decoration-container .row-container .full_reduction_control .uls li .li-title {
+            line-height: 102px;
+            width: 262px;
+            text-align: center;
+            background-color: #91c981;
+            color: #fff;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 0px; }
+          .apex-car-decoration-container .row-container .full_reduction_control .uls li .li-msg {
+            padding-left: 48px;
+            width: 908px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            background-color: #fff;
+            line-height: 1; }
+            .apex-car-decoration-container .row-container .full_reduction_control .uls li .li-msg p {
+              font-size: 20px;
+              color: #3e9a72; }
+            .apex-car-decoration-container .row-container .full_reduction_control .uls li .li-msg .red-msg {
+              color: #fd5645;
+              font-size: 14px; }

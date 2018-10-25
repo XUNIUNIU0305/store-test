@@ -1,0 +1,92 @@
+@@include('../head.inc')
+<style>
+    main.container {
+        background-color: #fff;
+    }
+</style>
+<main class="container">
+    <div class="harness-query">
+        <div class="page-title">线束查询</div>
+        <div class="nav-tabs">
+            <span class="active" data-type="car">按车型</span>
+            <span data-type="line">按线束</span>
+        </div>
+        <div class="query-container"  data-type="car">
+            <div class="select-box">
+                <span>车系</span>
+                <div class="cnt">请选择车系</div>
+                <select id="series_1">
+                    <option value="请选择车系">请选择车系</option>
+                    <option value="s1_1">s1_1</option>
+                    <option value="s1_2">s1_2</option>
+                </select>
+            </div>
+            <div class="select-box">
+                <span>车系</span>
+                <div class="cnt">请选择车系</div>
+                <select id="series_2">
+                    <option value="请选择车系">请选择车系</option>
+                    <option value="s2_1">s2_1</option>
+                    <option value="s2_2">s2_2</option>
+                </select>
+            </div>
+            <div class="section">
+                <div class="s-title">所用线束</div>
+                <div class="img-box">
+                    <img src="/images/index/prod7.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="query-container hidden"  data-type="line">
+            <div class="select-box">
+                <span>车系</span>
+                <div class="cnt">请选择车系</div>
+                <select id="series_2">
+                    <option value="请选择车系">请选择车系</option>
+                    <option value="s2_1">s2_1</option>
+                    <option value="s2_2">s2_2</option>
+                </select>
+            </div>
+            <div class="section">
+                <div class="s-title">所用线束</div>
+                <div class="img-box">
+                    <img src="/images/index/prod7.jpg" alt="">
+                </div>
+            </div>
+            <div class="section">
+                <div class="panel">
+                    <div class="panel-heading">宝马车系</div>
+                    <div class="panel-body">
+                        <span>2系</span>
+                        <span>2系</span>
+                        <span>2系</span>
+                        <span>2系</span>
+                        <span>2系</span>
+                        <span>2系</span>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading">宝马车系</div>
+                    <div class="panel-body">
+                        <span>2系</span>
+                        <span>2系</span>
+                        <span>2系</span>
+                        <span>2系</span>
+                        <span>2系</span>
+                        <span>2系</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+@@include('../footer.inc')
+<script>
+    $(function() {
+        $('.nav-tabs span').on('click', function() {
+            var type = $(this).data('type')
+            $(this).addClass('active').siblings().removeClass('active')
+            $('.query-container[data-type="' + type + '"]').removeClass('hidden').siblings('.query-container').addClass('hidden')
+        })
+    })
+</script>

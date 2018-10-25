@@ -1,0 +1,34 @@
+.admin-pay-failed {
+  font-size: 12px; }
+  .admin-pay-failed img {
+    vertical-align: top; }
+  .admin-pay-failed .result {
+    margin: 20% 0 5%;
+    text-align: center; }
+    .admin-pay-failed .result img {
+      max-width: 20%; }
+  .admin-pay-failed p {
+    text-align: center;
+    margin: 12px; }
+  .admin-pay-failed .title {
+    font-size: 2em;
+    color: #b2b2b2;
+    margin-bottom: 80px; }
+  .admin-pay-failed .title-1 {
+    font-size: 1.4em; }
+    .admin-pay-failed .title-1 span {
+      color: #ff9100; }
+  .admin-pay-failed .btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+    display: block;
+    border-radius: 4px;
+    width: 96%;
+    margin: 0 auto;
+    line-height: 2.4em;
+    font-size: 1.4em;
+    text-align: center;
+    color: #fff;
+    background-image: linear-gradient(90deg, #ff9100 0%, #e53935 100%); }

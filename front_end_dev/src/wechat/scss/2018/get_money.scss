@@ -1,0 +1,129 @@
+$baseV: 1 / 750 * 100vw;
+.get-money-container {
+    background-color: #ff784f;
+    .banner {
+        padding-top: 756 * $baseV;
+        background: url('/images/get_money/1.png') no-repeat center/100%;
+    }
+    .nav-list {
+        display: flex;
+        border-bottom: 12 * $baseV solid #fdeee0;
+        >div {
+            flex: 1;
+            a {
+                color: #82553d;
+                font-size: 22 * $baseV;
+                line-height: 3;
+                text-align: center;
+                background-color: #fed1b8;
+                &.active {
+                    color: #fff;
+                    background-color: #ff784f;
+                }
+            }
+        }
+    }
+    .sec-title {
+        font-size: 36 * $baseV;
+        color: #191919;
+        text-align: center;
+        line-height: 2;
+        background: #fff url('/images/get_money/2.png') no-repeat center/cover;
+    }
+    .sec-banner {
+        position: relative;
+        height: 474 * $baseV;
+        &.bg-1 {
+            background: url('/images/get_money/3.png') no-repeat center/cover;
+        }
+        &.bg-2 {
+            background: url('/images/get_money/10.png') no-repeat center/cover;
+        }
+        &.bg-3 {
+            background: url('/images/get_money/17.png') no-repeat center/cover;
+        }
+        margin: 8 * $baseV 0;
+        >div {
+            position: absolute;
+            color: #fff;
+            font-size: 30 * $baseV;
+            p {
+                margin: 0;
+            }
+        }
+        .text-top {
+            left: 32 * $baseV;
+            top: 40 * $baseV;
+            .top-title {
+                font-weight: bold;
+                position: relative;
+                &::before {
+                    content: '';
+                    width: 1em;
+                    height: 8 * $baseV;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 0;
+                    top: -8 * $baseV;
+                }
+            }
+        }
+        .text-bottom {
+            width: 14em;
+            right: 32 * $baseV;
+            bottom: 30 * $baseV;
+            font-size: 20 * $baseV;
+            line-height: 1.2;
+        }
+    }
+    .pro-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 10 * $baseV;
+        .item {
+            flex: 40%;
+            margin: 12 * $baseV;
+            position: relative;
+            img {
+                max-width: 100%;
+            }
+            .price {
+                position: absolute;
+                left: 30 * $baseV;
+                bottom: 26 * $baseV;
+                font-size: 13 * $baseV;
+                font-weight: bold;
+                span {
+                    font-size: 22 * $baseV;
+                }
+            }
+        }
+    }
+}
+.get-money-container-nav-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    z-index: 9999;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+    >div {
+        flex: 1;
+        a {
+            color: #82553d;
+            font-size: 22 * $baseV;
+            line-height: 3;
+            text-align: center;
+            background-color: #fed1b8;
+            &.active {
+                color: #fff;
+                background-color: #ff784f;
+            }
+        }
+    }
+    &.in {
+        transform: translateY(0);
+    }
+}

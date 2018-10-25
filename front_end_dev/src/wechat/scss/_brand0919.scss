@@ -1,0 +1,64 @@
+.brand-0919 {
+	overflow: hidden;
+	background-color: #FFF;
+	img {
+		max-width: 100%;
+		vertical-align: top;
+	}
+	.header {
+		display: flex;
+		margin: 44 / 750 * 100vw 0 0 44 / 750 * 100vw;
+		.img {
+			flex: 0 0 34%;
+		}
+		.content {
+			flex: 0 0 calc(65% - 30 / 750 * 100vw);
+			margin-left: 30 / 750 * 100vw;
+			font-weight: 700;
+			.h2 {
+				font-size: 48 / 750 * 100vw;
+				margin: 0;
+			}
+			.h4 {
+				font-size: 26 / 750 * 100vw;
+				margin: 0;
+				text-align: right;
+				margin-right: 5px;
+				margin-bottom: 10px;
+			}
+			.text {
+				margin: 0;
+				margin-left: 60 / 750 * 100vw;
+				font-size: 28 / 750 * 100vw;
+				span {
+					font-size: 38 / 750 * 100vw;
+				}
+				img {
+					width: 50px;
+				}
+				&:nth-child(4) {
+					text-align: right;
+				}
+			}
+			.btn {
+				width: 346 / 750 * 100vw;
+				border-radius: 100px;
+				line-height: 72 / 750 * 100vw;
+				background-color: #000;
+				color: #fff;
+				text-align: center;
+				font-size: 38 / 750 * 100vw;
+				margin: 70 / 750 * 100vw 0 0 60 / 750 * 100vw;
+			}
+		}
+	}
+	.footer {
+		font-size: 34 / 750 * 100vw;
+		text-align: center;
+		background-color: #000;
+		a {
+			color: #fff;
+			line-height: 98 / 750 * 100vw;
+		}
+	}
+}

@@ -1,0 +1,200 @@
+body {
+  background-color: #8b32fc; }
+
+.seckill-container {
+  background-image: -webkit-linear-gradient(-90deg, #be46e7 0%, #8934eb 9%, #6725dd 100%); }
+  .seckill-container img {
+    max-width: 100%;
+    vertical-align: top; }
+  .seckill-container .content {
+    background: url("/images/seckill/bg_wenli_02.png") repeat; }
+  .seckill-container .head {
+    position: relative; }
+    .seckill-container .head > .seckill-time {
+      width: 100%;
+      position: absolute;
+      bottom: 6%;
+      margin-bottom: 4px;
+      font-size: 18px; }
+      .seckill-container .head > .seckill-time .clock {
+        width: 10%;
+        position: absolute;
+        left: 8%;
+        top: 2%; }
+      .seckill-container .head > .seckill-time > span {
+        line-height: 19px;
+        font-size: 12px;
+        display: block;
+        font-weight: 700;
+        padding: 0 8px 0 38px;
+        color: #000;
+        padding-left: 20%; }
+      .seckill-container .head > .seckill-time .count-down {
+        width: 80%;
+        background: #ffff00;
+        font-size: 18px;
+        text-align: center;
+        margin: 0 auto;
+        border-radius: 50px;
+        line-height: 40px;
+        box-shadow: inset 0 -2px #666600;
+        font-weight: 700; }
+        .seckill-container .head > .seckill-time .count-down s {
+          font-style: none;
+          font-weight: 700;
+          text-decoration: none;
+          color: #000;
+          display: inline-block;
+          height: 24px;
+          margin: 0 1px;
+          text-align: center;
+          padding-left: 1%; }
+        .seckill-container .head > .seckill-time .count-down.active {
+          background: #ec009f; }
+        .seckill-container .head > .seckill-time .count-down.end {
+          background: #000;
+          color: #fff;
+          box-shadow: none; }
+          .seckill-container .head > .seckill-time .count-down.end s {
+            color: #fff; }
+  .seckill-container .product .item {
+    position: relative; }
+    .seckill-container .product .item .img {
+      position: relative;
+      left: 0;
+      width: 60%;
+      display: inline-block;
+      background: url("/images/seckill/pro1/bg_small.png") no-repeat center bottom;
+      background-size: 90%;
+      text-align: center;
+      padding-bottom: 5%; }
+      .seckill-container .product .item .img img {
+        width: 70%;
+        padding-top: 20%; }
+    .seckill-container .product .item .text {
+      position: absolute;
+      right: 8%;
+      bottom: 8%;
+      margin-top: 10%;
+      display: inline-block;
+      width: 70%;
+      color: #fff;
+      text-align: right; }
+      .seckill-container .product .item .text p {
+        margin: 0; }
+      .seckill-container .product .item .text .h1 {
+        font-size: 18px;
+        font-weight: 700; }
+      .seckill-container .product .item .text .h4 {
+        font-size: 14px;
+        color: #fbbf72;
+        font-weight: 700; }
+      .seckill-container .product .item .text .del {
+        text-decoration: line-through;
+        color: #f63072; }
+      .seckill-container .product .item .text .price {
+        font-size: 18px; }
+        .seckill-container .product .item .text .price span {
+          font-size: 20px;
+          color: #ffff00; }
+      .seckill-container .product .item .text .btn {
+        display: inline-block;
+        font-size: 14px;
+        width: 30%;
+        text-align: center;
+        line-height: 2em;
+        color: #fff;
+        border-radius: 20px;
+        box-shadow: 0px 2px 2px 0px rgba(51, 4, 133, 0.004);
+        background-image: -webkit-linear-gradient(90deg, #7501fe 0%, #d600ff 100%); }
+  .seckill-container .product .even .text {
+    left: 8%;
+    bottom: 8%;
+    text-align: left; }
+  .seckill-container .product .even .img {
+    left: 40%; }
+  .seckill-container .title-2 {
+    margin-top: 33px; }
+  .seckill-container .product-2 {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .seckill-container .product-2 .item {
+      -webkit-flex: 1 0 46%;
+              flex: 1 0 46%;
+      padding: 2%;
+      background: url("/images/seckill/bg_border.png") no-repeat center;
+      background-size: 90%;
+      text-align: center;
+      padding-bottom: 10%; }
+      .seckill-container .product-2 .item img {
+        padding-top: 16%;
+        max-width: 80%; }
+      .seckill-container .product-2 .item p {
+        margin: 0; }
+      .seckill-container .product-2 .item .title {
+        text-align: left;
+        background-color: #ec009f;
+        max-width: 80%;
+        margin: 0 auto;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px; }
+        .seckill-container .product-2 .item .title .h1 {
+          padding-left: 1%;
+          color: #fff;
+          font-size: 12px; }
+          .seckill-container .product-2 .item .title .h1 small {
+            -webkit-transform: scale(0.6);
+                    transform: scale(0.6);
+            display: inline-block;
+            color: #fafd02;
+            text-decoration: line-through; }
+        .seckill-container .product-2 .item .title .price {
+          position: relative; }
+          .seckill-container .product-2 .item .title .price span {
+            position: relative;
+            color: #fff;
+            font-size: 16px; }
+          .seckill-container .product-2 .item .title .price .btn {
+            position: absolute;
+            width: 36%;
+            bottom: 10%;
+            right: 0;
+            text-align: center;
+            display: inline-block;
+            background-color: #FFF;
+            color: #ec009f;
+            border-radius: 10px;
+            padding: 0 8%;
+            -webkit-transform: scale(0.6);
+                    transform: scale(0.6); }
+  .seckill-container .arrow-box {
+    position: fixed;
+    right: 0;
+    top: 50%; }
+    .seckill-container .arrow-box.hide {
+      display: none; }
+    .seckill-container .arrow-box span {
+      display: block; }
+    .seckill-container .arrow-box .top {
+      width: 40px; }
+    .seckill-container .arrow-box .table {
+      width: 40px;
+      height: 35px;
+      background-color: #e0d527;
+      margin-top: 5px; }
+      .seckill-container .arrow-box .table span {
+        font-size: 12px;
+        width: 24px;
+        margin: 0 auto;
+        line-height: 12px;
+        padding-top: 5px;
+        color: blue; }
+
+@media screen and (min-width: 375px) {
+  .seckill-container .product-2 .item .title .price .btn {
+    width: 45%;
+    right: -8%;
+    padding: 8%;
+    font-size: 14px; } }

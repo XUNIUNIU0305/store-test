@@ -1,0 +1,186 @@
+@charset "UTF-8";
+.custom-qulity-query {
+  color: #333;
+  background: url("/images/qulity-query/bg_img.jpg") no-repeat center bottom; }
+  .custom-qulity-query a {
+    color: #333; }
+  .custom-qulity-query .query-title {
+    font-size: 36px;
+    text-align: center; }
+    .custom-qulity-query .query-title span {
+      display: inline-block;
+      color: #000;
+      padding-left: 86px;
+      line-height: 156px;
+      background: url("/images/qulity-query/logo.png") no-repeat left center; }
+  .custom-qulity-query .content {
+    height: calc(100vh - 156px);
+    min-height: 666px;
+    position: relative; }
+    .custom-qulity-query .content .tab-container {
+      width: 740px;
+      height: 509px;
+      background: #fff;
+      position: absolute;
+      top: 14%;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.14); }
+      .custom-qulity-query .content .tab-container .nav {
+        display: -ms-flexbox;
+        display: flex;
+        border-bottom: 1px solid #e0e0e0; }
+        .custom-qulity-query .content .tab-container .nav li {
+          -ms-flex: 1;
+              flex: 1;
+          text-align: center;
+          line-height: 60px; }
+          .custom-qulity-query .content .tab-container .nav li:first-child {
+            position: relative; }
+            .custom-qulity-query .content .tab-container .nav li:first-child::after {
+              content: '';
+              position: absolute;
+              right: 0;
+              top: 25px;
+              width: 1px;
+              height: 32px;
+              background-color: #b0b0b0; }
+          .custom-qulity-query .content .tab-container .nav li.active a {
+            font-weight: bold;
+            color: #ff6700; }
+          .custom-qulity-query .content .tab-container .nav li a {
+            font-size: 20px;
+            background-color: #fff; }
+            .custom-qulity-query .content .tab-container .nav li a:hover {
+              color: #ff6700;
+              background-color: #fff; }
+    .custom-qulity-query .content .form-horizontal {
+      margin: 70px 170px; }
+      .custom-qulity-query .content .form-horizontal.service .form-group.error:nth-child(1)::before {
+        content: '用户名或手机号码长度错误'; }
+      .custom-qulity-query .content .form-horizontal.service .form-group.error:nth-child(2)::before {
+        content: '请输入正确的账号密码'; }
+      .custom-qulity-query .content .form-horizontal .form-group {
+        position: relative;
+        margin-bottom: 30px; }
+        .custom-qulity-query .content .form-horizontal .form-group.error {
+          border-color: #ff6700; }
+          .custom-qulity-query .content .form-horizontal .form-group.error::before {
+            content: "请正确填写验证码";
+            position: absolute;
+            left: 10px;
+            top: -24px;
+            color: #fff;
+            padding: 4px 10px;
+            background-color: #eb2f2f;
+            z-index: 3; }
+          .custom-qulity-query .content .form-horizontal .form-group.error::after {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 15px;
+            border-top: 5px solid #eb2f2f;
+            border-bottom: 5px solid transparent;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent; }
+          .custom-qulity-query .content .form-horizontal .form-group.error:nth-child(1)::before {
+            content: '车牌号或车架号格式错误'; }
+          .custom-qulity-query .content .form-horizontal .form-group.error:nth-child(2)::before {
+            content: '手机号格式错误'; }
+        .custom-qulity-query .content .form-horizontal .form-group label {
+          position: absolute;
+          left: 13px;
+          top: 4px;
+          cursor: text;
+          font-weight: normal;
+          transition: all 0.2s linear;
+          z-index: 2; }
+        .custom-qulity-query .content .form-horizontal .form-group input {
+          border-radius: 0;
+          border: 1px solid #e0e0e0;
+          position: relative;
+          font-size: 14px;
+          height: 42px;
+          padding: 10px 12px; }
+          .custom-qulity-query .content .form-horizontal .form-group input::-moz-placeholder {
+            color: #fff;
+            transition: color 0.8s; }
+          .custom-qulity-query .content .form-horizontal .form-group input::-webkit-input-placeholder {
+            color: #fff;
+            transition: color 0.8s; }
+          .custom-qulity-query .content .form-horizontal .form-group input:-ms-input-placeholder {
+            color: #fff;
+            transition: color 0.8s; }
+          .custom-qulity-query .content .form-horizontal .form-group input:hover {
+            border-color: #b0b0b0; }
+          .custom-qulity-query .content .form-horizontal .form-group input:focus {
+            box-shadow: none; }
+        .custom-qulity-query .content .form-horizontal .form-group label,
+        .custom-qulity-query .content .form-horizontal .form-group input {
+          font-size: 14px;
+          color: #b0b0b0; }
+        .custom-qulity-query .content .form-horizontal .form-group.active label {
+          font-size: 12px;
+          top: -14px;
+          background-color: #fff; }
+        .custom-qulity-query .content .form-horizontal .form-group.active input::-moz-placeholder {
+          color: #b0b0b0; }
+        .custom-qulity-query .content .form-horizontal .form-group.active input::-webkit-input-placeholder {
+          color: #b0b0b0; }
+        .custom-qulity-query .content .form-horizontal .form-group.active input:-ms-input-placeholder {
+          color: #b0b0b0; }
+        .custom-qulity-query .content .form-horizontal .form-group.focus label {
+          color: #ff6700; }
+        .custom-qulity-query .content .form-horizontal .form-group.focus input {
+          border-color: #ff6700; }
+      .custom-qulity-query .content .form-horizontal .captcha {
+        display: -ms-flexbox;
+        display: flex; }
+        .custom-qulity-query .content .form-horizontal .captcha input {
+          -ms-flex: 0 0 280px;
+              flex: 0 0 280px; }
+        .custom-qulity-query .content .form-horizontal .captcha span {
+          -ms-flex: auto;
+              flex: auto;
+          margin-left: 10px;
+          font-size: 14px;
+          color: #ff6700;
+          border: 1px solid #ff6700;
+          line-height: 40px;
+          cursor: pointer; }
+          .custom-qulity-query .content .form-horizontal .captcha span.disabled {
+            color: #e0e0e0;
+            border-color: #e0e0e0;
+            pointer-events: none; }
+      .custom-qulity-query .content .form-horizontal .btn-search {
+        width: 100%;
+        border-radius: 0;
+        color: #fff;
+        line-height: 2;
+        background-color: #ff6700;
+        margin-top: 40px; }
+        .custom-qulity-query .content .form-horizontal .btn-search:hover {
+          background-color: #e65100; }
+  .custom-qulity-query .apx-footer.container-fluid {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.5); }
+    .custom-qulity-query .apx-footer.container-fluid a,
+    .custom-qulity-query .apx-footer.container-fluid span {
+      color: #333; }
+  .custom-qulity-query .apx-footer {
+    height: 55px;
+    color: #b3b3b3;
+    background: #eee;
+    position: relative;
+    line-height: 55px; }
+    .custom-qulity-query .apx-footer a {
+      color: #b3b3b3;
+      text-decoration: none; }
+
+input:-webkit-autofill {
+  background-color: #fff !important;
+  -webkit-box-shadow: 0 0 0px 1000px white inset; }

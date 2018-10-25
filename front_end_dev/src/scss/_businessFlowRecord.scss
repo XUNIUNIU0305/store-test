@@ -1,0 +1,133 @@
+body {
+    overflow-x: visible;
+}
+.business-flow-record-container {
+    min-width: 1300px;
+    .btn-business {
+        background-color: #0080ff;
+        color: #fff;
+    }
+    .form-horizontal{
+        padding: 10px 20px;
+    }
+    // nav
+    .nav-bar {
+        // height: 96px;
+        background: #fff;
+        border-bottom: 20px solid #e9eef2;
+        // padding: 32px 20px;
+        text-align: center;
+        position: relative;
+        .form-group {
+            text-align: left;
+            margin: 10px 0;
+            select {
+                min-width: 130px;
+            }
+            > label {
+                float: left;
+                line-height: 30px;
+                width: 90px;
+                text-align: left;
+            }
+            >input{
+                width: 200px;
+                display: inline-block;
+            }
+        } // search bar
+        .input-group {
+            display: inline-block;
+            border-radius: 17px;
+            background: #fff;
+            input {
+                border-radius: 17px;
+                width: 360px;
+                background: transparent;
+            }
+            .input-group-btn {
+                line-height: 30px;
+            }
+            .btn {
+                position: relative;
+                z-index: 3;
+                margin-left: -40px;
+                background: transparent;
+            }
+            &.query_time {
+                background: transparent;
+                label {
+                    float: left;
+                    line-height: 30px;
+                }
+                input {
+                    border-radius: 2px;
+                    width: 98px;
+                    background: transparent;
+                }
+            }
+        }
+        .btn-business {
+            min-width: 100px;
+            display: inline-block;
+        }
+        .btn-search{
+            .btn-business{
+                border-radius: 16px;
+                min-width: 124px;
+                margin-top: 40px;
+            }
+        }
+        .list-info{
+            text-align: left;
+            padding: 0 25%;
+            position: relative;
+            margin-bottom: 0;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 10%;
+                width: 1px;
+                background: #e9eef2;
+            }
+            li{
+                font-size: 12px;
+                color: #8fa2cc;
+                line-height: 2.25;
+            }
+            strong{
+                color: #333;
+                font-size: 20px;
+                display: block;
+            }
+        }
+    }
+    // table
+    .table-panel {
+        // border: 1px solid #ccc;
+        font-size: 12px;
+        &.dashed {
+            td {
+                position: relative;
+                border-top: 1px dashed #ccc;
+                border-bottom: 1px dashed #ccc;
+                overflow: visible;
+                line-height: 24px;
+            }
+        }
+        thead {
+            // background: #e6e6e6;
+            th {
+                font-size: 14px;
+                line-height: 32px;
+                text-align: center !important;
+                border-bottom: 2px solid #144fcc !important;
+            }
+        }
+    }
+    // pagination
+    .pagination-info{
+        margin-right: 20px;
+    }
+}

@@ -1,0 +1,216 @@
+.wechat-product-apex {
+  background-color: #f2f2f2; }
+  .wechat-product-apex img {
+    max-width: 100%;
+    vertical-align: top; }
+  .wechat-product-apex p {
+    margin: 0; }
+  .wechat-product-apex .category {
+    width: 96%;
+    margin: 0 auto;
+    z-index: 2;
+    background-color: #fff;
+    -webkit-transform: translatey(-20%);
+            transform: translatey(-20%);
+    box-shadow: 0.5px 2px 2px 2px #ccc; }
+    .wechat-product-apex .category p {
+      text-align: center; }
+    .wechat-product-apex .category .h1 {
+      font-size: 16px;
+      color: #000;
+      font-weight: 700;
+      position: relative; }
+      .wechat-product-apex .category .h1:before {
+        content: ' ';
+        position: absolute;
+        border-top: 1px #666 solid;
+        width: 32%;
+        top: 50%;
+        left: 0; }
+      .wechat-product-apex .category .h1:after {
+        content: ' ';
+        position: absolute;
+        border-top: 1px #666 solid;
+        width: 32%;
+        top: 50%;
+        right: 0; }
+    .wechat-product-apex .category .h2 {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      color: #000;
+      margin-top: -1%; }
+    .wechat-product-apex .category .target {
+      display: -webkit-flex;
+      display: flex; }
+      .wechat-product-apex .category .target li {
+        -webkit-flex: 1 0 24%;
+                flex: 1 0 24%;
+        margin: 0 0.5%; }
+        .wechat-product-apex .category .target li a {
+          padding: 50% 25%;
+          text-align: center;
+          color: #fff;
+          font-size: 16px;
+          font-weight: 700;
+          width: 50%;
+          background: url("/images/apex_brand/classification_bg.png") no-repeat center;
+          background-size: 100%; }
+  .wechat-product-apex .content .header {
+    text-align: center;
+    margin-top: 4%; }
+    .wechat-product-apex .content .header p {
+      color: #fff;
+      margin-top: -6.5%;
+      font-weight: 700;
+      font-size: 14px; }
+  .wechat-product-apex .content .product-1 {
+    margin: 6% 0; }
+    .wechat-product-apex .content .product-1 .item-1 {
+      margin: 10% 0;
+      position: relative; }
+      .wechat-product-apex .content .product-1 .item-1 img {
+        width: 34%;
+        padding-left: 2%; }
+      .wechat-product-apex .content .product-1 .item-1 .title {
+        max-width: 70%;
+        position: absolute;
+        right: 2%;
+        top: 1%; }
+        .wechat-product-apex .content .product-1 .item-1 .title .h1 {
+          font-size: 14px;
+          font-weight: 700; }
+        .wechat-product-apex .content .product-1 .item-1 .title .h2 {
+          color: #4f4f4f; }
+        .wechat-product-apex .content .product-1 .item-1 .title .h3 {
+          text-align: right;
+          padding-right: 2%;
+          color: #4f4f4f; }
+        .wechat-product-apex .content .product-1 .item-1 .title .price {
+          margin-top: 6%; }
+          .wechat-product-apex .content .product-1 .item-1 .title .price span {
+            font-size: 16px;
+            color: #c0a248;
+            font-weight: 700; }
+          .wechat-product-apex .content .product-1 .item-1 .title .price a {
+            display: inline-block; }
+          .wechat-product-apex .content .product-1 .item-1 .title .price .btn {
+            width: 48%;
+            text-align: center;
+            background-color: #c0a248;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 4px;
+            margin-left: 16%;
+            font-weight: 700;
+            padding: 2% 0; }
+      .wechat-product-apex .content .product-1 .item-1.even img {
+        padding-left: 64%; }
+      .wechat-product-apex .content .product-1 .item-1.even .title {
+        right: 40%; }
+    .wechat-product-apex .content .product-1 .pro-small {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+              flex-wrap: wrap; }
+      .wechat-product-apex .content .product-1 .pro-small .item {
+        -webkit-flex: 1 0 49%;
+                flex: 1 0 49%;
+        margin: 2% 0.5%;
+        text-align: center; }
+        .wechat-product-apex .content .product-1 .pro-small .item img {
+          max-width: 70%; }
+        .wechat-product-apex .content .product-1 .pro-small .item span {
+          display: block;
+          margin: 2% auto;
+          margin-top: 4%;
+          width: 20%;
+          height: 2px;
+          background-color: #000; }
+        .wechat-product-apex .content .product-1 .pro-small .item .h1 {
+          font-weight: 700;
+          font-size: 16px; }
+        .wechat-product-apex .content .product-1 .pro-small .item .price {
+          font-size: 16px;
+          font-weight: 700; }
+  .wechat-product-apex .content .product-2 .item-1 {
+    margin: 6% 0;
+    position: relative; }
+    .wechat-product-apex .content .product-2 .item-1 a .pro {
+      max-width: 58%;
+      padding-left: 40%; }
+    .wechat-product-apex .content .product-2 .item-1 .title {
+      width: 40%;
+      position: absolute;
+      left: 0%;
+      top: 0%;
+      text-align: center; }
+      .wechat-product-apex .content .product-2 .item-1 .title .h1 {
+        font-size: 16px;
+        font-weight: 700; }
+      .wechat-product-apex .content .product-2 .item-1 .title .h2 {
+        background: url("/images/apex_brand/shape.png") no-repeat center;
+        background-size: 100%;
+        color: #fff; }
+      .wechat-product-apex .content .product-2 .item-1 .title h2 {
+        margin: 2% 0; }
+      .wechat-product-apex .content .product-2 .item-1 .title > div {
+        text-align: left; }
+  .wechat-product-apex .content .product-2 .item-2 {
+    display: -webkit-flex;
+    display: flex; }
+    .wechat-product-apex .content .product-2 .item-2 .pro {
+      -webkit-flex: 1 0 31%;
+              flex: 1 0 31%;
+      margin: 2% 0.5%;
+      border: 2px solid #000;
+      text-align: center; }
+      .wechat-product-apex .content .product-2 .item-2 .pro p {
+        font-size: 14px;
+        font-weight: 700; }
+  .wechat-product-apex .content .product-3 {
+    margin-top: -1px;
+    background-color: #000; }
+    .wechat-product-apex .content .product-3 .top {
+      display: -webkit-flex;
+      display: flex;
+      background-color: #FFF;
+      border: 3px solid #000; }
+      .wechat-product-apex .content .product-3 .top .item {
+        -webkit-flex: 0 1 24%;
+                flex: 0 1 24%;
+        margin: 0 0.5%;
+        text-align: center; }
+        .wechat-product-apex .content .product-3 .top .item p {
+          font-weight: 700; }
+    .wechat-product-apex .content .product-3 .title {
+      color: #fff;
+      font-size: 16px;
+      text-align: center;
+      padding: 4% 0; }
+  .wechat-product-apex .content .product-4 .item {
+    background-color: #FFF;
+    position: relative;
+    margin: 4%; }
+    .wechat-product-apex .content .product-4 .item > a img {
+      width: 40%; }
+    .wechat-product-apex .content .product-4 .item .title {
+      padding-top: 4%;
+      width: 54%;
+      position: absolute;
+      right: 0;
+      top: 0; }
+      .wechat-product-apex .content .product-4 .item .title .h1 {
+        font-weight: 700;
+        font-size: 16px; }
+      .wechat-product-apex .content .product-4 .item .title .h2 {
+        color: #b2b2b2;
+        text-indent: 2em; }
+      .wechat-product-apex .content .product-4 .item .title h2 {
+        padding-left: 8%;
+        margin: 4% 0; }
+      .wechat-product-apex .content .product-4 .item .title .btn {
+        font-size: 16px;
+        font-weight: 700;
+        border: 1px solid #000;
+        width: 50%;
+        text-align: center; }

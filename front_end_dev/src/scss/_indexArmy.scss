@@ -1,0 +1,246 @@
+// army top nav
+.apx-top-nav-army {
+    z-index: 3;
+    height: 180px;
+    margin-bottom: 0;
+    position: relative;
+    color: #db1536;
+    background: url('/images/index_army/top2.jpg') center no-repeat;
+    a{
+        text-decoration: none;
+        color: #db1536;
+    }
+    .middle-nav {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+        li.active {
+            border-bottom: 2px solid;
+            padding: 0;
+            margin: 0 15px;
+            a {
+                color: rgb(207, 77, 68);
+            }
+        }
+    }
+    .popover{
+        color: #333;
+        a{
+            color: #333;
+        }
+        .cart-btn {
+            color: #fff;
+        }
+    }
+    .row{
+        width: 2000px;
+        height: 180px;
+        display: table-cell;
+        vertical-align: bottom;
+    }
+    .navbar-brand > img{
+        position: relative;
+        top: -48px;
+        left: -30px;
+    }
+    .pull-left{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .pull-right{
+        font-size: 14px;
+        position: relative;
+        z-index: 1;
+    }
+}
+// hk carousel 
+.index-carousel-hk {
+    background: #db1536;
+    .carousel-control{
+        width: 44px;
+        height: 44px;
+        background: #999;
+        line-height: 44px;
+        text-align: center;
+        top: 50%;
+        margin-top: -22px;
+        span{
+            top: 50%;
+            left: 50%;
+            margin: -15px 0 0 -15px;
+            color: #fff;
+        }
+    }
+}
+// hk main sec bg 
+.index-bg-army {
+    background: url('/images/index_army/bg_pic02.jpg') center top no-repeat;
+    position: relative;
+    background-size: 100%;
+    padding: 0;
+    // title
+    .apx-brand-bg {
+        width: 1290px;
+        height: 890px;
+        margin-left: -45px;
+        background: url('/images/index_army/brands_bg.png') top center no-repeat;
+        background-size: 100%;
+        position: relative;
+        .apx-brand-figures {
+            width: 1194px;
+            height: 582px;
+            position: absolute;
+            left: 50px;
+            top: 250px;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    .apx-index-title{
+        width: 238px;
+        height: 79px;
+        margin: 40px auto 14px;
+         +.apx-index-section {
+            margin-top: 0;   
+         }
+    }
+    .apx-btn-more{
+        border-color: #fff;
+    }
+    // left linear gradient changes
+    .apx-index-section{
+        padding: 6px;
+        background: #eee;
+        background-size: 100%;
+        position: relative;
+        .bg {
+            width: 1429px;
+            height: 620px;
+            position: absolute;
+            top: -44px;
+            right: 0;
+            bottom: 0;
+            left: -170px;
+            background: url('/images/index_army/bg_left.png') no-repeat center;
+        }
+        >figure.pull-left{
+            background: #fff;
+            height: 100%;
+            width: 388px;
+            .img-responsive{
+                height: 100%;
+                width: auto;
+            }
+        }
+        .list-title{
+            height: auto;
+            background: none;
+            width: 30px;
+            color: #fff;
+            font-size: 18px;
+            padding: 0;
+            top: -35px;
+            left: -126px;
+            z-index: 3;
+            p{
+                font-size: 30px;
+                margin: 0 0 18px;
+            }
+        }
+        &:nth-child(2n) {
+            .bg {
+                left: -80px;
+                background: url('/images/index_army/bg_right.png') no-repeat center;
+            }
+            .list-title {
+                left: 1275px;
+            }
+        }
+    }
+}
+.army-footer {
+    overflow: hidden;
+    position: relative;
+    .army-footer-bg {
+        img {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+    }
+}
+
+// 品牌周弹窗
+.apx-modal-activity-bill {
+    .modal-dialog {
+        height: 758px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        // bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+    .close-btn {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 100px;
+        right: 140px;
+        background: url('/images/activity-bill/bill_close.png') center no-repeat;
+    }
+    .sub-content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: none;
+        &.in {
+            display: block;
+        }
+    }
+    .img-box{
+        position: relative;
+        p{
+            position: absolute;
+            left: 12px;
+            right: 0;
+            width: 523px;
+            bottom: 14px;
+            font-size: 34px;
+            color: #2e5c9e;
+            margin: 0 auto;
+        }
+    }
+    .img-responsive {
+        margin: 0 auto 60px;
+        margin-bottom: 0;
+    }
+    .btn-row{
+        text-align: center;
+    }
+    .btn {
+        // background: transparent url('/images/index_army/buy_now.png') center no-repeat;
+        background-size: 100%;
+        padding: 0;
+        width: 318px;
+        height: 110px;
+        line-height: 80px;
+        // margin: 0 36px;
+        margin-top: -140px;
+        color: #fff;
+        font-size: 36px;
+        transition: transform .1s;
+        &:hover {
+            transform: scale(1.02);
+        }
+        &:active {
+            transform: scale(.98);
+        }
+    }
+}

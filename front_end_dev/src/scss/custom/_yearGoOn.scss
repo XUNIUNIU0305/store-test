@@ -1,0 +1,114 @@
+.year-go-on {
+    min-width: 1440px;
+    overflow-x: auto;
+    background-color: #ffebd2;
+    img {
+        width: 100%;
+        vertical-align: top;
+    }
+    .banner {
+        margin-bottom: 44px;
+    }
+    .float-nav {
+        width: 119px;
+        height: 364px;
+        background: url('/images/year_go_on/r_nav_bg.png') no-repeat center;
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        margin-left: 615px;
+        ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul {
+            margin-top: 32px;
+        }
+        li {
+            text-align: center;
+            line-height: 28px;
+            &:hover {
+                background-color: #ffd471;
+            }
+            a {
+                color: #fff;
+                text-decoration: none;
+                &:hover {
+                    color: #db100c;
+                }
+            }
+        }
+        .qr-code {
+            margin-top: 20px;
+            text-align: center;
+            img {
+                width: 80%;
+            }
+        }
+    }
+    .pro-title {
+        font-size: 50px;
+        color: #ffebd2;
+        font-weight: bold;
+        line-height: 1;
+        padding: 120px 0 30px;
+        text-align: center;
+        background: #ffebd2 url('/images/year_go_on/title.png') no-repeat left center;
+    }
+    .items-container {
+        width: 1189px;
+        margin: 60px auto;
+        padding: 14px;
+        background-color: #e11823;
+        display: flex;
+        flex-wrap: wrap;
+        .item {
+            flex: 0 0 387px;
+            padding: 6px;
+            box-sizing: border-box;
+            text-align: center;
+            a {
+                text-align: center;
+                background-color: #ffebd2;
+                text-decoration: none;
+            }
+            .item-detail {
+                padding-bottom: 50px;
+                background-color: #ffebd2;
+            }
+            p {
+                color: #e11823;
+                margin: 0;
+            }
+            .item-title {
+                font-size: 24px;
+                padding-top: 26px;
+            }
+            .item-sub {
+                font-size: 18px;
+                padding-top: 4px;
+                color: #797676;
+            }
+            .price {
+                font-size: 18px;
+                .num {
+                    font-size: 32px;
+                }
+            }
+            .buy-btn {
+                width: 220px;
+                font-size: 22px;
+                text-align: center;
+                color: #f7da15;
+                line-height: 46px;
+                margin: 10px auto;
+                background: url('/images/year_go_on/buy_bg.png') no-repeat center;
+            }
+        }
+    }
+    .pro-explain {
+        width: 1200px;
+        margin: 0 auto 100px;
+    }
+}

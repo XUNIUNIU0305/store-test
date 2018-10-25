@@ -1,0 +1,27 @@
+// nav tabs
+ @mixin nav-tabs-danger() {
+     // nav tabs
+     >.nav-tabs {
+         margin: 30px 0;
+         border-bottom: 3px solid $brand-danger;
+         li {
+             margin-bottom: 0;
+             text-align: center;
+             &.active {
+                 a {
+                     border: 0;
+                     background: $brand-danger;
+                     color: #fff;
+                 }
+             }
+             a {
+                 min-width: 100px;
+                 line-height: 1;
+                 height: 34px;
+                 background: #fce7e6;
+                 border: 0;
+                 margin-right: 20px;
+             }
+         }
+     }
+ }

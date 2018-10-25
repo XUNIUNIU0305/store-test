@@ -1,0 +1,71 @@
+html {
+	font-size: 50px;
+}
+.film-pay-success {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #FFF;
+	 .top{
+         	height: .4rem;
+         	background: #999;
+         }
+         body{
+         	background: #efeff4;
+         }
+		 .content{
+			 height: 7.4rem;
+			 padding-top: 1.36rem;
+			 position: relative;
+			 background: #fff;
+		 }
+		 .pay-success{
+			 font-size: .34rem;
+			 color: #09bb07;
+			 text-align: center;
+		 }
+         .pay-success i{
+            display: inline-block;
+			width: .34rem;
+			height: .34rem;
+			border-radius: 50%;
+			color: #fff;
+			margin-right: .2rem;
+			background: url("/images/film/address/icon04.jpg");
+			background-size: 100%;
+			overflow: hidden;
+		 }
+		 .money{
+			 margin-top: .4rem;
+			 font-size: .6rem;
+			 text-align: center;
+		 }
+		 .btn{
+			 padding: 0 .3rem;
+			 position: absolute;
+			 bottom: 30px;
+			 left: 0;
+			 right: 0;
+			a{
+				 
+				 font-size: .3rem;
+				 width: 100%;
+				 display: block;
+				 margin-top: .2rem;
+				 border-radius: .2rem;
+				 text-align: center;
+				 line-height: .96rem;
+			 }
+		 }
+		 .list-btn{
+			color: #fff;
+            background: linear-gradient(90deg,#ff9100,#e53935);
+		 }
+		 .index-btn{
+             border: 1px solid #ff9100;
+			 background: #fff;
+			 color: #ff9100;
+		 }
+}

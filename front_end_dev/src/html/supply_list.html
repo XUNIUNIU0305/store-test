@@ -1,0 +1,294 @@
+@@include('head.inc') @@include('banner_seller.inc')
+<div class="container">
+    <div class="row">
+        @@include('seller_aside.inc')
+        <div class="apx-has-seller-aside clearfix">
+            <!-- 定制订单tabs -->
+            <div class="supplyList-container">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tab-new">
+                    <li class="active">
+                        <a href="#refund_audit" data-toggle="tab">未上传</a>
+                    </li>
+                    <li>
+                        <a href="#refund_todo" data-toggle="tab">已上传</a>
+                    </li>
+                    <li>
+                        <a href="#refund_done" data-toggle="tab">生产中</a>
+                    </li>
+                    <li>
+                        <a href="#refund_done" data-toggle="tab">已发货</a>
+                    </li>
+                    <li>
+                        <a href="#refund_done" data-toggle="tab">已拒绝</a>
+                    </li>
+                </ul>
+
+                <!-- Tab content -->
+                <div class="tab-content">
+                    <div class="tabItem"> 
+                        <div class="item-select item-active">
+                            <h2>订单筛选</h2>
+                            <ul class="item-msg">
+                                <li>
+                                    <label>订单号：
+                                        <input type="text" name="order_number" class="first-input">
+                                    </label>
+                                    <label>购买账号：
+                                        <input type="text" name="buy_account">
+                                    </label>
+                                    <label>付款时间：
+                                        <input type="text" class="date-picker time-input" name="pay_date_start">
+                                        <i class="time-line"></i>
+                                        <input type="text" class="date-picker time-input" name="pay_date_end">
+                                    </label>       
+                                </li> 
+                                <li>
+                                    <label>收货人：
+                                        <input type="text" name="buy_person" class="first-input">
+                                    </label>
+                                    <label>收货地址：
+                                        <input type="text" name="address">
+                                    </label>
+                                </li>  
+                                </ul>  
+                               <button class="btn">搜索</button>
+                          </div>  
+                          <div class="item-select">
+                                <h2>订单筛选</h2>
+                                <ul class="item-msg">
+                                    <li>
+                                        <label>订单号：
+                                             <input type="text" name="order_number" class="first-input">
+                                        </label>
+                                        <label>购买账号：
+                                             <input type="text" name="buy_account">
+                                        </label>
+                                        <label>付款时间：
+                                             <input type="text" class="date-picker time-input" name="pay_date_start">
+                                             <i class="time-line"></i>
+                                             <input type="text" class="date-picker time-input" name="pay_date_end">
+                                        </label>       
+                                    </li> 
+                                    <li>
+                                        <label>收货人：
+                                             <input type="text" name="buy_person" class="first-input">
+                                         </label>
+                                        <label>收货地址：
+                                             <input type="text" name="address">
+                                       </label>
+                                        <label>上传时间：
+                                             <input type="text" class="date-picker time-input" name="pay_date_start">
+                                             <i class="time-line"></i>
+                                             <input type="text" class="date-picker time-input" name="pay_date_end">
+                                        </label>       
+                                    </li> 
+                                    <li>
+                                        <label>修改时间：
+                                            <input type="text" class="date-picker time-input" name="update_date_start">
+                                            <i class="time-line"></i>
+                                            <input type="text" class="date-picker time-input" name="update_date_end">
+                                        </label>
+                                    </li>  
+                                </ul>  
+                                <button class="btn">搜索</button>
+                           </div>  
+                           <div class="item-select">
+                                <h2>订单筛选</h2>
+                                <ul class="item-msg">
+                                    <li>
+                                        <label>订单号：
+                                              <input type="text" name="order_number" class="first-input">
+                                        </label>
+                                        <label>购买账号：
+                                              <input type="text" name="buy_account">
+                                        </label>
+                                        <label>付款时间：
+                                             <input type="text" class="date-picker time-input" name="pay_date_start">
+                                             <i class="time-line"></i>
+                                            <input type="text" class="date-picker time-input" name="pay_date_end">
+                                        </label>       
+                                    </li> 
+                                    <li>
+                                        <label>收货人：
+                                              <input type="text" name="buy_person" class="first-input">
+                                        </label>
+                                        <label>收货地址：
+                                              <input type="text" name="address">
+                                        </label>
+                                    </li> 
+                                </ul>  
+                                <button class="btn">搜索</button>
+                           </div>  
+                           <div class="item-select">
+                                <h2>订单筛选</h2>
+                                <ul class="item-msg">
+                                    <li>
+                                        <label>订单号：
+                                             <input type="text" name="order_number" class="first-input">
+                                        </label>
+                                        <label>购买账号：
+                                             <input type="text" name="buy_account">
+                                        </label>
+                                        <label>付款时间：
+                                             <input type="text" class="date-picker time-input" name="pay_date_start">
+                                             <i class="time-line"></i>
+                                             <input type="text" class="date-picker time-input" name="pay_date_end">
+                                        </label>       
+                                    </li> 
+                                    <li>
+                                        <label>收货人：
+                                             <input type="text" name="buy_person" class="first-input">
+                                         </label>
+                                        <label>收货地址：
+                                             <input type="text" name="address">
+                                       </label>
+                                        <label>上传时间：
+                                             <input type="text" class="date-picker time-input" name="upload_date_start">
+                                             <i class="time-line"></i>
+                                             <input type="text" class="date-picker time-input" name="upload_date_end">
+                                        </label>        
+                                    </li> 
+                                    <li>
+                                        <label>修改时间：
+                                             <input type="text" class="date-picker time-input" name="update_date_start">
+                                             <i class="time-line"></i>
+                                             <input type="text" class="date-picker time-input" name="update_date_end">
+                                        </label>
+                                        <label>发货时间：
+                                             <input type="text" class="date-picker time-input" name="send__date_start">
+                                             <i class="time-line"></i>
+                                             <input type="text" class="date-picker time-input" name="send__date_end">
+                                        </label>
+                                        <label>物流公司：
+                                            <select name="express_corporation">
+                                                <option value="1"></option>
+                                                <option value="2"></option>
+                                                <option value="3"></option>
+                                                <option value="4"></option>
+                                            </select>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>物流单号：
+                                            <input type="text" name="express_number">
+                                        </label>
+                                    </li>
+                                </ul>   
+                                <button class="btn" type="search">搜索</button>
+                           </div>  
+                           <div class="item-select">
+                                <h2>订单筛选</h2>
+                                <ul class="item-msg">
+                                    <li>
+                                        <label>订单号：
+                                             <input type="text" name="order_number" class="first-input">
+                                        </label>
+                                        <label>购买账号：
+                                             <input type="text" name="buy_account">
+                                        </label>
+                                        <label>付款时间：
+                                             <input type="text" class="date-picker time-input" name="pay_date_start">
+                                             <i class="time-line"></i>
+                                             <input type="text" class="date-picker time-input" name="pay_date_end">
+                                        </label>       
+                                    </li> 
+                                    <li>
+                                        <label>收货人：
+                                             <input type="text" name="buy_person" class="first-input">
+                                         </label>
+                                        <label>收货地址：
+                                             <input type="text" name="address">
+                                       </label>
+                                        <label>上传时间：
+                                             <input type="text" class="date-picker time-input" name="upload_date_start">
+                                             <i class="time-line"></i>
+                                             <input type="text" class="date-picker time-input" name="upload_date_end">
+                                        </label>        
+                                    </li> 
+                                    <li>
+                                        <label>修改时间：
+                                             <input type="text" class="date-picker time-input" name="update_date_start">
+                                             <i class="time-line"></i>
+                                             <input type="text" class="date-picker time-input" name="update_date_end">
+                                        </label>
+                                        <label>发货时间：
+                                             <input type="text" class="date-picker time-input" name="send__date_start">
+                                             <i class="time-line"></i>
+                                             <input type="text" class="date-picker time-input" name="send__date_end">
+                                        </label>
+                                        <label>物流公司：
+                                            <select name="express_corporation">
+                                                <option value=""></option>
+                                                <option value=""></option>
+                                            </select>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>物流单号：
+                                            <input type="text" name="express_number">
+                                        </label>
+                                        <label>拒绝时间：
+                                            <input type="text" class="date-picker time-input" name="reject_date_start">
+                                            <i class="time-line"></i>
+                                            <input type="text" class="date-picker time-input" name="reject_date_end"> 
+                                        </label> 
+                                    </li>
+                                </ul>  
+                                <button class="btn">搜索</button>
+                           </div>   
+                    </div>
+                    <ul class="order-items">
+                          <li class="order-item">
+                              <div class="order-top clearfix">
+                                   <div class="order-topCont">
+                                        <span>订单号：6431569999</span>
+                                        <span>下单时间：2017-10-22 12:25:45</span>
+                                        <span>付款时间：2017-10-22 12:25:45</span>
+                                   </div>               
+                                   <a href="#">查看更多<i>&gt;</i></a>
+                              </div>
+                              <ul class="order-main">
+                                   <li>
+                                       <div class="order-first order_wrap">
+                                            <img src="/images/paster01.jpg" alt="">
+                                           <div class="img-right">
+                                                <h3>比尔传世纪精油洗车芳香比尔传世纪精油洗车芳香比尔传世纪精油洗车芳香</h3>
+                                                <p class="order-color">属性：黑色、清香</p>
+                                                <p class="order-money">￥1080.00</p>
+                                           </div>
+                                        </div>
+                                        <div class="order_address order_wrap">
+                                            <p><span>收货地址：</span>上海市松江区泗泾镇就请路348弄10号401</p>
+                                           <p><span>收货人：</span>张三</p>
+                                           <p><span>收货电话：</span>17302179440</p>
+                                        </div>
+                                   </li>
+                                   <li>
+                                       <div class="order_mask order_wrap">
+                                           <h2>客户特别备注：</h2>
+                                           <p>我是客户的特殊需求请认真对待，如果弄我将会表示你们的服务不够好，请认真对待我是客户的特殊需求请认真对待，如果弄我将会表示你们的服务不够好，请认真对待我是客户的特殊需求请认真对待，如果弄我将会表示你们的服务不够好，请认真对待</p>
+                                       </div>
+                                       <div class="order_mask order_wrap">
+                                           <h2>厂家特别备注：</h2>
+                                           <p>我是客户的特殊需求请认真对待，如果弄我将会表示你们的服务不够好，请认真对待</p>
+                                       </div>
+                                   </li>
+                              </ul>
+                          </li>
+                    </ul>      
+                </div> 
+                <div class="text-right" id="supplyList_page"></div>
+            </div>  
+        </div>       
+    </div>
+</div>
+@@include('footer_seller.inc')
+<script>
+    $(function(){
+        $('.nav-tab-new li').click(function(){
+            $(this).siblings().removeClass("active").end().addClass('active');
+            $(".tab-content .tabItem .item-select").css('display','none').eq($(this).index()).css("display","block");
+        })
+    })
+</script>

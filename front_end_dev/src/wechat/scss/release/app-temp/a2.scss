@@ -1,0 +1,458 @@
+/*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */blockquote,body,dd,dl,dt,fieldset,figure,h1,h2,h3,h4,h5,h6,hr,html,iframe,legend,li,ol,p,pre,textarea,ul{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:400}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,:after,:before{box-sizing:inherit}audio,embed,iframe,img,object,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}
+
+$ratio: 1 / 750 * 100vw;
+@mixin ellipse($height: 1em) {
+  width: 100%;
+  height: $height;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@mixin ellipse-adv($line: 2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
+.apex-20180629 {
+  position: relative;
+  padding-top: 458 * $ratio;
+  overflow: hidden;
+  a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  img {
+    display: block;
+  }
+  .col-4 {
+    max-width: 33.3333333%;
+    flex-basis: 33.3333333%;
+  }
+  .col-3 {
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .col-6 {
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .col-12 {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+// background and banner
+.bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #01003a;
+  .banner {
+    position: relative;
+    background: url("/images/18629/a/head_img.jpg") center top/contain no-repeat;
+    width: 100%;
+    height: 560 * $ratio;
+    box-sizing: border-box;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 121 * $ratio;
+      height: 97 * $ratio;
+      background: url("/images/18629/a/629logo.png") center top/contain no-repeat;
+      left: 78 * $ratio;
+      top: 0;
+    }
+  }
+  // aside items
+  .aside {
+    position: absolute;
+    top: 222 * $ratio;
+    right: 13 * $ratio;
+    .link {
+      position: relative;
+      width: 126 * $ratio;
+      height: 233 * $ratio;
+      list-style: none;
+      padding: 22 * $ratio 6 * $ratio 10 * $ratio;
+      background: #6602b4;
+      border-radius: 15 * $ratio;
+      &::before {
+        width: 126 * $ratio;
+        height: 82 * $ratio;
+        position: absolute;
+        top: -63 * $ratio;
+        left: 0;
+        background: url("/images/18629/a/nav_logo.png") center/contain no-repeat;
+        content: "";
+      }
+      li {
+        line-height: 29 * $ratio;
+        text-align: center;
+        border-radius: 13 * $ratio;
+        margin-bottom: 6 * $ratio;
+        color: #fff;
+        font-size: 16 * $ratio;
+        @each $index, $color in (1, #ff0033), (2, #ff6600), (3, #00bf7f), (4, #6666ff), (5, #ff8a00), (6, #e400ff) {
+          &:nth-child(#{$index}) {
+            background: $color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.floor {
+  position: relative;
+  width: 704 * $ratio;
+  margin: 0 auto 50 * $ratio;
+  .btn-more {
+    margin: 16 * $ratio auto 0;
+    width: 199 * $ratio;
+    height: 40 * $ratio;
+    margin-bottom: 20 * $ratio;
+    background: transparent center/contain no-repeat;
+  }
+}
+
+.floor-1 {
+  background: url("/images/18629/a/miaosha_bg.png") center top/contain no-repeat;
+  padding: 88 * $ratio 0 20 * $ratio;
+  .day-nav {
+    width: 562 * $ratio;
+    height: 34 * $ratio;
+    border-radius: 16 * $ratio;
+    background: #ffffff;
+    margin: 0 auto 32 * $ratio;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    li {
+      background: #f90000;
+      color: #fff;
+      line-height: 28 * $ratio;
+      font-size: 26 * $ratio;
+      border-radius: 14 * $ratio;
+      width: 140 * $ratio;
+      text-align: center;
+      display: inline-block;
+    }
+  }
+  .item-list {
+    overflow: hidden;
+    width: 684 * $ratio;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item {
+    margin: 4 * $ratio auto;
+    width: 220 * $ratio;
+    height: 320 * $ratio;
+    background: #ffffff;
+    padding: 230 * $ratio 10 * $ratio 0;
+    box-sizing: border-box;
+    position: relative;
+    .img-box {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+    p,
+    .detail {
+      position: relative;
+    }
+    p {
+      line-height: 1.2;
+      font-size: 18 * $ratio;
+      height: 2.4em;
+      @include ellipse-adv(2);
+    }
+    .detail {
+      margin-top: 16 * $ratio;
+      line-height: 22 * $ratio;
+      vertical-align: middle;
+      strong {
+        font-size: 26 * $ratio;
+        color: #ff0000;
+        vertical-align: middle;
+      }
+      s {
+        color: #929292;
+        font-size: 18 * $ratio;
+        vertical-align: middle;
+      }
+    }
+    .left {
+      float: left;
+    }
+    .btn-buy {
+      width: 80 * $ratio;
+      height: 22 * $ratio;
+      background: url("/images/18629/a/btn_lg.jpg") center/contain no-repeat;
+      float: right;
+    }
+  }
+  .btn-more {
+    background-image: url("/images/18629/a/more_but.png");
+  }
+}
+
+.floor-2 {
+  .title {
+    width: 668 * $ratio;
+    height: 90 * $ratio;
+    background: url("/images/18629/a/pingtuang_title.png") center/contain no-repeat;
+    margin: 0 auto;
+  }
+  .item-list {
+    margin: 0 auto;
+    width: 668 * $ratio;
+    background: #380083;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item {
+    margin: 10 * $ratio auto;
+    width: 320 * $ratio;
+    height: 350 * $ratio;
+    background: #ffffff;
+    padding: 228 * $ratio 10 * $ratio 0 18 * $ratio;
+    box-sizing: border-box;
+    position: relative;
+    &::after {
+      content: "";
+      width: 39 * $ratio;
+      height: 44 * $ratio;
+      background: url("/images/custom/tuan_lable.png") center/contain no-repeat;
+      position: absolute;
+      top: 0;
+      right: 10 * $ratio;
+    }
+    .img-box {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+    p,
+    .price,
+    .detail {
+      position: relative;
+    }
+    p {
+      line-height: 1;
+      @include ellipse;
+      font-size: 18 * $ratio;
+    }
+    .price {
+      margin-top: 8 * $ratio;
+      line-height: 30 * $ratio;
+      vertical-align: middle;
+      strong {
+        font-size: 30 * $ratio;
+        color: #ff0000;
+        vertical-align: middle;
+      }
+      s {
+        color: #929292;
+        font-size: 20 * $ratio;
+        vertical-align: middle;
+      }
+    }
+    .detail {
+      margin-top: 30 * $ratio;
+    }
+    .progress-wrap {
+      width: 177 * $ratio;
+      height: 10 * $ratio;
+      border-radius: 5 * $ratio;
+      background: #b6b6b6;
+      position: relative;
+      margin-top: 12 * $ratio;
+      .progress {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #828282;
+        width: 100%;
+        max-width: 0;
+        height: 10 * $ratio;
+        border-radius: 5 * $ratio;
+        transition: max-width 0.2s;
+      }
+      span {
+        position: absolute;
+        color: #6d6d6d;
+        font-size: 18 * $ratio;
+        top: -24 * $ratio;
+        line-height: 1;
+        &:first-child {
+          left: 0;
+        }
+        &:nth-child(2) {
+          right: 0;
+        }
+      }
+    }
+    .left {
+      float: left;
+    }
+    .btn-buy {
+      width: 93 * $ratio;
+      height: 25 * $ratio;
+      background: url("/images/18629/a/lijigoumai_but.png") center/contain no-repeat;
+      float: right;
+    }
+  }
+  .btn-more {
+    background-image: url("/images/18629/a/gengduopingtuan_but.png");
+  }
+}
+
+.floor-3 {
+  width: 668 * $ratio;
+  .title {
+    height: 90 * $ratio;
+    background: url("/images/18629/a/title2.png") center/contain no-repeat;
+  }
+  .item-list {
+    background: #2e006b;
+    overflow: hidden;
+    font-size: 0;
+    padding: 18 * $ratio;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  [class^="col-"] {
+    padding: 6 * $ratio;
+  }
+}
+
+.floor-4 {
+  width: 668 * $ratio;
+  .title {
+    height: 90 * $ratio;
+    background: url("/images/18629/a/pingpaimanjian_title.png") center/contain no-repeat;
+  }
+  .item-list {
+    background: #2e006b;
+    overflow: hidden;
+    font-size: 0;
+    padding: 20 * $ratio 14 * $ratio;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  [class^="col-"] {
+    padding: 10 * $ratio;
+  }
+}
+
+.floor-5 {
+  width: 668 * $ratio;
+  .title {
+    height: 90 * $ratio;
+    background: url("/images/18629/a/lijianmanzen_title.png") center/contain no-repeat;
+  }
+  .nav {
+    list-style: none;
+    background: #6d00ae;
+    font-size: 0;
+    padding: 0 10%;
+    li {
+      line-height: 50 * $ratio;
+      color: #fff;
+      font-size: 25 * $ratio;
+      width: 20%;
+      display: inline-block;
+      text-align: center;
+    }
+  }
+  .item-list {
+    margin: 0 auto;
+    background: #2e006b;
+    padding: 32 * $ratio 24 * $ratio;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item {
+    height: 180 * $ratio;
+    background-color: #ffffff;
+    overflow: hidden;
+    border: 3 * $ratio solid #9e66ff;
+    margin-bottom: 20 * $ratio;
+    .img-box {
+      float: left;
+      margin: 8 * $ratio 10 * $ratio;
+      width: 160 * $ratio;
+      height: 160 * $ratio;
+    }
+    .content {
+      padding-left: 184 * $ratio;
+      padding-right: 16 * $ratio;
+    }
+    p {
+      font-size: 20 * $ratio;
+      line-height: 1;
+      margin: 28 * $ratio 0 8 * $ratio;
+      @include ellipse;
+    }
+    .list-container {
+      height: 68 * $ratio;
+      ul {
+        background: #9d672d;
+        border-radius: 11 * $ratio;
+        font-size: 20 * $ratio;
+        padding: 6 * $ratio;
+        color: #fff;
+        line-height: 1.4;
+        &.md {
+          font-size: 18 * $ratio;
+          padding: 6 * $ratio;
+        }
+        &.xs {
+          font-size: 14 * $ratio;
+          padding: 5 * $ratio;
+        }
+        li {
+          @include ellipse(1.4em);
+        }
+      }
+    }
+    .detail {
+      margin-top: 6 * $ratio;
+      line-height: 1;
+      strong {
+        font-size: 35 * $ratio;
+        color: #ff0000;
+      }
+      s {
+        color: #929292;
+        font-size: 20 * $ratio;
+      }
+    }
+    .left {
+      float: left;
+    }
+    .btn-go {
+      width: 83 * $ratio;
+      height: 21 * $ratio;
+      background: url("/images/18629/a/go_but.png") center/contain no-repeat;
+      float: right;
+      position: relative;
+      top: 14 * $ratio;
+    }
+  }
+}

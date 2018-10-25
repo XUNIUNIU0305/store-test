@@ -1,0 +1,165 @@
+$base: 1 / 750 * 100vw;
+$line-color: #dedfe0;
+
+.group-activity-personnel-information{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .white,.white1{
+        background: #EFEFF4;
+        height: 20*$base;
+    }
+    .white1{
+        height: 10*$base;
+    }
+    .head-personnel-information{
+        min-height: 310*$base;
+        background: white;
+        text-align: center;
+        overflow: hidden;
+        color: #515151;
+        .head-personnel-pic{
+            margin: 30*$base auto 0;
+            width: 120*$base;
+            height: 120*$base;
+            border: 2*$base solid #f5222d;
+            border-radius: 50%;
+            position: relative;
+            .head-personnel{
+                width: 120*$base;
+                height: 65*$base;
+                background: url('/images/8-13/tz.png') no-repeat center;
+                background-size: 100%;
+                position: absolute;
+                bottom: -27 * $base;
+            }
+        }
+        .head-personnel-name{
+            font-size: 28*$base;         
+            color: #2C2C2C;
+            margin: 44*$base auto;
+            margin-bottom: 30*$base;
+            font-weight: 900;
+        }
+        .head-personnel-starttime{
+            font-size: 26*$base;
+            margin: 0;
+           padding-bottom: 40*$base;
+        }
+    }
+
+    .personnel-information{
+        flex: 1;
+        background: white;
+        overflow: hidden;
+        color: #4B4B4B;
+        .personnel-group{
+            margin-left: 30*$base;
+            padding-right: 30*$base;
+            border-bottom: 1px solid #dedede;
+            .personnel-group-info{
+                margin: 40*$base 0 25*$base;
+                font-size: 26*$base;
+                .personnel-group-premise{
+                    background: #f5222d;
+                    border-radius: 30*$base;
+                    padding: 0 13*$base;
+                    color: white;
+                    border: 1px solid #f5222d;
+                }
+                .personnel-group-way{
+                    color: #f5222d;
+                    background: #fff1f0;
+                    box-sizing: border-box;
+                    border: 1px solid #f5222d;
+                    padding: 0 * $base 10 * $base;
+                    border-radius: 10px;
+                }
+                .personnel-group-nows{
+                    float: right;
+                    .personnel-group-now{
+                        margin-left: 16*$base;
+                        font-style: inherit;
+                        font-size: 26*$base;
+                    }
+                }
+            }
+            .personnel-introduce{
+                overflow:hidden;
+                text-overflow:ellipsis;
+                white-space:nowrap;
+                margin: 0;
+                padding-bottom: 40*$base;
+            }
+        }
+        .personnel-information-num{
+            //无人参加拼购
+            .none-personnel-group{
+                text-align: center;
+                font-size: 26*$base;
+                font-weight: 900;
+                .none-personnel-pic{
+                    margin: 110*$base auto 40*$base;
+                    width: 110*$base;
+                    height: 110*$base;
+                    border-radius: 50%;
+                    // background: #dedede;
+                    background: url('/images/8-13/ss.png') no-repeat center center;
+                    background-size: 100% 100%;
+                }
+            }
+            //有人参加拼购
+            .have-personnel-group{
+                margin-bottom: 89*$base;
+                .have-personnel-group-list{
+                    padding: 40*$base 0;
+                    margin: 0 30*$base;
+                    border-bottom: 1px solid #dedede;
+                    display: flex;
+                    .have-personnel-group-pic{
+                        width: 90*$base;
+                        height: 90*$base;
+                        border-radius: 50%;
+                        border: 2*$base solid #f5222d;
+                        overflow: hidden;
+                        vertical-align: middle;
+                        .have-personnel-group-head-portrait{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .have-personnel-group-info{
+                        margin-left: 22*$base;
+                        flex: 1;
+                        .have-personnel-name{
+                            font-size: 26*$base;
+                            line-height: 45*$base;
+                            height: 45*$base;
+                            color: #2C2C2C;
+                            font-weight: 900;
+                        }
+                        .have-personnel-spe{
+                            color: #888888;
+                            font-size: 26*$base;
+                            .have-personnel-spe-num{
+                                float: right;
+                                // margin-left: 10px;
+                            }
+                        }
+                        .have-personnel-time{
+                            color: #888888;
+                            font-size: 26*$base;
+                        }
+                    }
+                    .personnel-num{
+                        font-size: 26*$base;
+                        margin: 0;
+                        margin-top: 40*$base;
+                        margin-bottom: 14*$base;
+                    }
+                }
+            }
+        }
+
+    }
+}

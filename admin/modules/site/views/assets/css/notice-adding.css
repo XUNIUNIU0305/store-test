@@ -1,0 +1,122 @@
+/*children-pages*/
+.childrenPages{
+	display: block;
+}
+.choice-unit{
+	padding-top: 48px;
+}
+.choice-unit p{
+	margin-bottom: 30px;
+	font-size: 16px;
+	line-height: 30px;
+}
+.choice-unit p >em{
+	display: inline-block;
+	width: 192px;
+	text-align: center;
+	font-style: normal;
+}
+.unit-content p:first-child >em{
+	float: left;
+}
+.choice-unit p >span{
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	border: 1px solid #cccccc;
+	cursor: pointer;
+}
+.choice-unit p >span.tab-active{
+	border-color: #df483d;
+	color: #df483d;
+}
+.choice-unit p >span:last-child{
+	margin-left: 20px;
+}
+.choice-unit p >input.alone-row{
+	height: 30px;
+	line-height: 30px;
+	width: 420px;
+	border: 1px solid #cccccc;
+}
+.choice-unit p i.add-picture{
+	display: inline-block;
+	height: 152px;
+	line-height: 152px;
+	width: 230px;
+	border: 1px solid #cccccc;
+}
+
+.choice-unit p sup{
+	padding-bottom: 4px;
+}
+.choice-unit p sup,
+.choice-unit p sup abbr{
+	position: relative;
+	vertical-align: bottom;
+  font-size: 12px;
+  font-weight: normal;
+  color: #aaa;
+}
+.img-upload-box{
+	position: relative;
+	vertical-align: middle;
+	height: 152px;
+	width: 100%;
+	background: url(/images/icons/plus-red.png) no-repeat center;
+	cursor: pointer;
+	background-size: cover;
+}
+.file-upload{
+	position: absolute;
+	background-color: transparent;
+	clip: rect(0,0,0,0);
+}
+
+.choice-unit p >span,
+.choice-unit p i.add-picture,
+.choice-unit p >input.alone-row,
+.footer-unit input
+{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.choice-unit p:last-child{
+	height: 340px;
+}
+.choice-unit p:last-child em{
+	flex: left;
+}
+.choice-unit p:last-child i.text-center{
+	display: inline-block;
+	width: 100%;
+	height: 340px;
+	margin-top: -30px;
+	margin-left: 180px;
+}
+
+.footer-unit{
+	position: relative;
+	padding: 20px 192px;
+}
+.footer-unit input {
+	width: 70px;
+	height: 30px;
+	text-align: center;
+}
+.footer-unit input{
+	background-color: transparent;
+	color: #df483d;
+	border: 1px solid #df483d;
+	outline: none;
+}
+.footer-unit input:last-child{
+	margin-left : 24px;
+}
+.footer-unit input.btn-active {
+	background-color: #df483d;
+	color: #fff;
+}

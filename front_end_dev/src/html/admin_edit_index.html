@@ -1,0 +1,654 @@
+@@include('head.inc')
+<!-- header start -->
+<header class="admin-frame-header">
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#top">
+                <img alt="logo" src="/images/logo_white.png" height="24">
+            </a>
+        </div>
+        <ul class="nav navbar-nav navbar-left">
+            <li>管理控制中心</li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                476644346@qq.com
+            </li>
+            <li>
+                <a href="javascript:void(0)">退出</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<!-- header end -->
+<!-- aside nav start -->
+<aside class="admin-frame-aside" id="aside-menu">
+    <ul class="nav nav-pills nav-stacked">
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_1">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_2">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_3">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+    </ul>
+    <ul id="aside_menu_1" class="list-unstyled child-list collapse">
+        <li class="active"><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+    </ul>
+    <ul id="aside_menu_2" class="list-unstyled child-list collapse">
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+    </ul>
+    <ul id="aside_menu_3" class="list-unstyled child-list collapse">
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+    </ul>
+</aside>
+<!-- aside nav end -->
+<!-- main area start -->
+<div class="admin-frame-main">
+    <div class="admin-main-wrap">
+        <!-- 首页管理tabs -->
+        <div class="admin-edit-index">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a href="#edit_carousels" data-toggle="tab">主轮播</a>
+                </li>
+                <li>
+                    <a href="#edit_brands" data-toggle="tab">品牌馆</a>
+                </li>
+                <li>
+                    <a href="#edit_floors" data-toggle="tab">商品楼层</a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <!--主轮播 start-->
+                <div role="tabpanel" class="admin-edit-index-carousels tab-pane fade in active" id="edit_carousels">
+                    <!--按钮-->
+                    <div class="btn btn-danger"><i class="glyphicon glyphicon-plus-sign"></i>添加轮播</div>
+                    <!--标题-->
+                    <div class="h4"><i class="glyphicon glyphicon-th-large"></i>轮播列表</div>
+                    <!--轮播列表-->
+                    <div class="row-group">
+                        <!--轮播列表头-->
+                        <div class="row header">
+                            <div class="col-xs-3">序号</div>
+                            <div class="col-xs-3">图片（1920*480，可见区1190px）</div>
+                            <div class="col-xs-3">链接</div>
+                            <div class="col-xs-3">操作</div>
+                        </div>
+                        <!--新增-->
+                        <div class="row list new">
+                            <div class="col-xs-3">
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-xs-3 edit">
+                                <label class="img-upload-box" for="upload_img_1">
+                                    <input type="file" id="upload_img_1">
+                                </label>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="text" class="form-control" value="">
+                            </div>
+                            <div class="col-xs-3">
+                                <a href="#" data-toggle="modal" data-target="#apxModalAdminAlert" class="btn btn-warning btn-sm">删除</a>
+                                <a href="#" class="btn btn-danger btn-sm">确定</a>
+                            </div>
+                        </div>
+                        <!--修改-->
+                        <div class="row list edit">
+                            <div class="col-xs-3">
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-xs-3">
+                                <label class="img-upload-box" for="upload_img_2">
+                                    <input type="file" id="upload_img_2">
+                                    <img class="img-responsive" src="/images/custom_index/apex_banner.jpg">
+                                </label>
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="text" class="form-control" value="daxinwen/haha/too_young">
+                            </div>
+                            <div class="col-xs-3">
+                                <a href="#" data-toggle="modal" data-target="#apxModalAdminAlert" class="btn btn-warning btn-sm">删除</a>
+                                <a href="#" class="btn btn-danger btn-sm">确定</a>
+                            </div>
+                        </div>
+                        <!--普通-->
+                        <div class="row list">
+                            <div class="col-xs-3">1</div>
+                            <div class="col-xs-3">
+                                <div class="img-upload-box">
+                                    <img class="img-responsive" src="/images/custom_index/apex_banner.jpg">
+                                </div>
+                            </div>
+                            <div class="col-xs-3">daxinwen/haha/too_young</div>
+                            <div class="col-xs-3">
+                                <a href="#" data-toggle="modal" data-target="#apxModalAdminAlert" class="btn btn-warning btn-sm">删除</a>
+                                <a href="#" class="btn btn-danger btn-sm">修改</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--主轮播 end-->
+
+                <!--品牌馆 start-->
+                <div role="tabpanel" class="admin-edit-index-brands tab-pane fade" id="edit_brands">
+                    <!--标题-->
+                    <div class="h4"><i class="glyphicon glyphicon-th-large"></i>品牌馆模版</div>
+                    <!--模版列表-->
+                    <div class="templates">
+                        <ul class="list-unstyled">
+                            <li class="active">
+                                <a href="#brand_template_1" data-toggle="tab"><img src="/images/admin/brand_templates/1.png" class="img-responsive"></a>
+                            </li>
+                            <li>
+                                <a href="#brand_template_2" data-toggle="tab"><img src="/images/admin/brand_templates/2.png" class="img-responsive"></a>
+                            </li>
+                            <li>
+                                <a href="#brand_template_3" data-toggle="tab"><img src="/images/admin/brand_templates/3.png" class="img-responsive"></a>
+                            </li>
+                            <li>
+                                <a href="#brand_template_4" data-toggle="tab"><img src="/images/admin/brand_templates/6.png" class="img-responsive"></a>
+                            </li>
+                            <li>
+                                <a href="#brand_template_5" data-toggle="tab"><img src="/images/admin/brand_templates/5.png" class="img-responsive"></a>
+                            </li>
+                        </ul>
+                        <!--隐藏下拉内容-->
+                        <ul class="list-unstyled collapse" id="more_templates">
+                            <li>
+                                <a href="#brand_template_6" data-toggle="tab"><img src="/images/admin/brand_templates/4.png" class="img-responsive"></a>
+                            </li>
+                            <li>
+                                <a href="#brand_template_7" data-toggle="tab"><img src="/images/admin/brand_templates/7.png" class="img-responsive"></a>
+                            </li>
+                            <li>
+                                <a href="#brand_template_8" data-toggle="tab"><img src="/images/admin/brand_templates/8.png" class="img-responsive"></a>
+                            </li>
+                        </ul>
+                        <!--下拉按钮-->
+                        <a class="btn btn-danger collapsed" data-toggle="collapse" href="#more_templates">
+                            <i class="collapse-icon"></i>
+                        </a>
+                    </div>
+                    <!--模版内容-->
+                    <div class="tab-content">
+                        <!--模版1-->
+                        <div class="tab-pane fade in active" id="brand_template_1">
+                            <!--以下html结构可直接应用到首页-->
+                            <div class="apx-brand-figures row">
+                                <div class="col-xs-customed" data-toggle="modal" data-target="#apxModalAdminBrandImg" style="width: 476px">
+                                    <img src="/images/custom_index/1.jpg">
+                                </div>
+                                <div class="col-xs-customed" data-toggle="modal" data-target="#apxModalAdminBrandImg" style="width: 704px">
+                                    <img src="/images/custom_index/4.jpg">
+                                </div>
+                                <div class="col-xs-customed" data-toggle="modal" data-target="#apxModalAdminBrandImg" style="width: 704px">
+                                    <img src="/images/custom_index/5.jpg">
+                                </div>
+                                <div class="col-xs-customed" data-toggle="modal" data-target="#apxModalAdminBrandImg" style="width: 476px">
+                                    <img src="/images/custom_index/3.jpg">
+                                </div>
+                            </div>
+                            <!--以上html结构可直接应用到首页-->
+                        </div>
+                        <!--模版2-->
+                        <div class="tab-pane fade" id="brand_template_2">
+                            <!--以下html结构可直接应用到首页-->
+                            <div class="apx-brand-figures row">
+                                <div class="col-xs-4" data-toggle="modal" data-target="#apxModalAdminBrandImg">
+                                    <img src="/images/custom_index/1.jpg">
+                                </div>
+                                <div class="col-xs-4" data-toggle="modal" data-target="#apxModalAdminBrandImg">
+                                    <img src="/images/custom_index/2.jpg">
+                                </div>
+                                <div class="col-xs-4" data-toggle="modal" data-target="#apxModalAdminBrandImg">
+                                    <img src="/images/custom_index/3.jpg">
+                                </div>
+                                <div class="col-xs-6" data-toggle="modal" data-target="#apxModalAdminBrandImg">
+                                    <img src="/images/custom_index/4.jpg">
+                                </div>
+                                <div class="col-xs-6" data-toggle="modal" data-target="#apxModalAdminBrandImg">
+                                    <img src="/images/custom_index/5.jpg">
+                                </div>
+                            </div>
+                            <!--以上html结构可直接应用到首页-->
+                        </div>
+                        <!--模版3-->
+                        <div class="tab-pane fade" id="brand_template_3">
+                            <!--以下html结构可直接应用到首页-->
+                            <div class="apx-brand-figures row">
+                                <div class="col-xs-4" data-toggle="modal" data-target="#apxModalAdminBrandImg">
+                                    <img src="/images/custom_index/1.jpg">
+                                </div>
+                                <div class="col-xs-4" data-toggle="modal" data-target="#apxModalAdminBrandImg">
+                                    <img src="/images/custom_index/2.jpg">
+                                </div>
+                                <div class="col-xs-4" data-toggle="modal" data-target="#apxModalAdminBrandImg">
+                                    <img src="/images/custom_index/3.jpg">
+                                </div>
+                                <div class="col-xs-4" data-toggle="modal" data-target="#apxModalAdminBrandImg">
+                                    <img src="/images/custom_index/1.jpg">
+                                </div>
+                                <div class="col-xs-4" data-toggle="modal" data-target="#apxModalAdminBrandImg">
+                                    <img src="/images/custom_index/2.jpg">
+                                </div>
+                                <div class="col-xs-4" data-toggle="modal" data-target="#apxModalAdminBrandImg">
+                                    <img src="/images/custom_index/3.jpg">
+                                </div>
+                            </div>
+                            <!--以上html结构可直接应用到首页-->
+                        </div>
+                        <!--模版4-->
+                        <div class="tab-pane fade" id="brand_template_4">
+                            <!--以下html结构可直接应用到首页-->
+                            <div class="apx-brand-figures row">
+                                <div class="col-xs-3" data-toggle="modal" data-target="#apxModalAdminBrandImg">
+                                    <img src="/images/custom_index/1.jpg">
+                                </div>
+                                <div class="col-xs-3" data-toggle="modal" data-target="#apxModalAdminBrandImg">
+                                    <img src="/images/custom_index/2.jpg">
+                                </div>
+                                <div class="col-xs-3" data-toggle="modal" data-target="#apxModalAdminBrandImg">
+                                    <img src="/images/custom_index/3.jpg">
+                                </div>
+                                <div class="col-xs-3" data-toggle="modal" data-target="#apxModalAdminBrandImg">
+                                    <img src="/images/custom_index/1.jpg">
+                                </div>
+                                <div class="col-xs-3" data-toggle="modal" data-target="#apxModalAdminBrandImg">
+                                    <img src="/images/custom_index/2.jpg">
+                                </div>
+                                <div class="col-xs-3" data-toggle="modal" data-target="#apxModalAdminBrandImg">
+                                    <img src="/images/custom_index/3.jpg">
+                                </div>
+                                <div class="col-xs-3" data-toggle="modal" data-target="#apxModalAdminBrandImg">
+                                    <img src="/images/custom_index/2.jpg">
+                                </div>
+                                <div class="col-xs-3" data-toggle="modal" data-target="#apxModalAdminBrandImg">
+                                    <img src="/images/custom_index/3.jpg">
+                                </div>
+                            </div>
+                            <!--以上html结构可直接应用到首页-->
+                        </div>
+                        <!--模版5-->
+                        <div class="tab-pane fade" id="brand_template_5">
+                            <!--以下html结构可直接应用到首页-->
+                            <div class="apx-brand-figures row">
+                                <div class="col-xs-3" data-toggle="modal" data-target="#apxModalAdminBrandImg">
+                                    <img src="/images/custom_index/1.jpg">
+                                </div>
+                                <div class="col-xs-3" data-toggle="modal" data-target="#apxModalAdminBrandImg">
+                                    <img src="/images/custom_index/2.jpg">
+                                </div>
+                                <div class="col-xs-3" data-toggle="modal" data-target="#apxModalAdminBrandImg">
+                                    <img src="/images/custom_index/3.jpg">
+                                </div>
+                                <div class="col-xs-3" data-toggle="modal" data-target="#apxModalAdminBrandImg">
+                                    <img src="/images/custom_index/1.jpg">
+                                </div>
+                                <div class="col-xs-4" data-toggle="modal" data-target="#apxModalAdminBrandImg">
+                                    <img src="/images/custom_index/2.jpg">
+                                </div>
+                                <div class="col-xs-4" data-toggle="modal" data-target="#apxModalAdminBrandImg">
+                                    <img src="/images/custom_index/3.jpg">
+                                </div>
+                                <div class="col-xs-4" data-toggle="modal" data-target="#apxModalAdminBrandImg">
+                                    <img src="/images/custom_index/2.jpg">
+                                </div>
+                            </div>
+                            <!--以上html结构可直接应用到首页-->
+                        </div>
+                        <!--模版6-->
+                        <div class="tab-pane fade" id="brand_template_6">
+                            <!--以下html结构可直接应用到首页-->
+                            <div class="apx-brand-figures row">
+                                <div class="col-xs-3" data-toggle="modal" data-target="#apxModalAdminBrandImg" style="height: 594px;">
+                                    <img src="/images/custom_index/1.jpg">
+                                </div>
+                                <div class="col-xs-3 no-add-sign" style="height: 584px;">
+                                    <div class="col-xs-customed" data-toggle="modal" data-target="#apxModalAdminBrandImg" style="height: 230px;">
+                                        <img src="/images/custom_index/1.jpg">
+                                    </div>
+                                    <div class="col-xs-customed" data-toggle="modal" data-target="#apxModalAdminBrandImg" style="height: 344px;">
+                                        <img src="/images/custom_index/1.jpg">
+                                    </div>
+                                </div>
+                                <div class="col-xs-3 no-add-sign" style="height: 584px;">
+                                    <div class="col-xs-customed" data-toggle="modal" data-target="#apxModalAdminBrandImg" style="height: 344px;">
+                                        <img src="/images/custom_index/1.jpg">
+                                    </div>
+                                    <div class="col-xs-customed" data-toggle="modal" data-target="#apxModalAdminBrandImg" style="height: 230px;">
+                                        <img src="/images/custom_index/1.jpg">
+                                    </div>
+                                </div>
+                                <div class="col-xs-3" data-toggle="modal" data-target="#apxModalAdminBrandImg" style="height: 594px;">
+                                    <img src="/images/custom_index/1.jpg">
+                                </div>
+                            </div>
+                            <!--以上html结构可直接应用到首页-->
+                        </div>
+                        <!--模版7-->
+                        <div class="tab-pane fade" id="brand_template_7">
+                            <!--以下html结构可直接应用到首页-->
+                            <div class="apx-brand-figures row">
+                                <div class="col-xs-9 no-add-sign">
+                                    <div class="col-xs-4" data-toggle="modal" data-target="#apxModalAdminBrandImg">
+                                        <img src="/images/custom_index/1.jpg">
+                                    </div>
+                                    <div class="col-xs-4" data-toggle="modal" data-target="#apxModalAdminBrandImg">
+                                        <img src="/images/custom_index/2.jpg">
+                                    </div>
+                                    <div class="col-xs-4" data-toggle="modal" data-target="#apxModalAdminBrandImg">
+                                        <img src="/images/custom_index/3.jpg">
+                                    </div>
+                                    <div class="col-xs-4" data-toggle="modal" data-target="#apxModalAdminBrandImg">
+                                        <img src="/images/custom_index/1.jpg">
+                                    </div>
+                                    <div class="col-xs-4" data-toggle="modal" data-target="#apxModalAdminBrandImg">
+                                        <img src="/images/custom_index/2.jpg">
+                                    </div>
+                                    <div class="col-xs-4" data-toggle="modal" data-target="#apxModalAdminBrandImg">
+                                        <img src="/images/custom_index/3.jpg">
+                                    </div>
+                                </div>
+                                <div class="col-xs-3 no-add-sign">
+                                    <div class="col-xs-customed" data-toggle="modal" data-target="#apxModalAdminBrandImg" style="height: 188px;">
+                                        <img src="/images/custom_index/1.jpg">
+                                    </div>
+                                    <div class="col-xs-customed" data-toggle="modal" data-target="#apxModalAdminBrandImg" style="height: 188px;">
+                                        <img src="/images/custom_index/1.jpg">
+                                    </div>
+                                    <div class="col-xs-customed" data-toggle="modal" data-target="#apxModalAdminBrandImg" style="height: 188px;">
+                                        <img src="/images/custom_index/1.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--以上html结构可直接应用到首页-->
+                        </div>
+                        <!--模版8-->
+                        <div class="tab-pane fade" id="brand_template_8">
+                            <!--以下html结构可直接应用到首页-->
+                            <div class="apx-brand-figures row">
+                                <div class="col-xs-2" data-toggle="modal" data-target="#apxModalAdminBrandImg" style="width: 20%">
+                                    <img src="/images/custom_index/1.jpg">
+                                </div>
+                                <div class="col-xs-2" data-toggle="modal" data-target="#apxModalAdminBrandImg" style="width: 20%">
+                                    <img src="/images/custom_index/1.jpg">
+                                </div>
+                                <div class="col-xs-2" data-toggle="modal" data-target="#apxModalAdminBrandImg" style="width: 20%">
+                                    <img src="/images/custom_index/1.jpg">
+                                </div>
+                                <div class="col-xs-2" data-toggle="modal" data-target="#apxModalAdminBrandImg" style="width: 20%">
+                                    <img src="/images/custom_index/1.jpg">
+                                </div>
+                                <div class="col-xs-2" data-toggle="modal" data-target="#apxModalAdminBrandImg" style="width: 20%">
+                                    <img src="/images/custom_index/1.jpg">
+                                </div>
+                                <div class="col-xs-2" data-toggle="modal" data-target="#apxModalAdminBrandImg" style="width: 20%">
+                                    <img src="/images/custom_index/1.jpg">
+                                </div>
+                                <div class="col-xs-2" data-toggle="modal" data-target="#apxModalAdminBrandImg" style="width: 20%">
+                                    <img src="/images/custom_index/1.jpg">
+                                </div>
+                                <div class="col-xs-2" data-toggle="modal" data-target="#apxModalAdminBrandImg" style="width: 20%">
+                                    <img src="/images/custom_index/1.jpg">
+                                </div>
+                                <div class="col-xs-2" data-toggle="modal" data-target="#apxModalAdminBrandImg" style="width: 20%">
+                                    <img src="/images/custom_index/1.jpg">
+                                </div>
+                                <div class="col-xs-2" data-toggle="modal" data-target="#apxModalAdminBrandImg" style="width: 20%">
+                                    <img src="/images/custom_index/1.jpg">
+                                </div>
+                            </div>
+                            <!--以上html结构可直接应用到首页-->
+                        </div>
+                    </div>
+                    <!--提交按钮-->
+                    <button class="btn btn-danger btn-lg btn-block disabled">确认使用此模版</button>
+                </div>
+                <!--品牌馆 end-->
+
+                <!--商品楼层 start-->
+                <div role="tabpanel" class="admin-edit-index-floors tab-pane fade" id="edit_floors">
+                    <!--按钮-->
+                    <div class="btn btn-danger"><i class="glyphicon glyphicon-plus-sign"></i>添加新楼层</div>
+                    <!--标题-->
+                    <div class="h4"><i class="glyphicon glyphicon-th-large"></i>已有楼层</div>
+                    <!--轮播列表-->
+                    <div class="row-group">
+                        <!--列表头-->
+                        <div class="row header">
+                            <div class="col-xs-2">序号</div>
+                            <div class="col-xs-2">标题</div>
+                            <div class="col-xs-2">楼层主色</div>
+                            <div class="col-xs-2">楼层照片（270*580px）</div>
+                            <div class="col-xs-2">商品数量</div>
+                            <div class="col-xs-2">操作</div>
+                        </div>
+                        <!--新增-->
+                        <div class="row list new">
+                            <div class="col-xs-2">
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-xs-2 form-horizontal">
+                                <div class="form-group form-group-sm">
+                                    <label for="title_cn" class="col-xs-6 control-label">中文标题：</label>
+                                    <div class="col-xs-6">
+                                        <input type="text" class="form-control" id="title_cn">
+                                    </div>
+                                </div>
+                                <div class="form-group form-group-sm">
+                                    <label for="title_en" class="col-xs-6 control-label">英文标题：</label>
+                                    <div class="col-xs-6">
+                                        <input type="text" class="form-control" id="title_en">
+                                    </div>
+                                </div>
+                                <div class="form-group form-group-sm">
+                                    <label for="title_abbr" class="col-xs-6 control-label">缩写字母：</label>
+                                    <div class="col-xs-6">
+                                        <input type="text" class="form-control" id="title_abbr">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-2 form-horizontal">
+                                <div class="form-group form-group-sm">
+                                    <div class="col-xs-12">
+                                        <input type="text" class="minicolors form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-2 edit">
+                                <label class="img-upload-box" for="upload_img_1">
+                                    <input type="file" id="upload_img_1">
+                                </label>
+                            </div>
+                            <div class="col-xs-2">
+                                0件
+                            </div>
+                            <div class="col-xs-2">
+                                <a href="#" class="btn btn-warning btn-block btn-xs">确认生成</a>
+                            </div>
+                        </div>
+                        <!--修改-->
+                        <div class="row list edit">
+                            <div class="col-xs-2">
+                                <input type="text" class="form-control" value="typo">
+                            </div>
+                            <div class="col-xs-2 form-horizontal">
+                                <div class="form-group form-group-sm">
+                                    <label for="title_cn" class="col-xs-6 control-label">中文标题：</label>
+                                    <div class="col-xs-6">
+                                        <input type="text" class="form-control" id="title_cn" value="typo">
+                                    </div>
+                                </div>
+                                <div class="form-group form-group-sm">
+                                    <label for="title_en" class="col-xs-6 control-label">英文标题：</label>
+                                    <div class="col-xs-6">
+                                        <input type="text" class="form-control" id="title_en" value="typo">
+                                    </div>
+                                </div>
+                                <div class="form-group form-group-sm">
+                                    <label for="title_abbr" class="col-xs-6 control-label">缩写字母：</label>
+                                    <div class="col-xs-6">
+                                        <input type="text" class="form-control" id="title_abbr" value="typo">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-2 form-horizontal">
+                                <div class="form-group form-group-sm">
+                                    <div class="col-xs-12">
+                                        <input type="text" class="minicolors form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-2 edit">
+                                <label class="img-upload-box" for="upload_img_1">
+                                    <input type="file" id="upload_img_1">
+                                    <img class="img-responsive" src="/images/custom_index/floor1.jpg">
+                                </label>
+                            </div>
+                            <div class="col-xs-2">
+                                0件
+                            </div>
+                            <div class="col-xs-2">
+                                <a href="#" class="btn btn-warning btn-block btn-xs">确认生成</a>
+                                <a href="./admin_edit_floor.html" class="btn btn-danger btn-block btn-xs">管理楼层商品</a>
+                            </div>
+                        </div>
+                        <!--普通-->
+                        <div class="row list">
+                            <div class="col-xs-2">
+                                1
+                            </div>
+                            <div class="col-xs-2 form-horizontal">
+                                <div class="form-group form-group-sm">
+                                    <label for="title_cn" class="col-xs-6 control-label">中文标题：</label>
+                                    <div class="col-xs-6">
+                                        <p class="form-control-static">车用坐垫脚垫</p>
+                                    </div>
+                                </div>
+                                <div class="form-group form-group-sm">
+                                    <label for="title_en" class="col-xs-6 control-label">英文标题：</label>
+                                    <div class="col-xs-6">
+                                        <p class="form-control-static">car mat</p>
+                                    </div>
+                                </div>
+                                <div class="form-group form-group-sm">
+                                    <label for="title_abbr" class="col-xs-6 control-label">缩写字母：</label>
+                                    <div class="col-xs-6">
+                                        <p class="form-control-static">CM</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-2 form-horizontal">
+                                <div class="form-group form-group-sm">
+                                    <div class="col-xs-12">
+                                        <div class="mini-color-static" style="background: #ccc"></div>
+                                        <span>#ccccc</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-2 edit">
+                                <label class="img-upload-box" for="upload_img_1">
+                                    <input type="file" id="upload_img_1">
+                                    <img class="img-responsive" src="/images/custom_index/floor1.jpg">
+                                </label>
+                            </div>
+                            <div class="col-xs-2">
+                                0件
+                            </div>
+                            <div class="col-xs-2">
+                                <a href="#" class="btn btn-warning btn-block btn-xs">确认生成</a>
+                                <a href="./admin_edit_floor.html" class="btn btn-danger btn-block btn-xs">管理楼层商品</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--商品楼层 end-->
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- main area start -->
+
+<!-- 删除警示 -->
+<div class="apx-modal-admin-alert modal fade" id="apxModalAdminAlert" tabindex="-1">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span></a>
+                <h4 class="modal-title">提示信息</h4>
+            </div>
+            <div class="modal-body">
+                <i class="glyphicon glyphicon-warning-sign"></i> 确定要删除吗？
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-lg btn-danger">确认</button>
+                <button type="button" class="btn btn-lg btn-default" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 图片相关信息 -->
+<div class="apx-modal-admin-brand-img modal fade" id="apxModalAdminBrandImg" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span></a>
+                <h4 class="modal-title">图片相关信息</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <!--图片-->
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label">图片：</label>
+                        <div class="col-xs-3">
+                            <label class="upload-box" for="brand_img">
+                                <input id="brand_img" type="file">
+                                <!--<img src="/images/custom_index/1.jpg">-->
+                            </label>
+                        </div>
+                        <div class="col-xs-6 text-danger">（图片尺寸要求：478*287）</div>
+                    </div>
+                    <!--链接-->
+                    <div class="form-group">
+                        <label for="brand_url" class="col-xs-3 control-label">对应链接：</label>
+                        <div class="col-xs-7">
+                            <input type="text" class="form-control" id="brand_url">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger btn-block">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('footer_admin.inc')

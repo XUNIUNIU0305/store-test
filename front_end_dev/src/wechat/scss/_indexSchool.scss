@@ -1,0 +1,475 @@
+.wechat-index-school {    
+    background: #79c3f2;
+    
+    .high-lighted {
+        color: #cf4d44;
+    }
+    .h2 {
+        font-weight: 700;
+    }
+    img{
+        max-width: 100%;
+        display: block;
+    }
+    // background: #fff;
+    @include clearfix;
+    /* carousel */
+    .slide,
+    .slide-product {
+        position: relative;
+        overflow: hidden;
+        z-index: 2;
+        > ul {
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            > li {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                /* 解决js阻塞页面显示首屏 */
+                &:last-child {
+                    z-index: 0;
+                }
+            }
+        }
+        .dot {
+            position: absolute;
+            left: 25px;
+            right: 25px;
+            bottom: 10px;
+            font-size: 0;
+            text-align: center;
+            span {
+                display: inline-block;
+                width: 5px;
+                height: 1px;
+                background: #fff;
+                margin-left: 5px;
+                position: relative;
+                top: -3px;
+            }
+        }
+    }
+    .slide {
+        &:before {
+            content: '';
+            display: block;
+            width: 100%;
+            padding-top: 43.7%;
+        }
+        li {
+            img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+        }
+        .dot {
+            text-align: right;
+            z-index: 1;
+            .cur {
+                display: inline-block;
+                width: 5px;
+                height: 5px;
+                border: 1px solid #fff;
+                border-radius: 50%;
+                background-color: transparent;
+                top: 0;
+            }
+        }
+    }
+    .slide-product {
+        padding-top: 50%;
+        overflow: visible;
+        background: url('/images/index_school/title0.png') top center/contain no-repeat;
+        &:before {
+            content: '';
+            display: block;
+            width: 100%;
+            padding-top: 60%;
+        }
+        >ul{
+            margin-top: 50%;
+            height: 50%;
+            >li{
+                height: 50%;
+            }
+        }
+        .dot {
+            span {
+                background: rgba(#fff, .6);
+            }
+            .cur{
+                background: #fff;
+            }
+        }
+        .slide-product-list{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 14px 14px;
+            li{
+                flex: 1 0 20%;
+                max-width: 20%;
+                padding: 6px;
+                box-sizing: border-box;
+                a{
+                    color: #fff;
+                    text-align: center;
+                }
+                div{
+                    position: relative;
+                    padding: 50%;
+                    margin-bottom: 5px;
+                }
+                img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    display: block;
+                }
+                span {
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+
+    .index-section-1,
+    .index-section-3,
+    .index-section-4,
+    .index-section-2 {
+        .title{
+            padding-top: 150 / 640 * 100%;
+            font-size: 0;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            span{
+                visibility: hidden;
+            }
+        }
+    }
+    
+    // section 实惠好货
+    .index-section-1 {  
+        background: url('/images/index_school/unit1_bg.png') bottom center/contain no-repeat;
+        .title{
+            background-image: url('/images/index_school/title1.png');
+            margin-bottom: 8%;
+        }    
+        .col-3{
+            display: flex;
+            &.row-top{
+                padding: 4% 34 * $base640Percent;
+                li{
+                    position: relative;
+                    margin: 0 6 * $base640Percent;
+                    color: #60271e;
+                    text-align: center;
+                }
+                p{
+                    font-size: 20 / 640 * 100vw;
+                    margin: 25 / 640 * 100vw 0;
+                }
+                span{
+                    position: absolute;
+                    width: 55 / 640 * 100vw;
+                    height: 55 / 640 * 100vw;
+                    font-size: 18 / 640 * 100vw;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid #60271e;
+                    background: #ffd83d;
+                    border-radius: 50%;
+                    top: -22.5 / 640 * 100vw;
+                    right: 0;
+                }
+            }
+            &.row-bottom{
+                padding: 4% 17 * $base640Percent;
+                li{
+                    text-align: center;
+                    margin: 0 40 * $base640Percent;
+                    color: #60271e;
+                    font-size: 22 / 640 * 100vw;
+                }
+            }
+        }
+    }
+
+    .index-section-2 {  
+        .title{
+            background-image: url('/images/index_school/title2.png');
+        }  
+        .header{
+            padding-top: 229 * $base640Percent;
+            background: url('/images/index_school/unit2_head.png') center/contain no-repeat;
+        }
+        .col-2{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('/images/index_school/unit2-bg.png') center/contain no-repeat;
+            li{
+                margin: 0 8 * $base640Percent;
+                &:first-child{
+                    margin-left: 34 * $base640Percent;
+                }
+                &:last-child{
+                    margin-right: 34 * $base640Percent;
+                }
+            }
+            &:before{
+                content: '';
+                padding-top: 426 * $base640Percent;
+            }
+        }
+    }
+
+    .index-section-3 {  
+        .title{
+            background-image: url('/images/index_school/title3.png');
+        }  
+        .header{
+            padding-top: 202 * $base640Percent;
+            background: url('/images/index_school/unit3_head.png') center/contain no-repeat;
+        }
+        .col-3{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('/images/index_school/unit3_bg.png') center/contain no-repeat;
+            li{
+                margin: 0 6 * $base640Percent;
+                position: relative;
+                &:first-child{
+                    margin-left: 29 * $base640Percent;
+                }
+                &:last-child{
+                    margin-right: 29 * $base640Percent;
+                }
+            }
+            span{
+                display: block;
+                font-size: 22 / 640 * 100vw;
+                color: #60271e;
+                line-height: 44 / 640 * 100vw;
+                background: url('/images/index_school/unit3_namebox.png') center/contain no-repeat;
+                margin-top: 16 / 640 * 100vw;
+                text-align: center;
+            }
+            .name {
+                position: absolute;
+                width: 55 / 640 * 100vw;
+                height: 55 / 640 * 100vw;
+                font-size: 18 / 640 * 100vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #60271e;
+                background: #ffd83d;
+                border-radius: 50%;
+                top: -22.5 / 640 * 100vw;
+                right: 0;
+                line-height: 22 / 640 * 100vw;
+            }
+            &:before{
+                content: '';
+                padding-top: 448 * $base640Percent;
+            }
+        }
+    }
+
+    .index-section-4 {  
+        .title{
+            background-image: url('/images/index_school/title4.png');
+        }  
+        .header{
+            padding-top: 240 * $base640Percent;
+            background: url('/images/index_school/unit4_head.png') center/contain no-repeat;
+        }
+        .col-2{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('/images/index_school/unit4_bg1.png') center/contain no-repeat;
+            li{
+                margin: 0 8 * $base640Percent;
+                &:first-child{
+                    margin-left: 34 * $base640Percent;
+                }
+                &:last-child{
+                    margin-right: 34 * $base640Percent;
+                }
+            }
+            &:before{
+                content: '';
+                padding-top: 465 * $base640Percent;
+            }
+        }
+        .row{
+            position: relative;
+            display: flex;
+            background: url('/images/index_school/unit4_bg2.png') center/contain no-repeat;
+            &:before{
+                content: '';
+                padding-top: 675 * $base640Percent;
+            }
+            .col-1{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            li{
+                margin: 12 * $base640Percent 36 * $base640Percent;
+                position: relative;
+                p,
+                span{
+                    position: absolute;
+                }
+                p{
+                    color: #fff;
+                    font-size: 26 / 640 * 100vw;
+                    bottom: 12px;
+                    left: 20px;
+                    small{
+                        font-size: 18 / 640 * 100vw;
+                        display: block;
+                    }
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        bottom: -10px;
+                        height: 2px;
+                        width: 16px;
+                        background: #fff;
+                    }
+                }
+                span{
+                    width: 95 / 640 * 100vw;
+                    height: 64 / 640 * 100vw;
+                    line-height: 32 / 640 * 100vw;
+                    top: 0;
+                    right: 0;
+                    background: #ffffff;
+                    color: #333;
+                    font-size: 18 / 640 * 100vw;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    padding-left: 6px;
+                    box-sizing: border-box;
+                    strong{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    // to btn
+    .top-btn {
+        font-size: 0;
+        background: url('/images/index_school/top_btn.png') center/contain no-repeat;
+        margin-top: 20 * $base640Percent;
+        padding-top: 118 * $base640Percent;
+    }
+}
+// 品牌周
+.wechat-activity-0904 {
+    .close-btn {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 12px;
+        right: 12px;
+        background: url('/images/activity-bill/close_icon.png') center/contain no-repeat;
+        z-index: 99;
+    }
+    .sub-content {
+        position: absolute;
+        top: 5%;
+        right: 0;
+        // bottom: 0;
+        left: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        &.in {
+            display: flex;
+        }
+    }
+    .img-box{
+        position: relative;
+        p{
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: (436px / 2);
+            bottom: 50px;
+            font-size: 14px;
+            color: #2e5c9e;
+            margin: 0 auto;
+        }
+    }
+    .img-responsive {
+        width: (556px / 2);
+        margin: 0 auto 30px;
+    }
+    .entrance{
+        .img-responsive {
+            width: (580px / 2);
+            margin-bottom: 0;
+            position: relative;
+            z-index: 2;
+        }
+    }
+    .btn-row{
+        display: flex;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        z-index: 3;
+    }
+    .btn {
+        padding: 0;
+        width: (361px / 2);
+        height: 192px;
+        line-height: 35px;
+        margin: 0 15px;
+        // margin-top: -26px;
+        color: #fff;
+        font-size: 15px;
+        transition: transform .1s;
+        &:active {
+            transform: scale(.98);
+        }
+    }
+    img.left {
+        position: absolute;
+        left: 0;
+        top:0;
+        width: 50%;
+    }
+    img.right {
+        width: 50%;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}

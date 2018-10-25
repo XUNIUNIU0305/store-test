@@ -1,0 +1,90 @@
+.wechat-product-st img {
+  max-width: 100%;
+  vertical-align: top; }
+
+.wechat-product-st .content {
+  background-color: #000; }
+  .wechat-product-st .content .item {
+    position: relative;
+    background: url("/images/shengtian_brand/decoration.png") no-repeat center;
+    background-size: 100%;
+    text-align: center;
+    padding-bottom: 10%; }
+    .wechat-product-st .content .item > img {
+      max-width: 80%;
+      margin-top: 5%; }
+      .wechat-product-st .content .item > img:nth-child(2) {
+        max-width: 60%;
+        position: absolute;
+        left: 20%;
+        top: -3%; }
+      .wechat-product-st .content .item > img:nth-child(3) {
+        max-width: 50%;
+        position: absolute;
+        left: 6%;
+        top: 10%; }
+    .wechat-product-st .content .item .title {
+      width: 50%;
+      position: absolute;
+      text-align: left;
+      left: 50%;
+      top: 10%;
+      color: #fff;
+      font-size: 14px;
+      font-style: italic; }
+      .wechat-product-st .content .item .title .table {
+        width: 66%;
+        position: absolute;
+        right: 20%;
+        top: 78%;
+        font-style: normal;
+        text-align: center;
+        border-top: 2px solid #666;
+        border-left: 1px #666 solid; }
+        .wechat-product-st .content .item .title .table p {
+          margin: 0;
+          border-bottom: 2px solid #666;
+          font-size: 14px;
+          padding: 2% 0 2% 5%; }
+        .wechat-product-st .content .item .title .table .row2 {
+          color: #9ce9f8; }
+      .wechat-product-st .content .item .title .btn {
+        position: absolute;
+        right: 20%;
+        top: 220%;
+        font-style: normal;
+        color: #f6ff00;
+        background-color: #2194ff;
+        padding: 2% 4%; }
+        .wechat-product-st .content .item .title .btn span:first-child {
+          font-weight: 700;
+          font-size: 14px; }
+    .wechat-product-st .content .item.even > img:nth-child(3) {
+      left: 40%; }
+    .wechat-product-st .content .item.even .title {
+      left: 0;
+      min-height: 60px; }
+      .wechat-product-st .content .item.even .title .h2 {
+        position: absolute;
+        right: -64%; }
+      .wechat-product-st .content .item.even .title .table {
+        border: none; }
+        .wechat-product-st .content .item.even .title .table p {
+          border: none; }
+        .wechat-product-st .content .item.even .title .table .row2 {
+          font-size: 18px; }
+        .wechat-product-st .content .item.even .title .table .row1 {
+          padding-left: 30%; }
+      .wechat-product-st .content .item.even .title .btn {
+        top: 180%; }
+
+@media screen and (max-width: 374px) {
+  .wechat-product-st .content .item .title .table p {
+    font-size: 12px !important;
+    width: 100%; }
+  .wechat-product-st .content .item .title .btn {
+    font-size: 12px;
+    top: 186%; }
+  .wechat-product-st .content .item.even .btn {
+    top: 150% !important;
+    right: 11%; } }

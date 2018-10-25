@@ -1,0 +1,201 @@
+body {
+    overflow: auto;
+}
+.apx-business-list-main {
+    padding: 20px;
+    width: 1240px;
+    .order-content {
+        .info {
+            i {
+                padding-right: 10px;
+            }
+        }
+    }
+    .order-select {
+        .title {
+            margin: 0;
+            color: #e11144;
+            font-weight: bold;
+            margin-bottom: 20px
+        }
+        .body {
+            position: relative;
+            .list {
+                list-style: none;
+                padding: 0;
+                li {
+                    float: left;
+                    margin-right: 30px;
+                    margin-bottom: 14px;
+                    label {
+                        float: left;
+                        margin: 0;
+                        line-height: 34px
+                    }
+                    input,
+                    select {
+                        height: 34px;
+                        border: 1px solid #ddd;
+                        box-shadow: 1px 1px 2px #ccc inset;
+                        width: 100px;
+                        padding: 5px 10px;
+                        float: left
+                    }
+                    .w-1 {
+                        width: 222px
+                    }
+                    .w-2 {
+                        width: 148px
+                    }
+                    .w-select {
+                        width: 158px
+                    }
+                    .time-line {
+                        width: 26px;
+                        height: 34px;
+                        display: block;
+                        float: left;
+                        text-align: center;
+                        line-height: 34px;
+                    }
+                }
+            }
+            .c_btn {
+                position: absolute;
+                right: 96px;
+                bottom: 14px;
+                color: #fff;
+                background-color: #0080ff;
+                border-radius: 5px;
+                width: 120px;
+                height: 36px;
+                border: none
+            }
+        }
+    }
+    .item-box {
+        td {
+            vertical-align: middle !important;
+            text-align: center
+        }
+        td.text-left {
+            text-align: left
+        }
+    }
+
+    .f-line {
+        background: #e9eef2;
+        height: 20px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .business-msg {
+        padding: 0;
+        background: #fff;
+        position: relative;
+        li {
+            label {
+                font-weight: normal;
+            }
+            input {
+                border-radius: 0;
+                height: 32px;
+                box-shadow: 1px 1px 2px #ccc inset;
+            }
+            select {
+                width: 160px;
+                border-radius: 0;
+                height: 32px;
+            }
+        }
+        .msg-time {
+            margin-right: 30px;
+        }
+        .c_btn {
+            width: 124px;
+            height: 36px;
+            font-size: 16px;
+            background: #0080ff;
+            border: 0;
+            color: #fff;
+            border-radius: 10px;
+            position: absolute;
+            right: 104px;
+            bottom: 10px;
+        }
+    }
+    td {
+        vertical-align: text-top;
+    }
+    .col-xs-8,
+    .col-xs-10 {
+        padding-left: 10px;
+    }
+    .top-table {
+        margin-bottom: 10px;
+        background: #b8c6e6;
+        td {
+            height: 44px;
+        }
+    }
+    .bus-order-msg {
+        font-weight: bold;
+        font-size: 14px;
+        background: #e9eef2;
+        span {
+            margin-right: 40px;
+        }
+        .orser-time {
+            font-size: 12px;
+            font-weight: normal;
+        }
+        .text-left {
+            margin-left: -5px;
+        }
+    }
+    #bus-content {
+        font-size: 14px;
+        .col-xs-8 {
+            width: 100%;
+            img {
+                width: 90px;
+                height: 90px;
+                border: 1px solid #ccc;
+            }
+            .descipe-bus {
+                line-height: 18px;
+            }
+            .price {
+                color: #e11144;
+                font-weight: bold;
+                margin-top: 4px;
+            }
+            .text-attr {
+                font-size: 12px;
+                color: #999;
+            }
+        }
+    }
+    .phone {
+        i {
+            height: 16px;
+            margin-bottom: -2px
+        }
+    }
+    .text-btn {
+        .btn-k {
+            display: block;
+            font-size: 14px;
+            background: #fff;
+            width: 90px;
+            height: 30px;
+            line-height: 24px;
+            padding-bottom: 10px;
+            color: #0080ff;
+            border: 0;
+            border-radius: 20px;
+            border: 2px solid #0080ff;
+            margin: 10px auto;
+        }
+    }
+}

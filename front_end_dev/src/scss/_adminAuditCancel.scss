@@ -1,0 +1,72 @@
+.admin-audit-cancel-container {
+    .admin-audit-cancel-title {
+        margin-top: 30px;
+        line-height: 46px;
+        padding: 0 26px;
+        font-size: 14px;
+        background: #e5e5e5;
+        margin-bottom: 20px;
+        &.bg-danger {
+            background: #fce7e6;
+        }
+        .apx-acc-order-nav {
+            border: 0;
+            margin: 0 -26px;
+            padding: 10px;
+            a {
+                line-height: 30px;
+            }
+        }
+        .btn {
+            border-radius: 0;
+        }
+        .pull-left {
+            padding: 8px 0;
+            line-height: 1;
+            .input-group {
+                max-width: 250px;
+                display: inline-table;
+                float: left;
+                margin-right: -2px;
+                .form-control {
+                    height: 34px;
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+    .cancel-list {
+        div {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 30px;
+            span {
+                font-weight: 400;
+            }
+        }
+        .item {
+            border: 1px solid #d9d9d9;
+        }
+        .item-title {
+            line-height: 40px;
+            background-color: #d9d9d9;
+        }
+        .item-info {
+            margin-top: 5px;
+        }
+        .btn-box {
+            margin-bottom: 5px;
+            .btn {
+                margin-right: 20px;
+                &:nth-child(1) {
+                    border: 1px solid #df483d;
+                    color: #df483d;
+                }
+                &:nth-child(2) {
+                    color: #fff;
+                    background: #df483d;
+                }   
+            }
+        }
+    }
+}

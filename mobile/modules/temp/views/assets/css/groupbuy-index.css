@@ -1,0 +1,448 @@
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.daye-group-buying-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    background-image: url(/images/group-buy/bg.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #f00d98;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.daye-group-buying-wrapper header {
+    position: relative;
+    text-align: center;
+}
+.daye-group-buying-wrapper .big-ball {
+    position: relative;
+    top: 10px;
+    z-index: 1;
+    width: 80%;
+    margin: 0 auto;
+}
+.daye-group-buying-wrapper .slogan {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    z-index: 3;
+    width: 70%;
+    margin-left: -35%;
+    animation: moving 8s infinite;
+}
+.daye-group-buying-wrapper .balls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.daye-group-buying-wrapper .dt-rank {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    z-index: 4;
+    display: inline-block;
+    width: 90px;
+}
+.daye-group-buying-wrapper .dt-rank img {
+    width: 100%;
+}
+.daye-group-buying-wrapper .after-header {
+    position: relative;
+    margin-top: 10px;
+}
+.daye-group-buying-wrapper .after-header > img {
+    position: relative;
+    z-index: 1;
+    top: -35px;
+    width: 100%;
+}
+.daye-group-buying-wrapper .after-header .btn-rule,
+.daye-group-buying-wrapper .after-header .btn-go {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+}
+.daye-group-buying-wrapper .after-header .btn-rule {
+    text-align: right;
+}
+.daye-group-buying-wrapper .after-header .btn-go {
+    text-align: left;
+}
+.daye-group-buying-wrapper .after-header .btn-rule img,
+.daye-group-buying-wrapper .after-header .btn-go img {
+    width: 80%;
+    vertical-align: middle;
+}
+.daye-group-buying-wrapper .content {
+    margin-top: -30px;
+}
+.daye-group-buying-wrapper .content section {
+    margin-top: 15px;
+}
+.daye-group-buying-wrapper .content header {
+    height: 40px;
+    line-height: 40px;
+    background-image: url(/images/group-buy/title.png);
+    background-position: center;
+    background-repeat: no-repeat;;
+    background-size: contain;
+}
+.daye-group-buying-wrapper .content header h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 1.5em;
+}
+.daye-group-buying-wrapper .content ul {
+    margin: 0;
+    margin-top: 15px;
+    padding: 0 10px;
+}
+.daye-group-buying-wrapper .content ul li {
+    position: relative;
+    padding: 5px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+.daye-group-buying-wrapper .content ul li .avatar {
+    display: inline-block;
+    width: 115px;
+    height: 115px;
+    background-image: url(/images/group-buy/default.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    vertical-align: top;
+}
+.daye-group-buying-wrapper .content ul li .info {
+    display: inline-block;
+    width: calc(100% - 135px);
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: top;
+}
+.daye-group-buying-wrapper .content ul li .info .title {
+    line-height: normal;
+    font-size: 14px;
+    font-weight: bold;
+}
+.daye-group-buying-wrapper .content ul li .info .price {
+    padding: 10px 0;
+}
+.daye-group-buying-wrapper .content ul li .info .price .current {
+    margin-right: 10px;
+    font-size: 18px;
+}
+.daye-group-buying-wrapper .content ul li .info .price .origin {
+    text-decoration: line-through;
+    color: #aaa;
+}
+.daye-group-buying-wrapper .content ul li .sell {
+    position: absolute;
+    left: 135px;
+    bottom: 10px;
+    display: inline;
+    color: #f00d98;
+}
+.daye-group-buying-wrapper .content ul li .btn-pin {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 66px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    border: 1px solid #f00d98;
+    color: #f00d98;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* 猜你喜欢 */
+.daye-group-buying-wrapper .index-like-floor .title {
+  line-height: 48px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+}
+.daye-group-buying-wrapper .index-like-floor .title i {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    background: url(/images/group-buy/love_icon.png) center/contain no-repeat;
+}
+.daye-group-buying-wrapper .index-like-floor .img-box {
+    text-align: center;
+    padding: 4px;
+}
+.daye-group-buying-wrapper .index-like-floor ul {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+.daye-group-buying-wrapper .index-like-floor li {
+    background: #ffffff;
+    padding-bottom: 8px;
+    -webkit-flex-basis: 49%;
+    flex-basis: 49%;
+    max-width: 49%;
+    margin-bottom: 2%;
+}
+.daye-group-buying-wrapper .index-like-floor p {
+    padding: 0 4px;
+    font-size: 14px;
+    line-height: 1.5;
+    height: 3em;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    margin: 4px 0 0;
+}
+.daye-group-buying-wrapper .index-like-floor span {
+    padding: 0 4px;
+    line-height: 2;
+    display: block;
+    color: #999;
+    height: 2em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.daye-group-buying-wrapper .index-like-floor ul {
+    padding: 0 10px;
+}
+.daye-group-buying-wrapper .index-like-floor ul li {
+    display: block;
+    width: 50%;
+    padding: 0;
+    float: left;
+}
+.daye-group-buying-wrapper .index-like-floor ul li .img-box {
+    padding: 0;
+}
+.daye-group-buying-wrapper .index-like-floor ul li img {
+    width: 100%;
+}
+.daye-group-buying-wrapper .index-like-floor #J_random_list {
+    margin: 0;
+}
+
+/* 规则弹窗 */
+.daye-group-buying-wrapper .rule-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+}
+.daye-group-buying-wrapper .rule-box .inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+.daye-group-buying-wrapper .rule-box .inner .box {
+    position: relative;
+    display: block;
+    width: 280px;
+    margin: 0 auto;
+}
+.daye-group-buying-wrapper .rule-box .inner .box .rule-title {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    width: 80%;
+    margin-left: -40%;
+}
+.daye-group-buying-wrapper .rule-box .inner .box .close {
+    position: absolute;
+    top: -77px;
+    right: 0;
+    width: 30px;
+    height: auto;
+}
+.daye-group-buying-wrapper .rule-box .inner .box .close img {
+    width: 100%;
+}
+.daye-group-buying-wrapper .rule-box .inner .box img {
+    width: 100%;
+    vertical-align: middle;
+}
+.daye-group-buying-wrapper .rule-box .inner .box .content {
+    position: absolute;
+    left: 15px;
+    bottom: 20px;
+    width: 230px;
+    height: 280px;
+    padding: 0 10px;
+    overflow: auto;
+    color: #514240;
+}
+.daye-group-buying-wrapper .rule-box .inner .box .content dl,
+.daye-group-buying-wrapper .rule-box .inner .box .content dd {
+    margin: 0;
+    padding: 0;
+}
+.daye-group-buying-wrapper .rule-box .inner .box .content table {
+    width: 100%;
+    table-layout: fixed;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+.daye-group-buying-wrapper .rule-box .inner .box .content table td,
+.daye-group-buying-wrapper .rule-box .inner .box .content table th {
+    padding: 5px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+.daye-group-buying-wrapper .rule-box .inner .box .content table td {
+    color: #92887f;
+}
+.daye-group-buying-wrapper .rule-box .inner .box .content table td:nth-of-type(1),
+.daye-group-buying-wrapper .rule-box .inner .box .content table th:nth-of-type(1) {
+    width: 65px;
+}
+
+/* 详情弹窗 */
+.daye-group-buying-wrapper .desc-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+}
+.daye-group-buying-wrapper .desc-box .inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+.daye-group-buying-wrapper .desc-box .inner .box {
+    position: relative;
+    display: block;
+    width: 280px;
+    margin: 0 auto;
+}
+.daye-group-buying-wrapper .desc-box .inner .box .rule-title {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    width: 80%;
+    margin-left: -40%;
+}
+.daye-group-buying-wrapper .desc-box .inner .box .close {
+    position: absolute;
+    top: -77px;
+    right: 0;
+    width: 30px;
+    height: auto;
+}
+.daye-group-buying-wrapper .desc-box .inner .box .close img {
+    width: 100%;
+}
+.daye-group-buying-wrapper .desc-box .inner .box img {
+    width: 100%;
+    vertical-align: middle;
+}
+.daye-group-buying-wrapper .desc-box .inner .box .content {
+    position: absolute;
+    left: 15px;
+    bottom: 75px;
+    width: 230px;
+    height: 280px;
+    padding: 0 10px;
+    overflow: auto;
+    color: #514240;
+}
+.daye-group-buying-wrapper .desc-box .inner .box .content dl,
+.daye-group-buying-wrapper .desc-box .inner .box .content dd {
+    margin: 0;
+    padding: 0;
+}
+.daye-group-buying-wrapper .desc-box .inner .box .content table {
+    width: 100%;
+    table-layout: fixed;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+.daye-group-buying-wrapper .desc-box .inner .box .content table td,
+.daye-group-buying-wrapper .desc-box .inner .box .content table th {
+    padding: 5px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+.daye-group-buying-wrapper .desc-box .inner .box .content table td {
+    color: #92887f;
+}
+.daye-group-buying-wrapper .desc-box .inner .box .content table td:nth-of-type(1),
+.daye-group-buying-wrapper .desc-box .inner .box .content table th:nth-of-type(1) {
+    width: 65px;
+}
+.daye-group-buying-wrapper .desc-box .inner .box footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.daye-group-buying-wrapper .desc-box .inner .box footer a {
+    display: inline-block;
+    width: 40%;
+    padding: 10px 0;
+}
+.daye-group-buying-wrapper .desc-box .inner .box footer .close-close {
+    margin-right: 5px;
+    color: #fff8e5;
+    border: 1px solid #fff8e5;
+}
+.daye-group-buying-wrapper .desc-box .inner .box footer .go-go-go {
+    margin-left: 5px;
+    background-color: #fff8e5;
+    color: #514240;
+    border: 1px solid #fff8e5;
+}
+/* 底线 */
+.daye-group-buying-wrapper .bottom-placeholder {
+  line-height: 48px;
+  text-align: center;
+  color: #fff;
+}
+
+/* 上下缓动动画 */
+@keyframes moving {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(0, -5px, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* 不显示底部工具条 */
+.bottom-nav {
+    display: none !important;
+}

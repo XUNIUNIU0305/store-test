@@ -1,0 +1,165 @@
+// hk top nav
+.apx-top-nav-hk {
+    z-index: 3;
+    background: #db1536;
+    height: 180px;
+    margin-bottom: 0;
+    position: relative;
+    color: #db1536;
+    a{
+        text-decoration: none;
+        color: #db1536;
+    }
+    .popover{
+        color: #333;
+        a{
+            color: #333;
+        }
+        .cart-btn {
+            color: #fff;
+        }
+    }
+    &:before,
+    &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 600px;
+    }
+    &:before{
+        left: 50%;
+        margin-left: -960px;
+        background: #eeeef0 url('/images/index_hk/top_nav_left.png') left center no-repeat;
+    }
+    &:after{
+        right: 50%;
+        margin-right: -960px;
+        background: #eeeef0 url('/images/index_hk/top_nav_right.png') right center no-repeat;
+    }
+    .container{
+        height: 180px;
+        background: #eeeef0;
+        background: #eeeef0 url('/images/index_hk/20year.jpg') center no-repeat;
+    }
+    .row{
+        width: 2000px;
+        height: 180px;
+        display: table-cell;
+        vertical-align: bottom;
+    }
+    .navbar-brand > img{
+        position: relative;
+        top: -48px;
+        left: -30px;
+    }
+    .pull-left{
+        font-size: 16px;
+        font-weight: 600;
+        li{
+            border-bottom: 2px solid;
+        }
+    }
+    .pull-right{
+        font-size: 14px;
+        position: relative;
+        z-index: 1;
+    }
+}
+// hk carousel 
+.index-carousel-hk {
+    background: #db1536;
+    .carousel-control{
+        width: 44px;
+        height: 44px;
+        background: #999;
+        line-height: 44px;
+        text-align: center;
+        top: 50%;
+        margin-top: -22px;
+        span{
+            top: 50%;
+            left: 50%;
+            margin: -15px 0 0 -15px;
+            color: #fff;
+        }
+    }
+}
+// hk main sec bg 
+.index-bg-hk {
+    background: #db1536;
+    background: #db1536 url('/images/index_hk/floor_bg.png') center top repeat-y;
+    position: relative;
+    &:before{
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        min-height: 600px;
+        background: #db1536 url('/images/index_hk/city_bg.png') center top no-repeat;
+    }
+    // title
+    .apx-index-title{
+        width: 238px;
+        height: 79px;
+        margin: 40px auto 14px;
+         &.title-brand{
+            background: url('/images/index_hk/title_brand.png') center no-repeat;
+         }
+         &.title-floor{
+            background: url('/images/index_hk/title_product.png') center no-repeat;
+         }
+         +.apx-index-section {
+            margin-top: 0;   
+         }
+    }
+    .apx-btn-more{
+        border-color: #fff;
+    }
+    // left linear gradient changes
+    .apx-index-section{
+        padding: 6px;
+        background: #ff89ff;
+        background: linear-gradient(to bottom, #ff89ff, #85ffff);
+        .carousel-section{
+            background: #fff;
+            padding: 24px 0;
+        }
+        .list-unstyled{
+            width: 450px;
+            height: 100%;
+            background: linear-gradient(to right, #050234 40%, transparent);
+            position: relative;
+            z-index: 1;
+            padding: 0;
+        }
+        >figure.pull-left{
+            background: #fff;
+            height: 100%;
+            margin-left: -270px;
+            .img-responsive{
+                height: 100%;
+                width: auto;
+            }
+        }
+        .list-title{
+            height: auto;
+            background: none;
+            width: auto;
+            color: #db1536;
+            background-image: -webkit-linear-gradient(0deg, #db1536, #f0e4b0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 18px;
+            padding: 0;
+            top: 120px;
+            left: 80px;
+            p{
+                font-size: 30px;
+                margin: 0 0 18px;
+            }
+        }
+    }
+}

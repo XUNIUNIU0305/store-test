@@ -1,0 +1,669 @@
+@@include('head.inc') @@include('banner_hk.inc')
+<!-- fluid carousel -->
+<div class="apx-index-fluid-banner container-fluid">
+    <div class="row">
+        <!-- carousel -->
+        <div id="apx-index-carousel" class="carousel slide index-carousel-hk" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#apx-index-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#apx-index-carousel" data-slide-to="1"></li>
+                <li data-target="#apx-index-carousel" data-slide-to="2"></li>
+                <li data-target="#apx-index-carousel" data-slide-to="3"></li>
+                <li data-target="#apx-index-carousel" data-slide-to="4"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <a href="#" target="_blank">
+                        <div class="img-container" style="background-image: url('/images/index_hk/carousel_hk.jpg');"></div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="http://apex.frontend.thewaylove.com/" target="_blank">
+                        <div class="img-container" style="background-image: url('/images/custom_index/apex_banner.jpg');"></div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/product?product_id=26" target="_blank">
+                        <div class="img-container" style="background-image: url('/images/custom_index/youga_banner.jpg');"></div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/product?product_id=22" target="_blank">
+                        <div class="img-container" style="background-image: url('/images/custom_index/gigi_banner.jpg');"></div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/product?product_id=27" target="_blank">
+                        <div class="img-container" style="background-image: url('/images/custom_index/air_sponge_banner.jpg');"></div>
+                    </a>
+                </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#apx-index-carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#apx-index-carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid index-bg-hk">
+    <div class="container">
+        <div class="row">
+            <!-- 首页标签panel -->
+            <div class="apx-index-tabs">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#index_tab_model" role="tab" data-toggle="tab">选择车型
+                            <i class="glyphicon glyphicon-list pull-right"></i>
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#index_tab_accessary" role="tab" data-toggle="tab">按配件搜
+                            <i class="glyphicon glyphicon-star-empty pull-right"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="index_tab_model">
+                        <ul class="list-inline clearfix">
+                            <li class="dropdown">
+                                <div id="dLabel_brand" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="order">1</span> 选择品牌...
+                                    <i class="glyphicon glyphicon-chevron-down"></i>
+                                </div>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel_brand">
+                                    <li>1234</li>
+                                    <li>1234</li>
+                                    <li>1234</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <div id="dLabel_series" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="order">2</span> 选择车系...
+                                    <i class="glyphicon glyphicon-chevron-down"></i>
+                                </div>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel_series">
+                                    <li>1234</li>
+                                    <li>1234</li>
+                                    <li>1234</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <div id="dLabel_year" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="order">3</span> 选择年款...
+                                    <i class="glyphicon glyphicon-chevron-down"></i>
+                                </div>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel_year">
+                                    <li>1234</li>
+                                    <li>1234</li>
+                                    <li>1234</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <div id="dLabel_model" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="order">4</span> 选择车型...
+                                    <i class="glyphicon glyphicon-chevron-down"></i>
+                                </div>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel_model">
+                                    <li>1234</li>
+                                    <li>1234</li>
+                                    <li>1234</li>
+                                </ul>
+                            </li>
+                            <li class="pull-left">
+                                <div class="btn btn-danger btn-lg">GO</div>
+                            </li>
+                        </ul>
+                        <p>
+                            <i class="glyphicon glyphicon-list-alt"></i> 我的车库：
+                            <span class="text-muted">配件</span> 1
+                        </p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="index_tab_accessary">null</div>
+                </div>
+            </div>
+            <!-- 品牌馆 -->
+            <div class="apx-index-title title-brand"></div>
+            <div class="apx-brand-figures row">
+                <div class="col-xs-4">
+                    <a target="_blank" href="/product?product_id=25"><img src="/images/custom_index/1.jpg"></a>
+                </div>
+                <div class="col-xs-4">
+                    <a target="_blank" href="/product?product_id=27"><img src="/images/custom_index/2.jpg"></a>
+                </div>
+                <div class="col-xs-4">
+                    <a target="_blank" href="/product?product_id=26"><img src="/images/custom_index/3.jpg"></a>
+                </div>
+                <div class="col-xs-6">
+                    <a target="_blank" href="/product?product_id=22"><img src="/images/custom_index/4.jpg"></a>
+                </div>
+                <div class="col-xs-6">
+                    <a target="_blank" href="/product?product_id=19"><img src="/images/custom_index/5.jpg"></a>
+                </div>
+            </div>
+            <!-- 专区 -->
+            <div class="apx-index-title title-floor"></div>
+            <div class="apx-index-section clearfix">
+                <div class="list-unstyled pull-left">
+                    <div class="list-title section-1">
+                        <p>内饰配件</p>
+                        <span>accessary</span>
+                    </div>
+                </div>
+                <figure class="pull-left">
+                    <img class="img-responsive" src="/images/custom_index/floor1.jpg">
+                </figure>
+                <div id="apx-index-section-carousel-1" class="carousel slide carousel-section" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="col-xs-4">
+                                <div class="img-wrap"><img src="/images/custom_index/section1/item1.png" class="img-responsive"></div>
+                                <p>御甲祥韵脚垫</p>
+                                <span class="text-muted">防火阻燃 原厂安全卡口</span>
+                                <!--隐藏内容-->
+                                <div class="item-hover">
+                                    <ul class="list-unstyled text-center">
+                                        <li>御甲祥韵脚垫</li>
+                                        <li>防火阻燃
+                                            <br />原厂安全卡口</li>
+                                        <li>¥2480.00</li>
+                                        <li><a target="_blank" href="/product?product_id=17" class="btn">了解详情</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="img-wrap"><img src="/images/custom_index/section1/item2.png" class="img-responsive"></div>
+                                <p>比尔新元素</p>
+                                <span class="text-muted">环保香膏 强效除醛抗菌</span>
+                                <!--隐藏内容-->
+                                <div class="item-hover">
+                                    <ul class="list-unstyled text-center">
+                                        <li>比尔新元素</li>
+                                        <li>环保香膏
+                                            <br />强效除醛抗菌</li>
+                                        <li>¥145.00</li>
+                                        <li><a target="_blank" href="/product?product_id=27" class="btn">了解详情</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="img-wrap"><img src="/images/custom_index/section1/item3.png" class="img-responsive"></div>
+                                <p>安程防滑脚垫</p>
+                                <span class="text-muted">自由裁剪 底部防滑</span>
+                                <!--隐藏内容-->
+                                <div class="item-hover">
+                                    <ul class="list-unstyled text-center">
+                                        <li>安程防滑脚垫</li>
+                                        <li>自由裁剪
+                                            <br />底部防滑</li>
+                                        <li>¥538.00</li>
+                                        <li><a target="_blank" href="/product?product_id=20" class="btn">了解详情</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="img-wrap"><img src="/images/custom_index/section1/item4.png" class="img-responsive"></div>
+                                <p>比尔环保尖兵</p>
+                                <span class="text-muted">去异味 强力抗菌</span>
+                                <!--隐藏内容-->
+                                <div class="item-hover">
+                                    <ul class="list-unstyled text-center">
+                                        <li>比尔环保尖兵</li>
+                                        <li>去异味
+                                            <br />强力抗菌</li>
+                                        <li>¥75.00</li>
+                                        <li><a target="_blank" href="/product?product_id=28" class="btn">了解详情</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="img-wrap"><img src="/images/custom_index/section1/item5.png" class="img-responsive"></div>
+                                <p>安程多彩脚垫</p>
+                                <span class="text-muted">地毯质感 个性色彩</span>
+                                <!--隐藏内容-->
+                                <div class="item-hover">
+                                    <ul class="list-unstyled text-center">
+                                        <li>安程多彩脚垫</li>
+                                        <li>地毯质感
+                                            <br />个性色彩</li>
+                                        <li>¥740.00</li>
+                                        <li><a target="_blank" href="/product?product_id=25" class="btn">了解详情</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="img-wrap"><img src="/images/custom_index/section1/item6.png" class="img-responsive"></div>
+                                <p>安程立体大包围脚垫</p>
+                                <span class="text-muted">脚感舒适 地毯质感</span>
+                                <!--隐藏内容-->
+                                <div class="item-hover">
+                                    <ul class="list-unstyled text-center">
+                                        <li>安程立体大包围脚垫</li>
+                                        <li>脚感舒适
+                                            <br />地毯质感</li>
+                                        <li>¥1274.00</li>
+                                        <li><a target="_blank" href="/product?product_id=26" class="btn">了解详情</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-4">
+                                <div class="img-wrap"><img src="/images/custom_index/section1/item7.png" class="img-responsive"></div>
+                                <p>御甲祥韵脚垫</p>
+                                <span class="text-muted">防火阻燃 原厂安全卡口</span>
+                                <!--隐藏内容-->
+                                <div class="item-hover">
+                                    <ul class="list-unstyled text-center">
+                                        <li>御甲祥韵脚垫</li>
+                                        <li>防火阻燃
+                                            <br />原厂安全卡口</li>
+                                        <li>¥2480.00</li>
+                                        <li><a target="_blank" href="/product?product_id=17" class="btn">了解详情</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="img-wrap"><img src="/images/custom_index/section1/item8.png" class="img-responsive"></div>
+                                <p>比尔新元素</p>
+                                <span class="text-muted">环保香膏 强效除醛抗菌</span>
+                                <!--隐藏内容-->
+                                <div class="item-hover">
+                                    <ul class="list-unstyled text-center">
+                                        <li>比尔新元素</li>
+                                        <li>环保香膏
+                                            <br />强效除醛抗菌</li>
+                                        <li>¥145.00</li>
+                                        <li><a target="_blank" href="/product?product_id=27" class="btn">了解详情</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="img-wrap"><img src="/images/custom_index/section1/item9.png" class="img-responsive"></div>
+                                <p>安程防滑脚垫</p>
+                                <span class="text-muted">自由裁剪 底部防滑</span>
+                                <!--隐藏内容-->
+                                <div class="item-hover">
+                                    <ul class="list-unstyled text-center">
+                                        <li>安程防滑脚垫</li>
+                                        <li>自由裁剪
+                                            <br />底部防滑</li>
+                                        <li>¥538.00</li>
+                                        <li><a target="_blank" href="/product?product_id=20" class="btn">了解详情</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="img-wrap"><img src="/images/custom_index/section1/item10.png" class="img-responsive"></div>
+                                <p>比尔环保尖兵</p>
+                                <span class="text-muted">去异味 强力抗菌</span>
+                                <!--隐藏内容-->
+                                <div class="item-hover">
+                                    <ul class="list-unstyled text-center">
+                                        <li>比尔环保尖兵</li>
+                                        <li>去异味
+                                            <br />强力抗菌</li>
+                                        <li>¥75.00</li>
+                                        <li><a target="_blank" href="/product?product_id=28" class="btn">了解详情</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="img-wrap"><img src="/images/custom_index/section1/item11.png" class="img-responsive"></div>
+                                <p>安程多彩脚垫</p>
+                                <span class="text-muted">地毯质感 个性色彩</span>
+                                <!--隐藏内容-->
+                                <div class="item-hover">
+                                    <ul class="list-unstyled text-center">
+                                        <li>安程多彩脚垫</li>
+                                        <li>地毯质感
+                                            <br />个性色彩</li>
+                                        <li>¥740.00</li>
+                                        <li><a target="_blank" href="/product?product_id=25" class="btn">了解详情</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="img-wrap"><img src="/images/custom_index/section1/item12.png" class="img-responsive"></div>
+                                <p>安程立体大包围脚垫</p>
+                                <span class="text-muted">脚感舒适 地毯质感</span>
+                                <!--隐藏内容-->
+                                <div class="item-hover">
+                                    <ul class="list-unstyled text-center">
+                                        <li>安程立体大包围脚垫</li>
+                                        <li>脚感舒适
+                                            <br />地毯质感</li>
+                                        <li>¥1274.00</li>
+                                        <li><a target="_blank" href="/product?product_id=26" class="btn">了解详情</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-4">
+                                <div class="img-wrap"><img src="/images/custom_index/section1/item13.png" class="img-responsive"></div>
+                                <p>比尔环保尖兵</p>
+                                <span class="text-muted">去异味 强力抗菌</span>
+                                <!--隐藏内容-->
+                                <div class="item-hover">
+                                    <ul class="list-unstyled text-center">
+                                        <li>比尔环保尖兵</li>
+                                        <li>去异味
+                                            <br />强力抗菌</li>
+                                        <li>¥75.00</li>
+                                        <li><a target="_blank" href="/product?product_id=28" class="btn">了解详情</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="img-wrap"><img src="/images/custom_index/section1/item14.png" class="img-responsive"></div>
+                                <p>安程多彩脚垫</p>
+                                <span class="text-muted">地毯质感 个性色彩</span>
+                                <!--隐藏内容-->
+                                <div class="item-hover">
+                                    <ul class="list-unstyled text-center">
+                                        <li>安程多彩脚垫</li>
+                                        <li>地毯质感
+                                            <br />个性色彩</li>
+                                        <li>¥740.00</li>
+                                        <li><a target="_blank" href="/product?product_id=25" class="btn">了解详情</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#apx-index-section-carousel-1" data-slide-to="0" class="active"></li>
+                        <li data-target="#apx-index-section-carousel-1" data-slide-to="1"></li>
+                        <li data-target="#apx-index-section-carousel-1" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#apx-index-section-carousel-1" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#apx-index-section-carousel-1" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="apx-index-section clearfix">
+                <div class="list-unstyled pull-left">
+                    <div class="list-title section-2">
+                        <p>车内靠枕</p>
+                        <span>car pillow</span>
+                    </div>
+                </div>
+                <figure class="pull-left">
+                    <img class="img-responsive" src="/images/custom_index/floor2.jpg">
+                </figure>
+                <div id="apx-index-section-carousel-2" class="carousel slide carousel-section" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="col-xs-4">
+                                <div class="img-wrap"><img src="/images/custom_index/section2/1401/1.jpg" class="img-responsive"></div>
+                                <p>GIGI颈枕</p>
+                                <span class="text-muted">缓解驾驶疲劳 呵护身体健康</span>
+                                <!--隐藏内容-->
+                                <div class="item-hover">
+                                    <ul class="list-unstyled text-center">
+                                        <li>GIGI颈枕</li>
+                                        <li>缓解驾驶疲劳
+                                            <br />呵护身体健康</li>
+                                        <li>¥83.00</li>
+                                        <li><a target="_blank" href="/product?product_id=19" class="btn">了解详情</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="img-wrap"><img src="/images/custom_index/section2/1402/4.jpg" class="img-responsive"></div>
+                                <p>GIGI靠枕</p>
+                                <span class="text-muted">缓解驾驶疲劳 呵护身体健康</span>
+                                <!--隐藏内容-->
+                                <div class="item-hover">
+                                    <ul class="list-unstyled text-center">
+                                        <li>GIGI靠枕</li>
+                                        <li>缓解驾驶疲劳
+                                            <br />呵护身体健康</li>
+                                        <li>¥105.00</li>
+                                        <li><a target="_blank" href="/product?product_id=21" class="btn">了解详情</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="img-wrap"><img src="/images/custom_index/section2/1403/3.jpg" class="img-responsive"></div>
+                                <p>GIGI颈枕</p>
+                                <span class="text-muted">缓解驾驶疲劳 呵护身体健康</span>
+                                <!--隐藏内容-->
+                                <div class="item-hover">
+                                    <ul class="list-unstyled text-center">
+                                        <li>GIGI颈枕</li>
+                                        <li>缓解驾驶疲劳
+                                            <br />呵护身体健康</li>
+                                        <li>¥51.00</li>
+                                        <li><a target="_blank" href="/product?product_id=22" class="btn">了解详情</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="img-wrap"><img src="/images/custom_index/section2/1404/3.jpg" class="img-responsive"></div>
+                                <p>GIGI靠枕</p>
+                                <span class="text-muted">缓解驾驶疲劳 呵护身体健康</span>
+                                <!--隐藏内容-->
+                                <div class="item-hover">
+                                    <ul class="list-unstyled text-center">
+                                        <li>GIGI靠枕</li>
+                                        <li>缓解驾驶疲劳
+                                            <br />呵护身体健康</li>
+                                        <li>¥88.00</li>
+                                        <li><a target="_blank" href="/product?product_id=23" class="btn">了解详情</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="img-wrap"><img src="/images/custom_index/section2/1405/1.jpg" class="img-responsive"></div>
+                                <p>GIGI颈枕</p>
+                                <span class="text-muted">缓解驾驶疲劳 呵护身体健康</span>
+                                <!--隐藏内容-->
+                                <div class="item-hover">
+                                    <ul class="list-unstyled text-center">
+                                        <li>GIGI颈枕</li>
+                                        <li>缓解驾驶疲劳
+                                            <br />呵护身体健康</li>
+                                        <li>¥52.00</li>
+                                        <li><a target="_blank" href="/product?product_id=115" class="btn">了解详情</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="img-wrap"><img src="/images/custom_index/section2/1406/1.jpg" class="img-responsive"></div>
+                                <p>GIGI靠枕</p>
+                                <span class="text-muted">缓解驾驶疲劳 呵护身体健康</span>
+                                <!--隐藏内容-->
+                                <div class="item-hover">
+                                    <ul class="list-unstyled text-center">
+                                        <li>GIGI靠枕</li>
+                                        <li>缓解驾驶疲劳
+                                            <br />呵护身体健康</li>
+                                        <li>¥83.00</li>
+                                        <li><a target="_blank" href="/product?product_id=116" class="btn">了解详情</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-4">
+                                <div class="img-wrap"><img src="/images/custom_index/section2/1420/1.jpg" class="img-responsive"></div>
+                                <p>GIGI颈枕</p>
+                                <span class="text-muted">缓解驾驶疲劳 呵护身体健康</span>
+                                <!--隐藏内容-->
+                                <div class="item-hover">
+                                    <ul class="list-unstyled text-center">
+                                        <li>GIGI颈枕</li>
+                                        <li>缓解驾驶疲劳
+                                            <br />呵护身体健康</li>
+                                        <li>¥57.00</li>
+                                        <li><a target="_blank" href="/product?product_id=117" class="btn">了解详情</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="img-wrap"><img src="/images/custom_index/section2/1421/2.jpg" class="img-responsive"></div>
+                                <p>GIGI颈枕</p>
+                                <span class="text-muted">缓解驾驶疲劳 呵护身体健康</span>
+                                <!--隐藏内容-->
+                                <div class="item-hover">
+                                    <ul class="list-unstyled text-center">
+                                        <li>GIGI颈枕</li>
+                                        <li>缓解驾驶疲劳
+                                            <br />呵护身体健康</li>
+                                        <li>¥52.00</li>
+                                        <li><a target="_blank" href="/product?product_id=118" class="btn">了解详情</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="img-wrap"><img src="/images/custom_index/section2/1423/3.jpg" class="img-responsive"></div>
+                                <p>GIGI颈枕</p>
+                                <span class="text-muted">缓解驾驶疲劳 呵护身体健康</span>
+                                <!--隐藏内容-->
+                                <div class="item-hover">
+                                    <ul class="list-unstyled text-center">
+                                        <li>GIGI颈枕</li>
+                                        <li>缓解驾驶疲劳
+                                            <br />呵护身体健康</li>
+                                        <li>¥56.00</li>
+                                        <li><a target="_blank" href="/product?product_id=119" class="btn">了解详情</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="img-wrap"><img src="/images/custom_index/section2/1426/1.jpg" class="img-responsive"></div>
+                                <p>GIGI靠枕</p>
+                                <span class="text-muted">缓解驾驶疲劳 呵护身体健康</span>
+                                <!--隐藏内容-->
+                                <div class="item-hover">
+                                    <ul class="list-unstyled text-center">
+                                        <li>GIGI靠枕</li>
+                                        <li>缓解驾驶疲劳
+                                            <br />呵护身体健康</li>
+                                        <li>¥112.00</li>
+                                        <li><a target="_blank" href="/product?product_id=120" class="btn">了解详情</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="img-wrap"><img src="/images/custom_index/section2/1427/2.jpg" class="img-responsive"></div>
+                                <p>GIGI靠枕</p>
+                                <span class="text-muted">缓解驾驶疲劳 呵护身体健康</span>
+                                <!--隐藏内容-->
+                                <div class="item-hover">
+                                    <ul class="list-unstyled text-center">
+                                        <li>GIGI靠枕</li>
+                                        <li>缓解驾驶疲劳
+                                            <br />呵护身体健康</li>
+                                        <li>¥85.00</li>
+                                        <li><a target="_blank" href="/product?product_id=121" class="btn">了解详情</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="img-wrap"><img src="/images/custom_index/section2/1428/3.jpg" class="img-responsive"></div>
+                                <p>GIGI靠枕</p>
+                                <span class="text-muted">缓解驾驶疲劳 呵护身体健康</span>
+                                <!--隐藏内容-->
+                                <div class="item-hover">
+                                    <ul class="list-unstyled text-center">
+                                        <li>GIGI靠枕</li>
+                                        <li>缓解驾驶疲劳
+                                            <br />呵护身体健康</li>
+                                        <li>¥92.00</li>
+                                        <li><a target="_blank" href="/product?product_id=122" class="btn">了解详情</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#apx-index-section-carousel-2" data-slide-to="0" class="active"></li>
+                        <li data-target="#apx-index-section-carousel-2" data-slide-to="1"></li>
+                    </ol>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#apx-index-section-carousel-2" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#apx-index-section-carousel-2" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+            <!-- 获取更多按钮 -->
+            <div class="text-center apx-btn-more">
+                <div class="btn btn-default btn-lg">
+                    更多商品敬请期待
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 浮动图标 -->
+<div class="apx-water-join">
+    <a href=""><img src="/images/custom_index/1yuanbuy_bg.png"></a>
+</div>
+<div class="apx-new-icon">
+    <img src="/images/custom_index/top_icon.png">
+</div>
+@@include('ensurance.inc') @@include('sitemap.inc') @@include('footer.inc')
+
+<!-- free lunch modal -->
+<div class="apx-modal-free-lunch modal fade" id="modalFreeLunch" tabindex="-1">
+    <a href="javascript:void(0)" class="close-btn" data-dismiss="modal"></a>
+    <div class="modal-dialog">
+        <div class="sub-content entrance in">
+            <img src="/images/free_lunch/wo.png" class="img-responsive">
+            <div class="btn-row">
+                <a href="#free_lunch_negative" class="btn">不相信</a>
+                <a href="#free_lunch_positive" class="btn">相信</a>
+            </div>
+        </div>
+        <div class="sub-content" id="free_lunch_negative">
+            <div class="img-box">
+                <img src="/images/free_lunch/text_bg.png" class="img-responsive">
+                <p>爷，7月17日 00:00:00 至7月24日 23:59，凡在3D圣田店铺内消费满2万元以上（包括2万元），真的能获得3D圣田满480元减500元优惠券，不信的话你就试试看！</p>
+            </div>
+            <div class="btn-row">
+                <a href="#" class="btn">试一试</a>
+            </div>
+        </div>
+        <div class="sub-content" id="free_lunch_positive">
+            <div class="img-box">
+                <img src="/images/free_lunch/text_bg.png" class="img-responsive">
+                <p>爷，世上没有免费的午餐，但是免费的早餐还是有的，3D圣田满480元减100元优惠券已发放至您的账户内，这是真的，这是真的，这是真的，重要的事情说三遍！</p>
+            </div>
+            <div class="btn-row">
+                <a href="javascript:void(0)" data-dismiss="modal" class="btn">知道了</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function(){
+        $('#modalFreeLunch').modal('show');
+        $('#modalFreeLunch').on('click', '.entrance .btn', function(e){
+            e.stopPropagation();
+            e.preventDefault();
+            $('#modalFreeLunch .sub-content').removeClass('in');
+            $($(this).attr('href')).addClass('in');
+        })
+    })
+</script>

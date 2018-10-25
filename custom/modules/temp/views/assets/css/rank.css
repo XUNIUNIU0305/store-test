@@ -1,0 +1,204 @@
+@charset "UTF-8";
+body {
+  overflow-x: hidden; }
+
+.bg-muted {
+  background: #f2f2f2; }
+
+.table-fix {
+  table-layout: fixed; }
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.container {
+  width: 1190px;
+  max-width: none !important; }
+
+.high-lighted {
+  color: #df483d; }
+
+.custom-account-view {
+  min-height: 100vh;
+  background: #f6f6f6; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0; }
+
+.custom-ranking-container {
+  height: 881px;
+  position: relative;
+  background: url("/images/ranking/longhubang.jpg") no-repeat center;
+  background-size: 1920px 881px; }
+  .custom-ranking-container > img {
+    position: absolute;
+    left: 50%; }
+    .custom-ranking-container > img:nth-child(1) {
+      top: 140px;
+      margin-left: -400px;
+      -webkit-animation: left 1.5s linear infinite alternate;
+              animation: left 1.5s linear infinite alternate; }
+    .custom-ranking-container > img:nth-child(2) {
+      top: 162px;
+      margin-left: 435px;
+      -webkit-animation: right 1.5s linear 0.2s infinite alternate;
+              animation: right 1.5s linear 0.2s infinite alternate; }
+    .custom-ranking-container > img:nth-child(3) {
+      top: 140px;
+      margin-left: -120px;
+      -webkit-animation: middle 1.5s linear infinite alternate;
+              animation: middle 1.5s linear infinite alternate; }
+  .custom-ranking-container .end-time {
+    width: 320px;
+    text-align: right;
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 232px;
+    left: 50%;
+    margin-left: 240px; }
+  .custom-ranking-container .ranking-list {
+    width: 1130px;
+    height: 488px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 83px;
+    overflow: hidden; }
+  .custom-ranking-container table {
+    width: 100%; }
+    .custom-ranking-container table th,
+    .custom-ranking-container table td {
+      text-align: center; }
+    .custom-ranking-container table th {
+      font-size: 20px;
+      padding: 10px 0; }
+    .custom-ranking-container table td {
+      font-size: 18px;
+      padding: 8px 0; }
+    .custom-ranking-container table tbody tr .me {
+      position: relative; }
+      .custom-ranking-container table tbody tr .me::after {
+        content: '我的';
+        font-size: 14px;
+        color: #e01222;
+        padding: 0 4px;
+        border: 1px solid #e01222;
+        border-radius: 20px;
+        position: absolute;
+        right: -10px;
+        top: 9px; }
+    .custom-ranking-container table tbody tr:nth-child(1) {
+      font-weight: bold;
+      color: #e01222; }
+    .custom-ranking-container table tbody tr:nth-child(2) {
+      font-weight: normal;
+      color: #ffac34; }
+    .custom-ranking-container table tbody tr:nth-child(3) {
+      font-weight: normal;
+      color: #7080e8; }
+    .custom-ranking-container table tbody tr:nth-child(4) {
+      font-weight: normal;
+      color: #ca8560; }
+  .custom-ranking-container .iScrollVerticalScrollbar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 8px;
+    background: #ffc431;
+    box-shadow: none; }
+  .custom-ranking-container .iScrollIndicator {
+    position: absolute;
+    width: 100%;
+    background: #fd439f;
+    border-radius: 4px; }
+
+@-webkit-keyframes left {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px); }
+  70% {
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px); }
+  100% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); } }
+
+@keyframes left {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px); }
+  70% {
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px); }
+  100% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); } }
+
+@-webkit-keyframes middle {
+  0% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); }
+  50% {
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px); }
+  70% {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px); }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); } }
+
+@keyframes middle {
+  0% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); }
+  50% {
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px); }
+  70% {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px); }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); } }
+
+@-webkit-keyframes right {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px); }
+  70% {
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px); }
+  100% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); } }
+
+@keyframes right {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px); }
+  70% {
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px); }
+  100% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); } }

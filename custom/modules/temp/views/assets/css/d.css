@@ -1,0 +1,204 @@
+body {
+  overflow-x: hidden; }
+
+.bg-muted {
+  background: #f2f2f2; }
+
+.table-fix {
+  table-layout: fixed; }
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.container {
+  width: 1190px;
+  max-width: none !important; }
+
+.high-lighted {
+  color: #df483d; }
+
+.custom-account-view {
+  min-height: 100vh;
+  background: #f6f6f6; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0; }
+
+.brand-week-20170905 {
+  background: #1260d4; }
+  .brand-week-20170905 .float-nav {
+    background: #1260d4;
+    z-index: 99;
+    position: fixed;
+    top: 20%;
+    left: 5%;
+    width: 118px;
+    border: 4px solid #000;
+    color: #fff;
+    text-align: center;
+    line-height: 40px; }
+    .brand-week-20170905 .float-nav a {
+      display: block; }
+    .brand-week-20170905 .float-nav .header {
+      height: 110px;
+      background: url("/images/brand_week_20170905/nav-logo.png") center no-repeat; }
+    .brand-week-20170905 .float-nav .list-unstyled {
+      border-top: 1px solid #000; }
+      .brand-week-20170905 .float-nav .list-unstyled .title {
+        font-size: 15px;
+        font-weight: 600; }
+      .brand-week-20170905 .float-nav .list-unstyled.blue li {
+        background: #2e78e6; }
+        .brand-week-20170905 .float-nav .list-unstyled.blue li.title {
+          background: #1260d4; }
+        .brand-week-20170905 .float-nav .list-unstyled.blue li:not(.title):hover {
+          background: #4c90f5; }
+      .brand-week-20170905 .float-nav .list-unstyled.green li {
+        background: #3db770; }
+        .brand-week-20170905 .float-nav .list-unstyled.green li.title {
+          background: #3aab69; }
+        .brand-week-20170905 .float-nav .list-unstyled.green li:not(.title):hover {
+          background: #49d282; }
+    .brand-week-20170905 .float-nav li {
+      border-bottom: 1px solid #000; }
+    .brand-week-20170905 .float-nav .top {
+      border-top: 1px solid #000;
+      background: url("/images/brand_week_20170905/nav-top.png") 12px center no-repeat; }
+  .brand-week-20170905 .banner {
+    background: url("/images/brand_week_20170905/banner.jpg") center no-repeat;
+    height: 480px;
+    margin-bottom: 60px; }
+  .brand-week-20170905 .bg-blue {
+    background-color: #1260d4; }
+  .brand-week-20170905 .bg-green {
+    background-color: #3aab69;
+    padding-top: 60px; }
+  .brand-week-20170905 .container > .row {
+    margin-bottom: 50px; }
+  .brand-week-20170905 #sec_daza .title,
+  .brand-week-20170905 #sec_goodview .title {
+    background: url("/images/brand_week_20170905/T_1.png") center no-repeat;
+    height: 137px;
+    margin-bottom: 12px; }
+    .brand-week-20170905 #sec_daza .title img,
+    .brand-week-20170905 #sec_goodview .title img {
+      margin: 20px auto 0; }
+  .brand-week-20170905 #sec_daza .col-xs-6,
+  .brand-week-20170905 #sec_goodview .col-xs-6 {
+    padding: 0 5px; }
+  .brand-week-20170905 a {
+    color: inherit;
+    text-decoration: none; }
+  .brand-week-20170905 .prod-item {
+    height: 336px;
+    background: #ffffff;
+    position: relative; }
+    .brand-week-20170905 .prod-item.slim {
+      height: 288px;
+      margin-bottom: 10px; }
+    .brand-week-20170905 .prod-item.large {
+      height: 586px; }
+      .brand-week-20170905 .prod-item.large .high-lighted {
+        font-size: 16px;
+        vertical-align: middle; }
+      .brand-week-20170905 .prod-item.large p {
+        padding: 0 32px;
+        font-size: 24px; }
+      .brand-week-20170905 .prod-item.large .text-muted {
+        display: block;
+        font-size: 20px;
+        margin-top: 28px; }
+    .brand-week-20170905 .prod-item .logo {
+      position: absolute;
+      top: 11px;
+      left: 11px; }
+    .brand-week-20170905 .prod-item p {
+      margin: 14px 0;
+      padding: 0 14px; }
+    .brand-week-20170905 .prod-item .high-lighted {
+      display: inline-block;
+      line-height: 1.1;
+      background: #f00;
+      border-radius: 2px;
+      padding: 0 2px;
+      color: #fff; }
+  .brand-week-20170905 #sec_caska .title {
+    background: url("/images/brand_week_20170905/T_2.png") center no-repeat;
+    height: 137px;
+    margin-bottom: 12px; }
+    .brand-week-20170905 #sec_caska .title img {
+      margin: 20px auto 0; }
+  .brand-week-20170905 #sec_caska [class*='col-xs'] {
+    padding: 0 5px; }
+  .brand-week-20170905 #sec_qiangli .title,
+  .brand-week-20170905 #sec_yanan .title,
+  .brand-week-20170905 #sec_mubo .title,
+  .brand-week-20170905 #sec_gigi .title {
+    background: url("/images/brand_week_20170905/T_3.png") center no-repeat;
+    height: 137px;
+    margin-bottom: 12px; }
+    .brand-week-20170905 #sec_qiangli .title img,
+    .brand-week-20170905 #sec_yanan .title img,
+    .brand-week-20170905 #sec_mubo .title img,
+    .brand-week-20170905 #sec_gigi .title img {
+      margin: 20px auto 0; }
+  .brand-week-20170905 #sec_qiangli [class*='col-xs'] {
+    padding: 0 5px; }
+  .brand-week-20170905 #sec_yanan .prod-item {
+    height: 276px; }
+    .brand-week-20170905 #sec_yanan .prod-item .pull-left {
+      margin: 22px 0 0 70px; }
+    .brand-week-20170905 #sec_yanan .prod-item .high-lighted {
+      font-size: 16px;
+      vertical-align: middle; }
+    .brand-week-20170905 #sec_yanan .prod-item p {
+      min-width: 475px;
+      font-size: 24px;
+      padding: 28px 0; }
+    .brand-week-20170905 #sec_yanan .prod-item .text-muted {
+      margin-top: 60px;
+      display: block;
+      font-size: 20px;
+      line-height: 1.8; }
+  .brand-week-20170905 #sec_mubo [class*='col-xs'] {
+    padding: 0 5px; }
+  .brand-week-20170905 #sec_mubo .prod-item.large {
+    height: 336px; }
+    .brand-week-20170905 #sec_mubo .prod-item.large .pull-left img {
+      width: 250px; }
+    .brand-week-20170905 #sec_mubo .prod-item.large .high-lighted {
+      font-size: 16px;
+      vertical-align: middle; }
+    .brand-week-20170905 #sec_mubo .prod-item.large p {
+      width: 312px;
+      font-size: 24px;
+      padding: 28px; }
+    .brand-week-20170905 #sec_mubo .prod-item.large .text-muted {
+      margin-top: 60px;
+      display: block;
+      font-size: 20px;
+      line-height: 1.8; }
+  .brand-week-20170905 #sec_gigi [class*='col-xs'] {
+    padding: 0 5px; }
+  .brand-week-20170905 #sec_gigi .prod-item {
+    margin-bottom: 10px; }
+  .brand-week-20170905 #sec_gigi .prod-item.large {
+    height: 336px; }
+    .brand-week-20170905 #sec_gigi .prod-item.large .pull-left img {
+      width: 250px; }
+    .brand-week-20170905 #sec_gigi .prod-item.large .high-lighted {
+      font-size: 16px;
+      vertical-align: middle; }
+    .brand-week-20170905 #sec_gigi .prod-item.large p {
+      width: 312px;
+      font-size: 24px;
+      padding: 28px; }
+    .brand-week-20170905 #sec_gigi .prod-item.large .text-muted {
+      margin-top: 60px;
+      display: block;
+      font-size: 20px;
+      line-height: 1.8; }

@@ -1,0 +1,312 @@
+@@include('../head.inc')
+<style>
+    main.container {
+        background-color: #f4f5f7;
+    }
+</style>
+<!--top nav-->
+<!-- <nav class="top-nav">
+    <div class="title">
+    
+    </div>
+</nav> -->
+
+
+<!--main container-->
+<main class="container">
+    <!--confirm order-->
+    <div class="group-activity-detail-container">
+        <div class="pro-info">
+            <div class="info-header">
+                <div class="user-name">
+                    <span>dfgdasff</span>的团</div>
+                <div class="pro-num">
+                    <p class="num">
+                        拼团编号：
+                        <span>1513151321</span>
+                    </p>
+                    <p class="start-num">
+                        <span class="pro-way"></span>
+                        <span class="pro-start-num">100件</span>起拼
+                    </p>
+                </div>
+            </div>
+            <div class="pro-content">
+                <div class="group-order-item">
+                    <aside>
+                        <a href="">
+                            <img src="/images/logo.png">
+                        </a>
+                    </aside>
+                    <main>
+                        <p class="description">文字描述文字描述文字描文字描述文字字描述文字描文字描述描述文字描述文字描述</p>
+                        <div class="group-price">
+                            <span id="G_group-share-group-price">5人</span>拼团价：
+                            <span>￥</span>
+                            <em class="group-price-meny group-price-meny1">42</em>
+                            <span class="group-price-menyZero group-price-menyZero1">.42</span>
+                            <em class="group-price-meny group-price-meny3">-</em>
+                            <em class="group-price-meny group-price-meny2">85</em>
+                            <span class="group-price-menyZero group-price-menyZero2">.56</span>
+                        </div>
+                        <div class="param">
+                            单独购买价：￥
+                            <span class="G_group-share-main-param1">78.38</span>
+                            <span class="G_group-share-main-param2">-</span>
+                            <span class="G_group-share-main-param3">85.55</span>
+                        </div>
+                    </main>
+                </div>
+                <div class="pro-offer">
+
+                    <span>
+                        <em class="pro-offer1"></em>
+                        <i>商家发货&售后</i>
+                    </span>
+                    <span>
+                        <em class="pro-offer2"></em>
+                        <i>七天退换货</i>
+                    </span>
+                    <span>
+                        <em class="pro-offer3"></em>
+                        <i>不可使用优惠券</i>
+                    </span>
+                    <span>
+                        <em class="pro-offer4"></em>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="activity-info">
+            <!-- 拼购时 -->
+            <div class="balance-pro">
+                仅剩
+                <span class="balance-pro-remain">10人</span>，剩余时间
+                <span class="balance-pro-h">00</span>：
+                <span class="balance-pro-m">00</span>：
+                <span class="balance-pro-s">00</span>
+                拼购成功
+            </div>
+            <!-- 拼购失败 -->
+            <div class="balance-pro-failure hidden">
+                <div>
+                    <span></span>拼购失败</div>
+                <p>未能按时完成拼购，款项将原路返还</p>
+            </div>
+            <!-- 拼购失效 -->
+            <div class="balance-pro-Invalid hidden">
+                <div>
+                    <span></span>拼购已失效</div>
+                <p>您来迟了，该拼购已失效！</p>
+
+            </div>
+            <!-- 拼购异常 -->
+            <div class="balance-pro-abnormal hidden">
+                <div>
+                    <span></span>拼购异常</div>
+                <p>款项支付异常，拼购失败，前往
+                    <a href="">我的拼购</a>
+                    </a>
+                </p>
+            </div>
+            <!-- 拼购成功 -->
+            <div class="balance-pro-success hidden">
+                <div>
+                    <span></span>拼购成功</div>
+                <p>您能在【我的拼购】中查看详情，前往
+                    <a href="">我的拼购</a>
+                </p>
+
+            </div>
+
+            <div class="participates">
+                <ul class="user-list">
+                    <!--  参加拼购时头像边框user-list-pics -->
+                    <li class="user-head">
+                        <div class="user-head-tuanzhang"></div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <!-- 多于5人时last-user-pic -->
+                    <li></li>
+                </ul>
+            </div>
+            <div class="handle-box">
+                邀请好友参团
+            </div>
+            <div class="handle-box1 hidden" id="handle-box1">
+                我要参团
+            </div>
+            <div class="handle-box2 hidden">
+                更多火热拼购正在进行中...
+            </div>
+            <div class="handle-box3 hidden">
+                再开一团
+            </div>
+        </div>
+
+
+        <!-- 拼购规则 -->
+        <div class="activity-rule">
+            <div class="activity-rule-info">
+                拼购规则
+                <span>查看详情</span>
+            </div>
+            <div class="activity-process">
+                <div>
+                    <span>1</span>参团/开团</div>
+                <div>
+                    <img src="/images/8-13/arrows_24_icon.png" alt="">
+                </div>
+                <div>
+                    <span>2</span>邀请好友</div>
+                <div>
+                    <img src="/images/8-13/arrows_24_icon.png" alt="">
+                </div>
+                <div>
+                    <span>3</span>拼购成功</div>
+            </div>
+        </div>
+
+        <!-- 自提点地址 -->
+        <div class="activity-address">
+            <div>自提点信息</div>
+            <address class="activity-address-point">九大爷-高境镇复旦软件园自提点</address>
+            <p>
+                <span class="activity-address-name">王大锤</span>
+                <span class="activity-address-tel">18555499236</span>
+            </p>
+            <address class="activity-detial-address">上海市宝山区三门路561号3B05</address>
+            <p class="activity-address-border"></p>
+        </div>
+
+        <!--热门推荐 -->
+        <div class="hot-pro">
+            <div class="hot-pro-tit">—热门推荐—</div>
+            <!--热门推荐列表 -->
+            <div class="hot-pro-allinfo">
+                <div class="hot-pro-img">
+                    <img class="hot-pro-pic" src="/images/logo.png" alt="">
+                </div>
+                <div class="hot-pro-info">
+                    <div class="hot-pro-description">商品信息描述商品信息描述商品信息描述商品信息描述</div>
+                    <div class="hot-pro-price">
+                        <span>￥</span>
+                        <em class="hot-pro-newpri">6600</em>
+                        <s class="hot-pro-oldpri">￥8800</em>
+                        </s>
+                    </div>
+                    <div class="hot-pro-ways">
+                        <span class="hot-pro-way">送货</span>
+                        <span class="hot-pro-way-pic">
+                            <span class="hot-pro-buypic"></span>
+                            <span class="hot-pro-bugway">10人拼</span>
+                        </span>
+                        <span class="hot-pro-gogroup">去开团</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="group-activity-detail-footer">———小九，是有底线的呐~———</div>
+
+        <!-- 规格详情 -->
+        <div class="specifications-detail-wrap" id="specifications-detail-wrap">
+            <div class="specifications-detail">
+                <div class="specifications-detail-mess">
+                    <div class="detail-img">
+                        <img src="/images/group_goods_detail/goods_detail_img.png" alt="">
+                    </div>
+                    <div class="detail-mess">
+                        <div class="close" id="specifications-detail-wrap-close"></div>
+                        <!-- 起拼-送货 -->
+                        <div class="spell-delivery">
+                            <!-- 起拼按钮 -->
+                            <div class="spell same">
+                                5人5件起拼
+                            </div>
+                            <!-- 送货按钮 -->
+                            <div class="delivery same">
+                                <!-- 送货 -->
+                            </div>
+                        </div>
+                        <p class="detail-newprice">￥
+                            <span class="new-price">11750.00-11888.00</span>
+                        </p>
+                        <p class="detail-oldprice">
+                            <span class="old-price">￥14800.00-18888.00</span>
+                            <!-- 库存 -->
+                            <span class="inventory">库存
+                                <span class="inventory-num">2882</span> 件</span>
+                        </p>
+                    </div>
+                    <!-- 请选择规格-颜色 -->
+                    <div class="choose-specifications-color">
+                        <!-- 请选择 -->
+                        <span class="please-choose">请选择：规格 颜色</span>
+                        <!-- 已选择 -->
+                        <!-- <span class="yet-choose">已选择：<span class="guige">"四套【赠：标准门店陈列包-立省200】"</span><span class="color">"黄色"</span></span> -->
+                    </div>
+                </div>
+                <!-- 具体规格及颜色数量 -->
+                <div class="detail-main">
+                    <!-- 规格 -->
+                    <div class="standard same">
+                        <div class="standard-title title">
+                            <span>规格</span>
+                        </div>
+                        <ul class="item">
+                            <li>一套</li>
+                            <li>四套【赠：标准门店陈列包-立省200】</li>
+                            <li>八套【赠：豪华门店陈列包-立省500】</li>
+                        </ul>
+                    </div>
+                    <!-- 颜色 -->
+                    <div class="color same">
+                        <div class="color-title title">
+                            <span>颜色</span>
+                        </div>
+                        <ul class="item">
+                            <li class="active">红秀金</li>
+                            <li>红本色</li>
+                            <li>黄色</li>
+                            <li>米色</li>
+                            <li>咖啡色</li>
+                        </ul>
+                    </div>
+                    <!-- 数量 -->
+                    <div class="number same">
+                        <div class="number-title title">
+                            <span>数量</span>
+                        </div>
+                        <div class="number-button">
+                            <div class="button">
+                                <span class="reduce" id="deliver-goods-reduce"></span>
+                                <input class="text" id="deliver-goods-text" type="text" value="1">
+                                <span class="add" id="deliver-goods-add"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="confirm">确定</div> -->
+                <div class="footer">
+                    <!-- 单独购买按钮 -->
+                    <div class="purchased-separately same">
+                        <div class="price">￥ 14800.00</div>
+                        <div class="text">单独购买</div>
+                    </div>
+                    <!-- 我要开团 -->
+                    <div class="open-group same">
+                        <div class="price">￥ 11750.00</div>
+                        <div class="text">我要开团</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+@@include('../footer.inc')

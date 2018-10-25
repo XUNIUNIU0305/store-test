@@ -1,0 +1,85 @@
+.wechat-product-keshi img {
+  max-width: 100%;
+  vertical-align: top; }
+
+.wechat-product-keshi .content {
+  background: url("/images/keshi_brand/bg_top.png") no-repeat center top;
+  background-size: 100%; }
+  .wechat-product-keshi .content .top {
+    position: relative;
+    padding-top: 20%;
+    text-align: center;
+    margin-bottom: 56%; }
+    .wechat-product-keshi .content .top img {
+      width: 80%; }
+    .wechat-product-keshi .content .top .title {
+      width: 100%;
+      position: absolute;
+      top: 60%;
+      left: 0; }
+      .wechat-product-keshi .content .top .title p {
+        margin: 0; }
+      .wechat-product-keshi .content .top .title .h1 {
+        font-weight: 700;
+        font-size: 24px;
+        margin-top: 6%; }
+      .wechat-product-keshi .content .top .title .h2 {
+        font-weight: 700;
+        color: #ff0000;
+        font-size: 28px; }
+      .wechat-product-keshi .content .top .title .h3 {
+        font-size: 18px;
+        color: #666;
+        text-align: left;
+        padding-left: 3%; }
+      .wechat-product-keshi .content .top .title .cookie {
+        position: relative;
+        left: 15%;
+        min-height: 80px; }
+        .wechat-product-keshi .content .top .title .cookie img:first-child {
+          max-width: 20%;
+          position: absolute;
+          top: -20%;
+          left: 20%; }
+        .wechat-product-keshi .content .top .title .cookie img:nth-child(2) {
+          max-width: 20%;
+          position: absolute;
+          top: 10%;
+          left: 40%; }
+        .wechat-product-keshi .content .top .title .cookie span {
+          position: absolute; }
+        .wechat-product-keshi .content .top .title .cookie .text1 {
+          font-size: 16px;
+          color: #666;
+          left: 65%;
+          top: 18%; }
+        .wechat-product-keshi .content .top .title .cookie .text2 {
+          font-size: 16px;
+          color: #c12c20;
+          left: 40%;
+          top: 60%; }
+      .wechat-product-keshi .content .top .title .btn {
+        margin-top: 4%; }
+        .wechat-product-keshi .content .top .title .btn img {
+          max-width: 40%; }
+  .wechat-product-keshi .content .item .pro {
+    text-align: center;
+    margin-top: 5%; }
+    .wechat-product-keshi .content .item .pro > img {
+      max-width: 80%; }
+    .wechat-product-keshi .content .item .pro p {
+      margin: 3% auto;
+      text-align: left;
+      font-size: 18px;
+      color: #666;
+      width: 90%; }
+
+.wechat-product-keshi .footer {
+  width: 100%;
+  background: url("/images/keshi_brand/bg_under.png") no-repeat top;
+  background-size: 100%;
+  padding: 18% 0 5%; }
+  .wechat-product-keshi .footer a {
+    font-size: 18px;
+    text-align: center;
+    color: #fff; }

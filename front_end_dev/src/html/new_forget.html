@@ -1,0 +1,66 @@
+@@include('head.inc')
+<div class="forget-container">
+    <img src="/images/new_login/logo.png" class="title-img">
+    <div class="login-wrap">
+        <form class="login-form" role="form">
+            <!--title-->
+            <p class="title">找回密码</p>
+            <!--row-->
+            <div class="forget-information">
+              <div class="form-group form-group-sm">
+                  <label for="shop_pwd1">设置新密码</label>
+                  <div class="row">
+                      <div class="col-xs-12">
+                          <input type="password" class="form-control" id="shop_pwd1" maxlength="20" placeholder="请填写新密码">
+                      </div>
+                      <div class="col-xs-12 error-msg">密码只能包含数字和字母</div>
+                  </div>
+              </div>
+              <!--row-->
+              <div class="form-group form-group-sm">
+                  <label for="shop_pwd2">确认新密码</label>
+                  <div class="row">
+                      <div class="col-xs-12">
+                          <input type="password" class="form-control" id="shop_pwd2" maxlength="20" placeholder="请重复填写新密码">
+                      </div>
+                      <div class="col-xs-12 error-msg">两次密码不一致</div>
+                  </div>
+              </div>
+              <!--row-->
+              <div class="form-group form-group-sm J_mobile">
+                  <label for="mobile">已绑手机号</label>
+                  <div class="row">
+                      <div class="col-xs-12">
+                          <input type="tel" class="form-control" id="mobile" placeholder="请填写您的手机号" maxlength="11">
+                      </div>
+                      <div class="col-xs-12 error-msg">格式错误</div>
+                  </div>
+              </div>
+              <!--row-->
+              <div class="form-group form-group-sm">
+                  <label for="validate">手机验证码</label>
+                  <div class="row">
+                      <div class="col-xs-8 mobile-input">
+                          <input type="text" id="validate" class="mobile-control" value="">
+                          <a class="mobile-btn J_get_verify_sms">点击获取</a>
+                      </div>
+                      <div class="col-xs-12 error-msg">验证码错误</div>
+                  </div>
+              </div>
+            </div>  
+            <div class="find-success hidden">
+              <img src="/images/new_login/icon_120_success.png" alt="">
+              <p class="find-describe">修改成功</p>
+            </div>
+            <div class="find-false hidden">
+              <img src="/images/new_login/icon_120_false.png" alt="">
+              <p class="find-describe">修改失败</p>
+            </div>
+            <!--row-->
+            <a class="btn btn-submit J_register_submit">提交</a>
+            <a href="#" class="back-home">返回登录页</a>
+        </form>
+    </div>
+    <div class="footer-box"></div>
+</div>
+@@include('footer.inc')

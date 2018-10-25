@@ -1,0 +1,766 @@
+@charset "UTF-8";
+.group-activity-detail-container {
+  font-family: '微软雅黑'; }
+  .group-activity-detail-container .pro-info {
+    margin-top: 2.66667vw;
+    background-color: #fff; }
+    .group-activity-detail-container .pro-info .info-header .info-header-centenr {
+      padding: 2.93333vw 4vw 2.93333vw 0;
+      margin-left: 4vw;
+      border-bottom: 0.13333vw solid #dedfe0;
+      height: 10.66667vw; }
+      .group-activity-detail-container .pro-info .info-header .info-header-centenr .info-header-pic {
+        width: 10.66667vw;
+        height: 10.66667vw;
+        border-radius: 50px;
+        border: 0.13333vw solid #e5e5e5;
+        margin-right: 2.93333vw;
+        float: left; }
+      .group-activity-detail-container .pro-info .info-header .info-header-centenr .user-name {
+        font-size: 3.46667vw;
+        height: 10.66667vw;
+        line-height: 10.66667vw;
+        float: left; }
+      .group-activity-detail-container .pro-info .info-header .info-header-centenr .pro-num {
+        height: 10.66667vw;
+        float: right; }
+        .group-activity-detail-container .pro-info .info-header .info-header-centenr .pro-num p {
+          margin: 0;
+          color: #3A3A3A;
+          height: 5.33333vw;
+          line-height: 5.33333vw; }
+        .group-activity-detail-container .pro-info .info-header .info-header-centenr .pro-num .start-num {
+          text-align: right;
+          vertical-align: middle; }
+          .group-activity-detail-container .pro-info .info-header .info-header-centenr .pro-num .start-num .pro-start-num {
+            color: #F6222D; }
+          .group-activity-detail-container .pro-info .info-header .info-header-centenr .pro-num .start-num .pro-way {
+            display: inline-block;
+            width: 8vw;
+            height: 4vw;
+            margin-right: 2.4vw;
+            background: url("/images/8-13/sh.png") no-repeat center;
+            background-size: 8vw 4vw;
+            margin-bottom: -0.8vw; }
+          .group-activity-detail-container .pro-info .info-header .info-header-centenr .pro-num .start-num .pro-way1 {
+            display: inline-block;
+            width: 8vw;
+            height: 4vw;
+            margin-right: 2.4vw;
+            background: url("/images/8-13/zt.svg") no-repeat center;
+            background-size: 8vw 4vw;
+            margin-bottom: -0.8vw; }
+    .group-activity-detail-container .pro-info .pro-content {
+      margin: 0 4vw; }
+      .group-activity-detail-container .pro-info .pro-content .group-order-item {
+        overflow: hidden;
+        width: 100%;
+        min-height: 13.33333vw;
+        padding: 5.33333vw 0; }
+        .group-activity-detail-container .pro-info .pro-content .group-order-item .aside {
+          width: 29.33333vw;
+          height: 29.33333vw;
+          border: 0.13333vw solid #ccc;
+          overflow: hidden;
+          float: left; }
+          .group-activity-detail-container .pro-info .pro-content .group-order-item .aside img {
+            width: 100%;
+            height: 100%; }
+        .group-activity-detail-container .pro-info .pro-content .group-order-item .main {
+          width: 58.66667vw;
+          float: left;
+          padding-left: 2.4vw; }
+          .group-activity-detail-container .pro-info .pro-content .group-order-item .main .group-pro-price {
+            font-weight: 900;
+            font-size: 3.46667vw;
+            margin: 0;
+            overflow: hidden;
+            height: 10vw; }
+          .group-activity-detail-container .pro-info .pro-content .group-order-item .main .group-price {
+            margin: 1.33333vw 0;
+            margin-top: 1.33333vw;
+            font-size: 3.73333vw;
+            font-weight: 900;
+            color: #393939; }
+            .group-activity-detail-container .pro-info .pro-content .group-order-item .main .group-price span {
+              color: #393939;
+              font-size: 3.46667vw;
+              margin-left: -0.8vw; }
+            .group-activity-detail-container .pro-info .pro-content .group-order-item .main .group-price em {
+              color: #393939;
+              font-style: inherit;
+              font-size: 4vw; }
+            .group-activity-detail-container .pro-info .pro-content .group-order-item .main .group-price .group-price-meny1 {
+              font-size: 5.33333vw; }
+            .group-activity-detail-container .pro-info .pro-content .group-order-item .main .group-price #G_group-share-group-price {
+              font-size: 3.73333vw; }
+            .group-activity-detail-container .pro-info .pro-content .group-order-item .main .group-price .lengthlongbr {
+              font-style: inherit;
+              display: block; }
+          .group-activity-detail-container .pro-info .pro-content .group-order-item .main .param {
+            color: #50555D;
+            font-size: 3.46667vw;
+            width: 65.33333vw;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap; }
+      .group-activity-detail-container .pro-info .pro-content .pro-offer {
+        width: 100%;
+        height: 10.66667vw;
+        line-height: 10.66667vw;
+        font-size: 1.6vw;
+        color: #50555D;
+        overflow: hidden; }
+        .group-activity-detail-container .pro-info .pro-content .pro-offer .pro-offer1 {
+          display: inline-block;
+          width: 4vw;
+          height: 4vw;
+          margin-bottom: -0.53333vw;
+          margin-right: 0.53333vw;
+          background: url("/images/8-13/confirm_28_icon.png") no-repeat center;
+          background-size: 100%; }
+        .group-activity-detail-container .pro-info .pro-content .pro-offer i {
+          font-style: inherit;
+          font-size: 3.46667vw; }
+  .group-activity-detail-container .whites {
+    height: 2.66667vw;
+    width: 100%;
+    background: #dedfe0; }
+  .group-activity-detail-container .activity-info {
+    margin-top: 2.66667vw;
+    background-color: #fff;
+    overflow: hidden; }
+    .group-activity-detail-container .activity-info .balance-pro {
+      text-align: center;
+      font-size: 3.73333vw;
+      margin: 1.33333vw 0;
+      font-weight: 900;
+      margin: 8vw 0; }
+      .group-activity-detail-container .activity-info .balance-pro .balance-pro-remain {
+        color: #eb2f2f;
+        font-size: 4vw; }
+      .group-activity-detail-container .activity-info .balance-pro .balance-pro-h, .group-activity-detail-container .activity-info .balance-pro .balance-pro-m, .group-activity-detail-container .activity-info .balance-pro .balance-pro-s {
+        color: white;
+        background: #000000;
+        display: inline-block;
+        padding: 0 0.66667vw;
+        height: 6vw;
+        line-height: 6vw;
+        text-align: center;
+        border-radius: 3px; }
+    .group-activity-detail-container .activity-info .balance-pro-failure {
+      text-align: center; }
+      .group-activity-detail-container .activity-info .balance-pro-failure div {
+        margin-top: 8vw;
+        font-size: 4.8vw;
+        color: #f5222d;
+        font-weight: 900; }
+        .group-activity-detail-container .activity-info .balance-pro-failure div span {
+          display: inline-block;
+          width: 7.73333vw;
+          height: 7.73333vw;
+          vertical-align: middle;
+          margin-right: 1.33333vw;
+          background: url("/images/8-13/shibai.png") no-repeat center center;
+          background-size: 100%; }
+      .group-activity-detail-container .activity-info .balance-pro-failure p {
+        font-size: 3.2vw;
+        margin: 8vw auto;
+        color: #434343; }
+    .group-activity-detail-container .activity-info .balance-pro-Invalid {
+      text-align: center; }
+      .group-activity-detail-container .activity-info .balance-pro-Invalid div {
+        margin-top: 8vw;
+        font-size: 4.8vw;
+        color: #585c64;
+        font-weight: 900; }
+        .group-activity-detail-container .activity-info .balance-pro-Invalid div span {
+          display: inline-block;
+          width: 7.73333vw;
+          height: 7.73333vw;
+          vertical-align: middle;
+          margin-right: 1.33333vw;
+          background: url("/images/8-13/shibai.png") no-repeat center center;
+          background-size: 100%; }
+      .group-activity-detail-container .activity-info .balance-pro-Invalid p {
+        font-size: 3.2vw;
+        margin: 8vw auto;
+        color: #434343; }
+    .group-activity-detail-container .activity-info .balance-pro-success {
+      text-align: center; }
+      .group-activity-detail-container .activity-info .balance-pro-success div {
+        margin-top: 8vw;
+        font-size: 4.8vw;
+        color: #52c41a;
+        font-weight: 900; }
+        .group-activity-detail-container .activity-info .balance-pro-success div span {
+          display: inline-block;
+          width: 7.73333vw;
+          height: 7.73333vw;
+          vertical-align: middle;
+          margin-right: 1.33333vw;
+          background: url("/images/8-13/chenggong.png") no-repeat center center;
+          background-size: 100%; }
+      .group-activity-detail-container .activity-info .balance-pro-success p {
+        font-size: 3.2vw;
+        margin: 8vw auto;
+        color: #434343;
+        white-space: nowrap; }
+        .group-activity-detail-container .activity-info .balance-pro-success p a {
+          display: inline;
+          color: #2979ff;
+          text-decoration: underline; }
+    .group-activity-detail-container .activity-info .balance-pro-abnormal {
+      text-align: center; }
+      .group-activity-detail-container .activity-info .balance-pro-abnormal div {
+        margin-top: 8vw;
+        font-size: 4.8vw;
+        color: #f5222d;
+        font-weight: 900; }
+        .group-activity-detail-container .activity-info .balance-pro-abnormal div span {
+          display: inline-block;
+          width: 7.73333vw;
+          height: 7.73333vw;
+          vertical-align: middle;
+          margin-right: 1.33333vw;
+          background: url("/images/8-13/yichang.png") no-repeat center center;
+          background-size: 100%; }
+      .group-activity-detail-container .activity-info .balance-pro-abnormal p {
+        font-size: 3.2vw;
+        margin: 8vw auto;
+        color: #434343;
+        white-space: nowrap; }
+        .group-activity-detail-container .activity-info .balance-pro-abnormal p a {
+          display: inline;
+          color: #2979ff;
+          text-decoration: underline; }
+    .group-activity-detail-container .activity-info .participates {
+      width: 100%; }
+      .group-activity-detail-container .activity-info .participates .user-list {
+        margin: 0 auto;
+        width: 77%;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: space-around;
+                justify-content: space-around;
+        padding-bottom: 9.33333vw; }
+        .group-activity-detail-container .activity-info .participates .user-list li {
+          width: 12vw;
+          height: 12vw;
+          border-radius: 50%;
+          position: relative; }
+        .group-activity-detail-container .activity-info .participates .user-list .G_group-share-user-portrait {
+          background: url("/images/8-13/tuanyuan.png") no-repeat;
+          background-size: 100% 100%; }
+        .group-activity-detail-container .activity-info .participates .user-list .last-user-pic {
+          background: url("/images/8-13/dy.png") no-repeat;
+          background-size: 100%; }
+        .group-activity-detail-container .activity-info .participates .user-list .user-head .user-head-tuanzhang {
+          width: 12vw;
+          height: 8.66667vw;
+          background: url("/images/8-13/touying.png") no-repeat center;
+          background-size: 100% 78%;
+          position: absolute;
+          bottom: -3.33333vw;
+          text-align: center; }
+          .group-activity-detail-container .activity-info .participates .user-list .user-head .user-head-tuanzhang img {
+            width: 75%;
+            height: 75%; }
+        .group-activity-detail-container .activity-info .participates .user-list .user-list-pics {
+          border: 0.26667vw solid #f5222d; }
+    .group-activity-detail-container .activity-info .handle-box, .group-activity-detail-container .activity-info .handle-box1 {
+      text-align: center;
+      color: #fff;
+      line-height: 3;
+      background: linear-gradient(to right, #f5222d, #f87054);
+      margin: 0 4vw 4vw;
+      border-radius: 30px;
+      font-size: 14px;
+      box-shadow: 0.26667vw 1.06667vw 2vw #f86e54; }
+    .group-activity-detail-container .activity-info .handle-box2, .group-activity-detail-container .activity-info .handle-box3, .group-activity-detail-container .activity-info .handle-box4 {
+      text-align: center;
+      color: #f5222d;
+      border: 0.13333vw solid #f5222d;
+      line-height: 3;
+      margin: 0 4vw 4vw;
+      border-radius: 30px;
+      font-size: 14px; }
+  .group-activity-detail-container .activity-rule {
+    background: white;
+    margin: 2.66667vw auto;
+    color: #434343; }
+    .group-activity-detail-container .activity-rule .activity-rule-info {
+      font-size: 3.73333vw;
+      font-weight: 900;
+      height: 13.33333vw;
+      line-height: 13.33333vw;
+      margin-left: 4vw;
+      padding-right: 4vw;
+      border-bottom: 0.13333vw solid #dedfe0; }
+      .group-activity-detail-container .activity-rule .activity-rule-info span {
+        float: right;
+        color: #AAA;
+        font-weight: 500;
+        font-size: 3.46667vw; }
+        .group-activity-detail-container .activity-rule .activity-rule-info span img {
+          display: inline-block;
+          vertical-align: middle;
+          width: 3.73333vw;
+          height: 3.73333vw;
+          margin-left: 1.33333vw; }
+    .group-activity-detail-container .activity-rule .activity-process {
+      font-size: 3.73333vw;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: space-between;
+              justify-content: space-between;
+      height: 13.33333vw;
+      line-height: 13.33333vw;
+      width: 92%;
+      margin: 0 auto; }
+      .group-activity-detail-container .activity-rule .activity-process img {
+        width: 2vw;
+        height: 3.6vw; }
+      .group-activity-detail-container .activity-rule .activity-process span {
+        display: inline-block;
+        background: #eb2f2f;
+        width: 4vw;
+        height: 4vw;
+        line-height: 4vw;
+        border-radius: 50%;
+        text-align: center;
+        margin-right: 1.33333vw;
+        color: white; }
+  .group-activity-detail-container .activity-address {
+    background: white;
+    padding-left: 4vw;
+    color: #333333;
+    padding-bottom: 4vw; }
+    .group-activity-detail-container .activity-address div {
+      height: 12vw;
+      line-height: 12vw;
+      font-size: 4.53333vw;
+      font-weight: 900; }
+    .group-activity-detail-container .activity-address .activity-address-point {
+      font-size: 4vw;
+      font-weight: 900;
+      padding-right: 4vw; }
+    .group-activity-detail-container .activity-address p {
+      min-height: 5.33333vw;
+      line-height: 5.33333vw;
+      font-size: 4vw;
+      padding-right: 4vw;
+      font-weight: 900;
+      margin-top: 2vw;
+      margin-bottom: 2vw; }
+      .group-activity-detail-container .activity-address p .activity-address-tel {
+        margin-left: 5.33333vw; }
+    .group-activity-detail-container .activity-address address {
+      font-style: inherit; }
+    .group-activity-detail-container .activity-address .activity-detial-address {
+      font-size: 3.2vw;
+      color: #7d7d7d;
+      padding-right: 4vw; }
+  .group-activity-detail-container .border-address {
+    background: white; }
+    .group-activity-detail-container .border-address img {
+      display: block;
+      height: 1.33333vw;
+      width: 100%; }
+  .group-activity-detail-container .hot-pro {
+    margin-top: 2.66667vw;
+    background: white; }
+    .group-activity-detail-container .hot-pro .hot-pro-tit {
+      text-align: center;
+      font-weight: 900;
+      padding: 6.66667vw 0 4vw 0;
+      color: #585c64;
+      font-size: 4vw; }
+    .group-activity-detail-container .hot-pro .hot-pro-allinfo:last-child {
+      border: none; }
+    .group-activity-detail-container .hot-pro .hot-pro-allinfo {
+      margin: 0 4vw;
+      padding: 4vw 0;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: space-between;
+              justify-content: space-between;
+      border-bottom: 1px solid #dedfe0; }
+      .group-activity-detail-container .hot-pro .hot-pro-allinfo .hot-pro-img {
+        width: 32vw;
+        height: 32vw;
+        overflow: hidden; }
+        .group-activity-detail-container .hot-pro .hot-pro-allinfo .hot-pro-img img {
+          width: 100%;
+          height: 100%; }
+      .group-activity-detail-container .hot-pro .hot-pro-allinfo .hot-pro-info {
+        -webkit-flex: 1;
+                flex: 1;
+        margin-left: 2.4vw;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+                flex-direction: column;
+        -webkit-justify-content: space-between;
+                justify-content: space-between; }
+        .group-activity-detail-container .hot-pro .hot-pro-allinfo .hot-pro-info .hot-pro-description {
+          font-size: 4vw;
+          font-weight: 900;
+          min-height: 10.66667vw; }
+        .group-activity-detail-container .hot-pro .hot-pro-allinfo .hot-pro-info .hot-pro-price {
+          font-size: 4vw;
+          color: #F5222D;
+          font-size: 4vw; }
+          .group-activity-detail-container .hot-pro .hot-pro-allinfo .hot-pro-info .hot-pro-price span {
+            font-size: 3.46667vw; }
+          .group-activity-detail-container .hot-pro .hot-pro-allinfo .hot-pro-info .hot-pro-price .hot-pro-newpri {
+            font-style: inherit;
+            font-size: 5.33333vw;
+            margin: 0 2.4vw 0 0vw;
+            font-weight: 900; }
+          .group-activity-detail-container .hot-pro .hot-pro-allinfo .hot-pro-info .hot-pro-price .hot-pro-oldpri {
+            font-size: 3.46667vw;
+            font-style: inherit;
+            color: #c1c1c1; }
+        .group-activity-detail-container .hot-pro .hot-pro-allinfo .hot-pro-info .hot-pro-ways {
+          position: relative; }
+          .group-activity-detail-container .hot-pro .hot-pro-allinfo .hot-pro-info .hot-pro-ways .hot-pro-way {
+            font-size: 2.66667vw;
+            line-height: 4vw;
+            color: #F65158;
+            background: #FFF1F0;
+            border: 0.13333vw solid #F65158;
+            padding: 0vw 1.6vw;
+            border-radius: 10px; }
+          .group-activity-detail-container .hot-pro .hot-pro-allinfo .hot-pro-info .hot-pro-ways .hot-pro-way-pic .hot-pro-buypic {
+            display: inline-block;
+            width: 3.2vw;
+            height: 3.2vw;
+            background: url("/images/8-13/cluster.png") no-repeat center/cover;
+            margin: -2px 1.6vw 0 2.66667vw; }
+          .group-activity-detail-container .hot-pro .hot-pro-allinfo .hot-pro-info .hot-pro-ways .hot-pro-way-pic .hot-pro-buypic1 {
+            display: inline-block;
+            width: 3.2vw;
+            height: 3.2vw;
+            background: url("/images/8-13/commodity.png") no-repeat center/cover;
+            margin: -2px 1.6vw 0 2.66667vw; }
+          .group-activity-detail-container .hot-pro .hot-pro-allinfo .hot-pro-info .hot-pro-ways .hot-pro-gogroup {
+            float: right;
+            font-size: 3.73333vw;
+            color: white;
+            background: linear-gradient(to right, #f5222d, #f86f53);
+            text-align: center;
+            width: 16.66667vw;
+            height: 8vw;
+            line-height: 8vw;
+            text-align: center;
+            border-radius: 4.66667vw;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            box-shadow: 0.26667vw 0.66667vw 2vw #f86e54; }
+  .group-activity-detail-container .group-activity-detail-footer {
+    text-align: center;
+    height: 19.33333vw;
+    line-height: 19.33333vw;
+    font-size: 3.46667vw;
+    color: #aaaaaa; }
+  .group-activity-detail-container .specifications-detail-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.4); }
+    .group-activity-detail-container .specifications-detail-wrap .specifications-detail {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100vw;
+      max-height: 80%;
+      overflow-y: scroll;
+      background: #fff; }
+      .group-activity-detail-container .specifications-detail-wrap .specifications-detail .specifications-detail-mess {
+        padding: 4vw 4.26667vw;
+        overflow: hidden; }
+        .group-activity-detail-container .specifications-detail-wrap .specifications-detail .specifications-detail-mess .detail-img {
+          float: left;
+          clear: both;
+          overflow: hidden;
+          width: 21.33333vw;
+          height: 21.33333vw; }
+          .group-activity-detail-container .specifications-detail-wrap .specifications-detail .specifications-detail-mess .detail-img img {
+            width: 100%;
+            height: 100%; }
+        .group-activity-detail-container .specifications-detail-wrap .specifications-detail .specifications-detail-mess .detail-mess {
+          position: relative;
+          float: left;
+          margin-left: 2.66667vw; }
+          .group-activity-detail-container .specifications-detail-wrap .specifications-detail .specifications-detail-mess .detail-mess .close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 5.86667vw;
+            height: 5.86667vw;
+            background: url("/images/group_goods_detail/close.png") no-repeat;
+            background-size: contain; }
+          .group-activity-detail-container .specifications-detail-wrap .specifications-detail .specifications-detail-mess .detail-mess .spell-delivery {
+            overflow: hidden;
+            margin-top: 7.2vw; }
+            .group-activity-detail-container .specifications-detail-wrap .specifications-detail .specifications-detail-mess .detail-mess .spell-delivery .same {
+              height: 4vw;
+              font-size: 2.93333vw;
+              text-align: center;
+              line-height: 4vw;
+              border-radius: 4vw; }
+            .group-activity-detail-container .specifications-detail-wrap .specifications-detail .specifications-detail-mess .detail-mess .spell-delivery .spell {
+              float: left;
+              width: 18.13333vw;
+              background: #F5222D;
+              color: #fff; }
+            .group-activity-detail-container .specifications-detail-wrap .specifications-detail .specifications-detail-mess .detail-mess .spell-delivery .delivery {
+              float: left;
+              width: 8.26667vw;
+              height: 4vw;
+              margin-left: 1.33333vw;
+              font-size: 2.93333vw;
+              color: #F5222D; }
+            .group-activity-detail-container .specifications-detail-wrap .specifications-detail .specifications-detail-mess .detail-mess .spell-delivery .delivery-songhuo-bg {
+              background: url("/images/8-13/sh.png") no-repeat;
+              background-size: cover; }
+            .group-activity-detail-container .specifications-detail-wrap .specifications-detail .specifications-detail-mess .detail-mess .spell-delivery .delivery-ziti-bg {
+              background: url("/images/8-13/zt.png") no-repeat;
+              background-size: cover; }
+          .group-activity-detail-container .specifications-detail-wrap .specifications-detail .specifications-detail-mess .detail-mess .detail-newprice {
+            font-size: 2.13333vw;
+            color: #333;
+            margin-top: 0.8vw;
+            font-weight: bold; }
+            .group-activity-detail-container .specifications-detail-wrap .specifications-detail .specifications-detail-mess .detail-mess .detail-newprice .new-price {
+              font-size: 3.2vw; }
+          .group-activity-detail-container .specifications-detail-wrap .specifications-detail .specifications-detail-mess .detail-mess .detail-oldprice {
+            font-size: 2.4vw;
+            color: #AAA;
+            margin-top: 0.26667vw;
+            width: 66.66667vw;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-justify-content: space-between;
+                    justify-content: space-between; }
+            .group-activity-detail-container .specifications-detail-wrap .specifications-detail .specifications-detail-mess .detail-mess .detail-oldprice span {
+              display: inline-block; }
+            .group-activity-detail-container .specifications-detail-wrap .specifications-detail .specifications-detail-mess .detail-mess .detail-oldprice .old-price {
+              text-decoration: line-through; }
+        .group-activity-detail-container .specifications-detail-wrap .specifications-detail .specifications-detail-mess .choose-specifications-color {
+          float: left;
+          font-size: 3.46667vw;
+          color: #333;
+          margin-top: 5.6vw; }
+      .group-activity-detail-container .specifications-detail-wrap .specifications-detail .detail-main {
+        margin: 0 4vw; }
+        .group-activity-detail-container .specifications-detail-wrap .specifications-detail .detail-main .same {
+          margin-top: 2.66667vw; }
+          .group-activity-detail-container .specifications-detail-wrap .specifications-detail .detail-main .same .title {
+            font-size: 3.2vw;
+            font-weight: bold;
+            color: #7D7D7D; }
+        .group-activity-detail-container .specifications-detail-wrap .specifications-detail .detail-main .standard .item {
+          overflow: hidden; }
+          .group-activity-detail-container .specifications-detail-wrap .specifications-detail .detail-main .standard .item .standard-active {
+            color: #F5222D;
+            border: 0.26667vw solid #F5222D; }
+          .group-activity-detail-container .specifications-detail-wrap .specifications-detail .detail-main .standard .item li {
+            float: left;
+            padding: 2.66667vw 5.33333vw;
+            margin: 2.66667vw 0;
+            margin-right: 2.66667vw;
+            border: 0.26667vw solid #E5E5E5;
+            border-radius: 0.13333vw;
+            font-size: 3.2vw;
+            color: #333; }
+          .group-activity-detail-container .specifications-detail-wrap .specifications-detail .detail-main .standard .item .li-active {
+            color: #F5222D;
+            border: 0.26667vw solid #F5222D; }
+          .group-activity-detail-container .specifications-detail-wrap .specifications-detail .detail-main .standard .item .cant-choose {
+            border: 0.26667vw dashed #F1F1F1;
+            background: #FBFAFB;
+            color: #DEDEDE; }
+        .group-activity-detail-container .specifications-detail-wrap .specifications-detail .detail-main .color .item {
+          overflow: hidden; }
+          .group-activity-detail-container .specifications-detail-wrap .specifications-detail .detail-main .color .item .active {
+            color: #F5222D;
+            border: 0.26667vw solid #F5222D; }
+          .group-activity-detail-container .specifications-detail-wrap .specifications-detail .detail-main .color .item li {
+            float: left;
+            width: 17.33333vw;
+            height: 8vw;
+            text-align: center;
+            line-height: 8vw;
+            margin: 2.66667vw 0;
+            margin-right: 2.66667vw;
+            border: 0.26667vw solid #E5E5E5;
+            border-radius: 0.13333vw;
+            font-size: 3.2vw;
+            color: #333; }
+          .group-activity-detail-container .specifications-detail-wrap .specifications-detail .detail-main .color .item li:last-child {
+            border: 0.26667vw dashed #F1F1F1;
+            background: #FBFAFB;
+            color: #DEDEDE; }
+        .group-activity-detail-container .specifications-detail-wrap .specifications-detail .detail-main .number {
+          margin-bottom: 18.66667vw; }
+          .group-activity-detail-container .specifications-detail-wrap .specifications-detail .detail-main .number .number-tile {
+            margin-bottom: 2.66667vw; }
+          .group-activity-detail-container .specifications-detail-wrap .specifications-detail .detail-main .number .number-button {
+            width: 100%;
+            overflow: hidden; }
+            .group-activity-detail-container .specifications-detail-wrap .specifications-detail .detail-main .number .number-button .button {
+              float: right;
+              width: 26.93333vw;
+              height: 8vw;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-justify-content: space-between;
+                      justify-content: space-between;
+              -webkit-align-items: center;
+                      align-items: center;
+              overflow: hidden; }
+              .group-activity-detail-container .specifications-detail-wrap .specifications-detail .detail-main .number .number-button .button .reduce, .group-activity-detail-container .specifications-detail-wrap .specifications-detail .detail-main .number .number-button .button .add {
+                display: inline-block;
+                width: 8vw;
+                height: 8vw; }
+              .group-activity-detail-container .specifications-detail-wrap .specifications-detail .detail-main .number .number-button .button .reduce {
+                background: url("/images/group_goods_detail/reduce_failure.png") no-repeat;
+                background-size: contain; }
+              .group-activity-detail-container .specifications-detail-wrap .specifications-detail .detail-main .number .number-button .button .add {
+                background: url("/images/group_goods_detail/add.png") no-repeat;
+                background-size: contain; }
+              .group-activity-detail-container .specifications-detail-wrap .specifications-detail .detail-main .number .number-button .button .text {
+                width: 10.93333vw;
+                height: 7.73333vw;
+                padding: 0;
+                outline: none;
+                border: none;
+                margin: 0 0.4vw;
+                background: #F5F5F5;
+                text-align: center;
+                margin-bottom: 0.13333vw;
+                -webkit-appearance: none;
+                border-radius: 0; }
+      .group-activity-detail-container .specifications-detail-wrap .specifications-detail .confirm {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 100;
+        width: 100%;
+        height: 13.06667vw;
+        text-align: center;
+        line-height: 13.06667vw;
+        color: #fff;
+        letter-spacing: 0.26667vw;
+        font-size: 4.53333vw;
+        font-weight: 300;
+        background: url("/images/group_goods_detail/queding-button.png") no-repeat;
+        background-size: cover; }
+      .group-activity-detail-container .specifications-detail-wrap .specifications-detail .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: 100;
+        width: 100%;
+        height: 13.06667vw; }
+        .group-activity-detail-container .specifications-detail-wrap .specifications-detail .footer .same {
+          float: left;
+          width: 50%;
+          height: 100%;
+          color: #fff;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-direction: column;
+                  flex-direction: column;
+          -webkit-justify-content: center;
+                  justify-content: center;
+          -webkit-align-items: center;
+                  align-items: center; }
+          .group-activity-detail-container .specifications-detail-wrap .specifications-detail .footer .same .price {
+            font-size: 4vw;
+            font-weight: 200; }
+          .group-activity-detail-container .specifications-detail-wrap .specifications-detail .footer .same .text {
+            font-size: 3.2vw; }
+        .group-activity-detail-container .specifications-detail-wrap .specifications-detail .footer .purchased-separately {
+          background-color: #333; }
+        .group-activity-detail-container .specifications-detail-wrap .specifications-detail .footer .open-group {
+          background: url("/images/group_goods_detail/wykaituan-button-bg.png") no-repeat;
+          background-size: cover; }
+
+.G_group-share-activity-invite {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20000;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); }
+  .G_group-share-activity-invite img {
+    display: block;
+    width: 80%;
+    margin: 0 auto; }
+
+.fast-guid-list {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100vw; }
+
+.guid-list {
+  height: 22.13333vw;
+  position: fixed;
+  right: 0;
+  bottom: 35.2vw;
+  z-index: 30000;
+  overflow: hidden; }
+  .guid-list .pack-up {
+    float: left;
+    margin-top: 5.73333vw;
+    width: 10.66667vw;
+    height: 10.66667vw; }
+  .guid-list .list {
+    float: left;
+    background: #fff;
+    border-top-left-radius: 1.06667vw;
+    border-bottom-left-radius: 1.06667vw;
+    display: none; }
+    .guid-list .list li {
+      float: left;
+      width: 17.33333vw;
+      height: 22.13333vw; }
+    .guid-list .list .pingou-index {
+      background: url("/images/group_goods_detail/shouye_guid.png") no-repeat;
+      background-size: cover; }
+    .guid-list .list .search {
+      background: url("/images/group_goods_detail/search.png") no-repeat;
+      background-size: cover; }
+    .guid-list .list .my-pingou {
+      background: url("/images/group_goods_detail/my_pingou.png") no-repeat;
+      background-size: cover; }
+    .guid-list .list .ziti-pingou-tihuo {
+      background: url("/images/group_goods_detail/ziti_pingou_tihuo.png") no-repeat;
+      background-size: cover; }
+
+.G_group-share-back-top {
+  position: fixed;
+  bottom: 29.33333vw;
+  right: 0;
+  z-index: 20000;
+  width: 10.66667vw;
+  height: 10.66667vw;
+  overflow: hidden;
+  background: url("/images/group_goods_detail/back_top.png") no-repeat;
+  background-size: cover; }

@@ -1,0 +1,119 @@
+.apx-coupon-list {
+    li {
+        width: 50%;
+        float: left;
+        padding: 20px 0;
+    }
+    .coupon-item {
+        margin: 0 auto;
+        width: 410px;
+        height: 160px;
+        color: #f8c631;
+        background: #fff;
+        border: 1px solid;
+        &.disabled {
+            color: #ccc;
+            >.text-center {
+                background: #ccc;
+                a {
+                    cursor: default;
+                    pointer-events: none;
+                }
+            }
+        }
+        .pull-left {
+            width: 330px;
+            padding-left: 24px;
+            .media {
+                .media-left {
+                    font-size: 54px;
+                    font-weight: 600;
+                    padding-right: 16px;
+                    letter-spacing: 4px;
+                    small {
+                        font-weight: 400;
+                        font-size: 14px;
+                        vertical-align: 28px;
+                    }
+                }
+                .media-body {
+                    vertical-align: bottom;
+                    font-size: 12px;
+                    p+p {
+                        color: #333;
+                    }
+                }
+            }
+            >p {
+                color: #333;
+                margin: 2px 0;
+                font-size: 12px;
+            }
+        }
+        >.text-center {
+            display: table-cell;
+            height: 158px;
+            width: 2000px;
+            vertical-align: middle;
+            position: relative;
+            background: #f8c631;
+            .chain {
+                padding: 8px 0;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 6px;
+                left: -2px;
+                font-size: 0;
+                s {
+                    display: inline-block;
+                    width: 100%;
+                    height: 10px;
+                    background: #fff;
+                    margin: 4px 0;
+                    border: 1px solid
+                }
+            }
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                background: #fff;
+                border: 1px solid transparent;
+                left: -8px;
+                transform: rotate(-45deg);
+            }
+            &:before {
+                top: -8px;
+                border-bottom: 1px solid;
+                border-left: 1px solid;
+            }
+            &:after {
+                bottom: -8px;
+                border-top: 1px solid;
+                border-right: 1px solid;
+            }
+            a {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                span {
+                    color: #fff;
+                    line-height: 1.75;
+                    position: absolute;
+                    font-size: 16px;
+                    width: 16px;
+                    top: 50%;
+                    left: 50%;
+                    margin-left: -8px;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+}

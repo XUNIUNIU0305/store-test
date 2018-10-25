@@ -1,0 +1,441 @@
+@@include('head.inc') @@include('admin_header.inc')
+<!-- aside nav end -->
+<!-- main area start -->
+<div class="admin-frame-main">
+    <div class="admin-main-wrap">
+        <!--management main content-->
+        <div class="admin-publish-product admin-manage-products">
+            <ul class="nav nav-tabs">
+                <li><strong>商品列表</strong></li>
+            </ul>
+            <div class="row">
+                <div class="col-xs-8">
+                    选择供应商：
+                    <select class="selectpicker" data-width="320" data-live-search="true">
+                        <option data-tokens="上海宝山">上海宝山</option>
+                        <option data-tokens="上海黄浦">上海黄浦</option>
+                        <option data-tokens="上海静安">上海静安</option>
+                        <option data-tokens="苏州提篮桥">苏州提篮桥</option>
+                        <option data-tokens="上海宝山">上海宝山</option>
+                        <option data-tokens="上海黄浦">上海黄浦</option>
+                        <option data-tokens="上海静安">上海静安</option>
+                        <option data-tokens="苏州提篮桥">苏州提篮桥</option>
+                        <option data-tokens="上海宝山">上海宝山</option>
+                        <option data-tokens="上海黄浦">上海黄浦</option>
+                        <option data-tokens="上海静安">上海静安</option>
+                        <option data-tokens="苏州提篮桥">苏州提篮桥</option>
+                        <option data-tokens="上海宝山">上海宝山</option>
+                        <option data-tokens="上海黄浦">上海黄浦</option>
+                        <option data-tokens="上海静安">上海静安</option>
+                        <option data-tokens="苏州提篮桥">苏州提篮桥</option>
+                        <option data-tokens="上海宝山">上海宝山</option>
+                        <option data-tokens="上海黄浦">上海黄浦</option>
+                        <option data-tokens="上海静安">上海静安</option>
+                        <option data-tokens="苏州提篮桥">苏州提篮桥</option>
+                    </select>
+                </div>
+                <div class="col-xs-4">
+                    <a href="./admin_publish_chooseCategory.html" class="btn btn-block btn-danger pull-right">发布商品</a>
+                </div>
+            </div>
+            <!--nav tabs-->
+            <ul class="nav nav-tabs bg-white border-danger">
+                <li class="active">
+                    <a href="#product_listed" data-toggle="tab">上架</a>
+                </li>
+                <li>
+                    <a href="#product_off" data-toggle="tab">下架</a>
+                </li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="product_listed">
+                    <div class="admin-manage-products-panel">
+                        <div class="header"></div>
+                        <div class="content iscroll_container with-header with-footer">
+                            <div class="content-inner">
+                                <ul class="list-unstyled apx-edit-product-wrap">
+                                    <!-- single item 未售 -->
+                                    <li>
+                                        <div class="apx-item apx-item-edit edit-order">
+                                            <div class="item-pic">
+                                                <img src="/images/slider01.jpg" alt="" class="img-responsive">
+                                            </div>
+                                            <div class="item-cnt clearfix">
+                                                <div class="item-cnt-detail">
+                                                    <div class="item-cnt-title">米其林米其林米其林米其林米其林米其林米其林米其林米其林米其林</div>
+                                                    <div class="clearfix">
+                                                        <div class="pull-left">
+                                                            <strong>¥129.00</strong>
+                                                        </div>
+                                                        <div class="pull-right">
+                                                            <strong>状态: 未售</strong>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row btn-row">
+                                                    <div class="col-xs-6"><a href="#" class="btn btn-default btn-block">修改商品</a></div>
+                                                    <div class="col-xs-6"><a href="javascript:void(0)" class="btn btn-default btn-block J_edit_product_order active">修改状态</a></div>
+                                                    <div class="edit-order-box">
+                                                        <div class="col-xs-6 form-group-sm">
+                                                            <select id="brand" class="form-control ">
+                                                            <option>上架</option>
+                                                            <option>下架</option>
+                                                        </select>
+                                                        </div>
+                                                        <div class="col-xs-6"><a href="#" class="btn btn-sm btn-default btn-block">提交</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- single item 在售 -->
+                                    <li>
+                                        <div class="apx-item apx-item-edit">
+                                            <div class="item-pic">
+                                                <img src="/images/slider01.jpg" alt="" class="img-responsive">
+                                            </div>
+                                            <div class="item-cnt clearfix">
+                                                <div class="item-cnt-detail">
+                                                    <div class="item-cnt-title">米其林米其林米其林米其林米其林米其林米其林米其林米其林米其林</div>
+                                                    <div class="clearfix">
+                                                        <div class="pull-left">
+                                                            <strong>¥129.00</strong>
+                                                        </div>
+                                                        <div class="pull-right">
+                                                            <strong>状态: 未售</strong>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row btn-row">
+                                                    <div class="col-xs-6"><a href="#" class="btn btn-default btn-block">修改商品</a></div>
+                                                    <div class="col-xs-6"><a href="javascript:void(0)" class="btn btn-default btn-block J_edit_product_order">修改状态</a></div>
+                                                    <div class="edit-order-box">
+                                                        <div class="col-xs-6 form-group-sm">
+                                                            <select id="brand" class="form-control ">
+                                                            <option>上架</option>
+                                                            <option>下架</option>
+                                                        </select>
+                                                        </div>
+                                                        <div class="col-xs-6"><a href="#" class="btn btn-sm btn-default btn-block">提交</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- single item 在售 -->
+                                    <li>
+                                        <div class="apx-item apx-item-edit">
+                                            <div class="item-pic">
+                                                <img src="/images/slider01.jpg" alt="" class="img-responsive">
+                                            </div>
+                                            <div class="item-cnt clearfix">
+                                                <div class="item-cnt-detail">
+                                                    <div class="item-cnt-title">米其林米其林米其林米其林米其林米其林米其林米其林米其林米其林</div>
+                                                    <div class="clearfix">
+                                                        <div class="pull-left">
+                                                            <strong>¥129.00</strong>
+                                                        </div>
+                                                        <div class="pull-right">
+                                                            <strong>状态: 未售</strong>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row btn-row">
+                                                    <div class="col-xs-6"><a href="#" class="btn btn-default btn-block">修改商品</a></div>
+                                                    <div class="col-xs-6"><a href="javascript:void(0)" class="btn btn-default btn-block J_edit_product_order">修改状态</a></div>
+                                                    <div class="edit-order-box">
+                                                        <div class="col-xs-6 form-group-sm">
+                                                            <select id="brand" class="form-control ">
+                                                            <option>上架</option>
+                                                            <option>下架</option>
+                                                        </select>
+                                                        </div>
+                                                        <div class="col-xs-6"><a href="#" class="btn btn-sm btn-default btn-block">提交</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- single item 在售 -->
+                                    <li>
+                                        <div class="apx-item apx-item-edit">
+                                            <div class="item-pic">
+                                                <img src="/images/slider01.jpg" alt="" class="img-responsive">
+                                            </div>
+                                            <div class="item-cnt clearfix">
+                                                <div class="item-cnt-detail">
+                                                    <div class="item-cnt-title">米其林米其林米其林米其林米其林米其林米其林米其林米其林米其林</div>
+                                                    <div class="clearfix">
+                                                        <div class="pull-left">
+                                                            <strong>¥129.00</strong>
+                                                        </div>
+                                                        <div class="pull-right">
+                                                            <strong>状态: 未售</strong>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row btn-row">
+                                                    <div class="col-xs-6"><a href="#" class="btn btn-default btn-block">修改商品</a></div>
+                                                    <div class="col-xs-6"><a href="javascript:void(0)" class="btn btn-default btn-block J_edit_product_order">修改状态</a></div>
+                                                    <div class="edit-order-box">
+                                                        <div class="col-xs-6 form-group-sm">
+                                                            <select id="brand" class="form-control ">
+                                                            <option>上架</option>
+                                                            <option>下架</option>
+                                                        </select>
+                                                        </div>
+                                                        <div class="col-xs-6"><a href="#" class="btn btn-sm btn-default btn-block">提交</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- single item 在售 -->
+                                    <li>
+                                        <div class="apx-item apx-item-edit">
+                                            <div class="item-pic">
+                                                <img src="/images/slider01.jpg" alt="" class="img-responsive">
+                                            </div>
+                                            <div class="item-cnt clearfix">
+                                                <div class="item-cnt-detail">
+                                                    <div class="item-cnt-title">米其林米其林米其林米其林米其林米其林米其林米其林米其林米其林</div>
+                                                    <div class="clearfix">
+                                                        <div class="pull-left">
+                                                            <strong>¥129.00</strong>
+                                                        </div>
+                                                        <div class="pull-right">
+                                                            <strong>状态: 未售</strong>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row btn-row">
+                                                    <div class="col-xs-6"><a href="#" class="btn btn-default btn-block">修改商品</a></div>
+                                                    <div class="col-xs-6"><a href="javascript:void(0)" class="btn btn-default btn-block J_edit_product_order">修改状态</a></div>
+                                                    <div class="edit-order-box">
+                                                        <div class="col-xs-6 form-group-sm">
+                                                            <select id="brand" class="form-control ">
+                                                            <option>上架</option>
+                                                            <option>下架</option>
+                                                        </select>
+                                                        </div>
+                                                        <div class="col-xs-6"><a href="#" class="btn btn-sm btn-default btn-block">提交</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- single item 在售 -->
+                                    <li>
+                                        <div class="apx-item apx-item-edit">
+                                            <div class="item-pic">
+                                                <img src="/images/slider01.jpg" alt="" class="img-responsive">
+                                            </div>
+                                            <div class="item-cnt clearfix">
+                                                <div class="item-cnt-detail">
+                                                    <div class="item-cnt-title">米其林米其林米其林米其林米其林米其林米其林米其林米其林米其林</div>
+                                                    <div class="clearfix">
+                                                        <div class="pull-left">
+                                                            <strong>¥129.00</strong>
+                                                        </div>
+                                                        <div class="pull-right">
+                                                            <strong>状态: 未售</strong>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row btn-row">
+                                                    <div class="col-xs-6"><a href="#" class="btn btn-default btn-block">修改商品</a></div>
+                                                    <div class="col-xs-6"><a href="javascript:void(0)" class="btn btn-default btn-block J_edit_product_order">修改状态</a></div>
+                                                    <div class="edit-order-box">
+                                                        <div class="col-xs-6 form-group-sm">
+                                                            <select id="brand" class="form-control ">
+                                                            <option>上架</option>
+                                                            <option>下架</option>
+                                                        </select>
+                                                        </div>
+                                                        <div class="col-xs-6"><a href="#" class="btn btn-sm btn-default btn-block">提交</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- single item 在售 -->
+                                    <li>
+                                        <div class="apx-item apx-item-edit">
+                                            <div class="item-pic">
+                                                <img src="/images/slider01.jpg" alt="" class="img-responsive">
+                                            </div>
+                                            <div class="item-cnt clearfix">
+                                                <div class="item-cnt-detail">
+                                                    <div class="item-cnt-title">米其林米其林米其林米其林米其林米其林米其林米其林米其林米其林</div>
+                                                    <div class="clearfix">
+                                                        <div class="pull-left">
+                                                            <strong>¥129.00</strong>
+                                                        </div>
+                                                        <div class="pull-right">
+                                                            <strong>状态: 未售</strong>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row btn-row">
+                                                    <div class="col-xs-6"><a href="#" class="btn btn-default btn-block">修改商品</a></div>
+                                                    <div class="col-xs-6"><a href="javascript:void(0)" class="btn btn-default btn-block J_edit_product_order">修改状态</a></div>
+                                                    <div class="edit-order-box">
+                                                        <div class="col-xs-6 form-group-sm">
+                                                            <select id="brand" class="form-control ">
+                                                            <option>上架</option>
+                                                            <option>下架</option>
+                                                        </select>
+                                                        </div>
+                                                        <div class="col-xs-6"><a href="#" class="btn btn-sm btn-default btn-block">提交</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- single item 在售 -->
+                                    <li>
+                                        <div class="apx-item apx-item-edit">
+                                            <div class="item-pic">
+                                                <img src="/images/slider01.jpg" alt="" class="img-responsive">
+                                            </div>
+                                            <div class="item-cnt clearfix">
+                                                <div class="item-cnt-detail">
+                                                    <div class="item-cnt-title">米其林米其林米其林米其林米其林米其林米其林米其林米其林米其林</div>
+                                                    <div class="clearfix">
+                                                        <div class="pull-left">
+                                                            <strong>¥129.00</strong>
+                                                        </div>
+                                                        <div class="pull-right">
+                                                            <strong>状态: 未售</strong>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row btn-row">
+                                                    <div class="col-xs-6"><a href="#" class="btn btn-default btn-block">修改商品</a></div>
+                                                    <div class="col-xs-6"><a href="javascript:void(0)" class="btn btn-default btn-block J_edit_product_order">修改状态</a></div>
+                                                    <div class="edit-order-box">
+                                                        <div class="col-xs-6 form-group-sm">
+                                                            <select id="brand" class="form-control ">
+                                                            <option>上架</option>
+                                                            <option>下架</option>
+                                                        </select>
+                                                        </div>
+                                                        <div class="col-xs-6"><a href="#" class="btn btn-sm btn-default btn-block">提交</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- single item 在售 -->
+                                    <li>
+                                        <div class="apx-item apx-item-edit">
+                                            <div class="item-pic">
+                                                <img src="/images/slider01.jpg" alt="" class="img-responsive">
+                                            </div>
+                                            <div class="item-cnt clearfix">
+                                                <div class="item-cnt-detail">
+                                                    <div class="item-cnt-title">米其林米其林米其林米其林米其林米其林米其林米其林米其林米其林</div>
+                                                    <div class="clearfix">
+                                                        <div class="pull-left">
+                                                            <strong>¥129.00</strong>
+                                                        </div>
+                                                        <div class="pull-right">
+                                                            <strong>状态: 未售</strong>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row btn-row">
+                                                    <div class="col-xs-6"><a href="#" class="btn btn-default btn-block">修改商品</a></div>
+                                                    <div class="col-xs-6"><a href="javascript:void(0)" class="btn btn-default btn-block J_edit_product_order">修改状态</a></div>
+                                                    <div class="edit-order-box">
+                                                        <div class="col-xs-6 form-group-sm">
+                                                            <select id="brand" class="form-control ">
+                                                            <option>上架</option>
+                                                            <option>下架</option>
+                                                        </select>
+                                                        </div>
+                                                        <div class="col-xs-6"><a href="#" class="btn btn-sm btn-default btn-block">提交</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- single item 在售 -->
+                                    <li>
+                                        <div class="apx-item apx-item-edit">
+                                            <div class="item-pic">
+                                                <img src="/images/slider01.jpg" alt="" class="img-responsive">
+                                            </div>
+                                            <div class="item-cnt clearfix">
+                                                <div class="item-cnt-detail">
+                                                    <div class="item-cnt-title">米其林米其林米其林米其林米其林米其林米其林米其林米其林米其林</div>
+                                                    <div class="clearfix">
+                                                        <div class="pull-left">
+                                                            <strong>¥129.00</strong>
+                                                        </div>
+                                                        <div class="pull-right">
+                                                            <strong>状态: 未售</strong>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row btn-row">
+                                                    <div class="col-xs-6"><a href="#" class="btn btn-default btn-block">修改商品</a></div>
+                                                    <div class="col-xs-6"><a href="javascript:void(0)" class="btn btn-default btn-block J_edit_product_order">修改状态</a></div>
+                                                    <div class="edit-order-box">
+                                                        <div class="col-xs-6 form-group-sm">
+                                                            <select id="brand" class="form-control ">
+                                                            <option>上架</option>
+                                                            <option>下架</option>
+                                                        </select>
+                                                        </div>
+                                                        <div class="col-xs-6"><a href="#" class="btn btn-sm btn-default btn-block">提交</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <!-- pagination -->
+                            <ul class="pagination pagination-sm">
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><span>...</span></li>
+                                <li><a href="#">10</a></li>
+                            </ul>
+                            <div class="pagination-info">
+                                <span>共100页，到第<input type="text" maxlength="3">页</span>
+                                <a href="#" class="btn btn-danger btn-sm">确认</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="product_off">
+                    ...
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- main area start -->
+
+@@include('footer_admin.inc')
+<script>
+    $(function () {
+        var scrolls = [];
+        $('.iscroll_container').each(function () {
+            scrolls.push(new IScroll(this, {
+                mouseWheel: true,
+                scrollbars: true,
+                scrollbars: 'custom'
+            }))
+        })
+    })
+
+</script>

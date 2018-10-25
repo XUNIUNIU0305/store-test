@@ -1,0 +1,61 @@
+@@include('head.inc')
+<style type="text/css">
+	main.container {
+		background-color: #fff;
+	}
+</style>
+<main class="container">
+	<div class="mobile-register-update">
+        <div class="logo"></div>
+        <div class="hr-split"></div>
+		<ul class="register-form">
+            <li>
+                <label for="reg_code">注册码</label>
+                <input type="text" id="reg_code" placeholder="请输入注册码">
+            </li>
+            <li>
+                <label for="pwd">设置密码</label>
+                <input type="password" id="pwd" placeholder="请设置新密码">
+            </li>
+            <li>
+                <label for="pwd_confirm">确认密码</label>
+                <input type="password" id="pwd_confirm" placeholder="请确认密码">
+            </li>
+            <li>
+                <label for="location">选择地区</label>
+                <div class="cascade-location">
+                    <span>
+                        <select>
+                            <option>内蒙古自治州</option>
+                        </select>
+                    </span>
+                    <span>
+                        <select>
+                            <option>内蒙古自治州</option>
+                        </select>
+                    </span>
+                    <span>
+                        <select>
+                            <option>内蒙古自治州</option>
+                        </select>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <label for="mail">邮箱地址</label>
+                <input type="text" id="mail" placeholder="请输入邮箱">
+            </li>
+            <li class="mobile-input">
+                <label for="mobile">手机号</label>
+                <input type="text" id="mobile" placeholder="请输入手机号">
+                <a href="javascript:void(0)" class="valid-btn">获取验证码</a>
+            </li>
+            <li>
+                <label for="valid">验证码</label>
+                <input type="text" id="valid" placeholder="请输入注册码">
+            </li>
+        </ul>
+        <a href="javascript:void(0)" class="register-btn">立即注册</a>
+	</div>
+</main>
+@@include('footer.inc')

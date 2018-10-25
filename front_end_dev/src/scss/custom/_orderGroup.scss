@@ -1,0 +1,299 @@
+$red: #eb2f2f;
+.custom-order-group-main {
+    .nav-tabs {
+        margin: 30px 0;
+        border-bottom: 3px solid $red;
+        li {
+            margin-bottom: 0;
+            text-align: center;
+            &.active {
+                a {
+                    border: 0;
+                    background: $red;
+                    color: #fff;
+                }
+            }
+            a {
+                min-width: 100px;
+                line-height: 1;
+                height: 34px;
+                background: #ffe9cc;
+                border: 0;
+                margin-right: 20px;
+                &:focus {
+                    background-color: $red;
+                }
+            }
+        }
+    }
+    padding: 0 20px;
+    background: #fff;
+    overflow: hidden;
+    min-height: 750px;
+    color: #333;
+    .order-title-box {
+        >table {
+            margin-top: 10px;
+            td {
+                font-weight: bold;
+            }
+        }
+        .sort-time {
+            background-color: $red;
+            a {
+                color: #fff;
+            }
+        }
+    }
+    .order-group-list {
+        .table {
+            font-size: 12px;
+            thead {
+                tr {
+                    color: #999;
+                    background: #f6f6f6;
+                }
+                span:not([class^='col-']) {
+                    margin-right: 34px;
+                }
+                .text-blue {
+                    color: #1f66d1;
+                }
+            }
+            .media {
+                font-size: 13px;
+                .list-unstyled {
+                    margin-bottom: 0;
+                    font-size: 0;
+                    li {
+                        display: inline-block;
+                        font-size: 12px;
+                        margin-right: 12px;
+                    }
+                }
+                .media-heading {
+                    cursor: pointer;
+                    &:hover {
+                        color: $red;
+                    }
+                }
+            }
+            .media-left img {
+                width: 87px;
+                max-width: none;
+                max-height: 87px;
+            }
+            .h4 {
+                margin: 0;
+            }
+            .text-default {
+                color: #333;
+            }
+            td {
+                line-height: 2;
+                vertical-align: middle;
+            }
+            .no-border {
+                border: 0;
+            }
+
+            .group-buy-info {
+                display: flex;
+                align-items: center;
+                text-align: left;
+                margin: 10px 0;
+                position: relative;
+                .info-person {
+                    flex: 0 0 515px;
+                }
+                .head-img {
+                    display: flex;
+                    margin-left: 20px;
+                    span {
+                        display: inline-block;
+                        width: 48px;
+                        height: 48px;
+                        border: 1px $red solid;
+                        border-radius: 50px;
+                        background: url('/images/new_icon.png') no-repeat center/48px 48px;
+                        position: relative;
+                        &:nth-child(1) {
+                            z-index: 5;
+                            &::before {
+                                content: '团长';
+                                font-size: 12px;
+                                position: absolute;
+                                left: -12px;
+                                top: -5px;
+                                color: #fff;
+                                padding: 0 5px;
+                                border-radius: 50px;
+                                background-color: $red;
+                            }
+                        }
+                        &:nth-child(2) {
+                            left: -10px;
+                            z-index: 4;
+                        }
+                        &:nth-child(3) {
+                            left: -20px;
+                            z-index: 3;
+                        }
+                        &:nth-child(4) {
+                            left: -30px;
+                            z-index: 2;
+                        }
+                        &:nth-child(5) {
+                            left: -40px;
+                            z-index: 1;
+                        }
+                        &.none {
+                            border-style: dashed;
+                            background-image: none;
+                            &::before {
+                                content: '?';
+                                font-size: 30px;
+                                color: $red;
+                                position: absolute;
+                                left: 15px;
+                                top: -8px;
+                            }
+                        }
+                    }
+                }
+                .end-time {
+                    margin: 10px 0 0 15px;
+                }
+                .info-address {
+                    p {
+                        margin: 0;
+                    }
+                }
+                .info-detail {
+                    position: absolute;
+                    left: 240px;
+                    top: 0;
+                    background-color: #fff;
+                    border: 1px solid #e3e4e5;
+                    z-index: 9;
+                    box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.1);
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        left: -8px;
+                        top: 12px;
+                        width: 15px;
+                        height: 15px;
+                        background-color: #fff;
+                        border-left: 1px solid #e3e4e5;
+                        border-bottom: 1px solid #e3e4e5;
+                        transform: rotate(45deg);
+                        z-index: 11;
+                    }
+                    ul {
+                        width: 350px;
+                        height: 390px;
+                        overflow: auto;
+                    }
+                    li {
+                        display: flex;
+                        margin: 10px 20px;
+                        padding: 10px 0;
+                        border-bottom: 1px dashed #e3e4e5;
+                        .img-box {
+                            flex: 0 0 50px;
+                            height: 50px;
+                            border: 1px solid $red;
+                            border-radius: 50px;
+                            margin-right: 10px;
+                            padding: 1px;
+                            img {
+                                width: 48px;
+                                height: 48px;
+                                border-radius: 100px;
+                            }
+                        }
+                        >div {
+                            flex: 1;
+                        }
+                        p {
+                            margin: 0;
+                        }
+                        .name {
+                            font-size: 14px;
+                            font-weight: bold;
+                        }
+                        &:first-child {
+                            .img-box {
+                                position: relative;
+                                &::before {
+                                    content: '团长';
+                                    position: absolute;
+                                    left: -10px;
+                                    top: -5px;
+                                    color: #fff;
+                                    background-color: $red;
+                                    padding: 0 5px;
+                                    border-radius: 50px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        // 再付款按钮
+        .acc-pay-again {
+            position: relative;
+            width: 64px;
+            height: 22px;
+            margin: 0 auto;
+            >a {
+                display: block;
+                border: 1px solid #cf4d44;
+                color: #cf4d44;
+                line-height: 20px;
+                height: 22px;
+                background: #fff;
+                border-bottom-color: #fff;
+                position: relative;
+                z-index: 1;
+                &.collapsed {
+                    border-bottom-color: #cf4d44;
+                    i {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+            i {
+                margin-left: 2px;
+                transition: transform .2s linear;
+            }
+            .collapse-box {
+                box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+                position: absolute;
+                top: 21px;
+                right: 0px;
+                background: #fff; // padding-left: 36px;
+                text-align: left;
+                width: 130px;
+                border: 1px solid #cf4d44;
+                .radio {
+                    margin: 12px 0 0 30px;
+                    z-index: 2;
+                }
+                .input-group-btn {
+                    display: block;
+                    margin: 16px auto 15px;
+                    width: auto;
+                    text-align: center;
+                    .btn {
+                        border-radius: 2px;
+                        margin: 0 4px;
+                    }
+                }
+            }
+        }
+    }
+}

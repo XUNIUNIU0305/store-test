@@ -1,0 +1,346 @@
+@@include('head.inc')
+<main class="container">
+    <div class="wechat-buy-film">
+        <!--carousel-->
+        <div id="slide" class="slide">
+            <ul>
+                <li>
+                    <a href="#"><img src="/images/film/tianyu1980.jpg"></a>
+                </li>
+            </ul>
+            <div class="dot">
+                <!-- <span class="cur"></span> -->
+            </div>
+        </div>
+        <div class="wechat-commodity">
+            <div class="commodity-title">
+                <ul>
+                    <li>1980天御特效护眼护肤功能膜</li>
+                    <li>在具有护眼护肤的特效功能的同时，沿袭了传统膜隔热、防爆、防眩等基本功能。</li>
+                    <li>￥1980</li>
+                </ul>
+            </div>
+            <div class="commodity-modal">
+                <div class="modal-title">
+                    <span>售价参考</span>
+                    <span id="J_watch_price">点击查看</span>
+                </div>
+                <div class="modal-title">
+                    <span>系数选定参考</span>
+                    <span id="J_watch_type">点击查看</span>
+                </div>
+            </div>
+            <div class="commodity-body">
+                <div class="commodity-select">
+                    <span>选择车辆施工部位</span>
+                    <span>请选择</span>
+                </div>
+                <div class="car-selected">
+                    <p>已选择：<span>1.0系数</span><span class="right">x1</span></p>
+                    <p class="price">￥1274</p>
+                </div>
+                <div class="car-selected">
+                    <p>已选择：<span>1.0系数</span><span class="right">x1</span></p>
+                    <p class="price">￥1274</p>
+                </div>
+            </div>
+            <div class="commodity-border">
+                <p class="title">选择收货地址</p>
+                <div class="detail">
+                    <div class="top">
+                        <span class="default">默认</span>
+                        <span>收货人：<span>赵二义</span></span>
+                        <span class="mobile">1874565415</span>
+                    </div>
+                    <p class="address">收货地址：<span>上海市 宝山区 三门路</span></p>
+                </div>
+            </div>
+            <div class="commodity-contrast">
+                <p class="title">选择支付方式</p>
+                <ul>
+                    <li>
+                        <p>余额支付<br><small class="yue">余额支付：￥<span id="J_account_balance">0.00</span></small></p>
+                        <i></i>
+                    </li>
+                    <li class="actived">
+                        <p>微信支付<br><small class="wechat_pay">微信安全支付</small></p>
+                        <i></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav class="order-info">
+            <div class="total">共计<span>0</span>件</div>
+            <div>合计：￥<span>0.00</span></div>
+            <a href="#" class="btn">确认支付</a>
+        </nav>
+    </div>
+</main>
+<!-- 施工部位弹窗 -->
+<div id="maskLayers" class="maskLayers">
+    <div class="box">
+        <div class="items">
+            <div class="title">产品编号：<span>1</span><span class="close">删除</span></div>
+            <ul class="item">
+                <li>前档<span>请选择前档</span></li>
+                <li>后档<span>请选择后档</span></li>
+                <li>左前档<span>请选择左前档</span></li>
+                <li>右前档<span>请选择右前档</span></li>
+                <li>左后档<span>请选择左后档</span></li>
+                <li>右后档<span>请选择右后档</span></li>
+            </ul>
+            <div class="remark">
+                <div class="label">1980天御特效护眼护肤功能膜</div>
+                <textarea placeholder="请告诉我们特殊要求..."></textarea>
+            </div>
+        </div>
+        <div class="items">
+            <div class="title">产品编号：<span>2</span></div>
+            <ul class="item">
+                <li>前档<span>请选择前档</span></li>
+                <li>后档<span>请选择后档</span></li>
+                <li>左前档<span>请选择左前档</span></li>
+                <li>右前档<span>请选择右前档</span></li>
+                <li>左后档<span>请选择左后档</span></li>
+                <li>右后档<span>请选择右后档</span></li>
+            </ul>
+            <div class="remark">
+                <div class="label">1980天御特效护眼护肤功能膜</div>
+                <textarea placeholder="请告诉我们特殊要求..."></textarea>
+            </div>
+        </div>
+    </div>
+    <p class="addon">新添加一个</p>
+    <a href="" class="btn submit">提交</a>
+</div>
+<!-- 型号选择弹窗 -->
+<div class="mask-container mask-fixed" id="mask_select_payment">
+    <div class="mask-bg"></div>
+    <div class="wechat-position-select-container">
+        <div class="title">选择</div>
+        <ul>
+            <li><span>Z8</span></li>
+            <li><span>G30(深)</span></li>
+            <li><span>G30(深)</span></li>
+            <li><span>G30(深)</span></li>
+            <li><span>G30(深)</span></li>
+            <li><span>G30(深)</span></li>
+            <li><span>G30(深)</span></li>
+        </ul>
+        <button class="btn">关闭</button>
+    </div>
+</div>
+<!-- 售价参考弹窗 -->
+<div class="mask-container mask-fixed" id="modal_price">
+    <div class="mask-bg"></div>
+    <div class="wechat-price-modal">
+        <div class="title">售价参考</div>
+        <table>
+            <thead>
+                <tr>
+                    <td>系数</td>
+                    <td>报价</td>
+                    <td>最低售价</td>
+                    <td>门店结算价格</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.00</td>
+                    <td>￥2480</td>
+                    <td>￥1980</td>
+                    <td>￥1180</td>
+                </tr>
+                <tr>
+                    <td>1.08</td>
+                    <td>￥2678</td>
+                    <td>￥2138</td>
+                    <td>￥1274</td>
+                </tr>
+                <tr>
+                    <td>1.12</td>
+                    <td>￥2778</td>
+                    <td>￥2218</td>
+                    <td>￥1322</td>
+                </tr>
+                <tr>
+                    <td>1.20</td>
+                    <td>￥2976</td>
+                    <td>￥2376</td>
+                    <td>￥1416</td>
+                </tr>
+                <tr>
+                    <td>2.00</td>
+                    <td>￥4960</td>
+                    <td>￥3960</td>
+                    <td>￥2360</td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="btn" id="J_price_close">关闭</button>
+    </div>
+</div>
+
+<div class="car-type-modal" id="J_modal_type">
+    <div class="title"><span id="J_type_close"></span>系数选定参考</div>
+    <div class="detail">
+        <h3>具体详情请自行查阅</h3>
+        <h3>《SUV等特殊车型系数选定参考》</h3>
+        <p>注：1、以上车型的划分是根据具体用料、施工难度、风险系数归类划分！</p>
+        <p>2、特斯拉modelX先按全车1.08再加一个全档的方式计算！</p>
+        <p>3、其他未罗列车型请咨询督导！</p>
+    </div>
+    <div class="table">
+        <p class="table-title">*以下图标只是举例说明参考</p>
+        <table>
+            <thead>
+                <tr>
+                    <td colspan="2">1.08系数-中大型SUV举例</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>品牌</td>
+                    <td>系列</td>
+                </tr>
+                <tr>
+                    <td>宝马</td>
+                    <td>X5/X6/X5M/X6M</td>
+                </tr>
+                <tr>
+                    <td>奔驰</td>
+                    <td>GLK</td>
+                </tr>
+                <tr>
+                    <td>保时捷</td>
+                    <td>卡宴</td>
+                </tr>
+                <tr>
+                    <td>北京汽车</td>
+                    <td>BJ80</td>
+                </tr>
+                <tr>
+                    <td>北京幻速</td>
+                    <td>S3L</td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <td colspan="2">1.12系数-七座MPV/大型SUV举例</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>品牌</td>
+                    <td>系列</td>
+                </tr>
+                <tr>
+                    <td>奥迪</td>
+                    <td>Q7</td>
+                </tr>
+                <tr>
+                    <td>奔驰</td>
+                    <td>M/ML/G/GL/GLC/GLE/GLS/R级</td>
+                </tr>
+                <tr>
+                    <td>巴博斯</td>
+                    <td>M级/G级/GL</td>
+                </tr>
+                <tr>
+                    <td>北汽幻速</td>
+                    <td>H2/H2V/H3/H3F</td>
+                </tr>
+                <tr>
+                    <td>北汽威旺</td>
+                    <td>M50F/M20/M30/M35</td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <td colspan="2">1.2系数-七座MPV/大型SUV举例</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>品牌</td>
+                    <td>系列</td>
+                </tr>
+                <tr>
+                    <td>北汽威旺</td>
+                    <td>205</td>
+                </tr>
+                <tr>
+                    <td>北汽制造</td>
+                    <td>战旗/骑士</td>
+                </tr>
+                <tr>
+                    <td>别克</td>
+                    <td>GL8</td>
+                </tr>
+                <tr>
+                    <td>本田</td>
+                    <td>本田</td>
+                </tr>
+                <tr>
+                    <td>比亚迪</td>
+                    <td>商</td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <td colspan="2">1.5系数-房车举例</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>品牌</td>
+                    <td>系列</td>
+                </tr>
+                <tr>
+                    <td>奔驰</td>
+                    <td>V级/唯雅诺</td>
+                </tr>
+                <tr>
+                    <td>北汽幻速</td>
+                    <td>H6</td>
+                </tr>
+                <tr>
+                    <td>北汽威旺</td>
+                    <td>307</td>
+                </tr>
+                <tr>
+                    <td>北汽制造</td>
+                    <td>战旗加长版</td>
+                </tr>
+                <tr>
+                    <td>长安</td>
+                    <td>金牛星/V5/睿行M80/长安星光</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@@include('footer.inc')
+<script type="text/javascript">
+    $(function() {
+        $('#J_watch_price').on('click', function() {
+            $('#modal_price').addClass('in')
+        })
+        $('#J_price_close').on('click' ,function() {
+            $('#modal_price').removeClass('in')
+        })
+        $('#J_watch_type').on('click', function() {
+            $('#J_modal_type').addClass('in')
+        })
+        $('#J_type_close').on('click', function() {
+            $('#J_modal_type').removeClass('in')
+        })
+    })
+</script>

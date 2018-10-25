@@ -1,0 +1,185 @@
+.admin-audit-qualify-container{
+    font-size: 12px;
+    padding: 20px 0; // for active page
+    color: #333;
+    .datepicker-nav {
+        // nav
+        line-height: 46px;
+        padding: 0 26px;
+        font-size: 14px;
+        background: #fce7e6;
+        margin-bottom: 20px;
+        border-bottom: 0;
+        .pull-right {
+            padding: 8px 0;
+            line-height: 1;
+            .form-control {
+                width: 120px;
+                display: inline-block;
+            }
+            >div {
+                display: none;
+                >span {
+                    margin: 0 8px;
+                }
+                &.in {
+                    display: inline-block;
+                }
+                >.btn-default {
+                    margin-left: 8px;
+                }
+            }
+            .input-group {
+                float: none;
+                vertical-align: middle;
+                display: inline-table;
+                max-width: 150px;
+                &:last-child {
+                    margin-left: 4px;
+                }
+                .form-control {
+                    height: 34px;
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+    .form-horizontal {
+        // margin: 20px 50px;
+        .form-group {
+            margin-left: 0;
+        }
+    }
+    .form-group {
+        margin-bottom: 8px;
+        > label {
+            font-size: 14px;
+            color: #666;
+            font-weight: 400;
+            text-align: left;
+            line-height: 32px;
+            margin-bottom: 0;
+            position: relative;
+            white-space: nowrap;
+            // &:before{
+            //     content: '*';
+            //     position: absolute;
+            //     left: 0;
+            //     color: $brand-danger;
+            // }
+            &.optional{
+                &:before {
+                    content: none;
+                }
+            }
+        }
+        .btn-default.btn-block {
+            background: #eee;
+        }
+    }
+    .img-upload-box {
+        .lint {
+            position: absolute;
+            z-index: 1;
+            bottom: -32px;
+            left: 0;
+            right: 0;
+            line-height: 40px;
+            text-align: center;
+            color: #808080;
+        }
+        margin: 0 4px 20px 0;
+        position: relative;
+        border-radius: 8px;
+        border: 1px solid #b3b3b3;
+        cursor: pointer;
+        display: inline-block;
+        vertical-align: middle;
+        img {
+            display: block;
+            background: #fff;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+    }
+    input[type="file"] {
+        position: absolute;
+        clip: rect(0, 0, 0, 0);
+        pointer-events: none;
+    }   
+    .btn-row{
+        margin-top: 80px;
+        text-align: center;
+        .btn{
+            margin:  0 20px;
+            min-width: 150px;
+        }
+    }
+    .info-title {
+        background: #d9d9d9;
+        font-size: 16px;
+        color: #333;
+        text-align: center;
+        font-weight: 700;
+        line-height: 38px;
+        p {
+            margin: 0;
+        }
+    }
+    .personal-info {
+        .module-title {
+            font-size: 14px;
+            font-weight: 700;
+            margin: 20px 0 5px 30px;
+        }
+        .form-group {
+            margin-left: 50px;
+        }
+    }
+    .watch-more {
+        text-align: right;
+        font-size: 14px;
+        margin-right: 70px;
+        a {
+            color: #df483d;
+            font-weight: 700;
+        }
+    }
+    .wechat-info {
+        .wechat-box {
+            margin-top: 10px;
+            margin-left: 30px;
+            display: flex;
+            >img {
+                width: 76px;
+                height: 76px;
+            }
+            .text {
+                flex: 0 0 60%;
+                p {
+                    padding-left: 20px;
+                    margin: 8px;
+                    display: inline-block;
+                    line-height: 18px;
+                    &:nth-child(1) {
+                        font-size: 18px;
+                        font-weight: 700;
+                        padding-right: 28px;
+                        &.man {
+                            background: url('/images/male.png') no-repeat right center;
+                            background-size: 18px;
+                        }
+                        &.woman {
+                            background: url('/images/famale.png') no-repeat right center;
+                            background-size: 18px;
+                        }
+                    }
+                    &:nth-child(3) {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

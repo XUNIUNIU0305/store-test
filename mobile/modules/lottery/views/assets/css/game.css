@@ -1,0 +1,456 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* share */
+body {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 750px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+* {
+  outline: 0;
+  -webkit-tap-highlight-color: transparent; }
+
+.scroll {
+  -webkit-overflow-scrolling: touch; }
+
+.mask-bg {
+  min-height: 177.86667vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  transition: opacity .2s; }
+  .mask-bg.hidden {
+    pointer-events: none;
+    opacity: 0; }
+
+* {
+  -webkit-backface-visibility: hidden; }
+
+.game-container {
+  height: 100%;
+  background: #9edceb url(/images/lottery/theme_bg.jpg) center bottom no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+  .game-container .tool-nav {
+    width: 100%;
+    height: 22.53333vw;
+    background: url(/images/lottery/tools_bg.png) center/contain no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    .game-container .tool-nav li {
+      width: 15.06667vw;
+      height: 15.46667vw;
+      background: url(/images/lottery/toos_bg_n.png) center/contain no-repeat;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: relative;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .game-container .tool-nav li.active {
+        background-image: url(/images/lottery/tool_bg_s.png); }
+        .game-container .tool-nav li.active .badge {
+          background-image: url(/images/lottery/number_s.png); }
+    .game-container .tool-nav img {
+      width: 9.6vw;
+      height: 9.6vw; }
+    .game-container .tool-nav .badge {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 5.6vw;
+      height: 5.73333vw;
+      background: url(/images/lottery/number_n.png) center/contain no-repeat;
+      line-height: 5.73333vw;
+      text-align: center;
+      font-size: 2.93333vw;
+      font-weight: 600;
+      color: #fff;
+      text-shadow: 0 0 2px #000; }
+  .game-container .figure-container {
+    width: 100%;
+    height: 88.53333vw;
+    background: url(/images/lottery/card.png) center/contain no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -60%);
+            transform: translate(-50%, -60%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .game-container .figure-container .figure {
+      width: 40vw;
+      height: 70.66667vw; }
+      .game-container .figure-container .figure.hidden {
+        display: none; }
+    .game-container .figure-container img {
+      width: 100%;
+      height: 100%; }
+    .game-container .figure-container .ani-tool {
+      position: absolute;
+      top: 8%;
+      right: 0;
+      width: 32vw;
+      height: 32vw;
+      background: transparent center/contain no-repeat;
+      -webkit-transform: translate(100%, 200px) rotate(0deg);
+              transform: translate(100%, 200px) rotate(0deg); }
+      .game-container .figure-container .ani-tool.ani-start {
+        -webkit-animation: spin-hit .8s linear forwards;
+                animation: spin-hit .8s linear forwards; }
+  .game-container .btn {
+    width: 63.46667vw;
+    height: 16vw;
+    background: url(/images/lottery/btn.png) center/contain no-repeat;
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    margin-left: -31.73333vw; }
+    .game-container .btn:active {
+      -webkit-transform: scale(1.05);
+              transform: scale(1.05); }
+  .game-container .btn-open {
+    text-indent: -100%;
+    background: url(/images/lottery/p4_btn1.png) center/contain no-repeat; }
+
+.ani-smoke.ani-start i {
+  -webkit-animation: cloud-fade .4s .4s linear forwards;
+          animation: cloud-fade .4s .4s linear forwards; }
+
+.ani-smoke i {
+  position: absolute;
+  background: transparent center/contain no-repeat;
+  opacity: 0; }
+  .ani-smoke i:nth-child(1) {
+    width: 50vw;
+    height: 28.66667vw;
+    background-image: url(/images/lottery/cloud-1.png);
+    top: 50%;
+    margin-top: -14.33333vw;
+    right: -35%;
+    -webkit-transform-origin: bottom left;
+            transform-origin: bottom left; }
+  .ani-smoke i:nth-child(2), .ani-smoke i:nth-child(4) {
+    background-image: url(/images/lottery/cloud-2.png); }
+  .ani-smoke i:nth-child(2) {
+    width: 45.33333vw;
+    height: 23.46667vw;
+    top: 15%;
+    left: 50%;
+    margin-left: -22.66667vw; }
+  .ani-smoke i:nth-child(3) {
+    width: 46.13333vw;
+    height: 27.46667vw;
+    background-image: url(/images/lottery/cloud-3.png);
+    top: 55%;
+    margin-top: -13.73333vw;
+    left: -15%;
+    -webkit-transform-origin: top right;
+            transform-origin: top right; }
+  .ani-smoke i:nth-child(4) {
+    width: 37.33333vw;
+    height: 17.86667vw;
+    bottom: 22%;
+    left: 70%;
+    margin-left: -20vw; }
+
+@-webkit-keyframes spin-hit {
+  0% {
+    -webkit-transform: translate(100%, 200px) rotate(0deg);
+            transform: translate(100%, 200px) rotate(0deg); }
+  50% {
+    -webkit-transform: translate(-100%, 0) rotate(-810deg);
+            transform: translate(-100%, 0) rotate(-810deg); }
+  100% {
+    -webkit-transform: translate(100%, -100px) rotate(-810deg);
+            transform: translate(100%, -100px) rotate(-810deg); } }
+
+@keyframes spin-hit {
+  0% {
+    -webkit-transform: translate(100%, 200px) rotate(0deg);
+            transform: translate(100%, 200px) rotate(0deg); }
+  50% {
+    -webkit-transform: translate(-100%, 0) rotate(-810deg);
+            transform: translate(-100%, 0) rotate(-810deg); }
+  100% {
+    -webkit-transform: translate(100%, -100px) rotate(-810deg);
+            transform: translate(100%, -100px) rotate(-810deg); } }
+
+@-webkit-keyframes cloud-fade {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 1; }
+  30% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0; } }
+
+@keyframes cloud-fade {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 1; }
+  30% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0; } }
+
+.mask-bg:not(.hidden) .mask-gift .box:before {
+  -webkit-animation: box-scale .25s .1s forwards;
+          animation: box-scale .25s .1s forwards; }
+
+.hidden {
+  display: none; }
+
+.mask-gift {
+  width: 89.46667vw;
+  height: 113.06667vw;
+  background: url(/images/lottery/p4_bg.png) center/contain no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .mask-gift .title {
+    position: absolute;
+    width: 79.06667vw;
+    height: 20vw;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: -9.09091vw;
+    background: url(/images/lottery/bg_t.png) center/contain no-repeat; }
+    .mask-gift .title:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: url(/images/lottery/p4_t.png) center/contain no-repeat; }
+  .mask-gift p {
+    font-weight: 600;
+    margin: 8% auto;
+    font-size: 4.8vw;
+    text-align: center; }
+  .mask-gift .box {
+    width: 53.06667vw;
+    height: 49.46667vw;
+    margin: 5% auto;
+    position: relative; }
+    .mask-gift .box:before, .mask-gift .box:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0; }
+    .mask-gift .box:before {
+      width: 100%;
+      height: 100%;
+      background: url(/images/lottery/p4_giftbg.png) center/contain no-repeat;
+      -webkit-transform: scale(0);
+              transform: scale(0); }
+    .mask-gift .box:after {
+      width: 32vw;
+      height: 30.66667vw;
+      margin: auto;
+      background: url(/images/lottery/gift.gif) center/contain no-repeat; }
+  .mask-gift .timeout {
+    width: 100%;
+    height: 13.33333vw;
+    text-align: center; }
+    .mask-gift .timeout img {
+      height: 100%;
+      display: inline-block; }
+
+@-webkit-keyframes box-scale {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes box-scale {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }

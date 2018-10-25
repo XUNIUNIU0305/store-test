@@ -1,0 +1,91 @@
+@@include('inc/head.inc') @@include('inc/top_nav.inc') @@include('inc/search.inc')
+<div style="height: 100vh">
+    <div class="container">
+        <form class="apx-edit-address-form form-horizontal">
+            <div class="collapse" id="collapseAddress">
+                <div class="form-group">
+                    <label class="col-xs-3 control-label">收货人：</label>
+                    <div class="col-xs-2">
+                        <input type="text" class="form-control" id="name" placeholder="收货人姓名">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-xs-3 control-label">所在地区：</label>
+                    <div class="col-xs-2 dropdown">
+                        <button class="btn btn-block btn-default dropdown-toggle" type="button" id="address_area" data-toggle="dropdown">
+                            <span>省／直辖市</span>
+                            <i class="glyphicon glyphicon-chevron-down"></i>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="address_area">
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#">北京</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#">上海</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-2 dropdown">
+                        <button class="btn btn-block btn-default dropdown-toggle" type="button" id="address_city" data-toggle="dropdown">
+                            <span>市</span>
+                            <i class="glyphicon glyphicon-chevron-down"></i>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="address_city">
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#">北京</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#">上海</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-2 dropdown">
+                        <button class="btn btn-block btn-default dropdown-toggle" type="button" id="address_district" data-toggle="dropdown">
+                            <span>区</span>
+                            <i class="glyphicon glyphicon-chevron-down"></i>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="address_district">
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#">宝山区</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#">虹口区</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-xs-3 control-label">详细地址：</label>
+                    <div class="col-xs-7">
+                        <input type="text" class="form-control" id="name" placeholder="街道门牌楼层房间号">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-xs-3 control-label">手机号码：</label>
+                    <div class="col-xs-3">
+                        <input type="text" class="form-control" id="name" placeholder="手机号">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-xs-3 control-label">邮政编码：</label>
+                    <div class="col-xs-3">
+                        <input type="text" class="form-control" id="name" placeholder="请填写6位邮政编码">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-xs-3 control-label">备注：</label>
+                    <div class="col-xs-7">
+                        <textarea type="text" class="form-control" id="name" placeholder="年"></textarea>
+                    </div>
+                </div>
+                <div class="form-group text-center">
+                    <div class="btn btn-lg btn-danger">保存收货地址</div>
+                </div>
+            </div>
+            <div class="form-group text-center">
+                <a href="#collapseAddress" data-toggle="collapse" class="btn btn-lg btn-success J_address_add">新增收货地址</a>
+            </div>
+        </form>
+    </div>
+</div>
+@@include('inc/footer.inc')

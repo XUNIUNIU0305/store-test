@@ -1,0 +1,49 @@
+.wechat-ranking-container {
+  height: 160.8vw;
+  color: #333;
+  background: url("/images/ranking/bg02.jpg") no-repeat top center;
+  background-size: 100%;
+  overflow: hidden; }
+  .wechat-ranking-container .end-time {
+    margin-top: 26.66667vw;
+    text-align: center; }
+  .wechat-ranking-container p {
+    margin: 0; }
+  .wechat-ranking-container .list-header {
+    margin: 2.66667vw 5.33333vw 0;
+    padding: 1.33333vw 0;
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center; }
+  .wechat-ranking-container .left {
+    -webkit-flex: 0 0 16vw;
+            flex: 0 0 16vw;
+    padding: 0 2.66667vw;
+    text-align: center; }
+    .wechat-ranking-container .left > span {
+      line-height: 9.6vw; }
+  .wechat-ranking-container .middle {
+    padding: 0 2.66667vw; }
+  .wechat-ranking-container .right {
+    -webkit-flex: auto;
+            flex: auto;
+    text-align: right;
+    padding-right: 2.66667vw; }
+  .wechat-ranking-container .price {
+    font-size: 4.26667vw; }
+  .wechat-ranking-container .list-body {
+    height: 105.6vw;
+    margin-top: 1.06667vw;
+    margin: 1.06667vw 5.33333vw 0;
+    background: #fff;
+    overflow-x: auto; }
+    .wechat-ranking-container .list-body .item {
+      display: -webkit-flex;
+      display: flex;
+      padding: 2.66667vw 0 1.6vw;
+      border-bottom: 0.5px solid #dedfe0; }
+      .wechat-ranking-container .list-body .item img {
+        max-width: 11.73333vw; }

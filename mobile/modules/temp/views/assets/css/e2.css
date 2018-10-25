@@ -1,0 +1,105 @@
+.time-limit-active-box {
+  background: #000032 url("/images/time_limit_active/bg1.jpg") no-repeat center top;
+  overflow: hidden;
+  background-size: 100vw auto; }
+  .time-limit-active-box .time-limit-active {
+    /* background:  url('/images/time_limit_active/bg_2.png') repeat center center; */
+    background-size: 88vw auto;
+    padding-top: 10vw;
+    margin: 36.33333vw 5vw 10vw 5vw; }
+    .box-bg {
+      /* background: url('/images/time_limit_active/bg_1.png') no-repeat center top, url('/images/time_limit_active/bg_3.png') no-repeat center bottom; */
+      background-size: 88vw auto;
+    }
+    .time-limit-active-box .time-limit-active .time-limit-nav {
+      width: 68vw;
+      height: 3.73333vw;
+      margin: 2.66667vw auto 2.66667vw;
+      padding: 0.53333vw 2.66667vw;
+      background-color: #fff;
+      border-radius: 2.66667vw; }
+      .time-limit-active-box .time-limit-active .time-limit-nav > li {
+        float: left;
+        color: #fff;
+        width: 18.13333vw;
+        height: 3.73333vw;
+        line-height: 3.73333vw;
+        font-size: 3.2vw;
+        text-align: center;
+        border-radius: 2.66667vw;
+        background-color: #A3A3A3;
+        letter-spacing: 0.26667vw;
+        cursor: pointer; }
+        .time-limit-active-box .time-limit-active .time-limit-nav > li:nth-child(2) {
+          margin: 0 6.8vw; }
+        .time-limit-active-box .time-limit-active .time-limit-nav > li.active {
+          background-color: #f90000; }
+    .time-limit-active-box .time-limit-active > div .time-limit-product {
+      padding: 0 3vw 10px; }
+      .time-limit-active-box .time-limit-active > div .time-limit-product > ul {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-justify-content: space-between;
+                justify-content: space-between; }
+        .time-limit-active-box .time-limit-active > div .time-limit-product > ul .product-item {
+          width: 41.33333vw;
+          background-color: #fff;
+          margin-top: 2vw; }
+          .time-limit-active-box .time-limit-active > div .time-limit-product > ul .product-item-cont {
+            display: inline-block; }
+            .time-limit-active-box .time-limit-active > div .time-limit-product > ul .product-item-cont > img {
+              width: 41.33333vw;
+              height: 41.33333vw; }
+          .time-limit-active-box .time-limit-active > div .time-limit-product > ul .product-item > span {
+            display: block;
+            height: 4vw;
+            text-align: center;
+            background-color: #fff;
+            padding-bottom: 1.33333vw;
+            font-size: 2.13333vw;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap; }
+          .time-limit-active-box .time-limit-active > div .time-limit-product > ul .product-item-describe {
+            color: #fff;
+            background-color: #FF0033;
+            padding: 1.06667vw 0; }
+            .time-limit-active-box .time-limit-active > div .time-limit-product > ul .product-item-describe-pic {
+              width: 8vw;
+              margin-top: 1.33333vw;
+              margin-left: 0.8vw; }
+            .time-limit-active-box .time-limit-active > div .time-limit-product > ul .product-item-describe .describe-price {
+              font-size: 2.66667vw; }
+              .time-limit-active-box .time-limit-active > div .time-limit-product > ul .product-item-describe .describe-price > span {
+                font-size: 3.46667vw;
+                font-weight: bolder; }
+            .time-limit-active-box .time-limit-active > div .time-limit-product > ul .product-item-describe .describe-purchase {
+              color: #fff;
+              float: right;
+              margin-right: 0.8vw;
+              font-weight: bolder;
+              font-size: 2.13333vw; }
+            .time-limit-active-box .time-limit-active > div .time-limit-product > ul .product-item-describe-number {
+              color: #FFACBD;
+              margin-left: 2vw;
+              margin-top: -0.53333vw; }
+              .time-limit-active-box .time-limit-active > div .time-limit-product > ul .product-item-describe-number .describe-limit {
+                color: #fff;
+                float: right;
+                margin-right: 4.8vw;
+                font-size: 1.6vw; }
+
+.return-top {
+  width: 100%;
+  height: 13.33333vw;
+  background-color: #7104AD; }
+  .return-top > a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    line-height: 13.33333vw;
+    font-size: 3.2vw;
+    letter-spacing: 0.4vw;
+    text-decoration: none; }

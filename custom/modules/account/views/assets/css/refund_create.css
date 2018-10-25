@@ -1,0 +1,141 @@
+body {
+  overflow-x: hidden; }
+
+.bg-muted {
+  background: #f2f2f2; }
+
+.table-fix {
+  table-layout: fixed; }
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.container {
+  width: 1190px;
+  max-width: none !important; }
+
+.high-lighted {
+  color: #df483d; }
+
+.custom-account-view {
+  min-height: 100vh;
+  background: #f6f6f6; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0; }
+
+.apx-after-sales-container > .btn-block {
+  width: 180px;
+  margin: 50px auto; }
+
+.apx-after-sales-container .h3 {
+  margin: 0 0 30px;
+  padding: 28px 0 10px;
+  border-bottom: 2px solid #df483d; }
+
+.apx-after-sales-container .panel {
+  border-top-color: transparent; }
+
+.apx-after-sales-container .panel-heading {
+  background: #fce7e6;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0 30px;
+  text-indent: 6px;
+  line-height: 50px;
+  position: relative; }
+  .apx-after-sales-container .panel-heading:before {
+    position: absolute;
+    content: '';
+    width: 6px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #df483d; }
+  .apx-after-sales-container .panel-heading .high-lighted {
+    color: #df483d;
+    font-weight: 400;
+    font-size: 12px; }
+
+.apx-after-sales-container .panel-body {
+  padding: 0; }
+  .apx-after-sales-container .panel-body table.table {
+    margin: 0;
+    font-size: 12px;
+    table-layout: fixed; }
+    .apx-after-sales-container .panel-body table.table .input-group-sm {
+      width: 70px;
+      margin: 0 auto 8px; }
+      .apx-after-sales-container .panel-body table.table .input-group-sm .input-group-addon {
+        border-radius: 0;
+        background: #fff;
+        padding: 2px 6px;
+        height: 22px;
+        line-height: 1;
+        cursor: pointer; }
+      .apx-after-sales-container .panel-body table.table .input-group-sm .form-control {
+        padding: 2px;
+        text-align: center;
+        height: 22px;
+        line-height: 1; }
+  .apx-after-sales-container .panel-body .media {
+    font-size: 12px; }
+    .apx-after-sales-container .panel-body .media img {
+      border: 1px solid #ccc;
+      width: 90px;
+      height: 90px; }
+    .apx-after-sales-container .panel-body .media .media-left {
+      padding: 6px 34px 6px 0; }
+  .apx-after-sales-container .panel-body form {
+    padding: 0 24px; }
+    .apx-after-sales-container .panel-body form .form-group > label {
+      line-height: 40px;
+      display: block; }
+    .apx-after-sales-container .panel-body form .form-group textarea {
+      resize: none; }
+    .apx-after-sales-container .panel-body form .form-group:first-child {
+      padding-bottom: 20px;
+      border-bottom: 1px dashed #ccc;
+      margin-bottom: 0; }
+  .apx-after-sales-container .panel-body .gallary .item {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin: 20px;
+    vertical-align: bottom;
+    overflow: hidden; }
+    .apx-after-sales-container .panel-body .gallary .item img {
+      width: 100%;
+      height: 100%; }
+    .apx-after-sales-container .panel-body .gallary .item .close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 30px;
+      height: 30px;
+      line-height: 1;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      font-weight: 100;
+      font-size: 24px; }
+  .apx-after-sales-container .panel-body .upload-btn {
+    width: 120px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    position: relative;
+    background: #fff;
+    color: #df483d; }
+    .apx-after-sales-container .panel-body .upload-btn:hover, .apx-after-sales-container .panel-body .upload-btn:focus, .apx-after-sales-container .panel-body .upload-btn:active {
+      background: #df483d;
+      color: #fff; }
+    .apx-after-sales-container .panel-body .upload-btn input {
+      position: absolute;
+      clip: rect(0, 0, 0, 0);
+      pointer-events: none; }

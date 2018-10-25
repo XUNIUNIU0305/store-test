@@ -1,0 +1,86 @@
+body {
+  overflow-x: hidden; }
+
+.bg-muted {
+  background: #f2f2f2; }
+
+.table-fix {
+  table-layout: fixed; }
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.container {
+  width: 1190px;
+  max-width: none !important; }
+
+.high-lighted {
+  color: #df483d; }
+
+.business-login {
+  background: url("/images/business/background-1.jpg") no-repeat center 156px; }
+  .business-login .business-login-title {
+    height: 156px;
+    font-size: 28px;
+    z-index: 2;
+    background-color: #fff; }
+    .business-login .business-login-title p {
+      line-height: 136px;
+      padding-top: 10px;
+      margin-left: 100px;
+      color: #144fcc;
+      padding-left: 50px;
+      background: url("/images/business/login/logo.png") no-repeat left 60px; }
+  .business-login .content {
+    height: 688px;
+    position: relative; }
+    .business-login .content .login {
+      width: 400px;
+      height: 357px;
+      background: #fff;
+      position: absolute;
+      top: 14%;
+      right: 15%; }
+      .business-login .content .login .head {
+        height: 60px;
+        background: url("/images/business/login/head.png") no-repeat center;
+        line-height: 60px;
+        font-size: 18px;
+        color: #fff;
+        font-weight: 700;
+        padding-left: 50px; }
+      .business-login .content .login .login-input {
+        margin-top: 10px; }
+        .business-login .content .login .login-input .control-label {
+          color: #ccc; }
+        .business-login .content .login .login-input .captcha-box {
+          padding: 0; }
+        .business-login .content .login .login-input .J_verify_captcha {
+          width: 60px; }
+        .business-login .content .login .login-input .login-btn {
+          background: #0080ff;
+          color: #fff; }
+          .business-login .content .login .login-input .login-btn:hover {
+            background: #0099ff; }
+          .business-login .content .login .login-input .login-btn:active {
+            background: #0063e6; }
+        .business-login .content .login .login-input .register-tip a {
+          font-size: 14px;
+          color: #0080ff;
+          text-decoration: none;
+          background: url("/images/business/login/jiantou.png") no-repeat left center;
+          padding-left: 18px; }
+        .business-login .content .login .login-input .register-tip-forget a {
+          font-size: 14px;
+          color: #0080ff;
+          text-decoration: none; }
+  .business-login .footer {
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 2;
+    background: #fff;
+    padding-top: 20px; }

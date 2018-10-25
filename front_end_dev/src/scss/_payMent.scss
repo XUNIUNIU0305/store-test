@@ -1,0 +1,57 @@
+// 支付方式
+.apx-cart-pay-box {
+    border: 1px solid #ddd;
+    padding: 0 33px;
+    margin-bottom: 30px;
+    .media {
+        margin: 0;
+        border-bottom: 1px solid #ccc;
+        padding-top: 12px;
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+    a {
+        color: inherit;
+    }
+    .media-left {
+        margin-right: 30px;
+        img {
+            margin: 0 auto 14px;
+            display: block;
+            width: 42px;
+            height: 42px;
+        }
+    }
+    .media-body {
+        padding-left: 20px;
+        input[type=radio] {
+            position: absolute;
+            clip: rect(0, 0, 0, 0);
+            pointer-events: none;
+        }
+        label {
+            margin-top: 6px;
+            margin-right: 20px;
+        }
+        .btn-sm:not(.btn-link) {
+            background: #e6e6e6;
+            border-radius: 0;
+            display: block;
+            width: 100px;
+            &:hover,
+            &:focus,
+            &.active,
+            &:active {
+                background: #cf4d44;
+                color: #fff;
+            }
+        }
+        .flex-box {
+            display: flex;
+        }
+    }
+    .media-heading {
+        margin: 14px 0;
+    }
+}

@@ -1,0 +1,115 @@
+@@include('inc/head.inc') @@include('inc/top_nav.inc') @@include('inc/search.inc')
+<div class="custom-account-view">
+    <div class="container">
+        <!-- no-head 隐藏账户中心头部 -->
+        <div class="custom-account-container">
+            @@include('inc/account_menu.inc')
+            <div class="custom-acc-main">
+                <div class="top-title">绑定手机</div>
+                <div class="br"></div>
+                <div class="acc-bind-mobile">
+                    <div class="form-box hidden">
+                        <div class="bind-status clearfix">
+                            <span class="pull-left">绑定手机</span>
+                            <span class="pull-right">完成</span>
+                        </div>
+                        <div class="form-container">
+                            <div class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-xs-2 control-label">Email</label>
+                                    <div class="col-xs-10">
+                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-xs-2 control-label">Password</label>
+                                    <div class="col-xs-7">
+                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <span class="btn btn-default">获取验证码</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-offset-4 col-xs-8">
+                                        <button type="submit" class="btn btn-default">Sign in</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bind-success hidden">
+                            <div class="text-center">
+                                <img src="/images/new-account/bind/succeed.png" alt="">
+                                <p class="h2">手机绑定成功！</p>
+                                <p class="jump">
+                                    点击跳转至
+                                    <a href="">手机绑定</a>
+                                    主页
+                                </p>
+                            </div>
+                        </div>
+                        <div class="footer-tip">
+                            <p class="h3">为什么绑定手机？</p>
+                            <p class="h4">为保障您的账户信息安全，绑定手机后将提高您的账户安全系数！</p>
+                        </div>
+                    </div>
+                    <div class="bind-over text-center hidden">
+                        <img src="/images/new-account/bind/iPhone.png" alt="">
+                        <p>
+                            已绑定手机号：
+                            <span>133****3333</span>
+                            <a href="" class="edit">修改</a>
+                        </p>
+                    </div>
+                    <div class="change-bind">
+                        <div class="change-status">
+                            <span>验证身份</span>
+                            <span>设置新手机号</span>
+                            <span>完成</span>
+                        </div>
+                        <div class="form-container">
+                            <div class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-xs-2 control-label">Email</label>
+                                    <div class="col-xs-10">
+                                        <p class="num">188****8888</p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-xs-2 control-label">Password</label>
+                                    <div class="col-xs-7">
+                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <span class="btn btn-default">获取验证码</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-offset-4 col-xs-8">
+                                        <button type="submit" class="btn btn-default">Sign in</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bind-success hidden">
+                        <div class="text-center">
+                            <img src="/images/new-account/bind/succeed.png" alt="">
+                            <p class="h2">手机绑定成功！</p>
+                            <p class="jump">
+                                点击跳转至
+                                <a href="">手机绑定</a>
+                                主页
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer-tip">
+                        <p class="h3">为什么绑定手机？</p>
+                        <p class="h4">为保障您的账户信息安全，绑定手机后将提高您的账户安全系数！</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('inc/footer.inc')

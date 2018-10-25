@@ -1,0 +1,27 @@
+html,body{
+    min-height: 100%;
+}
+.repeloil {
+    background: url(/images/20181015/bg.png)no-repeat center top;
+    height: 100%;
+    background-size: 100% 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.repeloil .productwrap a{
+    display: block;
+    width: 80%;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 0.6rem;
+}
+.repeloil .productwrap a:first-of-type{
+    margin-top: 7rem;
+}
+.repeloil .productwrap a:last-of-type{
+    padding-bottom: 0.7rem;
+}
+.repeloil .productwrap a img{
+	width: 100%;
+    height: 100%;
+}

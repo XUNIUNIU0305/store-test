@@ -1,0 +1,36 @@
+.admin-scan-fail {
+  font-size: 12px; }
+  .admin-scan-fail img {
+    max-width: 100%; }
+  .admin-scan-fail p {
+    margin: 12px; }
+  .admin-scan-fail .img {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30%;
+    padding-bottom: 20%;
+    background: #fff;
+    text-align: center; }
+    .admin-scan-fail .img .title-1 {
+      font-size: 2.6em;
+      color: #b2b2b2; }
+    .admin-scan-fail .img .title-2 {
+      font-size: 1.2em; }
+    .admin-scan-fail .img .title-3 {
+      font-size: 1.2em; }
+      .admin-scan-fail .img .title-3 span {
+        color: #ff9100; }
+  .admin-scan-fail .btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+    display: block;
+    border-radius: 4px;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 2.4em;
+    font-size: 1.4em;
+    text-align: center;
+    color: #fff;
+    background-image: linear-gradient(90deg, #ff9100 0%, #e53935 100%); }

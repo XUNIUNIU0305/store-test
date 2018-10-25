@@ -1,0 +1,164 @@
+.business-sell-detail {
+    width: 99%;
+    .header {
+        height: 60px;
+        border-bottom: 8px solid #e9eef2;
+        margin-right: -1%;
+        .input-group {
+            width: 520px;
+            margin: 10px 0;
+            input {
+                border-color: #0080ff;
+            }
+            .input-group-btn {
+                width: 40px;
+                background-color: #0080ff;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+        .btn-business {
+            margin: 8px 20px 0 0;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+    .account-info {
+        height: 288px;
+        border-bottom: 16px solid #e9eef2;
+        .msg {
+            height: 288px;
+            border-right: 16px solid #e9eef2;
+            .list-unstyled {
+                margin: 16px;
+                li {
+                    height: 40px;
+                    border-bottom: 1px solid #eee;
+                    line-height: 40px;
+                    .option {
+                        font-weight: 700;
+                        display: inline-block;
+                        width: 100px;
+                    }
+                    .btn-business-edit {
+                        border-color: #f88311;
+                        color: #f88311;
+                        border-radius: 12px;
+                        font-size: 12px;
+                        margin-top: 6px;
+                        padding: 4px 8px;
+                    }
+                    .select-box {
+                        width: 12%;
+                        margin-right: 2px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        .detail {
+            .option {
+                font-weight: 700;
+                font-size: 12px;
+                span {
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: #00d3de;
+                    margin-right: 6px;
+                }
+            }
+            .top-box {
+                margin: 20px;
+                .money {
+                    font-size: 18px;
+                    color: #f88311;
+                }
+            }
+            .legend {
+                p {
+                    margin-left: 35px;
+                }
+            }
+        }
+    }
+    .table-box {
+        .performance {
+            margin: 0 20px;
+            .date-selecter {
+                margin: 20px 0;
+                .input-group {
+                    .btn {}
+                }
+                .form-control {
+                    width: 120px;
+                    display: inline-block;
+                }
+                >div {
+                    display: none;
+                    >span {
+                        margin: 0 8px;
+                    }
+                    >.btn-default {
+                        margin-left: 8px;
+                    }
+                }
+                .input-group {
+                    float: none;
+                    vertical-align: middle;
+                    display: inline-table;
+                    max-width: 150px;
+                    &:last-child {
+                        margin-left: 4px;
+                    }
+                    .form-control {
+                        height: 34px;
+                        border-radius: 0;
+                    }
+                    .date-icon {
+                        height: 34px;
+                    }
+                }
+                .search {
+                    margin-left: 10px;
+                }
+            }
+            .date-tab {
+                height: 30px;
+                line-height: 30px;
+                font-size: 14px;
+                text-align: center;
+                span {
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    background-color: #e9eef2;
+                    cursor: pointer;
+                }
+                .active {
+                    background-color: #0080ff;
+                    color: #fff;
+                }
+            }
+            .tab-content {
+                table {
+                    width: 100%;
+                    margin-top: 10px;
+                    td,
+                    th {
+                        border: 1px solid #ccc;
+                        text-align: center;
+                        height: 40px;
+                    }
+                    th {
+                        background-color: #e9eef2;
+                        width: 33%;
+                    }
+                }
+            }
+        }
+    }
+}

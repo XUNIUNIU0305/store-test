@@ -1,0 +1,341 @@
+@@include('head.inc')
+<!-- header start -->
+<header class="admin-frame-header">
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#top">
+                <img alt="logo" src="/images/logo_white.png" height="24">
+            </a>
+        </div>
+        <ul class="nav navbar-nav navbar-left">
+            <li>管理控制中心</li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                476644346@qq.com
+            </li>
+            <li>
+                <a href="javascript:void(0)">退出</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<!-- header end -->
+<!-- aside nav start -->
+<aside class="admin-frame-aside" id="aside-menu">
+    <ul class="nav nav-pills nav-stacked">
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_1">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_2">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_3">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+    </ul>
+    <ul id="aside_menu_1" class="list-unstyled child-list collapse">
+        <li class="active"><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+    </ul>
+    <ul id="aside_menu_2" class="list-unstyled child-list collapse">
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+    </ul>
+    <ul id="aside_menu_3" class="list-unstyled child-list collapse">
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+    </ul>
+</aside>
+<!-- aside nav end -->
+<!-- main area start -->
+<div class="admin-frame-main">
+    <div class="admin-main-wrap">
+        <div class="bank-funds">
+            <div class="title">账户余额：<span>￥23452.00</span></div>
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a href="#pay_out" data-toggle="tab">出金</a>
+                </li>
+                <li>
+                    <a href="#deposit" data-toggle="tab">入金</a>
+                </li>
+                <li>
+                    <a href="#list" data-toggle="tab">明细</a>
+                </li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="pay_out">
+                    <div class="form-inline pay_out_box">
+                        <div class="form-group">
+                            <label>出金金额：</label><br>
+                            <input type="text" class="form-control"> 元
+                        </div>
+                        <div class="form-group code">
+                            <input type="text" class="form-control">
+                            <span class="btn">获取验证码</span>
+                        </div>
+                        <div class="out-btn-group">
+                            <span class="btn">重置</span>
+                            <span class="btn btn-danger">确认</span>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="deposit">
+                    <div class="form-inline pay_out_box">
+                        <div class="form-group">
+                            <label>入金金额：</label><br>
+                            <input type="text" class="form-control"> 元
+                        </div>
+                        <div class="form-group code">
+                            <input type="text" class="form-control">
+                            <span class="btn">获取验证码</span>
+                        </div>
+                        <div class="out-btn-group">
+                            <span class="btn">重置</span>
+                            <span class="btn btn-danger">确认</span>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade detail" id="list">
+                    <div class="header">
+                        <div class="date-picker-box clearfix">
+                            <div class="form-group col-xs-3">
+                                <span>开始时间：</span>
+                                <div class="input-group">
+                                    <input type="text" class="form-control date-picker">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-calendar"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="form-group col-xs-3">
+                                <span>结束时间：</span>
+                                <div class="input-group">
+                                    <input type="text" class="form-control date-picker">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-calendar"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-xs-1 form-group pull-right">
+                                <span class="btn btn-danger">查询</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--table-->
+                    <table class="table table-hover table-panel table-fix text-center dashed">
+                        <thead>
+                            <tr>
+                                <th width="120">运营商账号</th>
+                                <th width="175">运营商名称</th>
+                                <th width="150">手机号</th>
+                                <th width="120">银行</th>
+                                <th width="175">银行卡号</th>
+                                <th width="140">提现金额</th>
+                                <th width="136">提交时间</th>
+                                <th>状态</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>452398765</td>
+                                <td>某某某某某某木木</td>
+                                <td>12345678901</td>
+                                <td>中国建设银行</td>
+                                <td>12345676546548</td>
+                                <td>151651.00</td>
+                                <td>1989-08-11 04:19:56</td>
+                                <td>已审核</td>
+                                <td><a href="" class="link">详情</a></td>
+                            </tr>
+                            <tr class="active">
+                                <td>452398765</td>
+                                <td>某某某某某某木木</td>
+                                <td>12345678901</td>
+                                <td>中国建设银行</td>
+                                <td>12345676546548</td>
+                                <td>151651.00</td>
+                                <td>1989-08-11 04:19:56</td>
+                                <td>已审核</td>
+                                <td><a href="" class="link">详情</a></td>
+                            </tr>
+                            <tr>
+                                <td>452398765</td>
+                                <td>某某某某某某木木</td>
+                                <td>12345678901</td>
+                                <td>中国建设银行</td>
+                                <td>12345676546548</td>
+                                <td>151651.00</td>
+                                <td>1989-08-11 04:19:56</td>
+                                <td>已审核</td>
+                                <td><a href="" class="link">详情</a></td>
+                            </tr>
+                            <tr>
+                                <td>452398765</td>
+                                <td>某某某某某某木木</td>
+                                <td>12345678901</td>
+                                <td>中国建设银行</td>
+                                <td>12345676546548</td>
+                                <td>151651.00</td>
+                                <td>1989-08-11 04:19:56</td>
+                                <td>已审核</td>
+                                <td><a href="" class="link">详情</a></td>
+                            </tr>
+                            <tr>
+                                <td>452398765</td>
+                                <td>某某某某某某木木</td>
+                                <td>12345678901</td>
+                                <td>中国建设银行</td>
+                                <td>12345676546548</td>
+                                <td>151651.00</td>
+                                <td>1989-08-11 04:19:56</td>
+                                <td>已审核</td>
+                                <td><a href="" class="link">详情</a></td>
+                            </tr>
+                            <tr>
+                                <td>452398765</td>
+                                <td>某某某某某某木木</td>
+                                <td>12345678901</td>
+                                <td>中国建设银行</td>
+                                <td>12345676546548</td>
+                                <td>151651.00</td>
+                                <td>1989-08-11 04:19:56</td>
+                                <td>已审核</td>
+                                <td><a href="" class="link">详情</a></td>
+                            </tr>
+                            <tr>
+                                <td>452398765</td>
+                                <td>某某某某某某木木</td>
+                                <td>12345678901</td>
+                                <td>中国建设银行</td>
+                                <td>12345676546548</td>
+                                <td>151651.00</td>
+                                <td>1989-08-11 04:19:56</td>
+                                <td>已审核</td>
+                                <td><a href="" class="link">详情</a></td>
+                            </tr>
+                            <tr>
+                                <td>452398765</td>
+                                <td>某某某某某某木木</td>
+                                <td>12345678901</td>
+                                <td>中国建设银行</td>
+                                <td>12345676546548</td>
+                                <td>151651.00</td>
+                                <td>1989-08-11 04:19:56</td>
+                                <td>已审核</td>
+                                <td><a href="" class="link">详情</a></td>
+                            </tr>
+                            <tr>
+                                <td>452398765</td>
+                                <td>某某某某某某木木</td>
+                                <td>12345678901</td>
+                                <td>中国建设银行</td>
+                                <td>12345676546548</td>
+                                <td>151651.00</td>
+                                <td>1989-08-11 04:19:56</td>
+                                <td>已审核</td>
+                                <td><a href="" class="link">详情</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="text-center add-more">点击加载更多</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="apx-modal-admin-alert modal fade admin-management" id="apxModalAdminAlertReject" tabindex="-1">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span></a>
+                <h4 class="modal-title">提示信息</h4>
+            </div>
+            <div class="modal-body management-textarea">
+                <div class="form">
+                    <div class="form-group form-group-sm">
+                        <p class="h4 text-center">操作成功！<span id="J_second">4</span>s后返回列表页！</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-lg btn-danger">立即返回</button>
+                <button type="button" class="btn btn-lg btn-default" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- main area start -->
+@@include('footer_admin.inc')
+<script type="text/javascript">
+    $(function () {
+        // add locale
+        $.fn.datepicker.dates["zh-CN"] = {
+            days: ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"],
+            daysShort: ["周日", "周一", "周二", "周三", "周四", "周五", "周六"],
+            daysMin: ["日", "一", "二", "三", "四", "五", "六"],
+            months: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+            monthsShort: ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
+            today: "今日",
+            clear: "清除",
+            format: "yyyy年mm月dd日",
+            titleFormat: "yyyy年mm月",
+            weekStart: 1
+        }
+        // init the datepicker
+        $('.date-picker').datepicker({
+            format: 'yyyy-mm-dd',
+            language: 'zh-CN'
+        });
+        // iscroll
+        var scrolls = [];
+        $('.iscroll_container').each(function () {
+            scrolls.push(new IScroll(this, {
+                mouseWheel: true,
+                scrollbars: true,
+                scrollbars: 'custom'
+            }))
+        })
+        // refresh api
+        scrolls.forEach(function (scroll) {
+            scroll.refresh();
+        })
+    })
+    $('#collapseExample').on('hidden.bs.collapse', function () {
+        $('.go-pay').removeClass('active')
+    }).on('show.bs.collapse', function() {
+        $('.go-pay').addClass('active')
+    })
+    var timer;
+    $('#apxModalAdminAlertReject').on('show.bs.modal', function() {
+        var cont = 4;
+        timer = setInterval(function() {
+            cont--;
+            $('#J_second').html(cont);
+            if (cont === 0) {
+                alert(1)
+                clearInterval(timer)
+            }
+        }, 1000)
+    }).on('hidden.bs.modal', function() {
+        clearInterval(timer)
+    })
+    // $('#apxModalAdminAlertReject').modal('show');
+</script>

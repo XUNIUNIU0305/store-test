@@ -1,0 +1,105 @@
+.w_h, html, body {
+  width: 100%;
+  height: 100%; }
+
+html, body {
+  color: #000;
+  font-size: 1.6vw;
+  font-family: "Microsoft YaHei";
+  background-color: #fff;
+  overflow-x: hidden; }
+  html .product-listing, body .product-listing {
+    width: 100%; }
+    html .product-listing-head, body .product-listing-head {
+      height: 80vw;
+      background-image: url("/images/product_listing/banner.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: top center; }
+    html .product-listing-info, body .product-listing-info {
+      width: 100%; }
+      html .product-listing-info .product-listing-nav, body .product-listing-info .product-listing-nav {
+        padding: 0 4.26667vw;
+        background-color: #ccf5f1; }
+        html .product-listing-info .product-listing-nav ul, body .product-listing-info .product-listing-nav ul {
+          height: 8vw; }
+          html .product-listing-info .product-listing-nav ul li, body .product-listing-info .product-listing-nav ul li {
+            float: left;
+            width: 30.4vw;
+            height: 100%;
+            font-size: 2.93333vw;
+            text-align: center;
+            line-height: 8vw; }
+            html .product-listing-info .product-listing-nav ul li.nav-active, body .product-listing-info .product-listing-nav ul li.nav-active {
+              color: #fff;
+              background-color: #fd6367; }
+      html .product-listing-info .product-listing-cont .bg1, body .product-listing-info .product-listing-cont .bg1 {
+        background-color: #BADCE5; }
+      html .product-listing-info .product-listing-cont .bg2, body .product-listing-info .product-listing-cont .bg2 {
+        background-color: #F4CECC; }
+      html .product-listing-info .product-listing-cont .bg3, body .product-listing-info .product-listing-cont .bg3 {
+        background-color: #BAE5D1; }
+      html .product-listing-info .product-listing-cont-details, body .product-listing-info .product-listing-cont-details {
+        display: none;
+        padding: 3.2vw 10vw 0 10vw; }
+        html .product-listing-info .product-listing-cont-details ul li, body .product-listing-info .product-listing-cont-details ul li {
+          height: 29.06667vw;
+          margin-bottom: 1.6vw;
+          font-size: 2.93333vw;
+          background-color: #fff;
+          overflow: hidden; }
+          html .product-listing-info .product-listing-cont-details ul li div, body .product-listing-info .product-listing-cont-details ul li div {
+            float: left; }
+            html .product-listing-info .product-listing-cont-details ul li div.commodity-pic img, body .product-listing-info .product-listing-cont-details ul li div.commodity-pic img {
+              height: 29.06667vw; }
+            html .product-listing-info .product-listing-cont-details ul li div.commodity-details, body .product-listing-info .product-listing-cont-details ul li div.commodity-details {
+              width: 45.6vw;
+              height: 25.06667vw;
+              border-left: 0.26667vw solid #D4EAEF;
+              margin: 2vw 0;
+              box-sizing: border-box;
+              position: relative; }
+              html .product-listing-info .product-listing-cont-details ul li div.commodity-details .shop-info, body .product-listing-info .product-listing-cont-details ul li div.commodity-details .shop-info {
+                width: 41.33333vw;
+                padding-left: 3.2vw;
+                position: absolute;
+                right: 1.33333vw;
+                bottom: 0; }
+                html .product-listing-info .product-listing-cont-details ul li div.commodity-details .shop-info > span, body .product-listing-info .product-listing-cont-details ul li div.commodity-details .shop-info > span {
+                  color: #0c6cb6; }
+                  html .product-listing-info .product-listing-cont-details ul li div.commodity-details .shop-info > span.shop-info-tit, body .product-listing-info .product-listing-cont-details ul li div.commodity-details .shop-info > span.shop-info-tit {
+                    margin-left: -1.2vw; }
+                html .product-listing-info .product-listing-cont-details ul li div.commodity-details .shop-info p, body .product-listing-info .product-listing-cont-details ul li div.commodity-details .shop-info p {
+                  margin: 0;
+                  margin-top: 1.33333vw; }
+                  html .product-listing-info .product-listing-cont-details ul li div.commodity-details .shop-info p.shop-info-cont, body .product-listing-info .product-listing-cont-details ul li div.commodity-details .shop-info p.shop-info-cont {
+                    margin: 0; }
+                    html .product-listing-info .product-listing-cont-details ul li div.commodity-details .shop-info p.shop-info-cont span, body .product-listing-info .product-listing-cont-details ul li div.commodity-details .shop-info p.shop-info-cont span {
+                      color: #000;
+                      font-size: 1.6vw; }
+                html .product-listing-info .product-listing-cont-details ul li div.commodity-details .shop-info > div, body .product-listing-info .product-listing-cont-details ul li div.commodity-details .shop-info > div {
+                  color: #fd6367;
+                  margin-top: 2.66667vw;
+                  margin-bottom: 1.2vw;
+                  font-size: 1.73333vw; }
+                  html .product-listing-info .product-listing-cont-details ul li div.commodity-details .shop-info > div span, body .product-listing-info .product-listing-cont-details ul li div.commodity-details .shop-info > div span {
+                    font-size: 3.2vw;
+                    font-weight: bold;
+                    color: #fd6367;
+                    font-weight: normal; }
+        html .product-listing-info .product-listing-cont-details .return, body .product-listing-info .product-listing-cont-details .return {
+          width: 100%;
+          height: 6.13333vw;
+          font-size: 3.2vw;
+          text-align: center;
+          line-height: 6.13333vw;
+          padding-top: 5.33333vw;
+          padding-bottom: 8vw; }
+          html .product-listing-info .product-listing-cont-details .return a, body .product-listing-info .product-listing-cont-details .return a {
+            color: #fff;
+            display: inline-block;
+            width: 20.26667vw;
+            height: 100%;
+            background-color: #0c6cb6; }
+      html .product-listing-info .product-listing-cont-active, body .product-listing-info .product-listing-cont-active {
+        display: block; }

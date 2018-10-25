@@ -1,0 +1,180 @@
+$base: 1 / 750 * 100vw;
+.beautiful-container {
+    background-color: #ebf5ec;
+    img {
+        max-width: 100%;
+        vertical-align: top;
+    }
+    .banner {
+        padding-top: 400 * $base;
+        background: url('/images/beautiful/banner.png') no-repeat center/100%;
+    }
+    .beautiful-navs {
+        display: flex;
+        background-color: #2f7f24;
+        padding-left: 20 * $base;
+        border-bottom: 12 * $base solid #78ac4a;
+        position: relative;
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            bottom: -12 * $base;
+        }
+        &::before {
+            left: 0;
+            border-top: 12 * $base solid transparent;
+            border-left: 12 * $base solid #fff;
+        }
+        &::after {
+            right: 0;
+            border-top: 12 * $base solid transparent;
+            border-right: 12 * $base solid #fff;
+        }
+        li {
+            flex: auto;
+            a {
+                font-size: 22 * $base;
+                color: #fff;
+                line-height: 3;
+            }
+        }
+    }
+    .sec-title {
+        padding: 40 * $base 0;
+        text-align: center;
+        img {
+            width: 40%;
+        }
+        &.hot {
+            position: relative;
+            &::after {
+                content: '万家门店热销好货、拉人气，赚大钱必不可少！';
+                font-size: 20 * $base;
+                color: #898989;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -10 * $base;
+                margin: 0 auto;
+            }
+        }
+    }
+    .sec-sub-title {
+        margin: 0 20 * $base;
+    }
+    .item-box {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        .item {
+            flex: 0 0 50%;
+            border: 20 * $base solid #ebf5ec;
+            padding: 0 6 * $base;
+            box-sizing: border-box;
+            background-color: #fff;
+            .img {
+                text-align: center;
+                overflow: hidden;
+            }
+            p {
+                margin: 0;
+            }
+            .item-title {
+                font-size: 19 * $base;
+                padding-top: 4 * $base;
+                border-top: 1 * $base solid #727271;
+            }
+            .item-sub-title {
+                font-size: 14 * $base;
+            }
+            .old-price {
+                font-size: 14 * $base;
+                font-weight: bold;
+            }
+            .price {
+                font-size: 30 * $base;
+                color: #78ac4a;
+                position: relative;
+                &::after {
+                    content: '立即抢购';
+                    font-size: 14 * $base;
+                    color: #fff;
+                    padding: 0 10 * $base;
+                    border-radius: 4 * $base;
+                    background-color: #78ac4a;
+                    position: absolute;
+                    right: 15 * $base;
+                    bottom: 6 * $base;
+                }
+            }
+            &.three {
+                flex: 0 0 33.33%;
+                border: 10 * $base solid #ebf5ec;
+                padding: 0 6 * $base;
+                box-sizing: border-box;
+            }
+        }
+    }
+    .sec-eckill {
+        .item {
+            position: relative;
+            &::before {
+                content: '限量秒杀';
+                background-color: #fa7b1e;
+                font-size: 18 * $base;
+                font-weight: bold;
+                color: #fff;
+                line-height: 1.5;
+                padding: 0 8 * $base;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+}
+.beautiful-navs-float {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    display: flex;
+    background-color: #2f7f24;
+    padding-left: 20 * $base;
+    border-bottom: 12 * $base solid #78ac4a;
+    transform: translateY(-84 * $base);
+    transition: all 0.3s;
+    &.in {
+        transform: translateY(0);
+    }
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        bottom: -12 * $base;
+    }
+    &::before {
+        left: 0;
+        border-top: 12 * $base solid transparent;
+        border-left: 12 * $base solid #fff;
+    }
+    &::after {
+        right: 0;
+        border-top: 12 * $base solid transparent;
+        border-right: 12 * $base solid #fff;
+    }
+    li {
+        flex: auto;
+        a {
+            font-size: 22 * $base;
+            color: #fff;
+            line-height: 3;
+        }
+    }
+}

@@ -1,0 +1,121 @@
+.gold-pointing-container {
+    min-width: 1190px;
+    .head-img {
+        min-width: 1190;
+        height: 1984px;
+        margin: 0 auto;
+        background: url('/images/gold_pointing/head1.jpg') no-repeat center top,
+                    url('/images/gold_pointing/head2.jpg') no-repeat center bottom;
+        position: relative;
+        &:before {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 13%;
+            content: '';
+            height: 174px;
+            width: 222px;
+            background: url('/images/gold_pointing/629logo.png') no-repeat;
+        }
+    }
+    .body-container {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        background: url('/images/gold_pointing/bg_body.png') no-repeat center top;
+        background-color: #01003A;
+        background-size: 1920px auto;
+    }
+
+    .excellent-brand {
+        height: 770px;
+        width: 1061px;
+        margin: 0 auto;
+        margin-top: 12px;
+        margin-bottom: 20px;
+        background: url('/images/gold_pointing/jingping_bg.png') no-repeat center top;
+        padding: 87px 50px 50px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        a {
+            display: block;
+            height: 150px;
+            width: 150px;
+            margin-right: 12px;
+            margin-bottom: 12px;
+            &:nth-child(6n) {
+                margin-right: 0px;
+            }
+        }
+    }
+
+    .select-product {
+        width: 1120px;
+        margin: 0 auto;
+        padding: 46px 30px 27px;
+        background-color: #45008C;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .product-item {
+            display: block;
+            text-decoration: none;
+            width: 250px;
+            height: 330px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            font-size: 17px;
+            &:nth-child(4n) {
+                margin-right: 0;
+            }
+            &:nth-last-child(4) {
+                margin-bottom: 0;
+            }
+            &:nth-last-child(3) {
+                margin-bottom: 0;
+            }
+            &:nth-last-child(2) {
+                margin-bottom: 0;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+            img {
+                height: 226px;
+                width: 250px;
+                margin-bottom: 14px;
+            }
+            .item-describe {
+                margin-bottom: 0;
+                text-align: left;
+                width: 210px;
+                height: 50px;
+                margin: 0 auto;
+                overflow : hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+            .item-bottom {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size:31px;
+                font-weight: bold;
+                color: #ff0000;
+                padding-left: 20px;
+            }
+            .buy-now {
+                display: block;
+                height: 27px;
+                width: 102px;
+                margin-right: 12px;
+                background: url('/images/gold_pointing/buy_but.jpg') no-repeat;
+            }
+        }
+    }
+}

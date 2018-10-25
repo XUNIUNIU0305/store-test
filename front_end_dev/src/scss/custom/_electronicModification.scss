@@ -1,0 +1,162 @@
+.apex-electronic-container {
+  min-width: 1190px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  .float-nav {
+    position: fixed;
+    right: 28px;
+    top: 50%;
+    z-index: 9999;
+    .nav {
+      background: url('/images/electronic_180315/nav_bg.png');
+      li {
+        a {
+          height: 60px;
+          width: 296px;
+          text-align: center;
+          color: #fbdf95;
+          font-size: 26px;
+          font-weight: bold;
+          margin-bottom: 39.5px;
+          &:hover,
+          &:focus {
+            background-color: rgba(255,255,255,0);
+          }
+        }
+      }
+      
+    }
+  }
+  .banner {
+    height: 620px;
+    background: url('/images/electronic_180315/banner1.jpg') center/cover no-repeat;
+  }
+
+  .row-container {
+    min-width: 1190px;
+    margin: 0 auto;
+    background: url('/images/electronic_180315/b_bg.png');
+    background-color: #000;
+    a {
+      text-decoration: none;
+    }
+    .row-detail {
+      width: 1190px;
+      margin: 0 auto;
+
+      .top {
+        margin: 0 auto;
+        width: 1100px;
+        height: 520px;
+        padding: 136px 74px 30px 84px;
+        background: url('/images/electronic_180315/1100.png');
+        .top-box {
+          display: block;
+          display: flex;
+          color: #fff;
+        }
+        .top-left {
+          position: relative;
+          color: #faf0d7;
+          font-size: 24px;
+          text-align: center;
+          p:nth-child(1) {
+            position: absolute;
+            top: -60px;
+            left: 0;
+          }
+          p:nth-child(2) {
+            color: #f0cb69;
+            font-size: 42px;
+            height: 78px;
+            line-height: 78px;
+            border-top: 2px #f0cb69 dashed;
+            border-bottom: 2px #f0cb69 dashed;
+          }
+          p:nth-child(3) {
+            color: #f0cb69;
+          }
+          button {
+            margin-top: 46px;
+            height: 56px;
+            width: 220px;
+            background: url('/images/electronic_180315/bug-1.png');
+          }
+        }
+      }
+
+      .electronic-control  {
+        width: 1100px;
+        margin: 0 auto;
+        .title {
+          height: 172px;
+          width: 714px;
+          margin: 0 auto;
+          margin-bottom: 69px;
+          background: url('/images/electronic_180315/title1.png');
+        }
+        .detail-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          .goods-box {
+            height: 628px;
+            width: 520px;
+            text-align: center;
+            background: url('/images/electronic_180315/bro.png');
+            img {
+              margin: 96px 0 34px 0;
+            }
+            p {
+              color: #fff;
+              font-size: 22px;
+              margin-bottom: 16px;
+              &:nth-child(2) {
+                color: #f0cb69;
+                font-size: 42px;
+              }
+            }
+            .price-box {
+              font-size: 20px;
+              color: #fff;
+              font-size: 20px;
+              span {
+                &:nth-child(1) {
+                  font-size: 18px;
+                }
+              }
+              .price {
+                font-size: 34px;
+              }
+              .buy-btn {
+                display: inline-block;
+                height: 42px;
+                width: 140px;
+                margin-left: 10px;
+                line-height: 42px;
+                border-radius: 20px;
+                background-color: #e80000;
+                font-size: 24px;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+
+      .electronic-control:nth-child(3) {
+        .title {
+          background: url('/images/electronic_180315/title2.png');
+        }
+      }
+
+      .electronic-control:nth-child(4) {
+        .title {
+          background: url('/images/electronic_180315/title3.png');
+        }
+      }
+    }
+    
+  }
+}

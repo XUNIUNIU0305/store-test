@@ -1,0 +1,61 @@
+.coupon-water-container {
+    padding: 10px 0;
+    .coupon-water {
+        margin-bottom: 30px;
+        &.coupon-water-used {
+            .coupon-water-inner {
+                &:after {
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 92px;
+                    height: 92px;
+                    background: url(/images/water/used.png) no-repeat center;
+                }
+            }
+        }
+        .coupon-water-inner {
+            box-shadow: 0 2px 8px #ccc;
+            position: relative;
+        }
+        .img-container {
+            height: 146px;
+            background: url('/images/water/coupon_bg.jpg') no-repeat center;
+            position: relative;
+        }
+        .info {
+            position: absolute;
+            color: #fff;
+            border: 1px solid;
+            top: 15px;
+            right: 15px;
+            bottom: 15px;
+            left: 15px;
+            text-align: center;
+            line-height: 116px;
+            font-size: 0px;
+            strong,
+            span {
+                font-size: 40px;
+            }
+            small {
+                font-size: 16px;
+            }
+            span {
+                margin-left: 28px;
+            }
+        }
+        .content {
+            padding: 8px;
+        }
+        p {
+            margin: 4px 0;
+            font-size: 12px;
+            overflow: hidden;
+            width: 100%;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+}

@@ -1,0 +1,267 @@
+$size : 1/750 * 100vw;
+
+.collage-detail-box {
+    color: #333;
+    margin-bottom: 158 * $size;
+    .collage-detail-top {
+        color: #fff;
+        height: 152 * $size;
+        font-size: 36 * $size;
+        padding: 0 30 * $size;
+        background-color: #FF5E61;
+        .waiting-for-delivery {
+            line-height: 152 * $size;
+        }
+        .already-shipped {
+            position: relative;
+            padding-top: 10 * $size;
+            >span {
+                display: block;
+                &.top-alone {
+                    font-size: 26 * $size;
+                    width: 660 * $size;
+                    height: 38 * $size;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+            }
+            .top-path {
+                position: absolute;
+                right: 0;
+                bottom: 30 * $size;
+                padding: 11 * $size 6 * $size;
+                background: url('/images/collage_detail/path.png') no-repeat;
+                background-size: 100%;
+            }
+        }
+        .transaction-comp {
+            line-height: 152 * $size;
+            .comp-pic {
+                width: 52 * $size;
+                margin-bottom: -14 * $size;
+                margin-right: 10 * $size;
+            }
+        }
+    }
+    .collage-detail-head {
+        background-color: #fff;
+        .head-cont {
+            padding: 30 * $size;
+            .head-tit {
+                display: block;
+                font-size: 34 * $size;
+                font-weight: bold;
+            }
+            .head-user {
+                font-size: 30 * $size;
+                margin: 15 * $size 0;
+                .user-name {
+                    margin-right: 20 * $size;
+                }
+            }
+            .head-addr {
+                display: block;
+                color: #868686;
+                font-size: 24 * $size;
+            }
+        }
+        .head-pic {
+            height: 10 * $size;
+            vertical-align: bottom;
+        }
+    }
+    .collage-detail-section {
+        background-color: #fff;
+        margin-top: 20 * $size;
+        .sec-box {
+            padding: 0 30 * $size 30 * $size;
+            .sec-tit {
+                height: 100 * $size;
+                line-height: 100 * $size;
+                font-size: 28 * $size;
+                .sec-icon {
+                    width: 32 * $size;
+                    margin-bottom: -4 * $size;
+                }
+                .sec-right {
+                    float: right;
+                }
+            }
+            .sec-cont {
+                height: 160 * $size;
+                background-color: #FBFAFB;
+                padding: 20 * $size 0;
+                overflow: hidden;
+                .sec-pic {
+                    float: left;
+                    width: 160 * $size;
+                    height: 160 * $size;
+                    background-color: #ccc;
+                    >img {
+                        width: 160 * $size;
+                    }
+                }
+                .cont-txt {
+                    float: left;
+                    width: 500 * $size;
+                    margin-left: 30 * $size;
+                    >span {
+                        display: block;
+                        &.c-txt {
+                            height: 85 * $size;
+                            font-size: 28 * $size;
+                            font-weight: bold;
+                        }
+                        &.txt-gray {
+                            color: #AFAFAF;
+                            height: 42 * $size;
+                            font-size: 24 * $size;
+                        }
+                    }
+                    .txt-box {
+                        .txt-money {
+                            color: #F5222D;
+                            font-size: 26 * $size;
+                        }
+                        .txt-number {
+                            float: right;
+                            font-size: 26 * $size;
+                        }
+                    }
+                }
+            }
+            .sec-tips {
+                color: #585C64;
+                font-size: 22 * $size;
+                padding-top: 34 * $size;
+                .tips-icon-1 {
+                    padding: 14 * $size;
+                    background: url('/images/collage_detail/sele_28_icon.jpg') no-repeat center;
+                    background-size: 100%;
+                    margin-right: 10 * $size;
+                }
+                .tips-icon-2 {
+                    float: right;
+                    padding: 4 * $size 14 * $size;
+                    background: url('/images/collage_detail/more_28_icon.png') no-repeat center;
+                    background-size: 100%;
+                    margin-top: 14 * $size;
+                }
+            }
+        }
+        .sec-footer {
+            height: 78 * $size;
+            font-size: 28 * $size;
+            border-top: 2 * $size solid #efeff4;
+            padding: 30 * $size 50 * $size 30 * $size 30 * $size;
+            >span {
+                &.foot-txt-1 {
+                    float: left;
+                    width: 80 * $size;
+                    margin-right: 20 * $size;
+                }
+                .no-txt {
+                    color: #ccc;
+                    font-size: 16 * $size;
+                }
+            }
+            .foot-txt-2 {
+                float: left;
+                width: 550 * $size;
+                height: 70 * $size;
+                resize : none;
+                background-color: transparent;
+                border-style: none;
+                outline-style: none;
+            }
+        }
+    }
+    .collage-detail-cost {
+        background-color: #fff;
+        margin-top: 20 * $size;
+        .cost-list {
+            padding: 20 * $size 30 * $size;
+            .cost-item {
+                height: 55 * $size;
+                line-height: 55 * $size;
+                font-size: 26 * $size;
+                .cost-txt {
+                    float: right;
+                }
+            }
+        }
+        .cost-footer {
+            border-top: 2 * $size solid #efeff4;
+            padding: 30 * $size;
+            >span {
+                display: block;
+                &.cost-number {
+                    text-align: right;
+                    font-size: 26 * $size;
+                    margin-bottom: 10 * $size;
+                }
+                &.cost-money {
+                    text-align: right;
+                    font-size: 30 * $size;
+                    .money-total {
+                        color: #F5222D;
+                    }
+                }
+            }
+        }
+    }
+    .collage-detail-detail {
+        background-color: #fff;
+        margin-top: 20 * $size;
+        .detail-list {
+            padding: 20 * $size 30 * $size;
+            .detail-item {
+                height: 60 * $size;
+                line-height: 60 * $size;
+                font-size: 26 * $size;
+                .detail-tit {
+                    color: #858585;
+                }
+                .detail-btn {
+                    float: right;
+                    color: #7D7D7D;
+                    width: 80 * $size;
+                    height: 34 * $size;
+                    line-height: 34 * $size;
+                    text-align: center;
+                    font-size: 22 * $size;
+                    border: 2 * $size solid #efeff4;
+                    border-radius: 20 * $size;
+                    margin-top: 10 * $size;
+                }
+            }
+        }
+    }
+}
+.collage-detail-footer {
+    z-index: 10;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 710 * $size;
+    padding: 20 * $size;
+    background-color: #fff;
+    text-align: right;
+    border-top: 2 * $size solid #efeff4;
+    .footer-btn {
+        display: inline-block;
+        width: 170 * $size;
+        height: 56 * $size;
+        line-height: 56 * $size;
+        text-align: center;
+        font-size: 28 * $size;
+        border: 2 * $size solid #efeff4;
+        border-radius: 30 * $size;
+        margin-right: 10 * $size;
+        &.btn-active {
+            color: #fff;
+            background-color: #F5222D;
+        }
+    }
+}

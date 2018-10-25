@@ -1,0 +1,777 @@
+@@include('../head.inc')
+
+<div class="mobile-special-supply-membrane">
+    <!-- 头部导航部分 -->
+    <ul id="myTab" class="nav-tabs">
+        <li class="active"><a href="#">天御车膜</a></li>
+        <li><a href="#">欧帕斯车膜</a></li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <!-- 天御车膜 -->
+        <div class="imperial-court active">
+            <a href="#"><img src="/images/mobile_membrane/tianyu_img.jpg" alt=""></a>
+            <div class="imperial-court-tit">
+                <div class="imperial-court-tit-price">
+                    <span>￥<span class="benchmark-price">1180</span><span>.00</span></span>
+                    <img src="/images/mobile_membrane/standard_price_label.png" alt="">
+                </div>
+                <div class="introduce">
+                    <a href="#">
+                        <img src="/images/mobile_membrane/details_60_icon.png" alt="">
+                        <span>介 绍</span>
+                    </a>
+                </div>
+                <h1 class="imperial-court-tit-txt">天御特效护眼护肤功能膜</h1>
+            </div>
+            <div class="imperial-court-cont-1">
+                <div class="parameter-sele">
+                    <span>选择<span class="parameter-sele-txt">套餐/系数</span></span>
+                    <img id="ty-coefficient" src="/images/mobile_membrane/arrows_24_icon.png" alt="">
+                </div>
+                <div class="parameter-sele">
+                    <span>参考<span class="parameter-sele-txt">售价参考</span></span>
+                    <img id="ty-price-reference" src="/images/mobile_membrane/arrows_24_icon.png" alt="">
+                </div>
+                <div class="parameter-sele">
+                    <span>送至
+                        <span class="parameter-sele-txt">选择收货地址</span>
+                    </span>
+                    <img id="ty-receiving-addr" src="/images/mobile_membrane/arrows_24_icon.png" alt="">
+                </div>
+                <div class="address-container">
+                    <div>
+                        <span class="default is">默认</span>
+                        <span>张三</span>
+                        <span>18351351351</span>
+                    </div>
+                    <div>三门路561号***********************</div>
+                </div>
+                <div class="parameter-sele-number">
+                    <span>数量</span>
+                    <div class="calculation-btn btn-disabled" id="ty-del-number" data-val="1">-</div>
+                    <div id="ty-purchase-quantity">1</div>
+                    <div class="calculation-btn" id="ty-add-number" data-val="2">+</div>
+                </div>
+            </div>
+            <div class="imperial-court-cont-2">
+                <div class="payment-method-1">选择支付方式</div>
+                <div class="payment-method-2">
+                    <img class="payment-method-icon" src="/images/mobile_membrane/yue_60_icon.png" alt="">
+                    <div class="payment-method-cont">
+                        <div>余额支付</div>
+                        <div class="balance">账户余额 ￥<span>730.61</span></div>
+                    </div>
+                    <div class="payment-method-sele" data-flag="false"></div>
+                </div>
+                <div class="payment-method-2">
+                    <img class="payment-method-icon" src="/images/mobile_membrane/weixinzhifu_60_icon.png" alt="">
+                    <div class="payment-method-cont">
+                        <div>微信支付</div>
+                        <div class="balance balance-alone">微信安全支付</div>
+                    </div>
+                    <div class="payment-method-sele" data-flag="false"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 欧帕斯车膜 -->
+        <div class="european-park">
+            <a href="#"><img src="/images/mobile_membrane/apex_img.jpg" alt=""></a>
+            <div class="imperial-court-tit">
+                <div class="imperial-court-tit-price">
+                    <span>
+                        ￥<span class="benchmark-price">3980</span><span>.00</span> -
+                        ￥<span class="benchmark-price">13800</span><span>.00</span>
+                    </span>
+                    <img src="/images/mobile_membrane/standard_price_label.png" alt="">
+                </div>
+                <div class="introduce">
+                    <a href="#">
+                        <img src="/images/mobile_membrane/details_60_icon.png" alt="">
+                        <span>介 绍</span>
+                    </a>
+                </div>
+                <h1 class="imperial-court-tit-txt">欧帕斯全功能隔热安全膜</h1>
+            </div>
+            <div class="imperial-court-cont-1">
+                <div class="parameter-sele">
+                    <span>选择<span class="parameter-sele-txt">套餐/系数</span></span>
+                    <img id="ops-coefficient" src="/images/mobile_membrane/arrows_24_icon.png" alt="">
+                </div>
+                <div class="parameter-sele">
+                    <span>参考<span class="parameter-sele-txt">售价参考</span></span>
+                    <img id="ops-price-reference" src="/images/mobile_membrane/arrows_24_icon.png" alt="">
+                </div>
+                <div class="parameter-sele">
+                    <span>送至
+                        <img src="/images/mobile_membrane/add_32_icon.png" alt="">
+                        <span class="parameter-sele-txt">选择收货地址</span>
+                    </span>
+                    <img id="ops-receiving-addr" src="/images/mobile_membrane/arrows_24_icon.png" alt="">
+                </div>
+                <div class="parameter-sele-number">
+                    <span>数量</span>
+                    <div class="calculation-btn btn-disabled" id="ops-del-number" data-val="1">-</div>
+                    <div id="ops-purchase-quantity">1</div>
+                    <div class="calculation-btn" id="ops-add-number" data-val="2">+</div>
+                </div>
+            </div>
+            <div class="imperial-court-cont-2">
+                <div class="payment-method-1">选择支付方式</div>
+                <div class="payment-method-2">
+                    <img class="payment-method-icon" src="/images/mobile_membrane/yue_60_icon.png" alt="">
+                    <div class="payment-method-cont">
+                        <div>余额支付</div>
+                        <div class="balance">账户余额 ￥<span>730.61</span></div>
+                    </div>
+                    <div class="payment-method-sele"></div>
+                </div>
+                <div class="payment-method-2">
+                    <img class="payment-method-icon" src="/images/mobile_membrane/weixinzhifu_60_icon.png" alt="">
+                    <div class="payment-method-cont">
+                        <div>微信支付</div>
+                        <div class="balance balance-alone">微信安全支付</div>
+                    </div>
+                    <div class="payment-method-sele"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 天御套餐/系数 -->
+    <div class="choose-set-meal-box" id="ty-choose-set-meal-box">
+        <div class="choose-set-meal">
+            <div class="choose-set-meal-txt">选择套餐</div>
+            <div class="stall-parameters">
+                <div class="stall-parameters-tit">
+                    <span>Z8 + G15</span>
+                    <div data-id="1" class="c-coefficient-pic" data-flag="false"></div>
+                </div>
+                <div class="stall-parameters-cont">
+                    <ul>
+                        <li>前档：<span>Z8</span></li>
+                        <li>后档：<span>G15</span></li>
+                        <li>左前档：<span>G15</span></li>
+                        <li>右前档：<span>G15</span></li>
+                        <li>左后档：<span>G15</span></li>
+                        <li>右后档：<span>G15</span></li>
+                    </ul>
+                </div>      
+            </div>
+            <div class="stall-parameters">
+                <div class="stall-parameters-tit">
+                    <span>Z8 + G20</span>
+                    <div data-id="2" class="c-coefficient-pic" data-flag="false"></div>
+                </div>
+                <div class="stall-parameters-cont" id="stall-parameters-cont">
+                    <ul>
+                        <li>前档：<span>Z8</span></li>
+                        <li>后档：<span>G15</span></li>
+                        <li>左前档：<span>G15</span></li>
+                        <li>右前档：<span>G15</span></li>
+                        <li>左后档：<span>G15</span></li>
+                        <li>右后档：<span>G15</span></li>
+                    </ul>
+                </div>      
+            </div>
+            <div class="stall-parameters">
+                <div class="stall-parameters-tit">
+                    <span>Z8 + G30</span>
+                    <div data-id="3" class="c-coefficient-pic" data-flag="false"></div>
+                </div>
+                <div class="stall-parameters-cont">
+                    <ul>
+                        <li>前档：<span>Z8</span></li>
+                        <li>后档：<span>G15</span></li>
+                        <li>左前档：<span>G15</span></li>
+                        <li>右前档：<span>G15</span></li>
+                        <li>左后档：<span>G15</span></li>
+                        <li>右后档：<span>G15</span></li>
+                    </ul>
+                </div>      
+            </div>
+            <div class="stall-parameters">
+                <div class="stall-parameters-tit">
+                    <span>自定义组合</span>
+                    <div id="custom-combination"></div>
+                </div>
+                <div class="stall-parameters-cont">
+                    <ul id="custom-param-list">
+                        <li>前档：<span></span></li>
+                        <li>后档：<span></span></li>
+                        <li>左前档：<span></span></li>
+                        <li>右前档：<span></span></li>
+                        <li>左后档：<span></span></li>
+                        <li>右后档：<span></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="stall-parameters-alone">
+                <div class="coefficient-list">
+                    <div class="coefficient-list-tit">
+                        <span>选择系数</span>
+                        <a href="#"><span class="s-txt">系数参考</span></a>
+                    </div>
+                    <ul class="coefficient-list-cont" id="ty-coefficient-list-cont">
+                        <li class="active">1.00</li>
+                        <li>1.08</li>
+                        <li>1.12</li>
+                        <li>1.20</li>
+                        <li>1.50</li>
+                        <li>2.00</li>
+                    </ul>
+                </div>
+                <div class="coefficient-memo">
+                    <span>备注</span>
+                    <input type="text" placeholder="选填，请告诉我们特殊要求"/>
+                </div>
+                <a class="parameter-confirm" id="ty-set-meal-confirmation" href="javascript:void(0)">确认</a>
+            </div>      
+        </div>
+    </div>
+
+    <!-- 天御售价参考 -->
+    <div class="price-reference-cont" id="ty-price-reference-cont">
+        <div class="c-coefficient-box">
+            <div class="c-coefficient">
+                <div class="c-coefficient-tit">
+                    <div class="c-coefficient-txt">系数：<span>1.00</span></div>
+                    <div data-id="1" class="c-coefficient-pic" data-flag="false"></div>
+                </div>
+                <div class="c-coefficient-cont">
+                    <div class="detailed-coefficient">
+                        <span>报价</span>
+                        <span>￥<span>2480</span></span>
+                    </div>
+                    <div class="detailed-coefficient detailed-coefficient-2">
+                        <span>最低售价</span>
+                        <span>￥<span>1980</span></span>
+                    </div>
+                    <div class="detailed-coefficient detailed-coefficient-3">
+                        <span>门店采购价</span>
+                        <span>￥<span>1180</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="c-coefficient">
+                <div class="c-coefficient-tit">
+                    <div class="c-coefficient-txt">系数：<span>1.08</span></div>
+                    <div data-id="2" class="c-coefficient-pic" data-flag="false"></div>
+                </div>
+                <div class="c-coefficient-cont">
+                    <div class="detailed-coefficient">
+                        <span>报价</span>
+                        <span>￥<span>2480</span></span>
+                    </div>
+                    <div class="detailed-coefficient">
+                        <span>最低售价</span>
+                        <span>￥<span>1980</span></span>
+                    </div>
+                    <div class="detailed-coefficient">
+                        <span>门店采购价</span>
+                        <span>￥<span>1180</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="c-coefficient">
+                <div class="c-coefficient-tit">
+                    <div class="c-coefficient-txt">系数：<span>1.12</span></div>
+                    <div data-id="3" class="c-coefficient-pic" data-flag="false"></div>
+                </div>
+                <div class="c-coefficient-cont">
+                    <div class="detailed-coefficient">
+                        <span>报价</span>
+                        <span>￥<span>2480</span></span>
+                    </div>
+                    <div class="detailed-coefficient">
+                        <span>最低售价</span>
+                        <span>￥<span>1980</span></span>
+                    </div>
+                    <div class="detailed-coefficient">
+                        <span>门店采购价</span>
+                        <span>￥<span>1180</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="c-coefficient">
+                <div class="c-coefficient-tit">
+                    <div class="c-coefficient-txt">系数：<span>1.20</span></div>
+                    <div data-id="4" class="c-coefficient-pic" data-flag="false"></div>
+                </div>
+                <div class="c-coefficient-cont">
+                    <div class="detailed-coefficient">
+                        <span>报价</span>
+                        <span>￥<span>2480</span></span>
+                    </div>
+                    <div class="detailed-coefficient">
+                        <span>最低售价</span>
+                        <span>￥<span>1980</span></span>
+                    </div>
+                    <div class="detailed-coefficient">
+                        <span>门店采购价</span>
+                        <span>￥<span>1180</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="c-coefficient">
+                <div class="c-coefficient-tit">
+                    <div class="c-coefficient-txt">系数：<span>1.50</span></div>
+                    <div data-id="5" class="c-coefficient-pic" data-flag="false"></div>
+                </div>
+                <div class="c-coefficient-cont">
+                    <div class="detailed-coefficient">
+                        <span>报价</span>
+                        <span>￥<span>2480</span></span>
+                    </div>
+                    <div class="detailed-coefficient">
+                        <span>最低售价</span>
+                        <span>￥<span>1980</span></span>
+                    </div>
+                    <div class="detailed-coefficient">
+                        <span>门店采购价</span>
+                        <span>￥<span>1180</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="c-coefficient">
+                <div class="c-coefficient-tit">
+                    <div class="c-coefficient-txt">系数：<span>2.00</span></div>
+                    <div data-id="6" class="c-coefficient-pic" data-flag="false"></div>
+                </div>
+                <div class="c-coefficient-cont">
+                    <div class="detailed-coefficient">
+                        <span>报价</span>
+                        <span>￥<span>2480</span></span>
+                    </div>
+                    <div class="detailed-coefficient">
+                        <span>最低售价</span>
+                        <span>￥<span>1980</span></span>
+                    </div>
+                    <div class="detailed-coefficient">
+                        <span>门店采购价</span>
+                        <span>￥<span>1180</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 天御自定义组合 -->
+    <div class="custom-combination" id="custom-combination-cont">
+        <ul class="custom-combination-list" id="custom-combination-list">
+            <li>
+                前档<span id="custom-combination-txt-1">Z8</span>
+                <img data-id="1" class="custom-combination-pic" src="/images/mobile_membrane/arrows_24_icon.png" alt="">
+            </li>
+            <li>
+                后档<span id="custom-combination-txt-2">请选择</span>
+                <img data-id="2" class="custom-combination-pic" src="/images/mobile_membrane/arrows_24_icon.png" alt="">
+            </li>
+            <li>
+                左前档<span id="custom-combination-txt-3">请选择</span>
+                <img data-id="3" class="custom-combination-pic" src="/images/mobile_membrane/arrows_24_icon.png" alt="">
+            </li>
+            <li>
+                右前档<span id="custom-combination-txt-4">请选择</span>
+                <img data-id="4" class="custom-combination-pic" src="/images/mobile_membrane/arrows_24_icon.png" alt="">
+            </li>
+            <li>
+                左后档<span id="custom-combination-txt-5">请选择</span>
+                <img data-id="5" class="custom-combination-pic" src="/images/mobile_membrane/arrows_24_icon.png" alt="">
+            </li>
+            <li>
+                右后档<span id="custom-combination-txt-6">请选择</span>
+                <img data-id="6" class="custom-combination-pic" src="/images/mobile_membrane/arrows_24_icon.png" alt="">
+            </li>
+        </ul>
+        <div class="gate-gear-cont" id="gate-gear-cont">
+            <div class="gate-gear">
+                <div class="gate-parameter">
+                    <h1>请选择<span>前档</span></h1>
+                    <ul id="gate-parameter-list-1">
+                        <li class="active">G15</li>
+                        <li>G20</li>
+                        <li>G30</li>
+                        <li>U8E</li>
+                        <li>U9E</li>
+                    </ul>
+                    <a data-id="1" class="parameter-confirm" id="gate-parameter-close-1" href="#">关闭</a>
+                </div>
+            </div>
+            <div class="gate-gear">
+                <div class="gate-parameter">
+                    <h1>请选择后档</h1>
+                    <ul id="gate-parameter-list-2">
+                        <li class="active">G15</li>
+                        <li>G20</li>
+                        <li>G30</li>
+                        <li>U8E</li>
+                        <li>U9E</li>
+                    </ul>
+                    <a data-id="2" class="parameter-confirm" id="gate-parameter-close-2" href="#">关闭</a>
+                </div>
+            </div>
+            <div class="gate-gear">
+                <div class="gate-parameter">
+                    <h1>请选择左前档</h1>
+                    <ul id="gate-parameter-list-3">
+                        <li class="active">G15</li>
+                        <li>G20</li>
+                        <li>G30</li>
+                        <li>U8E</li>
+                        <li>U9E</li>
+                    </ul>
+                    <a data-id="3" class="parameter-confirm" id="gate-parameter-close-3" href="#">关闭</a>
+                </div>
+            </div>
+            <div class="gate-gear">
+                <div class="gate-parameter">
+                    <h1>请选择右前档</h1>
+                    <ul id="gate-parameter-list-4">
+                        <li class="active">G15</li>
+                        <li>G20</li>
+                        <li>G30</li>
+                        <li>U8E</li>
+                        <li>U9E</li>
+                    </ul>
+                    <a data-id="4" class="parameter-confirm"  id="gate-parameter-close-4" href="#">关闭</a>
+                </div>
+            </div>
+            <div class="gate-gear">
+                <div class="gate-parameter">
+                    <h1>请选择左后档</h1>
+                    <ul id="gate-parameter-list-5">
+                        <li class="active">G15</li>
+                        <li>G20</li>
+                        <li>G30</li>
+                        <li>U8E</li>
+                        <li>U9E</li>
+                    </ul>
+                    <a data-id="5" class="parameter-confirm" id="gate-parameter-close-5" href="#">关闭</a>
+                </div>
+            </div>
+            <div class="gate-gear">
+                <div class="gate-parameter">
+                    <h1>请选择右后档</h1>
+                    <ul id="gate-parameter-list-6">
+                        <li class="active">G15</li>
+                        <li>G20</li>
+                        <li>G30</li>
+                        <li>U8E</li>
+                        <li>U9E</li>
+                    </ul>
+                    <a data-id="6" class="parameter-confirm" id="gate-parameter-close-6" href="#">关闭</a>
+                </div>
+            </div>
+        </div>
+        <a class="parameter-confirm" id="custom" href="javascript:void(0)">确认</a>
+    </div>
+
+    <!-- 欧帕斯套餐/系数 -->
+    <div class="choose-set-meal-box" id="ops-choose-set-meal-box">
+        <div class="choose-set-meal">
+            <div class="choose-set-meal-txt">选择套餐</div>
+            <div class="stall-parameters">
+                <div class="stall-parameters-tit">
+                    <span>吉祥套餐</span>
+                    <span>基准价：￥<span>13800.00</span></span>
+                    <div data-id="1" class="c-coefficient-pic" data-flag="false"></div>
+                </div>
+                <div class="stall-parameters-cont">
+                    <ul>
+                        <li>前档：<span>U9</span></li>
+                        <li>后档：<span>U7</span></li>
+                        <li>左前档：<span>U7</span></li>
+                        <li>右前档：<span>U7</span></li>
+                        <li>左后档：<span>U7</span></li>
+                        <li>右后档：<span>U7</span></li>
+                    </ul>
+                </div>      
+            </div>
+            <div class="stall-parameters">
+                <div class="stall-parameters-tit">
+                    <span>如意套餐</span>
+                    <span>基准价：￥<span>11800.00</span></span>
+                    <div data-id="2" class="c-coefficient-pic" data-flag="false"></div>
+                </div>
+                <div class="stall-parameters-cont">
+                    <ul>
+                        <li>前档：<span>U9</span></li>
+                        <li>后档：<span>U7</span></li>
+                        <li>左前档：<span>U7</span></li>
+                        <li>右前档：<span>U7</span></li>
+                        <li>左后档：<span>U7</span></li>
+                        <li>右后档：<span>U7</span></li>
+                    </ul>
+                </div>     
+            </div>
+            <div class="stall-parameters">
+                <div class="stall-parameters-tit">
+                    <span>幸福套餐</span>
+                    <span>基准价：￥<span>7800.00</span></span>
+                    <div data-id="3" class="c-coefficient-pic" data-flag="false"></div>
+                </div>
+                <div class="stall-parameters-cont">
+                    <ul>
+                        <li>前档：<span>U9</span></li>
+                        <li>后档：<span>U7</span></li>
+                        <li>左前档：<span>U7</span></li>
+                        <li>右前档：<span>U7</span></li>
+                        <li>左后档：<span>U7</span></li>
+                        <li>右后档：<span>U7</span></li>
+                    </ul>
+                </div>     
+            </div>
+            <div class="stall-parameters">
+                <div class="stall-parameters-tit">
+                    <span>平安套餐</span>
+                    <span>基准价：￥<span>4980.00</span></span>
+                    <div data-id="4" class="c-coefficient-pic" data-flag="false"></div>
+                </div>
+                <div class="stall-parameters-cont">
+                    <ul>
+                        <li>前档：<span>U9</span></li>
+                        <li>后档：<span>U7</span></li>
+                        <li>左前档：<span>U7</span></li>
+                        <li>右前档：<span>U7</span></li>
+                        <li>左后档：<span>U7</span></li>
+                        <li>右后档：<span>U7</span></li>
+                    </ul>
+                </div>     
+            </div> 
+            <div class="stall-parameters">
+                <div class="stall-parameters-tit">
+                    <span>开心套餐</span>
+                    <span>基准价：￥<span>3980.00</span></span>
+                    <div data-id="5" class="c-coefficient-pic" data-flag="false"></div>
+                </div>
+                <div class="stall-parameters-cont">
+                    <ul>
+                        <li>前档：<span>U9</span></li>
+                        <li>后档：<span>U7</span></li>
+                        <li>左前档：<span>U7</span></li>
+                        <li>右前档：<span>U7</span></li>
+                        <li>左后档：<span>U7</span></li>
+                        <li>右后档：<span>U7</span></li>
+                    </ul>
+                </div>     
+            </div>
+            <div class="stall-parameters-alone">
+                <div class="coefficient-list">
+                    <div class="coefficient-list-tit">
+                        <span>选择系数</span>
+                        <a href="#"><span class="s-txt">系数参考</span></a>
+                    </div>
+                    <ul class="coefficient-list-cont" id="ops-coefficient-list-cont">
+                        <li class="active">1.00</li>
+                        <li>1.08</li>
+                        <li>1.12</li>
+                        <li>1.20</li>
+                        <li>1.50</li>
+                        <li>2.00</li>
+                    </ul>
+                </div>
+                <div class="coefficient-memo">
+                    <span>备注</span>
+                    <input type="text" placeholder="选填，请告诉我们特殊要求"/>
+                </div>
+                <a class="parameter-confirm" id="ops-set-meal-confirmation" href="javascript:void(0)">确认</a>
+            </div>     
+        </div>
+    </div>
+
+    <!-- 欧帕斯售价参考 -->
+    <div class="price-reference-cont" id="ops-price-reference-cont">
+        <div class="c-coefficient-box">
+            <div class="c-coefficient">
+                <div class="c-coefficient-tit">
+                    <div class="c-coefficient-txt">吉祥套餐 <span>U9+U7</span></div>
+                    <div data-id="1" class="c-coefficient-pic" data-flag="false"></div>
+                </div>
+                <div class="c-coefficient-cont">
+                    <div class="detailed-coefficient">
+                        <span>系数</span>
+                        <span>1.00</span></span>
+                        <span>1.08</span></span>
+                        <span>1.12</span></span>
+                        <span>1.20</span></span>
+                        <span>1.50</span></span>
+                        <span>2.00</span></span>
+                    </div>
+                    <div class="detailed-coefficient detailed-coefficient-2">
+                        <span>报价</span>
+                        <span>￥<span>16800</span></span>
+                        <span>￥<span>18144</span></span>
+                        <span>￥<span>18816</span></span>
+                        <span>￥<span>20100</span></span>
+                        <span>￥<span>25200</span></span>
+                        <span>￥<span>16800</span></span>
+                    </div>
+                    <div class="detailed-coefficient detailed-coefficient-3">
+                        <span>门店采购价</span>
+                        <span>￥<span>13800</span></span>
+                        <span>￥<span>14904</span></span>
+                        <span>￥<span>15456</span></span>
+                        <span>￥<span>16560</span></span>
+                        <span>￥<span>20700</span></span>
+                        <span>￥<span>16800</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="c-coefficient">
+                <div class="c-coefficient-tit">
+                    <div class="c-coefficient-txt">如意套餐 <span>U9+I8</span></div>
+                    <div data-id="2" class="c-coefficient-pic" data-flag="false"></div>
+                </div>
+                <div class="c-coefficient-cont">
+                    <div class="detailed-coefficient">
+                        <span>系数</span>
+                        <span>1.00</span></span>
+                        <span>1.08</span></span>
+                        <span>1.12</span></span>
+                        <span>1.20</span></span>
+                        <span>1.50</span></span>
+                        <span>2.00</span></span>
+                    </div>
+                    <div class="detailed-coefficient detailed-coefficient-2">
+                        <span>报价</span>
+                        <span>￥<span>16800</span></span>
+                        <span>￥<span>18144</span></span>
+                        <span>￥<span>18816</span></span>
+                        <span>￥<span>20100</span></span>
+                        <span>￥<span>25200</span></span>
+                        <span>￥<span>16800</span></span>
+                    </div>
+                    <div class="detailed-coefficient detailed-coefficient-3">
+                        <span>门店采购价</span>
+                        <span>￥<span>13800</span></span>
+                        <span>￥<span>14904</span></span>
+                        <span>￥<span>15456</span></span>
+                        <span>￥<span>16560</span></span>
+                        <span>￥<span>20700</span></span>
+                        <span>￥<span>16800</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="c-coefficient">
+                <div class="c-coefficient-tit">
+                    <div class="c-coefficient-txt">幸福套餐 <span>U+R5</span></div>
+                    <div data-id="3" class="c-coefficient-pic" data-flag="false"></div>
+                </div>
+                <div class="c-coefficient-cont">
+                    <div class="detailed-coefficient">
+                        <span>系数</span>
+                        <span>1.00</span></span>
+                        <span>1.08</span></span>
+                        <span>1.12</span></span>
+                        <span>1.20</span></span>
+                        <span>1.50</span></span>
+                        <span>2.00</span></span>
+                    </div>
+                    <div class="detailed-coefficient detailed-coefficient-2">
+                        <span>报价</span>
+                        <span>￥<span>16800</span></span>
+                        <span>￥<span>18144</span></span>
+                        <span>￥<span>18816</span></span>
+                        <span>￥<span>20100</span></span>
+                        <span>￥<span>25200</span></span>
+                        <span>￥<span>16800</span></span>
+                    </div>
+                    <div class="detailed-coefficient detailed-coefficient-3">
+                        <span>门店采购价</span>
+                        <span>￥<span>13800</span></span>
+                        <span>￥<span>14904</span></span>
+                        <span>￥<span>15456</span></span>
+                        <span>￥<span>16560</span></span>
+                        <span>￥<span>20700</span></span>
+                        <span>￥<span>16800</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="c-coefficient">
+                <div class="c-coefficient-tit">
+                    <div class="c-coefficient-txt">平安套餐 <span>U9+V5</span></div>
+                    <div data-id="4" class="c-coefficient-pic" data-flag="false"></div>
+                </div>
+                <div class="c-coefficient-cont">
+                    <div class="detailed-coefficient">
+                        <span>系数</span>
+                        <span>1.00</span></span>
+                        <span>1.08</span></span>
+                        <span>1.12</span></span>
+                        <span>1.20</span></span>
+                        <span>1.50</span></span>
+                        <span>2.00</span></span>
+                    </div>
+                    <div class="detailed-coefficient detailed-coefficient-2">
+                        <span>报价</span>
+                        <span>￥<span>16800</span></span>
+                        <span>￥<span>18144</span></span>
+                        <span>￥<span>18816</span></span>
+                        <span>￥<span>20100</span></span>
+                        <span>￥<span>25200</span></span>
+                        <span>￥<span>16800</span></span>
+                    </div>
+                    <div class="detailed-coefficient detailed-coefficient-3">
+                        <span>门店采购价</span>
+                        <span>￥<span>13800</span></span>
+                        <span>￥<span>14904</span></span>
+                        <span>￥<span>15456</span></span>
+                        <span>￥<span>16560</span></span>
+                        <span>￥<span>20700</span></span>
+                        <span>￥<span>16800</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="c-coefficient">
+                <div class="c-coefficient-tit">
+                    <div class="c-coefficient-txt">开心套餐 <span>U9+E5</span></div>
+                    <div data-id="5" class="c-coefficient-pic" data-flag="false"></div>
+                </div>
+                <div class="c-coefficient-cont">
+                    <div class="detailed-coefficient">
+                        <span>系数</span>
+                        <span>1.00</span></span>
+                        <span>1.08</span></span>
+                        <span>1.12</span></span>
+                        <span>1.20</span></span>
+                        <span>1.50</span></span>
+                        <span>2.00</span></span>
+                    </div>
+                    <div class="detailed-coefficient detailed-coefficient-2">
+                        <span>报价</span>
+                        <span>￥<span>16800</span></span>
+                        <span>￥<span>18144</span></span>
+                        <span>￥<span>18816</span></span>
+                        <span>￥<span>20100</span></span>
+                        <span>￥<span>25200</span></span>
+                        <span>￥<span>16800</span></span>
+                    </div>
+                    <div class="detailed-coefficient detailed-coefficient-3">
+                        <span>门店采购价</span>
+                        <span>￥<span>13800</span></span>
+                        <span>￥<span>14904</span></span>
+                        <span>￥<span>15456</span></span>
+                        <span>￥<span>16560</span></span>
+                        <span>￥<span>20700</span></span>
+                        <span>￥<span>16800</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部结算部分 -->
+    <div class="payment-area">
+        <div class="payment-area-total">
+            <span>共计 <span id="total">1</span> 件</span>
+            <span>合计:<span>0.00</span></span>
+        </div>
+        <a class="payment-area-btn" href="javascript:void(0)">确认支付</a>
+    </div>
+</div>
+
+
+@@include('../footer.inc')
+
+<script src="/js/mobile_membrane.js"></script>

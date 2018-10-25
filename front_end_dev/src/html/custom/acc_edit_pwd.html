@@ -1,0 +1,48 @@
+@@include('inc/head.inc') @@include('inc/top_nav.inc') @@include('inc/search.inc')
+<div class="custom-account-view">
+    <div class="container">
+        <!-- no-head 隐藏账户中心头部 -->
+        <div class="custom-account-container">
+            @@include('inc/account_menu.inc')
+            <div class="custom-acc-main">
+                <div class="acc-edit-pwd">
+                    <div class="title">修改密码</div>
+                    <div class="form-box">
+                        <p class="error-msg text-danger text-center">错误信息</p>
+                        <div class="form">
+                            <div class="form-group">
+                                <label for="pwd_old" class=" text-right control-label">输入旧密码：</label>
+                                <div class="">
+                                    <input type="password" id="pwd_old" class="form-control" value="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="new_old1" class=" text-right control-label">输入新密码：</label>
+                                <div class="">
+                                    <input type="password" id="new_old1" class="form-control" value="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="new_old2" class=" text-right control-label">再次输入新密码：</label>
+                                <div class="">
+                                    <input type="password" id="new_old2" class="form-control" value="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="validate" class=" text-right control-label">验证码：</label>
+                                <div class="">
+                                    <input type="text" id="validate" class="form-control" value="">
+                                </div>
+                                <div class="">
+                                    <div class="validate-box">JQQP</div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="btn btn-danger">确定</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('inc/footer.inc')

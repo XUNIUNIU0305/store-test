@@ -1,0 +1,326 @@
+@@include('head.inc')
+<!-- header start -->
+<header class="admin-frame-header">
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#top">
+                <img alt="logo" src="/images/logo_white.png" height="24">
+            </a>
+        </div>
+        <ul class="nav navbar-nav navbar-left">
+            <li>管理控制中心</li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                476644346@qq.com
+            </li>
+            <li>
+                <a href="javascript:void(0)">退出</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<!-- header end -->
+<!-- aside nav start -->
+<aside class="admin-frame-aside" id="aside-menu">
+    <ul class="nav nav-pills nav-stacked">
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_1">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_2">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_3">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+    </ul>
+    <ul id="aside_menu_1" class="list-unstyled child-list collapse">
+        <li class="active"><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+    </ul>
+    <ul id="aside_menu_2" class="list-unstyled child-list collapse">
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+    </ul>
+    <ul id="aside_menu_3" class="list-unstyled child-list collapse">
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+    </ul>
+</aside>
+<!-- aside nav end -->
+<!-- main area start -->
+<div class="admin-frame-main">
+    <div class="admin-main-wrap">
+        <div class="apx-admin-order">
+            <!--查询导航-->
+            <div class="nav-bar">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <div>
+                            <label for="select_status">订单状态：</label>
+                            <select id="select_status" class="form-control">
+                                <option value="query_order">请选择</option>
+                                <option value="1">1</option>
+                                <option value="2" selected>2</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="select_query">查询方式：</label>
+                            <select id="select_query" class="form-control" onchange="$(this).parent().siblings('.input-group').removeClass('in');$('.' + $(this).val()).addClass('in');">
+                                <option value="query_order">按订单号查询</option>
+                                <option value="query_user">按用户名查询</option>
+                                <option value="query_time" selected>按时间查询</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input-group query_order">
+                        <input type="text" class="form-control" placeholder="输入订单号">
+                        <span class="input-group-btn">
+                                <button class="btn"><i class="glyphicon glyphicon-search"></i></button>
+                            </span>
+                    </div>
+
+                    <div class="input-group query_user">
+                        <input type="text" class="form-control" placeholder="输入名称／拼音首字母">
+                        <span class="input-group-btn">
+                                <button class="btn"><i class="glyphicon glyphicon-search"></i></button>
+                            </span>
+                    </div>
+
+                    <div class="input-group query_time in">
+                        <label>开始日期：</label>
+                        <input type="text" class="form-control date-picker" value="2017-03-01">
+                        <span class="input-group-btn">
+                                <button class="btn"><i class="glyphicon glyphicon-calendar"></i></button>
+                            </span>
+                    </div>
+                    <div class="input-group query_time in">
+                        <label>截止日期：</label>
+                        <input type="text" class="form-control date-picker" value="2017-03-15">
+                        <span class="input-group-btn">
+                                <button class="btn"><i class="glyphicon glyphicon-calendar"></i></button>
+                            </span>
+                    </div>
+
+                    <button class="btn btn-danger">导出订单</button>
+                </form>
+            </div>
+
+            <div class="panel-order panel col-xs-12">
+                <div class="panel-heading" data-toggle="collapse" href="#order_panel_1">
+                    <p class="panel-title row">
+                        <span class="col-xs-3">订单编号: 10010</span>
+                        <span class="col-xs-2">订单状态: 已付款</span>
+                        <span class="col-xs-3 text-center">订单金额: 1000.00元</span>
+                        <span class="col-xs-4 text-right">付款时间: 2016-11-06 20:50:11</span>
+                    </p>
+                </div>
+                <div id="order_panel_1" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <div class="bg-danger clearfix">
+                            <div class="col-xs-3">买家名称: 哈哈哈</div>
+                            <div class="col-xs-5 text-ellipsis">收货地址: Camino de Roberto Carpio 3 Guipúzcoa, 00193, hahahaha</div>
+                            <div class="col-xs-4 text-right">订单生成时间: 2016-11-06 20:50:11</div>
+                            <div class="col-xs-3">买家电话: 13455555555</div>
+                            <div class="col-xs-5">买家邮箱: 548342112@162.com</div>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li class="clearfix">
+                                <div class="col-xs-5">
+                                    <div class="media">
+                                        <div class="media-left media-middle">
+                                            <img src="../images/slider01.jpg">
+                                        </div>
+                                        <div class="media-body media-middle">
+                                            <strong>瑜伽私人订制脚垫-祥韵系列</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    备注：
+                                </div>
+                                <div class="col-xs-3">
+                                    <div>数量：1</div>
+                                    <div>属性：黑白灰色</div>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="col-xs-5">
+                                    <div class="media">
+                                        <div class="media-left media-middle">
+                                            <img src="../images/slider01.jpg">
+                                        </div>
+                                        <div class="media-body media-middle">
+                                            <strong>瑜伽私人订制脚垫-祥韵系列</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    备注：
+                                </div>
+                                <div class="col-xs-3">
+                                    <div>数量：1</div>
+                                    <div>属性：黑白灰色</div>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="col-xs-5">
+                                    <div class="media">
+                                        <div class="media-left media-middle">
+                                            <img src="../images/slider01.jpg">
+                                        </div>
+                                        <div class="media-body media-middle">
+                                            <strong>瑜伽私人订制脚垫-祥韵系列</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    备注：
+                                </div>
+                                <div class="col-xs-3">
+                                    <div>数量：1</div>
+                                    <div>属性：黑白灰色</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-order panel col-xs-12">
+                <div class="panel-heading collapsed" data-toggle="collapse" href="#order_panel_2">
+                    <p class="panel-title row">
+                        <span class="col-xs-3">订单编号: 10010</span>
+                        <span class="col-xs-2">订单状态: 已付款</span>
+                        <span class="col-xs-3 text-center">订单金额: 1000.00元</span>
+                        <span class="col-xs-4 text-right">付款时间: 2016-11-06 20:50:11</span>
+                    </p>
+                </div>
+                <div id="order_panel_2" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="bg-danger clearfix">
+                            <div class="col-xs-3">买家名称: 哈哈哈</div>
+                            <div class="col-xs-5 text-ellipsis">收货地址: Camino de Roberto Carpio 3 Guipúzcoa, 00193, hahahaha</div>
+                            <div class="col-xs-4 text-right">订单生成时间: 2016-11-06 20:50:11</div>
+                            <div class="col-xs-3">买家电话: 13455555555</div>
+                            <div class="col-xs-5">买家邮箱: 548342112@162.com</div>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li class="clearfix">
+                                <div class="col-xs-5">
+                                    <div class="media">
+                                        <div class="media-left media-middle">
+                                            <img src="../images/slider01.jpg">
+                                        </div>
+                                        <div class="media-body media-middle">
+                                            <strong>瑜伽私人订制脚垫-祥韵系列</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    备注：
+                                </div>
+                                <div class="col-xs-3">
+                                    <div>数量：1</div>
+                                    <div>属性：黑白灰色</div>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="col-xs-5">
+                                    <div class="media">
+                                        <div class="media-left media-middle">
+                                            <img src="../images/slider01.jpg">
+                                        </div>
+                                        <div class="media-body media-middle">
+                                            <strong>瑜伽私人订制脚垫-祥韵系列</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    备注：
+                                </div>
+                                <div class="col-xs-3">
+                                    <div>数量：1</div>
+                                    <div>属性：黑白灰色</div>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="col-xs-5">
+                                    <div class="media">
+                                        <div class="media-left media-middle">
+                                            <img src="../images/slider01.jpg">
+                                        </div>
+                                        <div class="media-body media-middle">
+                                            <strong>瑜伽私人订制脚垫-祥韵系列</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    备注：
+                                </div>
+                                <div class="col-xs-3">
+                                    <div>数量：1</div>
+                                    <div>属性：黑白灰色</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--pagination-->
+            <div class="pull-right">
+                <ul class="pagination">
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><span>...</span></li>
+                    <li><a href="#">10</a></li>
+                </ul>
+                <div class="pagination-info">
+                    <span>共100页，到第<input type="text" maxlength="3">页</span>
+                    <a href="#" class="btn btn-default">确认</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- main area start -->
+@@include('footer_admin.inc')
+
+<script>
+    $(function () {
+        // add locale
+        $.fn.datepicker.dates["zh-CN"] = {
+            days: ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"],
+            daysShort: ["周日", "周一", "周二", "周三", "周四", "周五", "周六"],
+            daysMin: ["日", "一", "二", "三", "四", "五", "六"],
+            months: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+            monthsShort: ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
+            today: "今日",
+            clear: "清除",
+            format: "yyyy年mm月dd日",
+            titleFormat: "yyyy年mm月",
+            weekStart: 1
+        }
+        // init the datepicker
+        $('.date-picker').datepicker({
+            format: 'yyyy-mm-dd',
+            language: 'zh-CN'
+        });
+    })
+
+</script>

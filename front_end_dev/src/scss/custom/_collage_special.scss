@@ -1,0 +1,240 @@
+ul , ol .li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a:hover {
+    text-decoration: none;
+}
+
+.cosmetic-cleaning-box {
+    background: url('/images/cosmetic-cleaning/bg.jpg') no-repeat;
+    background-size: 1920px 100%;
+    .top-pic {
+        height: 1060px;
+        background: url('/images/cosmetic-cleaning/banner.jpg') no-repeat center top;
+        background-size: 1920px auto;
+        position: relative;
+        >img {
+            position: absolute;
+            top: 0;
+            left: 85px;
+        }
+    }
+    .cosmetic-cleaning {
+        width: 1232px;
+        margin: 0 auto;
+        .second-kill {
+            height: 692px;
+            background: url('/images/cosmetic-cleaning/f1_bg.png') no-repeat;
+            background-size: 1232px auto;
+            padding-top: 162px;
+            &-nav {
+                width: 772px;
+                height: 80px;
+                background-color: #fff;
+                border-radius: 40px;
+                padding: 8px 65px;
+                margin: 0 auto 60px;
+                >li {
+                    color: #fff;
+                    float: left;
+                    width: 180px;
+                    height: 64px;
+                    line-height: 64px;
+                    text-align: center;
+                    border-radius: 40px;
+                    font-size: 28px;
+                    background-color: #bfbfbf;
+                    cursor: pointer;
+                    &:nth-child(2) {
+                        margin: 0 51px;
+                    }
+                    &.active {
+                        background-color: #f40022;
+                    }
+                } 
+            }
+            >div {
+                .second-kill-cont {
+                    padding: 0 25px;
+                    .list {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: flex-start;
+                        &-item {
+                            background-color: #fff;
+                            margin-left: 8px;
+                            overflow: hidden;
+                            &:nth-child(1) {
+                                margin-left: 0;
+                            }
+                            >a {
+                                display: block;
+                                .list-item-pic {
+                                    display: block;
+                                    width: 240px;
+                                    height: 240px;
+                                    margin: 14px 24px;
+                                }
+                                .list-item-cont {
+                                    display: block;
+                                    width: 250px;
+                                    color: #3e3a39;
+                                    margin-left: 22px;
+                                    font-size: 14px;
+                                    height: 20px;   
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                }
+                                .list-item-price {
+                                    padding: 4px 12px;
+                                    height: 59px;
+                                    line-height: 59px;
+                                    background-color: #FF0033;
+                                    >img {
+                                        margin-top: -10px;
+                                    }
+                                    .j_price {
+                                        color: #fff;
+                                        margin-left: 4px;
+                                        font-size: 20px;
+                                        height: 59px;
+                                        margin-top: -5px;
+                                        >span {
+                                            display: inline-block;
+                                            font-size: 28px;
+                                            margin-top: -30px;
+                                            font-weight: bolder;
+                                        }
+                                    }
+                                    .rush-buy {
+                                        float: right;
+                                        color: #fff;
+                                        font-size: 16px;
+                                        font-weight: bolder;
+                                        margin-top: -4px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .selected-brand-box {
+            margin-top: 40px;
+            background: url('/images/cosmetic-cleaning/f2_bg.png') no-repeat;
+            background-size: 1232px 100%;
+            padding-top: 150px;
+            padding-bottom: 49px;
+            .selected-brand {
+                margin: 0 25px;
+                >a {
+                    display: block;
+                    >img {
+                        margin-bottom: 14px;
+                    }
+                }
+            }
+        }
+        .special-zone-box {
+            background: url('/images/cosmetic-cleaning/f3_bg.png') no-repeat;
+            background-size: 1232px 100%;
+            padding-top: 157px;
+            padding-bottom: 55px;
+            margin-top: 40px;
+            .special-zone {
+                margin: 0 26px;
+                >ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    .special-item {
+                        margin-left: 10px;
+                        margin-bottom: 22px;
+                        background-color: #fff;
+                        position: relative;
+                        &:nth-child(4n-3) {
+                            margin-left: 0;
+                        }
+                        &:last-child {
+                            >img {
+                                width: 286px;
+                                height: 254px;                                
+                            }
+                        }
+                        >a {
+                            display: block;
+                            .special-item-bz1 {
+                                z-index: 10;
+                                position: absolute;
+                                top: 0;
+                                left: 12px;
+                            }
+                            .special-item-bz2 {
+                                z-index: 10;
+                                position: absolute;
+                                top: 0;
+                                left: 65px;
+                            }
+                            .special-item-pic {
+                                display: block;
+                                width: 156px;
+                                height: 156px;
+                                margin: 20px 65px 10px;
+                            }
+                            >span {
+                                display: block;
+                                width: 240px;
+                                height: 20px;  
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;                                
+                                &.special-item-cont1 {
+                                    font-size: 14px;
+                                    font-weight: bolder;
+                                    margin-left: 12px;
+                                }
+                            }
+                            .special-item-price {
+                                height: 48px;
+                                line-height: 48px;
+                                background: url('/images/cosmetic-cleaning/bg_2.jpg') no-repeat center;
+                                background-size: 286px 100%;
+                                position: relative;
+                                padding-left: 10px;
+                                .s_price {
+                                    color: #fff;
+                                    font-size: 18px;
+                                    >span {
+                                        font-size: 20px;
+                                    }
+                                }
+                                >img {
+                                    position: absolute;
+                                    right: 9px;
+                                    bottom: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .return-top {
+        height: 98px;
+        line-height: 98px;
+        background-color: #6A02AD;
+        font-size: 42px;
+        text-align: center;
+        margin-top: 50px;
+        >a {
+            color: #fff;
+            letter-spacing: 2px;
+        }
+    }
+    
+}

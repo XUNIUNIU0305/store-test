@@ -1,0 +1,73 @@
+body {
+  overflow-x: hidden; }
+
+.bg-muted {
+  background: #f2f2f2; }
+
+.table-fix {
+  table-layout: fixed; }
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.container {
+  width: 1190px;
+  max-width: none !important; }
+
+.high-lighted {
+  color: #df483d; }
+
+.bank-audit-detail .title {
+  margin-top: 30px;
+  line-height: 46px;
+  padding: 0 26px;
+  font-size: 14px;
+  background: #e5e5e5; }
+
+.bank-audit-detail .table {
+  width: calc(100% - 100px);
+  margin: 40px 50px;
+  text-align: center;
+  color: #666;
+  border: 1px solid #d9d9d9; }
+  .bank-audit-detail .table td {
+    width: 50%;
+    line-height: 2;
+    border: none;
+    border-right: 1px solid #d9d9d9; }
+  .bank-audit-detail .table tr:nth-child(2n - 1) {
+    background: #f8f9fa; }
+
+.bank-audit-detail .handle-box {
+  text-align: center; }
+  .bank-audit-detail .handle-box .btn {
+    margin: 0 20px;
+    padding: 6px 20px; }
+
+.bank-audit-detail .pay-box {
+  border: 1px solid #fce7e6; }
+  .bank-audit-detail .pay-box .go-pay {
+    color: #459ae9;
+    margin: 0 20px;
+    cursor: pointer; }
+    .bank-audit-detail .pay-box .go-pay .icon {
+      font-size: 14px; }
+    .bank-audit-detail .pay-box .go-pay.active .icon {
+      display: inline-block;
+      -webkit-transform: rotate(-90deg);
+              transform: rotate(-90deg); }
+  .bank-audit-detail .pay-box .pay-handle {
+    background-color: #fce7e6;
+    padding: 16px 20px; }
+  .bank-audit-detail .pay-box .form-inline {
+    padding: 2px 0; }
+  .bank-audit-detail .pay-box .form-group {
+    margin: 10px 15px; }
+    .bank-audit-detail .pay-box .form-group .btn-code {
+      color: #df483d; }
+    .bank-audit-detail .pay-box .form-group .btn {
+      border: 1px solid #df483d; }
+  .bank-audit-detail .pay-box .btn-money {
+    margin-left: 30px; }

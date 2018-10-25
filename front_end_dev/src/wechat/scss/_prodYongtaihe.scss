@@ -1,0 +1,298 @@
+	body{
+  max-width: 640px;
+  margin:0 auto;
+  background:url(/images/yongtaihe_brand/bg.jpg) repeat;
+}
+.product-yongtaihe {
+  img {
+    max-width: 100%;
+  }
+div.main{
+  max-width: 640px;
+  margin:0 auto 20px;
+  padding:0px 16px;
+}
+
+.top{
+  padding:10px;
+  background: url(/images/yongtaihe_brand/1.jpg) center;
+  position:relative;
+}
+
+.top .top_pic{
+  position:relative;
+  left:10px;
+}
+
+.top .des{
+  position:absolute;
+  bottom:20px;
+  left:50px;
+}
+
+.top .des p{
+  display:inline-block;
+  color:#e12826;
+  padding-bottom: 3px;
+  border-bottom:1px solid #e12826;
+  font-size: 18px;
+}
+
+.top .des h2{
+  color:#fff;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.top .des a{
+  display:inline-block;
+  padding:5px 15px;
+  border-radius: 20px;
+  background:#e12826;
+  color:#fff;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.main .title{
+  text-align: center;
+}
+
+.main .title p{
+    color:#ccc;
+}
+
+.main .title{
+  background-size:cover;
+  color:#fff;
+  padding:10px 0;
+}
+
+.main .item .title{
+  background:url(/images/yongtaihe_brand/3.jpg) no-repeat;
+}
+
+.main .item-list{
+  overflow: hidden;
+  background:#535353;
+  position:relative;
+}
+
+.main .item-list .left{
+    width:35%;
+    position:absolute;
+    left:0;
+    height: 100%;
+    display:flex;
+    display:-webkit-flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+}
+
+.main .item-list .left a p{
+  font-size: 14px;
+  color:#fff;
+}
+
+.main .item-list .left .price{
+  color:#fee102;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+.main .item-list:last-child{
+  margin-top: 10px;
+}
+
+.main .item-list .left .toBuy{
+  display:inline-block;
+  padding:5px;
+  border:1px solid #fff;
+  color:#fff;
+  margin:3px 0 8px;
+}
+
+.main .item-list .left .blank{
+  width:30px;
+  height: 1px;
+  background:#fff;
+}
+
+.main .item-list .right{
+    width:65%;
+    float:right;
+}
+
+/*明星爆款*/
+.star-item{
+  background:url(/images/yongtaihe_brand/6.jpg);
+  background-size: cover;
+  padding:10px 0;
+  text-align: center;
+}
+
+.star-item .star-product{
+  margin:0 auto;
+  text-align: center;
+  padding:5px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.star-item p a{
+  display:inline-block;
+  margin-left: 20px;
+  padding:5px 20px;
+  background: #e12827;
+  color:#fff;
+  border-radius: 3px;
+}
+
+.star-item p{
+  margin: 10px 0;
+  color:#fff;
+}
+
+.star-item p span{
+  color:#e9cf05;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*电源专区*/
+.power-list ul li{
+  width:100%;
+  background:#282828;
+  padding:10px;
+  position:relative;
+  overflow: hidden;
+}
+
+.power-list ul li .half{
+  width:50%;
+  float:left;
+  color:#fff;
+  font-size: 16px;
+}
+
+.power-list ul li .half.rt{
+  position:absolute;
+  right:5px;
+  height: 100%;
+  display:flex;
+  display:-webkit-flex;
+  justify-content:center;
+  align-items:center;
+  padding-left:10px;
+  margin-top:-10px;
+}
+
+.power-list ul li .half .newPrice{
+  color:#e9cf05;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.power-list ul li .half .oldPrice{
+  text-decoration: line-through;
+  color: #d2d2d1;
+}
+
+.power-list ul li .half .buy a{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 20px;
+    background: #e12827;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.power-list ul li .half .buy{
+  text-align: left;
+}
+
+.power-list ul li{
+  margin-bottom: 2px;
+}
+
+.power-list ul li .freePostage{
+  float:right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:420px){
+  .top .des{
+      position:absolute;
+      bottom:10px;
+      left:40px;
+    }
+    .top .des p{
+      font-size: 14px;
+    }
+
+    .top .des h2{
+      color:#fff;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .top .des a{
+      font-size: 14px;
+      padding:2px 10px;
+      margin-top: 5px;
+    }
+
+    .star-item .star-product{
+      width:85%;
+      margin:0 auto;
+      background:#ccc;
+      padding:5px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .power-list ul li .half{
+      width:50%;
+      float:left;
+      color:#fff;
+      font-size: 12px;
+    }
+
+    .power-list ul li .freePostage{
+      width:36px;
+      height:36px;
+      margin-top: 5px;
+    }
+}
+
+}

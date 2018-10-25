@@ -1,0 +1,292 @@
+@@include('head.inc')
+<!-- header start -->
+<header class="business-frame-header">
+    <nav class="navbar navbar-default">
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <i class="glyphicon glyphicon-time"></i>2005-11-11 19:38:07
+            </li>
+            <li>
+                <a href="javascript:void(0)"><i class="glyphicon glyphicon-wrench"></i>设置</a>
+            </li>
+            <li>
+                <i class="glyphicon glyphicon-map-marker"></i>上海松江
+            </li>
+            <li>
+                <i class="glyphicon glyphicon-user"></i>476644346@qq.com
+            </li>
+            <li>
+                <a href="javascript:void(0)"><i class="glyphicon glyphicon-off"></i>退出</a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="sub-nav">
+        <div class="pull-left">
+            ◀
+        </div>
+        <ul class="list-inline">
+            <li>品牌馆 <span>&times;</span></li>
+            <li class="active">品牌馆 <span>&times;</span></li>
+            <li>品牌馆 <span>&times;</span></li>
+        </ul>
+        <div class="pull-right">
+            ▶
+        </div>
+    </nav>
+</header>
+<!-- header end -->
+<!-- aside nav start -->
+<aside class="business-frame-aside">
+    <div class="aside-logo">
+        <img alt="logo" src="/images/logo_white.png" height="24">
+    </div>
+    <div class="aside-list">
+        <a data-toggle="collapse" href="#aside_panel_1" class="collapsed">
+            <i class="glyphicon glyphicon-home"></i> 主菜单#1 <i class="glyphicon glyphicon-chevron-down"></i>
+        </a>
+        <div class="collapse" id="aside_panel_1">
+            <ul class="list-unstyled clearfix">
+                <li class="active">
+                    <a href="#">子菜单#1</a>
+                </li>
+                <li>
+                    <a href="#">子菜单#2</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="aside-list">
+        <a data-toggle="collapse" href="#aside_panel_2" class="">
+            <i class="glyphicon glyphicon-tags"></i> 主菜单#2 <i class="glyphicon glyphicon-chevron-down"></i>
+        </a>
+        <div class="collapse in" id="aside_panel_2">
+            <ul class="list-unstyled clearfix">
+                <li class="active">
+                    <a href="#">子菜单#1</a>
+                </li>
+                <li>
+                    <a href="#">子菜单#2</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="aside-list">
+        <a data-toggle="collapse" href="#aside_panel_3" class="collapsed">
+            <i class="glyphicon glyphicon-star-empty"></i> 主菜单#3 <i class="glyphicon glyphicon-chevron-down"></i>
+        </a>
+        <div class="collapse" id="aside_panel_3">
+            <ul class="list-unstyled clearfix">
+                <li class="active">
+                    <a href="#">子菜单#1</a>
+                </li>
+                <li>
+                    <a href="#">子菜单#2</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</aside>
+<!-- aside nav end -->
+<!-- main area start -->
+<div class="apx-acc-main cus-container apx-business-list-main">
+     <div id="business-contain">
+         <div class="order-select">
+               <h2>订单筛选</h2>
+               <div class="order-msg business-msg">
+                   <ul class="clearfix">
+                       <li>
+                           <label>收货人：</label>
+                           <input type="text" name="order_number">
+                       </li>
+                       <li>
+                           <label>购买账号：</label>
+                           <input type="text" name="buy_account" class="long-length">
+                       </li>  
+                       <li class="msg-time">
+                           <label>下单时间：</label>
+                           <input type="text" id="datetimepicker" name="pay_date_start">
+                           <i class="time-line"></i>
+                           <input type="text" name="pay_date_end">        
+                       </li> 
+                       <li>
+                           <label>货单状态：</label>
+                           <select name="" id="">
+                                <option value="">全部状态</option>
+                                <option value="">部分状态</option>
+                           </select>
+                       </li>
+                       <li>
+                           <label>货单号：</label>
+                           <input type="text" name="buy_account">
+                       </li>  
+                       <li class="msg-time">
+                           <label>付款时间：</label>
+                           <input type="text" id="datetimepicker" name="pay_date_start">
+                           <i class="time-line"></i>
+                           <input type="text" name="pay_date_end">        
+                       </li> 
+                       <li>
+                           <label>收货地址：</label>
+                           <input type="text" name="address" class="long-length">
+                       </li> 
+                       
+                   </ul>  
+                   <button class="c_btn">查询</button>
+               </div>
+         </div>  
+         <div class="f-line"></div>
+         <div class="order-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="tab_all">
+                <table class="table table-fix top-table text-center">
+                    <tr>
+                        <td class="pro-detail text-left" width="410">商品</td>
+                        <td width="120" class="text-left">平台账号</td>
+                        <td width="230" class="text-left">用户备注</td>
+                        <td width="260" class="text-left">收货人信息</td>
+                        <td width="160">状态/操作</td>
+                    </tr>
+                </table>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <td colspan="7" class="no-border row bus-order-msg">
+                                <div class="text-left col-xs-11">
+                                    <span>货单号：1201231254</span>
+                                    <span class="orser-time">下单时间：2017-05-26 23:00:00</span>
+                                    <span class="orser-time">付款时间：2017-10-12  12:24:25</span>
+                                </div>
+                                <div class="text-left col-xs-1">已付款</div>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tr-content">
+                            <td class="row acc-media-box " id="bus-content">
+                                <div class="col-xs-8">
+                                    <div class="media text-left">
+                                        <a class="media-left media-middle" href="#">
+                                            <img src="/images/slider02.jpg">
+                                        </a>
+                                        <div class="media-body media-middle">
+                                            <div class="descipe-bus">车内除发生过是大法官阿斯蒂芬的省申达股份大师傅...</div>
+                                            <div class="price">￥2000.00</div>
+                                            <div class="text-attr">
+                                                颜色：黑色&nbsp;大小：小&nbsp;前挡：U9&nbsp;后档：V8
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td width="120">35656895</td>
+                            <td width="230" class="text-left">
+                                麻烦尽快发货，所以是是的一麻烦尽快发货
+                            </td>
+                            <td width="270" class="text-left txt-msg">
+                                <div class="person"><i></i>张三</div>
+                                <div class="phone"><i></i>17305489550</div>
+                                <div class="address"><i></i>上海市宝山区宝山区宝山区58号</div>
+                            </td>
+                            <td width="160" class="text-center text-btn">
+                                <button>接单</button>
+                                <button>接单</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <td colspan="7" class="no-border row bus-order-msg">
+                                <div class="text-left col-xs-11">
+                                    <span>货单号：1201231254</span>
+                                    <span class="orser-time">下单时间：2017-05-26 23:00:00</span>
+                                    <span class="orser-time">付款时间：2017-10-12  12:24:25</span>
+                                </div>
+                                <div class="text-left col-xs-1">已付款</div>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tr-content">
+                            <td class="row acc-media-box " id="bus-content">
+                                <div class="col-xs-8">
+                                    <div class="media text-left">
+                                        <a class="media-left media-middle" href="#">
+                                            <img src="/images/slider02.jpg">
+                                        </a>
+                                        <div class="media-body media-middle">
+                                            <div class="descipe-bus">车内除发生过是大法官阿斯蒂芬的省申达股份大师傅...</div>
+                                            <div class="price">￥2000.00</div>
+                                            <div class="text-attr">
+                                                颜色：黑色&nbsp;大小：小&nbsp;前挡：U9&nbsp;后档：V8
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td width="120">35656895</td>
+                            <td width="230" class="text-left">
+                                麻烦尽快发货，所以是是的一麻烦尽快发货
+                            </td>
+                            <td width="270" class="text-left txt-msg">
+                                <div class="person"><i></i>张三</div>
+                                <div class="phone"><i></i>17305489550</div>
+                                <div class="address"><i></i>上海市宝山区宝山区宝山区58号</div>
+                            </td>
+                            <td width="160" class="text-center text-btn">
+                                <button>完成</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <td colspan="7" class="no-border row bus-order-msg">
+                                <div class="text-left col-xs-11">
+                                    <span>货单号：1201231254</span>
+                                    <span class="orser-time">下单时间：2017-05-26 23:00:00</span>
+                                    <span class="orser-time">付款时间：2017-10-12  12:24:25</span>
+                                </div>
+                                <div class="text-left col-xs-1">已付款</div>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tr-content">
+                            <td class="row acc-media-box " id="bus-content">
+                                <div class="col-xs-8">
+                                    <div class="media text-left">
+                                        <a class="media-left media-middle" href="#">
+                                            <img src="/images/slider02.jpg">
+                                        </a>
+                                        <div class="media-body media-middle">
+                                            <div class="descipe-bus">车内除发生过是大法官阿斯蒂芬的省申达股份大师傅...</div>
+                                            <div class="price">￥2000.00</div>
+                                            <div class="text-attr">
+                                                颜色：黑色&nbsp;大小：小&nbsp;前挡：U9&nbsp;后档：V8
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td width="120">35656895</td>
+                            <td width="230" class="text-left">
+                                麻烦尽快发货，所以是是的一麻烦尽快发货
+                            </td>
+                            <td width="270" class="text-left txt-msg">
+                                <div class="person"><i></i>张三</div>
+                                <div class="phone"><i></i>17305489550</div>
+                                <div class="address"><i></i>上海市宝山区宝山区宝山区58号</div>
+                            </td>
+                            <td width="160" class="text-center text-btn">
+                                <button>填写质保单</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('business_footer.inc')

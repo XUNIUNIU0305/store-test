@@ -1,0 +1,17 @@
+ // customed scroll bar
+.iScrollVerticalScrollbar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 8px;
+    width: 8px;
+    background: #efeff4;
+    box-shadow: none;
+}
+
+.iScrollIndicator {
+    position: absolute;
+    width: 100%;
+    background: #e4e5e6;
+    border-radius: 0;
+}

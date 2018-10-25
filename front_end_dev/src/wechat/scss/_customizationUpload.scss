@@ -1,0 +1,391 @@
+.customization-upload {
+	margin-bottom: 60px;
+	background-color: #f2f2f2;
+	p {
+		margin: 0;
+	}
+	img {
+		max-width: 100%;
+		vertical-align: top;
+	}
+	.tip-title {
+		width: 100%;
+		height: 120px;
+		background-color: #fff0f0;
+		position: relative;
+		display: none;
+		&.reject {
+			display: block;
+			background: #fff0f0 url('/images/customization/reject.png') no-repeat center 40%;
+			background-size: 15%;
+		}
+		&.masking {
+			display: block;
+			background: #fff0f0 url('/images/customization/shengc.png') no-repeat center 40%;
+			background-size: 20%;
+		}
+		&.transiting {
+			display: block;
+			background: #fff0f0 url('/images/customization/car.png') no-repeat center 40%;
+			background-size: 20%;
+		}
+		p {
+			width: 100%;
+			position: absolute;
+			bottom: 10px;
+			left: 0;
+			text-align: center;
+		}
+	}
+	.express-info {
+		background: #fff;
+		.title {
+			background: url('/images/customization/icon2.png') no-repeat 12px center;
+			background-size: 22px auto;
+		}
+		p {
+			margin: 0 44px;
+			padding: 8px 0;
+			border-top: 1px solid #dedfe0;
+			color: #666;
+			font-size: 16px;
+		}
+	}
+	.order-info {
+		margin-top: 10px;
+		display: flex;
+		padding: 10px;
+		background-color: #FFF;
+		position: relative;
+		.img {
+			width: 90px;
+			height: 90px;
+			overflow: hidden;
+			margin: auto;
+		}
+		.text {
+			flex: 0 0 70%;
+			padding-left: 10px;
+			.h1 {
+				font-size: 1.3em;
+				margin-bottom: 5px;
+			}
+			.attr,.time {
+				color: #9d9d9d;
+			}
+			.price {
+				// position: absolute;
+				bottom: 10px;
+				color: #e53935;
+				span {
+					font-size: 1.3em;
+				}
+			}
+		}
+	}
+	.title {
+		font-size: 1.2em;
+		padding: 6px 0 6px 44px;
+	}
+	.select-car {
+		margin-top: 8px;
+		padding-bottom: 6px;
+		background-color: #FFF;
+		overflow: hidden;
+		color: #333;
+		.title {
+			background: url('/images/customization/1.png') no-repeat 12px center;
+			background-size: 22px auto;			
+			border-bottom: 1px solid rgb(222, 223, 224);
+		}
+		ul {
+
+			margin: 6px 10px;
+			li {
+				border-bottom: 1px solid rgb(222, 223, 224);
+				padding: 8px 0;
+				img {
+					width: 29px;
+					height: 29px;
+					border: none;
+					vertical-align: middle;
+					margin-right: 10px;
+				}
+			}
+		}
+		.left {
+			padding: 0 10%;
+			line-height: 29px;
+		}
+	}
+	.remark {
+		margin-top: 10px;
+		background-color: #FFF;
+		padding: 0 10px;
+		.title {
+			padding-left: 34px;
+			background: url('/images/customization/2.png') no-repeat 2px center;
+			background-size: 22px auto;
+		}
+		textarea {
+			width: 100%;
+			background-color: rgb(245, 245, 245);
+			border: 1px solid rgb(224, 224, 224);
+			margin: 10px 0;
+		}
+	}
+	.supply-remark {
+		margin-top: 10px;
+		background-color: #FFF;
+		overflow: hidden;
+		.title {
+			background: url('/images/customization/3.png') no-repeat 12px center;
+			background-size: 22px auto;
+		}
+		p {
+			margin: 10px 20px;
+			font-size: 1.2em;
+		}
+	}
+	.upload-img {
+		margin-top: 10px;
+		background-color: #FFF;
+		.title {
+			background: url('/images/customization/4.png') no-repeat 12px center;
+			background-size: 22px auto;
+		}
+		.img-box {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 2.66%;
+		}
+		.img-upload-box {
+			flex: 0 0 28%;
+			padding-top: 29.33%;
+			margin: 2%;
+	        position: relative;
+	        border: 1px dashed #b3b3b3;
+	        overflow: hidden;
+	        cursor: pointer;
+	        display: inline-block;
+	        img {
+	            background: #fff;
+	            display: inline-block;
+	            margin: 0 auto;
+	            position: absolute;
+	            top: 0;
+	            left: 0;
+	            right: 0;
+	            bottom: 0;
+	            width: 100%;
+	            height: 100%;
+	        }
+	        .close {
+	        	position: absolute;
+	        	top: 0;
+	        	right: 0;
+	        	width: 20px;
+	        	height: 20px;
+	        	background: rgba(0, 0, 0, 0.2);
+	        	z-index: 2;
+	        	color: #fff;
+	        	text-align: center;
+	        	line-height: 20px;
+	        }
+	    }
+	    input[type="file"] {
+	    	width: 100%;
+	        position: absolute;
+	        // clip: rect(0, 0, 0, 0);
+	        // pointer-events: none;
+	        top: 0;
+	        left: 0;
+	        right: 0;
+	        bottom: 0;
+	        z-index: 99;
+	        opacity: 0;
+	    }
+	}
+	.submit {
+		margin: 20px 0;
+		.btn {
+			display: block;
+			width: 78%;
+			margin: 0 auto;
+			background-image: linear-gradient(0deg, rgb(229, 57, 53) 0%, rgb(242, 101,27) 42%,rgb(255, 145, 0) 100%);
+			font-size: 1.5em;
+			color: #fff;
+			padding: 10px 0;
+			text-align: center;
+			border-radius: 40px;
+		}
+	}
+}
+.mask-fixed {
+    z-index: 100001;
+    position: fixed;
+}
+.wechat-car-brand-container {
+	img {
+		max-width: 100%;
+		vertical-align: top;
+	}
+	transition: transform .2s;
+    transform: translateY(100%);
+    @at-root .in > & {
+        transform: translateY(0);
+    }
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    top: 20%;
+    bottom: 0;
+    >.title{
+        font-size: 16px;
+        line-height: 44px;
+        text-align: center;
+    }
+    .select-box {
+    	display: flex;
+    	position: absolute;
+    	top: 44px;;
+    	left: 0;
+    	right: 0;
+    	bottom:0;
+    }
+    .left {
+		flex: 0 0 15%;
+		background: #f0eff5;
+		text-align: center;
+		ul {
+			-webkit-overflow-scrolling : touch;
+			padding: 0;
+		}
+		span {
+			display: inline-block;
+			width: 100%;
+		}
+		.active {
+			background-color: #FFF;
+			border-left: 3px solid #e53935;
+		}
+    }
+    .right {
+    	flex: 0 0 85%;
+    	position: absolute;
+    	top: 0;
+    	right: 0;
+    	left: 15%;
+    	bottom: 0;
+    	.title {
+    		background: #f0eff5;
+    		color: #666;
+    		line-height: 20px;
+    		span {
+    			padding-left: 30px;
+    		}
+    	}
+    	li {
+    		position: relative;
+    	}
+    	.img {
+    		width: 26px;
+    		height: 26px;
+    		padding: 8px 0 8px 40px;
+    		img {
+    			width: 100%;
+    			height: 100%;
+    		}
+    	}
+		.brand-name {
+			position: absolute;
+			left: 40%;
+		}
+    }
+    ul{
+        padding: 0 5%;
+        height: 100%;
+        overflow: auto;
+        li{
+            line-height: 44px;
+            font-size: 16px;
+            border-bottom: 1px solid #f2f2f2;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &.actived{
+                i{
+                    background: #cf4544;
+                }
+            }
+        }
+        i{
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+.wechat-car-type-container {
+	transition: transform .2s;
+    transform: translateY(100%);
+    @at-root .in > & {
+        transform: translateY(0);
+    }
+    width: 100%;
+    height: 70%;
+    background: #fff;
+    position: absolute;
+    top: 30%;
+    bottom: 0;
+    .btn{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        line-height: 44px;
+        width: 100%;
+        border: 0;
+        color: #fff;
+        font-size: 16px;
+        outline: 0;
+        background-image: linear-gradient( 270deg, rgb(229,57,53) 0%, rgb(255,145,0) 100%);
+    }
+    .title{
+        font-size: 16px;
+        line-height: 44px;
+        text-align: center;
+        border-bottom: 1px solid #f2f2f2;
+    }
+    ul{
+        padding: 0 5%;
+        height: 80%;
+        overflow: auto;
+        -webkit-overflow-scrolling : touch;
+        li{
+            line-height: 44px;
+            font-size: 16px;
+            border-bottom: 1px solid #f2f2f2;
+            display: flex;
+        }
+        i{
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+        }
+    }
+    .img {
+		width: 26px;
+		height: 26px;
+		padding: 8px 0 8px;
+		img {
+			width: 100%;
+			height: 100%;
+			vertical-align: top;
+		}
+	}	
+	.brand-name {
+		width: 70%;
+		padding-left: 5%;
+	}
+}

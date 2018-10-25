@@ -1,0 +1,162 @@
+@@include('inc/head.inc') @@include('inc/top_nav.inc') @@include('inc/search.inc')
+<div class="custom-account-view">
+    <div class="container">
+        <!-- no-head 隐藏账户中心头部 -->
+        <div class="custom-account-container">
+            @@include('inc/account_menu.inc')
+            <div class="custom-group-cancel-main">
+                <div class="cancel-header">
+                    <div class="top-title">拼购提货</div>
+                    <div class="handle-box">
+                        <div class="input-group">
+                            <label for="">提货：</label>
+                            <input type="text" name="" placeholder="请输入提货码" >
+                        </div>
+                        <span class="btn btn-danger">提货</span>
+                    </div>
+                </div>
+                <div class="group-cancel-container">
+                    <div class="form-box row">
+                        <div class="col-xs-6">
+                            <div class="input-group">
+                                <label>订单状态：</label>
+                                <select name="" class="order-status">
+                                    <option value="">全部</option>
+                                    <option value="">1</option>
+                                    <option value="">1</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="input-group">
+                                <label>拼购编号：</label>
+                                <input type="text" name="" placeholder="请输入拼购编号" class="input-middle" >
+                            </div>
+                        </div>
+                        <div class="col-xs-6 time-form">
+                            <span>提货时间：</span>
+                            <div class="input-group time-box">
+                                <input type="text" class="form-control date-picker J_search_timeStart" value="">
+                            </div>
+                            <span> 至 </span>
+                            <div class="input-group time-box">
+                                <input type="text" class="form-control date-picker J_search_timeEnd" value="">
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="input-group">
+                                <label>门店账号：</label>
+                                <input type="text" name="" placeholder="请输入门店账号" class="input-middle" >
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="input-group">
+                                <label>商品名称：</label>
+                                <input type="text" name="" placeholder="请输入商品名称" class="input-middle" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group-order-list">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>拼购编号</th>
+                                    <th>商品名称</th>
+                                    <th>门店账号</th>
+                                    <th>数量</th>
+                                    <th>提货日期</th>
+                                    <th>状态</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>13513211</td>
+                                    <td>
+                                        <div class="pro-name">什么什么什么什么什么什么什么什么是</div>
+                                    </td>
+                                    <td>1321531515</td>
+                                    <td>1321/1351</td>
+                                    <td>2018-11-15</td>
+                                    <td>状态</td>
+                                </tr>
+                                <tr>
+                                    <td>13513211</td>
+                                    <td>
+                                        <div class="pro-name">什么什么什么什么什么什么什么什么是</div>
+                                    </td>
+                                    <td>1321531515</td>
+                                    <td>1321/1351</td>
+                                    <td>2018-11-15</td>
+                                    <td>状态</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('inc/footer.inc')
+<div class="apx-modal-admin-alert custom-group-order-cancel-modal modal fade" id="apxModalAdminAlertReject" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span></a>
+                <h4 class="modal-title">提货明细</h4>
+            </div>
+            <div class="modal-body">
+                <div class="pro-info">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td width="260">商品</td>
+                                <td width="200">属性</td>
+                                <td>订单总量</td>
+                                <td>可提取数量</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="img-title">
+                                        <div class="img-box">
+                                            <img src="/images/930.jpg" alt="">
+                                        </div>
+                                        <div class="title-box">
+                                            我是商品名称
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="attr-box">
+                                        属性名：属性值；属性名：属性值；
+                                        属性名：属性值；属性名：属性值；
+                                    </div>
+                                </td>
+                                <td>12</td>
+                                <td>12</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="num-box">
+                    <span>提取数量：</span>
+                    <div class="input-group">
+                        <div class="input-group-addon">-</div>
+                        <input class="form-control" value="1" maxlength="2" title="请输入数量" type="text">
+                        <div class="input-group-addon">+</div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <span class="btn btn-danger">提取</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function() {
+        $('#apxModalAdminAlertReject').modal('show')
+    })
+</script>

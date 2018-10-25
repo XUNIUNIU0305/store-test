@@ -1,0 +1,128 @@
+body {
+  overflow-x: hidden; }
+
+.bg-muted {
+  background: #f2f2f2; }
+
+.table-fix {
+  table-layout: fixed; }
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.container {
+  width: 1190px;
+  max-width: none !important; }
+
+.high-lighted {
+  color: #df483d; }
+
+.apx-admin-account {
+  padding-left: 30px; }
+  .apx-admin-account .account-head {
+    margin-top: 42px; }
+    .apx-admin-account .account-head h5 {
+      line-height: 14px;
+      font-size: 14px;
+      font-weight: bold;
+      padding-left: 34px;
+      background: url("/images/admin/account/acc-head.png") no-repeat 10px 0; }
+    .apx-admin-account .account-head .account-line {
+      width: 98%;
+      height: 3px;
+      background-color: #ccc; }
+    .apx-admin-account .account-head .btn {
+      width: 100px;
+      height: 36px;
+      color: #fff;
+      background: #cf4d44;
+      margin-top: 30px; }
+      .apx-admin-account .account-head .btn:hover {
+        background: #d95148; }
+  .apx-admin-account .account-main h5 {
+    background: url("/images/admin/account/new-acc.png") no-repeat 10px 0; }
+  .apx-admin-account .account-main ul, .apx-admin-account .account-main li {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .apx-admin-account .account-main .account-list {
+    width: 98%;
+    height: 40px;
+    font-size: 14px;
+    color: #4c4c4c;
+    line-height: 40px;
+    border-bottom: 1px solid #d9d9d9;
+    padding-left: 20px; }
+  .apx-admin-account .account-main .odd {
+    background: #e6e6e6; }
+  .apx-admin-account .account-main .col-xs-10 {
+    font-weight: bold; }
+
+.apx-admin-add-account .modal-content {
+  border-radius: 10px;
+  height: 400px; }
+
+.apx-admin-add-account .modal-header {
+  height: 50px;
+  color: #fff;
+  background: #cf4d44;
+  border-radius: 8px 8px 0 0; }
+
+.apx-admin-add-account .modal-body .box {
+  height: 36px;
+  border-bottom: 1px dotted #ccc; }
+  .apx-admin-add-account .modal-body .box h4 {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 35px 0 20px 35px; }
+
+.apx-admin-add-account .modal-body .button-group {
+  margin: 80px 0 0 96px; }
+  .apx-admin-add-account .modal-body .button-group .addon {
+    width: 44px;
+    height: 44px;
+    border: 1px solid #999;
+    text-align: center;
+    font-size: 26px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
+  .apx-admin-add-account .modal-body .button-group input {
+    margin: 0;
+    padding: 0;
+    width: 96px;
+    height: 44px;
+    padding-left: 40px;
+    vertical-align: middle; }
+  .apx-admin-add-account .modal-body .button-group .add {
+    border-right: 0;
+    margin-left: -1px;
+    border-radius: 4px 0 0 4px; }
+  .apx-admin-add-account .modal-body .button-group .sub {
+    border-left: 0;
+    border-radius: 0 4px 4px 0; }
+  .apx-admin-add-account .modal-body .button-group .left, .apx-admin-add-account .modal-body .button-group .right {
+    display: inline-block; }
+  .apx-admin-add-account .modal-body .button-group .right {
+    vertical-align: middle; }
+    .apx-admin-add-account .modal-body .button-group .right a {
+      display: block;
+      width: 186px;
+      height: 44px;
+      background: #cf4d44;
+      color: #fff;
+      font-size: 20px;
+      line-height: 44px;
+      text-align: center;
+      vertical-align: middle;
+      border-radius: 4px;
+      margin-left: 40px;
+      text-decoration: none; }
+      .apx-admin-add-account .modal-body .button-group .right a:hover {
+        background: #d95148 !important; }

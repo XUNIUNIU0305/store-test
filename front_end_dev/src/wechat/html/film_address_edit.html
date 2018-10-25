@@ -1,0 +1,52 @@
+@@include('head.inc')
+<div class="film-address-edit">
+	<div class="top"></div>
+	<div class="nav">
+         <i class="icon-lt"></i>
+         <span>地址管理</span>
+         <span>保存</span>
+	</div>
+	<div class="message">
+         <ul>
+            <li>
+               <span>收货人</span>
+               <input type="text">
+            </li>
+            <li>
+               <span>联系电话</span>
+               <input type="text">
+            </li>
+         </ul>
+        <div class="area">
+           <span>所属区域</span>
+           <form action="">
+                <select class="select" name="province" id="s1">
+                     <option value="" selected>上海</option>
+                     <option value="">北京</option>
+                     <option value="">深圳</option>
+                </select>
+                <select class="select" name="city" id="s2">
+                     <option value="" selected>上海市</option>
+                     <option value="">北京</option>
+                     <option value="">深圳</option>
+                </select>
+                <select class="select" name="town" id="s3">
+                     <option value="" selected>宝山区</option>
+                     <option value="">浦东区</option>
+                     <option value="">深圳</option>
+                </select>
+           </form>
+        </div>
+        <div class="add_datail">
+           <span>详细地址</span>
+           <textarea name="" id="" cols="30" rows="10" placeholder="请填写详细地址"></textarea>
+        </div>
+    </div>
+    <footer>
+         <p>设为默认</p>
+         <div class="btn">
+              <button></button>
+         </div>
+    </footer>
+</div>
+@@include('footer.inc')

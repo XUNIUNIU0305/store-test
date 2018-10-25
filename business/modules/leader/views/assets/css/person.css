@@ -1,0 +1,157 @@
+body {
+  overflow-x: hidden; }
+
+.bg-muted {
+  background: #f2f2f2; }
+
+.table-fix {
+  table-layout: fixed; }
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.container {
+  width: 1190px;
+  max-width: none !important; }
+
+.high-lighted {
+  color: #df483d; }
+
+.business-main-wrap .business-salseman .business-salesman-head {
+  margin: 10px 0; }
+  .business-main-wrap .business-salseman .business-salesman-head .input-group .form-control {
+    width: 410px; }
+  .business-main-wrap .business-salseman .business-salesman-head .input-group .btn {
+    height: 34px;
+    border: 1px solid #ccc; }
+  .business-main-wrap .business-salseman .business-salesman-head .btn-round {
+    width: 120px;
+    border-radius: 36px;
+    color: #0099ff;
+    border: 1px solid #0099ff;
+    background-color: #FFF;
+    height: 36px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 36px;
+    padding: 0;
+    margin: 0 10px; }
+
+.business-main-wrap .business-salseman .business-management-panel {
+  height: 700px;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #b2b2b2;
+  box-shadow: 0 0 4px #b2b2b2;
+  font-size: 12px;
+  position: relative; }
+  .business-main-wrap .business-salseman .business-management-panel .header {
+    text-align: center;
+    line-height: 40px;
+    font-weight: 600;
+    border-bottom: 1px solid #b2b2b2;
+    box-shadow: 0 4px 4px -1px #b2b2b2;
+    position: relative;
+    z-index: 1;
+    font-size: 16px;
+    color: #333; }
+    .business-main-wrap .business-salseman .business-management-panel .header:before, .business-main-wrap .business-salseman .business-management-panel .header:after {
+      content: " ";
+      display: table; }
+    .business-main-wrap .business-salseman .business-management-panel .header:after {
+      clear: both; }
+    .business-main-wrap .business-salseman .business-management-panel .header > div {
+      white-space: nowrap; }
+  .business-main-wrap .business-salseman .business-management-panel .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    display: table-cell;
+    padding: 10px 20px;
+    vertical-align: middle;
+    box-shadow: 0 -4px 4px -1px #b2b2b2; }
+    .business-main-wrap .business-salseman .business-management-panel .footer .pagination,
+    .business-main-wrap .business-salseman .business-management-panel .footer .pagination-info {
+      margin: 0;
+      font-size: 12px; }
+  .business-main-wrap .business-salseman .business-management-panel .iscroll_container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden; }
+    .business-main-wrap .business-salseman .business-management-panel .iscroll_container.with-header {
+      top: 40px; }
+    .business-main-wrap .business-salseman .business-management-panel .iscroll_container.with-footer {
+      bottom: 50px; }
+  .business-main-wrap .business-salseman .business-management-panel .list-unstyled {
+    margin: 0; }
+    .business-main-wrap .business-salseman .business-management-panel .list-unstyled a {
+      text-decoration: none; }
+    .business-main-wrap .business-salseman .business-management-panel .list-unstyled.dashed-split li {
+      border-bottom: 1px dashed #b2b2b2; }
+    .business-main-wrap .business-salseman .business-management-panel .list-unstyled li {
+      line-height: 42px;
+      text-align: center; }
+      .business-main-wrap .business-salseman .business-management-panel .list-unstyled li:before, .business-main-wrap .business-salseman .business-management-panel .list-unstyled li:after {
+        content: " ";
+        display: table; }
+      .business-main-wrap .business-salseman .business-management-panel .list-unstyled li:after {
+        clear: both; }
+      .business-main-wrap .business-salseman .business-management-panel .list-unstyled li.active .head {
+        background: #81c0ff;
+        color: #fff; }
+      .business-main-wrap .business-salseman .business-management-panel .list-unstyled li.active > .row {
+        background-color: #81c0ff; }
+      .business-main-wrap .business-salseman .business-management-panel .list-unstyled li .btn {
+        margin: 0 4px;
+        padding: 4px 8px;
+        font-size: 12px;
+        line-height: 1.25;
+        border-radius: 13px; }
+      .business-main-wrap .business-salseman .business-management-panel .list-unstyled li .btn-edit {
+        border: 1px solid #f88311;
+        color: #f88311; }
+      .business-main-wrap .business-salseman .business-management-panel .list-unstyled li .btn-del {
+        border: 1px solid #e11144;
+        color: #e11144; }
+      .business-main-wrap .business-salseman .business-management-panel .list-unstyled li .btn-black {
+        border: 1px solid #000;
+        color: #000; }
+      .business-main-wrap .business-salseman .business-management-panel .list-unstyled li .collapse-info > .row {
+        margin: 10px;
+        text-align: left; }
+        .business-main-wrap .business-salseman .business-management-panel .list-unstyled li .collapse-info > .row .title {
+          font-size: 16px;
+          line-height: 24px;
+          padding: 2px 0;
+          margin: 0;
+          font-weight: 700;
+          padding-left: 30px;
+          background: url("/images/business/manage/follower.png") no-repeat left center; }
+        .business-main-wrap .business-salseman .business-management-panel .list-unstyled li .collapse-info > .row p {
+          font-size: 14px;
+          line-height: 14px;
+          padding: 2px 0 2px 30px;
+          margin: 0; }
+        .business-main-wrap .business-salseman .business-management-panel .list-unstyled li .collapse-info > .row .area {
+          width: 100%;
+          line-height: 14px;
+          padding-left: 45px;
+          margin-bottom: 10px; }
+          .business-main-wrap .business-salseman .business-management-panel .list-unstyled li .collapse-info > .row .area [class^='col-'] {
+            margin: 0;
+            padding: 0; }
+        .business-main-wrap .business-salseman .business-management-panel .list-unstyled li .collapse-info > .row .col-xs-4 {
+          border-right: 1px dashed #ccc; }
+          .business-main-wrap .business-salseman .business-management-panel .list-unstyled li .collapse-info > .row .col-xs-4:nth-child(2) .title {
+            background: url("/images/business/manage/Shape 70.png") no-repeat left center; }
+          .business-main-wrap .business-salseman .business-management-panel .list-unstyled li .collapse-info > .row .col-xs-4:last-child {
+            border: none; }
+            .business-main-wrap .business-salseman .business-management-panel .list-unstyled li .collapse-info > .row .col-xs-4:last-child .title {
+              background: url("/images/business/manage/drafts.png") no-repeat left center; }

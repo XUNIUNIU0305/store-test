@@ -1,0 +1,306 @@
+$size : 1/750 * 100vw;
+
+.electronic-branch-field-box {
+    .electronic-branch-field {
+        background: #000036 url('/images/electronic_branch_field_active/bg.png') no-repeat;
+        background-size: 750 * $size auto;
+        padding-bottom: 80 * $size;
+        .top-pic {
+            height: 586 * $size;
+            background: url('/images/electronic_branch_field_active/banner.jpg') no-repeat;
+            background-size: 750 * $size auto;
+        }
+        .time-limit {
+            width: 700 * $size;
+            height: 1400 * $size;
+            background: url('/images/electronic_branch_field_active/bg1.png') no-repeat;
+            background-size: 700 * $size auto;
+            margin: -90 * $size auto 0;
+            position: relative;
+            .time-limit-nav {
+                width: 530 * $size;
+                height: 28 * $size;
+                padding: 4 * $size 26 * $size;
+                background-color: #fff;
+                border-radius: 20 * $size;
+                position: absolute;
+                top: 88 * $size;
+                left: 64 * $size;
+                >li {
+                    float: left;
+                    color: #fff;
+                    width: 136 * $size;
+                    height: 28 * $size;
+                    line-height: 28 * $size;
+                    font-size: 24 * $size;
+                    text-align: center;
+                    border-radius: 20 * $size;
+                    background-color: rgba(249,0,0,0.5);
+                    letter-spacing: 2 * $size;
+                    cursor: pointer;
+                    &:nth-child(2) {
+                        margin: 0 60 * $size;
+                    }
+                    &.active {
+                        background-color: #f90000;
+                    }
+                }
+            }
+            >div {
+                .time-limit-product {
+                    padding: 0 20 * $size;
+                    position: absolute;
+                    top: 140 * $size;
+                    left: 0;
+                    .list {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: flex-start;
+                        .product-item {
+                            width: 320 * $size;
+                            background-color: #fff;
+                            overflow: hidden;
+                            margin-left: 15 * $size;
+                            margin-bottom: 15 * $size;
+                            overflow: hidden;
+                            &-cont {
+                                display: block;
+                                padding: 10 * $size 5 * $size 6 * $size 5 * $size;
+                                >img {
+                                    width: 300 * $size;
+                                    height: 133 * $size;
+                                }
+                            }
+                            &.alone {
+                                .product-item-cont {
+                                    padding: 0;
+                                    >img {
+                                        padding: 86 * $size 50 * $size;
+                                        width: 231 * $size;
+                                        height: 277 * $size;
+                                    }
+                                }
+                            }
+                            &:nth-child(2n-1) {
+                                margin-left: 0;
+                            }
+                            >span {
+                                display: inline-block;
+                                width: 280 * $size;
+                                text-align: center;
+                                height: 20 * $size;
+                                background-color: #fff;
+                                margin-left: 15 * $size;
+                                margin-bottom: 8 * $size;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+                            &-describe {
+                                color: #fff;
+                                height: 67 * $size;
+                                background-color: #FF0033;
+                                >a {
+                                    color: #fff;
+                                }
+                                &-pic {
+                                    width: 70 * $size;
+                                    margin-top: 10 * $size;
+                                    margin-left: 6 * $size;
+                                }
+                                .describe-price {
+                                    font-size: 26 * $size;
+                                    >span {
+                                        font-weight: bolder;
+                                    }
+                                }
+                                .describe-purchase {
+                                    float: right;
+                                    margin-top: 10 * $size;
+                                    margin-right: 6 * $size;
+                                    font-weight: bolder;
+                                    font-size: 16 * $size;
+                                }
+                                &-number {
+                                    color: #FFACBD;
+                                    margin-left: 15 * $size;
+                                    .describe-limit {
+                                        color: #fff;
+                                        float: right;
+                                        margin-right: 28 * $size;
+                                        font-size: 12 * $size;
+                                    }
+                                }
+                            }
+                            .p_item {
+                                font-size: 14 * $size;
+                            }
+                        }
+                        .box-alone {
+                            background-color: transparent;
+                            >div {
+                                background-color: #fff;
+                                .p_item {
+                                    display: block;
+                                    width: 280 * $size;
+                                    height: 20 * $size;
+                                    margin-left: 15 * $size;
+                                    margin-bottom: 17 * $size;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                }
+                                &:nth-child(2) {
+                                    margin-top: 15 * $size;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .star-product {
+            margin-top: 150 * $size;
+            height: 900 * $size;
+            background-image: url('/images/electronic_branch_field_active/bg2.png');
+            &-cont {
+                padding: 114 * $size 20 * $size 0 17 * $size;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: start;
+                .star-item {
+                    margin-left: 8 * $size;
+                    &-cont {
+                        >img {
+                            width: 320 * $size;
+                            height: 239 * $size;
+                        }
+                    }
+                    .pic-alone {
+                        >img {
+                            width: 650 * $size;
+                        }
+                    }
+                }
+            }
+        }
+        .collage-special-box {
+            margin-top: 150 * $size;
+            height: 1500 * $size;
+            background-image: url('/images/electronic_branch_field_active/bg3.png');
+            position: relative;
+            .boutique-regiment-nav {
+                position: absolute;
+                top: 80 * $size;
+                left: 35 * $size;
+                height: 40 * $size;
+                >li {
+                    float: left;
+                    width: 200 * $size;
+                    height: 40 * $size;
+                    line-height: 40 * $size;
+                    text-align: center;
+                    border-radius: 20 * $size;
+                    cursor: pointer;
+                    .group-tit {
+                        color: #fff;
+                        font-size: 24 * $size;
+                        font-weight: bolder;
+                        >span {
+                            color: #ccc;
+                            font-size: 20 * $size;
+                            font-weight: normal;
+                        }
+                    }
+                    &.jpt {
+                        background-color: #CC3399;
+                    }
+                    &.lbt {
+                        background-color: #FF6600;
+                        margin: 0 20 * $size;
+                    }
+                    &.cjt {
+                        background-color: #FF0000;
+                    }
+                }
+            }
+            >div {
+                .boutique-regiment-cont {
+                    position: absolute;
+                    top: 170 * $size;
+                    left: 0;
+                    padding: 0 43 * $size;
+                    >ul {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        .goods-item {
+                            width: 300 * $size;
+                            background-color: #fff;
+                            margin-bottom: 14 * $size;
+                            >a {
+                                display: block;
+                                .goods-item-txt {
+                                    display: block;
+                                    padding: 12 * $size 8 * $size 10 * $size 8 * $size;
+                                    height: 30 * $size;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                }
+                                .goods-item-pic {
+                                    display: block;
+                                    width: 278 * $size;
+                                    height: 134 * $size;
+                                    margin: 15 * $size 10 * $size;
+                                }
+                                .goods-item-total {
+                                    color: #fff;
+                                    height: 72 * $size;
+                                    line-height: 72 * $size;
+                                    background: url('/images/electronic_branch_field_active/b.jpg') no-repeat;
+                                    background-size: 300 * $size auto;
+                                    padding-left: 9 * $size;
+                                    .original-price {
+                                        font-size: 24 * $size;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .brand-activity-box {
+            height: 2350 * $size;
+            margin-top: 150 * $size;
+            background-image: url('/images/electronic_branch_field_active/bg4.png');
+            background-size: 700 * $size 100%;
+            position: relative;
+            .brand-activity-cont {
+                position: absolute;
+                top: 125 * $size;
+                left: 0;
+                padding: 0 33 * $size;
+                >ul {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .brand-activity-item {
+                        margin-bottom: 10 * $size;
+                        >a {
+                            >img {
+                                width: 310 * $size;
+                                &.brand-alone {
+                                    width: 640 * $size;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

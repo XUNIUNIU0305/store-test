@@ -1,0 +1,124 @@
+.apex-electronic-container {
+  min-width: 1190px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto; }
+  .apex-electronic-container .float-nav {
+    position: fixed;
+    right: 28px;
+    top: 50%;
+    z-index: 9999; }
+    .apex-electronic-container .float-nav .nav {
+      background: url("/images/electronic_180315/nav_bg.png"); }
+      .apex-electronic-container .float-nav .nav li a {
+        height: 60px;
+        width: 296px;
+        text-align: center;
+        color: #fbdf95;
+        font-size: 26px;
+        font-weight: bold;
+        margin-bottom: 39.5px; }
+        .apex-electronic-container .float-nav .nav li a:hover, .apex-electronic-container .float-nav .nav li a:focus {
+          background-color: rgba(255, 255, 255, 0); }
+  .apex-electronic-container .banner {
+    height: 620px;
+    background: url("/images/electronic_180315/banner1.jpg") center/cover no-repeat; }
+  .apex-electronic-container .row-container {
+    min-width: 1190px;
+    margin: 0 auto;
+    background: url("/images/electronic_180315/b_bg.png");
+    background-color: #000; }
+    .apex-electronic-container .row-container a {
+      text-decoration: none; }
+    .apex-electronic-container .row-container .row-detail {
+      width: 1190px;
+      margin: 0 auto; }
+      .apex-electronic-container .row-container .row-detail .top {
+        margin: 0 auto;
+        width: 1100px;
+        height: 520px;
+        padding: 136px 74px 30px 84px;
+        background: url("/images/electronic_180315/1100.png"); }
+        .apex-electronic-container .row-container .row-detail .top .top-box {
+          display: block;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          color: #fff; }
+        .apex-electronic-container .row-container .row-detail .top .top-left {
+          position: relative;
+          color: #faf0d7;
+          font-size: 24px;
+          text-align: center; }
+          .apex-electronic-container .row-container .row-detail .top .top-left p:nth-child(1) {
+            position: absolute;
+            top: -60px;
+            left: 0; }
+          .apex-electronic-container .row-container .row-detail .top .top-left p:nth-child(2) {
+            color: #f0cb69;
+            font-size: 42px;
+            height: 78px;
+            line-height: 78px;
+            border-top: 2px #f0cb69 dashed;
+            border-bottom: 2px #f0cb69 dashed; }
+          .apex-electronic-container .row-container .row-detail .top .top-left p:nth-child(3) {
+            color: #f0cb69; }
+          .apex-electronic-container .row-container .row-detail .top .top-left button {
+            margin-top: 46px;
+            height: 56px;
+            width: 220px;
+            background: url("/images/electronic_180315/bug-1.png"); }
+      .apex-electronic-container .row-container .row-detail .electronic-control {
+        width: 1100px;
+        margin: 0 auto; }
+        .apex-electronic-container .row-container .row-detail .electronic-control .title {
+          height: 172px;
+          width: 714px;
+          margin: 0 auto;
+          margin-bottom: 69px;
+          background: url("/images/electronic_180315/title1.png"); }
+        .apex-electronic-container .row-container .row-detail .electronic-control .detail-container {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; }
+          .apex-electronic-container .row-container .row-detail .electronic-control .detail-container .goods-box {
+            height: 628px;
+            width: 520px;
+            text-align: center;
+            background: url("/images/electronic_180315/bro.png"); }
+            .apex-electronic-container .row-container .row-detail .electronic-control .detail-container .goods-box img {
+              margin: 96px 0 34px 0; }
+            .apex-electronic-container .row-container .row-detail .electronic-control .detail-container .goods-box p {
+              color: #fff;
+              font-size: 22px;
+              margin-bottom: 16px; }
+              .apex-electronic-container .row-container .row-detail .electronic-control .detail-container .goods-box p:nth-child(2) {
+                color: #f0cb69;
+                font-size: 42px; }
+            .apex-electronic-container .row-container .row-detail .electronic-control .detail-container .goods-box .price-box {
+              font-size: 20px;
+              color: #fff;
+              font-size: 20px; }
+              .apex-electronic-container .row-container .row-detail .electronic-control .detail-container .goods-box .price-box span:nth-child(1) {
+                font-size: 18px; }
+              .apex-electronic-container .row-container .row-detail .electronic-control .detail-container .goods-box .price-box .price {
+                font-size: 34px; }
+              .apex-electronic-container .row-container .row-detail .electronic-control .detail-container .goods-box .price-box .buy-btn {
+                display: inline-block;
+                height: 42px;
+                width: 140px;
+                margin-left: 10px;
+                line-height: 42px;
+                border-radius: 20px;
+                background-color: #e80000;
+                font-size: 24px;
+                color: #fff; }
+      .apex-electronic-container .row-container .row-detail .electronic-control:nth-child(3) .title {
+        background: url("/images/electronic_180315/title2.png"); }
+      .apex-electronic-container .row-container .row-detail .electronic-control:nth-child(4) .title {
+        background: url("/images/electronic_180315/title3.png"); }

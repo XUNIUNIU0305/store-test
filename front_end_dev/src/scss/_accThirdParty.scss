@@ -1,0 +1,89 @@
+.apx-acc-third-party {
+    .media-left {
+        padding-right: 18px;
+    }
+    .media-object {
+        min-width: 30px;
+        max-width: 30px;
+        height: 30px;
+        max-height: 30px;
+        display: table-cell;
+        vertical-align: middle;
+        margin-right: 24px;
+        img {
+            max-width: 100%;
+            display: block;
+            margin: auto;
+        }
+    }
+
+    .media-body {
+        .third-describe {
+            margin-right: 48px;
+        }
+        .binding-status {
+            color: #eb2f2f;
+        }
+        .unbound {
+            color: #48b95d;
+        }
+        .pull-down {
+            float: right;
+            color: #1f66d1;
+            cursor: pointer;
+        }
+        img {
+            margin-bottom: 6px;
+        }
+        .col-xs-2 {
+            .btn {
+                margin-top: 6px;
+            }
+        }
+    }
+    .btn {
+        min-width: 100px;
+        border: 1px solid #ef483d;
+        color: #ef483d;
+    }
+    .btn-danger {
+        color: #fff;
+    }
+    .binding-detail {
+        padding-left: 48px;
+        position: relative;
+        .detail-left {
+            float: left;
+            width: 470px;
+            .prompt-msg {
+                margin-top: 26px;
+                color: #999;
+                margin-bottom: 26px;
+            }
+        }
+        .detail-right {
+            position: relative;    
+            margin-top: 27px;        
+            &::before {
+                height: 73px;
+                width: 1px;
+                background-color: #e3e4e5;
+                content: '';
+                position: absolute;
+                left: -50px;
+                top: -15px;
+            }
+            padding-left: 20px;
+            display: inline-block;
+            img {
+                margin-right: 46px;
+                width: 40px;
+                height: 40px;
+                vertical-align: middle;
+            }
+            .wechat-name {
+                margin-left: 10px;
+            }
+        }
+    }
+}

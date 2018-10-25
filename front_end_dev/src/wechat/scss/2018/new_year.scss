@@ -1,0 +1,125 @@
+$base: 1 / 750 * 100vw;
+.new-year-activity {
+    background: #feecd1;
+    img {
+        max-width: 100%;
+        vertical-align: top;
+    }
+    .head-nav {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 15 * $base 23 * $base;
+            li {
+                flex: 50%;
+                line-height: 120 * $base;
+                text-align: center;
+                background: url('/images/new_year/list_nav_bg.png') no-repeat center;
+                background-size: 100%;
+                a {
+                    font-size: 20 * $base;
+                    font-weight: bold;
+                    color: #ffebd1;
+                }
+            }
+        }
+    }
+    .product-container {
+        margin: 15 * $base 0;
+    }
+    .product-title {
+        text-align: center;
+        font-size: 36 * $base;
+        font-weight: bold;
+        color: #ffebd1;
+        padding: 70 * $base 0 19 * $base;
+        background: url('/images/new_year/m_title.png') no-repeat center;
+        background-size: 100%;
+    }
+    .items-box {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 15 * $base 10 * $base;
+        .item {
+            flex: 50%;
+            padding: 10 * $base;
+            box-sizing: border-box;
+            a {
+                text-align: center;
+                padding: 10 * $base;
+                background-color: #e42422;
+            }
+            p {
+                color: #ffebd2;
+                margin: 0;
+            }
+            .item-title {
+                font-size: 26 * $base;
+                margin-top: 26 * $base;
+            }
+            .item-sub {
+                font-size: 24 * $base;
+                margin-top: 4 * $base;
+            }
+            .price {
+                span {
+                    color: #ffc835;
+                }
+                .num {
+                    font-size: 32 * $base;
+                }
+            }
+            .buy-btn {
+                margin: 10 * $base 0 24 * $base;
+                img {
+                    width: 70%;
+                }
+            }
+            &.single {
+                flex: 100%;
+                position: relative;
+                .detail {
+                    width: 50%;
+                    position: absolute;
+                    right: 0;
+                    top: 20%;
+                    p {
+                        margin: 0;
+                    }
+                    .item-title {
+                        font-size: 28 * $base;
+                        margin-top: 26 * $base;
+                        color: #e42422;
+                        font-weight: bold;
+                    }
+                    .item-sub {
+                        font-size: 24 * $base;
+                        margin-top: 4 * $base;
+                        color: #797676;
+                    }
+                    .price {
+                        color: #e11823;
+                        span {
+                            color: #e52323;
+                        }
+                        .num {
+                            font-size: 32 * $base;
+                        }
+                    }
+                    .buy-btn {
+                        margin: 10 * $base 0 24 * $base;
+                        img {
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .activity-explain {
+        padding: 0 15 * $base;
+    }
+    .footer {
+        margin-top: 56 * $base;
+    }
+}

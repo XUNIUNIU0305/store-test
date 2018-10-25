@@ -1,0 +1,491 @@
+@@include('inc/head.inc') @@include('inc/top_nav.inc') @@include('inc/search.inc')
+<!-- main container -->
+<div class="container-fluid apx-settle-container">
+    <div class="container">
+        <div class="row">
+            <h3 class="apx-settle-title">确认订单信息</h3>
+            <div class="apx-settle-box">
+                <h3 class="apx-settle-title">
+                    <strong>收货人信息</strong>
+                </h3>
+                <div class="apx-settle-address-box clearfix">
+                    <a href="javascript:void(0)" class="btn btn-link btn-add">新增收货地址</a>
+                    <div class="col-xs-4">
+                        <div class="apx-settle-address active">
+                            <h5>
+                                <strong>小短腿</strong>收
+                            </h5>
+                            <p>
+                                上海 普陀区 城区 普陀区双山路与交通路交叉口甘泉德必易园A座322
+                                <span>150****7722</span>
+                            </p>
+                            <i class="icon-checked"></i>
+                            <i class="icon-edit"></i>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="apx-settle-address">
+                            <h5>
+                                <strong>小短腿</strong>收
+                            </h5>
+                            <p>
+                                上海 普陀区 城区 普陀区双山路与交通路交叉口甘泉德必易园A座322
+                                <span>150****7722</span>
+                            </p>
+                            <i class="icon-checked"></i>
+                            <i class="icon-edit"></i>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="apx-settle-address default">
+                            <h5>
+                                <strong>小短腿</strong>收
+                            </h5>
+                            <p>
+                                上海 普陀区 城区 普陀区双山路与交通路交叉口甘泉德必易园A座322
+                                <span>150****7722</span>
+                            </p>
+                            <i class="icon-checked"></i>
+                            <i class="icon-edit"></i>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <a class="load-all" href="#">显示全部地址
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+                <h3 class="apx-settle-title">
+                    <strong>选择支付方式</strong>
+                </h3>
+                <div class="apx-settle-pay-box clearfix" data-toggle="buttons">
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-alipay">
+                            <input type="radio" name="options" id="option1" autocomplete="off">
+                            <i></i>支付宝
+                        </label>
+                        <label class="btn btn-wepay">
+                            <input type="radio" name="options" id="option2" autocomplete="off">
+                            <i></i>微信
+                        </label>
+                        <label class="btn btn-balance active">
+                            <input type="radio" name="options" id="option3" autocomplete="off" checked>
+                            <i></i>余额
+                            <div class="balance-info">
+                                <div class="balance-info-cnt">
+                                    账户当前余额：7963.71元
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <h3 class="apx-settle-title">
+                    <strong>送货清单</strong>
+                </h3>
+                <!-- todo: product detail -->
+                <div class="apx-settle-product-detail">
+                    <!-- title -->
+                    <ul class="list-inline title">
+                        <li>订单信息</li>
+                        <li>商品信息</li>
+                        <li>单价</li>
+                        <li>数量</li>
+                        <li>小计</li>
+                    </ul>
+                    <div class="content clearfix">
+                        <!-- select -->
+                        <div class="pull-left">
+                            <div class="label-customed">
+                                定制订单：
+                                <span>否</span>
+                                <a href="#">
+                                    <i></i>
+                                </a>
+                            </div>
+                            <div class="coupon-select">
+                                <span class="label">优惠券：</span>
+                                <select class="selectpicker" data-width="104px">
+                                    <option> </option>
+                                </select>
+                            </div>
+                            <div class="coupon-info">
+                                <span>优惠券</span>
+                                <p>王子品牌满100可减10元
+                                    <br /> 11月11日-12月12日可用
+                                </p>
+                            </div>
+                        </div>
+                        <!-- detail -->
+                        <div class="pull-right">
+                            <!-- single item -->
+                            <div class="item">
+                                <!-- title -->
+                                <div class="title clearfix">
+                                    <strong class="pull-left">品牌：王子</strong>
+                                    <a href="#" class="pull-right">联系客服
+                                        <i></i>
+                                    </a>
+                                </div>
+                                <!-- params -->
+                                <div class="detail clearfix">
+                                    <div class="param clearfix">
+                                        <div class="pull-left">
+                                            <img src="/images/custom/settle/youhuiquan.png" width="94" height="94">
+                                        </div>
+                                        <div class="pull-right">
+                                            <div class="title">汽车头枕内饰用品护颈枕靠枕车用枕头车载座椅头枕颈枕记忆棉腰靠</div>
+                                            <ul class="list-unstyled">
+                                                <li>颜色：米色</li>
+                                                <li>质量：很好</li>
+                                                <li>质量：很好</li>
+                                                <li>质量：很好</li>
+                                                <li>质量：很好</li>
+                                                <li>质量：很好</li>
+                                                <li>质量：很好</li>
+                                                <li>质量：很好</li>
+                                                <li>
+                                                    <a href="#">更多</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        ￥100000.00
+                                    </div>
+                                    <div class="amount">
+                                        x1
+                                    </div>
+                                    <div class="sum">
+                                        ¥ 100000.00
+                                    </div>
+                                </div>
+                                <!-- remark -->
+                                <div class="remark">
+                                    <div class="label">备注留言:</div>
+                                    <textarea rows="1" placeholder="如有特殊要求，请详细说明" onfocus="javascript:$(this).attr('rows', 6)" onblur="javascript:$(this).attr('rows', 1)"></textarea>
+                                </div>
+                                <!-- result -->
+                            </div>
+                            <div class="result">
+                                品牌合计：
+                                <span>¥99990.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content clearfix">
+                        <!-- select -->
+                        <div class="pull-left">
+                            <div class="label-customed">
+                                定制订单：
+                                <span>否</span>
+                                <a href="#">
+                                    <i></i>
+                                </a>
+                            </div>
+                            <div class="coupon-select">
+                                <span class="label">优惠券：</span>
+                                <select class="selectpicker" data-width="104px">
+                                    <option> </option>
+                                </select>
+                            </div>
+                            <div class="coupon-info">
+                                <span>优惠券</span>
+                                <p>王子品牌满100可减10元
+                                    <br /> 11月11日-12月12日可用
+                                </p>
+                            </div>
+                        </div>
+                        <!-- detail -->
+                        <div class="pull-right">
+                            <!-- single item -->
+                            <div class="item">
+                                <!-- title -->
+                                <div class="title clearfix">
+                                    <strong class="pull-left">品牌：王子</strong>
+                                    <a href="#" class="pull-right">联系客服
+                                        <i></i>
+                                    </a>
+                                </div>
+                                <!-- params -->
+                                <div class="detail clearfix">
+                                    <div class="param clearfix">
+                                        <div class="pull-left">
+                                            <img src="/images/custom/settle/youhuiquan.png" width="94" height="94">
+                                        </div>
+                                        <div class="pull-right">
+                                            <div class="title">汽车头枕内饰用品护颈枕靠枕车用枕头车载座椅头枕颈枕记忆棉腰靠</div>
+                                            <ul class="list-unstyled">
+                                                <li>颜色：米色</li>
+                                                <li>质量：很好</li>
+                                                <li>质量：很好</li>
+                                                <li>质量：很好</li>
+                                                <li>质量：很好</li>
+                                                <li>质量：很好</li>
+                                                <li>质量：很好</li>
+                                                <li>质量：很好</li>
+                                                <li>
+                                                    <a href="#">更多</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        ￥100000.00
+                                    </div>
+                                    <div class="amount">
+                                        x1
+                                    </div>
+                                    <div class="sum">
+                                        ¥ 100000.00
+                                    </div>
+                                </div>
+                                <!-- remark -->
+                                <div class="remark">
+                                    <div class="label">备注留言:</div>
+                                    <textarea rows="1" placeholder="如有特殊要求，请详细说明" onfocus="javascript:$(this).attr('rows', 6)" onblur="javascript:$(this).attr('rows', 1)"></textarea>
+                                </div>
+                                <!-- result -->
+                            </div>
+                            <div class="item">
+                                <!-- title -->
+                                <div class="title clearfix">
+                                    <strong class="pull-left">品牌：王子</strong>
+                                    <a href="#" class="pull-right">联系客服
+                                        <i></i>
+                                    </a>
+                                </div>
+                                <!-- params -->
+                                <div class="detail clearfix">
+                                    <div class="param clearfix">
+                                        <div class="pull-left">
+                                            <img src="/images/custom/settle/youhuiquan.png" width="94" height="94">
+                                        </div>
+                                        <div class="pull-right">
+                                            <div class="title">汽车头枕内饰用品护颈枕靠枕车用枕头车载座椅头枕颈枕记忆棉腰靠</div>
+                                            <ul class="list-unstyled">
+                                                <li>颜色：米色</li>
+                                                <li>质量：很好</li>
+                                                <li>质量：很好</li>
+                                                <li>质量：很好</li>
+                                                <li>质量：很好</li>
+                                                <li>质量：很好</li>
+                                                <li>质量：很好</li>
+                                                <li>质量：很好</li>
+                                                <li>
+                                                    <a href="#">更多</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        ￥100000.00
+                                    </div>
+                                    <div class="amount">
+                                        x1
+                                    </div>
+                                    <div class="sum">
+                                        ¥ 100000.00
+                                    </div>
+                                </div>
+                                <!-- remark -->
+                                <div class="remark">
+                                    <div class="label">备注留言:</div>
+                                    <textarea rows="1" placeholder="如有特殊要求，请详细说明" onfocus="javascript:$(this).attr('rows', 6)" onblur="javascript:$(this).attr('rows', 1)"></textarea>
+                                </div>
+                                <!-- result -->
+                            </div>
+                            <div class="result">
+                                品牌合计：
+                                <span>¥99990.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="apx-settle-total text-right">
+                <p>
+                    <span>
+                        <span class="high-lighted">5</span> 件商品</span>
+                    <span class="price-detail">商品金额：
+                        <span>¥1180.00</span>
+                    </span>
+                </p>
+                <p>
+                    <span class="price-detail">优惠减免金额：
+                        <span>-¥20.00</span>
+                    </span>
+                </p>
+                <p>
+                    <span class="price-detail">支付方式：
+                        <span>余额</span>
+                    </span>
+                </p>
+                <hr>
+                <p>
+                    <span class="price-detail">
+                        <strong>实付金额：</strong>
+                        <span class="h3 high-lighted">¥1180.00</span>
+                    </span>
+                </p>
+                <p>
+                    <strong>寄送至：</strong>吉林 长春市 绿园区 城区 长春市十一高中学 收货人：张思宇 150****7722
+                </p>
+            </div>
+            <div class="apx-settle-bar J_cart_affix_bar">
+                <div class="container">
+                    <div class="affix-info clearfix">
+                        <p>
+                            <strong>寄送至：</strong>吉林 长春市 绿园区 城区 长春市十一高中学 收货人：张思宇 150****7722
+                        </p>
+                        <div class="pull-right">
+                            <p>
+                                <span>
+                                    <span class="high-lighted">5</span> 件商品</span>
+                                <span class="price-detail">商品金额：
+                                    <strong class="high-lighted">¥1180.00</strong>
+                                </span>
+                            </p>
+                            <p>
+                                <span class="price-detail">已节约：
+                                    <span>-¥20.00</span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <button class="apx-settle-bill-submit pull-right">提交订单</button>
+                </div>
+            </div>
+            <!-- coupon box -->
+            <div class="apx-settle-coupon-box">
+                <div class="title">我的优惠券</div>
+                <div class="content">
+                    <div class="kong text-center" style="margin-top: 100px">
+                        <img src="/images/kong.png" alt="">
+                        <p>您当前没有可用优惠券</p>
+                    </div>
+                    <!-- <div class="coupon">
+                        <div class="amount">
+                            <strong>￥10</strong>
+                            <div>
+                                 满100
+                            </div>
+                        </div>
+                        <div class="expire">使用时间：11月11日-12月12日</div>
+                        <div class="status clearfix">
+                            <div class="pull-left">仅限王子店使用</div>
+                            <div class="pull-right">可用</div>
+                        </div>
+                    </div>
+                    <div class="coupon disabled">
+                        <div class="amount">
+                            <strong>￥10</strong>
+                            <div>满100</div>
+                        </div>
+                        <div class="expire">使用时间：11月11日-12月12日</div>
+                        <div class="status clearfix">
+                            <div class="pull-left">仅限王子店使用</div>
+                            <div class="pull-right">不可用</div>
+                        </div>
+                    </div>
+                    <div class="coupon">
+                        <div class="amount">
+                            <strong>￥10</strong>满100</div>
+                        <div class="expire">使用时间：11月11日-12月12日</div>
+                        <div class="status clearfix">
+                            <div class="pull-left">仅限王子店使用</div>
+                            <div class="pull-right">可用</div>
+                        </div>
+                    </div>
+                    <div class="coupon disabled">
+                        <div class="amount">
+                            <strong>￥10</strong>满100</div>
+                        <div class="expire">使用时间：11月11日-12月12日</div>
+                        <div class="status clearfix">
+                            <div class="pull-left">仅限王子店使用</div>
+                            <div class="pull-right">不可用</div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal -->
+<div class="modal fade modal-settle-address-info" id="modal-settle-address-info">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <span class="close" data-dismiss="modal"></span>
+                <div class="title">
+                    新增收货人信息
+                </div>
+                <form class="form-horizontal">
+                    <div class="form-group required">
+                        <div class="col-xs-2">
+                            <label for="name">收货人：</label>
+                        </div>
+                        <div class="col-xs-3">
+                            <input type="text" class="form-control" id="name" placeholder="收货人姓名">
+                        </div>
+                    </div>
+                    <div class="form-group required">
+                        <div class="col-xs-2">
+                            <label>所在地区：</label>
+                        </div>
+                        <div class="col-xs-3">
+                            <select class="selectpicker" data-width="100%">
+                                <option value="">省/直辖市</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-3">
+                            <select class="selectpicker" data-width="100%">
+                                <option value="">市</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-3">
+                            <select class="selectpicker" data-width="100%">
+                                <option value="">区</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group required">
+                        <div class="col-xs-2">
+                            <label for="address">详细地址：</label>
+                        </div>
+                        <div class="col-xs-9">
+                            <input type="text" class="form-control" id="address" placeholder="街道门牌楼层房间号">
+                        </div>
+                    </div>
+                    <div class="form-group required">
+                        <div class="col-xs-2">
+                            <label for="mobile">手机号码：</label>
+                        </div>
+                        <div class="col-xs-4">
+                            <input type="text" class="form-control" id="mobile" placeholder="手机号">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-2">
+                            <label for="zipcode">邮政编码：</label>
+                        </div>
+                        <div class="col-xs-4">
+                            <input type="text" class="form-control" id="zipcode" placeholder="请填写6位邮政编码">
+                        </div>
+                    </div>
+                    <button class="btn btn-danger btn-lg">保存</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('inc/footer.inc')
+
+<script>
+    $(function () {
+        $('#modal-settle-address-info').modal('show');
+    })
+
+</script>

@@ -1,0 +1,158 @@
+.wechat-product-dazhi {
+	/*--------------主体内容---------------*/
+  img {
+    max-width: 100%;
+  }
+.main{
+  max-width:640px;
+  margin:0 auto;
+}
+
+.logo {
+  text-align: center;
+  padding:0.30rem 0;
+}
+
+.logo img{
+  width:2.77rem;
+  height: 0.49rem;
+}
+
+.p1{
+  background:url(/images/dazhi_brand/board.png) bottom no-repeat;
+  padding:0.10rem 0.30rem;
+  background-size:100% auto;
+  @include clearfix;
+}
+
+.main .left{
+  float:left;
+}
+
+.main .right{
+  float:right;
+}
+
+.p1 .left img{
+  width:2.03rem;
+  height: 3.62rem;
+}
+
+.p1 .right h4{
+  font-size: 0.38rem;
+  margin-top: 0.20rem;
+}
+
+.p1 .right .price{
+  padding:0.30rem 0;
+}
+
+.p1 .right .price img{
+  width: 1.46rem;
+  height: 0.35rem;
+}
+
+.p1 .right .package img{
+  width: 1.62rem;
+  height: 0.26rem;
+}
+
+.p1 .right .buy{
+  margin-top:0.30rem;
+}
+
+.p1 .right .buy a{
+  display:inline-block;
+  width:2.70rem;
+  height: 0.78rem;
+  background:#ff0730;
+  text-align: center;
+  line-height: 0.78rem;
+  color:#fff;
+  font-size: 0.36rem;
+  border-radius:10px;
+}
+
+.p1 .right .buy a span{
+  display:inline-block;
+  width:0.44rem;
+  height: 0.32rem;
+  margin-top: -0.10rem;
+}
+
+.p2{
+  background:url(/images/dazhi_brand/bg_board.png) 0 1.40rem no-repeat;
+  background-size:100% auto;
+  margin:0.20rem 0;
+  ul {
+    @include clearfix;
+  }
+}
+
+.p2 ul li{
+  width:100%;
+  position:relative;
+  margin-bottom: 1.00rem;
+  @include clearfix;
+}
+
+.p2 ul li:nth-child(2n) img{
+  float:right;
+}
+
+.p2 ul li .text{
+  position:absolute;
+  font-size: 0.32rem;
+}
+
+.p2 ul li:first-child img{
+  width:6.28rem;
+  height: 3.35rem;
+}
+
+.p2 ul li:first-child .text{
+  left:3.20rem;
+  top:1.20rem;
+}
+
+.p2 ul li:nth-child(2) img{
+  width:6.06rem;
+  height: 3.33rem;
+}
+
+.p2 ul li:nth-child(2) .text{
+  left:0.45rem;
+  top:1.55rem;
+}
+
+.p2 ul li:nth-child(3) img{
+  width:5.48rem;
+  height: 3.35rem;
+}
+
+.p2 ul li:nth-child(3) .text{
+  left:3.20rem;
+  top:1.60rem;
+}
+
+.p2 ul li:nth-child(4) img{
+  width:6.02rem;
+  height: 3.33rem;
+}
+
+.p2 ul li:nth-child(4) .text{
+  left:0.55rem;
+  top:1.60rem;
+}
+
+
+#returTop{
+  width:100%;
+  height: 1.04rem;
+  font-size: 0.40rem;
+  text-align: center;
+  line-height: 1.04rem;
+  color:#fff;
+  background:#61c6f8;
+}
+}

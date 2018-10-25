@@ -1,0 +1,66 @@
+@@include('head.inc')
+<!--top nav-->
+<nav class="top-nav">
+    <a href="#">
+        <img src="/images/account/arrow-right.png" height="14">
+    </a>
+    <div class="title">
+        新增地址
+    </div>
+</nav>
+@@include('nav.inc')
+<!--main container-->
+<main class="container">
+    <!--address-->
+    <div class="wechat-address-container">
+        <ul class="address-form">
+            <li>
+                <label for="name">收货人：</label>
+                <input type="text" id="name">
+            </li>
+            <li>
+                <label for="mobile">手机号：</label>
+                <input type="number" id="mobile">
+            </li>
+            <li class="select">
+                <label for="area">所在省份：</label>
+                <select id="area">
+                    <option value="上海">上海</option>
+                </select>
+            </li>
+            <li class="select">
+                <label for="area">所在市：</label>
+                <select id="area">
+                    <option value="上海">上海市</option>
+                </select>
+            </li>
+            <li class="select">
+                <label for="area">所在区域：</label>
+                <select id="area">
+                    <option value="上海">黄浦区</option>
+                </select>
+            </li>
+            <li>
+                <label for="address_detail">详细地址：</label>
+                <textarea id="address_detail" rows="3" placeholder="请填写详细地址"></textarea>
+            </li>
+            <li class="split"></li>
+            <li>
+                <label>设为默认</label>
+                <label class="switch-btn">
+                    <input type="checkbox" checked/>
+                    <div><div></div></div>
+                </label>
+            </li>
+        </ul>
+    </div>
+    <!--bottom btn-->
+    <a href="#" class="btn-block-bottom">保存修改</a>
+</main>
+@@include('footer.inc')
+<script>
+    $(function () {
+
+    });
+
+</script>

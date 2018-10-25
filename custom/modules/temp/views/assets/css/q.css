@@ -1,0 +1,148 @@
+@charset "UTF-8";
+.beautiful-container {
+  min-width: 1440px;
+  overflow-x: auto; }
+  .beautiful-container .banner {
+    padding-top: 500px;
+    background: url("/images/beautiful/banner.png") no-repeat center; }
+  .beautiful-container ul,
+  .beautiful-container li {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .beautiful-container .beautiful-navs {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    margin-left: 540px;
+    z-index: 999;
+    background-color: #c0daab;
+    padding: 10px;
+    border-radius: 8px; }
+    .beautiful-container .beautiful-navs::before {
+      content: '';
+      width: 363px;
+      height: 107px;
+      background: url("/images/beautiful/meihaochuyouji.png") no-repeat center;
+      position: absolute;
+      top: -92px;
+      left: -50px; }
+    .beautiful-container .beautiful-navs li {
+      text-decoration: none; }
+  .beautiful-container .layout-box {
+    width: 1100px;
+    margin: 0 auto; }
+  .beautiful-container .sec-title {
+    text-align: center;
+    margin: 60px 0; }
+    .beautiful-container .sec-title.hot {
+      position: relative; }
+      .beautiful-container .sec-title.hot::after {
+        content: '万家门店热销好货、拉人气，赚大钱必不可少！';
+        font-size: 20px;
+        color: #898989;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -30px;
+        margin: 0 auto; }
+  .beautiful-container a {
+    text-decoration: none; }
+  .beautiful-container .item-box {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+        align-content: center; }
+    .beautiful-container .item-box .vertical {
+      -ms-flex: 0 0 33.33%;
+          flex: 0 0 33.33%;
+      box-sizing: border-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+      .beautiful-container .item-box .vertical .sec-sub-title {
+        text-align: center; }
+      .beautiful-container .item-box .vertical .item {
+        padding: 0 14px; }
+    .beautiful-container .item-box .item {
+      -ms-flex: auto;
+          flex: auto;
+      box-sizing: border-box;
+      background-color: #fff; }
+      .beautiful-container .item-box .item .img {
+        text-align: center;
+        border-bottom: 1px solid #727271; }
+      .beautiful-container .item-box .item p {
+        margin: 0; }
+      .beautiful-container .item-box .item .item-title {
+        font-size: 21px;
+        font-weight: bold;
+        margin-top: 10px; }
+      .beautiful-container .item-box .item .item-sub-title {
+        font-size: 14px; }
+      .beautiful-container .item-box .item .old-price {
+        font-size: 14px;
+        font-weight: bold; }
+      .beautiful-container .item-box .item .price {
+        font-size: 30px;
+        color: #78ac4a;
+        position: relative; }
+        .beautiful-container .item-box .item .price::after {
+          content: '立即抢购';
+          font-size: 14px;
+          line-height: 2;
+          color: #fff;
+          padding: 0 10px;
+          border-radius: 4px;
+          background-color: #78ac4a;
+          position: absolute;
+          right: 15px;
+          bottom: 6px; }
+      .beautiful-container .item-box .item.three {
+        -ms-flex: 0 0 33.33%;
+            flex: 0 0 33.33%;
+        padding: 15px 10px;
+        box-sizing: border-box; }
+  .beautiful-container .sec-eckill .item {
+    position: relative; }
+    .beautiful-container .sec-eckill .item::before {
+      content: '限量秒杀';
+      background-color: #fa7b1e;
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      line-height: 1.5;
+      padding: 0 8px;
+      position: absolute;
+      left: 0;
+      top: 0; }
+  .beautiful-container .float-trees {
+    position: absolute;
+    z-index: -1; }
+    .beautiful-container .float-trees.trees-zuo {
+      left: 0; }
+      .beautiful-container .float-trees.trees-zuo.trees-zuo-1 {
+        top: 567px; }
+      .beautiful-container .float-trees.trees-zuo.trees-zuo-2 {
+        top: 1280px; }
+      .beautiful-container .float-trees.trees-zuo.trees-zuo-3 {
+        top: 2500px; }
+      .beautiful-container .float-trees.trees-zuo.trees-zuo-4 {
+        top: 3767px; }
+      .beautiful-container .float-trees.trees-zuo.trees-zuo-5 {
+        top: 5100px; }
+    .beautiful-container .float-trees.trees-you {
+      right: 0; }
+      .beautiful-container .float-trees.trees-you.trees-you-1 {
+        top: 840px; }
+      .beautiful-container .float-trees.trees-you.trees-you-2 {
+        top: 2000px; }
+      .beautiful-container .float-trees.trees-you.trees-you-3 {
+        top: 3200px; }
+      .beautiful-container .float-trees.trees-you.trees-you-4 {
+        top: 4400px; }
+      .beautiful-container .float-trees.trees-you.trees-you-5 {
+        top: 5800px; }

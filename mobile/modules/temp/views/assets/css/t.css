@@ -1,0 +1,78 @@
+.wechat-product-tools {
+  background-color: #f2f2f2; }
+  .wechat-product-tools p {
+    margin: 0; }
+  .wechat-product-tools .head {
+    display: -webkit-flex;
+    display: flex;
+    margin: 0 2%; }
+    .wechat-product-tools .head .item {
+      background-color: #eee;
+      -webkit-flex: 1 0 30%;
+              flex: 1 0 30%; }
+      .wechat-product-tools .head .item a {
+        margin: 6% 4%;
+        padding: 46% 0;
+        text-align: center;
+        color: #c0a248;
+        font-size: 14px;
+        font-weight: 700;
+        background: url("/images/apex_brand/tools/fenlei_bg.png") no-repeat center;
+        background-size: 100%; }
+  .wechat-product-tools .pro .header {
+    margin: 4% 0;
+    position: relative; }
+    .wechat-product-tools .pro .header img {
+      max-width: 100%; }
+    .wechat-product-tools .pro .header p {
+      width: 100%;
+      color: #fff;
+      position: absolute;
+      text-align: center;
+      margin-top: -14.8%;
+      font-size: 14px;
+      font-weight: 700; }
+  .wechat-product-tools .pro .items {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin: 4% 0; }
+    .wechat-product-tools .pro .items .item {
+      -webkit-flex: 1 0 48%;
+              flex: 1 0 48%;
+      margin: 2% 1%;
+      text-align: center; }
+      .wechat-product-tools .pro .items .item img {
+        width: 100%; }
+      .wechat-product-tools .pro .items .item .h1 {
+        font-weight: 700;
+        margin: 1% 0; }
+      .wechat-product-tools .pro .items .item .h2 {
+        background: url("/images/apex_brand/tools/price_bg.png") no-repeat center;
+        background-size: 100%;
+        color: #fff; }
+    .wechat-product-tools .pro .items .item-odd {
+      width: 100%;
+      margin-top: 4%;
+      background-color: #FFF;
+      position: relative; }
+      .wechat-product-tools .pro .items .item-odd img {
+        max-width: 50%; }
+      .wechat-product-tools .pro .items .item-odd .title {
+        position: absolute;
+        top: 20%;
+        right: 0;
+        width: 48%; }
+        .wechat-product-tools .pro .items .item-odd .title .h1 {
+          font-size: 14px;
+          font-weight: 700; }
+        .wechat-product-tools .pro .items .item-odd .title .h3 {
+          text-align: center;
+          color: #666; }
+        .wechat-product-tools .pro .items .item-odd .title .h2 {
+          background: url("/images/apex_brand/tools/price_bg.png") no-repeat center;
+          background-size: 100%;
+          color: #fff;
+          text-align: center;
+          margin-top: 15%; }

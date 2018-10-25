@@ -1,0 +1,55 @@
+.supply-refund-container {
+    @include nav-tabs-danger();
+    .pull-rigth {
+        text-align: right;
+        min-width: 90px
+    }
+    .nav-tabs {
+        overflow: hidden;
+        margin-top: 0;
+        margin-bottom: 10px;
+        box-shadow: 0 4px 6px -2px #999;
+        .pull-right {
+            .input-group {
+                width: 320px;
+            }
+        }
+    }
+    .table-condensed {
+        table-layout: fixed;
+        font-size: 14px;
+        tr {
+            box-shadow: 0 2px 6px #999;
+            margin-bottom: 10px;
+        }
+        td {
+            vertical-align: middle;
+            &:first-child {
+                width: 150px;
+            }
+            &:nth-child(2) {
+                width: 240px;
+            }
+            p {
+                margin-bottom: 4px;
+            }
+        }
+        .media {
+            margin: 4px 0;
+            img {
+                width: 80px;
+                height: 80px;
+                border: 1px solid #ccc;
+            }
+            .media-heading {
+                width: 140px;
+            }
+        }
+        thead {
+            background: linear-gradient(180deg, #fff, #e6e6e6);
+            td {
+                line-height: 40px;
+            }
+        }
+    }
+}

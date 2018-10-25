@@ -1,0 +1,182 @@
+@@include('head.inc') @@include('banner_seller.inc')
+<div class="container">
+    <div class="row">
+        @@include('seller_aside.inc')
+        <div class="apx-has-seller-aside clearfix">
+            <div class="supply-orders-detail-container">
+
+                <div class="panel panel-danger">
+                    <div class="panel-heading text-right">
+                        <span class="h4 pull-left">订单号：1201234561</span>
+                        <span>下单时间：2011-04-15 15:57:31</span>
+                        <span>付款时间：2011-04-15 15:57:31</span>
+                    </div>
+                    <div class="panel-body">
+                        <!--订单状态-->
+                        <!--5种状态分别加类名：status-untreated status-shipped status-received status-closed status-cancel-->
+                         <div class="supply-order-status text-center status-untreated">
+                            <div class="pull-left">
+                                <strong>当前状态</strong>
+                                <h3></h3>
+                            </div>
+                            <div class="clearfix">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <div class="status-icon untreated"></div>
+                                        <p>未处理</p>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="status-icon shipped"></div>
+                                        <p>已发货</p>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="status-icon received"></div>
+                                        <p>已收货</p>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="status-icon closed"></div>
+                                        <p>已关闭</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-cancel">
+                                <img src="/images/supply_orders/cancel.png" class="img-responsive">
+                                <p>这笔订单已经<span>取消</span>了哦</p>
+                            </div>
+                        </div> 
+
+                        <!--订单时序-->
+                        <ul class="supply-order-sequence list-unstyled">
+                            <li>
+                                <div class="pull-left"><strong>订单处理时间</strong></div>
+                                <strong>订单处理事项</strong>
+                            </li>
+                            <li class="actived">
+                                <div class="pull-left">2016-05-28 13:09:58</div>
+                                示例示例示例示例示例示例示例示例
+                            </li>
+                            <li>
+                                <div class="pull-left">2016-05-28 13:09:58</div>
+                                示例示例示例示例示例示例示例示例
+                            </li>
+                            <li>
+                                <div class="pull-left">2016-05-28 13:09:58</div>
+                                示例示例示例示例示例示例示例示例
+                            </li>
+                            <li>
+                                <div class="pull-left">2016-05-28 13:09:58</div>
+                                示例示例示例示例示例示例示例示例
+                            </li>
+                            <li>
+                                <div class="pull-left">2016-05-28 13:09:58</div>
+                                示例示例示例示例示例示例示例示例
+                            </li>
+                            <li>
+                                <div class="pull-left">2016-05-28 13:09:58</div>
+                                示例示例示例示例示例示例示例示例
+                            </li>
+                            <li>
+                                <div class="pull-left">2016-05-28 13:09:58</div>
+                                示例示例示例示例示例示例示例示例
+                            </li>
+                            <li>
+                                <div class="pull-left">2016-05-28 13:09:58</div>
+                                示例示例示例示例示例示例示例示例
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="panel panel-danger">
+                    <div class="panel-body">
+                        <ul class="list-unstyled">
+                            <li><strong>收货人：</strong>张三</li>
+                            <li><strong>联系电话：</strong>13777777777</li>
+                            <li><strong>收货地址：</strong>地址地址地址地址地址地址地址地址地址地址</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--商品信息-->
+                <table class="table apx-cart-bill-table table-fix">
+                    <!-- 列表头 -->
+                    <thead class="thead">
+                        <tr>
+                            <th width=18>
+                            </th>
+                            <th width="100">
+                            </th>
+                            <th>商品信息</th>
+                            <th width="240">备注</th>
+                            <th width="120">单价</th>
+                            <th width="110">数量</th>
+                            <th width="100">金额</th>
+                        </tr>
+                    </thead>
+                    <!-- 内容 -->
+                    <tbody>
+                        <!-- 商品 -->
+                        <tr class="apx-cart-product">
+                            <td></td>
+                            <td>
+                                <img src="/images/slider03.jpg" class="img-responsive">
+                            </td>
+                            <td class="clearfix">
+                                <div>
+                                    <a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标</a>
+                                </div>
+                                <ul class="list-inline text-muted">
+                                    <li>颜色：大地皇</li>
+                                    <li>尺码：4L</li>
+                                </ul>
+                            </td>
+                            <td class="text-muted remark">我是备注我是备注我是备注我是备注我是备注我是备注</td>
+                            <td>¥ 329.00</td>
+                            <td>2</td>
+                            <td>
+                                <strong>¥ 329.00</strong>
+                            </td>
+                        </tr>
+                        <!-- 商品 -->
+                        <tr class="apx-cart-product">
+                            <td></td>
+                            <td>
+                                <img src="/images/slider03.jpg" class="img-responsive">
+                            </td>
+                            <td class="clearfix">
+                                <div class="">
+                                    <a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标</a>
+                                </div>
+                                <ul class="list-inline text-muted">
+                                    <li>颜色：大地皇</li>
+                                    <li>尺码：4L</li>
+                                </ul>
+                            </td>
+                            <td class="text-muted remark">我是备注我是备注我是备注我是备注我是备注我是备注</td>
+                            <td>¥ 329.00</td>
+                            <td>2</td>
+                            <td>
+                                <strong>¥ 329.00</strong>
+                            </td>
+                        </tr>
+                        <!-- 总结 -->
+                    </tbody>
+                </table>
+                <div class="supply-order-total text-right">
+                    <ul class="list-unstyled">
+                        <li>共4件商品 金额:
+                            <div class="pull-right">¥450.00</div>
+                        </li>
+                        <li class="h4">
+                            订单金额: <strong class="pull-right text-danger">¥450.00</strong>
+                        </li>
+                        <a href="#" class="btn btn-danger">返回</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- cart table end -->
+@@include('ensurance.inc') @@include('sitemap.inc') @@include('footer.inc')

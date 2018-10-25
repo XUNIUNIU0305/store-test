@@ -1,0 +1,139 @@
+body {
+  overflow-x: hidden; }
+
+.bg-muted {
+  background: #f2f2f2; }
+
+.table-fix {
+  table-layout: fixed; }
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.container {
+  width: 1190px;
+  max-width: none !important; }
+
+.high-lighted {
+  color: #df483d; }
+
+.custom-account-view {
+  min-height: 100vh;
+  background: #f6f6f6; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0; }
+
+.apx-coupon-active {
+  background: #fce7e6 url("/images/account/coupon_redpack_bg.png") no-repeat top center;
+  min-height: 677px;
+  padding: 230px 0 40px;
+  margin-bottom: 20px; }
+  .apx-coupon-active .form-horizontal {
+    padding: 100px 0 0; }
+    .apx-coupon-active .form-horizontal input {
+      font-size: 16px; }
+    .apx-coupon-active .form-horizontal .error-msg {
+      display: none;
+      line-height: 34px; }
+    .apx-coupon-active .form-horizontal .list-inline {
+      overflow: hidden; }
+      .apx-coupon-active .form-horizontal .list-inline li {
+        width: 20%;
+        float: left;
+        position: relative; }
+        .apx-coupon-active .form-horizontal .list-inline li:before {
+          content: '';
+          position: absolute;
+          width: 10px;
+          height: 1px;
+          background: #ccc;
+          left: -5px;
+          top: 50%; }
+        .apx-coupon-active .form-horizontal .list-inline li:first-child:before {
+          content: none; }
+    .apx-coupon-active .form-horizontal .btn-link {
+      position: relative;
+      z-index: 3;
+      left: -40px; }
+  .apx-coupon-active .coupon-box {
+    background: #fff;
+    width: 600px;
+    height: 200px;
+    margin: 50px auto 30px;
+    display: table;
+    color: #ccc; }
+    .apx-coupon-active .coupon-box .expire {
+      display: table-cell;
+      width: 2000px;
+      vertical-align: middle;
+      text-align: center;
+      line-height: 1.5;
+      border-left: 3px dashed #fce7e6;
+      position: relative; }
+      .apx-coupon-active .coupon-box .expire:before, .apx-coupon-active .coupon-box .expire:after {
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: #fce7e6;
+        left: -10px; }
+      .apx-coupon-active .coupon-box .expire:before {
+        top: -8px; }
+      .apx-coupon-active .coupon-box .expire:after {
+        bottom: -8px; }
+      .apx-coupon-active .coupon-box .expire p {
+        padding-bottom: 16px; }
+    .apx-coupon-active .coupon-box .pull-left {
+      width: 480px;
+      position: relative;
+      text-align: center; }
+      .apx-coupon-active .coupon-box .pull-left .info-left-top,
+      .apx-coupon-active .coupon-box .pull-left .info-left-bottom,
+      .apx-coupon-active .coupon-box .pull-left .stamp {
+        position: absolute;
+        font-size: 16px; }
+      .apx-coupon-active .coupon-box .pull-left .info-left-top {
+        top: 20px;
+        left: 20px; }
+      .apx-coupon-active .coupon-box .pull-left .info-left-bottom {
+        bottom: 20px;
+        left: 20px; }
+      .apx-coupon-active .coupon-box .pull-left .stamp {
+        top: 18px;
+        right: 20px;
+        width: 80px;
+        height: 80px;
+        border: 2px solid;
+        border-radius: 50%;
+        padding: 12px;
+        line-height: 1.7; }
+      .apx-coupon-active .coupon-box .pull-left .legend {
+        font-size: 90px;
+        font-weight: 600;
+        height: 200px;
+        line-height: 200px; }
+        .apx-coupon-active .coupon-box .pull-left .legend small {
+          font-size: 16px;
+          font-weight: 400; }
+    .apx-coupon-active .coupon-box.actived .stamp, .apx-coupon-active .coupon-box.inactived .stamp {
+      font-size: 20px;
+      line-height: 76px;
+      padding: 0; }
+    .apx-coupon-active .coupon-box.actived {
+      background-color: #f7d05b;
+      color: #333; }
+      .apx-coupon-active .coupon-box.actived .stamp {
+        color: #df483d; }
+      .apx-coupon-active .coupon-box.actived .legend {
+        color: #fff; }
+  .apx-coupon-active .btn-lg {
+    width: 140px;
+    margin: 40px 24px 0; }
+    .apx-coupon-active .btn-lg.btn-default {
+      background: transparent; }

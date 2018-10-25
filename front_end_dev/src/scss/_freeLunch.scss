@@ -1,0 +1,66 @@
+.apx-modal-free-lunch {
+    .modal-dialog {
+        height: 758px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+    .close-btn {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 100px;
+        right: 140px;
+        background: url('/images/free_lunch/new_cloes_icon.png') center no-repeat;
+    }
+    .sub-content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: none;
+        &.in {
+            display: block;
+        }
+    }
+    .img-box{
+        position: relative;
+        p{
+            position: absolute;
+            left: 12px;
+            right: 0;
+            width: 523px;
+            bottom: 14px;
+            font-size: 34px;
+            color: #2e5c9e;
+            margin: 0 auto;
+        }
+    }
+    .img-responsive {
+        margin: 0 auto 60px;
+    }
+    .btn-row{
+        text-align: center;
+    }
+    .btn {
+        background: transparent url('/images/free_lunch/pingpai_but_bg.png') center no-repeat;
+        padding: 0;
+        width: 228px;
+        height: 101px;
+        line-height: 80px;
+        margin: 0 36px;
+        color: #fff;
+        font-size: 36px;
+        transition: transform .1s;
+        &:hover {
+            transform: scale(1.02);
+        }
+        &:active {
+            transform: scale(.98);
+        }
+    }
+}

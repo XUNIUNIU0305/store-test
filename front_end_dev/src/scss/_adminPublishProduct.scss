@@ -1,0 +1,383 @@
+.admin-publish-product {
+    padding: 30px 0;
+    .nav-tabs {
+        line-height: 46px;
+        padding: 0 26px;
+        font-size: 14px;
+        background: #fce7e6;
+        margin-bottom: 20px;
+        border-bottom: 0;
+        border-color: transparent !important;
+        &.bg-white {
+            background: #fff;
+            padding: 0;
+        }
+        &.border-danger {
+            border-color: $brand-danger !important;
+        }
+    } // progress
+    .publish-progress {
+        margin-top: 50px;
+        font-size: 0;
+        line-height: 44px;
+        counter-reset: PUBLISH-PROGRESS;
+        li {
+            font-size: 16px;
+            height: 10px;
+            line-height: 6;
+            border-radius: 5px;
+            background: currentColor;
+            width: 33.333333%;
+            text-align: center;
+            position: relative;
+            color: #b3b3b3;
+            &.past {
+                color: #e6bbb8;
+            }
+            &.current {
+                color: #cf4d44;
+            }
+            &:before {
+                content: counter(PUBLISH-PROGRESS)'.';
+                counter-increment: PUBLISH-PROGRESS;
+            }
+            &:after {
+                position: absolute;
+                content: counter(PUBLISH-PROGRESS);
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: left;
+                text-indent: 6px;
+                background: currentcolor;
+                border-radius: 50%;
+                left: 50%;
+                margin-left: -20px;
+                top: -16px;
+                text-shadow: 10px 0 0 #fff;
+            }
+        }
+    }
+    .btn-block {
+        width: 200px;
+        margin: 0 auto;
+        border-radius: 15px;
+        letter-spacing: 4px;
+    }
+}
+
+// 选择类目
+.admin-pp-choose-category {
+    border: 1px solid #ccc;
+    padding: 30px 48px;
+    background: #ededed;
+    .admin-management-panel {
+        height: 500px;
+        .header {
+            padding: 20px 12px;
+            height: 74px;
+        }
+        .input-group {
+            background: #fff;
+            line-height: 34px;
+            width: 100%;
+            input {
+                border-radius: 17px;
+                padding-right: 40px;
+                background: transparent; // border-top-left-radius: 17px;
+                // border-bottom-left-radius: 17px;
+            }
+            .btn {
+                position: relative;
+                z-index: 3;
+                margin-top: 1px;
+                margin-left: -40px;
+                background: transparent;
+            }
+        }
+        .iscroll_container {
+            padding: 0 12px;
+            &.with-header {
+                top: 74px
+            }
+        }
+        li {
+            text-align: left;
+            padding: 0 12px;
+            cursor: pointer;
+        }
+    }
+}
+
+.apx-pp-choose-category-tip-box {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    &:before {
+        content: " ";
+        position: absolute;
+        top: -10px;
+        left: 32px;
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="10"><polyline points="0,10 10,0 20,10" fill="#ededed" stroke="#ccc" stroke-width="1"/></svg>');
+        width: 20px;
+        height: 10px;
+    }
+    border: 1px solid #ccc;
+    background: #ededed;
+    padding: 0 32px;
+    line-height: 36px;
+    position: relative;
+}
+
+// 填写商品基本信息
+.admin-pp-basic-info {
+    .apx-seller-form {
+        border: 1px solid #ccc; // margin: 0 15px;
+        padding: 30px 20px;
+        margin-bottom: 40px;
+        textarea.form-control {
+            height: 80px;
+            font-size: 14px;
+            resize: none;
+            padding: 10px 20px;
+        }
+    }
+    .apx-seller-form-box {
+        border: 1px solid $btn-default-border;
+        padding: 10px 20px;
+        background: #f8f8f8;
+        .form-group {
+            margin-bottom: 0;
+            [class^="col-"] {
+                margin: 10px 0;
+            }
+        }
+        &.pic-box {
+            .title {
+                padding-top: 8px;
+            }
+            >.text-left {
+                background: #fff;
+                padding: 28px 20px;
+                margin: 10px -20px;
+            }
+            ol {
+                padding-top: 20px;
+                padding-left: 60px;
+                position: relative;
+                &:before {
+                    content: '提示: ';
+                    position: absolute;
+                    left: 0;
+                }
+            }
+            .pic-box-gallary {
+                p {
+                    line-height: 36px;
+                    margin-bottom: 0;
+                }
+            }
+            .pic-box-item {
+                width: 90px;
+                height: 90px;
+                float: left;
+                margin: 10px 10px 10px 0;
+                border: 1px solid $btn-default-border;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                .close {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 16px;
+                    height: 16px;
+                    line-height: 0.6;
+                    background: #ccc;
+                    vertical-align: middle;
+                    text-align: center;
+                    display: none;
+                }
+                .img-responsive {
+                    max-height: 100%;
+                }
+            }
+        }
+    }
+    .input_file_btn {
+        position: relative;
+        overflow: hidden;
+        vertical-align: middle;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        background: linear-gradient(180deg, #fcfcfc, #eee);
+        input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0;
+            opacity: 0;
+            font-size: 200px !important;
+            direction: ltr;
+            cursor: pointer;
+        }
+    }
+}
+
+// 编辑属性价格
+.admin-pp-add-attr {
+    .btn-default[data-toggle="collapse"] {
+        border-color: $brand-danger;
+        color: $brand-danger;
+        background: transparent;
+        border-radius: 15px;
+        &:hover {
+            color: #fff;
+            background: $brand-danger;
+        }
+    }
+    .apx-seller-attr-box {
+        .title {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.admin-manage-products {
+    padding-top: 0;
+    @include nav-tabs-danger();
+    .btn-block {
+        margin: 0 auto;
+    }
+    .admin-manage-products-panel {
+        height: 730px;
+        background: #fff;
+        border-radius: 4px;
+        border: 1px solid #b2b2b2;
+        box-shadow: 0 0 4px #b2b2b2;
+        font-size: 12px;
+        position: relative;
+        .header {
+            height: 40px;
+            line-height: 40px;
+            border-bottom: 1px solid #b2b2b2;
+            box-shadow: 0 4px 4px -1px #b2b2b2;
+            position: relative;
+            z-index: 1;
+            font-size: 14px;
+            @include clearfix();
+            >div {
+                white-space: nowrap
+            }
+            .btn-block {
+                margin: 5px 0
+            }
+        }
+        .footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            display: table-cell;
+            padding: 10px 20px;
+            vertical-align: middle;
+            box-shadow: 0 -4px 4px -1px #b2b2b2;
+            .pagination,
+            .pagination-info {
+                margin: 0;
+                font-size: 12px;
+            }
+            .operation {
+                label,
+                .btn-sm {
+                    font-weight: 400;
+                    margin: 0 8px;
+                }
+            }
+        }
+        .content {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            &.iscroll_container {
+                overflow: hidden;
+                padding: 0 10px;
+            }
+            &.with-header {
+                top: 40px;
+            }
+            &.with-footer {
+                bottom: 50px;
+            }
+            >.pull-left {
+                height: 100%;
+                width: 180px;
+                padding: 10px 20px;
+                border-right: 1px solid #ccc;
+                .btn-block {
+                    border-radius: 17px;
+                    border-color: $brand-danger;
+                    color: $brand-danger;
+                    margin: 20px 0;
+                    &:hover,
+                    &:active {
+                        background: $brand-danger;
+                        color: #fff;
+                    }
+                }
+                .active {
+                    .btn-block {
+                        background: $brand-danger;
+                        color: #fff;
+                    }
+                }
+            }
+            .tab-content {
+                display: table-cell;
+                width: 20000px;
+                font-size: 14px;
+                .title {
+                    padding: 0 20px;
+                    line-height: 40px;
+                    border-bottom: 1px solid #ccc
+                }
+                .form-horizontal {
+                    margin-top: 40px;
+                    padding: 0 160px 0 20px;
+                    font-size: 14px;
+                    label {
+                        font-weight: 400;
+                    }
+                    textarea {
+                        resize: none;
+                    }
+                    .btn-submit {
+                        min-width: 120px;
+                    }
+                }
+            }
+        }
+    }
+    .apx-edit-product-wrap {
+        margin: 10px 0 !important;
+        display: inline-block;
+        width: 100%;
+        @include clearfix;
+        li {
+            float: left;
+            width: 20%;
+            padding: 10px;
+            .btn-block {
+                width: auto;
+            }
+            .apx-item-edit {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,97 @@
+body {
+  overflow-x: hidden; }
+
+.bg-muted {
+  background: #f2f2f2; }
+
+.table-fix {
+  table-layout: fixed; }
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.container {
+  width: 1190px;
+  max-width: none !important; }
+
+.high-lighted {
+  color: #df483d; }
+
+.business-main-wrap {
+  background-color: #eee; }
+
+.business-create-code {
+  max-width: 100%;
+  overflow-x: hidden; }
+  .business-create-code .header {
+    background-color: #FFF;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    padding-bottom: 20px; }
+    .business-create-code .header p {
+      margin: 10px 0; }
+    .business-create-code .header a:hover {
+      text-decoration: none; }
+    .business-create-code .header .msg {
+      border-right: 1px solid #e9eef2; }
+      .business-create-code .header .msg span {
+        color: #f88311;
+        font-weight: 700;
+        font-size: 20px; }
+    .business-create-code .header .price {
+      color: #e11144;
+      margin: 20px 0 0;
+      font-size: 20px;
+      font-weight: 700; }
+      .business-create-code .header .price + span {
+        font-size: 14px;
+        color: #8fa2cc; }
+    .business-create-code .header .btn {
+      margin-top: 20px; }
+  .business-create-code .code-list {
+    border-top: 20px solid #eee; }
+    .business-create-code .code-list .item {
+      float: left;
+      width: 277px;
+      padding: 0;
+      background-color: #FFF;
+      font-size: 14px;
+      border-right: 20px solid #eee;
+      border-bottom: 20px solid #eee;
+      text-align: center; }
+      .business-create-code .code-list .item img {
+        max-width: 100%; }
+      .business-create-code .code-list .item input {
+        width: 80%;
+        padding: 2px;
+        border-radius: 2px;
+        outline: none; }
+      .business-create-code .code-list .item .code {
+        font-weight: 700;
+        margin-top: 20px; }
+      .business-create-code .code-list .item .remark {
+        color: #333;
+        margin: 5px 0;
+        height: 30px; }
+      .business-create-code .code-list .item .handle-group .btn {
+        width: 90px;
+        margin: 12px; }
+      .business-create-code .code-list .item .img {
+        width: 100%;
+        padding-top: 50%; }
+        .business-create-code .code-list .item .img.usable {
+          background: url("/images/business/qrCode/keshiyong.png") no-repeat center; }
+        .business-create-code .code-list .item .img.disabled {
+          background: url("/images/business/qrCode/yijinyong.png") no-repeat center; }
+  .business-create-code .footer {
+    background: #fff; }
+
+.btn-business {
+  color: #fff;
+  background-color: #0080ff;
+  border-radius: 50px; }
+  .btn-business.disabled {
+    background: #a3b0cc; }

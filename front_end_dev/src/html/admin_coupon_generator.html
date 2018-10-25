@@ -1,0 +1,239 @@
+@@include('head.inc')
+<!-- header start -->
+<header class="admin-frame-header">
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#top">
+                <img alt="logo" src="/images/logo_white.png" height="24">
+            </a>
+        </div>
+        <ul class="nav navbar-nav navbar-left">
+            <li>管理控制中心</li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                476644346@qq.com
+            </li>
+            <li>
+                <a href="javascript:void(0)">退出</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<!-- header end -->
+<!-- aside nav start -->
+<aside class="admin-frame-aside" id="aside-menu">
+    <ul class="nav nav-pills nav-stacked">
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_1">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_2">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_3">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+    </ul>
+    <ul id="aside_menu_1" class="list-unstyled child-list collapse">
+        <li class="active"><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+    </ul>
+    <ul id="aside_menu_2" class="list-unstyled child-list collapse">
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+    </ul>
+    <ul id="aside_menu_3" class="list-unstyled child-list collapse">
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+    </ul>
+</aside>
+<!-- aside nav end -->
+<!-- main area start -->
+<div class="admin-frame-main">
+    <div class="admin-main-wrap">
+        <div class="admin-coupon-container">
+            <!--nav-->
+            <ul class="nav nav-tabs datepicker-nav">
+                <li><strong>生成优惠券</strong></li>
+            </ul>
+            <!--form start-->
+            <form class="form-horizontal">
+                <div class="form-group" required>
+                    <label class="col-xs-3 control-label" for="">优惠券名称：</label>
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control" id="">
+                    </div>
+                    <div class="col-xs-3 error-msg" style="display: block">错误信息</div>
+                </div>
+                <div class="form-group" required>
+                    <label class="col-xs-3 control-label" for="">优惠券面额：</label>
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control" id="">
+                        <span class="suffix">元</span>
+                    </div>
+                    <div class="col-xs-3 error-msg">错误信息</div>
+                </div>
+                <div class="form-group" required>
+                    <label class="col-xs-3 control-label" for="">发行量：</label>
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control" id="">
+                        <span class="suffix">张</span>
+                    </div>
+                    <div class="col-xs-3 error-msg">错误信息</div>
+                </div>
+                <div class="form-group" required>
+                    <label class="col-xs-3 control-label" for="">使用有效期：</label>
+                    <div class="col-xs-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control date-picker" value="">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-calendar"></i></button>
+                            </span>
+                        </div>
+                        <span class="suffix">到</span>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control date-picker" value="">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-calendar"></i></button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-xs-offset-2 col-xs-3 error-msg">错误信息</div>
+                </div>
+                <div class="form-group" required>
+                    <label class="col-xs-3 control-label" for="">使用条件：</label>
+                    <div class="col-xs-3">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="condition" id="condition1" value="" checked="checked">
+                                满<input type="text" class="form-control">元使用
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="condition" id="condition2" value="">
+                                无条件使用
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-xs-3 error-msg">错误信息</div>
+                </div>
+                <div class="form-group" required>
+                    <label class="col-xs-3 control-label" for="">单人持有上限：</label>
+                    <div class="col-xs-3">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="upper_limit" id="upper_limit1" value="" checked="checked">
+                                <input type="text" class="form-control">张
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="upper_limit" id="upper_limit2" value="">
+                                无上限
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-xs-3 error-msg">错误信息</div>
+                </div>
+                <div class="form-group" required>
+                    <label class="col-xs-3 control-label" for="">使用对象：</label>
+                    <div class="col-xs-4">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="object" id="object1" value="" checked="checked">
+                                <select class="selectpicker" data-width="320" data-live-search="true">
+                                    <option data-tokens="上海宝山">上海宝山</option>
+                                    <option data-tokens="上海黄浦">上海黄浦</option>
+                                    <option data-tokens="上海静安">上海静安</option>
+                                    <option data-tokens="苏州提篮桥">苏州提篮桥</option>
+                                    <option data-tokens="上海宝山">上海宝山</option>
+                                    <option data-tokens="上海黄浦">上海黄浦</option>
+                                    <option data-tokens="上海静安">上海静安</option>
+                                    <option data-tokens="苏州提篮桥">苏州提篮桥</option>
+                                    <option data-tokens="上海宝山">上海宝山</option>
+                                    <option data-tokens="上海黄浦">上海黄浦</option>
+                                    <option data-tokens="上海静安">上海静安</option>
+                                    <option data-tokens="苏州提篮桥">苏州提篮桥</option>
+                                    <option data-tokens="上海宝山">上海宝山</option>
+                                    <option data-tokens="上海黄浦">上海黄浦</option>
+                                    <option data-tokens="上海静安">上海静安</option>
+                                    <option data-tokens="苏州提篮桥">苏州提篮桥</option>
+                                    <option data-tokens="上海宝山">上海宝山</option>
+                                    <option data-tokens="上海黄浦">上海黄浦</option>
+                                    <option data-tokens="上海静安">上海静安</option>
+                                    <option data-tokens="苏州提篮桥">苏州提篮桥</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- <div class="col-xs-2">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="object" id="object2" value="">
+                                无限制
+                            </label>
+                        </div>
+                    </div> -->
+                    <div class="col-xs-3 error-msg">错误信息</div>
+                </div>
+                <button class="btn btn-block btn-lg btn-danger">生成优惠券</button>
+            </form>
+            <!--form end-->
+        </div>
+    </div>
+</div>
+<!-- main area start -->
+<!-- 提示信息 -->
+<div class="apx-modal-admin-alert modal fade admin-management" id="apxModalAdminAlert" tabindex="-1">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span></a>
+                <h4 class="modal-title">提示信息</h4>
+            </div>
+            <div class="modal-body">
+                <div class="h4" style="padding: 36px 0;">点击确认后，买家即可领取，确定现在生成吗？</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-lg btn-danger">确认</button>
+                <button type="button" class="btn btn-lg btn-default" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('footer_admin.inc')
+<script>
+    $(function () {
+        // init the datepicker
+        $('.date-picker').datetimepicker({
+            locale: 'zh-cn',
+            format: "YYYY-MM-DD h:mm:ss",
+            defaultDate: new Date()
+        });
+        // show modal
+        $('#apxModalAdminAlert').modal('show');
+    })
+
+</script>

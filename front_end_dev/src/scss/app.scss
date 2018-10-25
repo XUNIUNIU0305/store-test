@@ -1,0 +1,282 @@
+/* bootstrap v 3.3.7 */
+
+@import 'bootstrap';
+// pure grid
+// @import 'pureGrid';
+/* overrides variables and mixins */
+
+@import 'variables';
+@import 'mixins';
+/* login pages */
+
+@import 'cms/login';
+/* shared */
+
+@import 'modal'; // overrides the style of bootstrap's modal
+@import 'index';
+@import 'footer';
+@import 'notFound';
+@import 'bootstrapSelect';
+@import 'bootstrapDatepicker';
+@import '_bootstrap-datetimepicker.scss';
+@import '_switchBtn.scss';
+@import '_daterangepicker.scss';
+/* 支付方式 */
+
+@import '_payMent.scss';
+/* custom */
+
+@import 'indexAnimation';
+@import 'register';
+@import 'miniCart';
+@import 'shop';
+@import 'cartProgressNav';
+@import 'cart';
+@import 'cartProductSlider';
+@import 'item';
+@import 'warranty';
+@import 'priceQuery';
+@import 'zodiac';
+@import 'waterActivity';
+@import 'customBrandActivity';
+@import 'customList';
+@import 'activityBill';
+@import 'custom_membrane';
+@import 'qualityQuery';
+// new index
+@import 'custom/_topNav.scss';
+@import 'custom/_topSearch.scss';
+@import 'custom/_index.scss';
+@import 'custom/_settle.scss';
+@import 'custom/_newAccount.scss';
+@import 'custom/_accRecharge.scss';
+@import 'custom/_accEditPwd.scss';
+@import 'custom/_accAddress.scss';
+@import 'custom/_apex180315.scss';
+// 香港回归活动
+@import 'indexHk';
+//建军活动
+@import 'indexArmy';
+// 开学活动
+// @import 'indexSchool';
+// 925活动
+@import 'index925';
+// 品牌周 20170905
+@import 'brandWeek_20170905';
+// 免费午餐
+@import 'freeLunch';
+// 脚垫周
+@import 'matWeek';
+// account series pages in custom
+@import 'account';
+@import 'afterSales';
+@import 'afterSalesDetail';
+@import 'address';
+@import 'withdraw';
+@import 'withdrawForm';
+@import 'accThirdParty';
+@import 'bindMobile';
+@import 'editProfile';
+@import 'paySuccess';
+@import 'order';
+@import 'brands';
+@import '_gallary-carousels.scss';
+@import 'couponActive';
+@import 'couponList';
+@import 'wechatList';
+@import 'wechatDetail';
+@import 'water';
+@import 'activeDescription.scss';
+@import 'auditInfo';
+@import 'custom_membrane.scss';
+@import 'indexUpdate.scss';
+/* supply */
+
+@import 'colorBlock';
+@import 'sellerBanner';
+@import 'sellerAside'; // also shared in admin
+@import 'supplyRefund';
+@import 'supplyOrder';
+@import 'supplyOrderPrint';
+@import 'supplyOrders';
+@import 'supplyOrdersDetail';
+@import 'supplyList';
+@import 'supplyListDetail';
+@import 'supplyCustomizationList';
+/* 新增商品关键字样式 */
+
+@import '_formDetail.scss';
+/* 新增商品关键字样式 */
+
+@import '_formDetail.scss';
+/* admin */
+
+@import 'lightbox';
+@import 'adminFrame';
+@import 'adminScroll';
+@import 'adminMain';
+@import 'adminAccount';
+@import 'adminEditIndex';
+@import 'adminEditShop';
+@import 'adminEditBrands';
+@import 'miniColor';
+@import 'adminManagement';
+@import 'adminRefund';
+@import 'adminTradingRecord';
+@import 'adminOrder';
+@import 'adminWithdraw';
+@import 'adminDataStatistics';
+@import 'adminRanking';
+@import 'adminDataSummary';
+@import 'adminCoupon';
+@import 'adminPublishProduct';
+@import 'adminWechatEditor';
+@import 'adminAuditList';
+@import 'adminAuditQualify';
+@import 'adminAuditCancel';
+@import '_adminSortSearch.scss';
+@import './admin/_createOrder';
+@import './admin/_rmbOperation';
+/* wechat style */
+
+@import 'wechatContent';
+/* analyze */
+
+@import 'businessFrame';
+// @import 'businessIcon';
+@import 'businessLogin';
+@import 'businessregister';
+@import 'businessManage';
+@import 'businessSalesman';
+@import 'businessBuild';
+@import 'businessSellDetail';
+@import 'businessWarranty';
+@import 'businessStores';
+@import 'businessPersonal';
+@import 'businessAreaData';
+@import 'businessAdmin';
+@import 'businessBranches';
+@import 'businessComparison';
+@import 'businessTechnician';
+@import 'businessWater';
+@import 'businessCreateCode';
+@import 'businessCodeRecord';
+@import 'businessCodeStore';
+@import 'businessFlowRecord';
+@import '_businessList';
+@import 'businessChartOrder';
+// business data
+@import '_businessDataScroll.scss';
+@import '_businessDataMain.scss';
+@import 'businessDataDaily';
+@import '_businessDataTotal.scss';
+@import '_businessDataSell.scss';
+@import '_businessDataConversion.scss';
+@import '_businessDataCustomization.scss';
+@import '_businessDataInvite.scss';
+// business bank
+@import '_business_bank_card.scss';
+@import '_businessBankInfo.scss';
+@import '_businessBankExtract.scss';
+@import '_businessBankExtactSure.scss';
+@import '_businessBankStatus.scss';
+@import '_businessBankBill.scss';
+// admin bank
+@import '_adminBankAudit.scss';
+@import '_adminBankAuditDetail.scss';
+@import '_adminBankFunds.scss';
+@import '_adminBankFunds.scss';
+/* custom商品搜索 */
+
+@import '_customSearchIndex.scss';
+@import "_customSearchCategory.scss";
+//custom quality
+@import '_customQualitySearch.scss';
+@import '_qualityQuery.scss';
+// 品牌周
+@import '_brand0919.scss'; //custom quality
+@import '_customQualitySearch.scss';
+@import '_qualityQuery.scss';
+// 品牌周
+@import '_brand0919.scss';
+//秒杀页
+@import '_seckill.scss';
+@import '_rankingList';
+//无忧购
+@import '_easyBuy.scss';
+//新登陆页面、注册、找回密码
+@import '_newLogin.scss';
+@import '_newRegist.scss';
+@import '_newForget.scss';
+@import './custom/_yearGoOn';
+
+//315会场
+//电子改装
+@import 'custom/_electronicModification.scss';
+//养护专场
+@import 'custom/_maintenance180315.scss';
+//美容清洗
+@import 'custom/_beautyClean.scss';
+//汽车装饰
+@import 'custom/_carDecoration.scss';
+@import 'custom/_getMoney.scss';
+
+//洗美活动页
+@import 'custom/_ximei180410.scss';
+@import 'custom/_beautiful.scss';
+
+// business新页面
+@import 'business/_storeInfo.scss';
+@import './custom/_yearGoOn';
+@import './custom/_qualityHead';
+
+//18-05-09
+@import './custom/_qualityQuery';
+@import './custom/_quality_owner_detail.scss';
+
+@import './custom/_qualityResult';
+@import './custom/_quality_stores_detail.scss';
+@import './custom/_qualityService';
+//特供车膜
+@import './custom/_special_supply_membrane.scss';
+
+// 拼团订单
+@import './custom/_orderGroup.scss';
+
+// 拼团提货
+@import './custom/_groupCancel.scss';
+
+//18-6-29
+@import './custom/_goldPointing.scss';
+@import './custom/_decorateConicalAbode.scss';
+
+// admin拼购订单列表
+@import './admin/_groupOrderList.scss';
+
+// admin拼购商品管理
+@import './admin/_groupProManager.scss';
+
+// admin新增拼购商品
+@import './admin/_addGroupPro.scss';
+
+// 18629养护会场
+@import './custom/_maintenance629.scss';
+
+
+//限时秒杀
+@import './custom/_time_limit.scss';
+
+//拼团专场
+@import './custom/_collage_special.scss';
+
+//美容清洗
+@import './custom/_cosmetic_cleaning.scss';
+
+//电子分会场
+@import './custom/_electronic_branch_field.scss';
+
+// 拼团后台汇总
+@import './admin/_groupOrderAdmin.scss';
+
+//726活动页
+@import './custom/_hotSummer.scss';

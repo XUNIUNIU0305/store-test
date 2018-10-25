@@ -1,0 +1,77 @@
+body {
+  overflow-x: hidden; }
+
+.bg-muted {
+  background: #f2f2f2; }
+
+.table-fix {
+  table-layout: fixed; }
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.container {
+  width: 1190px;
+  max-width: none !important; }
+
+.high-lighted {
+  color: #df483d; }
+
+.apx-seller-form-wrap {
+  position: relative; }
+  .apx-seller-form-wrap .goods-key-words {
+    position: absolute;
+    right: -267px;
+    top: -1px;
+    width: 255px;
+    background-color: white;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.13); }
+    .apx-seller-form-wrap .goods-key-words .key-title {
+      height: 40px;
+      line-height: 40px;
+      font-size: 16px;
+      color: #333;
+      background-color: #f8f8f8;
+      text-align: center;
+      margin-bottom: 30px; }
+    .apx-seller-form-wrap .goods-key-words .key-ipt-list {
+      padding: 0 12px 0 12px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .apx-seller-form-wrap .goods-key-words .key-ipt-list .input-detail span {
+        display: block;
+        width: 105px;
+        height: 30px;
+        color: #333;
+        margin-bottom: 20px; }
+        .apx-seller-form-wrap .goods-key-words .key-ipt-list .input-detail span:nth-child(2n+1) {
+          margin-right: 10px; }
+      .apx-seller-form-wrap .goods-key-words .key-ipt-list .input-detail input {
+        width: 105px;
+        height: 30px;
+        color: #333;
+        border-width: 1px;
+        border-color: #b3b3b3;
+        border-style: solid;
+        border-radius: 2px;
+        background-color: white;
+        margin-bottom: 20px; }
+        .apx-seller-form-wrap .goods-key-words .key-ipt-list .input-detail input:nth-child(2n+1) {
+          margin-right: 10px; }
+    .apx-seller-form-wrap .goods-key-words .key-words-btn {
+      display: block;
+      height: 40px;
+      width: 100;
+      color: #fff;
+      cursor: pointer;
+      margin-top: 10px;
+      background-color: #D04D43;
+      text-align: center;
+      line-height: 40px; }
+  .apx-seller-form-wrap .show-key-words {
+    display: block; }

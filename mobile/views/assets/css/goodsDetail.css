@@ -1,0 +1,1054 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+nav.bottom-nav {
+  display: none; }
+
+.container {
+  font-family: "微软雅黑";
+  width: 100%;
+  height: 100%;
+  -webkit-overflow-scrolling: touch; }
+  .container .fast-guid-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100vw; }
+  .container .guid-list {
+    height: 22.13333vw;
+    position: fixed;
+    right: 0;
+    bottom: 35.2vw;
+    z-index: 300;
+    overflow: hidden; }
+    .container .guid-list .pack-up {
+      float: left;
+      margin-top: 5.73333vw;
+      width: 10.66667vw;
+      height: 10.66667vw; }
+    .container .guid-list .list {
+      float: left;
+      background: #fff;
+      border-top-left-radius: 1.06667vw;
+      border-bottom-left-radius: 1.06667vw;
+      display: none; }
+      .container .guid-list .list li {
+        float: left;
+        width: 17.33333vw;
+        height: 22.13333vw; }
+      .container .guid-list .list .pingou-index {
+        background: url("/images/group_goods_detail/shouye_guid.png") no-repeat;
+        background-size: cover; }
+      .container .guid-list .list .search {
+        background: url("/images/group_goods_detail/search.png") no-repeat;
+        background-size: cover; }
+      .container .guid-list .list .my-pingou {
+        background: url("/images/group_goods_detail/my_pingou.png") no-repeat;
+        background-size: cover; }
+      .container .guid-list .list .ziti-pingou-tihuo {
+        background: url("/images/group_goods_detail/ziti_pingou_tihuo.png") no-repeat;
+        background-size: cover; }
+  .container .G_group-share-back-top {
+    position: fixed;
+    bottom: 29.33333vw;
+    right: 0;
+    z-index: 200;
+    width: 10.66667vw;
+    height: 10.66667vw;
+    overflow: hidden;
+    background: url("/images/group_goods_detail/back_top.png") no-repeat;
+    background-size: cover; }
+  .container .wechat-group-goods-detail {
+    font-family: "微软雅黑"; }
+    .container .wechat-group-goods-detail .goods-detail-wrap {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: #EFEFF4; }
+      .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-image {
+        position: relative;
+        width: 100vw;
+        height: 100vw; }
+        .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-image .shopcart-logo {
+          position: absolute;
+          top: 2.66667vw;
+          right: 2.66667vw;
+          display: inline-block;
+          width: 8vw;
+          height: 8vw;
+          background: url("/images/group_goods_detail/shop_icon.png") no-repeat;
+          background-size: contain;
+          border-radius: 50%;
+          z-index: 200; }
+        .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-image .swiper-container {
+          width: 100vw;
+          height: 100vw; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-image .swiper-container .swiper-wrapper {
+            width: 100vw;
+            height: 100vw; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-image .swiper-container .swiper-wrapper .swiper-slide {
+              width: 100vw;
+              height: 100vw; }
+              .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-image .swiper-container .swiper-wrapper .swiper-slide img {
+                width: 100%;
+                height: 100%; }
+        .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-image .goods-detail-pages {
+          position: absolute;
+          right: 4.26667vw;
+          bottom: 4.26667vw;
+          z-index: 100;
+          width: 10.66667vw;
+          height: 6.4vw;
+          border-radius: 3.2vw;
+          background: rgba(0, 0, 0, 0.2); }
+          .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-image .goods-detail-pages .pages {
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-justify-content: center;
+                    justify-content: center;
+            -webkit-align-items: center;
+                    align-items: center;
+            font-size: 3.46667vw; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-image .goods-detail-pages .pages .change-pages {
+              font-size: 4vw;
+              font-weight: bold; }
+      .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-count-down {
+        width: 100vw;
+        height: 14.26667vw;
+        background: url("/images/group_goods_detail/djs.png") no-repeat;
+        background-size: cover;
+        position: relative; }
+        .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-count-down .left {
+          float: left;
+          color: #fff; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-count-down .left .title {
+            float: left;
+            margin: 0;
+            padding: 0;
+            font-size: 7.2vw;
+            margin-top: 1.33333vw;
+            margin-left: 4vw; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-count-down .left .mess {
+            float: left;
+            font-size: 3.46667vw;
+            margin-top: 6.66667vw;
+            margin-left: 2.66667vw; }
+        .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-count-down .count-down {
+          float: right;
+          width: 40vw;
+          height: 100%;
+          color: #fff;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-direction: column;
+                  flex-direction: column;
+          -webkit-align-items: center;
+                  align-items: center;
+          position: absolute;
+          top: 45%;
+          right: 0; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-count-down .count-down .timer {
+            width: 33.6vw;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-justify-content: space-around;
+                    justify-content: space-around; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-count-down .count-down .timer .same {
+              height: 5.86667vw;
+              line-height: 5.86667vw;
+              font-weight: bold; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-count-down .count-down .timer .timer-bg {
+              color: #000;
+              font-size: 2.93333vw;
+              text-align: center;
+              border-radius: 0.66667vw;
+              width: 5.33333vw;
+              background: url("/images/group_goods_detail/timer-bg.jpg") no-repeat;
+              background-size: cover; }
+      .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-mess {
+        width: 100vw;
+        background: #fff; }
+        .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-mess .mess {
+          padding: 4.26667vw 4vw 5.06667vw 4vw; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-mess .mess .goods-detail-price {
+            font-size: 3.46667vw; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-mess .mess .goods-detail-price .new-price {
+              font-size: 3.46667vw;
+              color: red;
+              font-weight: bold; }
+              .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-mess .mess .goods-detail-price .new-price .price {
+                font-size: 5.33333vw; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-mess .mess .goods-detail-price .old-price {
+              font-size: 3.46667vw;
+              color: #AAA;
+              text-decoration: line-through; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-mess .mess .spell-delivery {
+            overflow: hidden;
+            margin-top: 4vw; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-mess .mess .spell-delivery .same {
+              height: 4vw;
+              font-size: 2.93333vw;
+              text-align: center;
+              line-height: 4vw;
+              border-radius: 4vw; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-mess .mess .spell-delivery .spell {
+              float: left;
+              padding: 0 1.6vw;
+              background: #F5222D;
+              color: #fff; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-mess .mess .spell-delivery .delivery {
+              float: left;
+              width: 8.26667vw;
+              height: 4vw;
+              margin-left: 1.33333vw;
+              font-size: 2.93333vw;
+              color: #F5222D; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-mess .mess .spell-delivery .delivery-songhuo-bg {
+              background: url("/images/group_goods_detail/songhuo_button.png") no-repeat;
+              background-size: cover; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-mess .mess .spell-delivery .delivery-ziti-bg {
+              background: url("/images/group_goods_detail/ziti_button.png") no-repeat;
+              background-size: cover; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-mess .mess .goods-intro {
+            position: relative;
+            width: 92vw;
+            overflow: hidden;
+            font-size: 4vw;
+            line-height: 5.6vw;
+            margin-top: 2.4vw;
+            font-weight: bold;
+            word-break: break-all; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-mess .mess .goods-intro::after {
+            content: attr(data-attr);
+            font-weight: bold;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 0 1.33333vw 0 12vw;
+            background: url("/images/group_goods_detail/ellipsis_bg.png") repeat-y;
+            z-index: 100; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-mess .mess .goods-intro-mess {
+            position: relative;
+            color: #5c5c5c;
+            width: 92vw;
+            font-size: 3.46667vw;
+            line-height: 4.53333vw;
+            margin-top: 1.6vw;
+            word-break: break-all;
+            overflow: hidden; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-mess .mess .main-goods {
+            overflow: hidden; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .goods-detail-mess .mess .goods-intro-mess::after {
+            content: attr(data-attr);
+            font-weight: bold;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 0 1.33333vw 0 12vw;
+            background: url("/images/group_goods_detail/ellipsis_bg.png") repeat-y; }
+      .container .wechat-group-goods-detail .goods-detail-wrap .specifications-address {
+        margin-top: 2.66667vw;
+        background: #fff; }
+        .container .wechat-group-goods-detail .goods-detail-wrap .specifications-address .specifications {
+          position: relative;
+          margin: 0 4vw;
+          padding: 4.8vw 0;
+          overflow: hidden;
+          color: #AAA;
+          font-size: 3.46667vw; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .specifications-address .specifications .title {
+            float: left; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .specifications-address .specifications .specifications-mess {
+            float: right;
+            width: 78.66667vw;
+            color: #333;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+                    align-items: center;
+            -webkit-justify-content: space-between;
+                    justify-content: space-between; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .specifications-address .specifications .specifications-mess .mess {
+              display: inline-block;
+              font-size: 3.46667vw;
+              width: 48vw;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-align-items: center;
+                      align-items: center; }
+              .container .wechat-group-goods-detail .goods-detail-wrap .specifications-address .specifications .specifications-mess .mess .main {
+                display: inline-block;
+                width: 27.2vw;
+                text-align: right;
+                font-weight: bold;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis; }
+              .container .wechat-group-goods-detail .goods-detail-wrap .specifications-address .specifications .specifications-mess .mess .color {
+                font-weight: bold; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .specifications-address .specifications .specifications-mess .more {
+              display: inline-block;
+              width: 3.73333vw;
+              height: 3.73333vw;
+              background: url("/images/group_goods_detail/guige_more_icon.png") no-repeat;
+              background-size: contain;
+              background-position-x: 100%;
+              background-position-y: 50%; }
+      .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 400;
+        width: 100vw;
+        background: rgba(0, 0, 0, 0.4); }
+        .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100vw;
+          max-height: 80%;
+          overflow-y: scroll;
+          background: #fff; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .specifications-detail-mess {
+            padding: 4vw 4.26667vw;
+            overflow: hidden; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .specifications-detail-mess .detail-img {
+              float: left;
+              clear: both;
+              overflow: hidden;
+              width: 21.33333vw;
+              height: 21.33333vw; }
+              .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .specifications-detail-mess .detail-img img {
+                width: 100%;
+                height: 100%; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .specifications-detail-mess .detail-mess {
+              position: relative;
+              float: left;
+              margin-left: 2.66667vw; }
+              .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .specifications-detail-mess .detail-mess .close {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 5.86667vw;
+                height: 5.86667vw;
+                background: url("/images/group_goods_detail/close.png") no-repeat;
+                background-size: contain; }
+              .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .specifications-detail-mess .detail-mess .spell-delivery {
+                overflow: hidden;
+                margin-top: 7.2vw; }
+                .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .specifications-detail-mess .detail-mess .spell-delivery .same {
+                  height: 4vw;
+                  font-size: 2.93333vw;
+                  text-align: center;
+                  line-height: 4vw;
+                  border-radius: 4vw; }
+                .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .specifications-detail-mess .detail-mess .spell-delivery .spell {
+                  float: left;
+                  padding: 0 1.6vw;
+                  background: #F5222D;
+                  color: #fff; }
+                .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .specifications-detail-mess .detail-mess .spell-delivery .delivery {
+                  float: left;
+                  width: 8.26667vw;
+                  height: 4vw;
+                  margin-left: 1.33333vw;
+                  font-size: 2.93333vw;
+                  color: #F5222D; }
+                .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .specifications-detail-mess .detail-mess .spell-delivery .delivery-songhuo-bg {
+                  background: url("/images/group_goods_detail/songhuo_button.png") no-repeat;
+                  background-size: cover; }
+                .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .specifications-detail-mess .detail-mess .spell-delivery .delivery-ziti-bg {
+                  background: url("/images/group_goods_detail/ziti_button.png") no-repeat;
+                  background-size: cover; }
+              .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .specifications-detail-mess .detail-mess .detail-newprice {
+                font-size: 3.46667vw;
+                color: #333;
+                margin-top: 0.8vw;
+                font-weight: bold; }
+                .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .specifications-detail-mess .detail-mess .detail-newprice .new-price {
+                  font-size: 3.73333vw; }
+              .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .specifications-detail-mess .detail-mess .detail-oldprice {
+                font-size: 3.46667vw;
+                color: #AAA;
+                margin-top: 0.26667vw;
+                width: 66.66667vw;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-justify-content: space-between;
+                        justify-content: space-between; }
+                .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .specifications-detail-mess .detail-mess .detail-oldprice span {
+                  display: inline-block;
+                  font-size: 3.46667vw; }
+                .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .specifications-detail-mess .detail-mess .detail-oldprice .old-price {
+                  text-decoration: line-through; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .choose-specifications-color {
+            padding: 4vw 4.26667vw;
+            font-size: 3.46667vw;
+            color: #333; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .detail-main {
+            margin: 0 4vw; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .detail-main .same {
+              margin-top: 2.66667vw; }
+              .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .detail-main .same .title {
+                font-size: 3.46667vw;
+                font-weight: bold;
+                color: #7D7D7D; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .detail-main .standard .item {
+              overflow: hidden; }
+              .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .detail-main .standard .item .standard-active {
+                color: #F5222D;
+                border: 0.13333vw solid #F5222D; }
+              .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .detail-main .standard .item li {
+                float: left;
+                padding: 2.66667vw 5.33333vw;
+                margin: 2.66667vw 0;
+                margin-right: 2.66667vw;
+                border: 0.13333vw solid #E5E5E5;
+                border-radius: 0.53333vw;
+                font-size: 3.46667vw;
+                color: #333; }
+              .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .detail-main .standard .item .li-active {
+                color: #F5222D;
+                border: 0.13333vw solid #F5222D; }
+              .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .detail-main .standard .item .cant-choose {
+                border: 0.13333vw dashed #F1F1F1;
+                background: #FBFAFB;
+                color: #DEDEDE; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .detail-main .color .item {
+              overflow: hidden; }
+              .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .detail-main .color .item .standard-color-active {
+                color: #F5222D;
+                border: 0.13333vw solid #F5222D; }
+              .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .detail-main .color .item li {
+                float: left;
+                width: 17.33333vw;
+                height: 8vw;
+                text-align: center;
+                line-height: 8vw;
+                margin: 2.66667vw 0;
+                margin-right: 2.66667vw;
+                border: 0.13333vw solid #E5E5E5;
+                border-radius: 0.13333vw;
+                font-size: 3.46667vw;
+                color: #333; }
+              .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .detail-main .color .item .cant-choose {
+                border: 0.13333vw dashed #F1F1F1;
+                background: #FBFAFB;
+                color: #DEDEDE; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .detail-main .number {
+              margin-bottom: 18.66667vw; }
+              .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .detail-main .number .number-tile {
+                margin-bottom: 2.66667vw; }
+              .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .detail-main .number .number-button {
+                width: 100%;
+                overflow: hidden; }
+                .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .detail-main .number .number-button .button {
+                  float: right;
+                  width: 28.53333vw;
+                  height: 8vw;
+                  display: -webkit-flex;
+                  display: flex;
+                  -webkit-justify-content: space-between;
+                          justify-content: space-between;
+                  -webkit-align-items: center;
+                          align-items: center; }
+                  .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .detail-main .number .number-button .button .reduce,
+                  .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .detail-main .number .number-button .button .add {
+                    display: inline-block;
+                    width: 8vw;
+                    height: 8vw; }
+                  .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .detail-main .number .number-button .button .reduce {
+                    background: url("/images/group_goods_detail/reduce_failure.png") no-repeat;
+                    background-size: contain; }
+                  .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .detail-main .number .number-button .button .add {
+                    background: url("/images/group_goods_detail/add.png") no-repeat;
+                    background-size: contain; }
+                  .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .detail-main .number .number-button .button .text {
+                    width: 10.93333vw;
+                    height: 8vw;
+                    outline: none;
+                    border: none;
+                    background: #F5F5F5;
+                    text-align: center;
+                    -webkit-appearance: none;
+                    border-radius: 0; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .confirm {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 100;
+            width: 100%;
+            height: 13.06667vw;
+            text-align: center;
+            line-height: 13.06667vw;
+            color: #fff;
+            letter-spacing: 0.26667vw;
+            font-size: 4.53333vw;
+            font-weight: bold;
+            background: url("/images/group_goods_detail/queding-button.png") no-repeat;
+            background-size: cover; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            z-index: 100;
+            width: 100%;
+            height: 13.06667vw; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .footer .same {
+              float: left;
+              width: 50%;
+              height: 100%;
+              color: #fff;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-flex-direction: column;
+                      flex-direction: column;
+              -webkit-justify-content: center;
+                      justify-content: center;
+              -webkit-align-items: center;
+                      align-items: center; }
+              .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .footer .same .price {
+                font-size: 4vw;
+                font-weight: bold; }
+              .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .footer .same .text {
+                font-size: 3.46667vw; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .footer .purchased-separately {
+              background-color: #333; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .specifications-detail-wrap .specifications-detail .footer .open-group {
+              background: url("/images/group_goods_detail/wykaituan-button-bg.png") no-repeat;
+              background-size: cover; }
+      .container .wechat-group-goods-detail .goods-detail-wrap .service-policy {
+        background: #fff; }
+        .container .wechat-group-goods-detail .goods-detail-wrap .service-policy .service-policy-description {
+          display: -webkit-flex;
+          display: flex;
+          -webkit-align-items: center;
+                  align-items: center;
+          -webkit-justify-content: space-between;
+                  justify-content: space-between;
+          margin: 0 4vw;
+          padding: 4.8vw 0; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .service-policy .service-policy-description .title {
+            float: left;
+            overflow: hidden;
+            color: #AAA;
+            font-size: 3.46667vw; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .service-policy .service-policy-description .description-mess {
+            float: right;
+            overflow: hidden;
+            color: #333;
+            font-size: 3.46667vw;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+                    align-items: center;
+            -webkit-justify-content: space-between;
+                    justify-content: space-between;
+            width: 78.4vw; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .service-policy .service-policy-description .description-mess .mess {
+              display: inline-block;
+              font-size: 3.46667vw;
+              width: 73.33333vw;
+              -webkit-align-items: center;
+                      align-items: center;
+              color: #333;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .service-policy .service-policy-description .description-mess .more {
+              float: right;
+              width: 3.73333vw;
+              height: 3.73333vw;
+              background: url("/images/group_goods_detail/guige_more_icon.png") no-repeat;
+              background-size: contain;
+              background-position-y: 50%; }
+      .container .wechat-group-goods-detail .goods-detail-wrap .service-policy-detail-wrap {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 100;
+        width: 100vw;
+        background: rgba(0, 0, 0, 0.4); }
+        .container .wechat-group-goods-detail .goods-detail-wrap .service-policy-detail-wrap .service-policy-detail {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          min-height: 117.33333vw;
+          background: #fff; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .service-policy-detail-wrap .service-policy-detail .title {
+            position: relative;
+            width: 100%;
+            height: 13.06667vw;
+            font-size: 4.8vw;
+            text-align: center;
+            line-height: 13.06667vw;
+            border-bottom: 0.13333vw solid #DEDFE0; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .service-policy-detail-wrap .service-policy-detail .title .close {
+              position: absolute;
+              top: 50%;
+              right: 5.33333vw;
+              margin-top: -1.66667vw;
+              width: 5.86667vw;
+              height: 5.86667vw;
+              background: url("/images/group_goods_detail/close.png") no-repeat;
+              background-size: cover; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .service-policy-detail-wrap .service-policy-detail .mess {
+            width: 100%; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .service-policy-detail-wrap .service-policy-detail .mess .mess-item {
+              margin: 0 4vw;
+              padding: 3.46667vw 0; }
+              .container .wechat-group-goods-detail .goods-detail-wrap .service-policy-detail-wrap .service-policy-detail .mess .mess-item .mess-title {
+                font-size: 4vw;
+                color: #333;
+                font-weight: bold; }
+                .container .wechat-group-goods-detail .goods-detail-wrap .service-policy-detail-wrap .service-policy-detail .mess .mess-item .mess-title img {
+                  width: 3.73333vw;
+                  height: 3.73333vw;
+                  vertical-align: middle;
+                  margin-right: 1.33333vw; }
+              .container .wechat-group-goods-detail .goods-detail-wrap .service-policy-detail-wrap .service-policy-detail .mess .mess-item .mess-main {
+                margin-left: 5.06667vw;
+                margin-right: 13.86667vw;
+                font-size: 3.46667vw;
+                color: #AAA; }
+      .container .wechat-group-goods-detail .goods-detail-wrap .count-down-mess-wrap {
+        width: 100vw;
+        margin-top: 2.66667vw;
+        background: #fff; }
+        .container .wechat-group-goods-detail .goods-detail-wrap .count-down-mess-wrap .count-down-mess {
+          margin: 0 4vw; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .count-down-mess-wrap .count-down-mess .title-mess {
+            padding: 4.66667vw 0;
+            border-bottom: 0.13333vw solid #DEDFE0;
+            overflow: hidden;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+                    align-items: center;
+            -webkit-justify-content: space-between;
+                    justify-content: space-between; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .count-down-mess-wrap .count-down-mess .title-mess .title {
+              width: 20vw;
+              height: 4vw; }
+              .container .wechat-group-goods-detail .goods-detail-wrap .count-down-mess-wrap .count-down-mess .title-mess .title img {
+                width: 100%;
+                height: 100%; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .count-down-mess-wrap .count-down-mess .title-mess .totle-count {
+              font-size: 3.46667vw; }
+              .container .wechat-group-goods-detail .goods-detail-wrap .count-down-mess-wrap .count-down-mess .title-mess .totle-count .people-num {
+                color: #F5222D; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .count-down-mess-wrap .count-down-mess .notyet-group {
+            height: 13.33333vw;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-justify-content: space-between;
+                    justify-content: space-between;
+            -webkit-align-items: center;
+                    align-items: center; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .count-down-mess-wrap .count-down-mess .notyet-group .title {
+              font-size: 4vw;
+              color: #333;
+              font-weight: bold; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .count-down-mess-wrap .count-down-mess .notyet-group .my-open-group {
+              width: 21.33333vw;
+              height: 11vw;
+              color: #fff;
+              font-size: 3.46667vw;
+              text-align: center;
+              line-height: 9.33333vw;
+              background: url("/images/group_goods_detail/button.png") no-repeat;
+              background-size: cover; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .count-down-mess-wrap .count-down-mess .count-down-one-wrap {
+            position: relative;
+            width: 100%;
+            height: auto;
+            overflow: hidden; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .count-down-mess-wrap .count-down-mess .count-down-one-wrap .wrap-count-down-one {
+              position: absolute;
+              width: 100%;
+              top: 0;
+              left: 0; }
+              .container .wechat-group-goods-detail .goods-detail-wrap .count-down-mess-wrap .count-down-mess .count-down-one-wrap .wrap-count-down-one .count-down-one .one-mess {
+                overflow: hidden;
+                padding: 2.66667vw 0; }
+                .container .wechat-group-goods-detail .goods-detail-wrap .count-down-mess-wrap .count-down-mess .count-down-one-wrap .wrap-count-down-one .count-down-one .one-mess .left {
+                  float: left;
+                  display: -webkit-flex;
+                  display: flex;
+                  -webkit-align-items: center;
+                          align-items: center; }
+                  .container .wechat-group-goods-detail .goods-detail-wrap .count-down-mess-wrap .count-down-mess .count-down-one-wrap .wrap-count-down-one .count-down-one .one-mess .left .head-portrait {
+                    float: left;
+                    width: 9.33333vw;
+                    height: 9.33333vw;
+                    border-radius: 50%;
+                    overflow: hidden; }
+                    .container .wechat-group-goods-detail .goods-detail-wrap .count-down-mess-wrap .count-down-mess .count-down-one-wrap .wrap-count-down-one .count-down-one .one-mess .left .head-portrait img {
+                      width: 100%;
+                      height: 100%; }
+                  .container .wechat-group-goods-detail .goods-detail-wrap .count-down-mess-wrap .count-down-mess .count-down-one-wrap .wrap-count-down-one .count-down-one .one-mess .left .user-tuan {
+                    float: left;
+                    margin-left: 1.86667vw; }
+                .container .wechat-group-goods-detail .goods-detail-wrap .count-down-mess-wrap .count-down-mess .count-down-one-wrap .wrap-count-down-one .count-down-one .one-mess .right {
+                  float: right;
+                  display: -webkit-flex;
+                  display: flex;
+                  -webkit-justify-content: space-between;
+                          justify-content: space-between;
+                  -webkit-align-items: center;
+                          align-items: center; }
+                  .container .wechat-group-goods-detail .goods-detail-wrap .count-down-mess-wrap .count-down-mess .count-down-one-wrap .wrap-count-down-one .count-down-one .one-mess .right .almost {
+                    display: -webkit-flex;
+                    display: flex;
+                    -webkit-flex-direction: column;
+                            flex-direction: column;
+                    -webkit-justify-content: space-between;
+                            justify-content: space-between; }
+                    .container .wechat-group-goods-detail .goods-detail-wrap .count-down-mess-wrap .count-down-mess .count-down-one-wrap .wrap-count-down-one .count-down-one .one-mess .right .almost .almost-people {
+                      font-size: 3.46667vw;
+                      color: #333;
+                      text-align: right; }
+                      .container .wechat-group-goods-detail .goods-detail-wrap .count-down-mess-wrap .count-down-mess .count-down-one-wrap .wrap-count-down-one .count-down-one .one-mess .right .almost .almost-people .num {
+                        color: #F5222D; }
+                    .container .wechat-group-goods-detail .goods-detail-wrap .count-down-mess-wrap .count-down-mess .count-down-one-wrap .wrap-count-down-one .count-down-one .one-mess .right .almost .almost-time {
+                      font-size: 2.93333vw;
+                      color: #979797;
+                      text-align: right; }
+                  .container .wechat-group-goods-detail .goods-detail-wrap .count-down-mess-wrap .count-down-mess .count-down-one-wrap .wrap-count-down-one .count-down-one .one-mess .right .tuxedo {
+                    width: 17.86667vw;
+                    height: 9vw;
+                    margin-left: 4vw;
+                    text-align: center;
+                    line-height: 8vw;
+                    color: #fff;
+                    background: url("/images/group_goods_detail/button.png") no-repeat;
+                    background-size: cover; }
+      .container .wechat-group-goods-detail .goods-detail-wrap .count-down-rule-wrap {
+        width: 100vw;
+        margin-top: 2.66667vw;
+        background: #fff; }
+        .container .wechat-group-goods-detail .goods-detail-wrap .count-down-rule-wrap .count-down-rule {
+          margin: 0 4vw; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .count-down-rule-wrap .count-down-rule .rule-title {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-justify-content: space-between;
+                    justify-content: space-between;
+            -webkit-align-items: center;
+                    align-items: center;
+            padding: 4.66667vw 0;
+            border-bottom: 0.13333vw solid #dedfe0; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .count-down-rule-wrap .count-down-rule .rule-title .title {
+              font-size: 4vw;
+              color: #414141;
+              font-weight: bold; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .count-down-rule-wrap .count-down-rule .rule-title .rule-more {
+              font-size: 3.46667vw;
+              color: #AAA;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-justify-content: space-between;
+                      justify-content: space-between;
+              -webkit-align-items: center;
+                      align-items: center; }
+              .container .wechat-group-goods-detail .goods-detail-wrap .count-down-rule-wrap .count-down-rule .rule-title .rule-more .more-icon {
+                width: 3.73333vw;
+                height: 3.73333vw;
+                background: url("/images/group_goods_detail/arrows_24_icon.png") no-repeat;
+                background-size: contain;
+                background-position: 100%; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .count-down-rule-wrap .count-down-rule .rule-main {
+            padding: 4.66667vw 0;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-justify-content: space-around;
+                    justify-content: space-around;
+            -webkit-align-items: center;
+                    align-items: center; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .count-down-rule-wrap .count-down-rule .rule-main .main-item .num {
+              display: inline-block;
+              width: 4vw;
+              height: 4vw;
+              text-align: center;
+              line-height: 4vw;
+              border-radius: 50%;
+              color: #fff;
+              font-size: 3.46667vw;
+              background-color: #F5222D;
+              margin-right: 1.6vw; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .count-down-rule-wrap .count-down-rule .rule-main .arr-right {
+              width: 2.93333vw;
+              height: 2.93333vw;
+              background: url("/images/group_goods_detail/arrows_24_icon.png") no-repeat;
+              background-size: contain;
+              background-position-x: 50%; }
+      .container .wechat-group-goods-detail .goods-detail-wrap .count-down-rule-detail-wrap {
+        position: fixed;
+        z-index: 150;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #fff; }
+        .container .wechat-group-goods-detail .goods-detail-wrap .count-down-rule-detail-wrap .count-down-rule-detail {
+          padding: 6.13333vw 4vw;
+          color: #333; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .count-down-rule-detail-wrap .count-down-rule-detail .rule-detail-title {
+            font-size: 4vw;
+            font-weight: bold; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .count-down-rule-detail-wrap .count-down-rule-detail .rule-detail-mess {
+            margin-top: 2.4vw; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .count-down-rule-detail-wrap .count-down-rule-detail .rule-detail-mess .rule-detail-mess-item {
+              font-size: 3.46667vw;
+              line-height: 7.73333vw; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .count-down-rule-detail-wrap .count-down-rule-detail .other {
+            margin-top: 7.73333vw; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .count-down-rule-detail-wrap .count-down-rule-detail .other .other-mess {
+              font-weight: bold; }
+      .container .wechat-group-goods-detail .goods-detail-wrap .acw-wrap {
+        width: 100vw;
+        margin-top: 2.66667vw;
+        background: #fff; }
+        .container .wechat-group-goods-detail .goods-detail-wrap .acw-wrap .acw {
+          margin: 0 4vw;
+          overflow: hidden;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-direction: row;
+                  flex-direction: row;
+          -webkit-justify-content: space-between;
+                  justify-content: space-between;
+          -webkit-align-items: center;
+                  align-items: center; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .acw-wrap .acw .left {
+            margin: 3.73333vw 0;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+                    align-items: center; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .acw-wrap .acw .left .logo {
+              float: left;
+              width: 16vw;
+              height: 16vw; }
+              .container .wechat-group-goods-detail .goods-detail-wrap .acw-wrap .acw .left .logo img {
+                width: 100%;
+                height: 100%; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .acw-wrap .acw .left .acw-main {
+              float: left;
+              margin-left: 1.86667vw; }
+              .container .wechat-group-goods-detail .goods-detail-wrap .acw-wrap .acw .left .acw-main .title {
+                color: #414141;
+                font-weight: bold; }
+              .container .wechat-group-goods-detail .goods-detail-wrap .acw-wrap .acw .left .acw-main .location {
+                color: #AAA; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .acw-wrap .acw .right {
+            float: right;
+            width: 26.13333vw;
+            margin: 3.73333vw 0;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: column;
+                    flex-direction: column;
+            -webkit-justify-content: space-between;
+                    justify-content: space-between;
+            -webkit-align-items: center;
+                    align-items: center;
+            border-left: 0.13333vw solid #DEDFE0; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .acw-wrap .acw .right .good-num {
+              font-size: 4vw;
+              color: #333;
+              font-weight: bold; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .acw-wrap .acw .right .all-good {
+              font-size: 2.66667vw;
+              color: #AAA; }
+      .container .wechat-group-goods-detail .goods-detail-wrap .good-params-wrap {
+        width: 100vw;
+        margin-top: 2.66667vw;
+        background: #fff; }
+        .container .wechat-group-goods-detail .goods-detail-wrap .good-params-wrap .good-params {
+          margin: 0 4vw;
+          height: 13.33333vw;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-justify-content: space-between;
+                  justify-content: space-between;
+          -webkit-align-items: center;
+                  align-items: center; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .good-params-wrap .good-params .params-title {
+            font-size: 4vw;
+            font-weight: bold;
+            color: #414141; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .good-params-wrap .good-params .params-more {
+            width: 3.73333vw;
+            height: 3.73333vw;
+            background: url("/images/group_goods_detail/guige_more_icon.png") no-repeat;
+            background-size: contain;
+            background-position-y: 50%; }
+      .container .wechat-group-goods-detail .goods-detail-wrap .good-detail-wrap {
+        width: 100vw;
+        margin-top: 2.66667vw;
+        background: #fff; }
+        .container .wechat-group-goods-detail .goods-detail-wrap .good-detail-wrap .good-detail {
+          width: 100%; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .good-detail-wrap .good-detail .detail-title {
+            width: 100%;
+            height: 13.33333vw;
+            font-size: 4.53333vw;
+            font-weight: bold;
+            text-align: center;
+            line-height: 13.33333vw;
+            color: #333;
+            border-bottom: 0.13333vw solid #DEDFE0; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .good-detail-wrap .good-detail .detail-main {
+            padding: 2.66667vw 1.33333vw; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .good-detail-wrap .good-detail .detail-main .img-responsive {
+              width: 100%;
+              display: block; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .good-detail-wrap .good-detail .detail-main p .img-responsive {
+              width: 100%;
+              display: block; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .good-detail-wrap .good-detail .detail-main div .img-responsive {
+              width: 100%;
+              display: block; }
+            .container .wechat-group-goods-detail .goods-detail-wrap .good-detail-wrap .good-detail .detail-main .item img {
+              width: 100%;
+              display: block; }
+      .container .wechat-group-goods-detail .goods-detail-wrap .footer-hint-wrap {
+        width: 100vw;
+        margin-bottom: 13.06667vw; }
+        .container .wechat-group-goods-detail .goods-detail-wrap .footer-hint-wrap .footer-hint {
+          padding: 5.33333vw 8vw; }
+          .container .wechat-group-goods-detail .goods-detail-wrap .footer-hint-wrap .footer-hint .hint {
+            width: 84vw;
+            height: 3.46667vw;
+            background: url("/images/group_goods_detail/footer-hint.png") no-repeat;
+            background-size: contain; }
+
+.footer-wrap {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 50;
+  width: 100vw;
+  height: 13.06667vw;
+  border-top: 0.13333vw solid #DEDFE0;
+  background: #fff; }
+  .footer-wrap .footer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: -webkit-flex;
+    display: flex;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+    .footer-wrap .footer .pingou-index-button {
+      background: url("/images/group_goods_detail/index-logo.png") no-repeat center; }
+    .footer-wrap .footer .contact-service-button {
+      background: url("/images/group_goods_detail/contact-service-logo.png") no-repeat center; }
+    .footer-wrap .footer .logo {
+      float: left;
+      width: 18.66667vw;
+      height: 13.06667vw;
+      background-size: 50%; }
+    .footer-wrap .footer .same {
+      float: left;
+      color: #fff;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+              flex-direction: column;
+      -webkit-justify-content: center;
+              justify-content: center;
+      -webkit-align-items: center;
+              align-items: center; }
+      .footer-wrap .footer .same .price {
+        font-size: 4vw;
+        font-weight: bold; }
+      .footer-wrap .footer .same .text {
+        font-size: 3.46667vw; }
+    .footer-wrap .footer .purchased-separately {
+      width: 29.33333vw;
+      height: 13.06667vw;
+      background-color: #333; }
+    .footer-wrap .footer .open-group {
+      width: 33.33333vw;
+      height: 13.06667vw;
+      background: url("/images/group_goods_detail/wykaituan-button-bg.png") no-repeat;
+      background-size: cover; }
+
+.mask-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s;
+  overflow: hidden; }
+
+.product-position-select-container {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  width: 100%;
+  height: 300px;
+  background: #fff;
+  position: absolute;
+  bottom: 0; }
+  .in > .product-position-select-container {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  .product-position-select-container .title {
+    font-size: 16px;
+    color: #fff;
+    line-height: 44px;
+    text-align: center;
+    border-bottom: 1px solid #f2f2f2;
+    background-image: linear-gradient(270deg, #e53935 0%, #ff9100 100%);
+    position: relative; }
+    .product-position-select-container .title .close {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      background: url("/images/commodity/close.png") no-repeat center;
+      background-size: 40%;
+      position: absolute;
+      top: 12%;
+      right: 5%;
+      padding: 10px; }
+  .product-position-select-container ul {
+    padding: 0 5%;
+    height: 235px;
+    overflow: auto; }
+    .product-position-select-container ul li {
+      color: #9d9d9d;
+      line-height: 44px;
+      border-bottom: 1px solid #f2f2f2;
+      overflow: hidden; }
+      .product-position-select-container ul li span {
+        font-size: 13spx;
+        color: #333;
+        margin-left: 16px; }

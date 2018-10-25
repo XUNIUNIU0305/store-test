@@ -1,0 +1,124 @@
+html {
+	font-size: 50px;
+}
+.film-address-edit {
+ .top{
+     	height: .4rem;
+     	background: #999;
+     }
+     body{
+     	background: #efeff4;
+     }
+     .nav{
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: .2rem;
+          height: 1rem;
+          align-items: center;;
+          background: #fff;
+          padding: 0 .32rem;
+          margin-bottom: .2rem;
+     }
+     .nav i{
+     	height: .4rem;
+     	width: .2rem;
+     	display: block;	
+     }
+     .icon-lt{
+     	background: url("images/icon01.png");
+     }
+     .nav span{
+     	font-size: .3rem;
+     }
+     .message{
+        padding-left: .3rem;
+        font-size: .28rem;
+        background: #fff;
+     }
+     .message li{
+        height: .88rem;
+        padding-right: .32rem;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+        justify-content: space-between;
+     }
+     .message li input{
+        width: 74%;
+        border:0;
+        height: .4rem;
+        font-size: .28rem;
+        padding: 0.1rem;
+     }
+    
+     .area,.add_datail{
+        padding-top: .3rem;
+     }
+     .area{
+        padding-bottom: .26rem;
+        border-bottom: 1px solid #ccc;
+     }
+     form{
+        padding-left: .24rem;
+        display: flex;
+        justify-content: space-between;
+     }
+      form select{
+        font-size: .28rem;
+        width: 1.5rem;
+        border:none;
+        background: none;
+        margin-top: .5rem;
+        color: #b2b2b2;
+     }
+     form select option{
+        font-size: .2rem;
+     }
+     .add_datail{
+        height: 1.78rem;
+        display: flex;
+        justify-content: space-between;
+     }
+     .add_datail textarea{
+        width: 74%;
+        font-size: .28rem;
+        padding: 0.1rem;
+        color: #b2b2b2;
+        border:0;
+     }
+     footer{
+        display: flex;
+        margin-top: .2rem;
+        font-size: .28rem;
+        height: .9rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 .32rem;
+        background: #fff;
+     }
+     .btn{
+        width: 1rem;
+        height: .64rem;
+        background: #53d769;
+        border-radius: .3rem;
+        position: relative;
+        &.close {
+        	background: #f2f2f2;
+        	button {
+        		left: 0;
+        		right: auto;
+        	}
+        }
+     }
+     button{
+        width: .56rem;
+        height: .56rem;
+        border-radius: 50%;
+        background: #fff;
+        position: absolute;
+        right: .05rem;
+        top: .03rem;
+        border:0;
+     }
+}

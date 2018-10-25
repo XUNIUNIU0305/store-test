@@ -1,0 +1,376 @@
+@charset "UTF-8";
+body {
+  overflow-x: hidden; }
+
+.bg-muted {
+  background: #f2f2f2; }
+
+.table-fix {
+  table-layout: fixed; }
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.container {
+  width: 1190px;
+  max-width: none !important; }
+
+.high-lighted {
+  color: #df483d; }
+
+.supply-orders-detail-container .panel-danger {
+  border-top: 4px solid #df483d;
+  border-radius: 0; }
+  .supply-orders-detail-container .panel-danger .h4 {
+    margin: 0; }
+  .supply-orders-detail-container .panel-danger .panel-heading {
+    color: #333; }
+    .supply-orders-detail-container .panel-danger .panel-heading span {
+      margin-left: 20px; }
+  .supply-orders-detail-container .panel-danger .list-unstyled {
+    margin-bottom: 0;
+    line-height: 2;
+    padding: 12px 0; }
+
+.supply-orders-detail-container .supply-order-status {
+  background: #fff;
+  height: 270px;
+  display: table-cell;
+  vertical-align: middle;
+  width: 9999px;
+  position: relative;
+  border-bottom: 1px dashed #ccc; }
+  .supply-orders-detail-container .supply-order-status .pull-left {
+    width: 230px;
+    margin: 20px 0; }
+    .supply-orders-detail-container .supply-order-status .pull-left:after {
+      content: '';
+      position: absolute;
+      left: 230px;
+      top: 0;
+      bottom: 20px;
+      border-left: 1px dashed #ccc; }
+    .supply-orders-detail-container .supply-order-status .pull-left h3 {
+      font-size: 26px;
+      line-height: 1;
+      margin: 30px 0 20px;
+      color: #ff9100; }
+    .supply-orders-detail-container .supply-order-status .pull-left .btn {
+      width: 120px;
+      line-height: 36px;
+      border: 1px solid #ce4e45;
+      color: #ce4e45;
+      padding: 0; }
+      .supply-orders-detail-container .supply-order-status .pull-left .btn:hover, .supply-orders-detail-container .supply-order-status .pull-left .btn:active {
+        background: #ce4e45;
+        color: #fff; }
+  .supply-orders-detail-container .supply-order-status .status-icon {
+    width: 50px;
+    height: 50px;
+    margin: 18px auto 28px;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .supply-orders-detail-container .supply-order-status.status-untreated .untreated {
+    background-image: url(/images/supply_orders/icon1.png); }
+  .supply-orders-detail-container .supply-order-status.status-untreated .shipped {
+    background-image: url(/images/supply_orders/icon2_disable.png); }
+  .supply-orders-detail-container .supply-order-status.status-untreated .received {
+    background-image: url(/images/supply_orders/icon3_disable.png); }
+  .supply-orders-detail-container .supply-order-status.status-untreated .closed {
+    background-image: url(/images/supply_orders/icon4_disable.png); }
+  .supply-orders-detail-container .supply-order-status.status-untreated .pull-left h3:after {
+    content: '未处理'; }
+  .supply-orders-detail-container .supply-order-status.status-untreated .pull-left a.btn:after {
+    content: '去支付'; }
+  .supply-orders-detail-container .supply-order-status.status-untreated .col-xs-3:nth-child(1) {
+    color: #ff9100; }
+    .supply-orders-detail-container .supply-order-status.status-untreated .col-xs-3:nth-child(1):before {
+      color: #f2bf46; }
+    .supply-orders-detail-container .supply-order-status.status-untreated .col-xs-3:nth-child(1) small {
+      display: block; }
+  .supply-orders-detail-container .supply-order-status.status-shipped .untreated {
+    background-image: url(/images/supply_orders/icon1.png); }
+  .supply-orders-detail-container .supply-order-status.status-shipped .shipped {
+    background-image: url(/images/supply_orders/icon2.png); }
+  .supply-orders-detail-container .supply-order-status.status-shipped .received {
+    background-image: url(/images/supply_orders/icon3_disable.png); }
+  .supply-orders-detail-container .supply-order-status.status-shipped .closed {
+    background-image: url(/images/supply_orders/icon4_disable.png); }
+  .supply-orders-detail-container .supply-order-status.status-shipped .pull-left h3:after {
+    content: '已发货'; }
+  .supply-orders-detail-container .supply-order-status.status-shipped .col-xs-3:nth-child(1) {
+    color: #ff9100; }
+    .supply-orders-detail-container .supply-order-status.status-shipped .col-xs-3:nth-child(1):before {
+      color: #ff9100; }
+    .supply-orders-detail-container .supply-order-status.status-shipped .col-xs-3:nth-child(1):after {
+      color: #ff9100; }
+    .supply-orders-detail-container .supply-order-status.status-shipped .col-xs-3:nth-child(1) small {
+      display: block; }
+  .supply-orders-detail-container .supply-order-status.status-shipped .col-xs-3:nth-child(2) {
+    color: #ff9100; }
+    .supply-orders-detail-container .supply-order-status.status-shipped .col-xs-3:nth-child(2):before {
+      text-shadow: -3em 0px #f2bf46; }
+    .supply-orders-detail-container .supply-order-status.status-shipped .col-xs-3:nth-child(2) small {
+      display: block; }
+  .supply-orders-detail-container .supply-order-status.status-received .untreated {
+    background-image: url(/images/supply_orders/icon1.png); }
+  .supply-orders-detail-container .supply-order-status.status-received .shipped {
+    background-image: url(/images/supply_orders/icon2.png); }
+  .supply-orders-detail-container .supply-order-status.status-received .received {
+    background-image: url(/images/supply_orders/icon3.png); }
+  .supply-orders-detail-container .supply-order-status.status-received .closed {
+    background-image: url(/images/supply_orders/icon4_disable.png); }
+  .supply-orders-detail-container .supply-order-status.status-received .pull-left h3:after {
+    content: '已收货'; }
+  .supply-orders-detail-container .supply-order-status.status-received .col-xs-3:nth-child(1), .supply-orders-detail-container .supply-order-status.status-received .col-xs-3:nth-child(2) {
+    color: #ff9100; }
+    .supply-orders-detail-container .supply-order-status.status-received .col-xs-3:nth-child(1):before, .supply-orders-detail-container .supply-order-status.status-received .col-xs-3:nth-child(2):before {
+      color: #ff9100;
+      text-shadow: -3em 0px #ff9100; }
+    .supply-orders-detail-container .supply-order-status.status-received .col-xs-3:nth-child(1):after, .supply-orders-detail-container .supply-order-status.status-received .col-xs-3:nth-child(2):after {
+      color: #ff9100; }
+    .supply-orders-detail-container .supply-order-status.status-received .col-xs-3:nth-child(1) small, .supply-orders-detail-container .supply-order-status.status-received .col-xs-3:nth-child(2) small {
+      display: block; }
+  .supply-orders-detail-container .supply-order-status.status-received .col-xs-3:nth-child(3) {
+    color: #ff9100; }
+    .supply-orders-detail-container .supply-order-status.status-received .col-xs-3:nth-child(3):before {
+      text-shadow: -3em 0px #f2bf46; }
+    .supply-orders-detail-container .supply-order-status.status-received .col-xs-3:nth-child(3) small {
+      display: block; }
+  .supply-orders-detail-container .supply-order-status.status-closed .untreated {
+    background-image: url(/images/supply_orders/icon1.png); }
+  .supply-orders-detail-container .supply-order-status.status-closed .shipped {
+    background-image: url(/images/supply_orders/icon2.png); }
+  .supply-orders-detail-container .supply-order-status.status-closed .received {
+    background-image: url(/images/supply_orders/icon3.png); }
+  .supply-orders-detail-container .supply-order-status.status-closed .closed {
+    background-image: url(/images/supply_orders/icon4.png); }
+  .supply-orders-detail-container .supply-order-status.status-closed .pull-left h3 {
+    color: #ff9100; }
+    .supply-orders-detail-container .supply-order-status.status-closed .pull-left h3:after {
+      content: '已关闭'; }
+  .supply-orders-detail-container .supply-order-status.status-closed .col-xs-3 {
+    color: #ff9100 !important; }
+    .supply-orders-detail-container .supply-order-status.status-closed .col-xs-3:before {
+      color: #ff9100 !important;
+      text-shadow: -3em 0px #ff9100 !important; }
+    .supply-orders-detail-container .supply-order-status.status-closed .col-xs-3:after {
+      color: #ff9100 !important; }
+    .supply-orders-detail-container .supply-order-status.status-closed .col-xs-3 small {
+      display: block !important; }
+  .supply-orders-detail-container .supply-order-status.status-cancel {
+    text-align: center; }
+    .supply-orders-detail-container .supply-order-status.status-cancel img {
+      margin: 0 auto 16px; }
+    .supply-orders-detail-container .supply-order-status.status-cancel p {
+      font-size: 18px; }
+    .supply-orders-detail-container .supply-order-status.status-cancel span {
+      color: #ff9100; }
+    .supply-orders-detail-container .supply-order-status.status-cancel > * {
+      display: none; }
+    .supply-orders-detail-container .supply-order-status.status-cancel .content-cancel {
+      display: block; }
+  .supply-orders-detail-container .supply-order-status .clearfix {
+    margin-left: 300px;
+    padding-left: 20px;
+    font-size: 12px;
+    position: relative; }
+    .supply-orders-detail-container .supply-order-status .clearfix .row {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-left: -40px;
+      margin-right: -40px; }
+    .supply-orders-detail-container .supply-order-status .clearfix .col-xs-3 {
+      position: relative;
+      color: #ccc; }
+      .supply-orders-detail-container .supply-order-status .clearfix .col-xs-3 p {
+        font-size: 18px; }
+      .supply-orders-detail-container .supply-order-status .clearfix .col-xs-3 small {
+        display: none; }
+      .supply-orders-detail-container .supply-order-status .clearfix .col-xs-3:before {
+        content: '·······';
+        font-family: monospace;
+        color: #ccc;
+        font-size: 1.4em;
+        position: absolute;
+        right: -3em;
+        top: 32px; }
+      .supply-orders-detail-container .supply-order-status .clearfix .col-xs-3:after {
+        content: '\e080';
+        line-height: 0;
+        position: absolute;
+        top: 43px;
+        right: -4.2em;
+        font-size: 1.2em;
+        color: #ccc;
+        font-family: 'Glyphicons Halflings'; }
+      .supply-orders-detail-container .supply-order-status .clearfix .col-xs-3:last-child:before, .supply-orders-detail-container .supply-order-status .clearfix .col-xs-3:last-child:after {
+        display: none; }
+  .supply-orders-detail-container .supply-order-status .content-cancel {
+    display: none; }
+
+.supply-orders-detail-container .supply-order-sequence {
+  margin: 20px 0;
+  background: #fff;
+  padding: 32px 55px !important;
+  font-size: 12px; }
+  .supply-orders-detail-container .supply-order-sequence li {
+    position: relative;
+    padding-left: 140px;
+    line-height: 32px; }
+    .supply-orders-detail-container .supply-order-sequence li strong {
+      font-size: 14px; }
+    .supply-orders-detail-container .supply-order-sequence li .pull-left {
+      width: 300px; }
+    .supply-orders-detail-container .supply-order-sequence li:first-child:before, .supply-orders-detail-container .supply-order-sequence li:first-child:after {
+      display: none; }
+    .supply-orders-detail-container .supply-order-sequence li.actived {
+      color: #09a440; }
+      .supply-orders-detail-container .supply-order-sequence li.actived:before, .supply-orders-detail-container .supply-order-sequence li.actived:after {
+        background: #09a440; }
+    .supply-orders-detail-container .supply-order-sequence li:before {
+      content: '';
+      width: 3px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      background: #e5e5e5; }
+    .supply-orders-detail-container .supply-order-sequence li:after {
+      content: '';
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #e5e5e5;
+      top: 8px;
+      left: -6px;
+      border: 3px solid #fff;
+      position: absolute; }
+
+.supply-orders-detail-container .apx-cart-product {
+  font-size: 12px;
+  border: 1px solid #ddd; }
+  .supply-orders-detail-container .apx-cart-product.expire td, .supply-orders-detail-container .apx-cart-product.lack td {
+    border-bottom-color: transparent; }
+  .supply-orders-detail-container .apx-cart-product.expire + .apx-cart-product td, .supply-orders-detail-container .apx-cart-product.lack + .apx-cart-product td {
+    border-top-color: transparent;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center; }
+  .supply-orders-detail-container .apx-cart-product.expire + .apx-cart-product strong, .supply-orders-detail-container .apx-cart-product.lack + .apx-cart-product strong {
+    line-height: 30px;
+    display: block;
+    width: 94.7%;
+    margin: 0 auto;
+    border-top: 1px dashed #ccc; }
+  .supply-orders-detail-container .apx-cart-product.expire input[type="checkbox"],
+  .supply-orders-detail-container .apx-cart-product.expire .input-group-addon,
+  .supply-orders-detail-container .apx-cart-product.expire .form-control {
+    background: #e6e6e6 !important;
+    cursor: default !important;
+    color: #b2b2b2; }
+  .supply-orders-detail-container .apx-cart-product.expire td,
+  .supply-orders-detail-container .apx-cart-product.expire + tr > td {
+    background: #e6e6e6 !important; }
+  .supply-orders-detail-container .apx-cart-product.expire td,
+  .supply-orders-detail-container .apx-cart-product.expire .col-xs-6 > a,
+  .supply-orders-detail-container .apx-cart-product.expire .disabled {
+    color: #b2b2b2; }
+  .supply-orders-detail-container .apx-cart-product.selected {
+    background: #fce7e5;
+    border-color: #fce7e5; }
+  .supply-orders-detail-container .apx-cart-product strong {
+    color: #cf4d44; }
+  .supply-orders-detail-container .apx-cart-product .img-responsive {
+    border: 1px solid #ddd;
+    width: 92px;
+    height: 92px; }
+  .supply-orders-detail-container .apx-cart-product td {
+    line-height: 22px;
+    padding: 13px 8px; }
+    .supply-orders-detail-container .apx-cart-product td:nth-child(2) ~ td {
+      padding-top: 18px; }
+    .supply-orders-detail-container .apx-cart-product td:nth-child(3) ~ td {
+      text-align: center; }
+    .supply-orders-detail-container .apx-cart-product td:last-child .btn {
+      text-align: left !important;
+      margin-top: 0; }
+  .supply-orders-detail-container .apx-cart-product .input-group-sm {
+    width: 70px;
+    margin: 0 auto 8px; }
+    .supply-orders-detail-container .apx-cart-product .input-group-sm .input-group-addon {
+      border-radius: 0;
+      background: #fff;
+      padding: 2px 6px;
+      height: 22px;
+      line-height: 1;
+      cursor: pointer; }
+    .supply-orders-detail-container .apx-cart-product .input-group-sm .form-control {
+      padding: 2px;
+      text-align: center;
+      height: 22px;
+      line-height: 1; }
+  .supply-orders-detail-container .apx-cart-product .remark-box {
+    background: #fbf6b5;
+    height: 90px;
+    padding: 8px;
+    box-shadow: 0px 1px 2px #ccc;
+    position: relative; }
+    .supply-orders-detail-container .apx-cart-product .remark-box:before, .supply-orders-detail-container .apx-cart-product .remark-box:after {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 20px;
+      box-shadow: 0px 0px 2px #ccc;
+      background: rgba(255, 255, 255, 0.1);
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .supply-orders-detail-container .apx-cart-product .remark-box:before {
+      bottom: 0px;
+      left: -14px; }
+    .supply-orders-detail-container .apx-cart-product .remark-box:after {
+      top: 0;
+      right: -14px; }
+    .supply-orders-detail-container .apx-cart-product .remark-box textarea {
+      z-index: 1; }
+
+.supply-orders-detail-container .apx-cart-bill-table {
+  border: 1px solid #ddd;
+  border-top: 4px solid #df483d;
+  background: #fff; }
+  .supply-orders-detail-container .apx-cart-bill-table .remark {
+    text-align: left !important;
+    padding: 0 20px; }
+  .supply-orders-detail-container .apx-cart-bill-table thead.thead {
+    background: #fce7e6; }
+    .supply-orders-detail-container .apx-cart-bill-table thead.thead > tr > th {
+      color: #333;
+      line-height: 36px;
+      text-align: center;
+      border-bottom: 0; }
+      .supply-orders-detail-container .apx-cart-bill-table thead.thead > tr > th:nth-child(3) {
+        text-align: left; }
+  .supply-orders-detail-container .apx-cart-bill-table .apx-cart-shop {
+    border: 0;
+    padding-top: 18px; }
+    .supply-orders-detail-container .apx-cart-bill-table .apx-cart-shop td {
+      border-bottom: 1px solid transparent; }
+  .supply-orders-detail-container .apx-cart-bill-table .apx-cart-product td:first-child {
+    border: 0; }
+  .supply-orders-detail-container .apx-cart-bill-table .apx-cart-product td:nth-child(2) {
+    padding-left: 0; }
+
+.supply-orders-detail-container .supply-order-total {
+  padding: 36px 0; }
+  .supply-orders-detail-container .supply-order-total .list-unstyled {
+    font-size: 14px;
+    display: inline-block; }
+    .supply-orders-detail-container .supply-order-total .list-unstyled .pull-right {
+      text-align: right;
+      min-width: 90px; }
+  .supply-orders-detail-container .supply-order-total .btn-danger {
+    margin-top: 18px;
+    min-width: 120px; }

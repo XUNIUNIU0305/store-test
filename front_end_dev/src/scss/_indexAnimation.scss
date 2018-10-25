@@ -1,0 +1,58 @@
+// 浮动卡通图
+.#{$global_cname}float-boss {
+    background: url("/images/custom_index/bigboss.png") no-repeat;
+    width: 380px;
+    height: 380px;
+    position: absolute;
+    left: 50%;
+    animation-duration: 1s;
+    animation-timing-function: step-end;
+    animation-iteration-count: infinite;
+    &.brob {
+        top: 660px;
+        margin-left: -860px;
+        animation-name: brob;
+        transform: scale(.95);
+    }
+    &.chairman {
+        top: 660px;
+        margin-left: -190px + 670px;
+        animation-name: chairman;
+    }
+    &.uncle9 {
+        top: -20px;
+        margin-left: -880px;
+        animation-name: uncle9;
+        transform: scale(.75);
+    }
+}
+
+@keyframes brob {
+    0% {
+        background-position: -0px -0px;
+    }
+    50% {
+        background-position: -380px -0px;
+    }
+}
+
+@keyframes chairman {
+    0% {
+        background-position: -0px -380px;
+    }
+    33% {
+        background-position: -380px -380px;
+    }
+    67% {
+        background-position: -760px -0px;
+    }
+}
+
+@keyframes uncle9 {
+    0% {
+        background-position: -760px -380px;
+    }
+    50% {
+        background-position: -0px -760px;
+    }
+}

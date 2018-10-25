@@ -1,0 +1,83 @@
+.wechat-product-ql img {
+  max-width: 100%;
+  vertical-align: top; }
+
+.wechat-product-ql .head {
+  position: relative; }
+  .wechat-product-ql .head .text {
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 40%; }
+    .wechat-product-ql .head .text .h1 {
+      width: 80%;
+      color: #fff;
+      font-weight: 700;
+      font-size: 20px;
+      margin: 0;
+      text-align: center; }
+
+.wechat-product-ql .content {
+  background: url("/images/qiangli_brand/bg.jpg") no-repeat center top;
+  background-size: 100%;
+  padding-bottom: 80px; }
+  .wechat-product-ql .content .item {
+    position: relative; }
+    .wechat-product-ql .content .item > img {
+      max-width: 60%; }
+    .wechat-product-ql .content .item .head {
+      padding-top: 8%; }
+      .wechat-product-ql .content .item .head p {
+        margin: 0 6%;
+        font-size: 18px;
+        color: #fff;
+        text-align: center; }
+      .wechat-product-ql .content .item .head .h2 {
+        text-align: right; }
+    .wechat-product-ql .content .item .title {
+      width: 40%;
+      position: absolute;
+      right: 0;
+      top: 42%;
+      color: #fff;
+      font-size: 0; }
+      .wechat-product-ql .content .item .title span {
+        display: inline-block;
+        height: 45px;
+        text-align: center;
+        vertical-align: middle;
+        border: 2px solid #280063;
+        padding: 0 2%; }
+      .wechat-product-ql .content .item .title .price {
+        font-size: 30px;
+        font-weight: 700; }
+      .wechat-product-ql .content .item .title .text {
+        font-size: 20px;
+        background-color: #280063;
+        line-height: 45px;
+        font-weight: 700; }
+      .wechat-product-ql .content .item .title .btn {
+        width: 86%;
+        margin-top: 20%;
+        background: #280063;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 24px;
+        color: #fff; }
+    .wechat-product-ql .content .item.even .title {
+      right: 56%; }
+    .wechat-product-ql .content .item.even > img {
+      padding-left: 40%; }
+
+@media screen and (max-width: 374px) {
+  .wechat-product-ql .head .text .h1 {
+    font-size: 18px !important; }
+  .wechat-product-ql .content .item .head p {
+    font-size: 14px; }
+  .wechat-product-ql .content .item .title .price {
+    font-size: 24px;
+    line-height: 45px; }
+  .wechat-product-ql .content .item .title .text {
+    font-size: 16px; }
+  .wechat-product-ql .content .item .title .btn {
+    font-size: 18px; } }

@@ -1,0 +1,62 @@
+.notice {
+	position: relative;
+}
+.notice > header {
+	padding-bottom: 20px;
+	border-bottom: 1px dashed #ccc;
+}
+.notice > header > .searching {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+  padding: 5px 30px 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+.notice > header > .searching > input {
+  width: 250px;
+  border: none;
+  outline: none;
+}
+.notice > header > .searching > .fa {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #ccc;
+}
+.notice > header > .selecting {
+	display: inline-block;
+	margin: 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.notice > header > .selecting > select {
+	padding: 5px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.notice > header > button {
+	position: absolute;
+	right: 0;
+}
+.notice > .notice-content {
+	margin: 20px 0;
+}
+.notice > .notice-content  table {
+	width: 100%;
+}
+.notice > .notice-content  table tr {
+	border-bottom: 1px solid #ccc;
+}
+.notice > .notice-content  table tbody tr:last-child {
+	border-bottom: none;
+}
+.notice > .notice-content  table td,
+.notice > .notice-content  table th {
+	padding: 20px 0;
+	text-align: center;
+}
+.notice > .notice-content  table .secondary {
+	margin-right: 10px;
+}

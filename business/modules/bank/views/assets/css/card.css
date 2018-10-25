@@ -1,0 +1,184 @@
+.business-main-wrap {
+  background-color: #e9eef2; }
+
+.business-bank-card {
+  background-color: #FFF;
+  color: #333; }
+  .business-bank-card .title {
+    font-size: 16px;
+    line-height: 2;
+    margin: 0 30px;
+    padding: 10px 0;
+    font-weight: 700;
+    border-bottom: 1px solid #e9eef2; }
+    .business-bank-card .title .tip {
+      float: right;
+      font-weight: 400;
+      cursor: pointer;
+      position: relative; }
+      .business-bank-card .title .tip:before {
+        content: '?';
+        position: absolute;
+        left: -26px;
+        top: 7px;
+        background-color: #9d9d9d;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        color: #fff;
+        border-radius: 40px; }
+      .business-bank-card .title .tip:hover span {
+        opacity: 1; }
+      .business-bank-card .title .tip span {
+        display: block;
+        background-color: #FFF;
+        width: 212px;
+        border: 1px solid #e9eef2;
+        position: absolute;
+        left: -80%;
+        top: 36px;
+        border-radius: 8px;
+        padding: 14px;
+        font-size: 12px;
+        color: #999;
+        opacity: 0;
+        transition: .5s;
+        box-shadow: 2px 3px 8px 0px rgba(0, 0, 0, 0.3); }
+        .business-bank-card .title .tip span:before {
+          content: ' ';
+          display: block;
+          width: 12px;
+          height: 12px;
+          border-top: 1px solid #e9eef2;
+          border-left: 1px solid #e9eef2;
+          -webkit-transform: rotate(45deg);
+                  transform: rotate(45deg);
+          position: absolute;
+          top: -7px;
+          left: 50%;
+          background-color: #FFF; }
+        .business-bank-card .title .tip span:hover {
+          opacity: 1; }
+  .business-bank-card .bank-card {
+    height: 450px;
+    position: relative; }
+    .business-bank-card .bank-card .card {
+      width: 488px;
+      height: 300px;
+      background-color: #efeff4;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      border-radius: 6px; }
+      .business-bank-card .bank-card .card p {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 10%;
+        font-size: 20px;
+        color: #9d9d9d; }
+      .business-bank-card .bank-card .card:after {
+        content: ' ';
+        position: absolute;
+        left: 39%;
+        top: 43%;
+        width: 120px;
+        height: 10px;
+        border-radius: 10px;
+        background-color: #dedfe0; }
+      .business-bank-card .bank-card .card:before {
+        content: ' ';
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        width: 10px;
+        height: 120px;
+        border-radius: 10px;
+        background-color: #dedfe0; }
+    .business-bank-card .bank-card .have-card {
+      width: 488px;
+      height: 300px;
+      background-color: #000;
+      background: url("/images/bank/card_bg.png") no-repeat center;
+      background-size: 100%;
+      box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.3);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 80px auto 40px;
+      border-radius: 6px;
+      color: #fff; }
+      .business-bank-card .bank-card .have-card .head {
+        margin: 20px 0 0 30px; }
+      .business-bank-card .bank-card .have-card .logo {
+        width: 56px;
+        height: 56px;
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 100px;
+        text-align: center; }
+        .business-bank-card .bank-card .have-card .logo img {
+          margin-top: 8px;
+          width: 40px; }
+      .business-bank-card .bank-card .have-card .bank-name p {
+        margin: 5px 10px; }
+        .business-bank-card .bank-card .have-card .bank-name p:first-child {
+          font-size: 18px; }
+      .business-bank-card .bank-card .have-card .status {
+        padding-right: 30px;
+        font-size: 16px; }
+      .business-bank-card .bank-card .have-card .number {
+        font-size: 32px;
+        text-align: center;
+        margin: 30px 0 50px; }
+      .business-bank-card .bank-card .have-card .detail {
+        margin: 20px 58px 0 56px; }
+        .business-bank-card .bank-card .have-card .detail > div {
+          width: 55%; }
+          .business-bank-card .bank-card .have-card .detail > div:last-child {
+            width: 45%; }
+        .business-bank-card .bank-card .have-card .detail .h4 {
+          max-width: 88%;
+          padding-bottom: 5px;
+          border-bottom: 1px solid #fff; }
+  .business-bank-card .handle-box {
+    text-align: center;
+    padding-bottom: 50px; }
+    .business-bank-card .handle-box .btn {
+      margin: 0 20px; }
+    .business-bank-card .handle-box .btn-yellow {
+      font-size: 16px;
+      color: #ff9100;
+      border: 1px solid #ff9100; }
+    .business-bank-card .handle-box .form-group label {
+      display: inline-block;
+      padding-right: 10px; }
+    .business-bank-card .handle-box .form-group .form-control {
+      display: inline-block;
+      width: 200px; }
+    .business-bank-card .handle-box .form-group .btn {
+      margin: 0 10px; }
+
+.apx-modal-business-alert .modal-dialog {
+  width: 460px; }
+
+.modal-footer .btn-primary {
+  background-color: #459ea9;
+  border-color: #459ea9; }
+
+.bank-modal-card .modal-header {
+  background-color: transparent; }
+
+.bank-modal-card .modal-content {
+  background: url("/images/bank/window_bg.png") no-repeat center;
+  background-size: 100%; }
+
+.bank-modal-card .modal-footer {
+  padding: 10px; }

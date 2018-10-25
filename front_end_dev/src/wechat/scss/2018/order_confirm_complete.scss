@@ -1,0 +1,78 @@
+$baseV: 1 / 750 * 100vw;
+* {
+    margin: 0 ;
+    padding: 0;
+}
+.delivery-order-complete-wrap {
+    font-family: "微软雅黑";
+    width: 100%;
+    height: 100%;
+    background: #EFEFF4;
+    .delivery-order-complete {
+        width: 100%;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .empty {
+            width: 100%;
+            height: 20 * $baseV;
+            background: #EFEFF4;
+        }
+        // 头像
+        .head-portrait {
+            .img {
+                width: 120 * $baseV;
+                height: 120 * $baseV;
+                margin: 30 * $baseV 0;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        // 订单编号
+        .order-number {
+            font-size: 30 * $baseV;
+            color: #505050;
+            margin-bottom: 30 * $baseV;
+        }
+        // 单购订单已生成
+        .order-generate {
+            font-size: 34 * $baseV;
+            color: #F5222D;
+            margin-bottom: 20 * $baseV;
+         }
+        //  订单时间
+        .order-timer {
+            font-size: 22 * $baseV;
+            color: #7D7D7D;
+
+        }
+        // 详情查看信息 
+        .detail-mess {
+            width: 690 * $baseV;
+            height: 56 * $baseV;
+            background: url("../../images/order_confirm_complete/remark-bg.png") no-repeat;
+            background-size: cover;
+            text-align: center;
+            line-height: 56 * $baseV;
+            color: #F5222D;
+            font-size: 26 * $baseV;
+            margin-top: 60 * $baseV;
+        }
+        // 返回首页
+        .back-toindex {
+            width: 440 * $baseV;
+            height: 88 * $baseV;
+            color: #F5222D;
+            font-size: 30 * $baseV;
+            text-align: center;
+            line-height: 88 * $baseV;
+            border: 2 * $baseV solid #F5222D;
+            border-radius: 88 * $baseV;
+            margin: 80 * $baseV 0;
+            
+        }
+    }
+}

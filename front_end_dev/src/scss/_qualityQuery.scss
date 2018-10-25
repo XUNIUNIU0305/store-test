@@ -1,0 +1,174 @@
+.quality-query-container {
+    min-height: calc(100vh - 95px);
+    background: #efeff4;
+    .banner{
+        display: table-cell;
+        width: 200000px;
+        height: 160px;
+        vertical-align: middle;
+        background: #505c81 url('/images/quality_query/header.png') center no-repeat;
+        .logo-box{
+            max-width: 40%;
+            display: inline-block;
+            img{
+                width: 72px;
+                max-width: none;
+            }
+            h4,
+            small,
+            p{
+                color:#fff;
+                margin: 0;
+            }
+            h4{
+                font-size: 30px;
+                font-weight: 600;
+            }
+            small{
+                font-size: 18px;
+                font-weight: 600;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+        .pull-right{
+            margin-top: 30px;
+            margin-bottom: 0;
+            font-size: 32px;
+            color: #fff;
+        }
+    }
+    > .container{
+        padding: 20px 0;
+    }
+    .panel{
+        margin-bottom: 20px;
+        border: 0;
+        border-radius: 0;
+    }
+    .panel-heading{
+        font-size: 20px;
+        padding-left: 34px;
+        position: relative;
+        background: #ffffff;
+        &:before{
+            content: '';
+            position: absolute;
+            top: 12px;
+            bottom: 12px;
+            left: 18px;
+            width: 4px;
+            background: #f4364f;
+        }
+    }
+    .panel-body{
+        padding: 24px 20px;
+        line-height: 32px;
+        .table-hover{
+            border-bottom: 1px solid #ddd;
+            th{
+                background: #efeff4;
+                font-weight: 400;
+            }
+        }
+    }
+    .btn-bottom{
+        color: #fff;
+        width: 100px;
+        line-height: 36px;
+        margin: 0 auto 80px;
+        padding: 0;
+        background-color: #485370;
+        border-radius: 18px;
+    }
+    .search-form{
+        background: #ffffff;
+        margin-bottom: 20px;
+        .title{
+            line-height: 60px;
+            padding: 0 20px;
+            font-size: 20px;
+        }
+        .form-content {
+            padding: 8px 30px;
+            label{
+                font-weight: 400
+            }
+            .form-control {
+                display: inline-block;
+            }
+            .bootstrap-select{
+                margin-right: 24px;
+                .dropdown-toggle{
+                    border-radius: 18px;
+                }
+            }
+            span{
+                margin: 0 12px;
+            }
+            .query_time,
+            .query_order {
+                display: none;
+                >span {
+                    margin: 0 8px;
+                }
+                &.in {
+                    display: inline-block;
+                }
+                >.btn-default {
+                    margin-left: 8px;
+                }
+            }
+            .slash{
+                position: relative;
+                top: -4px;
+                width: 14px;
+                height: 2px;
+                background: #000000;
+                display: inline-block;
+            }
+            .input-group {
+                float: none;
+                display: inline-block;
+                vertical-align: middle;
+                max-width: 140px;
+                position: relative;
+                +.btn-default{
+                    color: #485370;
+                    width: 86px;
+                    line-height: 32px;
+                    padding: 0;
+                    border: 1px solid #485370;
+                    border-radius: 17px;
+                    margin-left: 20px;
+                    &:hover{
+                        color: #fff;
+                        background: #485370;
+                    }
+                }
+                &.size-large{
+                    max-width: 244px;
+                    input{
+                        padding-right: 32px;
+                        border-radius: 0;
+                        border-top-color: transparent;
+                        border-left-color: transparent;
+                        border-right-color: transparent;
+                        box-shadow: none;
+                    }
+                }
+                input{
+                    border-radius: 18px;
+                }
+                i{
+                    position: absolute;
+                    right: 12px;
+                    top: 10px;
+                    pointer-events: none;
+                    z-index: 99;
+                }
+            }
+        }
+    }
+}

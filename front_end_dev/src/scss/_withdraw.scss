@@ -1,0 +1,58 @@
+.apx-acc-withdraw {
+    @include nav-tabs-danger();
+    >.nav-tabs {
+        margin: 0;
+    }
+    .panel {
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 2px #ccc;
+        .input-group {
+            input {
+                border-radius: 17px !important;
+                width: 500px;
+                background: transparent;
+            }
+            .input-group-btn {
+                line-height: 30px;
+            }
+            .btn {
+                position: relative;
+                z-index: 2;
+                margin-left: -40px;
+                background: transparent;
+            }
+        }
+        .panel-body {
+            padding: 0;
+            .table {
+                font-size: 14px;
+                thead {
+                    box-shadow: 0 1px 1px #ccc;
+                    th {
+                        border-top: 1px solid #ccc;
+                        line-height: 40px;
+                    }
+                }
+                th,
+                td {
+                    padding: 0 12px;
+                    &:first-child {
+                        padding-left: 24px;
+                    }
+                }
+                td {
+                    &:first-child {
+                        font-size: 12px;
+                    }
+                }
+                td {
+                    border-top: 1px dashed #ccc;
+                    border-bottom: 1px dashed #ccc;
+                }
+            }
+            .pagination-info {
+                margin-right: 25px
+            }
+        }
+    }
+}

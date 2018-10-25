@@ -1,0 +1,100 @@
+@@include('head.inc')
+<!--main container-->
+<script>
+    (function (doc, win) {
+    var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            if(clientWidth>=640){
+                docEl.style.fontSize = '100px';
+            }else{
+                docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+            }
+        };
+
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+</script>
+<main class="container">
+	<div class="wechat-product-dazhi">
+		<div class="main">
+    <div class="banner">
+        <img src="/images/dazhi_brand/banner.jpg" alt="">
+    </div>
+    <div class="logo">
+        <img src="/images/dazhi_brand/logo.png" alt="">
+    </div>
+    <div class="p1">
+        <div class="left">
+            <img src="/images/dazhi_brand/product.png" alt="">
+        </div>
+        <div class="right">
+            <h4>大智高清行车记录仪</h4>
+            <div class="price">
+                <img src="/images/dazhi_brand/price.png" alt="">
+            </div>
+            <div class="package">
+                <img src="/images/dazhi_brand/package.png" alt="">
+            </div>
+            <div class="buy">
+                <a href="">
+                    立即购买 <span><img src="/images/dazhi_brand/arrows.png" alt=""></span>
+                </a>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="p2">
+        <ul>
+            <li>
+                <img src="/images/dazhi_brand/01.png" alt="">
+                <div class="text">
+                    不破坏原车内饰<br>
+                    精致简洁美观大方<br>
+                    不影响视线
+                </div>
+            </li>
+
+            <li>
+                <img src="/images/dazhi_brand/02.png" alt="">
+                <div class="text">
+                    文件加密储存<br>
+                    重要录像不被覆盖
+                </div>
+                <div class="clear"></div>
+            </li>
+
+            <li>
+                <img src="/images/dazhi_brand/03.png" alt="">
+                <div class="text">
+                    搭配1.8光圈<br>
+                    暗光环境下更出色
+                </div>
+            </li>
+
+            <li>
+                <img src="/images/dazhi_brand/04.png" alt="">
+                <div class="text">
+                    小巧身材，完美隐藏<br>
+                    强力吸附，稳固持久<br>
+                    安装方便简洁
+                </div>
+                <div class="clear"></div>
+            </li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+
+    <div>
+        <a id="returTop" href="javascript: document.querySelector('.container').scrollTop = 0">返回顶部</a>
+    </div>
+    
+</div>
+
+	</div>
+</main>
+@@include('footer.inc')

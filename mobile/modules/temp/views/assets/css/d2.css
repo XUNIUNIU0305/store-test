@@ -1,0 +1,120 @@
+.collage-special-active-box {
+  background: url("/images/collage_special_active/collage_special.png") no-repeat center top;
+  background-size: 100vw auto;
+  width: 100vw;
+  margin: 0 auto;
+  background-color: #01003a;
+  padding-top: 47.73333vw;
+  padding-bottom: 8vw; }
+  .collage-special-active-box .boutique-regiment-nav {
+    width: 93.6vw;
+    height: 11.33333vw;
+    background-color: #8b1dcf;
+    margin: 0 auto;
+    padding: 1.6vw 8vw;
+    box-sizing: border-box; }
+    .collage-special-active-box .boutique-regiment-nav > li {
+      color: #fff;
+      float: left;
+      width: 22.4vw;
+      height: 7.86667vw;
+      border-radius: 4vw;
+      text-align: center;
+      cursor: pointer; }
+      .collage-special-active-box .boutique-regiment-nav > li.jpt {
+        background-color: #FF3399; }
+      .collage-special-active-box .boutique-regiment-nav > li.lbt {
+        background-color: #FF6600;
+        margin: 0 5.06667vw; }
+      .collage-special-active-box .boutique-regiment-nav > li.cjt {
+        background-color: #FF0066; }
+      .collage-special-active-box .boutique-regiment-nav > li > span {
+        display: block; }
+        .collage-special-active-box .boutique-regiment-nav > li > span.group-tit {
+          font-size: 3.2vw;
+          font-weight: bolder; }
+        .collage-special-active-box .boutique-regiment-nav > li > span.group-number {
+          color: #ccc;
+          font-size: 2.4vw;
+          margin-top: -0.8vw; }
+  .collage-special-active-box .collage-special-active {
+    background: url("/images/collage_special_active/bg.png") no-repeat center;
+    background-size: 93.6vw 100%;
+    padding-bottom: 8vw;
+    min-height: 133.33333vw; }
+    .collage-special-active-box .collage-special-active .boutique-regiment {
+      margin-bottom: 1.86667vw; }
+      .collage-special-active-box .collage-special-active .boutique-regiment-list {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+                flex-direction: row;
+        -webkit-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-justify-content: space-between;
+                justify-content: space-between;
+        padding: 0 6.13333vw; }
+        .collage-special-active-box .collage-special-active .boutique-regiment-list .boutique-regiment-item {
+          width: 42.66667vw;
+          background-color: #fff;
+          margin-top: 1.86667vw;
+          position: relative; }
+          .collage-special-active-box .collage-special-active .boutique-regiment-list .boutique-regiment-item-pic {
+            width: 5.06667vw;
+            position: absolute;
+            top: 0;
+            right: 5.33333vw; }
+          .collage-special-active-box .collage-special-active .boutique-regiment-list .boutique-regiment-item > a {
+            display: block; }
+            .collage-special-active-box .collage-special-active .boutique-regiment-list .boutique-regiment-item > a .item-pic {
+                display: block;
+                width: 100%;
+                height: 42.66667vw;
+             }
+            .collage-special-active-box .collage-special-active .boutique-regiment-list .boutique-regiment-item > a .item-tit {
+              display: block;
+              width: 37.33333vw;
+              font-size: 2.13333vw;
+              margin-left: 2.66667vw;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap; }
+          .collage-special-active-box .collage-special-active .boutique-regiment-list .boutique-regiment-item .item-cont {
+            margin-left: 1.73333vw;
+            margin-bottom: 1.33333vw;
+            position: relative; }
+            .collage-special-active-box .collage-special-active .boutique-regiment-list .boutique-regiment-item .item-cont-price {
+              color: #ff0000;
+              font-size: 5.06667vw;
+              font-weight: bolder; }
+              .collage-special-active-box .collage-special-active .boutique-regiment-list .boutique-regiment-item .item-cont-price > span {
+                margin-left: -1.06667vw; }
+            .collage-special-active-box .collage-special-active .boutique-regiment-list .boutique-regiment-item .item-cont-del {
+              color: #A8A8A8;
+              font-size: 3.73333vw; }
+              .collage-special-active-box .collage-special-active .boutique-regiment-list .boutique-regiment-item .item-cont-del > span {
+                margin-left: -0.66667vw; }
+            .collage-special-active-box .collage-special-active .boutique-regiment-list .boutique-regiment-item .item-cont-progress {
+              width: 22.53333vw;
+              margin-left: 1.06667vw; }
+              .collage-special-active-box .collage-special-active .boutique-regiment-list .boutique-regiment-item .item-cont-progress > span {
+                color: #6d6d6d;
+                font-size: 2.4vw; }
+                .collage-special-active-box .collage-special-active .boutique-regiment-list .boutique-regiment-item .item-cont-progress > span:nth-child(2) {
+                  margin-left: 6.66667vw; }
+              .collage-special-active-box .collage-special-active .boutique-regiment-list .boutique-regiment-item .item-cont-progress .progress-sty {
+                display: block;
+                height: 1.33333vw;
+                background-color: #b6b6b6;
+                border-radius: 1.33333vw; }
+                .collage-special-active-box .collage-special-active .boutique-regiment-list .boutique-regiment-item .item-cont-progress .progress-sty > span {
+                  display: block;
+                  width: 13.2vw;
+                  height: 1.33333vw;
+                  background-color: #828282;
+                  border-radius: 1.33333vw; }
+            .collage-special-active-box .collage-special-active .boutique-regiment-list .boutique-regiment-item .item-cont-pic {
+              width: 13.33333vw;
+              position: absolute;
+              right: 2vw;
+              bottom: 0; }

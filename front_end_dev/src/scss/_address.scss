@@ -1,0 +1,169 @@
+// address box
+.apx-cart-address {
+    $gap: 1.3em;
+    $gap-start: -.5em;
+    &.active{
+        background: url('/images/new-account/address/address_chosen.jpg') no-repeat;
+        background-size: 100%;
+    }
+    position: relative;
+    height: 170px;
+    padding: 18px;
+    background: url('/images/new-account/address/address_normal.jpg') no-repeat;
+    background-size: 100%;
+
+    h5{
+        margin: 0 0 18px;
+        padding: 9px 0;
+        border-bottom: 1px solid #ddd;
+    }
+    p{
+        font-size: 12px;
+    }
+    .btn-link{
+        padding-left: 0;
+        color: #cf4d44;
+        text-decoration: none;
+    }
+}
+
+.apx-cart-address-box {
+    border: 1px solid #ddd;
+    .col-xs-3,
+    .col-xs-12{
+        padding: 10px;
+    }
+    .col-xs-12{
+        font-size: 12px;
+    }
+    a{
+        &.text-danger{
+            color: #cf4d44;
+        }
+        text-decoration: none;
+    }
+    .address-content {
+        overflow: hidden;
+    }
+    .one {
+        height: 170px;
+    }
+}
+.apx-edit-address-title{
+    padding: 0 10px;
+    margin:0;
+    line-height: 50px;
+    color: #cf4d44;
+}
+.apx-edit-address-subtitle{
+    padding: 0 30px;
+    background: #fff;
+    margin: 0;
+    line-height: 50px;
+    border-bottom: 1px solid #f2f2f2;
+}
+.apx-edit-address-box{
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 10px 7px;
+    .col-xs-4,
+    .col-xs-12{
+        padding: 10px 8px;
+    }
+    .col-xs-12{
+        font-size: 12px;
+    }
+    a{
+        &.text-danger{
+            color: #cf4d44;
+        }
+        text-decoration: none;
+    }
+    .apx-cart-address{
+        height: 170px;
+        p{
+            margin-bottom: 0px;
+            &:last-of-type{
+                margin-bottom: 8px;
+            }
+        }
+        .position{
+            width: 88%;
+            position: absolute;
+            bottom: 15px;
+        }
+        .address {
+            height: 34px;
+            overflow: hidden;
+        }
+        .del-confirm {
+            border: 1px solid #eb2f2f;
+            background: rgba($color: #fff, $alpha: 0.8);
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            .del-title {
+                margin: 56px 0 32px;
+            }
+        }
+    }
+    .popover-content{
+        padding: 20px;
+        text-align: center;
+        .btn{
+            width: 46px;
+            height: 24px;
+            font-size: 12px;
+            padding: 0;
+            margin: 0 5px;
+        }
+        .J_adress_delete-confirm{
+            border: 1px solid;
+            background: #fce7e6;
+            color: #cf4d44
+        }
+        .J_adress_delete-cancel{
+            border: 1px solid #b2b2b2;
+            background: #e5e5e5;
+        }
+    }
+}
+.apx-edit-address-wrap{
+    overflow: hidden;
+}
+.apx-edit-address-form{
+    padding: 20px;
+    background: #fff;
+    .dropdown{
+        button.btn{
+            color: #999;
+            text-align: left;
+            span{
+                float: left;
+                max-width: 80px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            i{
+                float: right;
+            }
+        }
+    }
+    .dropdown-menu{
+        margin-left: 15px;
+        max-height: 240px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    // hide the add address btn after click it
+    .collapsing + .form-group,
+    .collapse.in + .form-group{
+        display: none;
+    }
+    textarea {
+        height: 150px;
+        resize: none;
+    }
+}

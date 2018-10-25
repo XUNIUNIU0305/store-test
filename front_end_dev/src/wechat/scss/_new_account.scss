@@ -1,0 +1,368 @@
+.new-account-submit {
+   	min-height: 200px;
+   	background: #efeff4;
+   	font-size:14px;
+      padding-bottom: 30px;
+      margin-bottom: 20px;
+      .header-tip {
+         font-size: 16px;
+         color: #fff;
+         background-color: #ff9100;
+         padding: 10px 15px;
+      }
+      img {
+         max-width: 100%;
+         vertical-align: top;
+      }
+   	input{
+   		border:0;
+   		outline:none;
+
+   	}
+      input[placeholder], [placeholder], *[placeholder] { 
+         color:#9d9d9d !important; 
+      } 
+      select{
+         border:0;
+         outline:none;
+         -moz-appearance: none;
+         -webkit-appearance:none;
+         appearance:none;
+         text-align:center;
+         padding-right:15px;
+         margin:0 auto;
+        
+      }
+
+   	.head{
+   		padding-left:15px;
+   		color:#e53935;
+   		padding-top:13.5px;
+   		padding-bottom:13.5px;
+   	}
+      .red{
+         color:#e53935;
+         margin-right:2px;
+      }
+   	.info{
+   		background:#fff;
+   		padding-left:15px;
+         margin-bottom:10px;
+   		>div{
+   			height:44px;
+   			line-height:44px;
+   			border-bottom:1px solid #dedfe0;
+   			>div{
+   				float:left;
+   				width:33%;
+               span{
+                  color:#e53935;
+                  margin-right:2px;
+               }
+
+   			}
+            .select-con{
+               width:67%;
+               select{
+                  border:0;
+                  outline:none;
+                  appearance:none;
+                  background: url("/images/new_account/ic_arrowdown.png") no-repeat scroll right center transparent;
+                  background-size:14px;
+                  width:30%;
+                  height: 44px;
+                  text-align:center;
+                  text-overflow : clip;
+                  option{
+                     width:100%;
+                     text-align:center;
+                  }
+               }
+               
+               
+            }
+
+   		}
+         .respon-person{
+            border:0;
+         }
+         .business-license-img{
+            border:0;
+               
+         }
+         .stores-img-text{
+            border:0;
+         }
+         .store-adress {
+            border:0;
+         }
+         .contact-email {
+            border:0;
+         }
+         .respon-person{
+      
+            line-height:20px;
+            margin-top:10px;
+            overflow:hidden;
+            padding-right:15px;
+         }
+         .imgcon{
+            min-height:100px;
+            overflow:hidden;
+            padding-bottom:15px;
+            padding-right:15px;
+            display:flex;
+            justify-content:space-between;
+            border:0;
+            >div{
+               box-flex:1;
+               width:45%;
+               height:100px;
+               border:1px dashed #b3b3b3;
+               margin:0 auto;
+               text-align:center;
+               position:relative;
+               input{
+                  width:100%;
+                  height:100%;
+                  background:#f00;
+                  position:absolute;
+                  left:0;
+                  top: 0;
+                  opacity:0;
+               }
+
+               img{
+                  width: 100%;
+                  height: 100%;
+               }
+               b{
+                  font-weight:300;
+                  display:block;
+                  line-height:20px;
+                  text-align:center;
+                  width:100%;
+                  margin-top:0;
+                  color:#9d9d9d;
+               }
+               .text{
+                  position:absolute;
+                  bottom:2px;
+
+               }
+
+
+            }
+            .img3{
+                  float:left;
+                  margin-left:10px;
+            }
+
+         }
+
+   	}
+      .infos{
+         background:#fff;
+         padding-left:15px;
+         margin-bottom:10px;
+        >div{
+            
+            border-bottom:1px solid #dedfe0;
+            >div{
+               float:left;
+               width:33%;
+               span{
+                  color:#e53935;
+                  margin-right:2px;
+
+               }
+
+            }
+
+         }
+         .respon-person-img{
+            height:44px;
+            line-height:44px;
+         }
+         .respon-person{
+            border:0;
+            padding-top:10px;
+            padding-bottom:10px;
+            padding-right:15px;
+         }
+         .imgcon{
+            min-height:100px;
+            overflow:hidden;
+            padding-bottom:15px;
+            padding-right:15px;
+            display:flex;
+            justify-content:space-between;
+            border:0;
+            >div{
+               box-flex:1;
+               width:45%;
+               height:100px;
+               border:1px dashed #b3b3b3;
+               margin:0 auto;
+               text-align:center;
+               position:relative;
+               input{
+                  width:100%;
+                  height:100%;
+                  background:#f00;
+                  position:absolute;
+                  left:0;
+                  top: 0;
+                  opacity:0;
+               }
+
+               img{
+                  width: 100%;
+                  height:100px; 
+               }
+               
+               .text{
+                  position:absolute;
+                  bottom:2px;
+               }
+                 
+              
+               b{
+                  font-weight:300;
+                  display:block;
+                  line-height:20px;
+                  text-align:center;
+                  width:100%;
+                  margin-top:0;
+                  color:#9d9d9d;
+                  position:absolute;
+
+               }
+            }
+            .img3{
+                  float:left;
+                  margin-left:10px;
+            }
+         }
+      }
+      .agree{
+         width:100%;
+         height:13px;
+         line-height:13px;
+         text-align:center;
+         margin-top:12px;
+        
+         
+         b{
+            width:13px;
+            height:13px;
+            display:inline-block;
+            background:url('/images/new_account/ic_choose_def.png') no-repeat 14% center;;
+            background-size:13px;
+            margin-right:10px
+         }
+         .blue{
+            display:inline-block;
+            color:#2578f5;
+         }
+         span{
+            color:#9d9d9d;
+         }
+      }
+      .agree-active{
+         b{
+            background:url('/images/new_account/ic_choose_clicked.png') no-repeat 14% center;;
+            background-size:13px;
+         }
+      }
+      
+      .btn{
+         padding-right:15px;
+         padding-left:15px;
+         margin-top:26px;
+         margin-bottom:25px;
+         button{
+            border:0;
+            outline:none;
+            width:100%;
+            font-size:17px;
+            height:44px;
+            border-radius:22px;
+            color:#fff;
+            background:#ccc;
+            
+         }
+         
+
+      }
+      .btn-active{
+         button{
+            border:0;
+            outline:none;
+            width:100%;
+            font-size:17px;
+            height:44px;
+            border-radius:22px;
+            background-image:linear-gradient( -120deg, rgb(229,57,53) 0%, rgb(242,101,27) 42%, rgb(255,145,0) 100%);
+            color:#fff;
+         }
+
+      }
+      .model{
+         display:none;
+         position:fixed;
+         left:0;
+         right:0;
+         height:100%;
+         background:rgba(0,0,0,0.5);
+         z-index:9;
+         padding-top:47px;
+         .content{
+            background:#fff;
+            width:86%;
+            margin-left:7%;
+            min-height:300px;
+            border-radius:5px;
+           
+            padding-bottom:15px;
+            box-shadow: 0px 2px 6px 0px; 
+
+            .title{
+               text-align:center;
+               font-size:16px;
+               color:#333;
+               height:40px;
+               line-height:40px;
+               border-bottom:1px solid #f2f2f2;
+               font-weight:700;
+
+            }
+            .main{
+               margin-top:10px;
+               color:#333;
+               font-size:12px;
+               text-indent:10px;
+               overflow-y:scroll;
+               height: 230px;
+               padding:0 15px;
+            }
+            .close{
+               padding:0 15px;
+               padding-top:15px;
+               button{
+                  border:0;
+                  outline:none;
+                  width:100%;
+                  border-radius:4px;
+                  height:40px;
+                  color:#fff;
+                  font-size:17px;
+                  background-color: rgba(255, 145, 0, 1);
+               }
+            }
+
+         }
+      }
+
+   	
+}

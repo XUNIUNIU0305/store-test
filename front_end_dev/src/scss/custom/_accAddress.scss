@@ -1,0 +1,123 @@
+.acc-address {
+    .title {
+        padding: 20px 0 20px 20px;
+        position: relative;
+        &::before {
+            content: ' ';
+            position: absolute;
+            left: 10px;
+            top: 22px;
+            width: 4px;
+            height: 16px;
+            background: #eb2f2f;
+        }
+    }
+    .apx-edit-address-form {
+        margin-bottom: 10px;
+        padding: 20px;
+        background: #fff;
+        .dropdown {
+            button.btn {
+                color: #999;
+                text-align: left;
+                span {
+                    float: left;
+                    max-width: 80px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                i {
+                    float: right;
+                }
+            }
+        }
+        .dropdown-menu {
+            margin-left: 15px;
+            max-height: 240px;
+            overflow-y: auto;
+            overflow-x: hidden;
+        } // hide the add address btn after click it
+        .collapsing+.form-group,
+        .collapse.in+.form-group {
+            display: none;
+        }
+        textarea {
+            height: 150px;
+            resize: none;
+        }
+    }
+    .address-list {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+        .acc-cart-address {
+            flex: 0 0 312px;
+            height: 180px;
+            padding: 4px 16px;
+            margin: 5px;
+            background: url('/images/new-account/address/address_normal.jpg') no-repeat center;
+            background-size: 100%;
+            overflow: hidden;
+            position: relative;
+            p {
+                margin: 6px 0;
+            }
+            .default-btn {
+                padding: 2px 3px;
+                color: #fff;
+                font-size: 14px;
+                font-weight: normal;
+                background: #eb2f2f;
+                border: 1px solid #e3e4e5;
+                border-radius: 4px;
+            }
+            &.default {
+                .default-btn {
+                    font-size: 14px;
+                    color: #666;
+                    background: #fff;
+                }
+            }
+            &.active {
+                background: url('/images/new-account/address/address_chosen.jpg') no-repeat center;
+            }
+            .user-name {
+                font-size: 16px;
+                font-weight: bold;
+                padding: 10px 0 10px;
+                border-bottom: 1px solid #e3e4e5;
+            }
+            .handle {
+                width: 100%;
+                text-align: right;
+                position: absolute;
+                right: 15px;
+                bottom: 20px;
+                .btn {
+                    &:first-child {
+                        color: #1f66d1;
+                    }
+                    &:last-child {
+                        color: #eb2f2f;
+                    }
+                }
+            }
+            .address {
+                max-height: 42px;
+                overflow: hidden;
+            }
+            .del-confirm {
+                border: 1px solid #eb2f2f;
+                background: rgba($color: #fff, $alpha: 0.8);
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                .del-title {
+                    margin: 56px 0 32px;
+                }
+            }
+        }
+    }
+}

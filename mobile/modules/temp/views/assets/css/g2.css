@@ -1,0 +1,199 @@
+ul, ol .li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a:hover {
+  text-decoration: none; }
+
+.cosmetic-cleaning-box {
+  background: url("/images/cosmetic_cleaning/bg.jpg") no-repeat;
+  background-size: 100vw 100%; }
+  .cosmetic-cleaning-box .top-pic {
+    height: 88vw;
+    background: url("/images/cosmetic_cleaning/banner.jpg") no-repeat center top;
+    background-size: 100vw auto; }
+    .cosmetic-cleaning-box .top-pic > img {
+      width: 16.93333vw;
+      margin-left: 11.33333vw; }
+  .cosmetic-cleaning-box .cosmetic-cleaning {
+    width: 100vw;
+    margin: 0 auto; }
+    .cosmetic-cleaning-box .cosmetic-cleaning .second-kill {
+      height: 89.6vw;
+      background: url("/images/cosmetic_cleaning/f1_bg.png") no-repeat center top;
+      background-size: 93.6vw auto;
+      padding: 0 8vw;
+      padding-top: 13.33333vw; }
+      .cosmetic-cleaning-box .cosmetic-cleaning .second-kill-nav {
+        width: 62.66667vw;
+        height: 4.26667vw;
+        background-color: #fff;
+        border-radius: 5.33333vw;
+        padding: 0.53333vw 2.66667vw;
+        margin: 0 auto 1.2vw; }
+        .cosmetic-cleaning-box .cosmetic-cleaning .second-kill-nav > li {
+          color: #fff;
+          float: left;
+          width: 18.66667vw;
+          height: 4.26667vw;
+          line-height: 4.26667vw;
+          text-align: center;
+          border-radius: 5.33333vw;
+          font-size: 3.46667vw;
+          background-color: #bfbfbf;
+          cursor: pointer; }
+          .cosmetic-cleaning-box .cosmetic-cleaning .second-kill-nav > li:nth-child(2) {
+            margin: 0 2.93333vw; }
+          .cosmetic-cleaning-box .cosmetic-cleaning .second-kill-nav > li.active {
+            background-color: #f40022; }
+      /* .cosmetic-cleaning-box .cosmetic-cleaning .second-kill > div .second-kill-cont {
+        padding: 0 4.8vw; } */
+        .cosmetic-cleaning-box .cosmetic-cleaning .second-kill > div .second-kill-cont .list {
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-wrap: wrap;
+                  flex-wrap: wrap;
+          -webkit-justify-content: space-around;
+                  justify-content: space-around; }
+          .cosmetic-cleaning-box .cosmetic-cleaning .second-kill > div .second-kill-cont .list-item {
+            flex: 46%;
+            background-color: #fff;
+            /* margin-left: 1.33333vw;
+            margin-bottom: 1.33333vw; */
+            margin: 1vw;
+            overflow: hidden; }
+            /* .cosmetic-cleaning-box .cosmetic-cleaning .second-kill > div .second-kill-cont .list-item:nth-child(2n-1) {
+              margin-left: 0; } */
+            .cosmetic-cleaning-box .cosmetic-cleaning .second-kill > div .second-kill-cont .list-item > a {
+              display: block; }
+              .cosmetic-cleaning-box .cosmetic-cleaning .second-kill > div .second-kill-cont .list-item > a .list-item-pic {
+                width: 40vw;
+                height: 24vw;
+              }
+              .cosmetic-cleaning-box .cosmetic-cleaning .second-kill > div .second-kill-cont .list-item > a .list-item-cont {
+                display: block;
+                width: 33.33333vw;
+                color: #3e3a39;
+                margin-left: 2.93333vw;
+                font-size: 1.86667vw;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap; }
+              .cosmetic-cleaning-box .cosmetic-cleaning .second-kill > div .second-kill-cont .list-item > a .list-item-price {
+                padding: 0.53333vw 1.6vw;
+                height: 7.86667vw;
+                line-height: 7.86667vw;
+                position: relative;
+                background-color: #FF0033; }
+                .cosmetic-cleaning-box .cosmetic-cleaning .second-kill > div .second-kill-cont .list-item > a .list-item-price > img {
+                  width: 10.53333vw; }
+                .cosmetic-cleaning-box .cosmetic-cleaning .second-kill > div .second-kill-cont .list-item > a .list-item-price .j_price {
+                  color: #fff;
+                  margin-left: 0.53333vw;
+                  font-size: 2.66667vw;
+                  height: 7.86667vw;
+                  margin-top: -1.33333vw; }
+                  .cosmetic-cleaning-box .cosmetic-cleaning .second-kill > div .second-kill-cont .list-item > a .list-item-price .j_price > span {
+                    display: inline-block;
+                    font-size: 3.73333vw;
+                    margin-top: -5.33333vw;
+                    font-weight: bolder; }
+                .cosmetic-cleaning-box .cosmetic-cleaning .second-kill > div .second-kill-cont .list-item > a .list-item-price .rush-buy {
+                  position: absolute;
+                  right: 0;
+                  bottom: 1vw;
+                  color: #fff;
+                  font-size: 2.13333vw;
+                  font-weight: bolder;
+                  margin-top: -0.53333vw; }
+    .cosmetic-cleaning-box .cosmetic-cleaning .selected-brand-box {
+      margin-top: 5.33333vw;
+      background: url("/images/cosmetic_cleaning/f2_bg.png") no-repeat center;
+      background-size: 93.6vw auto;
+      padding: 20vw 2.66667vw 6.53333vw 2.66667vw; }
+      .cosmetic-cleaning-box .cosmetic-cleaning .selected-brand-box .selected-brand {
+        margin: 0 3.33333vw; }
+        .cosmetic-cleaning-box .cosmetic-cleaning .selected-brand-box .selected-brand > a {
+          display: block; }
+          .cosmetic-cleaning-box .cosmetic-cleaning .selected-brand-box .selected-brand > a > img {
+            width: 88vw;
+            margin-bottom: 1.06667vw; }
+    .cosmetic-cleaning-box .cosmetic-cleaning .special-zone-box {
+      background: url("/images/cosmetic_cleaning/f3_bg.png") no-repeat center top;
+      background-size: 93.6vw auto;
+      padding: 12vw 9.6vw 13.33333vw 9.6vw;
+      margin-top: 5.33333vw; }
+        .cosmetic-cleaning-box .cosmetic-cleaning .special-zone-box .special-zone > ul {
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-wrap: wrap;
+                  flex-wrap: wrap;
+          -webkit-justify-content: space-around;
+                  justify-content: space-around; }
+          .cosmetic-cleaning-box .cosmetic-cleaning .special-zone-box .special-zone > ul .special-item {
+            position: relative;
+            margin-left: 1.46667vw;
+            margin-bottom: 2.46667vw;
+            background-color: #fff; }
+            .cosmetic-cleaning-box .cosmetic-cleaning .special-zone-box .special-zone > ul .special-item:nth-child(2n-1) {
+              margin-left: 0; }
+            /* .cosmetic-cleaning-box .cosmetic-cleaning .special-zone-box .special-zone > ul .special-item:last-child {
+              height: 40.53333vw; } */
+              .cosmetic-cleaning-box .cosmetic-cleaning .special-zone-box .special-zone > ul .special-item:last-child > img {
+                width: 38vw;
+                height: 100%; }
+            .cosmetic-cleaning-box .cosmetic-cleaning .special-zone-box .special-zone > ul .special-item > a {
+              display: block; }
+              .cosmetic-cleaning-box .cosmetic-cleaning .special-zone-box .special-zone > ul .special-item > a .special-item-bz1 {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 7.33333vw; }
+              .cosmetic-cleaning-box .cosmetic-cleaning .special-zone-box .special-zone > ul .special-item > a .special-item-bz2 {
+                position: absolute;
+                left: 8.33333vw;
+                top: 0;
+                width: 7.33333vw; }
+              .cosmetic-cleaning-box .cosmetic-cleaning .special-zone-box .special-zone > ul .special-item > a .special-item-pic {
+                display: block;
+                width: 37.66667vw;
+                height: 29.5vw;}
+              .cosmetic-cleaning-box .cosmetic-cleaning .special-zone-box .special-zone > ul .special-item > a > span {
+                display: block;
+                width: 32vw;
+                line-height: 2.2em;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap; }
+                .cosmetic-cleaning-box .cosmetic-cleaning .special-zone-box .special-zone > ul .special-item > a > span.special-item-cont1 {
+                  font-size: 1.86667vw;
+                  font-weight: bolder;
+                  margin-left: 1.6vw; }
+              .cosmetic-cleaning-box .cosmetic-cleaning .special-zone-box .special-zone > ul .special-item > a .special-item-price {
+                height: 6.4vw;
+                line-height: 6.4vw;
+                background: url("/images/cosmetic_cleaning/bg_2.jpg") no-repeat;
+                background-size: 38.13333vw 100%;
+                position: relative;
+                padding-left: 1.33333vw; }
+                .cosmetic-cleaning-box .cosmetic-cleaning .special-zone-box .special-zone > ul .special-item > a .special-item-price .s_price {
+                  color: #fff;
+                  font-size: 2.4vw; }
+                  .cosmetic-cleaning-box .cosmetic-cleaning .special-zone-box .special-zone > ul .special-item > a .special-item-price .s_price > span {
+                    font-size: 2.66667vw; }
+                .cosmetic-cleaning-box .cosmetic-cleaning .special-zone-box .special-zone > ul .special-item > a .special-item-price > img {
+                  width: 9.6vw;
+                  position: absolute;
+                  right: 1.2vw;
+                  bottom: 1.6vw; }
+  .cosmetic-cleaning-box .return-top {
+    height: 13.06667vw;
+    line-height: 13.06667vw;
+    background-color: #6A02AD;
+    font-size: 4vw;
+    text-align: center;
+    margin-top: 6.66667vw; }
+    .cosmetic-cleaning-box .return-top > a {
+      color: #fff;
+      letter-spacing: 0.26667vw; }

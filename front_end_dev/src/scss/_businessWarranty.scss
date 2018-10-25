@@ -1,0 +1,278 @@
+.business-warranty-container {
+    padding: 0 20px;
+    .btn-business {
+        background-color: #0080ff;
+        color: #fff;
+    }
+    // 查询导航
+    .nav-bar {
+        height: 96px;
+        margin: 20px 0;
+        background: linear-gradient(to bottom, #fefefe, #f6f6f6);
+        box-shadow: 0 2px 1px #ccc;
+        border: 1px solid #f6f6f6;
+        padding: 32px 20px;
+        text-align: center;
+        position: relative;
+        .form-group {
+            left: 20px;
+            top: 32px;
+            position: absolute;
+            select {
+                min-width: 130px;
+            }
+        }
+        // search bar
+        .input-group {
+            display: none;
+            border-radius: 17px;
+            background: #fff;
+            &.in {
+                display: inline-block;
+            }
+            input {
+                border-radius: 17px;
+                width: 360px;
+                background: transparent;
+            }
+            .input-group-btn {
+                line-height: 30px;
+            }
+            .btn {
+                position: relative;
+                z-index: 3;
+                margin-left: -40px;
+                background: transparent;
+            }
+            &.query_time {
+                background: transparent;
+                margin-left: 32px;
+                label {
+                    float: left;
+                    line-height: 30px;
+                }
+                input {
+                    border-radius: 2px;
+                    width: 140px;
+                    padding-right: 40px;
+                    background: transparent;
+                }
+            }
+        }
+        .btn-business {
+            position: absolute;
+            right: 20px;
+            top: 32px;
+            min-width: 100px;
+            display: none;
+            &.in {
+                display: inline-block;
+            }
+        }
+    }
+    // 面板
+    .warranty-panel {
+        height: 620px;
+        background: #fff;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 4px #ccc;
+        font-size: 12px;
+        position: relative;
+        .header {
+            text-align: center;
+            line-height: 58px;
+            font-weight: 600;
+            border-bottom: 1px solid #ccc;
+            box-shadow: 0 4px 4px -1px #ccc;
+            position: relative;
+            z-index: 1;
+            font-size: 14px;
+            background: linear-gradient(to bottom, #fefefe, #f6f6f6);
+            @include clearfix();
+            >div {
+                white-space: nowrap
+            }
+            .btn-block {
+                margin: 5px 0
+            }
+            >[class^='col-xs'] {
+                padding: 0;
+            }
+        }
+        .iscroll_container {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            overflow: hidden;
+            &.with-header {
+                top: 58px;
+            }
+        }
+        .list-unstyled {
+            margin: 0;
+            a {
+                text-decoration: none;
+            }
+            &.dashed-split {
+                li {
+                    border-bottom: 1px dashed #ccc;
+                }
+            }
+            li {
+                @include clearfix();
+                line-height: 50px;
+                text-align: center;
+                &.active {
+                    background: #fce7e6;
+                }
+                .btn {
+                    margin: 0 4px;
+                    padding: 4px 8px;
+                    font-size: 12px;
+                    line-height: 1.25;
+                }
+                >[class^='col-xs'] {
+                    padding: 0;
+                }
+                [class^='col-xs'] {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+    .warranty-title {
+        background: #e9eef2;
+        padding: 0 30px;
+        margin: 20px 0;
+        line-height: 50px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .form-horizontal {
+        label {
+            font-weight: 400;
+            white-space: nowrap;
+            padding-right: 0;
+        }
+        +.warranty-title {
+            margin-top: 10px;
+        }
+        .hint {
+            display: none;
+            position: absolute;
+            margin: 20px 0
+        }
+    }
+    .quality_list{
+
+
+        .table-bordered {
+            width:85%;
+            margin:20px auto;
+            th {
+                text-align: center;
+                background: #81c0ff;
+                height:20px;
+                line-height:20px;
+            }
+            td {
+                vertical-align: middle;
+                line-height: 25px;
+                height:50px;
+                padding: 0;
+                input {
+                    border-color: transparent;
+                }
+                [data-toggle="dropdown"] {
+                    border-color: transparent;
+                    span.filter-option {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    .btn-round {
+        padding: 0;
+        width: 24px;
+        height: 24px;
+        line-height: 0.7;
+        color: #666;
+        font-size: 24px;
+        font-weight: 600;
+        border: 1px solid;
+        border-radius: 50%;
+        +.btn-round {
+            margin-left: 12px;
+        }
+    }
+    .dropdown-menu>li>a:hover,
+    .dropdown-menu>li>a:focus {
+        color: #fff;
+        background-color: #0080ff;
+    }
+    .no-pad-r {
+        padding-right: 0;
+    }
+    .input-group-btn {
+        .btn {
+            height: 34px;
+        }
+    }
+    .btn-lg.btn-block {
+        width: 200px;
+        margin: 60px auto 40px;
+    }
+
+
+
+
+}
+
+.business-main-wrap{
+    .apx-modal-warranty{
+         .modal-dialog{
+
+             width:500px;
+
+             .modal-content{
+
+                .modal-header{
+                    padding-left:20px;
+                    border-bottom:4px solid #0080ff;
+                     .modal-title{
+                         padding-left:10px;
+                         span{
+
+                             color:#333333;
+                         }
+                     }
+                }
+
+                 .modal-footer{
+                     button{
+                         margin-right:10px;
+                         &:first-child{
+                             background:#0080ff;
+                             border-radius: 15px;
+                             border:none;
+                             border-color:none;
+                         }
+                         &:last-child{
+                             border:3px solid #0080ff;
+                             border-radius: 15px;
+                             background:#FFFFFF;
+                             color:#333333;
+                             line-height:15px;
+                         }
+                     }
+                 }
+             }
+         }
+    }
+}

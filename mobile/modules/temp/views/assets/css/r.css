@@ -1,0 +1,271 @@
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+body {
+  font: 12px/1.5 'sans-serif';
+  color: #333;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-overflow-scrolling: touch; }
+
+a {
+  text-decoration: none;
+  color: #333;
+  display: block; }
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+main.container,
+nav.bottom-nav {
+  max-width: 640px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 9999; }
+
+main.container {
+  top: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  background: #f2f2f2;
+  -webkit-overflow-scrolling: touch; }
+
+nav.top-nav {
+  background: #fff;
+  position: relative;
+  height: 44px;
+  font-size: 16px; }
+  nav.top-nav > a {
+    position: absolute;
+    top: 0;
+    min-width: 60px;
+    height: 44px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: center;
+            justify-content: center; }
+    nav.top-nav > a:first-child {
+      left: 0; }
+      nav.top-nav > a:first-child img {
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg); }
+  nav.top-nav .title {
+    line-height: 44px;
+    text-align: center;
+    font-weight: 600; }
+    nav.top-nav .title + a {
+      right: 0; }
+  nav.top-nav ~ main.container {
+    top: 44px; }
+
+nav.bottom-nav {
+  background: #fff;
+  box-shadow: 0 1px 4px #ccc;
+  height: 49px;
+  display: -webkit-flex;
+  display: flex; }
+  nav.bottom-nav + main.container {
+    bottom: 50px; }
+  nav.bottom-nav a {
+    -webkit-flex: 1 1 25%;
+            flex: 1 1 25%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    font-size: 0; }
+    nav.bottom-nav a:active {
+      background: #ccc; }
+    nav.bottom-nav a i {
+      display: block;
+      width: 27px;
+      min-height: 27px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat; }
+    nav.bottom-nav a.active span {
+      color: #ff9100;
+      background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#ff9100), to(#e53935));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    nav.bottom-nav a span {
+      font-size: 13px;
+      color: #b0b0b0; }
+    nav.bottom-nav a.home i {
+      background-image: url("/images/nav1_n.png"); }
+    nav.bottom-nav a.home.active i {
+      background-image: url("/images/nav1_on_n.png"); }
+    nav.bottom-nav a.brand i {
+      background-image: url("/images/nav2_n.png"); }
+    nav.bottom-nav a.brand.active i {
+      background-image: url("/images/nav2_on_n.png"); }
+    nav.bottom-nav a.cart i {
+      background-image: url("/images/nav3_n.png"); }
+    nav.bottom-nav a.cart.active i {
+      background-image: url("/images/nav3_on_.png"); }
+    nav.bottom-nav a.account i {
+      background-image: url("/images/nav4_n.png"); }
+    nav.bottom-nav a.account.active i {
+      background-image: url("/images/nav4_on_n.png"); }
+
+.bottom-nav.J_footer_menu {
+  border-top: 1px solid #f2f2f2; }
+
+.btn-block-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 44px;
+  background: #fff;
+  font-size: 16px;
+  text-align: center;
+  background-image: -webkit-gradient(linear, 100% 100%, 0 0, from(#e53935), to(#ff9101));
+  color: #fff; }
+  .btn-block-bottom:active {
+    background: linear-gradient(to bottom, #fff, #eee); }
+
+.hidden {
+  display: none !important; }
+
+.mask-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s;
+  overflow: hidden; }
+  .mask-container.in {
+    opacity: 1;
+    pointer-events: auto; }
+  .mask-container .mask-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); }
+
+.wechat-product-ksd img {
+  max-width: 100%;
+  vertical-align: top; }
+
+.wechat-product-ksd p {
+  margin: 0; }
+
+.wechat-product-ksd .target {
+  margin-top: 2%; }
+  .wechat-product-ksd .target:before, .wechat-product-ksd .target:after {
+    content: " ";
+    display: table; }
+  .wechat-product-ksd .target:after {
+    clear: both; }
+  .wechat-product-ksd .target > div {
+    font-size: 0;
+    float: left; }
+    .wechat-product-ksd .target > div:nth-child(1) {
+      width: 31.61%;
+      padding-right: 0.2%; }
+    .wechat-product-ksd .target > div:nth-child(2) {
+      width: 36.2%; }
+      .wechat-product-ksd .target > div:nth-child(2) img:first-child {
+        margin-bottom: 1%; }
+    .wechat-product-ksd .target > div:nth-child(3) {
+      width: 30.7%;
+      padding-left: 0.8%; }
+
+.wechat-product-ksd .content .header {
+  text-align: center;
+  margin: 4% 0; }
+  .wechat-product-ksd .content .header img {
+    max-width: 70%; }
+
+.wechat-product-ksd .content .item-1 {
+  font-size: 0; }
+  .wechat-product-ksd .content .item-1 a:before, .wechat-product-ksd .content .item-1 a:after {
+    content: " ";
+    display: table; }
+  .wechat-product-ksd .content .item-1 a:after {
+    clear: both; }
+  .wechat-product-ksd .content .item-1 a > div {
+    float: left; }
+    .wechat-product-ksd .content .item-1 a > div:nth-child(1) {
+      max-width: 62%;
+      margin-left: 2%; }
+  .wechat-product-ksd .content .item-1 a .right {
+    max-width: 30%;
+    text-align: center;
+    margin-left: 3%; }
+    .wechat-product-ksd .content .item-1 a .right img {
+      max-width: 100%; }
+      .wechat-product-ksd .content .item-1 a .right img:first-child {
+        margin-bottom: 7%; }
+  .wechat-product-ksd .content .item-1 .title {
+    font-size: 12px;
+    position: relative;
+    background-color: #000;
+    margin-top: 2%;
+    padding-left: 2%; }
+    .wechat-product-ksd .content .item-1 .title .left {
+      color: #fff; }
+      .wechat-product-ksd .content .item-1 .title .left .h1 {
+        font-size: 16px; }
+      .wechat-product-ksd .content .item-1 .title .left .h3 {
+        font-size: 16px; }
+    .wechat-product-ksd .content .item-1 .title .right {
+      position: absolute;
+      top: 26%;
+      right: 6%;
+      width: 20%;
+      text-align: center; }
+      .wechat-product-ksd .content .item-1 .title .right a {
+        background-color: #ff4457;
+        border-radius: 4px;
+        width: 100%;
+        color: #fff;
+        padding: 8%; }
+
+.wechat-product-ksd .content .item-2 {
+  margin-top: 6%;
+  position: relative; }
+  .wechat-product-ksd .content .item-2 a {
+    position: absolute;
+    bottom: 6%;
+    left: 50%;
+    width: 50%;
+    padding-top: 50%; }
+
+.wechat-product-ksd .content .item-3 {
+  margin-top: 6%;
+  position: relative; }
+  .wechat-product-ksd .content .item-3 a {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    padding-top: 50%; }
+
+.wechat-product-ksd footer {
+  text-align: center; }
+  .wechat-product-ksd footer img {
+    max-width: 20%;
+    padding: 6% 0; }

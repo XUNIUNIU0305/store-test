@@ -1,0 +1,127 @@
+.hot-summer-mobile-container {
+  background: url("/images/hot_summer/beijing.png") no-repeat center/cover;
+  overflow: hidden;
+   }
+  .hot-summer-mobile-container h1 {
+    margin: 0;
+    height: 48.8vw;
+    width: 100%;
+    background: url("/images/hot_summer/banner.png") no-repeat center/cover; }
+  .hot-summer-mobile-container h3 {
+    height: 23.2vw;
+    width: 100%;
+    background: url("/images/hot_summer/dabiaoti.png") no-repeat center/cover; }
+  .hot-summer-mobile-container .quick-nav {
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    -webkit-align-self: center;
+            align-self: center; }
+    .hot-summer-mobile-container .quick-nav li {
+      -webkit-flex: 1;
+              flex: 1;
+      list-style: none;
+      text-align: center;
+      font-size: 2.66667vw;
+      font-weight: bold;
+      height: 5.73333vw;
+      line-height: 5.73333vw;
+      background-color: #cecccc; }
+      .hot-summer-mobile-container .quick-nav li a {
+        color: #fff; }
+    .hot-summer-mobile-container .quick-nav .nav-on a {
+      width: auto;
+      color: #fd035e;
+      position: relative; }
+      .hot-summer-mobile-container .quick-nav .nav-on a:after {
+        position: absolute;
+        bottom: -0.26667vw;
+        left: 0;
+        content: '';
+        display: block;
+        height: 0.26667vw;
+        width: 100%;
+        background-color: #fd035e; }
+  .hot-summer-mobile-container .pos-nav {
+    position: fixed;
+    top: 0;
+    left: 0; }
+  .hot-summer-mobile-container .pro-item-container {
+    overflow: hidden;
+    width: 100%; }
+    .hot-summer-mobile-container .pro-item-container h2 {
+      height: 9.06667vw;
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 4.26667vw;
+      margin-bottom: 7.2vw;
+      background: url("/images/hot_summer/miaosha.png") no-repeat center;
+      background-size: 65.6vw auto; }
+    .hot-summer-mobile-container .pro-item-container ul {
+      width: 96vw;
+      margin: 0 auto; }
+      .hot-summer-mobile-container .pro-item-container ul li {
+        float: left;
+        width: 46.66667vw;
+        background-color: #fff;
+        margin-right: 2.66667vw;
+        margin-bottom: 2.66667vw;
+        list-style: none; }
+        .hot-summer-mobile-container .pro-item-container ul li:nth-child(2n) {
+          margin-right: 0; }
+        .hot-summer-mobile-container .pro-item-container ul li img {
+          display: block;
+          border: none;
+          height: 46.66667vw;
+          width: 46.66667vw; }
+        .hot-summer-mobile-container .pro-item-container ul li strong {
+          font-weight: normal;
+          display: block;
+          width: 90%;
+          margin: 0 auto;
+          font-size: 3.2vw;
+          text-align: left;
+          height: 9.6vw;
+          overflow: hidden;
+          color: #808080; }
+        .hot-summer-mobile-container .pro-item-container ul li p {
+          margin: 0;
+          display: block;
+          width: 90%;
+          color: #f43043;
+          font-weight: bold;
+          font-size: 4.26667vw; }
+        .hot-summer-mobile-container .pro-item-container ul li span:first-child {
+          font-size: 3.2vw;
+          color: #f43043;
+          font-weight: bold; }
+  .hot-summer-mobile-container .small-pro {
+    background-color: #ff0062; }
+    .hot-summer-mobile-container .small-pro h2 {
+      margin: 0;
+      height: 19.73333vw;
+      margin-bottom: 2.66667vw;
+      background: url("/images/hot_summer/biyan.png") no-repeat center/cover #fff;
+      background-size: 65.86667vw auto; }
+  .hot-summer-mobile-container .store-nec {
+    background-color: #ff0062; }
+    .hot-summer-mobile-container .store-nec h2 {
+      margin: 0 auto;
+      margin-bottom: 2.66667vw;
+      height: 19.73333vw;
+      background: url("/images/hot_summer/dapinpai.png") no-repeat center/cover #fff;
+      background-size: 65.86667vw auto; }
+  .hot-summer-mobile-container .gift-pro h2 {
+    background: url("/images/hot_summer/maichanpin.png") no-repeat center/cover;
+    background-size: 65.6vw auto; }
+  .hot-summer-mobile-container .to-top {
+    display: block;
+    text-decoration: none;
+    height: 4vw;
+    width: 46.93333vw;
+    margin: 0 auto;
+    margin-top: 5.86667vw;
+    margin-bottom: 7.2vw;
+    background: url("/images/hot_summer/fahui.png") no-repeat center/cover; }

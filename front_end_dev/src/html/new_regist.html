@@ -1,0 +1,99 @@
+@@include('head.inc')
+<div class="regist-container">
+    <img src="/images/new_login/logo.png" class="title-img">
+    <div class="login-wrap">
+        <form class="login-form" role="form">
+            <!--title-->
+            <p class="title">注册</p>
+            <!--row-->
+            <div class="form-group form-group-sm">
+                <label for="shop_name">注册码</label>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <input type="text" class="form-control" id="shop_name" placeholder="请输入注册码" data-tmp="" maxlength="9">
+                    </div>
+                    <div class="col-xs-12 error-msg">注册码错误</div>
+                </div>
+            </div>
+            <!--row-->
+            <!--添加error类名显示错误信息-->
+            <div class="form-group form-group-sm">
+                <label for="shop_pwd1">设置新密码</label>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <input type="password" class="form-control" id="shop_pwd1" maxlength="20" placeholder="请填写新密码">
+                    </div>
+                    <div class="col-xs-12 error-msg">密码只能包含数字和字母</div>
+                </div>
+            </div>
+            <!--row-->
+            <div class="form-group form-group-sm">
+                <label for="shop_pwd2">确认新密码</label>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <input type="password" class="form-control" id="shop_pwd2" maxlength="20" placeholder="请重复填写新密码">
+                    </div>
+                    <div class="col-xs-12 error-msg">两次密码不一致</div>
+                </div>
+            </div>
+            <!--row-->
+            <div class="form-group form-group-sm address">
+                <label for="">门店所属区域</label>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <select class="selectpicker btn-group-xs J_province" data-width="100%" data-dropup-auto="false">
+                            <option value="-1">请选择</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-4">
+                        <select class="selectpicker btn-group-xs J_city" data-width="100%" data-dropup-auto="false">
+                            <option value="-1">请选择</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-4">
+                        <select class="selectpicker btn-group-xs J_district" data-width="100%" data-dropup-auto="false">
+                            <option value="-1">请选择</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-12 error-msg">不能为空</div>
+                </div>
+            </div>
+    
+            <div class="form-group form-group-sm J_email">
+                <label for="email">联系邮箱</label>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <input type="text" class="form-control" id="email" placeholder="请填写您的电子邮箱">
+                    </div>
+                    <div class="col-xs-12 error-msg">格式错误</div>
+                </div>
+            </div>
+            <!--row-->
+            <div class="form-group form-group-sm J_mobile">
+                <label for="mobile">联系手机号</label>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <input type="tel" class="form-control" id="mobile" placeholder="请填写您的手机号" maxlength="11">
+                    </div>
+                    <div class="col-xs-12 error-msg">格式错误</div>
+                </div>
+            </div>
+            <!--row-->
+            <div class="form-group form-group-sm">
+                <label for="validate">验证码</label>
+                <div class="row">
+                    <div class="col-xs-8 mobile-input">
+                        <input type="text" id="validate" class="form-control" value="">
+                    </div>
+                    <div class="col-xs-2">
+                        <a class="btn btn-default mobile-btn J_get_verify_sms">点击获取</a>
+                    </div>
+                </div>
+            </div>
+            <!--row-->
+            <a class="btn btn-submit J_register_submit">提交</a>
+        </form>
+    </div>
+    <div class="footer-box"></div>
+</div>
+@@include('footer.inc')

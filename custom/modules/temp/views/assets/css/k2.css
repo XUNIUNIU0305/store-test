@@ -1,0 +1,170 @@
+*{
+	padding:0;
+	margin:0;
+	list-style-type:none;
+	box-sizing:content-box;
+	font-family:'微软雅黑';
+}
+body{
+	background:#000000;
+}
+img{
+	display:block;
+	border:none;
+}
+a,a:hover{
+	text-decoration:none;
+}
+
+.mainCon{
+	width：100%;
+	height:auto;
+	min-width:1224px;
+	position:relative;
+}
+
+.bg1{
+	background:url(/images/event20180909/detail1.jpg) 50% 0 no-repeat;
+	height:640px;
+}
+
+.bg2{
+	background:url(/images/event20180909/detail2.jpg) 50% 0 no-repeat;
+	height:412px;
+	padding-top:125px;
+}
+
+.bg3{
+	background:url(/images/event20180909/detail3.jpg) 50% 0 no-repeat;
+	height:757px;
+}
+
+.bg4{
+	background:url(/images/event20180909/detail4.jpg) 50% 0 no-repeat;
+	height:auto;
+	padding-top:100px;
+}
+
+.headerCon{
+	width:376px;
+	height:376px;
+	background:url(/images/event20180909/pic4.png) 0 0 no-repeat;
+	top:120px;
+	left:50%;
+	margin-left:-600px;
+	position:absolute;
+}
+.headerCon img{
+	width:355px;
+	height:355px;
+	margin:10px;
+	border-radius:100px;
+}
+
+.infoCon{
+	width:600px;
+	height:375px;
+	top:120px;
+	right:50%;
+	margin-right:-460px;
+	position:absolute;
+}
+.infoCon strong{
+	width:600px;
+	height:60px;
+	line-height:60px;
+	font-weight:bold;
+	color:#e0b06a;
+	font-size:32px;
+	display:block;
+	margin-bottom:10px;
+}
+.infoCon span{
+	width:600px;
+	height:60px;
+	line-height:60px;
+	color:#e0b06a;
+	font-size:24px;
+	display:block;
+	margin-bottom:10px;
+}
+.infoCon em{
+	width:600px;
+	height:60px;
+	line-height:40px;
+	font-style:normal;
+	color:#e0b06a;
+	font-size:24px;
+	display:block;
+}
+
+.mapCon{
+	width:910px;
+	height:350px;
+	margin:0 auto;
+}
+.mapCon iframe{
+	width:910px;
+	height:350px;
+	border:none;
+}
+
+.ruleCon{
+	width:900px;
+	top:120px;
+	left:50%;
+	margin-left:-585px;
+	position:absolute;
+}
+.ruleCon p{
+	width:900px;
+	line-height:32px;
+	font-size:18px;
+	color:#e0b06a;
+	margin-bottom:20px;
+}
+
+.erweima{
+	width:165px;
+	height:165px;
+	padding:8px;
+	background:#dda85e;
+	top:120px;
+	right:50%;
+	margin-right:-570px;
+	position:absolute;
+}
+.erweima img{
+	width:155px;
+	height:155px;
+	padding:5px;
+	background:#ffffff;
+}
+
+.imgCon{
+	width:1200px;
+	margin:0 auto;
+	padding-bottom:150px;
+}
+.imgCon img{
+	width:1200px;
+	margin:0 auto;
+}
+
+.backTo{
+	width:22px;
+	height:120px;
+	font-size:25px;
+	line-height:30px;
+	border-radius:15px;
+	color:#ffffff;
+	bottom:150px;
+	background:#12598c;
+	right:50%;
+	margin-right:-700px;
+	position:fixed;
+	display:none;
+	cursor:pointer;
+	text-align:center;
+	padding:25px 15px;
+}

@@ -1,0 +1,77 @@
+.admin-pay-success {
+	font-size: 12px;
+	img {
+		vertical-align: top;
+	}
+	.result {
+		margin: 20% 0 5%;
+		text-align: center;
+		img {
+			max-width: 20%;
+		}
+	}
+	p {
+		text-align: center;
+		margin: 12px;
+	}
+	.loading {
+		text-align: center;
+		img {
+			max-width: 80%;
+		}
+	}
+	.title {
+		font-size: 2em;
+		color: #ee1e42;
+		margin-bottom: 80px;
+	}
+	.content {
+		.code {
+			font-size: 2em;
+			color: rgb(229,57,53);
+		}
+		.title-1 {
+			font-size: 1.4em;
+			span {
+				color: #ee1e42;
+			}
+		}
+		.title-2 {
+			font-size: 1.2em;
+			color: #b2b2b2;
+		}
+	}
+	.title-3 {
+		color: #9d9d9d;
+	}
+	.title-4 {
+		color: #ee1e42;
+	}
+	.btn {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 10%;
+		display: block;
+		border-radius: 4px;
+		width: 96%;
+		margin: 0 auto;
+		line-height: 2.4em;
+		font-size: 1.4em;
+		text-align: center;
+		color: #fff;
+		background-color: #ee1e42;
+		&.disabled {
+			background-color: #f2f2f2;
+			background-image: none;
+			color: rgb(222, 223, 224);
+		}
+	}
+	.h3 {
+		font-size: 18px;
+	}
+	.h2 {
+		font-size: 22px;
+		color: #ee1e42;
+	}
+}

@@ -1,0 +1,71 @@
+.wechat-product-mubao img {
+  max-width: 100%;
+  vertical-align: top; }
+
+.wechat-product-mubao .content {
+  background: url("/images/mubao_brand/bg.jpg") no-repeat center top;
+  background-size: 100%; }
+  .wechat-product-mubao .content .item {
+    position: relative; }
+    .wechat-product-mubao .content .item > img {
+      width: 50%;
+      padding-left: 50%; }
+    .wechat-product-mubao .content .item .title {
+      position: absolute;
+      left: 3%;
+      top: 12%;
+      width: 60%; }
+      .wechat-product-mubao .content .item .title > img {
+        max-width: 90%; }
+      .wechat-product-mubao .content .item .title .h2 {
+        font-size: 18px;
+        margin: 0;
+        margin-top: 2%;
+        color: #938e8e; }
+      .wechat-product-mubao .content .item .title > h2 {
+        color: #a82c36;
+        font-size: 30px;
+        padding-left: 8%;
+        margin: 5% 0; }
+      .wechat-product-mubao .content .item .title .btn {
+        color: #fff;
+        font-size: 24px;
+        background: #a82c36;
+        width: 60%;
+        text-align: center;
+        border-radius: 6px;
+        padding: 2% 0; }
+    .wechat-product-mubao .content .item .detail {
+      padding: 10% 5%;
+      text-align: center; }
+      .wechat-product-mubao .content .item .detail > img:first-child {
+        max-width: 80%;
+        padding-bottom: 5%; }
+    .wechat-product-mubao .content .item.even > img {
+      padding-left: 0; }
+    .wechat-product-mubao .content .item.even .title {
+      left: 52%;
+      top: 4%; }
+      .wechat-product-mubao .content .item.even .title .h1 {
+        color: #3778d0;
+        font-weight: 700;
+        font-size: 24px;
+        margin: 0; }
+      .wechat-product-mubao .content .item.even .title .h2 {
+        text-align: center;
+        color: #4f8ddf;
+        font-size: 14px; }
+      .wechat-product-mubao .content .item.even .title .h3 {
+        text-align: center;
+        padding-left: 50%; }
+        .wechat-product-mubao .content .item.even .title .h3 span {
+          background: #a82c36;
+          color: #fff;
+          display: inline-block;
+          width: 50%;
+          border-radius: 50px;
+          text-align: left;
+          padding: 2% 0 2% 10%;
+          font-size: 14px; }
+    .wechat-product-mubao .content .item.even .detail {
+      padding: 10% 0; }

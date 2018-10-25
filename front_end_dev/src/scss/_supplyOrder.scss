@@ -1,0 +1,15 @@
+.apx-supply-order {
+    @include supplyAndAdminOrder();
+}
+.remark {
+	word-break: break-all;
+}
+.export { 
+  position: absolute; 
+  right: 20px; 
+  top: 68px; 
+  min-width: 100px; 
+}
+.export-alert {
+	margin: 0 60px;
+}

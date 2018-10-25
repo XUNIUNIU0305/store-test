@@ -1,0 +1,79 @@
+$size : 1/750 * 100vw;
+
+.newly-added {
+    .newly-added-top {
+        color: #FF5F61;
+        padding: 30 * $size;
+        font-size: 24 * $size;
+        background-color: #fff;
+    }
+    .new-addr-list {
+        margin-top: 20 * $size;
+        padding-left: 30 * $size;
+        background-color: #fff;
+        .new-addr-item {
+            height: 100 * $size;
+            line-height: 100 * $size;
+            font-size: 30 * $size;
+            border-bottom: 2 * $size solid #efeff4;
+            >span {
+                display: inline-block;
+                color: #333;
+                width: 160 * $size;
+            }
+            .new-addr-sel {
+                width: 162 * $size;
+                border-style: none;
+            }
+            .new-addr-prompt {
+                width: 450 * $size;
+                height: 100 * $size;
+                background-color: transparent;
+                border-style: none;
+                outline-style: none;
+            }
+            .new-addr-icon {
+                display: inline-block;
+                width: 30 * $size;
+                height: 30 * $size;
+                background: url('/images/address_gpubs_add/errio_icon.png') no-repeat;
+                background-size: 100%;
+                margin-bottom: -6 * $size;
+                margin-left: 10 * $size;
+            }
+        }
+    }
+    .new-addr-alone {
+        height: 100 * $size;
+        line-height: 100 * $size;
+        font-size: 30 * $size;
+        margin-top: 20 * $size;
+        background-color: #fff;
+        .no-set {
+            width: 44 * $size;
+            margin: 0 10 * $size -10 * $size 30 * $size;
+            cursor: pointer;
+        }
+    }
+    .remind {
+        color: #FF5F61;
+        font-size: 22 * $size;
+        padding: 0 30 * $size 10 * $size 94 * $size;
+        background-color: #fff;
+        margin-top: -26 * $size;
+    }
+    .push-btn {
+        color: #fff;
+        display: block;
+        width: 690 * $size;
+        height: 108 * $size;
+        line-height: 98 * $size;
+        background: url('/images/address_gpubs_add/btn_bg.png') no-repeat;
+        background-size: 100%;
+        border-radius: 60 * $size;
+        margin-top: 100 * $size;
+        font-size: 34 * $size;
+        text-align: center;
+        margin-left: 30 * $size;
+    }
+}

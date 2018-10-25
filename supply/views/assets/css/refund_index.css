@@ -1,0 +1,73 @@
+body {
+  overflow-x: hidden; }
+
+.bg-muted {
+  background: #f2f2f2; }
+
+.table-fix {
+  table-layout: fixed; }
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.container {
+  width: 1190px;
+  max-width: none !important; }
+
+.high-lighted {
+  color: #df483d; }
+
+.supply-refund-container > .nav-tabs {
+  margin: 30px 0;
+  border-bottom: 3px solid #df483d; }
+  .supply-refund-container > .nav-tabs li {
+    margin-bottom: 0;
+    text-align: center; }
+    .supply-refund-container > .nav-tabs li.active a {
+      border: 0;
+      background: #df483d;
+      color: #fff; }
+    .supply-refund-container > .nav-tabs li a {
+      min-width: 100px;
+      line-height: 1;
+      height: 34px;
+      background: #fce7e6;
+      border: 0;
+      margin-right: 20px; }
+
+.supply-refund-container .nav-tabs {
+  overflow: hidden;
+  margin-top: 0;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 6px -2px #999; }
+  .supply-refund-container .nav-tabs .pull-right .input-group {
+    width: 320px; }
+
+.supply-refund-container .table-condensed {
+  table-layout: fixed;
+  font-size: 14px; }
+  .supply-refund-container .table-condensed tr {
+    box-shadow: 0 2px 6px #999;
+    margin-bottom: 10px; }
+  .supply-refund-container .table-condensed td {
+    vertical-align: middle; }
+    .supply-refund-container .table-condensed td:first-child {
+      width: 150px; }
+    .supply-refund-container .table-condensed td:nth-child(2) {
+      width: 240px; }
+    .supply-refund-container .table-condensed td p {
+      margin-bottom: 4px; }
+  .supply-refund-container .table-condensed .media {
+    margin: 4px 0; }
+    .supply-refund-container .table-condensed .media img {
+      width: 80px;
+      height: 80px;
+      border: 1px solid #ccc; }
+    .supply-refund-container .table-condensed .media .media-heading {
+      width: 140px; }
+  .supply-refund-container .table-condensed thead {
+    background: linear-gradient(180deg, #fff, #e6e6e6); }
+    .supply-refund-container .table-condensed thead td {
+      line-height: 40px; }

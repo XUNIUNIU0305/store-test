@@ -1,0 +1,84 @@
+@@include('head.inc')
+<nav class="bottom-nav bottom-nav-coupon">
+    <a href="#">
+        <i></i>
+    </a>
+    <span class="spam-first">优惠券列表</span>
+    <span></span>
+</nav>
+<main class="containers">
+    <div class="coupon-activation">
+        <div class="coupon-height"></div>
+        <div class="coupon-input">
+            <div class="coupon-no-pass">序列号：</div>
+            <div class="coupon-input-no-pass">
+                <input type="text" id="coupon-no" maxlength="15" placeholder="请输入15位序列号"/>
+            </div>
+            <div class="coupon-no-pass">密码：</div>
+            <div class="coupon-input-no-pass">
+                <input type="password" id="password" maxlength="8"  placeholder="请输入8位优惠券密码"/><img src="/images/eye.png">
+            </div>
+            <button>立即激活</button>
+        </div>
+    </div>
+</main>
+@@include('footer.inc')
+<script>
+    $(function () {
+        // Carousel
+       $(".coupon-activation").on('click','button',function () {
+            var data = isjudge();
+            if(data){
+                return
+            }
+            function  couponActiv(data) {
+
+            }
+
+       })
+       $(".coupon-input-no-pass").on('click','img',function () {
+           if($('#password').attr('type') == 'text'){
+               $('#password').attr('type','password');
+               return
+           }
+           if($('#password').attr('type') == 'password'){
+               $('#password').attr('type','text');
+               return
+           }
+       })
+        function isjudge() {
+            var no =  $('#coupon-no').val();
+            var pass = $('#password').val();
+            if(no == "" || no == undefined){
+                $('#coupon-no').val('');
+                $('#coupon-no').attr('placeholder','请输入有效的序列号！');
+                $('#coupon-no').addClass('input-active');
+                return true;
+            }
+            if(no.length != 15){
+                $('#coupon-no').val('');
+                $('#coupon-no').attr('placeholder','请输入有效的序列号！');
+                $('#coupon-no').addClass('input-active');
+                return true;
+            }
+            if(pass == ""){
+                $('#password').val('');
+                $('#password').attr('placeholder','请输入有效的密码！');
+                $('#password').addClass('input-active');
+                return true;
+            }
+            if(pass.length != 8){
+                $('#password').val('');
+                $('#password').attr('placeholder','请输入有效的密码！');
+                $('#password').addClass('input-active');
+                return true;
+            }
+            var data = {
+                no:no,
+                pass:pass
+            }
+            return data;
+        }
+    });
+
+</script>

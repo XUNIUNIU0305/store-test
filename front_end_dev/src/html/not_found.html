@@ -1,0 +1,86 @@
+@@include('head.inc') @@include('banner.inc') @@include('search.inc') @@include('main_nav.inc')
+<div class="container apx-not-found">
+    <ol class="breadcrumb">
+        <li><a href="#">首页</a></li>
+        <li class="active">搜索结果</li>
+    </ol>
+    <!-- Not found -->
+    <div class="text-center">
+        <img src="/images/new_icon.png">
+        <h4>
+            <strong>出错了!</strong>
+            <small>错误代码：<strong class="high-lighted">404</strong></small>
+        </h4>
+        <a href="#" class="btn btn-danger btn-block btn-lg">返回首页</a>
+    </div>
+</div>
+
+<!-- Button trigger -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalGetCash" style="display: none">
+    提现
+</button>
+<!-- 提现 -->
+<div class="apx-modal-get-cash modal fade" id="modalGetCash" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h3 class="modal-title" id="myModalLabel"><img src="/images/icons/get_cash.png" width="24px"><strong>提现</strong></h3>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group form-group-lg">
+                        <legend class="text-center"><strong>请确认金额以及提现账户</strong></legend>
+                    </div>
+                    <div class="form-group form-group-lg">
+                        <label class="col-xs-4 text-right control-label">可提现金额</label>
+                        <div class="col-xs-6">
+                            <p class="form-control-static text-danger h4"><strong>¥20000.00</strong></p>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-lg">
+                        <label for="inputAmount" class="col-xs-4 text-right control-label">提现金额</label>
+                        <div class="col-xs-6 cash-after">
+                            <input type="text" name="amount" id="inputAmount" class="form-control" value="">
+                        </div>
+                    </div>
+                    <div class="form-group form-group-lg">
+                        <label for="takeway" class="col-xs-4 text-right control-label">提现方式</label>
+                        <div class="col-xs-6">
+                            <label class="radio-inline">
+                                <input type="radio" name="takeway" id="inlineRadio1" value="option1"> 支付宝
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="takeway" id="inlineRadio2" value="option2"> 线下汇款
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-lg">
+                        <label for="name" class="col-xs-4 text-right control-label">账户名称</label>
+                        <div class="col-xs-6 ">
+                            <input type="text" name="amount" id="name" class="form-control" value="">
+                        </div>
+                    </div>
+                    <div class="form-group form-group-lg">
+                        <label for="bank" class="col-xs-4 text-right control-label">开户银行</label>
+                        <div class="col-xs-6 ">
+                            <input type="text" name="amount" id="bank" class="form-control" value="">
+                        </div>
+                    </div>
+                    <div class="form-group form-group-lg">
+                        <label for="account" class="col-xs-4 text-right control-label">银行卡账号</label>
+                        <div class="col-xs-6 ">
+                            <input type="text" name="amount" id="account" class="form-control" value="">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="col-xs-offset-4 col-xs-8">
+                    <button type="button" class="btn btn-lg btn-default">确定提现</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('ensurance.inc') @@include('sitemap.inc') @@include('footer.inc')

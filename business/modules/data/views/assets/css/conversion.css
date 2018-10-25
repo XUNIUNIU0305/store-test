@@ -1,0 +1,58 @@
+.business-data-conversion .bootstrap-select.btn-group .dropdown-toggle .filter-option {
+  font-size: 16px;
+  line-height: 2; }
+
+.business-data-conversion .sell-search {
+  background-color: #FFF;
+  margin-top: 1px;
+  padding: 20px; }
+  .business-data-conversion .sell-search label {
+    display: block;
+    font-size: 16px; }
+  .business-data-conversion .sell-search .time-input {
+    width: 100%;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.5; }
+  .business-data-conversion .sell-search .search-btn-box {
+    margin-top: 32px; }
+  .business-data-conversion .sell-search .btn-search {
+    color: #fff;
+    background-color: #459ae9; }
+  .business-data-conversion .sell-search .time-box {
+    width: 30%;
+    margin: 20px 0;
+    padding-left: 15px; }
+
+.business-data-conversion .items-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 14px; }
+  .business-data-conversion .items-box .item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 19.6%;
+            flex: 0 0 19.6%;
+    margin: 0 0.2%;
+    background-color: #FFF;
+    cursor: pointer; }
+    .business-data-conversion .items-box .item.active .h3 {
+      background-color: #459ae9;
+      color: #fff; }
+    .business-data-conversion .items-box .item.active .h2 {
+      color: #459ae9; }
+  .business-data-conversion .items-box .h3 {
+    margin: 4px 0;
+    padding: 8px 0 8px 16px; }
+  .business-data-conversion .items-box .h2 {
+    font-size: 36px;
+    text-align: center; }
+  .business-data-conversion .items-box .h4 {
+    font-size: 18px;
+    text-align: center; }
+
+.business-data-conversion .chart-container {
+  margin-top: 4px;
+  height: 400px;
+  background-color: #FFF; }

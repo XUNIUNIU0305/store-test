@@ -1,0 +1,208 @@
+.collage-detail-box {
+  color: #333;
+  margin-bottom: 21.06667vw; }
+  .collage-detail-box .collage-detail-top {
+    color: #fff;
+    height: 20.26667vw;
+    font-size: 4.8vw;
+    padding: 0 4vw;
+    background-color: #FF5E61; }
+    .collage-detail-box .collage-detail-top .waiting-for-delivery {
+      line-height: 20.26667vw; }
+    .collage-detail-box .collage-detail-top .already-shipped {
+      position: relative;
+      padding-top: 1.33333vw; }
+      .collage-detail-box .collage-detail-top .already-shipped > span {
+        display: block; }
+        .collage-detail-box .collage-detail-top .already-shipped > span.top-alone {
+          font-size: 3.46667vw;
+          width: 88vw;
+          height: 5.06667vw;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap; }
+      .collage-detail-box .collage-detail-top .already-shipped .top-path {
+        position: absolute;
+        right: 0;
+        bottom: 4vw;
+        padding: 1.46667vw 0.8vw;
+        background: url("/images/collage_detail/path.png") no-repeat;
+        background-size: 100%; }
+    .collage-detail-box .collage-detail-top .transaction-comp {
+      line-height: 20.26667vw; }
+      .collage-detail-box .collage-detail-top .transaction-comp .comp-pic {
+        width: 6.93333vw;
+        margin-bottom: -1.86667vw;
+        margin-right: 1.33333vw; }
+  .collage-detail-box .collage-detail-head {
+    background-color: #fff; }
+    .collage-detail-box .collage-detail-head .head-cont {
+      padding: 4vw; }
+      .collage-detail-box .collage-detail-head .head-cont .head-tit {
+        display: block;
+        font-size: 4.53333vw;
+        font-weight: bold; }
+      .collage-detail-box .collage-detail-head .head-cont .head-user {
+        font-size: 4vw;
+        margin: 2vw 0; }
+        .collage-detail-box .collage-detail-head .head-cont .head-user .user-name {
+          margin-right: 2.66667vw; }
+      .collage-detail-box .collage-detail-head .head-cont .head-addr {
+        display: block;
+        color: #868686;
+        font-size: 3.2vw; }
+    .collage-detail-box .collage-detail-head .head-pic {
+      height: 1.33333vw;
+      vertical-align: bottom; }
+  .collage-detail-box .collage-detail-section {
+    background-color: #fff;
+    margin-top: 2.66667vw; }
+    .collage-detail-box .collage-detail-section .sec-box {
+      padding: 0 4vw 4vw; }
+      .collage-detail-box .collage-detail-section .sec-box .sec-tit {
+        height: 13.33333vw;
+        line-height: 13.33333vw;
+        font-size: 3.73333vw; }
+        .collage-detail-box .collage-detail-section .sec-box .sec-tit .sec-icon {
+          width: 4.26667vw;
+          margin-bottom: -0.53333vw; }
+        .collage-detail-box .collage-detail-section .sec-box .sec-tit .sec-right {
+          float: right; }
+      .collage-detail-box .collage-detail-section .sec-box .sec-cont {
+        height: 21.33333vw;
+        background-color: #FBFAFB;
+        padding: 2.66667vw 0;
+        overflow: hidden; }
+        .collage-detail-box .collage-detail-section .sec-box .sec-cont .sec-pic {
+          float: left;
+          width: 21.33333vw;
+          height: 21.33333vw;
+          background-color: #ccc; }
+          .collage-detail-box .collage-detail-section .sec-box .sec-cont .sec-pic > img {
+            width: 21.33333vw; }
+        .collage-detail-box .collage-detail-section .sec-box .sec-cont .cont-txt {
+          float: left;
+          width: 66.66667vw;
+          margin-left: 4vw; }
+          .collage-detail-box .collage-detail-section .sec-box .sec-cont .cont-txt > span {
+            display: block; }
+            .collage-detail-box .collage-detail-section .sec-box .sec-cont .cont-txt > span.c-txt {
+              height: 11.33333vw;
+              font-size: 3.73333vw;
+              font-weight: bold; }
+            .collage-detail-box .collage-detail-section .sec-box .sec-cont .cont-txt > span.txt-gray {
+              color: #AFAFAF;
+              height: 5.6vw;
+              font-size: 3.2vw; }
+          .collage-detail-box .collage-detail-section .sec-box .sec-cont .cont-txt .txt-box .txt-money {
+            color: #F5222D;
+            font-size: 3.46667vw; }
+          .collage-detail-box .collage-detail-section .sec-box .sec-cont .cont-txt .txt-box .txt-number {
+            float: right;
+            font-size: 3.46667vw; }
+      .collage-detail-box .collage-detail-section .sec-box .sec-tips {
+        color: #585C64;
+        font-size: 2.93333vw;
+        padding-top: 4.53333vw; }
+        .collage-detail-box .collage-detail-section .sec-box .sec-tips .tips-icon-1 {
+          padding: 1.86667vw;
+          background: url("/images/collage_detail/sele_28_icon.jpg") no-repeat center;
+          background-size: 100%;
+          margin-right: 1.33333vw; }
+        .collage-detail-box .collage-detail-section .sec-box .sec-tips .tips-icon-2 {
+          float: right;
+          padding: 0.53333vw 1.86667vw;
+          background: url("/images/collage_detail/more_28_icon.png") no-repeat center;
+          background-size: 100%;
+          margin-top: 1.86667vw; }
+    .collage-detail-box .collage-detail-section .sec-footer {
+      height: 10.4vw;
+      font-size: 3.73333vw;
+      border-top: 0.26667vw solid #efeff4;
+      padding: 4vw 6.66667vw 4vw 4vw; }
+      .collage-detail-box .collage-detail-section .sec-footer > span.foot-txt-1 {
+        float: left;
+        width: 10.66667vw;
+        margin-right: 2.66667vw; }
+      .collage-detail-box .collage-detail-section .sec-footer > span .no-txt {
+        color: #ccc;
+        font-size: 2.13333vw; }
+      .collage-detail-box .collage-detail-section .sec-footer .foot-txt-2 {
+        float: left;
+        width: 73.33333vw;
+        height: 9.33333vw;
+        resize: none;
+        background-color: transparent;
+        border-style: none;
+        outline-style: none; }
+  .collage-detail-box .collage-detail-cost {
+    background-color: #fff;
+    margin-top: 2.66667vw; }
+    .collage-detail-box .collage-detail-cost .cost-list {
+      padding: 2.66667vw 4vw; }
+      .collage-detail-box .collage-detail-cost .cost-list .cost-item {
+        height: 7.33333vw;
+        line-height: 7.33333vw;
+        font-size: 3.46667vw; }
+        .collage-detail-box .collage-detail-cost .cost-list .cost-item .cost-txt {
+          float: right; }
+    .collage-detail-box .collage-detail-cost .cost-footer {
+      border-top: 0.26667vw solid #efeff4;
+      padding: 4vw; }
+      .collage-detail-box .collage-detail-cost .cost-footer > span {
+        display: block; }
+        .collage-detail-box .collage-detail-cost .cost-footer > span.cost-number {
+          text-align: right;
+          font-size: 3.46667vw;
+          margin-bottom: 1.33333vw; }
+        .collage-detail-box .collage-detail-cost .cost-footer > span.cost-money {
+          text-align: right;
+          font-size: 4vw; }
+          .collage-detail-box .collage-detail-cost .cost-footer > span.cost-money .money-total {
+            color: #F5222D; }
+  .collage-detail-box .collage-detail-detail {
+    background-color: #fff;
+    margin-top: 2.66667vw; }
+    .collage-detail-box .collage-detail-detail .detail-list {
+      padding: 2.66667vw 4vw; }
+      .collage-detail-box .collage-detail-detail .detail-list .detail-item {
+        height: 8vw;
+        line-height: 8vw;
+        font-size: 3.46667vw; }
+        .collage-detail-box .collage-detail-detail .detail-list .detail-item .detail-tit {
+          color: #858585; }
+        .collage-detail-box .collage-detail-detail .detail-list .detail-item .detail-btn {
+          float: right;
+          color: #7D7D7D;
+          width: 10.66667vw;
+          height: 4.53333vw;
+          line-height: 4.53333vw;
+          text-align: center;
+          font-size: 2.93333vw;
+          border: 0.26667vw solid #efeff4;
+          border-radius: 2.66667vw;
+          margin-top: 1.33333vw; }
+
+.collage-detail-footer {
+  z-index: 10;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 94.66667vw;
+  padding: 2.66667vw;
+  background-color: #fff;
+  text-align: right;
+  border-top: 0.26667vw solid #efeff4; }
+  .collage-detail-footer .footer-btn {
+    display: inline-block;
+    width: 22.66667vw;
+    height: 7.46667vw;
+    line-height: 7.46667vw;
+    text-align: center;
+    font-size: 3.73333vw;
+    border: 0.26667vw solid #efeff4;
+    border-radius: 4vw;
+    margin-right: 1.33333vw; }
+    .collage-detail-footer .footer-btn.btn-active {
+      color: #fff;
+      background-color: #F5222D; }

@@ -1,0 +1,144 @@
+$size : 1/750 * 100vw;
+
+.collage-special-active-box {
+    background: url('/images/collage_special_active/collage_special.png') no-repeat center top;
+    background-size: 750 * $size auto;
+    width: 750 * $size;
+    margin: 0 auto;
+    padding-top: 358 * $size;
+    padding-bottom: 60 * $size;
+    .boutique-regiment-nav {
+        width: 702 * $size;
+        height: 85 * $size;
+        background-color: #8b1dcf;
+        margin: 0 auto;
+        padding: 12 * $size 60 * $size;
+        box-sizing: border-box;
+        >li {
+            color: #fff;
+            float: left;
+            width: 168 * $size;
+            height: 59 * $size;
+            border-radius: 30 * $size;
+            text-align: center;
+            cursor: pointer;
+            &.jpt {
+                background-color: #FF3399;
+            }
+            &.lbt {
+                background-color: #FF6600;
+                margin: 0 38 * $size;
+            }
+            &.cjt {
+                background-color: #FF0066;
+            }
+            >span {
+                display: block;
+                &.group-tit {
+                    font-size: 24 * $size;
+                    font-weight: bolder;
+                }
+                &.group-number {
+                    color: #ccc;
+                    font-size: 18 * $size;
+                    margin-top: -6 * $size;
+                }
+            }
+        }
+    }
+    .collage-special-active {
+        background: url('/images/collage_special_active/bg.png') no-repeat center;
+        background-size: 702 * $size 100%;
+        padding-bottom: 60 * $size;
+        min-height: 1000 * $size;
+        .boutique-regiment {
+            margin-bottom: 14 * $size;
+            &-list {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 0 46 * $size;
+                .boutique-regiment-item {
+                    width: 320 * $size;
+                    background-color: #fff;
+                    margin-top: 14 * $size;
+                    position: relative;
+                    &-pic {
+                        width: 38 * $size;
+                        position: absolute;
+                        top: 0;
+                        right: 40 * $size;
+                    }
+                    >a {
+                        display: block;
+                        .item-pic {
+                            width: 200 * $size;
+                            margin: 34 * $size 70 * $size 30 * $size 70 * $size;
+                        }
+                        .item-tit {
+                            display: block;
+                            width: 280 * $size;
+                            height: 20 * $size;
+                            font-size: 16 * $size;
+                            margin-left: 20 * $size;   
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+                    }
+                    .item-cont {
+                        margin-left: 13 * $size;
+                        margin-bottom: 10 * $size;
+                        position: relative;
+                        &-price {
+                            color: #ff0000;
+                            font-size: 38 * $size;
+                            font-weight: bolder;
+                            >span {
+                                margin-left: -8 * $size;
+                            }
+                        }
+                        &-del {
+                            color: #A8A8A8;
+                            font-size: 28 * $size;
+                            >span {
+                                margin-left: -5 * $size;
+                            }
+                        }
+                        &-progress {
+                            width: 169 * $size;
+                            margin-left: 8 * $size;
+                            >span {
+                                color: #6d6d6d;
+                                font-size: 18 * $size;
+                                &:nth-child(2) {
+                                    margin-left: 50 * $size;
+                                }
+                            }
+                            .progress-sty {
+                                display: block;
+                                height: 10 * $size;
+                                background-color: #b6b6b6;
+                                border-radius: 10 * $size;
+                                >span {
+                                    display: block;
+                                    width: 99 * $size;
+                                    height: 10 * $size;
+                                    background-color: #828282;
+                                    border-radius: 10 * $size;
+                                }
+                            }
+                        }
+                        &-pic {
+                            width: 100 * $size;
+                            position: absolute;
+                            right: 15 * $size;
+                            bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

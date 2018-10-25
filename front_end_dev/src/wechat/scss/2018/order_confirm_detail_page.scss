@@ -1,0 +1,847 @@
+$baseV: 1 / 750 * 100vw;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav.bottom-nav {
+    display: none;
+}
+
+.address-confirm-wrap {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 300;
+
+    .address-confirm {
+        width: 750 * $baseV;
+
+        .wrap {
+            position: absolute;
+            top: 25%;
+            left: 0;
+            margin: 40 * $baseV;
+            padding: 30 * $baseV;
+            background: #fff;
+            border-radius: 15 * $baseV;
+            border: 1 * $baseV solid #efeff4;
+            box-shadow: 0 5 * $baseV 15 * $baseV rgb(153, 153, 153);
+            font-size: 26 * $baseV;
+
+            .reminder {
+                width: 100%;
+                overflow: hidden;
+                border-bottom: 1 * $baseV solid #ccc;
+                padding-bottom: 20 * $baseV;
+
+                span {
+                    display: inline-block;
+                }
+
+                .tishi {
+                    float: left;
+                    font-size: 30 * $baseV;
+                    line-height: 60 * $baseV;
+                    font-weight: bold;
+                }
+
+                .close {
+                    float: right;
+                    width: 60 * $baseV;
+                    height: 60 * $baseV;
+                    background: url("/images/group_goods_detail/close.png") no-repeat;
+                    background-size: contain;
+
+                }
+            }
+
+            .con {
+                padding: 15 * $baseV;
+
+                .kaituantitle,
+                .cantuantitle {
+                    font-size: 28 * $baseV;
+                    font-weight: bold;
+                    line-height: 100 * $baseV;
+                }
+
+                .address-con {
+                    width: 100%;
+
+                    p {
+                        line-height: 40 * $baseV;
+                        font-size: 26 * $baseV;
+                    }
+
+                    .linkman {
+                        span {
+                            font-weight: bold;
+                        }
+
+                        .X_mobile {
+                            margin-left: 10 * $baseV;
+                        }
+                    }
+                }
+
+                .confirm-button {
+                    margin-top: 80 * $baseV;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    div {
+                        font-size: 26 * $baseV;
+                        padding: 13 * $baseV 100 * $baseV;
+                        border-radius: 5 * $baseV;
+                    }
+
+                    .affirm {
+                        color: #fff;
+                        background: rgb(0, 153, 255);
+                    }
+
+                    .cancel {
+                        color: #ccc;
+                        border: 1 * $baseV solid rgb(153, 153, 153);
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.container {
+    background-color: #f4f5f7;
+    width: 100%;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+
+    .order-confirm-complete-wrap {
+        font-family: "微软雅黑";
+        width: 100%;
+        height: 100%;
+
+        .order-confirm-complete {
+            background: #EFEFF4;
+            padding-bottom: 118 * $baseV;
+
+            .collage-detail-head {
+                background-color: #fff;
+
+                .head-cont {
+                    padding: 30 * $baseV;
+                    position: relative;
+
+                    .head-tit {
+                        display: block;
+                        font-size: 34 * $baseV;
+                        color: #333;
+                        font-weight: bold;
+                    }
+
+                    .address-main {
+                        .choose-address {
+                            position: relative;
+                            font-size: 30 * $baseV;
+                            color: #7D7D7D;
+                            text-align: center;
+                            line-height: 60 * $baseV;
+                            margin-bottom: 16 * $baseV;
+
+                            .address-more {
+                                position: absolute;
+                                right: 0;
+                                top: 50%;
+                                margin-top: -14 * $baseV;
+                                width: 28 * $baseV;
+                                height: 28 * $baseV;
+                                background: url("/images/order_confirm_detail_page/arrows_24_icon.png") no-repeat;
+                                background-size: contain;
+                                background-position-x: 100%;
+                            }
+                        }
+                    }
+
+                    .address-mess {
+                        .head-user {
+                            position: relative;
+                            font-size: 30 * $baseV;
+                            margin: 15 * $baseV 0;
+                            color: #333;
+
+                            .pick-up-site {
+                                width: 660 * $baseV;
+                                display: block;
+                                font-weight: 600;
+                            }
+
+                            .user-name {
+                                margin-right: 20 * $baseV;
+                                font-weight: 600;
+                            }
+
+                            .user-number {
+                                font-weight: 600;
+                            }
+
+                            .head-user-more {
+                                position: absolute;
+                                right: 0;
+                                top: 50%;
+                                margin-top: -14 * $baseV;
+                                width: 28 * $baseV;
+                                height: 28 * $baseV;
+                                background: url("/images/order_confirm_detail_page/arrows_24_icon.png") no-repeat;
+                                background-size: contain;
+                                background-position-x: 100%;
+                            }
+                        }
+                    }
+
+                    .head-addr {
+                        display: block;
+                        color: #7D7D7D;
+                        font-size: 26 * $baseV;
+                    }
+
+                    .head-pic {
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        height: 10 * $baseV;
+                    }
+                }
+            }
+
+            .collage-detail-section {
+                background-color: #fff;
+                margin-top: 20 * $baseV;
+
+                .sec-box {
+                    padding: 0 30 * $baseV;
+                    margin-bottom: 20 * $baseV;
+                    border-bottom: 1 * $baseV solid #efeff4;
+
+                    .sec-tit {
+                        font-size: 28 * $baseV;
+                        font-weight: bold;
+                        padding: 36 * $baseV 0;
+
+                        .sec-icon {
+                            width: 32 * $baseV;
+                            margin-bottom: -4 * $baseV;
+                        }
+
+                        .J_use_coupon {
+                            padding-right: 32 * $baseV;
+                            background: url("/images/order_confirm_detail_page/arrows_24_icon.png") no-repeat right;
+                            background-size: 14 * $baseV 26 * $baseV;
+                        }
+                    }
+
+                    .sec-main {
+                        background: #FBFAFB;
+                        width: 750 * $baseV;
+                        height: 240 * $baseV;
+                        margin-left: -30 * $baseV;
+
+                        .sec-cont {
+                            margin-left: 30 * $baseV;
+                            padding-top: 30 * $baseV;
+                            height: 160 * $baseV;
+                            position: relative;
+
+                            .sec-pic {
+                                float: left;
+                                width: 160 * $baseV;
+                                height: 160 * $baseV;
+
+                                >img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+
+                            .cont-txt {
+                                float: left;
+                                width: 500 * $baseV;
+                                margin-left: 30 * $baseV;
+
+                                >span {
+                                    display: block;
+
+                                    &.c-txt {
+                                        width: 500 * $baseV;
+                                        max-height: 85 * $baseV;
+                                        overflow: hidden;
+                                        font-size: 28 * $baseV;
+                                        font-weight: bold;
+                                    }
+
+                                    &.txt-gray {
+                                        width: 500 * $baseV;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        white-space: nowrap;
+                                        color: #C2C2C2;
+                                        height: 42 * $baseV;
+                                        font-size: 26 * $baseV;
+                                    }
+                                }
+
+                                .txt-box {
+                                    position: absolute;
+                                    bottom: -10 * $baseV;
+                                    right: 30 * $baseV;
+                                    width: 500 * $baseV;
+
+                                    .txt-money {
+                                        font-size: 26 * $baseV;
+                                        color: #F5222D;
+                                        font-weight: bold;
+
+                                        .price {
+                                            font-size: 30 * $baseV;
+                                        }
+                                    }
+                                    .quantity {
+                                        float: right;
+                                        font-size: 26 * $baseV;
+                                    }
+
+                                    .txt-number {
+                                        float: right;
+                                        font-size: 26 * $baseV;
+                                    }
+
+                                    .number-button {
+                                        position: absolute;
+                                        bottom: -20 * $baseV;
+                                        right: 0;
+                                        width: 100%;
+                                        overflow: hidden;
+
+                                        .button {
+                                            position: relative;
+                                            float: right;
+                                            width: 214 * $baseV;
+                                            height: 60 * $baseV;
+                                            display: flex;
+                                            justify-content: space-between;
+                                            align-items: center;
+
+                                            .reduce,
+                                            .add {
+                                                display: inline-block;
+                                                width: 60 * $baseV;
+                                                height: 60 * $baseV;
+                                            }
+
+                                            .reduce {
+                                                background: url("/images/order_confirm_detail_page/reduce_failure.png") no-repeat;
+                                                background-size: contain;
+                                            }
+
+                                            .add {
+                                                background: url("/images/order_confirm_detail_page/add.png") no-repeat;
+                                                background-size: contain;
+                                            }
+
+                                            .text {
+                                                width: 82 * $baseV;
+                                                height: 60 * $baseV;
+                                                outline: none;
+                                                border: none;
+                                                background: #F5F5F5;
+                                                text-align: center;
+                                                -webkit-appearance: none;
+                                                border-radius: 0;
+                                            }
+
+                                            .input-box {
+                                                position: absolute;
+                                                top: 0;
+                                                right: 0;
+                                            }
+
+                                            input:disabled {
+                                                background: #F5F5F5;
+                                                color: black;
+                                                -webkit-text-fill-color: black;
+                                                -webkit-opacity: 1;
+                                                opacity: 1;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+
+                    .sec-footer {
+                        height: 78 * $baseV;
+                        font-size: 28 * $baseV;
+                        line-height: 36 * $baseV;
+                        padding: 30 * $baseV 50 * $baseV 30 * $baseV 30 * $baseV;
+
+                        .foot-txt-1 {
+                            float: left;
+                            width: 80 * $baseV;
+                            margin-right: 20 * $baseV;
+                        }
+
+                        .foot-txt-2 {
+                            float: left;
+                            width: 500 * $baseV;
+                            color: #AAA;
+                            border: 0;
+                        }
+                    }
+
+                    .sec-tips {
+                        color: #C2C2C2;
+                        font-size: 22 * $baseV;
+                        padding-top: 34 * $baseV;
+
+                        .tips-icon-1 {
+                            padding: 14 * $baseV;
+                            background: url('/images/order_confirm_detail_page/no_28_icon.png') no-repeat center;
+                            background-size: 100%;
+                            margin-right: 10 * $baseV;
+                        }
+
+                        .tips-icon-2 {
+                            float: right;
+                            padding: 4 * $baseV 14 * $baseV;
+                            background: url('/images/order_confirm_detail_page/more_28_icon.png') no-repeat center;
+                            background-size: 100%;
+                            margin-top: 14 * $baseV;
+                        }
+                    }
+
+                    .service-policy {
+                        margin: 30 * $baseV 0;
+                        overflow: hidden;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+
+                        .policy {
+                            width: 700 * $baseV;
+                            float: left;
+
+                            .item {
+                                float: left;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+
+                                .icon {
+                                    display: inline-block;
+                                    width: 28 * $baseV;
+                                    height: 28 * $baseV;
+                                    margin-right: 8 * $baseV;
+
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+
+                                .policy-con {
+                                    width: 650 * $baseV;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                }
+                            }
+                        }
+
+                        .service-policy-more {
+                            float: right;
+                            width: 28 * $baseV;
+                            height: 28 * $baseV;
+                            background: url("/images/order_confirm_detail_page/more_28_icon.png") no-repeat;
+                            background-size: contain;
+                            background-position-y: 50%;
+                        }
+                    }
+                }
+            }
+
+            // 配送服务
+            .delvivery-service-wrap {
+                background: #fff;
+
+                .delvivery-service {
+                    padding-top: 38 * $baseV;
+                    padding-bottom: 34 * $baseV;
+                    margin: 0 30 * $baseV;
+                    border-bottom: 1 * $baseV solid #efeff4;
+                    overflow: hidden;
+
+                    .title {
+                        float: left;
+                        font-size: 28 * $baseV;
+                        font-weight: bold;
+                        color: #414141;
+                    }
+
+                    .mess {
+                        float: right;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .left {
+                            text-align: right;
+                            color: #7D7D7D;
+                            font-size: 22 * $baseV;
+                        }
+
+                        .right {
+                            margin-left: 24 * $baseV;
+                            font-size: 22 * $baseV;
+                            color: #7D7D7D;
+                            width: 15 * $baseV;
+                            height: 27 * $baseV;
+                            background: url("/images/order_confirm_detail_page/arrows_24_icon.png") no-repeat;
+                            background-size: cover;
+                        }
+                    }
+                }
+
+                .sec-footer {
+                    height: 78 * $baseV;
+                    font-size: 28 * $baseV;
+                    line-height: 36 * $baseV;
+                    padding: 30 * $baseV 50 * $baseV 30 * $baseV 30 * $baseV;
+
+                    .foot-txt-1 {
+                        float: left;
+                        width: 80 * $baseV;
+                        margin-right: 20 * $baseV;
+                    }
+
+                    .foot-txt-2 {
+                        float: left;
+                        width: 500 * $baseV;
+                        color: #333;
+                        border: 0;
+                    }
+                }
+            }
+
+            // 优惠券
+            .discount-coupon-wrap {
+                width: 100%;
+                background: #fff;
+                margin-top: 20 * $baseV;
+
+                .discount-coupon {
+                    padding: 36 * $baseV 30 * $baseV;
+                    overflow: hidden;
+
+                    .title {
+                        float: left;
+                        font-size: 28 * $baseV;
+                        font-weight: bold;
+                        color: #333;
+                    }
+
+                    .common {
+                        float: right;
+                        color: #B0B0B0;
+                        font-size: 26 * $baseV;
+                        display: flex;
+                        align-items: center;
+
+                        .discount-coupon-more-logo {
+                            display: inline-block;
+                            width: 15 * $baseV;
+                            height: 27 * $baseV;
+                            margin-left: 22 * $baseV;
+                            background: url("/images/order_confirm_detail_page/arrows_24_icon.png") no-repeat;
+                            background-size: contain;
+                        }
+                    }
+
+                    // 拥有可用张数
+                    .discount-coupon-possess {
+                        color: #333;
+
+                        .num {
+                            color: #F5222D;
+                        }
+                    }
+
+                    // 已选优惠
+                    .discount-coupon-selected {
+                        color: #333;
+
+                        .price {
+                            color: #F5222D;
+                        }
+                    }
+                }
+            }
+
+            // 支付方式
+            .mode-payment-wrap {
+                width: 100%;
+                background: #fff;
+                margin-top: 20 * $baseV;
+
+                .mode-payment {
+                    padding: 0 30 * $baseV;
+                    padding-bottom: 36 * $baseV;
+
+                    .mode-payment-title {
+                        height: 100 * $baseV;
+                        line-height: 100 * $baseV;
+                        font-size: 28 * $baseV;
+                        font-weight: bold;
+                        color: #333;
+                        border-bottom: 1 * $baseV solid #DEDFE0;
+                    }
+
+                    .mode-payment-way {
+                        padding: 25*$baseV 0;
+                        font-size: 26*$baseV;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .mode-payment-left {
+                            overflow: hidden;
+                            display: flex;
+                            align-items: center;
+
+                            .logo {
+                                float: left;
+                                width: 60 * $baseV;
+                                height: 60 * $baseV;
+                            }
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+
+                            .mode-payment-center {
+                                float: left;
+                                margin-left: 20*$baseV;
+                                color: #333;
+
+                                .mode-title {
+                                    font-size: 28 * $baseV;
+                                }
+
+                                .mode-payment-else {
+                                    color: #b28850;
+                                    font-size: 22 * $baseV;
+                                }
+
+                                .safety {
+                                    color: #9D9D9D;
+                                }
+                            }
+                        }
+
+                        .mode-payment-right {
+                            float: right;
+
+                            span {
+                                display: block;
+                                width: 46*$baseV;
+                                height: 46*$baseV;
+                                border: 1 * $baseV solid #D2D2D2;
+                                border-radius: 50%;
+
+                            }
+
+                            .mode-payment-right-btn {
+                                border: 0;
+                                width: 46*$baseV;
+                                height: 46*$baseV;
+                                background: url("/images/order_confirm_detail_page/checkbox_sele_44_icon.png") no-repeat;
+                                background-size: cover;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .collage-detail-cost {
+                background-color: #fff;
+                margin-top: 20 * $baseV;
+                margin-bottom: 100 * $baseV;
+
+                .cost-list {
+                    padding: 20 * $baseV 30 * $baseV;
+
+                    .cost-item {
+                        height: 55 * $baseV;
+                        line-height: 55 * $baseV;
+                        font-size: 26 * $baseV;
+
+                        .cost-txt {
+                            float: right;
+                        }
+                    }
+                }
+
+                .cost-footer {
+                    border-top: 1 * $baseV solid #efeff4;
+                    padding: 30 * $baseV;
+
+                    >span {
+                        display: block;
+
+                        &.cost-number {
+                            text-align: right;
+                            font-size: 26 * $baseV;
+                            font-weight: bold;
+                            margin-bottom: 10 * $baseV;
+                        }
+
+                        &.cost-money {
+                            text-align: right;
+                            font-size: 30 * $baseV;
+                            font-weight: bold;
+
+                            .money-total {
+                                color: #F5222D;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .collage-detail-detail {
+                background-color: #fff;
+                margin-top: 20 * $baseV;
+
+                .detail-list {
+                    padding: 20 * $baseV 30 * $baseV;
+
+                    .detail-item {
+                        height: 60 * $baseV;
+                        line-height: 60 * $baseV;
+                        font-size: 26 * $baseV;
+
+                        .detail-tit {
+                            color: #858585;
+                        }
+
+                        .detail-btn {
+                            float: right;
+                            color: #7D7D7D;
+                            width: 80 * $baseV;
+                            height: 34 * $baseV;
+                            line-height: 34 * $baseV;
+                            text-align: center;
+                            font-size: 22 * $baseV;
+                            border: 1 * $baseV solid #efeff4;
+                            border-radius: 20 * $baseV;
+                            margin-top: 10 * $baseV;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 确认支付按钮
+.confirm {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 750 * $baseV;
+    height: 98 * $baseV;
+    text-align: center;
+    line-height: 98 * $baseV;
+    color: #fff;
+    font-size: 34 * $baseV;
+    background: url("/images/order_confirm_detail_page/queding-button.png") no-repeat;
+    background-size: cover;
+}
+
+.maskLayersh {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    float: left;
+
+    .maskLayersh-shop {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        z-index: 2;
+        position: fixed;
+        border: 1px solid #eee;
+        background: #f2f2f2;
+        overflow-x: hidden;
+        overflow-y: scroll;
+
+        .btn-block-top {
+            margin: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            line-height: 44px;
+            background: #fff;
+            font-size: 16px;
+            text-align: center;
+            box-shadow: 0 0 4px -1px #ccc;
+            background: linear-gradient(to bottom, #fff, #f2f2f2);
+            position: relative;
+
+            span {
+                width: 20px;
+                text-align: center;
+            }
+
+            .btn {
+                line-height: 1.8;
+                display: block;
+                font-size: 12px;
+                color: #ff9100;
+                position: absolute;
+                right: 20px;
+                top: 9px;
+                ;
+                border: 1px solid #ff9100;
+                border-radius: 100px;
+                padding: 3px 8px;
+            }
+        }
+
+        .mt44 {
+            margin-top: 44px;
+        }
+
+        .h50 {
+            height: 50px;
+        }
+    }
+}

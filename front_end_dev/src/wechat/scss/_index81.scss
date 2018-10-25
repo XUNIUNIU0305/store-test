@@ -1,0 +1,470 @@
+.wechat-index-81 {    
+    background: url('/images/index81/bg2.png') center/contain repeat-y;
+    &:before{
+        display: block !important;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 50px;
+        left: 0;
+        background: linear-gradient(0deg, rgb(229, 57, 53), rgb(255, 145, 0));
+        z-index: -1;
+    }
+    .high-lighted {
+        color: #cf4d44;
+    }
+    .h2 {
+        font-weight: 700;
+    }
+    img{
+        max-width: 100%;
+        display: block;
+    }
+    // background: #fff;
+    @include clearfix;
+    /* carousel */
+    .slide,
+    .slide-product {
+        position: relative;
+        overflow: hidden;
+        z-index: 2;
+        > ul {
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            > li {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                /* 解决js阻塞页面显示首屏 */
+                &:last-child {
+                    z-index: 0;
+                }
+            }
+        }
+        .dot {
+            position: absolute;
+            left: 25px;
+            right: 25px;
+            bottom: 10px;
+            font-size: 0;
+            text-align: center;
+            span {
+                display: inline-block;
+                width: 5px;
+                height: 1px;
+                background: #fff;
+                margin-left: 5px;
+                position: relative;
+                top: -3px;
+            }
+        }
+    }
+    .slide {
+        &:before {
+            content: '';
+            display: block;
+            width: 100%;
+            padding-top: 43.7%;
+        }
+        // &:after{
+        //     content: '';
+        //     position: absolute;
+        //     bottom: 0;
+        //     left: 0;
+        //     right: 0;
+        //     height: 20px;
+        //     background: radial-gradient(farthest-corner at top center , transparent 0%, transparent 75%, #440062 75%, #440062 100%);
+        // }
+        li {
+            img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+        }
+        .dot {
+            text-align: right;
+            z-index: 1;
+            .cur {
+                display: inline-block;
+                width: 5px;
+                height: 5px;
+                border: 1px solid #fff;
+                border-radius: 50%;
+                background-color: transparent;
+                top: 0;
+            }
+        }
+    }
+    .slide-product {
+        margin-top: 15%;
+        overflow: visible;
+        &:before {
+            content: '';
+            display: block;
+            width: 100%;
+            padding-top: 60%;
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -35%;
+            bottom: 0;
+            background: url('/images/index81/bg4.png') top center/73% no-repeat;
+        }
+        .dot {
+            span {
+                background: rgba(#fff, .6);
+            }
+            .cur{
+                background: #fff;
+            }
+        }
+        .slide-product-list{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 14px 14px;
+            li{
+                flex: 1 0 20%;
+                max-width: 20%;
+                padding: 6px;
+                box-sizing: border-box;
+                a{
+                    color: #fff;
+                    text-align: center;
+                }
+                div{
+                    position: relative;
+                    padding: 50%;
+                    margin-bottom: 5px;
+                }
+                img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    display: block;
+                }
+                span {
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+
+    // section 实惠好货
+    .index-section-1 ,
+    .index-section-2 {
+        .title{
+            position: relative;
+            font-size: 18px;
+            font-size: calc(18 / 320 * 100vw);
+            color: #fcf797;
+            text-align: center;
+            font-weight: 600;
+            padding: 17px 0;
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                width: 20%;
+                height: 2px;
+                top: 50%;
+                margin-top: -1px;
+            }
+            &:before{
+                left: 15%;
+                background: linear-gradient(to left, #fcf797, transparent);
+            }
+            &:after {
+                right: 15%;
+                background: linear-gradient(to right, #fcf797, transparent);
+            }
+            span{
+                display: inline-block;
+                position: relative;
+                &:before,
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 6px;
+                    height: 6px;
+                    background: #fcf797;
+                    border-radius: 50%;
+                    top: 50%;
+                    margin-top: -3px;
+                }
+                &:before{
+                    left: -12px;
+                }
+                &:after {
+                    right: -12px;
+                }
+            }
+        }
+    }
+
+    .index-section-1 {      
+        .col-3{
+            display: flex;
+            padding: 0 4px;
+            li{
+                flex-grow: 1;
+                padding: 0 4px;
+                img{
+                    margin-bottom: 10px;
+                }
+            }
+            .label{
+                height: 75px;
+                background: #fff;
+                border: 4px solid;
+                position: relative;
+                text-align: right;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: flex-end;
+                img{
+                    position: absolute;
+                    width: 50%;
+                    left: 0;
+                    bottom: 50%;
+                    margin-bottom: 0;
+                    transform: translateY(50%);
+                }
+                .btn{
+                    display: inline-block;
+                    width: 34px;
+                    line-height: 15px;
+                    margin-bottom: 6px;
+                    margin-right: 4px;
+                    text-align: center;
+                    border: 1px solid;
+                    border-radius: 8px;
+                }
+                i{
+                    margin-bottom: 4px;
+                    font-style: normal;
+                    color: #666;
+                    font-size: 12px;
+                }
+            }
+            .label_1{
+                color:  #e2b188;
+            }
+            .label_2{
+                color:  #9fc6e7;
+            }
+            .label_3{
+                color:  #f8d67f;
+            }
+        }
+    }
+
+    .index-section-2{
+        .content{
+            display: flex;
+            padding-right: 10px;
+            padding-bottom: 10px;
+        }
+        .aside{
+            flex-grow: 1;
+            min-width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            background: url('/images/index81/bg3.png') bottom left/68% no-repeat;
+            h2, h3, p{
+                margin: 4px 0;
+            }
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                box-sizing: border-box;
+                flex: 1 0 50%;
+                max-width: 50%;
+                padding: 4px;
+            }
+        }
+    }
+    .index-section-3,
+    .index-section-4{
+        .banner{
+            padding: 10px;
+        }
+    }
+    .index-section-3{
+        .col-3{
+            display: flex;
+            li{
+                padding: 8px;
+                text-align: center;
+                a{
+                    color: #fff;
+                }
+            }
+            .img-box{
+                min-height: 160px;
+            }
+            strong{
+                font-size: 16px;
+                margin: 5px 0;
+                display: block;
+                margin-top: -36px;
+            }
+            .btn{
+                display: inline-block;
+                line-height: 24px;
+                border-radius: 12px;
+                padding: 0 10px;
+            }
+            .btn-1{
+                background: linear-gradient(to right, #ffb1d3, #d724e0);
+            }
+            .btn-2{
+                background: linear-gradient(to right, #ffe200, #ff9100);
+            }
+            .btn-3{
+                background: linear-gradient(to right, #6edc68, #2deabf);
+            }
+        }
+    }
+    .index-section-4{
+        background: #e0144e;
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 4px;
+            li{
+                box-sizing: border-box;
+                flex: 1 0 50%;
+                max-width: 50%;
+                padding: 4px;
+            }
+        }
+    }
+
+    // to btn
+    .top-btn {
+        display: block;
+        margin: 0;
+        text-align: center;
+        background: url('/images/index_new/up_arrows.png') 40% center/11px 17px no-repeat;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 50px;
+        color: #fff;
+        position: relative;
+        &:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(90deg, rgb(229, 57, 53), rgb(255, 145, 0));
+            z-index: -1;
+        }
+    }
+}
+// 品牌周
+.wechat-activity-bill{
+    .close-btn {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 12px;
+        right: 12px;
+        background: url('/images/activity-bill/close_icon.png') center/contain no-repeat;
+        z-index: 99;
+    }
+    .sub-content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        // bottom: 0;
+        left: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        &.in {
+            display: flex;
+        }
+    }
+    .img-box{
+        position: relative;
+        p{
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: (436px / 2);
+            bottom: 50px;
+            font-size: 14px;
+            color: #2e5c9e;
+            margin: 0 auto;
+        }
+    }
+    .img-responsive {
+        width: (556px / 2);
+        margin: 0 auto 30px;
+    }
+    .entrance{
+        .img-responsive {
+            width: (580px / 2);
+            margin-bottom: 0;
+            position: relative;
+            z-index: 2;
+        }
+    }
+    .btn-row{
+        display: flex;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+    .btn {
+        background: transparent url('/images/activity-jd/buy_but.png') center/contain no-repeat;
+        padding: 0;
+        width: (361px / 2);
+        height: (192px / 2);
+        line-height: 35px;
+        margin: 0 15px;
+        margin-top: -26px;
+        color: #fff;
+        font-size: 15px;
+        transition: transform .1s;
+        &:active {
+            transform: scale(.98);
+        }
+    }
+    img.left {
+        position: absolute;
+        left: 0;
+        top:0;
+        width: 50%;
+    }
+    img.right {
+        width: 50%;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}

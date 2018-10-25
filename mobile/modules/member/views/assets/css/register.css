@@ -1,0 +1,94 @@
+.mobile-register-update .logo {
+  margin-top: 10px;
+  height: 11em;
+  background: url("/images/register/logo.png") no-repeat center;
+  background-size: auto 60%; }
+
+.mobile-register-update .hr-split {
+  height: 1em;
+  background: url("/images/register/hr.png") no-repeat center;
+  background-size: contain; }
+
+.mobile-register-update .register-form {
+  padding: 0 5%; }
+  .mobile-register-update .register-form li {
+    line-height: 4em;
+    color: #b2b2b2;
+    border-bottom: 1px solid #d8d8d8;
+    position: relative;
+    display: -webkit-flex;
+    display: flex; }
+  .mobile-register-update .register-form label {
+    -webkit-flex: 0 0 18%;
+            flex: 0 0 18%;
+    display: inline-block;
+    color: #333;
+    font-size: 3.46667vw; }
+  .mobile-register-update .register-form input:disabled {
+    background-color: #fff; }
+  .mobile-register-update .register-form .cascade-location {
+    -webkit-flex: 0 0 82%;
+            flex: 0 0 82%;
+    display: -webkit-flex;
+    display: flex; }
+    .mobile-register-update .register-form .cascade-location span {
+      -webkit-flex: 1 1 auto;
+              flex: 1 1 auto;
+      padding: 0 10px 0 6px;
+      width: 28%;
+      position: relative;
+      background: #fff url("/images/account/arrow-right.png") no-repeat right center;
+      background-size: auto 14px;
+      overflow: hidden; }
+      .mobile-register-update .register-form .cascade-location span:first-child {
+        padding-left: 0; }
+      .mobile-register-update .register-form .cascade-location span select {
+        border: 0;
+        width: 100%;
+        line-height: 2em;
+        outline: 0;
+        border: 0;
+        -webkit-flex: 1 1 auto;
+                flex: 1 1 auto;
+        outline: 0;
+        line-height: normal;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        background-color: #FFF; }
+        .mobile-register-update .register-form .cascade-location span select:disabled {
+          background-color: #FFF; }
+  .mobile-register-update .register-form .mobile-input input {
+    -webkit-flex: auto;
+            flex: auto; }
+  .mobile-register-update .register-form .valid-btn {
+    -webkit-flex: 0 0 70px;
+            flex: 0 0 70px;
+    text-align: center;
+    border-radius: 4px;
+    color: #fff;
+    line-height: 2.7em;
+    padding: 0 12px;
+    margin: 0.7em 0;
+    background-color: #ff9100; }
+    .mobile-register-update .register-form .valid-btn.disabled {
+      color: #9d9d9d;
+      background-color: #dedfe0; }
+  .mobile-register-update .register-form input {
+    font-size: 3.46667vw;
+    border: 0;
+    outline: 0; }
+    .mobile-register-update .register-form input::-webkit-input-placeholder {
+      color: #b2b2b2; }
+
+.mobile-register-update .register-btn {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 90%;
+  border-radius: 6px;
+  text-align: center;
+  background: #cf4d44;
+  font-size: 20px;
+  line-height: 2.5em;
+  color: #fff;
+  background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#ff9100), to(#e53935)); }

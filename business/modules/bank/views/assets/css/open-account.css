@@ -1,0 +1,258 @@
+.business-main-wrap {
+  background-color: #FFF; }
+
+.business-bank-info {
+  min-width: 1200px;
+  color: #333;
+  margin: 0 40px; }
+  .business-bank-info ul,
+  .business-bank-info li {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .business-bank-info .title {
+    font-size: 16px;
+    line-height: 2;
+    margin-top: 30px;
+    font-weight: 700;
+    border-bottom: 2px solid #ccc; }
+  .business-bank-info .form-group {
+    margin: 30px 0;
+    display: block; }
+    .business-bank-info .form-group label {
+      width: 60px;
+      font-weight: 400;
+      margin-right: 20px; }
+  .business-bank-info .bank-name {
+    display: inline-block;
+    height: 34px;
+    font-size: 14px;
+    width: 292px;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    padding-right: 24px;
+    margin: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    vertical-align: middle; }
+    .business-bank-info .bank-name:after {
+      content: ' ';
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 12px;
+      margin-top: -2px;
+      vertical-align: middle;
+      width: 0;
+      height: 0;
+      border-top: 4px dashed;
+      border-right: 4px solid transparent;
+      border-left: 4px solid transparent; }
+    .business-bank-info .bank-name img {
+      width: 20px; }
+  .business-bank-info .select-bank-list {
+    width: 292px;
+    height: 34px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle; }
+    .business-bank-info .select-bank-list ul {
+      position: absolute;
+      z-index: 99;
+      width: 100%;
+      height: 226px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #FFF;
+      overflow-y: auto; }
+      .business-bank-info .select-bank-list ul li {
+        font-size: 14px;
+        margin: 8px;
+        margin-right: 6px;
+        cursor: pointer;
+        padding: 4px 0;
+        border-bottom: 1px solid #efeef2; }
+        .business-bank-info .select-bank-list ul li:hover {
+          color: #459ae9; }
+        .business-bank-info .select-bank-list ul li img {
+          width: 20px; }
+  .business-bank-info .bank-btn-group {
+    display: inline-block;
+    vertical-align: middle; }
+    .business-bank-info .bank-btn-group .btn {
+      width: 146px;
+      padding: 4px 20px;
+      float: left;
+      border: 1px solid #ccc; }
+      .business-bank-info .bank-btn-group .btn:first-child {
+        border-radius: 4px 0 0 4px; }
+      .business-bank-info .bank-btn-group .btn:last-child {
+        border-left: none;
+        border-radius: 0 4px 4px 0; }
+      .business-bank-info .bank-btn-group .btn.active {
+        color: #459ae9;
+        box-shadow: none; }
+  .business-bank-info .form-control {
+    width: 292px; }
+  .business-bank-info .handle-box {
+    margin-top: 60px;
+    text-align: center; }
+    .business-bank-info .handle-box .btn {
+      background-color: #459ae9;
+      color: #fff;
+      width: 153px;
+      padding: 10px 12px;
+      font-size: 16px; }
+    .business-bank-info .handle-box .error-tip {
+      margin-left: 30px;
+      cursor: pointer;
+      position: relative; }
+      .business-bank-info .handle-box .error-tip:before {
+        content: '!';
+        position: absolute;
+        left: -22px;
+        top: 2px;
+        background-color: #9d9d9d;
+        width: 16px;
+        height: 16px;
+        text-align: center;
+        line-height: 20px;
+        color: #fff;
+        border-radius: 40px; }
+  .business-bank-info .search-bank-box {
+    display: inline-block;
+    vertical-align: middle;
+    width: 292px;
+    height: 43px;
+    position: relative; }
+  .business-bank-info .select-bank {
+    width: 100%;
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    padding-right: 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative; }
+    .business-bank-info .select-bank:after {
+      content: ' ';
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 12px;
+      margin-top: -2px;
+      vertical-align: middle;
+      width: 0;
+      height: 0;
+      border-top: 4px dashed;
+      border-right: 4px solid transparent;
+      border-left: 4px solid transparent; }
+  .business-bank-info .search-bank {
+    width: 100%;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #FFF;
+    position: absolute;
+    top: 0;
+    z-index: 2; }
+    .business-bank-info .search-bank .search-input {
+      width: 71%;
+      font-size: 14px;
+      padding: 6px 0;
+      border: none;
+      border-bottom: 1px solid #ccc; }
+      .business-bank-info .search-bank .search-input:focus {
+        outline: none; }
+    .business-bank-info .search-bank .search-icon {
+      display: inline-block;
+      width: 72px;
+      padding-left: 2%;
+      margin-top: 4px;
+      color: #459ae9;
+      cursor: pointer; }
+    .business-bank-info .search-bank .modal-loading-box {
+      margin-top: 60px; }
+    .business-bank-info .search-bank ul {
+      height: 226px;
+      overflow-y: auto; }
+      .business-bank-info .search-bank ul li {
+        font-size: 14px;
+        margin: 8px 0;
+        margin-right: 6px;
+        cursor: pointer;
+        padding: 4px 0;
+        border-bottom: 1px solid #efeef2; }
+        .business-bank-info .search-bank ul li:hover {
+          color: #459ae9; }
+  .business-bank-info .area-select {
+    display: inline-block;
+    font-size: 14px;
+    padding-left: 20px; }
+    .business-bank-info .area-select .open {
+      cursor: pointer;
+      color: #9d9d9d;
+      padding-left: 10px; }
+      .business-bank-info .area-select .open.active {
+        color: #459ae9; }
+
+.bank-modal ul,
+.bank-modal li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.bank-modal .modal-dialog {
+  width: 960px;
+  height: 590px; }
+
+.bank-modal .modal-header {
+  background-color: #dedfe0;
+  text-align: center;
+  color: #333;
+  font-size: 22px; }
+
+.bank-modal .close span {
+  color: #333; }
+
+.bank-modal .title {
+  text-align: left;
+  font-size: 18px; }
+
+.bank-modal .bank-list {
+  margin: 0 30px; }
+  .bank-modal .bank-list .list-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+    font-size: 18px; }
+    .bank-modal .bank-list .list-box img {
+      width: 20px;
+      margin-right: 6px; }
+    .bank-modal .bank-list .list-box ul {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 25%;
+              flex: 0 0 25%;
+      border-right: 1px solid #efe9f2;
+      padding-left: 30px; }
+      .bank-modal .bank-list .list-box ul:last-child {
+        border: none; }
+      .bank-modal .bank-list .list-box ul li {
+        margin: 10px 30px 10px 0;
+        padding-left: 10px;
+        cursor: pointer;
+        border: 2px dashed transparent; }
+        .bank-modal .bank-list .list-box ul li:hover {
+          background-color: rgba(69, 154, 233, 0.2); }
+        .bank-modal .bank-list .list-box ul li.active {
+          background-color: rgba(69, 154, 233, 0.2);
+          border: 2px dashed #459ae9; }
+
+.bank-modal .area-list {
+  margin: 0 30px; }
+
+.bank-modal .btn-primary {
+  background-color: #459ae9;
+  border-color: #459ae9; }

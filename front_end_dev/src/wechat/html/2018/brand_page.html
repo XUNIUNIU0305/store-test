@@ -1,0 +1,166 @@
+@@include('../head.inc')
+<div class="shop-nav-search-box black search">
+    <a href=""></a>
+    <input type="text" name="" id="">
+    <a href=""></a>
+    <a href=""></a>
+    <span>搜索</span>
+    <span>取消</span>
+</div>
+<main class="container">
+    <div class="brand-page-container">
+        <div class="brand-banner">
+            <img src="/images/brand_page/1.png" alt="">
+        </div>
+        <!--carousel-->
+        <div id="slide" class="slide">
+            <ul>
+                <li>
+                    <a href="#"><img src="/images/index_remaster/carousel/banner00.jpg"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="/images/index_remaster/carousel/banner01.jpg"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="/images/index_remaster/carousel/banner02.jpg"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="/images/index_remaster/carousel/banner03.jpg"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="/images/index_remaster/carousel/banner04.jpg"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="/images/index_remaster/carousel/banner05.jpg"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="/images/index_remaster/carousel/banner06.jpg"></a>
+                </li>
+            </ul>
+            <div class="dot">
+                <span class="cur"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!-- 历史记录页面 -->
+        <div class="shop-search-history">
+            <div class="initial-show ">
+                <div class="hist-search">
+                    <div class="hist-title">
+                        <span>历史搜索</span>
+                        <a href='#' class="hist-cancel">清空</a>
+                    </div>
+                    <div class="hist-cantain">
+                        <ul class="uls-list">
+                            <li>村上春树</li>
+                            <li>村上春树</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="recommend-pro">
+            <div class="sec-title"><span>甄选推荐</span></div>
+            <div class="pro-box">
+                <div class="pro-item">
+                    <div class="img">
+                        <img src="/images/index_remaster/carousel/banner06.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <p class="item-title">重力感应车载支架</p>
+                            <p class="sub-title">重力感应车载支架</p>
+                        </div>
+                        <a class="btn-buy" href="">立即购买</a>
+                    </div>
+                </div>
+                <div class="pro-item">
+                    <div class="img">
+                        <img src="/images/index_remaster/carousel/banner06.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <p class="item-title">重力感应车载支架</p>
+                            <p class="sub-title">重力感应车载支架</p>
+                        </div>
+                        <a class="btn-buy" href="">立即购买</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="store-pro">
+            <div class="sec-title"><span>店铺商品</span></div>
+            <div class="sort-list">
+                <span class="active">价格</span>
+                <span>销量</span>
+            </div>
+            <div class="items-list">
+                <div class="item">
+                    <a href="">
+                        <div class="img">
+                            <img src="/images/index/prod7.jpg" alt="">
+                        </div>
+                        <p class="item-title">汽车车载空气净化器</p>
+                        <p class="price">
+                            ￥<span>888</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <div class="img">
+                            <img src="/images/index/prod7.jpg" alt="">
+                        </div>
+                        <p class="item-title">汽车车载空气净化器</p>
+                        <p class="price">
+                            ￥<span>888</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <div class="img">
+                            <img src="/images/index/prod7.jpg" alt="">
+                        </div>
+                        <p class="item-title">汽车车载空气净化器</p>
+                        <p class="price">
+                            ￥<span>888</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <div class="img">
+                            <img src="/images/index/prod7.jpg" alt="">
+                        </div>
+                        <p class="item-title">汽车车载空气净化器</p>
+                        <p class="price">
+                            ￥<span>888</span>
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<a class="brand-page-back-top">
+    <img src="/images/brand_page/back-top.png" alt="">
+    顶部
+</a>
+@@include('../footer.inc')
+<script>
+    // Carousel 
+    $('#slide').swipeSlide({
+        continuousScroll: true,
+        speed: 5000,
+        transitionType: 'cubic-bezier(0.22, 0.69, 0.72, 0.88)',
+        callback: function (i) {
+            $('.dot').children().eq(i).addClass('cur').siblings().removeClass('cur');
+        }
+    });
+</script>

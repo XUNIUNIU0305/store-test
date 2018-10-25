@@ -1,0 +1,65 @@
+a:hover {
+  text-decoration: none; }
+
+.maintenance-18-629 {
+  background: url("/images/180629/section1/banner.jpg") no-repeat center top, url("/images/180629/section1/bg.jpg") no-repeat center 1426px;
+  padding-top: 1428px; }
+  .maintenance-18-629 .product-content {
+    width: 1440px;
+    margin: 0 auto;
+    background: url("/images/180629/section1/bg_1.png") no-repeat top center;
+    background-size: 1440px auto; }
+  .maintenance-18-629 .section {
+    padding-top: 155px;
+    padding-bottom: 30px; }
+  .maintenance-18-629 .section-title {
+    text-align: center;
+    margin: 56px 0 84px; }
+  .maintenance-18-629 .item-list {
+    background: linear-gradient(to bottom, #460082, #6900a6);
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 70px; }
+    .maintenance-18-629 .item-list .item {
+      -ms-flex: 0 0 418px;
+          flex: 0 0 418px;
+      margin: 22px 86px;
+      text-align: center; }
+    .maintenance-18-629 .item-list .img-box {
+      height: 418px;
+      background-color: #fff;
+      margin-bottom: 10px; }
+      .maintenance-18-629 .item-list .img-box img {
+        max-width: 100%; }
+    .maintenance-18-629 .item-list .item-title {
+      width: 398px;
+      font-size: 28px;
+      color: #fff;
+      height: 1.8em;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+    .maintenance-18-629 .item-list .item-price {
+      display: -ms-flexbox;
+      display: flex;
+      color: #fff;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+      .maintenance-18-629 .item-list .item-price > span {
+        padding: 4px 10px; }
+      .maintenance-18-629 .item-list .item-price .left {
+        -ms-flex: 1;
+            flex: 1;
+        background-color: #eb2312; }
+        .maintenance-18-629 .item-list .item-price .left span {
+          font-size: 26px; }
+      .maintenance-18-629 .item-list .item-price .right {
+        -ms-flex: 0 0 154px;
+            flex: 0 0 154px;
+        font-size: 24px;
+        background: #000; }

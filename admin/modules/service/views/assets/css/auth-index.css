@@ -1,0 +1,76 @@
+body {
+  overflow-x: hidden; }
+
+.bg-muted {
+  background: #f2f2f2; }
+
+.table-fix {
+  table-layout: fixed; }
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.container {
+  width: 1190px;
+  max-width: none !important; }
+
+.high-lighted {
+  color: #df483d; }
+
+.admin-audit-list-container .admin-audit-list-title {
+  margin-top: 30px;
+  line-height: 46px;
+  padding: 0 26px;
+  font-size: 14px;
+  background: #e5e5e5;
+  margin-bottom: 20px; }
+  .admin-audit-list-container .admin-audit-list-title.bg-danger {
+    background: #fce7e6; }
+  .admin-audit-list-container .admin-audit-list-title .apx-acc-order-nav {
+    border: 0;
+    margin: 0 -26px;
+    padding: 10px; }
+    .admin-audit-list-container .admin-audit-list-title .apx-acc-order-nav a {
+      line-height: 30px; }
+  .admin-audit-list-container .admin-audit-list-title .btn {
+    border-radius: 0; }
+  .admin-audit-list-container .admin-audit-list-title .pull-left {
+    padding: 8px 0;
+    line-height: 1; }
+    .admin-audit-list-container .admin-audit-list-title .pull-left .input-group {
+      max-width: 250px;
+      display: inline-table;
+      float: left;
+      margin-right: -2px; }
+      .admin-audit-list-container .admin-audit-list-title .pull-left .input-group .form-control {
+        height: 34px;
+        border-radius: 0; }
+
+.admin-audit-list-container .auth-check-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px; }
+  .admin-audit-list-container .auth-check-box .auth-btn {
+    margin-left: 20px; }
+
+.admin-audit-list-container .table-panel {
+  border: 1px solid #ccc;
+  font-size: 12px; }
+  .admin-audit-list-container .table-panel.dashed th,
+  .admin-audit-list-container .table-panel.dashed td {
+    position: relative;
+    border-top: 1px dashed #ccc;
+    border-bottom: 1px dashed #ccc;
+    overflow: visible; }
+  .admin-audit-list-container .table-panel thead {
+    background: #e6e6e6; }
+    .admin-audit-list-container .table-panel thead th {
+      text-align: center !important; }
+  .admin-audit-list-container .table-panel tbody tr {
+    cursor: pointer; }

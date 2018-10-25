@@ -1,0 +1,104 @@
+body {
+  overflow-x: hidden; }
+
+.bg-muted {
+  background: #f2f2f2; }
+
+.table-fix {
+  table-layout: fixed; }
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.container {
+  width: 1190px;
+  max-width: none !important; }
+
+.high-lighted {
+  color: #df483d; }
+
+.bank-funds {
+  color: #333; }
+  .bank-funds > .nav-tabs {
+    margin: 30px 0;
+    border-bottom: 3px solid #df483d; }
+    .bank-funds > .nav-tabs li {
+      margin-bottom: 0;
+      text-align: center; }
+      .bank-funds > .nav-tabs li.active a {
+        border: 0;
+        background: #df483d;
+        color: #fff; }
+      .bank-funds > .nav-tabs li a {
+        min-width: 100px;
+        line-height: 1;
+        height: 34px;
+        background: #fce7e6;
+        border: 0;
+        margin-right: 20px; }
+  .bank-funds .title {
+    color: #333;
+    background-color: #fce7e6;
+    margin: 0;
+    padding: 16px 20px; }
+  .bank-funds .pay_out_box {
+    width: 320px;
+    margin: 80px auto; }
+    .bank-funds .pay_out_box .form-group {
+      margin: 8px 0; }
+    .bank-funds .pay_out_box .form-control {
+      width: 296px; }
+    .bank-funds .pay_out_box .code .form-control {
+      width: 180px;
+      margin-right: 14px; }
+    .bank-funds .pay_out_box .code .btn {
+      color: #df483d;
+      border: 1px solid #df483d; }
+    .bank-funds .pay_out_box .out-btn-group {
+      margin-top: 32px;
+      text-align: center; }
+      .bank-funds .pay_out_box .out-btn-group .btn {
+        margin: 0 23px;
+        border: 1px solid #df483d;
+        padding: 6px 30px;
+        border-radius: 40px; }
+        .bank-funds .pay_out_box .out-btn-group .btn:first-child {
+          color: #df483d; }
+  .bank-funds .modal-loading-box {
+    position: absolute;
+    left: 45%;
+    top: 40%; }
+  .bank-funds .detail .header {
+    background-color: #fce7e6;
+    padding: 6px 0; }
+  .bank-funds .detail .form-group {
+    margin: 6px 0; }
+    .bank-funds .detail .form-group label {
+      display: inline-block; }
+  .bank-funds .detail .input-group-btn .btn {
+    line-height: 20px; }
+  .bank-funds .detail .date-picker-box .input-group {
+    width: 70%;
+    vertical-align: middle;
+    display: inline-table; }
+  .bank-funds .table-panel {
+    margin-top: 20px;
+    font-size: 12px; }
+    .bank-funds .table-panel.dashed th,
+    .bank-funds .table-panel.dashed td {
+      position: relative;
+      border-top: 1px dashed #ccc;
+      border-bottom: 1px dashed #ccc;
+      overflow: visible; }
+    .bank-funds .table-panel thead {
+      background: #e6e6e6; }
+      .bank-funds .table-panel thead th {
+        text-align: center !important; }
+    .bank-funds .table-panel tbody td:last-child .link {
+      color: #df483d; }
+  .bank-funds .add-more {
+    font-size: 16px;
+    color: #999;
+    cursor: pointer; }

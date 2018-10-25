@@ -1,0 +1,13 @@
+<?php
+namespace common\ActiveRecord;
+
+use Yii;
+use yii\db\ActiveRecord;
+
+class CouponLogAR extends ActiveRecord{
+
+
+    public static function tableName(){
+        return '{{%coupon_log}}';
+    }
+}

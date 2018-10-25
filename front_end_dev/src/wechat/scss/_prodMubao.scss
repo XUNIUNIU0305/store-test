@@ -1,0 +1,94 @@
+.wechat-product-mubao {
+	img {
+		max-width: 100%;
+		vertical-align: top;
+	}
+	.content {
+		background: url('/images/mubao_brand/bg.jpg') no-repeat center top;
+		background-size: 100%;
+		.item {
+			position: relative;
+			>img {
+				width: 50%;
+				padding-left: 50%;
+			}
+			.title {
+				position: absolute;
+				left: 3%;
+				top: 12%;
+				width: 60%;
+				>img {
+					max-width: 90%;
+				}
+				.h2 {
+					font-size: 18px;
+					margin: 0;
+					margin-top: 2%;
+					color: #938e8e;
+				}
+				>h2 {
+					color: #a82c36;
+					font-size: 30px;
+					padding-left: 8%;
+					margin: 5% 0;
+				}
+				.btn {
+					color: #fff;
+					font-size: 24px;
+					background: #a82c36;
+					width: 60%;
+					text-align: center;
+					border-radius: 6px;
+					padding: 2% 0;
+				}
+			}
+			.detail {
+				padding: 10% 5%;
+				text-align: center;
+				>img {
+					&:first-child {
+						max-width: 80%;
+						padding-bottom: 5%; 
+					}
+				}
+			}
+			&.even {
+				>img {
+					padding-left: 0;
+				}
+				.title {
+					left: 52%;
+					top: 4%;
+					.h1 {
+						color: #3778d0;
+						font-weight: 700;
+						font-size: 24px;
+						margin: 0;
+					}
+					.h2 {
+						text-align: center;
+						color: #4f8ddf;
+						font-size: 14px;
+					}
+					.h3 {
+						text-align: center;
+						padding-left: 50%;
+						span {
+							background: #a82c36;
+							color: #fff;
+							display: inline-block;
+							width: 50%;
+							border-radius: 50px;
+							text-align: left;
+							padding: 2% 0 2% 10%;
+							font-size: 14px;
+						}
+					}
+				}
+				.detail {
+					padding: 10% 0;
+				}
+			}
+		}
+	}
+}

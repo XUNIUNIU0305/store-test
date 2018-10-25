@@ -1,0 +1,109 @@
+ul, ol, li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a:hover {
+  text-decoration: none; }
+
+.time-limit-active-box {
+  width: 1220px;
+  height: 2800px;
+  margin: 0 auto;
+  position: relative; }
+  .time-limit-active-box .time-limit-active {
+    width: 1220px;
+    position: absolute;
+    top: 700px;
+    left: 8px; }
+    .time-limit-active-box .time-limit-active .time-limit-nav {
+      width: 550px;
+      height: 36px;
+      margin: 10px auto;
+      padding: 4px 20px;
+      background-color: #fff;
+      border-radius: 20px; }
+      .time-limit-active-box .time-limit-active .time-limit-nav > li {
+        float: left;
+        color: #fff;
+        width: 136px;
+        height: 28px;
+        line-height: 28px;
+        font-size: 24px;
+        text-align: center;
+        border-radius: 20px;
+        background-color: #A3A3A3;
+        letter-spacing: 2px;
+        cursor: pointer; }
+        .time-limit-active-box .time-limit-active .time-limit-nav > li:nth-child(2) {
+          margin: 0 51px; }
+        .time-limit-active-box .time-limit-active .time-limit-nav > li.active {
+          background-color: #f90000; }
+    .time-limit-active-box .time-limit-active > div .time-limit-product {
+      padding: 0 41px; }
+      .time-limit-active-box .time-limit-active > div .time-limit-product > ul {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row;
+            flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+        .time-limit-active-box .time-limit-active > div .time-limit-product > ul .product-item {
+          width: 269px;
+          background-color: #fff;
+          margin-top: 15px;
+          margin-left: 14px; }
+          .time-limit-active-box .time-limit-active > div .time-limit-product > ul .product-item-cont {
+            display: block;
+            }
+            .time-limit-active-box .time-limit-active > div .time-limit-product > ul .product-item-cont > img {
+              width: 269px;
+              height: 281px; }
+          .time-limit-active-box .time-limit-active > div .time-limit-product > ul .product-item .p_item {
+            display: inline-block;
+            width: 100%;
+            height: 17px;
+            text-align: center;
+            background-color: #fff;
+            padding-bottom: 10px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis; }
+          .time-limit-active-box .time-limit-active > div .time-limit-product > ul .product-item-describe {
+            color: #fff;
+            height: 62px;
+            background-color: #FF0033; }
+            .time-limit-active-box .time-limit-active > div .time-limit-product > ul .product-item-describe > a {
+              color: #fff;
+              float: right;
+              margin-top: 10px; }
+            .time-limit-active-box .time-limit-active > div .time-limit-product > ul .product-item-describe-pic {
+              margin-top: 8px;
+              margin-left: 6px;
+              vertical-align: top; }
+            .time-limit-active-box .time-limit-active > div .time-limit-product > ul .product-item-describe .describe-price {
+              font-size: 20px; }
+              .time-limit-active-box .time-limit-active > div .time-limit-product > ul .product-item-describe .describe-price > span {
+                font-size: 26px;
+                font-weight: bolder; }
+            .time-limit-active-box .time-limit-active > div .time-limit-product > ul .product-item-describe .describe-purchase {
+              float: right;
+              margin-top: 10px;
+              margin-right: 6px;
+              font-weight: bolder;
+              font-size: 16px; }
+
+.return-top {
+  width: 100%;
+  height: 50px;
+  background-color: #7104AD; }
+  .return-top > a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-decoration: none; }

@@ -1,0 +1,88 @@
+.apx-acc-main {
+    .apx-acc-title {
+        .style-control {
+            font-size: 16px;
+            &::before {
+                content: ' ';
+                position: absolute;
+                left: 34px;
+                top: 15px;
+                width: 4px;
+                height: 17px;
+                background: #eb2f2f;
+            }
+        }
+    }
+}
+
+
+.apx-acc-wechat-list {
+    margin-top: 10px;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 190px;
+        top: 60px;
+        background-color: #f6f6f6;
+        width: 100%;
+        height: 10px;
+    }
+    .list-unstyled {
+        li {
+            border: 1px solid #ccc;
+            margin-top: -1px;
+        }
+        .media {
+            padding: 15px 20px;
+            height: 170px;
+            img {
+                border: 1px solid #ccc;
+                width: 180px;
+                height: 140px;
+            }
+            .media-body {
+                position: relative;
+                padding-bottom: 20px;
+                .h4 {
+                    display: inline-block;
+                    font-size: 16px;
+                    margin-bottom: 8px;
+                    font-weight: bold;
+                    &:hover {
+                        color: #eb2f2f;
+                        text-decoration: underline;
+                    }
+                }
+                .h3 {
+                    &:hover {
+                        color: #eb2f2f;
+                        text-decoration: underline;
+                    }
+                }
+                >p {
+                    font-size: 14px;
+                    margin-right: 34px;
+                    color:#999;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 4;
+                    overflow: hidden;
+                }
+                .pull-left {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    .pull-left {
+                        font-size: 12px;
+                    }
+                }
+                .btn-link {
+                    color: $brand-danger;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,122 @@
+@@include('head.inc') @@include('admin_header.inc')
+<!-- aside nav end -->
+<!-- main area start -->
+<div class="admin-frame-main">
+    <div class="admin-main-wrap">
+        <!--management main content-->
+        <div class="admin-publish-product">
+            <ul class="nav nav-tabs">
+                <li><strong>商品列表 > 发布商品</strong></li>
+                <li class="pull-right">
+                    <strong>供应商：</strong>供应商A
+                </li>
+            </ul>
+            <ol class="publish-progress list-inline">
+                <li class="past">选择类目</li>
+                <li class="current">填写商品基本信息</li>
+                <li>编辑属性价格</li>
+            </ol>
+            <div class="admin-pp-choose-category">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div class="admin-management-panel">
+                            <div class="header">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="输入名称／拼音首字母">
+                                    <span class="input-group-btn">
+                                        <button class="btn"><i class="glyphicon glyphicon-search"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="iscroll_container with-header">
+                                <ul class="list-unstyled dashed-split">
+                                    <!--single li-->
+                                    <li class="active">
+                                        福建省
+                                    </li>
+                                    <!--single li-->
+                                    <li>
+                                        江西省
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="admin-management-panel">
+                            <div class="header">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="输入名称／拼音首字母">
+                                    <span class="input-group-btn">
+                                        <button class="btn"><i class="glyphicon glyphicon-search"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="iscroll_container with-header">
+                                <ul class="list-unstyled dashed-split">
+                                    <!--single li-->
+                                    <li class="active">
+                                        福建省
+                                    </li>
+                                    <!--single li-->
+                                    <li>
+                                        江西省
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="admin-management-panel">
+                            <div class="header">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="输入名称／拼音首字母">
+                                    <span class="input-group-btn">
+                                        <button class="btn"><i class="glyphicon glyphicon-search"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="iscroll_container with-header">
+                                <ul class="list-unstyled dashed-split">
+                                    <!--single li-->
+                                    <li class="active">
+                                        福建省
+                                    </li>
+                                    <!--single li-->
+                                    <li>
+                                        江西省
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="apx-pp-choose-category-tip-box">
+                <span class="high-lighted">您当前选择的是：</span><span>汽车/用品/配件/改装</span> &gt; <span>车用清洗用品/清洗工具</span> &gt; <span>车用洗车机/设备</span>
+            </div>
+            <button type="submit" class="btn btn-danger btn-block">下一步</button>
+        </div>
+    </div>
+</div>
+<!-- main area start -->
+
+@@include('footer_admin.inc')
+
+<script>
+    $(function () {
+        var scrolls = [];
+        $('.iscroll_container').each(function () {
+            scrolls.push(new IScroll(this, {
+                mouseWheel: true,
+                scrollbars: true,
+                scrollbars: 'custom'
+            }))
+        })
+        // refresh api
+        scrolls.forEach(function (scroll) {
+            scroll.refresh();
+        })
+    })
+
+</script>

@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <title>积分兑换工具</title>
+</head>
+
+<body>
+    <div class="game-container">
+        <ul class="tool-nav" id="tool-nav">
+        </ul>
+        <div class="figure-container">
+            <div class="figure after hidden">
+                <img id="man-before">
+            </div>
+            <div class="figure before">
+                <img id="man-after">
+            </div>
+            <div class="ani-smoke">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+            <img class="ani-tool"/>
+        </div>
+        <a href="javascript:void(0)" class="btn" data-play></a>
+        <a href="#" id="btn-open" class="btn-open btn hidden"></a>
+    </div>
+    <!-- masks hidden -->
+    <div class="mask-bg hidden">
+        <div class="mask-cnt mask-gift show">
+            <div class="title"></div>
+            <p>你获得了一个九大爷礼包！!</p>
+            <div class="box"></div>
+            <div class="timeout"><img src="./images/game/timeout.gif" alt=""/></div>
+        </div>
+    </div>
+</body>
+
+</html>

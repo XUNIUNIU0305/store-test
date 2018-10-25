@@ -1,0 +1,62 @@
+.admin-main-wrap {
+    min-width: 1190px;
+    padding: 0 30px;
+    font-size: 14px;
+}
+.create-order-container {
+    margin-top: 60px;
+    display: flex;
+    align-content: center;
+    .section {
+        flex: 50%;
+        &:last-child {
+            margin-top: 43px;
+            h3 {
+                margin-top: 0;
+            }
+        }
+    }
+    .form-box {
+        .navbar-left {
+            margin-right: 10px;
+        }
+        >.input-group {
+            select {
+                max-width: 90px;
+            }
+            input {
+                width: 100px;
+                margin-left: 10px;
+            }
+            label {
+                line-height: 34px;
+                padding-left: 6px;
+            }
+        }
+    }
+    table {
+        width: 90%;
+        margin: 30px 0;
+        td {
+            line-height: 3;
+            text-align: center;
+            border: 1px solid #ccc;
+            &:first-child {
+                width: 166px;
+            }
+        }
+    }
+    textarea {
+        width: 90%;
+        height: 200px;
+        resize: none;
+        padding: 6px;
+    }
+}
+.confirm-btn-box {
+    margin-top: 30px;
+    .btn {
+        padding: 6px 40px;
+        font-size: 18px;
+    }
+}

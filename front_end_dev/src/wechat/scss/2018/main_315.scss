@@ -1,0 +1,239 @@
+$base: 1 / 750 * 100vw;
+.activity-main {
+    img {
+        max-width: 100%;
+        vertical-align: top;
+    }
+    .main-container {
+        border-top: 10 * $base solid #1b186e;
+        background: #1b186e url('/images/activity_315/main/bg01.png') no-repeat center top/cover;
+        .nav-tabs {
+            height: 336 * $base;
+            background: url('/images/activity_315/main/tabs.png') no-repeat center top/cover;
+            display: flex;
+            margin-left: 66 * $base;
+            padding: 0 120 * $base 0 40 * $base;
+            a {
+                flex: 1;
+                height: 150 * $base;
+                margin-top: 130 * $base;
+            }
+        }
+        .nav-current {
+            display: flex;
+            align-content: center;
+            justify-content: space-around;
+            margin: 20 * $base 66 * $base;
+            background-color: #fd2c7d;
+            a {
+                color: #fff;
+            }
+        }
+        .section-title {
+            margin: 0 25 * $base;
+            position: relative;
+            .btn-rule {
+                width: 120 * $base;
+                height: 60 * $base;
+                position: absolute;
+                right: 160 * $base;
+                top: 0;
+            }
+            .more-seckill {
+                width: 120 * $base;
+                height: 40 * $base;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+            .rule {
+                width: 385 * $base;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 70 * $base;
+                margin: 0 auto;
+                color: #fc0320;
+                border: 1px solid #fc0320;
+                padding: 6 * $base;
+                border-radius: 6 * $base;
+                background-color: rgba(255, 255, 255, 0.7);
+            }
+        }
+        .seckill {
+            .items-box {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 25 * $base;
+                padding: 10 * $base;
+                background-color: #290b6f;
+                .item {
+                    flex: 1;
+                    min-width: 35%;
+                    padding: 10 * $base;
+                    margin: 11 * $base;
+                    background-color: #5112a0;
+                    a {
+                        color: #fff;
+                    }
+                    .price {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        p {
+                            margin: 20 * $base 0 10 * $base;
+                            span {
+                                font-size: 34 * $base;
+                            }
+                        }
+                        .btn-buy {
+                            color: #f70b0b;
+                            background-color: #fde46d;
+                            padding: 0 5 * $base;
+                            border-radius: 5 * $base;
+                        }
+                    }
+                }
+            }
+        }
+        .group {
+            width: 625 * $base;
+            margin: 180 * $base auto 0;
+            background: url('/images/activity_315/main/bg_k.png') center/cover no-repeat;
+            position: relative;
+            color: #fff;
+            /* title */
+            &:before {
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: -171 * $base;
+                margin-left: -276 * $base;
+                background: url('/images/activity_315/main/pintuan.png') center/cover no-repeat;
+                height: 171 * $base;
+                width: 552 * $base;
+            }
+            .btn-rule {
+                position: absolute;
+                width: 120 * $base;
+                height: 40 * $base;
+                right: 248 * $base;
+                top: -90 * $base;
+            }
+            .rule {
+                width: 385 * $base;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                margin: 0 auto;
+                color: #fc0320;
+                border: 1px solid #fc0320;
+                padding: 6 * $base;
+                border-radius: 6 * $base;
+                background-color: rgba(255, 255, 255, 0.7);
+                z-index: 99;
+            }
+            .group-stage {
+                position: relative;
+                top: -24 * $base;
+                margin-bottom: 20 * $base;
+                .title {
+                    text-align: right;
+                    width: 560 * $base;
+                    line-height: 73 * $base;
+                    padding-right: 10 * $base;
+                    background: url('/images/activity_315/main/bg_title.png') right center no-repeat;
+                    background-size: 381 * $base auto;
+                    font-size: 32 * $base;
+                }
+                .items-box {
+                    display: flex;
+                    padding: 10 * $base;
+                    background: url('/images/activity_315/main/item_bg.png') no-repeat center bottom;
+                    background-size: 687 * $base auto;
+                    .item {
+                        flex: 1;
+                        margin: 0 8 * $base;
+                        position: relative;
+                        a {
+                            color: #fff;
+                        }
+                        p {
+                            margin: 0;
+                        }
+                        .item-title {
+                            margin-top: 10 * $base;
+                            height: 3em;
+                            overflow: hidden;
+                        }
+                        .sale {
+                            font-size: 20 * $base;
+                        }
+                        .price {
+                            span {
+                                color: #f6f423;
+                            }
+                        }
+                        .btn-buy {
+                            position: absolute;
+                            right: 10 * $base;
+                            bottom: 5 * $base;
+                            color: #f70b0b;
+                            background-color: #fde46d;
+                            border-radius: 5px;
+                            padding: 0 6 * $base;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .money-off {
+        text-align: center;
+        margin: 20 * $base 60 * $base;
+        position: relative;
+        img {
+            margin: 10 * $base;
+        }
+        .btn-rule {
+            position: absolute;
+            width: 120 * $base;
+            height: 40 * $base;
+            right: 110 * $base;
+            top: 56 * $base;
+        }
+        .rule {
+            width: 385 * $base;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 110 * $base;
+            margin: 0 auto;
+            color: #fc0320;
+            border: 1px solid #fc0320;
+            padding: 6 * $base;
+            border-radius: 6 * $base;
+            background-color: rgba(255, 255, 255, 0.7);
+            z-index: 99;
+        }
+    }
+    .back-top {
+        text-align: center;
+        a {
+            color: #fff;
+            font-size: 31 * $base;
+            padding: 35 * $base 0 10 * $base 0;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                left: 48%;
+                top: 0;
+                width: 29 * $base;
+                height: 23 * $base;
+                background: url('/images/activity_315/main/arrow.png') no-repeat center/cover;
+            }
+        }
+    }
+}

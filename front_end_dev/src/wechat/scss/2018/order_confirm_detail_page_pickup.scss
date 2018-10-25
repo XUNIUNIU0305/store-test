@@ -1,0 +1,493 @@
+$baseV: 1 / 750 * 100vw;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.order-confirm-complete-pickup-wrap {
+    .order-confirm-complete {
+        background: #EFEFF4;
+        padding-bottom: 118 * $baseV; 
+        .collage-detail-head {
+            background-color: #fff;
+            .head-cont {
+                padding: 30 * $baseV;
+                position: relative;
+                .head-tit {
+                    display: block;
+                    font-size: 34 * $baseV;
+                    color: #333;
+                    font-weight: bold;
+                }
+                .address-main {
+                    .choose-address {
+                        position: relative;
+                        font-size: 30 * $baseV;
+                        color: #7D7D7D;
+                        text-align: center;
+                        line-height: 60 * $baseV;
+                        margin-bottom: 16 * $baseV;
+                        .address-more {
+                            position: absolute;
+                            right: 0;
+                            top: 50%;
+                            margin-top: -14 * $baseV;
+                            width: 28 * $baseV;
+                            height: 28 * $baseV;
+                            background: url("/images/order_confirm_detail_page/arrows_24_icon.png") no-repeat;
+                            background-size: contain;
+                            background-position-x: 100%;
+                        }
+                    }
+                }
+                .address-mess {
+                    .head-user {
+                        position: relative;
+                        font-size: 30 * $baseV;
+                        margin: 15 * $baseV 0;
+                        color: #333;
+                        .pick-up-site {
+                            display: block;
+                        }
+                        .user-name {
+                            margin-right: 20 * $baseV;
+                        }
+                        .head-user-more {
+                            position: absolute;
+                            right: 0;
+                            top: 50%;
+                            margin-top: -14 * $baseV;
+                            width: 28 * $baseV;
+                            height: 28 * $baseV;
+                            background: url("/images/order_confirm_detail_page/arrows_24_icon.png") no-repeat;
+                            background-size: contain;
+                            background-position-x: 100%;
+                        }
+                    }
+                }
+                
+                .head-addr {
+                    display: block;
+                    color: #7D7D7D;
+                    font-size: 24 * $baseV;
+                }
+                .head-pic {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    height: 10 * $baseV;
+                }
+            }
+        }
+        .collage-detail-section {
+            background-color: #fff;
+            margin-top: 20 * $baseV;
+            .sec-box {
+                padding: 0 30 * $baseV 30 * $baseV;
+                margin-bottom: 20 * $baseV;
+                .sec-tit {
+                    height: 100 * $baseV;
+                    line-height: 100 * $baseV;
+                    font-size: 28 * $baseV;
+                    font-weight: bold;
+                    .sec-icon {
+                        width: 32 * $baseV;
+                        margin-bottom: -4 * $baseV;
+                    }
+                }
+                .sec-main {
+                    background: #FBFAFB;
+                    width: 750 * $baseV;
+                    height: 240 * $baseV;
+                    margin-left: -30 * $baseV;
+                    .sec-cont {
+                        margin-left: 30 * $baseV;
+                        padding-top: 30 * $baseV;
+                        width: 750 * $baseV;
+                        height: 160 * $baseV;
+                        .sec-pic {
+                            float: left;
+                            width: 160 * $baseV;
+                            height: 160 * $baseV;
+                            background-color: #ccc;
+                            >img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        .cont-txt {
+                            float: left;
+                            width: 500 * $baseV;
+                            margin-left: 30 * $baseV;
+                            >span {
+                                display: block;
+                                &.c-txt {
+                                    height: 85 * $baseV;
+                                    font-size: 28 * $baseV;
+                                    font-weight: bold;
+                                }
+                                &.txt-gray {
+                                    color: #C2C2C2;
+                                    height: 42 * $baseV;
+                                    font-size: 24 * $baseV;
+                                }
+                            }
+                            .txt-box {
+                                position: relative;
+                                .txt-money {
+                                    font-size: 16 * $baseV;
+                                    color: #F5222D;
+                                    font-weight: bold;
+                                    .price {
+                                        font-size: 30 * $baseV;
+                                    }
+                                }
+                                .txt-number {
+                                    float: right;
+                                    font-size: 26 * $baseV;
+                                }
+                                .number-button {
+                                    position: absolute;
+                                    bottom: -20 * $baseV;
+                                    right: 0;
+                                    width: 100%;
+                                    overflow: hidden;
+                                    .button {
+                                        float: right;
+                                        width: 214 * $baseV;
+                                        height: 60 * $baseV;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        .reduce,
+                                        .add {
+                                            display: inline-block;
+                                            width: 60 * $baseV;
+                                            height: 60 * $baseV; // background-size: 50%/50%;
+                                        }
+                                        .reduce {
+                                            background: url("/images/order_confirm_detail_page/reduce_failure.png") no-repeat;
+                                            background-size: contain;
+                                        }
+                                        .add {
+                                            background: url("/images/order_confirm_detail_page/add.png") no-repeat;
+                                            background-size: contain;
+                                        }
+                                        .text {
+                                            width: 82 * $baseV;
+                                            height: 60 * $baseV;
+                                            outline: none;
+                                            border: none;
+                                            background: #F5F5F5;
+                                            text-align: center;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .sec-tips {
+                    color: #C2C2C2;
+                    font-size: 22 * $baseV;
+                    padding-top: 34 * $baseV;
+                    .tips-icon-1 {
+                        padding: 14 * $baseV;
+                        background: url('/images/order_confirm_detail_page/no_28_icon.png') no-repeat center;
+                        background-size: 100%;
+                        margin-right: 10 * $baseV;
+                    }
+                    .tips-icon-2 {
+                        float: right;
+                        padding: 4 * $baseV 14 * $baseV;
+                        background: url('/images/order_confirm_detail_page/more_28_icon.png') no-repeat center;
+                        background-size: 100%;
+                        margin-top: 14 * $baseV;
+                    }
+                }
+                .service-policy {
+                    margin-top: 30 * $baseV;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .policy {
+                        width: 595 * $baseV;
+                        float: left;
+                        overflow: hidden;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .item {
+                            float: left;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            .icon {
+                                display: inline-block;
+                                width: 28 * $baseV;
+                                height: 28 * $baseV;
+                                margin-right: 8 * $baseV;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+                    .service-policy-more {
+                        float: right;
+                        width: 28 * $baseV;
+                        height: 28 * $baseV;
+                        background: url("/images/order_confirm_detail_page/more_28_icon.png") no-repeat;
+                        background-size: contain;
+                        background-position-y: 50%;
+                    }
+                }
+            }
+        } // 配送服务
+        .delvivery-service-wrap {
+            background: #fff;
+            .delvivery-service {
+                padding: 38 * $baseV 30 * $baseV 34 * $baseV;
+                overflow: hidden;
+                .title {
+                    float: left;
+                    font-size: 28 * $baseV;
+                    font-weight: bold;
+                    color: #414141;
+                }
+                .mess {
+                    float: right;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .left {
+                        text-align: right;
+                        color: #7D7D7D;
+                        font-size: 22 * $baseV;
+                    }
+                    .right {
+                        margin-left: 24 * $baseV;
+                        font-size: 22 * $baseV;
+                        color: #7D7D7D;
+                        width: 15 * $baseV;
+                        height: 27 * $baseV;
+                        background: url("/images/order_confirm_detail_page/arrows_24_icon.png") no-repeat;
+                        background-size: cover;
+                    }
+                }
+            }
+            .sec-footer {
+                height: 78 * $baseV;
+                font-size: 28 * $baseV;
+                line-height: 36 * $baseV;
+                border-top: 2 * $baseV solid #efeff4;
+                padding: 30 * $baseV 50 * $baseV 30 * $baseV 30 * $baseV;
+                .foot-txt-1 {
+                    float: left;
+                    width: 80 * $baseV;
+                    margin-right: 20 * $baseV;
+                }
+                .foot-txt-2{
+                    float: left;
+                    width: 550 * $baseV;
+                    // line-height: 36 * $baseV;
+                    color: #AAA;
+                    border: 0;
+                }
+            }
+        } // 优惠券
+        .discount-coupon-wrap {
+            width: 100%;
+            background: #fff;
+            margin-top: 20 * $baseV;
+            .discount-coupon {
+                padding: 36 * $baseV 30 * $baseV;
+                overflow: hidden;
+                .title {
+                    float: left;
+                    font-size: 28 * $baseV;
+                    font-weight: bold;
+                    color: #333;
+                }
+                
+                .common {
+                    float: right;
+                    color: #B0B0B0;
+                    font-size: 24 * $baseV;
+                    display: flex;
+                    align-items: center;
+                    .discount-coupon-more-logo {
+                        display: inline-block;
+                        width: 15 * $baseV;
+                        height: 27 * $baseV;
+                        margin-left: 22 * $baseV;
+                        background: url("/images/order_confirm_detail_page/arrows_24_icon.png") no-repeat;
+                        background-size: contain;
+                    }
+                }
+                // 暂无可使用优惠券
+                .discount-coupon-no {
+
+                }
+                // 拥有可用张数
+                .discount-coupon-possess {
+                    color: #333;
+                    .num {
+                        color: #F5222D;
+                    }
+                }
+                // 已选优惠
+                .discount-coupon-selected {
+                    color: #333;
+                    .price {
+                        color: #F5222D;
+                    }
+                }
+            }
+        } // 支付方式
+        .mode-payment-wrap {
+            width: 100%;
+            background: #fff;
+            margin-top: 20 * $baseV;
+            .mode-payment {
+                padding: 36 * $baseV 30 * $baseV;
+                .mode-payment-title {
+                    height: 100 * $baseV;
+                    line-height: 100 * $baseV;
+                    font-size: 28 * $baseV;
+                    font-weight: bold;
+                    color: #333;
+                    border-bottom: 1 * $baseV solid #DEDFE0;
+                }
+                .mode-payment-way {
+                    padding: 25*$baseV 0;
+                    font-size: 24*$baseV;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .mode-payment-left {
+                        overflow: hidden;
+                        display: flex;
+                        align-items: center;
+                        .logo {
+                            float: left;
+                            width: 60 * $baseV;
+                        height: 60 * $baseV;
+                        }
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                        .mode-payment-center {
+                            float: left;
+                            margin-left: 20*$baseV;
+                            color: #333;
+                            .mode-payment-else {
+                                color: #b28850;
+                                font-size: 22 * $baseV;
+                            }
+                            .safety {
+                                color: #9D9D9D;
+                            }
+                        }
+                    }
+                    
+                    .mode-payment-right {
+                        float: right;
+                        span {
+                            display: block;
+                            width: 46*$baseV;
+                            height: 46*$baseV;
+                            border: 1px solid #D2D2D2;
+                            border-radius: 50%;
+                            background: url("/images/order_confirm_detail_page/checkbox_sele_44_icon.png") no-repeat;
+                            background-size: cover;
+                        }
+                    }
+                }
+            }
+        }
+        .collage-detail-cost {
+            background-color: #fff;
+            margin-top: 20 * $baseV;
+            margin-bottom: 100 * $baseV;
+            .cost-list {
+                padding: 20 * $baseV 30 * $baseV;
+                .cost-item {
+                    height: 55 * $baseV;
+                    line-height: 55 * $baseV;
+                    font-size: 26 * $baseV;
+                    .cost-tit {
+                        font-weight: bold;
+                    }
+                    .cost-txt {
+                        float: right;
+                    }
+                }
+            }
+            .cost-footer {
+                border-top: 2 * $baseV solid #efeff4;
+                padding: 30 * $baseV;
+                >span {
+                    display: block;
+                    &.cost-number {
+                        text-align: right;
+                        font-size: 26 * $baseV;
+                        font-weight: bold;
+                        margin-bottom: 10 * $baseV;
+                    }
+                    &.cost-money {
+                        text-align: right;
+                        font-size: 30 * $baseV;
+                        font-weight: bold;
+                        .money-total {
+                            color: #F5222D;
+                        }
+                    }
+                }
+            }
+        }
+        .collage-detail-detail {
+            background-color: #fff;
+            margin-top: 20 * $baseV;
+            .detail-list {
+                padding: 20 * $baseV 30 * $baseV;
+                .detail-item {
+                    height: 60 * $baseV;
+                    line-height: 60 * $baseV;
+                    font-size: 26 * $baseV;
+                    .detail-tit {
+                        color: #858585;
+                    }
+                    .detail-btn {
+                        float: right;
+                        color: #7D7D7D;
+                        width: 80 * $baseV;
+                        height: 34 * $baseV;
+                        line-height: 34 * $baseV;
+                        text-align: center;
+                        font-size: 22 * $baseV;
+                        border: 2 * $baseV solid #efeff4;
+                        border-radius: 20 * $baseV;
+                        margin-top: 10 * $baseV;
+                    }
+                }
+            }
+        } // 确认支付按钮
+        .confirm {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 750 * $baseV;
+            height: 98 * $baseV;
+            text-align: center;
+            line-height: 98 * $baseV;
+            color: #fff;
+            font-size: 34 * $baseV;
+            background: url("/images/order_confirm_detail_page/queding-button.png") no-repeat;
+            background-size: cover;
+        }
+    }
+}

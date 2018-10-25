@@ -1,0 +1,241 @@
+@@include('head.inc')
+<!-- header start -->
+<header class="admin-frame-header">
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#top">
+                <img alt="logo" src="/images/logo_white.png" height="24">
+            </a>
+        </div>
+        <ul class="nav navbar-nav navbar-left">
+            <li>管理控制中心</li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                476644346@qq.com
+            </li>
+            <li>
+                <a href="javascript:void(0)">退出</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<!-- header end -->
+<!-- aside nav start -->
+<aside class="admin-frame-aside" id="aside-menu">
+    <ul class="nav nav-pills nav-stacked">
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_1">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_2">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_3">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+    </ul>
+    <ul id="aside_menu_1" class="list-unstyled child-list collapse">
+        <li class="active"><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+    </ul>
+    <ul id="aside_menu_2" class="list-unstyled child-list collapse">
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+    </ul>
+    <ul id="aside_menu_3" class="list-unstyled child-list collapse">
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+    </ul>
+</aside>
+<!-- aside nav end -->
+<!-- main area start -->
+<div class="admin-frame-main">
+    <div class="admin-main-wrap">
+        <div class="admin-bank-audit-list-container">
+            <div class="pay-box">
+                <div class="form-inline clearfix collapse" id="collapseExample">
+                    <div class="form-group pull-left">
+                        <label for="">充值金额：</label>
+                        <input type="text" class="form-control">&nbsp;元
+                    </div>
+                    <div class="form-group pull-left">
+                        <label for="">验证码：</label>
+                        <input type="text" class="form-control">
+                        <span class="btn btn-code">获取验证码</span>
+                    </div>
+                    <div class="form-group pull-left">
+                        <span class="btn btn-danger btn-money">确定充值</span>
+                    </div>
+                </div>
+                <div class="pay-handle">
+                    <span class="h4">账户余额：8000.00</span>
+                    <span class="go-pay" role="button" data-toggle="collapse" href="#collapseExample">去充值<span class="icon">&gt;</span></span>
+                </div>
+            </div>
+            <!--nav-->
+            <div class="admin-audit-list-title bg-danger">
+                <ul class="nav">
+                    <li class="pull-left">
+                        审核状态 &nbsp;&nbsp;
+                        <button class="btn btn-danger btn-xs active">全部</button>
+                        <button class="btn btn-danger btn-xs">未递交</button>
+                        <button class="btn btn-danger btn-xs">未审核</button>
+                        <button class="btn btn-danger btn-xs">已驳回</button>
+                    </li>
+                    <li class="pull-left">
+                        时间排序 &nbsp;&nbsp;
+                        <button class="btn btn-danger btn-xs">由近到远</button>
+                        <button class="btn btn-danger btn-xs">由远到近</button>
+                    </li>
+                </ul>
+            </div>
+            <!--table-->
+            <table class="table table-hover table-panel table-fix text-center dashed">
+                <thead>
+                    <tr>
+                        <th width="120">运营商账号</th>
+                        <th width="175">运营商名称</th>
+                        <th width="150">手机号</th>
+                        <th width="120">银行</th>
+                        <th width="175">银行卡号</th>
+                        <th width="140">提现金额</th>
+                        <th width="136">提交时间</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>452398765</td>
+                        <td>某某某某某某木木</td>
+                        <td>12345678901</td>
+                        <td>中国建设银行</td>
+                        <td>12345676546548</td>
+                        <td>151651.00</td>
+                        <td>1989-08-11 04:19:56</td>
+                        <td>已审核</td>
+                        <td><a href="" class="link">详情</a></td>
+                    </tr>
+                    <tr class="active">
+                        <td>452398765</td>
+                        <td>某某某某某某木木</td>
+                        <td>12345678901</td>
+                        <td>中国建设银行</td>
+                        <td>12345676546548</td>
+                        <td>151651.00</td>
+                        <td>1989-08-11 04:19:56</td>
+                        <td>已审核</td>
+                        <td><a href="" class="link">详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>452398765</td>
+                        <td>某某某某某某木木</td>
+                        <td>12345678901</td>
+                        <td>中国建设银行</td>
+                        <td>12345676546548</td>
+                        <td>151651.00</td>
+                        <td>1989-08-11 04:19:56</td>
+                        <td>已审核</td>
+                        <td><a href="" class="link">详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>452398765</td>
+                        <td>某某某某某某木木</td>
+                        <td>12345678901</td>
+                        <td>中国建设银行</td>
+                        <td>12345676546548</td>
+                        <td>151651.00</td>
+                        <td>1989-08-11 04:19:56</td>
+                        <td>已审核</td>
+                        <td><a href="" class="link">详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>452398765</td>
+                        <td>某某某某某某木木</td>
+                        <td>12345678901</td>
+                        <td>中国建设银行</td>
+                        <td>12345676546548</td>
+                        <td>151651.00</td>
+                        <td>1989-08-11 04:19:56</td>
+                        <td>已审核</td>
+                        <td><a href="" class="link">详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>452398765</td>
+                        <td>某某某某某某木木</td>
+                        <td>12345678901</td>
+                        <td>中国建设银行</td>
+                        <td>12345676546548</td>
+                        <td>151651.00</td>
+                        <td>1989-08-11 04:19:56</td>
+                        <td>已审核</td>
+                        <td><a href="" class="link">详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>452398765</td>
+                        <td>某某某某某某木木</td>
+                        <td>12345678901</td>
+                        <td>中国建设银行</td>
+                        <td>12345676546548</td>
+                        <td>151651.00</td>
+                        <td>1989-08-11 04:19:56</td>
+                        <td>已审核</td>
+                        <td><a href="" class="link">详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>452398765</td>
+                        <td>某某某某某某木木</td>
+                        <td>12345678901</td>
+                        <td>中国建设银行</td>
+                        <td>12345676546548</td>
+                        <td>151651.00</td>
+                        <td>1989-08-11 04:19:56</td>
+                        <td>已审核</td>
+                        <td><a href="" class="link">详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>452398765</td>
+                        <td>某某某某某某木木</td>
+                        <td>12345678901</td>
+                        <td>中国建设银行</td>
+                        <td>12345676546548</td>
+                        <td>151651.00</td>
+                        <td>1989-08-11 04:19:56</td>
+                        <td>已审核</td>
+                        <td><a href="" class="link">详情</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- pagination -->
+            <div class="text-right">
+                <ul class="pagination">
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><span>...</span></li>
+                    <li><a href="#">10</a></li>
+                </ul>
+                <div class="pagination-info">
+                    <span>共100页，到第<input type="text" maxlength="3">页</span>
+                    <a href="#" class="btn btn-default">确认</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- main area start -->
+@@include('footer_admin.inc')

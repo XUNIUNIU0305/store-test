@@ -1,0 +1,244 @@
+.apex-ximei-container {
+  min-width: 1190px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #3cba9c;
+  .banner {
+    height: 650px;
+    background: url('/images/ximei180410/banner.png') no-repeat center/cover;
+  }
+
+  .body-container {
+    width: 1000px;
+    padding: 82px 0 54px;
+    margin: 0 auto;
+
+    .buy-now {
+      height: 30px;
+      line-height: 30px;
+      margin: 6px;
+      margin-top: 4px;
+      background-color: #3cba9c;
+      color: #fff;
+      position: relative;
+      &:after {
+        content: '';
+        height: 16px;
+        width: 16px;
+        background: url('/images/ximei180410/jinru.png') no-repeat center;
+        position: absolute;
+        top: 7px;
+        right: 66px;
+      }
+    }
+
+    .item-detail {
+      display: block;
+      height: 360px;
+      width: 242px;
+      margin-right: 8px;
+      background-color: #fff;
+      text-decoration: none;
+      
+      img {
+        margin-bottom: 6px;
+      }
+      p {
+        color: #3cba9c;
+        font-size: 14px;
+        text-align: center;
+        line-height: 24px;
+        &:nth-child(2) {
+          border-bottom: 1px solid #3cba9c;
+          margin-bottom: 29px;
+        }
+        &:nth-child(3) {
+          text-align: right;
+          margin-right: 10px;
+          margin-bottom: 0px;
+          line-height: 18px;
+          overflow: hidden;
+          font-size: 14px;
+          // span {
+          //   font-size: 22px;
+          //   font-weight: bold;
+          // }
+          .old-price {
+            float: left;
+            margin-left: 20px;
+            text-decoration: line-through;
+          }
+          .now-price {
+            float: right;
+            margin-right: 12px;
+            span {
+              font-size: 22px;
+            }
+          }
+        }
+        &:nth-child(4) {
+          color: #fff;
+          line-height: 30px;
+        }
+      }
+
+    }
+
+    .item-special {
+      img {
+        margin-bottom: 0px;
+      }
+      p {
+        color: #3cba9c;
+        font-size: 14px;
+        text-align: center;
+        line-height: 24px;
+        &:nth-child(2) {
+          border-bottom: 1px solid #3cba9c;
+          margin-bottom: 11px;
+        }
+      }
+    }
+
+    .hot-project {
+      text-align: center;
+      margin-bottom: 42px;
+      .title {
+        margin-bottom: 34px;
+      }
+      .project-detail {
+        display: flex;
+        .hot-left {
+          height: 360px;
+          width: 742px;
+          margin-right: 8px;
+          background: url('/images/ximei180410/1.png') no-repeat center/cover;
+        }
+  
+        .hot-right {
+          display: block;
+          height: 360px;
+          width: 242px;
+          background-color: #fff;
+          text-decoration: none;
+          
+          img {
+            margin-bottom: 6px;
+          }
+          p {
+            color: #3cba9c;
+            font-size: 14px;
+            text-align: center;
+            line-height: 24px;
+            &:nth-child(2) {
+              border-bottom: 1px solid #3cba9c;
+              margin-bottom: 29px;
+            }
+            &:nth-child(3) {
+              text-align: right;
+              margin-right: 10px;
+              margin-bottom: 0px;
+              line-height: 18px;
+              span {
+                font-size: 22px;
+                font-weight: bold;
+              }
+            }
+            &:nth-child(4) {
+              color: #fff;
+              line-height: 30px;
+            }
+          }
+
+          
+         
+        }
+      }
+    }
+
+
+    .discount-goods {
+      text-align: center;
+      margin-bottom: 53px;
+      .title {
+        margin-bottom: 38px;
+      }
+      .goods-detail {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .more-preferential {
+      text-align: center;
+      .title {
+        margin-bottom: 33px;
+      }
+      .goods-detail {
+
+        .goods-top {
+          display: flex;
+          margin-bottom: 10px;
+          .goods-top-left {
+            margin-right: 8px;
+          }
+
+          .goods-top-right {
+            display: flex;
+            flex-wrap: wrap;
+            .item-detail {
+              margin-bottom: 8px;
+              position: relative;
+              &:nth-child(2),&:nth-child(3) {
+                &:before {
+                  display: block;
+                  content: '【超划算】买2桶送1桶';
+                  height: 30px;
+                  line-height: 30px;
+                  width: 242px;
+                  background-color: #545454;
+                  color: #fff;
+                  position: absolute;
+                  top: 218px;
+                  left: 0;
+                }
+              }
+              &:nth-child(3) {
+                &:before {
+                  content: '【超划算】买6袋送1袋';
+                }
+              }
+              
+              &:nth-child(3n) {
+                margin-right: 0px;
+              }
+            }
+          }
+        }
+
+        .goods-middle {
+          display: flex;
+          margin-bottom: 18px;
+          &:nth-child(1) {
+            background-color: #fff;
+          }
+          .goods-middle-left {
+            margin-right: 8px;
+          }
+          .goods-middle-right {
+            display: flex;
+          }
+        }
+      }
+    }
+   
+    .to-top {
+      margin-top: 20px;
+      a {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}

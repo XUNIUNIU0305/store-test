@@ -1,0 +1,207 @@
+$size : 1/750 * 100vw;
+$gray : #9e9e9e;
+$red : #F7413C;
+
+@mixin icon-sty {
+    float: right;
+    padding: 14 * $size 8 * $size;
+    margin-top: 34 * $size;
+    margin-left: 20 * $size;
+    background: url('/images/my_spelling/arrows_24_icon.png') no-repeat;
+    background-size: 16 * $size 28 * $size;
+}
+
+.my-spelling-box-cont {
+    color: #333;
+    width: 750 * $size; 
+    overflow: auto;
+    padding-bottom: 104 * $size;
+    .my-spelling-head {
+        height: 248 * $size;
+        background: url('/images/my_spelling/bg.png') no-repeat;
+        background-size: 750 * $size;
+        .head-cont {
+            padding: 60 * $size;
+            .head-pic {
+                float: left;
+                width: 128 * $size;
+                height: 128 * $size;
+                background-color: #fff;
+                border-radius: 50%;
+            }
+            .head-txt {
+                color: #fff;
+                float: left;
+                margin-left: 20 * $size;
+                margin-top: 12 * $size;
+                .head-number {
+                    display: block;
+                    font-size: 36 * $size;
+                    margin-bottom: 4 * $size; 
+                }
+                .head-user {
+                    display: block;
+                    width: 112 * $size;
+                    height: 40 * $size;
+                    line-height: 40 * $size;
+                    font-size: 24 * $size;
+                    background-color: #D6131D;
+                    border-radius: 30 * $size;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .my-spelling-nav {
+        background-color: #fff;
+        margin-bottom: 20 * $size;
+        .nav-tit {
+            margin-left: 30 * $size;
+            height: 100 * $size;
+            line-height: 100 * $size;
+            font-size: 28 * $size;
+            padding-right: 30 * $size;
+            border-bottom: 2 * $size solid #DEDFE0;
+            >span {
+                float: left;
+            }
+            .see-all {
+                float: right;
+                color: #aaa;
+                font-size: 26 * $size;
+                .see-icon {
+                    @include icon-sty;
+                }
+            }
+        }
+        .nav-cont {
+            .nav-list {
+                width: 100%;
+                height: 160 * $size;
+                text-align: center;
+                .nav-item {
+                    float: left;
+                    width: 25%;
+                    padding: 40 * $size 0;
+                    cursor: pointer;
+                    .item-pic {
+                        width: 48 * $size;
+                    }
+                    .item-txt {
+                        display: block;
+                        margin-top: 10 * $size;
+                        font-size: 24 * $size;
+                    }
+                }
+            }
+        }
+    }
+    .my-spelling-section {
+        background-color: #fff;
+        margin-bottom: 20 * $size;
+        .section-list {
+            margin-left: 30 * $size;
+            .section-item {
+                font-size: 28 * $size;
+                padding: 36 * $size 30 * $size 36 * $size 0;
+                border-bottom: 2 * $size solid #DEDFE0;
+                .all {
+                    float: right;
+                    .see-icon {
+                        @include icon-sty;
+                        margin-top: 6 * $size;
+                    }
+                }
+            }
+        }
+    }
+    .my-spelling-logout {
+        height: 100 * $size;
+        line-height: 100 * $size;
+        background-color: #fff;
+        margin-bottom: 40 * $size;
+        text-align: center;
+        .logout-btn {
+            color: $red;
+            border-style: none; 
+            outline-style: none;
+            font-size: 28 * $size;
+            background-color: transparent;
+            letter-spacing: 3 * $size;
+        }
+    }
+}
+
+.floating-layer-box {
+    z-index: 11;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    .floating-layer {
+        width: 100%;
+        height: 370 * $size;
+        background-color: #EFEFF4;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        >span {
+            display: block;
+            height: 100 * $size;
+            line-height: 100 * $size;
+            text-align: center;
+            background-color: #fff;
+            font-size: 30 * $size;
+            &.layer-txt-1 {
+                height: 140 * $size;
+                line-height: 140 * $size;
+                font-size: 34 * $size;
+                border-bottom: 2 * $size solid #DEDFE0;
+            }
+            &.layer-txt-2 {
+                color: #1890FF;
+            }
+            &.layer-txt-3 {
+                color: $red;
+                margin-top: 30 * $size;
+                .layer-btn {
+                    width: 100%;
+                    background-color: transparent;
+                    outline-style: none;
+                    border-style: none; 
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+.my-spelling-footer {
+    z-index: 10;
+    position: fixed;    
+    left: 0;
+    bottom: 0;
+    border-top: 2 * $size solid #DEDFE0;
+    .operator-list {
+        .operator-item {
+            float: left;
+            color: $gray;
+            width: 250 * $size;
+            height: 104 * $size;
+            text-align: center;
+            background-color: #fff;
+            .operator-pic {
+                width: 78 * $size;
+                height: 72 * $size;
+                padding: 18 * $size 86 * $size;
+                cursor: pointer;
+                &.operator-alone {
+                    width: 48 * $size;
+                    padding: 18 * $size 101 * $size;
+                }
+            }
+        }
+    }
+}

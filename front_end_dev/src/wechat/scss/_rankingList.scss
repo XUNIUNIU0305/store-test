@@ -1,0 +1,57 @@
+$baseV: 1 / 750 * 100vw;
+.wechat-ranking-container {
+    height: 603 * 2 * $baseV;
+    color: #333;
+    background: url('/images/ranking/bg02.jpg') no-repeat top center;
+    background-size: 100%;
+    overflow: hidden;
+    .end-time {
+        margin-top: 200 * $baseV;
+        text-align: center;
+    }
+    p {
+        margin: 0;
+    }
+    .list-header {
+        margin: 20 * $baseV 40 * $baseV 0;
+        padding: 10 * $baseV 0;
+        background: #fff;
+        border-radius: 10px 10px 0 0;
+        display: flex;
+        align-items: center;
+    }
+    .left {
+        flex: 0 0 120 * $baseV;
+        padding: 0 20 * $baseV;
+        text-align: center;
+        >span {
+            line-height: 72 * $baseV;
+        }
+    }
+    .middle {
+        padding: 0 20 * $baseV;
+    }
+    .right {
+        flex: auto;
+        text-align: right;
+        padding-right: 20 * $baseV;
+    }
+    .price {
+        font-size: 32 * $baseV;
+    }
+    .list-body {
+        height: 396 * 2 * $baseV;
+        margin-top: 8 * $baseV;
+        margin: 8 * $baseV 40 * $baseV 0;
+        background: #fff;
+        overflow-x: auto;
+        .item {
+            display: flex;
+            padding: 20 * $baseV 0 12 * $baseV;
+            border-bottom: 0.5px solid #dedfe0;
+            img {
+                max-width: 88 * $baseV;
+            }
+        }
+    }
+}

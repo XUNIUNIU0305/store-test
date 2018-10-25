@@ -1,0 +1,80 @@
+$baseV: 1 / 750 * 100vw;
+.free-shipping {
+	background-color: #d2345d;
+	img {
+		max-width: 100%;
+		vertical-align: top;
+	}
+	.banner1 {
+		height: 580 * $baseV;
+	}
+	.banner2 {
+		width: 94.5vw;
+		height: 120 * $baseV;
+		margin: 0 20 * $baseV;
+		margin-bottom: 45 * $baseV;
+	}
+	.goods-contain {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0 20 * $baseV;
+		.goods-detail {
+			flex: 0 0 345 * $baseV;
+			height: 450 * $baseV; 
+			background-color: #fff;
+			margin-bottom: 20 * $baseV; 
+			position: relative;
+			&:nth-child(2n+1) {
+				margin-right: 20 * $baseV;
+			};
+			.baoyou-img {
+				position: absolute;
+				top: 0;
+				left: 20 * $baseV;
+				height: 45 * $baseV;
+				width: 54 * $baseV;
+			}
+			.goods-img {
+				width: 345 * $baseV;
+				height: 330 * $baseV;
+			}
+			.cut-line {
+				display: block;
+				height: 1px;
+				width: 345 * $baseV;
+				background-color: #d2345d;
+				margin-bottom: 20 * $baseV;
+			}
+			.price {
+				padding: 0 20 * $baseV;
+				display: block;
+				color: #f22289;
+				font-size: 30 * $baseV;
+				span {
+					font-size: 20 * $baseV;
+				}
+			}
+			.describe {
+				display: block;
+				width: 305 * $baseV;
+				font-size: 26 * $baseV;
+				padding: 0 20 * $baseV;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+		}
+	}
+	.to-img {
+		position: fixed;
+		bottom: 300 * $baseV;
+		right: 10 * $baseV;
+		width: 96 * $baseV;
+		height: 96 * $baseV;
+	}
+	.ceiling-img {
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+}

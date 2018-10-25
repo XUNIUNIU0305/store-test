@@ -1,0 +1,180 @@
+.beautiful-container {
+    min-width: 1440px;
+    overflow-x: auto;
+    .banner {
+        padding-top: 500px;
+        background: url('/images/beautiful/banner.png') no-repeat center;
+    }
+    ul,
+    li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .beautiful-navs {
+        position: fixed;
+        top: 20%;
+        left: 50%;
+        margin-left: 540px;
+        z-index: 999;
+        background-color: #c0daab;
+        padding: 10px;
+        border-radius: 8px;
+        &::before {
+            content: '';
+            width: 363px;
+            height: 107px;
+            background: url('/images/beautiful/meihaochuyouji.png') no-repeat center;
+            position: absolute;
+            top: -92px;
+            left: -50px;
+        }
+        li {
+            text-decoration: none;
+        }
+    }
+    .layout-box {
+        width: 1100px;
+        margin: 0 auto;
+    }
+    .sec-title {
+        text-align: center;
+        margin: 60px 0;
+        &.hot {
+            position: relative;
+            &::after {
+                content: '万家门店热销好货、拉人气，赚大钱必不可少！';
+                font-size: 20px;
+                color: #898989;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -30px;
+                margin: 0 auto;
+            }
+        }
+    }
+    a {
+        text-decoration: none;
+    }
+    .item-box {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        .vertical {
+            flex: 0 0 33.33%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            .sec-sub-title {
+                text-align: center;
+            }
+            .item {
+                padding: 0 14px;
+            }
+        }
+        .item {
+            flex: auto;
+            box-sizing: border-box;
+            background-color: #fff;
+            .img {
+                text-align: center;
+                border-bottom: 1px solid #727271;
+            }
+            p {
+                margin: 0;
+            }
+            .item-title {
+                font-size: 21px;
+                font-weight: bold;
+                margin-top: 10px;
+            }
+            .item-sub-title {
+                font-size: 14px;
+            }
+            .old-price {
+                font-size: 14px;
+                font-weight: bold;
+            }
+            .price {
+                font-size: 30px;
+                color: #78ac4a;
+                position: relative;
+                &::after {
+                    content: '立即抢购';
+                    font-size: 14px;
+                    line-height: 2;
+                    color: #fff;
+                    padding: 0 10px;
+                    border-radius: 4px;
+                    background-color: #78ac4a;
+                    position: absolute;
+                    right: 15px;
+                    bottom: 6px;
+                }
+            }
+            &.three {
+                flex: 0 0 33.33%;
+                padding: 15px 10px;
+                box-sizing: border-box;
+            }
+        }
+    }
+    .sec-eckill {
+        .item {
+            position: relative;
+            &::before {
+                content: '限量秒杀';
+                background-color: #fa7b1e;
+                font-size: 18px;
+                font-weight: bold;
+                color: #fff;
+                line-height: 1.5;
+                padding: 0 8px;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+    .float-trees {
+        position: absolute;
+        z-index: -1;
+        &.trees-zuo {
+            left: 0;
+            &.trees-zuo-1 {
+                top: 567px;
+            }
+            &.trees-zuo-2 {
+                top: 1280px;
+            }
+            &.trees-zuo-3 {
+                top: 2500px;
+            }
+            &.trees-zuo-4 {
+                top: 3767px;
+            }
+            &.trees-zuo-5 {
+                top: 5100px;
+            }
+        }
+        &.trees-you {
+            right: 0;
+            &.trees-you-1 {
+                top: 840px;
+            }
+            &.trees-you-2 {
+                top: 2000px;
+            }
+            &.trees-you-3 {
+                top: 3200px;
+            }
+            &.trees-you-4 {
+                top: 4400px;
+            }
+            &.trees-you-5 {
+                top: 5800px;
+            }
+        }
+    }
+}

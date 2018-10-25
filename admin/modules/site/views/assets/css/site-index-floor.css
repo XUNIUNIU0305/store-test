@@ -1,0 +1,38 @@
+.floor > .title {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.floor > .title > .fa {
+    margin-right: 10px;
+    color: #329ee2;
+}
+
+.floor #floorContent > ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.floor #floorContent > ul > li {
+    margin-top: 10px;
+    padding: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.floor #floorContent > ul > li:nth-of-type(1) {
+    border: none;
+}
+
+.floor #floorContent > ul > li > span {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+}
+
+.floor #floorContent > ul > li > span > button {
+    margin: 0 5px;
+}

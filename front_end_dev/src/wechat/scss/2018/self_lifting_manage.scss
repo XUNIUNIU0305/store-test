@@ -1,0 +1,117 @@
+$size : 1/750 * 100vw;
+
+.self-lifting-manage-box {
+    padding: 30 * $size 30 * $size 0;
+    .self-lifting-manage-no {
+        .addr-no-box {
+            width: 460 * $size;
+            height: 400 * $size;
+            margin: 200 * $size auto 0;
+            font-size: 30 * $size;
+            text-align: center;
+            >span {
+                display: block;
+                &.user-pic {
+                    width: 140 * $size;
+                    height: 140 * $size;
+                    background-color: #DEDEDE;
+                    border-radius: 50%;
+                    margin: 0 auto 30 * $size;
+                }
+            }
+            .manage-btn {
+                color: #fff;
+                display: block;
+                width: 440 * $size;
+                height: 108 * $size;
+                line-height: 95 * $size;
+                background: url('/images/self_lifting_manage/but_bg.png') no-repeat;
+                background-size: 100%;
+                margin-top: 120 * $size;
+                text-align: center;
+            }
+        }
+    }
+    
+    .self-lifting-manage {
+        .addr-list {
+            .addr-item {
+                padding: 30 * $size 30 * $size 0;
+                background-color: #fff;
+                margin-bottom: 20 * $size;
+                .addr-info {
+                    border-bottom: 2 *$size solid #efeff4;
+                    padding-bottom: 20 * $size;
+                    .addr-default {
+                        display: inline-block;
+                        width: 80 * $size;
+                        height: 38 * $size;
+                        background: url('/images/self_lifting_manage/default.png') no-repeat;
+                        background-size: 100%;
+                        margin-right: 14 * $size;
+                        padding-bottom: 10 * $size;
+                    }
+                    .addr-txt {
+                        display: inline-block;
+                        width: 500 * $size;
+                        font-size: 32 * $size;
+                        margin-bottom: 10 * $size;
+                        font-weight: bold;
+                        overflow:hidden;
+                        text-overflow:ellipsis;
+                        white-space:nowrap
+                    }
+                    .addr-user {
+                        font-size: 32 * $size;
+                        font-weight: bold;
+                        margin-right: 20 * $size;
+                    }
+                    .addr-detail {
+                        color: #AEAEAE;
+                        display: block;
+                        margin: 10 * $size 0;
+                        font-size: 26 * $size
+                    }
+                }
+                .addr-set {
+                    font-size: 28 * $size;
+                    height: 100 * $size;
+                    line-height: 100 * $size;
+                    .addr-sele {
+                        width: 44 * $size;
+                        margin-bottom: -12 * $size;
+                        margin-right: 10 * $size;
+                        cursor: pointer;
+                    }
+                    .addr-right {
+                        float: right;
+                        .addr-btn {
+                            display: inline-block;
+                            width: 100 * $size;
+                            height: 56 * $size;
+                            line-height: 56 * $size;
+                            text-align: center;
+                            margin-top: 22 * $size;
+                            &.active {
+                                background-color: #F1F1F1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .push-btn {
+        color: #fff;
+        display: block;
+        width: 690 * $size;
+        height: 108 * $size;
+        line-height: 98 * $size;
+        background: url('/images/self_lifting_manage/btn_bg.png') no-repeat;
+        background-size: 100%;
+        border-radius: 60 * $size;
+        margin: 50 * $size 0;
+        font-size: 34 * $size;
+        text-align: center;
+    }
+}

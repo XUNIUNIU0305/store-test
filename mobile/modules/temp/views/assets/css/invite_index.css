@@ -1,0 +1,14 @@
+.new-invite-10 {
+  margin-bottom: 50px; }
+  .new-invite-10 img {
+    max-width: 100%;
+    vertical-align: top; }
+  .new-invite-10 .footer {
+    position: relative; }
+  .new-invite-10 .invite_now {
+    display: block;
+    width: 100%;
+    height: 20vw;
+    position: absolute;
+    left: 0;
+    bottom: 0; }

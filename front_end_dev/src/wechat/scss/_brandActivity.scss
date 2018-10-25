@@ -1,0 +1,116 @@
+.brand-activity-detail {
+	img {
+		max-width: 100%;
+		vertical-align: top;
+	}
+	.quan {
+		position: relative;
+		.free-modal {
+			position: absolute;
+			display: block;
+			width: 18%;
+			height: 48px;
+			top: 51%;
+			left: 51%
+		}
+	}
+	.product {
+		position: relative;
+		a {
+			position: absolute;
+			display: block;
+			width: 100%;
+			height: 175px;
+			&:nth-child(2) {
+				top: 60px;
+			}
+			&:nth-child(3) {
+				top: 235px;
+			}
+			&:nth-child(4) {
+				top: 410px;
+			}
+			&:nth-child(5) {
+				top: 585px;
+			}
+		}
+	}
+	.nav {
+		width: 20%;
+		position: fixed;
+		right: -20%;
+		top: 30%;
+		transition: .5s;
+		img {
+			width: 100%
+		}
+		&.show {
+			right: 0;
+		}
+	}
+}
+.wechat-free-lunch{
+    .close-btn {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 12px;
+        right: 12px;
+        background: url('/images/free_lunch/new_cloes_icon.png') center/contain no-repeat;
+    }
+    .sub-content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        &.in {
+            display: flex;
+        }
+    }
+    .img-box{
+        position: relative;
+        p{
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: (436px / 2);
+            bottom: 50px;
+            font-size: 14px;
+            color: #2e5c9e;
+            margin: 0 auto;
+        }
+    }
+    .img-responsive {
+        width: (556px / 2);
+        margin: 0 auto 30px;
+    }
+    .entrance{
+        .img-responsive {
+            width: (466px / 2);
+            margin-bottom: 50px;
+        }
+    }
+    .btn-row{
+        display: flex;
+        text-align: center;
+    }
+    .btn {
+        background: transparent url('/images/free_lunch/pingpai_but_bg.png') center/contain no-repeat;
+        padding: 0;
+        width: (190px / 2);
+        height: (84px / 2);
+        line-height: 35px;
+        margin: 0 15px;
+        color: #fff;
+        font-size: 15px;
+        transition: transform .1s;
+        &:active {
+            transform: scale(.98);
+        }
+    }
+}

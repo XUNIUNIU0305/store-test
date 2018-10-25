@@ -1,0 +1,63 @@
+.business-bank-extract-sure {
+	min-width: 1200px;
+	color: #333;
+	.title {
+		padding: 0 50px;
+		line-height: 50px;
+		font-weight: 700;
+		font-size: 18px;
+		border-bottom: 1px solid #efeef2;
+	}
+	.info {
+		margin: 50px 214px;
+		.form-group {
+			display: block;
+			margin: 50px 0;
+			label {
+				font-size: 16px;
+				width: 130px;
+			}
+		}
+		.price {
+			display: inline-block;
+		}
+		.bank-info {
+			width: 650px;
+			display: inline-block;
+			background-color: #fafafa;
+			font-size: 16px;
+			line-height: 30px;
+			padding-left: 40px;
+			vertical-align: top;
+			img {
+				width: 24px;
+				margin-right: 6px;
+			}
+			.name, .card {
+				margin: 6px 0;
+			}
+		}
+		.btn-business {
+			border-radius: 5px;
+			background-color: $blue;
+			padding: 8px 25px;
+		}
+		.br {
+			width: 100%;
+			height: 1px;
+			background-color: #efeef2;
+			margin: 50px 0;
+		}
+		.form-control {
+			margin-right: 10px;
+		}
+		.forget {
+			color: $blue;
+		}
+		.back {
+			color: $blue;
+			margin: 0 10px;
+			font-size: 14px;
+		}
+	}
+}

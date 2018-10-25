@@ -1,0 +1,71 @@
+$blue: #459ae9;
+.business-data-conversion {
+	.bootstrap-select.btn-group .dropdown-toggle .filter-option {
+		font-size: 16px;
+		line-height: 2;
+	}
+	.sell-search {
+		background-color: #FFF;
+		margin-top: 1px;
+		padding: 20px;
+		label {
+			display: block;
+			font-size: 16px;
+		}
+		.time-input {
+			width: 100%;
+			border: 1px solid #999;
+			border-radius: 4px;
+			font-size: 16px;
+			line-height: 1.5;
+		}
+		.search-btn-box {
+			margin-top: 32px;
+		}
+		.btn-search {
+			color: #fff;
+			background-color: $blue;
+		}
+		.time-box {
+			width: 30%;
+			margin: 20px 0;
+			padding-left: 15px;
+		}
+	}
+	.items-box {
+		display: flex;
+		margin-top: 14px;
+		.item {
+			flex: 0 0 19.6%;
+			margin: 0 0.2%;
+		    background-color: #FFF;
+		    cursor: pointer;
+		    &.active {
+		    	.h3 {
+		    		background-color: $blue;
+		    		color: #fff;
+		    	}
+		    	.h2 {
+		    		color: $blue;
+		    	}
+		    }
+		}
+		.h3 {
+			margin: 4px 0;
+			padding: 8px 0 8px 16px;
+		}
+		.h2 {
+			font-size: 36px;
+			text-align: center;
+		}
+		.h4 {
+			font-size: 18px;
+			text-align: center;
+		}
+	}
+	.chart-container {
+		margin-top: 4px;
+		height: 400px;
+		background-color: #FFF;
+	}
+}

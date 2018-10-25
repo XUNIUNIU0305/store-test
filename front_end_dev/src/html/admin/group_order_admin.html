@@ -1,0 +1,233 @@
+@@include('../head.inc')
+<!-- header start -->
+<header class="admin-frame-header">
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#top">
+                <img alt="logo" src="/images/logo_white.png" height="24">
+            </a>
+        </div>
+        <ul class="nav navbar-nav navbar-left">
+            <li>管理控制中心</li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                476644346@qq.com
+            </li>
+            <li>
+                <a href="javascript:void(0)">退出</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<!-- header end -->
+<!-- aside nav start -->
+<aside class="admin-frame-aside" id="aside-menu">
+    <ul class="nav nav-pills nav-stacked">
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_1">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_2">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_3">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+    </ul>
+    <ul id="aside_menu_1" class="list-unstyled child-list collapse">
+        <li class="active"><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+    </ul>
+    <ul id="aside_menu_2" class="list-unstyled child-list collapse">
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+    </ul>
+    <ul id="aside_menu_3" class="list-unstyled child-list collapse">
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+    </ul>
+</aside>
+<!-- aside nav end -->
+<!-- main area start -->
+<div class="admin-frame-main">
+    <div class="admin-main-wrap">
+        <div class="apx-admin-group-order">
+            <!--查询导航-->
+            <div class="nav-bar">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="select_status">订单状态：</label>
+                        <select id="select_status" class="form-control">
+                            <option value="0">全部</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="select_status">订单状态：</label>
+                        <select id="select_status" class="form-control">
+                            <option value="0">全部</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                        <select id="select_status_1" class="form-control">
+                            <option value="0">全部</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="select_status">订单状态：</label>
+                        <select id="select_status" class="form-control">
+                            <option value="0">全部</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+
+                    <button class="btn btn-danger">查询</button>
+                </form>
+            </div>
+            <div class="order-status-nav">
+                <div class="nav-item">
+                    <div class="item-title">拼购团总数</div>
+                    <div class="item-num">
+                        <span>123</span>团
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <div class="item-title">拼购团总数</div>
+                    <div class="item-num">
+                        <span>123</span>团
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <div class="item-title">拼购团总数</div>
+                    <div class="item-num">
+                        <span>123</span>团
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <div class="item-title">拼购团总数</div>
+                    <div class="item-num">
+                        <span>123</span>团
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <div class="item-title">拼购团总数</div>
+                    <div class="item-num">
+                        <span>123</span>团
+                    </div>
+                </div>
+            </div>
+            <div class="order-list-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>团编号</th>
+                            <th>拼购类型</th>
+                            <th width="206">拼购商品</th>
+                            <th>团长账号</th>
+                            <th>团长姓名</th>
+                            <th>所在区域</th>
+                            <th>拼购发起时间</th>
+                            <th>拼购截止时间</th>
+                            <th>活动截止时间</th>
+                            <th>已拼数量（件）</th>
+                            <th>成团数量（件）</th>
+                            <th>已拼金额（元）</th>
+                            <th>拼购状态</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>123123</td>
+                            <td>自提拼购</td>
+                            <td>SK全合成机油 集客撒地方撒地方撒地方</td>
+                            <td>12345678</td>
+                            <td>张三</td>
+                            <td>上海/上海</td>
+                            <td>
+                                <div class="time">
+                                    2018-06-06 11:12:12
+                                </div>
+                            </td>
+                            <td>
+                                <div class="time">
+                                    2018-06-06 11:12:12
+                                </div>
+                            </td>
+                            <td>
+                                <div class="time">
+                                    2018-06-06 11:12:12
+                                </div>
+                            </td>
+                            <td>123123</td>
+                            <td>123123</td>
+                            <td>123123</td>
+                            <td>拼购中</td>
+                            <td>
+                                <span class="handle text-warning">强制成团</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--pagination-->
+            <div class="pull-right">
+                <ul class="pagination">
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><span>...</span></li>
+                    <li><a href="#">10</a></li>
+                </ul>
+                <div class="pagination-info">
+                    <span>共100页，到第<input type="text" maxlength="3">页</span>
+                    <a href="#" class="btn btn-default">确认</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- main area start -->
+@@include('../footer_admin.inc')
+
+<script>
+    $(function () {
+        // add locale
+        $.fn.datepicker.dates["zh-CN"] = {
+            days: ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"],
+            daysShort: ["周日", "周一", "周二", "周三", "周四", "周五", "周六"],
+            daysMin: ["日", "一", "二", "三", "四", "五", "六"],
+            months: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+            monthsShort: ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
+            today: "今日",
+            clear: "清除",
+            format: "yyyy年mm月dd日",
+            titleFormat: "yyyy年mm月",
+            weekStart: 1
+        }
+        // init the datepicker
+        $('.date-picker').datepicker({
+            format: 'yyyy-mm-dd',
+            language: 'zh-CN'
+        });
+    })
+
+</script>

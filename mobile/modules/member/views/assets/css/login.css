@@ -1,0 +1,126 @@
+.login-new .wechat-tip {
+  width: 100%;
+  height: 30px;
+  background-color: #fce7e6;
+  text-align: center; }
+  .login-new .wechat-tip p {
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 30px;
+    background: url("/images/login/tip.png") no-repeat 8px center; }
+
+.login-new .wechat-login-new {
+  min-height: 100%;
+  text-align: center;
+  overflow: hidden;
+  color: #fff; }
+  .login-new .wechat-login-new .logo {
+    width: 160px;
+    margin: 20px auto 0; }
+    .login-new .wechat-login-new .logo img {
+      width: 100%; }
+  .login-new .wechat-login-new h3 {
+    margin: 4px 0 12px;
+    font-size: 20px; }
+  .login-new .wechat-login-new .form-group {
+    margin: 0 auto 15px;
+    background: #efeff4;
+    width: 90%;
+    border-radius: 8px;
+    display: -webkit-flex;
+    display: flex;
+    height: 40px;
+    -webkit-align-items: center;
+            align-items: center; }
+    .login-new .wechat-login-new .form-group label,
+    .login-new .wechat-login-new .form-group input {
+      -webkit-flex: 1 1 auto;
+              flex: 1 1 auto; }
+    .login-new .wechat-login-new .form-group label {
+      max-width: 20%;
+      position: relative;
+      height: 30px;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+              align-items: center;
+      -webkit-justify-content: center;
+              justify-content: center; }
+      .login-new .wechat-login-new .form-group label img {
+        height: 60%; }
+      .login-new .wechat-login-new .form-group label:after {
+        content: '';
+        position: absolute;
+        top: 6px;
+        bottom: 6px;
+        right: 0;
+        width: 1px;
+        background: #9d9d9d; }
+    .login-new .wechat-login-new .form-group input {
+      max-width: 75%;
+      background: transparent;
+      border: 0;
+      font-size: 14px;
+      padding: 0 15px;
+      outline: 0;
+      color: #9d9d9d; }
+      .login-new .wechat-login-new .form-group input::-webkit-input-placeholder {
+        color: #9d9d9d; }
+  .login-new .wechat-login-new .error-msg {
+    margin: 20px auto 30px;
+    visibility: hidden; }
+    .login-new .wechat-login-new .error-msg.in {
+      visibility: visible; }
+  .login-new .wechat-login-new .login-btn {
+    display: -webkit-flex;
+    display: flex;
+    margin: 0 15px; }
+    .login-new .wechat-login-new .login-btn > .btn {
+      -webkit-flex: auto;
+              flex: auto;
+      border: 0;
+      margin: 12px 5px;
+      text-align: center;
+      font-size: 16px;
+      line-height: 2;
+      border-radius: 8px;
+      color: #fff;
+      line-height: 40px;
+      letter-spacing: 8px;
+      border: 1px solid; }
+    .login-new .wechat-login-new .login-btn .btn-register {
+      border: 1px solid #fff; }
+    .login-new .wechat-login-new .login-btn .btn-login {
+      color: #ff9100;
+      border-color: transparent;
+      background-color: #FFF; }
+  .login-new .wechat-login-new .wechat-login {
+    margin-top: 10px;
+    text-align: center;
+    background-color: transparent; }
+    .login-new .wechat-login-new .wechat-login p {
+      margin-bottom: 8px;
+      position: relative; }
+      .login-new .wechat-login-new .wechat-login p:before, .login-new .wechat-login-new .wechat-login p:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 35%;
+        height: 1px; }
+      .login-new .wechat-login-new .wechat-login p:before {
+        left: 0;
+        background: linear-gradient(to left, #fff, transparent); }
+      .login-new .wechat-login-new .wechat-login p:after {
+        right: 0;
+        background: linear-gradient(to right, #fff, transparent); }
+    .login-new .wechat-login-new .wechat-login .wechat-btn {
+      margin: 12px auto 20px;
+      color: #fff; }
+    .login-new .wechat-login-new .wechat-login img {
+      width: 60px;
+      display: block;
+      margin: 0 auto 4px; }
+  .login-new .wechat-login-new .mobile a {
+    color: #fff;
+    margin-bottom: 10px; }

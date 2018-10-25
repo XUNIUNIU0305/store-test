@@ -1,0 +1,252 @@
+@@include('head.inc') @@include('banner.inc') @@include('search.inc') @@include('main_nav.inc')
+<div class="container">
+    <div class="row">
+        <ol class="breadcrumb">
+            <li><a href="#">商城首页</a></li>
+            <li class="active">用户中心</li>
+        </ol>
+        @@include('account_aside.inc')
+        <div class="apx-acc-main">
+            <div class="apx-acc-title bg-danger">
+                <ul class="nav nav-tabs apx-acc-datepicker-nav">
+                    <li><strong>交易记录</strong></li>
+                    <li class="pull-right">
+                        <select class="form-control" onchange="$(this).siblings().removeClass('in');$('.' + $(this).val()).addClass('in');">
+                            <option value="query_time">按时间段</option>
+                            <option value="query_content">按内容</option>
+                        </select>
+                        <div class="query_time in">
+                            <span>起:</span>
+                            <div class="input-group">
+                                <input type="text" class="form-control date-picker" value="2017-03-01">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-calendar"></i></button>
+                                </span>
+                            </div>
+                            <span>止:</span>
+                            <div class="input-group">
+                                <input type="text" class="form-control date-picker" value="2017-03-10">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-calendar"></i></button>
+                                </span>
+                            </div>
+                            <button class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                        <div class="query_content">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="内容">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active">
+                    <table class="table table-hover table-panel table-fix text-center dashed">
+                        <thead>
+                            <tr>
+                                <th width="100">类别</th>
+                                <th>内容</th>
+                                <th width="100">金额</th>
+                                <th width="200">时间</th>
+                                <th width="140">交易后账户金额</th>
+                                <th width="110">状态</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>充值</td>
+                                <td><span data-toggle="tooltip" data-placement="bottom" title="支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元"><div class="text-ellipsis">支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元</div></span></td>
+                                <td><span class="text-success">+ ¥200.00</span></td>
+                                <td>2010-06-06 18:45:57</td>
+                                <td>¥200.00</td>
+                                <td><span class="text-warning">处理中</span></td>
+                            </tr>
+                            <tr>
+                                <td>充值</td>
+                                <td><span data-toggle="tooltip" data-placement="bottom" title="支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元"><div class="text-ellipsis">支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元</div></span></td>
+                                <td><span class="text-danger">- ¥200.00</span></td>
+                                <td>2010-06-06 18:45:57</td>
+                                <td>¥200.00</td>
+                                <td><span class="text-success">成功</span></td>
+                            </tr>
+                            <tr>
+                                <td>充值</td>
+                                <td><span data-toggle="tooltip" data-placement="bottom" title="支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元"><div class="text-ellipsis">支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元</div></span></td>
+                                <td><span class="text-danger">- ¥200.00</span></td>
+                                <td>2010-06-06 18:45:57</td>
+                                <td>¥200.00</td>
+                                <td><span class="text-success">成功</span></td>
+                            </tr>
+                            <tr>
+                                <td>充值</td>
+                                <td><span data-toggle="tooltip" data-placement="bottom" title="支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元"><div class="text-ellipsis">支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元</div></span></td>
+                                <td><span class="text-danger">- ¥200.00</span></td>
+                                <td>2010-06-06 18:45:57</td>
+                                <td>¥200.00</td>
+                                <td><span class="text-success">成功</span></td>
+                            </tr>
+                            <tr>
+                                <td>充值</td>
+                                <td><span data-toggle="tooltip" data-placement="bottom" title="支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元"><div class="text-ellipsis">支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元</div></span></td>
+                                <td><span class="text-danger">- ¥200.00</span></td>
+                                <td>2010-06-06 18:45:57</td>
+                                <td>¥200.00</td>
+                                <td><span class="text-success">成功</span></td>
+                            </tr>
+                            <tr>
+                                <td>充值</td>
+                                <td><span data-toggle="tooltip" data-placement="bottom" title="支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元"><div class="text-ellipsis">支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元</div></span></td>
+                                <td><span class="text-danger">- ¥200.00</span></td>
+                                <td>2010-06-06 18:45:57</td>
+                                <td>¥200.00</td>
+                                <td><span class="text-success">成功</span></td>
+                            </tr>
+                            <tr>
+                                <td>充值</td>
+                                <td><span data-toggle="tooltip" data-placement="bottom" title="支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元"><div class="text-ellipsis">支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元</div></span></td>
+                                <td><span class="text-danger">- ¥200.00</span></td>
+                                <td>2010-06-06 18:45:57</td>
+                                <td>¥200.00</td>
+                                <td><span class="text-success">成功</span></td>
+                            </tr>
+                            <tr>
+                                <td>充值</td>
+                                <td><span data-toggle="tooltip" data-placement="bottom" title="支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元"><div class="text-ellipsis">支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元</div></span></td>
+                                <td><span class="text-danger">- ¥200.00</span></td>
+                                <td>2010-06-06 18:45:57</td>
+                                <td>¥200.00</td>
+                                <td><span class="text-success">成功</span></td>
+                            </tr>
+                            <tr>
+                                <td>充值</td>
+                                <td><span data-toggle="tooltip" data-placement="bottom" title="支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元"><div class="text-ellipsis">支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元</div></span></td>
+                                <td><span class="text-danger">- ¥200.00</span></td>
+                                <td>2010-06-06 18:45:57</td>
+                                <td>¥200.00</td>
+                                <td><span class="text-success">成功</span></td>
+                            </tr>
+                            <tr>
+                                <td>充值</td>
+                                <td><span data-toggle="tooltip" data-placement="bottom" title="支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元"><div class="text-ellipsis">支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元</div></span></td>
+                                <td><span class="text-danger">- ¥200.00</span></td>
+                                <td>2010-06-06 18:45:57</td>
+                                <td>¥200.00</td>
+                                <td><span class="text-success">成功</span></td>
+                            </tr>
+                            <tr>
+                                <td>充值</td>
+                                <td><span data-toggle="tooltip" data-placement="bottom" title="支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元"><div class="text-ellipsis">支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元</div></span></td>
+                                <td><span class="text-danger">- ¥200.00</span></td>
+                                <td>2010-06-06 18:45:57</td>
+                                <td>¥200.00</td>
+                                <td><span class="text-success">成功</span></td>
+                            </tr>
+                            <tr>
+                                <td>充值</td>
+                                <td><span data-toggle="tooltip" data-placement="bottom" title="支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元"><div class="text-ellipsis">支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元</div></span></td>
+                                <td><span class="text-danger">- ¥200.00</span></td>
+                                <td>2010-06-06 18:45:57</td>
+                                <td>¥200.00</td>
+                                <td><span class="text-success">成功</span></td>
+                            </tr>
+                            <tr>
+                                <td>充值</td>
+                                <td><span data-toggle="tooltip" data-placement="bottom" title="支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元"><div class="text-ellipsis">支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元</div></span></td>
+                                <td><span class="text-danger">- ¥200.00</span></td>
+                                <td>2010-06-06 18:45:57</td>
+                                <td>¥200.00</td>
+                                <td><span class="text-success">成功</span></td>
+                            </tr>
+                            <tr>
+                                <td>充值</td>
+                                <td><span data-toggle="tooltip" data-placement="bottom" title="支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元"><div class="text-ellipsis">支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元</div></span></td>
+                                <td><span class="text-danger">- ¥200.00</span></td>
+                                <td>2010-06-06 18:45:57</td>
+                                <td>¥200.00</td>
+                                <td><span class="text-success">成功</span></td>
+                            </tr>
+                            <tr>
+                                <td>充值</td>
+                                <td><span data-toggle="tooltip" data-placement="bottom" title="支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元"><div class="text-ellipsis">支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元</div></span></td>
+                                <td><span class="text-danger">- ¥200.00</span></td>
+                                <td>2010-06-06 18:45:57</td>
+                                <td>¥200.00</td>
+                                <td><span class="text-success">成功</span></td>
+                            </tr>
+                            <tr>
+                                <td>充值</td>
+                                <td><span data-toggle="tooltip" data-placement="bottom" title="支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元"><div class="text-ellipsis">支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元</div></span></td>
+                                <td><span class="text-danger">- ¥200.00</span></td>
+                                <td>2010-06-06 18:45:57</td>
+                                <td>¥200.00</td>
+                                <td><span class="text-success">成功</span></td>
+                            </tr>
+                            <tr>
+                                <td>充值</td>
+                                <td><span data-toggle="tooltip" data-placement="bottom" title="支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元"><div class="text-ellipsis">支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元</div></span></td>
+                                <td><span class="text-danger">- ¥200.00</span></td>
+                                <td>2010-06-06 18:45:57</td>
+                                <td>¥200.00</td>
+                                <td><span class="text-success">成功</span></td>
+                            </tr>
+                            <tr>
+                                <td>充值</td>
+                                <td><span data-toggle="tooltip" data-placement="bottom" title="支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元"><div class="text-ellipsis">支付宝充值200元，支付宝充值200元支付宝充值200元，支付宝充值200元</div></span></td>
+                                <td><span class="text-danger">- ¥200.00</span></td>
+                                <td>2010-06-06 18:45:57</td>
+                                <td>¥200.00</td>
+                                <td><span class="text-success">成功</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- pagination -->
+            <div class="text-right">
+                <ul class="pagination">
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><span>...</span></li>
+                    <li><a href="#">10</a></li>
+                </ul>
+                <div class="pagination-info">
+                    <span>共100页，到第<input type="text" maxlength="3">页</span>
+                    <a href="#" class="btn btn-default">确认</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('ensurance.inc') @@include('sitemap.inc') @@include('footer.inc')
+
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+        // add locale
+        $.fn.datepicker.dates["zh-CN"] = {
+            days: ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"],
+            daysShort: ["周日", "周一", "周二", "周三", "周四", "周五", "周六"],
+            daysMin: ["日", "一", "二", "三", "四", "五", "六"],
+            months: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+            monthsShort: ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
+            today: "今日",
+            clear: "清除",
+            format: "yyyy年mm月dd日",
+            titleFormat: "yyyy年mm月",
+            weekStart: 1
+        }
+        // init the datepicker
+        $('.date-picker').datepicker({
+            format: 'yyyy-mm-dd',
+            language: 'zh-CN'
+        });
+    })
+
+</script>

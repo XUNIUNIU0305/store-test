@@ -1,0 +1,282 @@
+.summaryreductiondatas{
+    position: relative;
+    min-width: 1190px;
+    margin: auto;
+    /* min-height: 1080px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.summaryreductiondatas-top {
+    width: 100%;
+    min-width: 1190px;
+    height: 201px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("/images/cyr-soy/bg-top.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.summaryreductiondatas-main {
+    width: 100%;
+    min-width: 1190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("/images/cyr-soy/bg-center.jpg") repeat;
+    
+}
+.summaryreductiondatas-bottom {
+    width: 100%;
+    min-width: 1190px;
+    height: 201px;
+    background: url("/images/cyr-soy/bg-bottom.jpg") no-repeat;
+    background-size: 100% 100%;
+    
+}
+.summaryreductiondatas-top .firsttitle{
+    width: 900PX;
+    height: 62px;
+    font-size: 44px;
+    letter-spacing: 10px;
+    line-height: 62px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+.summaryreductiondatas-top .activitytime{
+    color:#13C8FC;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+.summaryreductiondatas .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1660px;
+    min-width: 1190px;
+    min-height: 653px;
+    margin-top: 52px;
+    margin-bottom: 52px;
+}
+.summaryreductiondatas .content .main-top {
+    width: 100%;
+    min-width: 1190px;
+    height: 14px;
+    background: url("/images/cyr-soy/content-top.png") no-repeat;
+    background-size: contain;
+}
+.content .order-details-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 1190px;
+    min-height: 653px;
+    background: url("/images/cyr-soy/content-center.png") no-repeat;
+    background-size: cover;
+}
+.summaryreductiondatas .content .main-bottom {
+    width: 100%;
+    min-width: 1190px;
+    height: 14px;
+    background: url("/images/cyr-soy/content-bottom.png") no-repeat;
+    background-size: contain;
+}
+.screening-area {
+    position: relative;
+    width: 1200px;
+    height: 28px;
+    margin: 52px 0 35px;
+    line-height: 28px;
+}
+.screening-area div {
+    display: inline-block;
+}
+.screening-area .select-box .region{
+    color: #fff;
+    font-size: 20px;
+
+}
+/* --ie清除--*/
+select::-ms-expand { 
+    display: none; 
+}
+/* --火狐、谷歌清除--*/
+select {
+    appearance:none;  
+    -moz-appearance:none;  
+    -webkit-appearance:none;
+    border:none;
+    outline: none;
+    font-size: 16px;
+    line-height: 28px;
+    text-indent: 8px;
+    background: url("/images/cyr-soy/sanjiao.png") no-repeat  83px center transparent;
+    padding-right: 20px;
+    overflow: hidden;
+}
+option::-ms-expand { 
+    display: none; 
+}
+option{
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari 和 Chrome */
+    appearance:none;
+}
+/* --背景色字体颜色--*/
+option:hover{
+    color:#fff;
+    background-color:#1E90FF;
+}
+.screening-area .select-box select {
+    width: 100px;
+    height: 28px;
+    margin-left:15px;
+    background-color: #1E86A9;
+    color: #F4F4F4;
+}
+
+.screening-area .store-account {
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.screening-area .import-box {
+    position: absolute;
+    top: 0;
+    right: 300px;
+}
+.screening-area input::-webkit-outer-spin-button,
+.screening-area input::-webkit-inner-spin-button{
+	-webkit-appearance: none !important;
+	margin: 0;
+}
+.screening-area input {
+    margin-left:20px;
+    width: 160px;
+    height: 28px;
+    outline:none;
+}
+
+
+.screening-area .inquire {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    width: 100px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    background: #13C8FC;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    -ms-border-radius:4px;
+    -o-border-radius:4px;
+    border-radius: 4px;
+}
+.screening-area .inquire:hover {
+    cursor: pointer;
+}
+.order-details-main {
+    position: relative;
+    width: 1200px;
+    min-height: 480px;
+    margin-bottom: 40px;
+}
+.order-details-main tr th,.order-details-main tr td {
+    border:none;
+    margin:none;
+    padding:0px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.order-details-main tbody {
+    height: 360px;
+}
+.order-details-main tbody tr:hover {
+    color: #139FFC;
+}
+/* odd表示奇数行，even表示偶数行; */
+.order-details-main tbody tr:nth-child(odd) {
+    background:rgba(23,23,59,0.6);
+}
+.order-details-main tbody tr:nth-child(even) {
+    background:rgba(46,51,83,0.6);
+}
+
+table {
+    border: 0;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    table-layout:fixed;
+    word-break: keep-all;
+}
+.order-details-main tr td {
+    width: 100%;
+    /* 不换行 */
+    white-space: nowrap;/* 不换行 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.order-details-main .order-details-title {
+    width: 1200px;
+    height: 36px;
+    color: #2AA9DD;
+    font-size: 14px;
+    line-height: 36px;
+    background: #293B68;
+}
+.order-details-main tr {
+    height: 36px;
+}
+.order-details-main .order-details-content {
+    width: 100%;
+    color: #F5F5F5;
+    font-size: 14px;
+    line-height: 36px;
+}
+.order-details-main .order-details-total {
+    width: 100%;
+    color: #F5F5F5;
+    font-size: 14px;
+    line-height: 36px;
+}
+.order-details-main .no-data {
+    margin: 200px auto 0;
+    width: 280px;
+    height: 95px;
+    font-size: 28px;
+    line-height: 95px;
+    color: #2AA9DD;
+    letter-spacing: 10px;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+}
+.order-details-main .no-data div {
+    width: 115px;
+    height: 95px;
+    background: url("/images/cyr-soy/no-data.png")no-repeat center center;
+}
+.order-details-main .load-more {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform:translate(-50%,100%);
+    font-size: 14px;
+    line-height: 36px;
+    color: #1BAADB;
+    text-align: center;
+}
+.order-details-main .load-more:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,21 @@
+.wechat-product-lingtu {
+	img {
+		max-width: 100%;
+		vertical-align: top;
+	}
+	.head {
+		position: relative;
+		a {
+			position: absolute;
+			bottom: 5%;
+			font-size: 16px;
+			width: 100%;
+			text-align: center;
+			background: url('/images/lingtu_brand/bug_bg.png') no-repeat center;
+			background-size: 36%;
+			font-weight: 700;
+			color: #fff;
+			font-style: oblique;
+		}
+	}
+}

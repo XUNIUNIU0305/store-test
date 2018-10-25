@@ -1,0 +1,277 @@
+@@include('head.inc') @@include('banner.inc') @@include('search.inc') @@include('main_nav.inc')
+<div class="container">
+    <div class="row">
+        <ol class="breadcrumb">
+            <li><a href="#">商城首页</a></li>
+            <li class="active">用户中心</li>
+        </ol>
+        @@include('account_aside.inc')
+        <div class="apx-acc-main">
+            <div class="apx-acc-title bg-danger"><strong>递交审核信息</strong></div>
+            <div class="panel panel-default apx-acc-audit-info">
+                <div class="panel-body">
+                    <p class="error-msg in">*提醒文字</p>
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group ">
+                            <label class="col-xs-2" for="shop_name">门店名称：</label>
+                            <div class="col-xs-5">
+                                <input type="text" class="form-control" id="shop_name" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="col-xs-2" for="company_name">公司名称:</label>
+                            <div class="col-xs-5">
+                                <input type="text" class="form-control" id="company_name" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-2" for="">门店所属区域：</label>
+                            <div class="col-xs-8">
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <select class="selectpicker" data-width="100%">
+                                        <option value="">请选择</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <select class="selectpicker" data-width="100%">
+                                        <option value="">请选择</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <select class="selectpicker" data-width="100%">
+                                        <option value="">请选择</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="col-xs-2" for="address">门店具体地址:</label>
+                            <div class="col-xs-10">
+                                <textarea rows="2" id="address" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="col-xs-2" for="responsor">负责人:</label>
+                            <div class="col-xs-5">
+                                <input type="text" class="form-control" id="responsor" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="form-group ">
+                            <label class="col-xs-2" for="shop_name">负责人身份证:</label>
+                            <div class="col-xs-10">
+                                <label class="img-upload-box" for="upload_img_1" style="width: 300px; height: 188px;">
+                                    <div class="lint">
+                                        修改身份证正面
+                                    </div>
+                                    <input type="file" id="upload_img_1">
+                                    <img src="/images/add_card_icon.png">
+                                </label>
+                                <label class="img-upload-box" for="upload_img_2" style="width: 300px; height: 188px;">
+                                    <div class="lint">
+                                        修改身份证背面
+                                    </div>
+                                    <input type="file" id="upload_img_2">
+                                    <img src="/images/add_card_icon.png">
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group ">
+                            <label class="col-xs-2" for="contact">联系人:</label>
+                            <div class="col-xs-5">
+                                <input type="text" class="form-control" id="contact" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="col-xs-2" for="phone">联系人手机号:</label>
+                            <div class="col-xs-5">
+                                <input type="text" class="form-control" id="phone" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="col-xs-2" for="email">电子邮箱:</label>
+                            <div class="col-xs-5">
+                                <input type="text" class="form-control" id="email" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="col-xs-2 optional" for="tel1">门店固话:</label>
+                            <div class="col-xs-2">
+                                <input type="text" class="form-control" id="tel1" placeholder="">
+                            </div>
+                            <div class="col-xs-3">
+                                <input type="text" class="form-control" id="tel2" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="col-xs-2" for="shop_name">营业执照照片:</label>
+                            <div class="col-xs-10">
+                                <label class="img-upload-box" for="upload_img_3" style="width: 200px; height: 220px;">
+                                    <div class="lint">
+                                        修改
+                                    </div>
+                                    <input type="file" id="upload_img_3">
+                                    <img src="/images/add_card_icon1.png">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="col-xs-2" for="shop_name">门店照片:</label>
+                            <div class="col-xs-10">
+                                <label class="img-upload-box" for="upload_img_3" style="width: 200px; height: 220px;">
+                                    <div class="lint">
+                                        修改门店门面照片
+                                    </div>
+                                    <input type="file" id="upload_img_3">
+                                    <img src="/images/add_card_icon1.png">
+                                </label>
+                                <label class="img-upload-box" for="upload_img_3" style="width: 200px; height: 220px;">
+                                    <div class="lint">
+                                        修改门店店内照片
+                                    </div>
+                                    <input type="file" id="upload_img_3">
+                                    <img src="/images/add_card_icon1.png">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <div class="col-xs-10 col-xs-offset-2">
+                                 <div class="checkbox">
+                                    <label class="optional">
+                                        <input type="checkbox"> 我已经阅读并同意<a href="#">《九大爷协议》</a>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <button class="btn btn-danger btn-lg btn-block">提交</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('ensurance.inc') @@include('sitemap.inc') @@include('footer.inc')
+
+<div class="apx-modal-agreement modal fade" id="apxModalAdminAlertReject" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">九大爷平台金牌会员服务协议</h4>
+            </div>
+            <div class="modal-body">
+                <p class="title">
+                    本协议是您与九大爷平台（简称“平台”，网址：www.9daye.cn）所有者（以下简称为“创智汇电子商务有限公司”）之间就九大爷平台黄金会员服务等相关事宜所订立的契约，请您仔细阅读本注册协议，您点击“同意以下协议，提交”按钮后，本协议即构成对双方有约束力的法律文件。
+                    本站的各项电子服务的所有权和运作权归平台所有。用户同意所有注册协议条款并完成注册程序，才能成为平台的黄金会员。用户确认：本协议条款是处理双方权利义务的契约，始终有效，法律另有强制性规定或双方另有特别约定的，依其规定。
+                    用户点击同意本协议的，即视为用户确认自己具有享受本站服务、下单购物等相应的权利能力和行为能力，能够独立承担法律责任。
+                </p>
+                <h2>一、会员等级及有效期</h2>
+                <p class="detail">
+                    1、会员等级：金牌会员。
+                </p>
+                <p class="detail">
+                    2、有效期：会员有效期为1年，自审核通过之日起365天后自行失效，续费后可继续使用会员权益。
+                </p>
+                <h2>二、费用及注册条件</h2>
+                <p class="detail">
+                    1、年费：300元（人民币）/年/账号；
+                </p>
+                <p class="detail">
+                    2、完成在线注册并通过企业营业执照审核 ；
+                </p>
+                <h2>三、会员权益</h2>
+                <p class="detail">
+                    1、赠送12个月洗车液  价值：2000+元。会员每月之就近城市运营商处领取洗车液一桶，每桶标准可洗车量1200台次，当月领取逾期不补。
+                </p>
+                <p class="detail">
+                    2、会员推荐收益权:金牌会员及钻石会员凭会员号（填写入新会员“推荐人”栏）或推荐二维码，每成功推荐3名金牌会员或钻石会员即返还300元荣誉金至个人“余额”账户。
+                </p>
+                <p class="detail">
+                    3、九大爷产品批发价可购,全年节省多至10万采购成本。
+                </p>
+                <p class="detail">
+                    4、定期推送的产品信息：年均100种月增万元利润的严选项目推荐。
+                </p>
+                <p class="detail">
+                    5、决策圈帮销季各种线下线上培训免费参与,价值3000元的各类培训（帮销季是决策圈+九大爷平台为门店的附加服务，帮助门店在平台选品进货后实现出清活动的线下统一促销和统一培训）。
+                </p>
+                <h2>四、平台权限</h2>
+                <p class="detail">
+                    黄金会员可见平台会员价。
+                </p>
+                <h2>五、会员资格的取消</h2>
+                <p class="detail">
+                    如发现任何会员有以下故意行为之一，本网保留取消其使用服务的权利，并无需做出任何补偿；
+                </p>
+                <p class="detail">
+                    1、可能造成本平台全部或局部的服务受影响，或危害本平台运行；
+                </p>
+                <p class="detail">
+                    2、以任何欺诈行为获得会员资格；
+                </p>
+                <p class="detail">
+                    3、在本平台内从事非法商业行为，发布涉及敏感政治、宗教、色情或其它违反有关国家法律和政府法规的文字、图片等信息；
+                </p>
+                <p class="detail">
+                    4、以任何非法目的而使用网络服务系统；
+                </p>
+                <h2>六、平台的权利</h2>
+                <p class="detail">
+                    1、有权撤销或停止会员的全部或部分服务内容；
+                </p>
+                <p class="detail">
+                    2、在有效期内保证会员既定权益的前提下，有权修订会员的其他权利和义务，有权修改或调整本平台的服务内容；
+                </p>
+                <p class="detail">
+                    3、有权将修订的会员的权利和义务以e-mail或短信形式通知会员，会员收到通知后仍继续使用本平台服务者即表示会员同意并遵守新修订内容；
+                </p>
+                <p class="detail">
+                    4、本平台提供的服务仅供会员独立使用，未经平台授权，会员不得将会员号授予或转移给第三方。会员如果有违此例，本平台有权向客户追索商业损失并保留追究法律责任的权利；
+                </p>
+                <h2>七、平台的义务</h2>
+                <p class="detail">
+                    1、认真做好本平台所涉及的网络及通信系统的技术维护工作，保证本平台的畅通和高效；
+                </p>
+                <p class="detail">
+                    2、 除不可抗拒的因素导致本平台临时停止或短时间停止服务以外，乙方如需停止本平台的全部或部分服务时，须提前在本平台上发布通知通告会员；
+                </p>
+                <p class="detail">
+                    3、如本平台因系统维护或升级等原因需暂停服务，将事先通过主页、电子邮件等方式公告会员；
+                </p>
+                <p class="detail">
+                    4、因不可抗力而使本平台服务暂停，所导致会员任何实际或潜在的损失，本平台不做任何补偿；
+                </p>
+                <p class="detail">
+                    5、平台不承担会员因遗失密码而受到的一切损失；
+                </p>
+                <h2>八、附则</h2>
+                <p class="detail">
+                    1、以上规定的范围仅限于九大爷平台http://www.9daye.com.cn；
+                </p>
+                <p class="detail">
+                    2、本网会员因违反以上规定而触犯有关法律法规，一切后果自负，本平台不承担任何责任；
+                </p>
+                <p class="detail">
+                    3、本规则未涉及之问题参见有关法律法规，当本规定与有关法律法规冲突时，以相应的法律法规为准。在本条款规定范围内，九大爷平台拥有最终解释权；
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-lg btn-default btn-agreement" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $('#apxModalAdminAlertReject').modal('show')
+</script>

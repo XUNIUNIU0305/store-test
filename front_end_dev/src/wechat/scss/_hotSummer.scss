@@ -1,0 +1,166 @@
+$base: 1 / 750 * 100vw;
+
+.hot-summer-mobile-container {
+    background: url('/images/hot_summer/beijing.png') no-repeat center/cover;
+    overflow: hidden;
+    h1 {
+        margin: 0;
+        height: 366 * $base;
+        width: 100%;
+        background: url('/images/hot_summer/banner.png') no-repeat center/cover;
+    }
+    h3 {
+        height: 174 * $base;
+        width: 100%;
+        background: url('/images/hot_summer/dabiaoti.png') no-repeat center/cover;
+    }
+
+    .quick-nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        li {
+            flex: 1;
+            list-style: none;
+            text-align: center;
+            font-size: 20 *$base;
+            font-weight: bold;
+            height: 43 *$base;
+            line-height: 43 * $base;
+            background-color: #cecccc;
+            a {
+                color: #fff;
+            }
+        }
+        .nav-on {
+            a {
+                width: auto;
+                color: #fd035e;
+                position: relative;
+                &:after {
+                    position: absolute;
+                    bottom: -2 *$base;
+                    left: 0;
+                    content: '';
+                    display: block;
+                    height: 2 * $base;
+                    width: 100%;
+                    background-color: #fd035e;
+                }
+            }
+
+        }
+
+    }
+    .pos-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .pro-item-container {
+        overflow: hidden;
+        width: 100%;
+        h2 {
+            height: 68 * $base;
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 32 * $base;
+            margin-bottom: 54 * $base;
+            background: url('/images/hot_summer/miaosha.png') no-repeat center;
+            background-size: 492 * $base auto;
+        }
+
+        ul {
+            width: 720 *$base;
+            margin: 0 auto;
+            li {
+                float: left;
+                width: 350 * $base;
+                background-color: #fff;
+                margin-right: 20 * $base;
+                margin-bottom: 20 *$base;
+                list-style: none;
+                &:nth-child(2n) {
+                    margin-right: 0;
+                }
+                img {
+                    display: block;
+                    border: none;
+                    height: 350 * $base;
+                    width: 350 * $base;
+                }
+                strong {
+                    font-weight: normal;
+                    display: block;
+                    width: 90%;
+                    margin: 0 auto;
+                    font-size: 24 * $base;
+                    text-align: left;
+                    height: 72 * $base;
+                    overflow: hidden;
+                    color: #808080;
+                }
+                p {
+                    margin: 0;
+                    display: block;
+                    width: 90%;
+                    color: #f43043;
+                    font-weight: bold;
+                    font-size: 32 * $base;
+                }
+                span {
+                    &:first-child {
+                        font-size: 24 * $base;
+                        color: #f43043;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    .small-pro {
+        background-color: #ff0062;
+        h2 {
+            margin: 0;
+            height: 148 * $base;
+            margin-bottom: 20 * $base;
+            background: url('/images/hot_summer/biyan.png') no-repeat center/cover #fff;
+            background-size: 494*$base auto;
+        }
+    }
+
+    .store-nec {
+        background-color: #ff0062;
+        h2 {
+            margin: 0 auto;
+            margin-bottom: 20 * $base;
+            height: 148 * $base;
+            background: url('/images/hot_summer/dapinpai.png') no-repeat center/cover #fff;
+            background-size:  494 * $base auto;
+        }
+    }
+
+    .gift-pro {
+        h2 {
+
+            background: url('/images/hot_summer/maichanpin.png') no-repeat center/cover;
+            background-size: 492 * $base auto;
+        }
+    }
+
+
+    .to-top {
+        display: block;
+        text-decoration: none;
+        height: 30 * $base;
+        width: 352 * $base;
+        margin: 0 auto;
+        margin-top: 44 * $base;
+        margin-bottom: 54 * $base;
+        background: url('/images/hot_summer/fahui.png') no-repeat center/cover;
+    }
+}
+

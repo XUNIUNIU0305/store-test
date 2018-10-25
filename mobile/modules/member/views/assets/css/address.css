@@ -1,0 +1,142 @@
+.switch-btn {
+  display: inline-block;
+  cursor: pointer; }
+  .switch-btn input[type="checkbox"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none; }
+  .switch-btn input[type="checkbox"] + div {
+    width: 54px;
+    height: 27px;
+    border: 1px solid #d8d8d8;
+    border-radius: 13.5px;
+    background-color: #f0f0f0;
+    transition-duration: .4s;
+    transition-property: background-color, box-shadow;
+    box-shadow: inset 0 0 0 0px rgba(207, 77, 69, 0.5); }
+  .switch-btn input[type="checkbox"].ar-checked + div,
+  .switch-btn input[type="checkbox"]:checked + div {
+    background-color: #53d769;
+    box-shadow: inset 0 0 0 10px #53d769; }
+  .switch-btn input[type="checkbox"] + div > div {
+    float: left;
+    width: 27px;
+    height: 27px;
+    margin-left: 0px;
+    border-radius: inherit;
+    background: #fff;
+    transition-timing-function: cubic-bezier(0.54, 1.85, 0.5, 1);
+    transition-duration: 0.3s;
+    transition-property: background-color, box-shadow, -webkit-transform;
+    transition-property: transform, background-color, box-shadow;
+    transition-property: transform, background-color, box-shadow, -webkit-transform;
+    border: 1px solid #d8d8d8;
+    pointer-events: none;
+    box-sizing: border-box; }
+  .switch-btn input[type="checkbox"].checked + div > div,
+  .switch-btn input[type="checkbox"]:checked + div > div {
+    -webkit-transform: translate3d(27px, 0, 0);
+            transform: translate3d(27px, 0, 0);
+    background-color: #fff; }
+
+.wechat-address-container {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  bottom: 44px;
+  left: 0;
+  overflow-y: auto;
+  overflow-x: hidden; }
+  .wechat-address-container .address-form li {
+    line-height: 44px;
+    background: #fff;
+    margin-bottom: 1px;
+    padding: 0 5%;
+    font-size: 16px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+            justify-content: space-between; }
+    .wechat-address-container .address-form li select {
+      width: 25%;
+      border: 0;
+      background: #fff url("/images/account/arrow-right.png") no-repeat right center;
+      background-size: auto 14px;
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none; }
+    .wechat-address-container .address-form li.split {
+      height: 8px;
+      background: transparent; }
+  .wechat-address-container .address-form label {
+    min-width: 80px; }
+  .wechat-address-container .address-form input,
+  .wechat-address-container .address-form textarea,
+  .wechat-address-container .address-form select {
+    border: 0;
+    -webkit-flex: 1 1 auto;
+            flex: 1 1 auto;
+    outline: 0;
+    line-height: normal; }
+  .wechat-address-container .address-form textarea {
+    margin: 11px 0;
+    padding: 0 4px;
+    resize: none; }
+  .wechat-address-container .address-form .switch-btn {
+    -webkit-align-self: center;
+            align-self: center;
+    min-width: auto; }
+
+.address-item {
+  background: #fff;
+  margin-bottom: 8px;
+  font-size: 15px;
+  padding: 8px 5% 0;
+  color: #333; }
+  .address-item.selected {
+    border-image: repeating-linear-gradient(-45deg, #ff0000 0, #ff0000 1.5em, transparent 0, transparent 3em, #07b6ff 0, #07b6ff 4.5em, transparent 0, transparent 6em) 6 0 0 0/4px; }
+  .address-item .title span:last-child {
+    margin-left: 12px;
+    float: right; }
+  .address-item .detail {
+    padding: 8px 0; }
+  .address-item .option-bar {
+    display: none;
+    border-top: 1px solid #f2f2f2; }
+    .address-item .option-bar.in {
+      display: -webkit-flex;
+      display: flex; }
+    .address-item .option-bar a {
+      max-width: 33.33333%;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+              align-items: center;
+      -webkit-justify-content: center;
+              justify-content: center;
+      height: 44px;
+      position: relative;
+      -webkit-flex: 1 1 auto;
+              flex: 1 1 auto; }
+      .address-item .option-bar a:first-child:before {
+        width: 0; }
+      .address-item .option-bar a:nth-child(2), .address-item .option-bar a:nth-child(3) {
+        font-size: 13px; }
+      .address-item .option-bar a i {
+        height: 16px;
+        width: 16px;
+        display: inline-block;
+        background-size: contain;
+        margin-right: 8px;
+        background-repeat: no-repeat; }
+    .address-item .option-bar .default i {
+      border: 1px solid #f2f2f2;
+      border-radius: 50px; }
+    .address-item .option-bar .default.active {
+      color: #ff9100; }
+      .address-item .option-bar .default.active i {
+        background-image: url("/images/icons/icon01.png"); }
+    .address-item .option-bar .edit i {
+      background-image: url("/images/address/edit.png"); }
+    .address-item .option-bar .delete i {
+      background-image: url("/images/address/delete.png"); }

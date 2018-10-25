@@ -1,0 +1,136 @@
+@charset "UTF-8";
+.ximei-container {
+  padding-top: 64.66667vw;
+  background: #3cba94 url("/images/ximei/banner.png") no-repeat top center/100%; }
+  .ximei-container img {
+    max-width: 100%;
+    vertical-align: top; }
+  .ximei-container .title {
+    text-align: center;
+    padding: 0.53333vw 0 2.66667vw; }
+    .ximei-container .title img {
+      width: 50%; }
+  .ximei-container a {
+    font-weight: bold; }
+  .ximei-container section {
+    padding: 2.66667vw; }
+    .ximei-container section .single-item {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+              align-items: center;
+      padding: 2.66667vw 0; }
+      .ximei-container section .single-item .img {
+        width: 26.66667vw;
+        height: 26.66667vw;
+        overflow: hidden;
+        background-color: #fff; }
+      .ximei-container section .single-item .content {
+        -webkit-flex: 1;
+                flex: 1;
+        margin-left: 0.53333vw;
+        padding-bottom: 0.53333vw;
+        background: #fff; }
+      .ximei-container section .single-item .c-title {
+        font-size: 3.2vw;
+        color: #3cba9c;
+        padding: 0.53333vw 2.13333vw 0;
+        margin: 0;
+        border-bottom: 0.26667vw solid #3cba94; }
+      .ximei-container section .single-item .c-detail {
+        height: 7.5em;
+        line-height: 1.5;
+        overflow: hidden;
+        padding: 0 2.13333vw;
+        font-size: 1.86667vw; }
+      .ximei-container section .single-item .c-buy {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: space-between;
+                justify-content: space-between;
+        -webkit-align-items: baseline;
+                align-items: baseline;
+        padding: 0 2.13333vw; }
+        .ximei-container section .single-item .c-buy .c-price {
+          -webkit-flex: 1;
+                  flex: 1;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-justify-content: space-between;
+                  justify-content: space-between;
+          -webkit-align-items: baseline;
+                  align-items: baseline;
+          padding: 0 5.33333vw 0 0;
+          color: #3cba94;
+          font-size: 2.13333vw; }
+          .ximei-container section .single-item .c-buy .c-price span {
+            font-size: 3.2vw; }
+          .ximei-container section .single-item .c-buy .c-price .del {
+            text-decoration: line-through; }
+        .ximei-container section .single-item .c-buy .buy-btn {
+          -webkit-flex: 0 0 17.6vw;
+                  flex: 0 0 17.6vw;
+          text-align: center;
+          color: #fff;
+          font-size: 2.93333vw;
+          background-color: #3cba94; }
+    .ximei-container section .item-box {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-align-items: center;
+              align-items: center; }
+      .ximei-container section .item-box .item {
+        -webkit-flex: 0 0 44.26667vw;
+                flex: 0 0 44.26667vw;
+        box-sizing: border-box;
+        margin: 1.33333vw;
+        text-align: center;
+        background-color: #fff; }
+        .ximei-container section .item-box .item a {
+          color: #3cba94; }
+        .ximei-container section .item-box .item .img {
+          height: 44.26667vw; }
+        .ximei-container section .item-box .item .item-title {
+          font-size: 3.2vw;
+          border-bottom: 0.26667vw solid #3cba94;
+          margin: 0; }
+        .ximei-container section .item-box .item .item-price {
+          text-align: right;
+          padding-right: 2.13333vw;
+          font-size: 2.13333vw; }
+          .ximei-container section .item-box .item .item-price span {
+            font-size: 3.2vw; }
+        .ximei-container section .item-box .item .buy-btn {
+          color: #fff;
+          line-height: 2;
+          background-color: #3cba9c;
+          margin: 1.6vw 1.06667vw; }
+        .ximei-container section .item-box .item .tip-1 {
+          position: relative; }
+          .ximei-container section .item-box .item .tip-1::before {
+            position: absolute;
+            content: "【超划算】买2桶送1桶";
+            width: 100%;
+            line-height: 1.5em;
+            background-color: rgba(0, 0, 0, 0.67);
+            top: -1.5em;
+            left: 0;
+            color: #fff; }
+        .ximei-container section .item-box .item .tip-2 {
+          position: relative; }
+          .ximei-container section .item-box .item .tip-2::before {
+            position: absolute;
+            content: "【超划算】买6袋送1袋";
+            width: 100%;
+            line-height: 1.5em;
+            background-color: rgba(0, 0, 0, 0.67);
+            top: -1.5em;
+            left: 0;
+            color: #fff; }
+  .ximei-container .footer-back {
+    text-align: center;
+    padding: 3.2vw 0; }
+    .ximei-container .footer-back img {
+      width: 50%; }

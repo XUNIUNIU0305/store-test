@@ -1,0 +1,104 @@
+body {
+  overflow-x: hidden; }
+
+.bg-muted {
+  background: #f2f2f2; }
+
+.table-fix {
+  table-layout: fixed; }
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.container {
+  width: 1190px;
+  max-width: none !important; }
+
+.high-lighted {
+  color: #df483d; }
+
+.supply-order-print {
+  width: 823px;
+  margin: 0 auto; }
+  .supply-order-print .print-head {
+    width: 100%;
+    height: 150px;
+    border-bottom: 3px solid #333;
+    position: relative;
+    color: #4d4d4d; }
+    .supply-order-print .print-head img {
+      position: absolute;
+      left: 40px; }
+    .supply-order-print .print-head .wechat {
+      position: absolute;
+      left: 138px;
+      display: inline-block;
+      width: 14px;
+      line-height: 18px;
+      color: #4d4d4d;
+      font-weight: 700; }
+    .supply-order-print .print-head p {
+      font-size: 24px;
+      text-align: center;
+      font-weight: 700;
+      margin-top: 60px;
+      margin-bottom: 6px; }
+    .supply-order-print .print-head small {
+      display: block;
+      font-size: 14px;
+      text-align: center; }
+    .supply-order-print .print-head h3 {
+      font-size: 14px;
+      color: #333;
+      text-align: right;
+      padding-right: 40px;
+      font-weight: 700; }
+  .supply-order-print .br {
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+    margin-top: 2px; }
+  .supply-order-print .print-content {
+    width: 752px;
+    margin: 34px auto; }
+    .supply-order-print .print-content .left-content {
+      width: 540px; }
+  .supply-order-print .table-box {
+    width: 752px;
+    margin: 0 auto; }
+    .supply-order-print .table-box table {
+      width: 100%; }
+      .supply-order-print .table-box table th:nth-child(1) {
+        width: 40px; }
+      .supply-order-print .table-box table th:nth-child(2) {
+        width: 120px; }
+      .supply-order-print .table-box table th:nth-child(3) {
+        width: 120px; }
+      .supply-order-print .table-box table th:nth-child(4) {
+        width: 90px; }
+      .supply-order-print .table-box table th:nth-child(5) {
+        width: 60px; }
+      .supply-order-print .table-box table th:nth-child(6) {
+        width: 110px; }
+      .supply-order-print .table-box table th, .supply-order-print .table-box table td {
+        text-align: center;
+        border: 1px solid #808080; }
+      .supply-order-print .table-box table th {
+        height: 40px;
+        background-color: #e6e6e6; }
+      .supply-order-print .table-box table td {
+        padding: 10px 0; }
+      .supply-order-print .table-box table .footer td {
+        height: 40px; }
+      .supply-order-print .table-box table .footer .span {
+        display: inline-block;
+        width: 33%;
+        font-weight: 700;
+        font-size: 14px;
+        color: #333; }
+  .supply-order-print .print-time {
+    margin: 80px 32px 0 0;
+    color: #808080;
+    font-size: 14px; }

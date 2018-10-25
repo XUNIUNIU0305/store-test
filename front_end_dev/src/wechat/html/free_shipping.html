@@ -1,0 +1,85 @@
+@@include('head.inc')
+<main class="container">
+	<div class="free-shipping">
+		<img class="banner1" id="top" src="/images/free_shipping/banner1.jpg">
+		<img class="banner2" src="/images/free_shipping/banner2.png">
+		<div class="goods-contain">
+			<div class="goods-detail">
+				<img class="baoyou-img" src="/images/free_shipping/baoyou.png">
+				<img class="goods-img" src="/images/free_shipping/pro1.png">
+				<span class="cut-line"></span>
+				<span class="price"><span>￥</span>160.00</span>
+				<span class="describe">竹炭记忆棉护椎小腰靠背的垫子</span>
+			</div>
+			<div class="goods-detail">
+				<img class="baoyou-img" src="/images/free_shipping/baoyou.png">
+				<img class="goods-img" src="/images/free_shipping/pro1.png">
+				<span class="cut-line"></span>
+				<span class="price"><span>￥</span>160.00</span>
+				<span class="describe">竹炭记忆棉护椎小腰靠背的垫子</span>
+			</div>
+			<div class="goods-detail">
+				<img class="baoyou-img" src="/images/free_shipping/baoyou.png">
+				<img class="goods-img" src="/images/free_shipping/pro1.png">
+				<span class="cut-line"></span>
+				<span class="price"><span>￥</span>160.00</span>
+				<span class="describe">竹炭记忆棉护椎小腰靠背的垫子</span>
+			</div>
+			<div class="goods-detail">
+				<img class="baoyou-img" src="/images/free_shipping/baoyou.png">
+				<img class="goods-img" src="/images/free_shipping/pro1.png">
+				<span class="cut-line"></span>
+				<span class="price"><span>￥</span>160.00</span>
+				<span class="describe">竹炭记忆棉护椎小腰靠背的垫子</span>
+			</div>
+			<div class="goods-detail">
+				<img class="baoyou-img" src="/images/free_shipping/baoyou.png">
+				<img class="goods-img" src="/images/free_shipping/pro1.png">
+				<span class="cut-line"></span>
+				<span class="price"><span>￥</span>160.00</span>
+				<span class="describe">竹炭记忆棉护椎小腰靠背的垫子</span>
+			</div>
+			<div class="goods-detail">
+				<img class="baoyou-img" src="/images/free_shipping/baoyou.png">
+				<img class="goods-img" src="/images/free_shipping/pro1.png">
+				<span class="cut-line"></span>
+				<span class="price"><span>￥</span>160.00</span>
+				<span class="describe">竹炭记忆棉护椎小腰靠背的垫子</span>
+			</div>
+			<div class="goods-detail">
+				<img class="baoyou-img" src="/images/free_shipping/baoyou.png">
+				<img class="goods-img" src="/images/free_shipping/pro1.png">
+				<span class="cut-line"></span>
+				<span class="price"><span>￥</span>160.00</span>
+				<span class="describe">竹炭记忆棉护椎小腰靠背的垫子</span>
+			</div>
+			<div class="goods-detail">
+				<img class="baoyou-img" src="/images/free_shipping/baoyou.png">
+				<img class="goods-img" src="/images/free_shipping/pro1.png">
+				<span class="cut-line"></span>
+				<span class="price"><span>￥</span>160.00</span>
+				<span class="describe">竹炭记忆棉护椎小腰靠背的垫子</span>
+			</div>
+		</div>
+		<a href="#top" class="to-top hidden"><img  class="to-img" src="/images/free_shipping/top.png"></a>
+		<img class="ceiling-img hidden" src="/images/free_shipping/xuanfuk.png">
+	</div>
+</main>
+@@include('footer.inc')
+
+<script type="text/javascript">
+	$(function() {
+		var top_height = $('.banner1').height() + $('.banner2').height();
+		$('main.container').on('touchmove scroll',function() {
+			var _top = $('main.container').scrollTop();
+			if (_top > top_height)
+			{
+				$('.to-top').removeClass('hidden');
+				$('.ceiling-img').removeClass('hidden');
+			} else {
+				$('.to-top').addClass('hidden');
+				$('.ceiling-img').addClass('hidden');
+			}
+		});
+	} )
+</script>

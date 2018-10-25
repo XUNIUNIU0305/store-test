@@ -1,0 +1,378 @@
+.apex-car-decoration-container {
+  min-width: 1190px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  .float-nav {
+    position: fixed;
+    right: 28px;
+    top: 40%;
+    z-index: 9999;
+    .nav {
+      background-color: #C4E6C5;
+      padding-left: 10px;
+      li {
+        a {
+          height: 66px;
+          width: 170px;
+          text-align: center;
+          color: #FFF;
+          font-size: 28px;
+          font-weight: bold;
+          background-color: #3C9B71;
+          margin-bottom: 10px;
+          &:hover,
+          &:focus {
+            background-color:  #3C9B71;
+          }
+        }
+        &:last-child {
+          a {
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+
+  .banner {
+    height: 684px;
+    background: url('/images/car_decoration/top.jpg') no-repeat center/cover;
+  }
+
+  .row-container {
+    min-width: 1190px;
+    margin: 0 auto;
+    background-color: #F0F7E7;
+    .new {
+      .title {
+        height: 69px;
+        width: 547px;
+        background: url('/images/car_decoration/title.png');
+        margin: 0 auto;
+      }
+    }
+    .decortaion-control {
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
+      .title {
+        height: 69px;
+        width: 686px;
+        background: url('/images/car_decoration/title2.png');
+        margin: 0 auto;
+        margin-top: 64px;
+      }
+      .goods-box {
+        width: 1206px;
+        height: 622px;
+        margin: 0 auto;
+        background: url('/images/car_decoration/bg1.png') no-repeat center;
+        .detail-container {
+          padding-top: 100px;
+          .detail-items {
+            display: inline-block;
+            margin-right: 35px;
+            &:nth-child(2) {
+              margin-right: 0;
+            }
+            a {
+              display: block;
+              height: 572px;
+              position: relative;
+              text-decoration: none;
+              .date {
+                font-size: 26px;
+                color: #DF5645;
+                position: absolute;
+                top: 20px;
+                left: 20px;
+              }
+              .describe {
+                position: absolute;
+                bottom: 110px;
+                width: 380px;
+                left: 26px;
+                p {
+                  margin: 0;
+                  padding: 0;
+                }
+                .title-describe {
+                  font-size: 26px;
+                  color: #3e9a72;
+                  font-weight: bold;
+                  text-align: center;
+                }
+                .underline {
+                  border-bottom: 2px solid #85c2a2;
+                  font-size: 18px;
+                  color: #85c2a2;
+                  margin: 12px 0;
+                }
+                .delete-price {
+                  font-size: 20px;
+                  color: #DF5645;
+                  text-decoration: line-through;
+                  text-align: left;
+                }
+                .price-box {
+                  color: #DF5645;
+                  font-size: 20px;
+                  text-align: left;
+                  p {
+                    display: inline-block;
+                  }
+                  .price {
+                    font-size: 34px;
+                    font-weight: bold;
+                    margin-right: 12px;
+                  }
+                  .buy-now {
+                    height: 36px;
+                    line-height: 36px;
+                    text-align: center;
+                    width: 130px;
+                    color: #fff;
+                    font-size: 24px;
+                    font-weight: bold;
+                    background-color: #DF5645;
+                    border-radius: 5px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .goods-box:nth-child(3) {
+        background: url('/images/car_decoration/bg2.png') no-repeat center;
+        .detail-container {
+          padding-top: 86px;
+        }
+      }
+
+      .goods-box:nth-child(4) {
+        background: url('/images/car_decoration/bg_3.png') no-repeat center;
+        .detail-container {
+          padding-top: 80px;
+        }
+      }
+    }
+
+    //销量冠军
+    .decortaion-control:nth-child(3) {
+      .title {
+        background: url('/images/car_decoration/title_3.png');
+      }
+      .goods-box {
+        .detail-container {
+          .detail-items {
+            .describe {
+              bottom: 115px;
+              .title-describe {
+                text-align: center;
+                font-size: 26px;
+                margin-bottom: 15px;
+              }
+              p {
+                text-align: left;
+                font-size: 20px;
+              }
+              .red {
+                color: #fd5645;
+                font-size: 24px;
+                font-weight: bold;
+              }
+              .price-box {
+                position: absolute;
+                top: 45px;
+                right: 40px;
+                font-weight: bold;
+                color: #fd5645;
+                font-size: 20px;
+                .J_pro_price {
+                  font-size: 34px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .goods-box:nth-child(3) {
+        .detail-container {
+          .detail-items {
+            .describe {
+              bottom: 170px;
+              
+              .red-df {
+                font-size: 20px;
+                color: #fd5645;
+                font-weight: bold;
+              }
+              .price-box {
+                top: 105px;
+                right: 45px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    //拼团
+    .decortaion-control:nth-child(4) {
+      .title {
+        background: url('/images/car_decoration/title3.png');
+      }
+
+      .goods-box {
+        .detail-container {
+          .detail-items {
+            .describe {
+              bottom: 155px;
+              .describe-red {
+                font-size: 42px;
+                color: #fd5645;
+                margin: 0 14px;
+              }
+              .btn-join {
+                height: 38px;
+                width: 130px;
+                line-height: 38px;
+                background-color: #3e9a72;
+                color: #fff;
+                font-size: 26px;
+                font-weight: bold;
+                margin: 0 auto;
+                border-radius: 5px;
+                margin-top: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .full_reduction_control {
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
+
+      .title {
+        height: 69px;
+        width: 686px;
+        background: url('/images/car_decoration/title4.png') no-repeat center center;
+        margin: 0 auto;
+        margin-top: 64px;
+        margin-bottom: 64px;
+      }
+
+      .goods-box {
+        display: flex;
+        flex-wrap: wrap;
+        width: 1190px;
+        margin: 0 auto;
+        .goods-item {
+          margin-right: 22px;
+          width: 382px;
+          height: 382px;
+          margin-bottom: 48px;
+          overflow: hidden;
+          a {
+            position: relative;
+            .describe {
+              position: absolute;
+              top: 90px;
+              left: 0;
+              width: 100%;
+              .title-describe {
+                font-size: 26px;
+                color: #3e9a72;
+                font-weight: bold;
+                text-align: center;
+              }
+              .buy-now {
+                height: 38px;
+                width: 130px;
+                line-height: 38px;
+                background-color: #fd5645;
+                color: #fff;
+                font-size: 26px;
+                font-weight: bold;
+                margin: 0 auto;
+                border-radius: 5px;
+                margin-top: 10px;
+              }
+            }
+          }
+        }
+        .goods-item:nth-child(3n) {
+          margin-right: 0px;
+        }
+       
+      }
+
+      .explain {
+        text-align: left;
+        width: 1190px;
+        margin: 0 auto;
+        padding: 28px 20px;
+        background-color: #fff;
+        margin-bottom: 48px;
+        .title-red {
+          font-size: 18px;
+          color: #fd5645;
+          font-weight: bold;
+        }
+        .detail-msg {
+          font-size: 14px;
+          color: #3e9a72;
+        }
+      }
+
+      .uls {
+        width: 1190px;
+        margin: 0 auto;
+        padding: 0;
+        text-align: left;
+        li {
+          list-style: none;
+          width: 100%;
+          height: 130px;
+          margin-bottom: 18px;
+          padding: 16px 0;
+          display: flex;
+          .li-title {
+            line-height: 102px;
+            width: 262px;
+            text-align: center;
+            background-color: #91c981;
+            color: #fff;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 0px;
+          }
+          .li-msg {
+            padding-left: 48px;
+            width: 908px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            background-color: #fff;
+            line-height: 1;
+            p {
+              font-size: 20px;
+              color: #3e9a72;
+            }
+            .red-msg {
+              color: #fd5645;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

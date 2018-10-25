@@ -1,0 +1,42 @@
+.deposit-detail {
+    min-width: 1190px;
+}
+.deposit-detail .back-container {
+    width: 60%;
+    margin: 30px auto;
+}
+.deposit-detail table {
+    width: 60%;
+    margin: 20px auto 60px;
+    transition: all 0.5s;
+}
+.deposit-detail table td {
+    border: 1px solid #ccc;
+    line-height: 3;
+    text-align: center;
+    position: relative;
+}
+.deposit-detail table td:first-child {
+    width: 100px;
+}
+td > img {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: -14px;
+    padding-right: 40px;
+}
+.tip-container {
+    width: 100%;
+    word-wrap: break-word;
+}
+.popover {
+    max-width: 400px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+

@@ -1,0 +1,11 @@
+.J_customization {
+	width: 50%;
+	float: none;
+	margin: 0 auto;
+	padding: 0 80px;
+	background: #000;
+}
+
+.J_customization img {
+	width: 100%;
+}

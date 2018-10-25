@@ -1,0 +1,150 @@
+@@include('head.inc') @@include('banner.inc') @@include('search.inc') @@include('main_nav.inc')
+<div class="container">
+    <div class="row">
+        <ol class="breadcrumb">
+            <li><a href="#">商城首页</a></li>
+            <li class="active">用户中心</li>
+        </ol>
+        @@include('account_aside.inc')
+        <div class="apx-acc-main">
+            <div class="apx-acc-withdraw">
+                <ul class="nav nav-tabs">
+                    <li role="presentation" class="active">
+                        <a href="#tab_inhand" role="tab" data-toggle="tab">处理中
+                    </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#tab_success" role="tab" data-toggle="tab">已成功
+                    </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#tab_fail" role="tab" data-toggle="tab">已失败
+                    </a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="tab_inhand">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="搜索">
+                                    <span class="input-group-btn">
+                                        <button class="btn"><i class="glyphicon glyphicon-search"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <table class="table table-condensed table-hover table-fix">
+                                    <thead>
+                                        <tr>
+                                            <th width="100">生成时间</th>
+                                            <th width="140">提现单号</th>
+                                            <th width="175">卡号</th>
+                                            <th width="94">持卡人姓名</th>
+                                            <th width="125">开户行</th>
+                                            <th>金额</th>
+                                            <th width="110">联系手机号</th>
+                                            <th>状态</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2002-08-27 13:38:16</td>
+                                            <td>123456789012</td>
+                                            <td>963258888888888888</td>
+                                            <td>九大爷</td>
+                                            <td>中国工商银行</td>
+                                            <td>25000.00</td>
+                                            <td>13012345678</td>
+                                            <td>已成功</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2002-08-27 13:38:16</td>
+                                            <td>123456789012</td>
+                                            <td>963258888888888888</td>
+                                            <td>九大爷</td>
+                                            <td>中国工商银行</td>
+                                            <td>25000.00</td>
+                                            <td>13012345678</td>
+                                            <td>已成功</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2002-08-27 13:38:16</td>
+                                            <td>123456789012</td>
+                                            <td>963258888888888888</td>
+                                            <td>九大爷</td>
+                                            <td>中国工商银行</td>
+                                            <td>25000.00</td>
+                                            <td>13012345678</td>
+                                            <td>已成功</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2002-08-27 13:38:16</td>
+                                            <td>123456789012</td>
+                                            <td>963258888888888888</td>
+                                            <td>九大爷</td>
+                                            <td>中国工商银行</td>
+                                            <td>25000.00</td>
+                                            <td>13012345678</td>
+                                            <td>已成功</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2002-08-27 13:38:16</td>
+                                            <td>123456789012</td>
+                                            <td>963258888888888888</td>
+                                            <td>九大爷</td>
+                                            <td>中国工商银行</td>
+                                            <td>25000.00</td>
+                                            <td>13012345678</td>
+                                            <td>已成功</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2002-08-27 13:38:16</td>
+                                            <td>123456789012</td>
+                                            <td>963258888888888888</td>
+                                            <td>九大爷</td>
+                                            <td>中国工商银行</td>
+                                            <td>25000.00</td>
+                                            <td>13012345678</td>
+                                            <td>已成功</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2002-08-27 13:38:16</td>
+                                            <td>123456789012</td>
+                                            <td>963258888888888888</td>
+                                            <td>九大爷</td>
+                                            <td>中国工商银行</td>
+                                            <td>25000.00</td>
+                                            <td>13012345678</td>
+                                            <td>已成功</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- pagination -->
+                                <div class="text-right">
+                                    <ul class="pagination">
+                                        <li class="active"><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><span>...</span></li>
+                                        <li><a href="#">10</a></li>
+                                    </ul>
+                                    <div class="pagination-info">
+                                        <span>共100页，到第<input type="text" maxlength="3">页</span>
+                                        <a href="#" class="btn btn-default">确认</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="tab_success">null</div>
+                    <div role="tabpanel" class="tab-pane fade" id="tab_fail">null</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('ensurance.inc') @@include('sitemap.inc') @@include('footer.inc')

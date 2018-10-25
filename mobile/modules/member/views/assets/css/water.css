@@ -1,0 +1,83 @@
+.water-coupon-list {
+  position: absolute;
+  top: 44px;
+  right: 0;
+  left: 0;
+  bottom: 50px; }
+  .water-coupon-list p {
+    margin: 0; }
+  .water-coupon-list img {
+    max-width: 100%; }
+  .water-coupon-list .head-nav {
+    border-top: 1px solid #f2f2f2;
+    background-color: #FFF;
+    display: -webkit-flex;
+    display: flex;
+    text-align: center;
+    font-size: 1.2em; }
+    .water-coupon-list .head-nav p {
+      -webkit-flex: 0 0 49.8%;
+              flex: 0 0 49.8%;
+      color: #b2b2b2;
+      padding: 10px 0;
+      font-weight: 100; }
+      .water-coupon-list .head-nav p span {
+        padding: 9px 0; }
+      .water-coupon-list .head-nav p:first-child {
+        border-right: 1px solid #f2f2f2; }
+      .water-coupon-list .head-nav p.active {
+        color: #ff9100; }
+        .water-coupon-list .head-nav p.active span {
+          border-bottom: 2px solid #ff9100; }
+  .water-coupon-list .coupon-list {
+    background: #f2f2f2;
+    position: absolute;
+    top: 42px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: auto; }
+    .water-coupon-list .coupon-list .item {
+      color: #fff;
+      background: url("/images/water_coupon/bg_card.png") no-repeat center top;
+      background-size: 100%;
+      margin: 8px 20px;
+      padding-bottom: 38%;
+      text-align: center;
+      position: relative; }
+      .water-coupon-list .coupon-list .item > img {
+        width: 50%;
+        position: absolute;
+        top: 26%;
+        left: 0;
+        right: 0;
+        margin: 0 auto; }
+      .water-coupon-list .coupon-list .item .title {
+        font-size: 1.2em;
+        text-align: left;
+        position: absolute;
+        left: 6%;
+        top: 4%; }
+      .water-coupon-list .coupon-list .item .time, .water-coupon-list .coupon-list .item .address {
+        position: absolute;
+        color: #333; }
+      .water-coupon-list .coupon-list .item .time {
+        left: 6%;
+        bottom: 22%; }
+      .water-coupon-list .coupon-list .item .address {
+        left: 6%;
+        bottom: 8%; }
+      .water-coupon-list .coupon-list .item.disabled {
+        background-image: url("/images/water_coupon/bg_card_grey.png"); }
+        .water-coupon-list .coupon-list .item.disabled .time, .water-coupon-list .coupon-list .item.disabled .address {
+          color: #999; }
+        .water-coupon-list .coupon-list .item.disabled:after {
+          display: block;
+          content: ' ';
+          width: 36%;
+          height: 80%;
+          position: absolute;
+          top: 10%;
+          right: 3%;
+          background: url("/images/water_coupon/used.png") no-repeat center;
+          background-size: 100%; }

@@ -1,0 +1,39 @@
+// navbar 
+.apx-search-nav{
+    .navbar-cart-progress{
+        margin-top: 10px;
+        font-size: 12px;
+        line-height: 44px;
+        counter-reset: CART-PROGRESS;
+        li{
+            border-top: 5px solid;
+            width: 200px;
+            text-align: center;
+            position: relative;
+            color: #b3b3b3;
+            &.past{
+                color: #e6bbb8;
+            }
+            &.current{
+                color: #cf4d44;
+            }
+            &:before{
+                content: counter(CART-PROGRESS)'.';
+                counter-increment: CART-PROGRESS;
+            }
+            &:after{
+                position: absolute;
+                content: counter(CART-PROGRESS);
+                width: 26px;
+                line-height: 26px;
+                text-align: left;
+                background: currentcolor;
+                border-radius: 50%;
+                left: 50%;
+                margin-left: -13px;
+                top:-15px;
+                text-shadow: 10px 0 0 #fff;
+            }
+        }
+    }
+}

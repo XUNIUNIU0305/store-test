@@ -1,0 +1,139 @@
+.business-water-container {
+    position: relative;
+    .pagination-info {
+        margin-right: 20px;
+    }
+}
+
+// water list
+.business-water-table {
+    th {
+        line-height: 51px - 16 !important;
+        text-align: center;
+        border-color: #144fcc !important;
+    }
+    td {
+        line-height: 41px - 16 !important;
+        border-bottom: 1px solid #eee;
+    }
+}
+
+.business-water-form {
+    height: 94px;
+    background: #fff;
+    background-image: radial-gradient(#e9eef2 40%, transparent 0);
+    background-size: 16px 16px;
+    background-repeat: repeat-x;
+    overflow: hidden;
+    background-position: center 86px;
+    position: relative;
+    .water-strategy {
+        position: absolute;
+        right: 15%;
+        top: 40%;
+        cursor: pointer;
+    }
+    .input-group {
+        width: 500px;
+        margin: 30px auto;
+        .form-control {
+            border-color: #0080ff;
+        }
+        .btn-default {
+            min-width: 50px;
+            height: 34px;
+            border-color: #0080ff;
+            background: #0080ff;
+            color: #fff;
+        }
+    }
+}
+
+.business-water-info {
+    border-top: 20px solid #e9eef2;
+    padding: 100px 0 100px 240px;
+    .h3 {
+        font-size: 26px;
+        color: #0080ff;
+        margin: 0 0 40px;
+    }
+    .list-unstyled {
+        font-size: 18px;
+        color: #4d4d4d;
+        line-height: 40px;
+        margin-left: 190px;
+        i {
+            width: 22px;
+            line-height: 22px;
+            display: inline-block;
+            margin-right: 10px;
+            text-align: center;
+            font-style: normal;
+            color: #fff;
+            border-radius: 50%;
+            &.cyan {
+                background: #00d3de
+            }
+            &.red {
+                background: #e11144
+            }
+            &.orange {
+                background: #f88311
+            }
+        }
+        // error info
+        .error {
+            padding-left: 32px;
+            background: url(/images/business/water/warn.png) no-repeat 8px center;
+            img {
+                vertical-align: text-bottom;
+                margin-right: 12px;
+            }
+            a {
+                color: #e11144;
+                text-decoration: underline;
+            }
+        }
+    }
+    >.btn-default {
+        border-radius: 18px;
+        min-width: 140px;
+        line-height: 22px;
+        color: #fff;
+        background: #0080ff;
+        border-color: #0080ff;
+        margin-top: 102px;
+        margin-left: 190px + 26 + 11;
+        outline: 0;
+        &:active {
+            color: #fff;
+            background: #0080ff;
+            border-color: #0080ff;
+            outline: 0;
+        }
+    }
+}
+.water-strategy-content {
+    margin: 0 auto;
+    z-index: 22;
+    text-align: center;
+    background-color: RGBA(0, 0, 0, 0.6);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    p {
+        position: fixed;
+        right: 100px;
+        top: 160px;
+        width: 60px;
+        height: 60px;
+        border-radius: 60px;
+        font-size: 30px;
+        text-align: center;
+        line-height: 60px;
+        color: #000;
+        background-color: RGBA(255, 255, 255, 1);
+        opacity: 0.6;
+    }
+}

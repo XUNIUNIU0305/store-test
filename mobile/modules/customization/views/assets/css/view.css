@@ -1,0 +1,337 @@
+.customization-upload {
+  margin-bottom: 60px;
+  background-color: #f2f2f2; }
+  .customization-upload p {
+    margin: 0; }
+  .customization-upload img {
+    max-width: 100%;
+    vertical-align: top; }
+  .customization-upload .tip-title {
+    width: 100%;
+    height: 120px;
+    background-color: #fff0f0;
+    position: relative;
+    display: none; }
+    .customization-upload .tip-title.reject {
+      display: block;
+      background: #fff0f0 url("/images/customization/reject.png") no-repeat center 40%;
+      background-size: 15%; }
+    .customization-upload .tip-title.masking {
+      display: block;
+      background: #fff0f0 url("/images/customization/shengc.png") no-repeat center 40%;
+      background-size: 20%; }
+    .customization-upload .tip-title.transiting {
+      display: block;
+      background: #fff0f0 url("/images/customization/car.png") no-repeat center 40%;
+      background-size: 20%; }
+    .customization-upload .tip-title p {
+      width: 100%;
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      text-align: center; }
+  .customization-upload .express-info {
+    background: #fff; }
+    .customization-upload .express-info .title {
+      background: url("/images/customization/icon2.png") no-repeat 12px center;
+      background-size: 22px auto; }
+    .customization-upload .express-info p {
+      margin: 0 44px;
+      padding: 8px 0;
+      border-top: 1px solid #dedfe0;
+      color: #666;
+      font-size: 16px; }
+  .customization-upload .order-info {
+    margin-top: 10px;
+    display: -webkit-flex;
+    display: flex;
+    padding: 10px;
+    background-color: #FFF;
+    position: relative; }
+    .customization-upload .order-info .img {
+      width: 90px;
+      height: 90px;
+      overflow: hidden;
+      margin: auto; }
+    .customization-upload .order-info .text {
+      -webkit-flex: 0 0 70%;
+              flex: 0 0 70%;
+      padding-left: 10px; }
+      .customization-upload .order-info .text .h1 {
+        font-size: 1.3em;
+        margin-bottom: 5px; }
+      .customization-upload .order-info .text .attr, .customization-upload .order-info .text .time {
+        color: #9d9d9d; }
+      .customization-upload .order-info .text .price {
+        bottom: 10px;
+        color: #e53935; }
+        .customization-upload .order-info .text .price span {
+          font-size: 1.3em; }
+  .customization-upload .title {
+    font-size: 1.2em;
+    padding: 6px 0 6px 44px; }
+  .customization-upload .select-car {
+    margin-top: 8px;
+    padding-bottom: 6px;
+    background-color: #FFF;
+    overflow: hidden;
+    color: #333; }
+    .customization-upload .select-car .title {
+      background: url("/images/customization/1.png") no-repeat 12px center;
+      background-size: 22px auto;
+      border-bottom: 1px solid #dedfe0; }
+    .customization-upload .select-car ul {
+      margin: 6px 10px; }
+      .customization-upload .select-car ul li {
+        border-bottom: 1px solid #dedfe0;
+        padding: 8px 0; }
+        .customization-upload .select-car ul li img {
+          width: 29px;
+          height: 29px;
+          border: none;
+          vertical-align: middle;
+          margin-right: 10px; }
+    .customization-upload .select-car .left {
+      padding: 0 10%;
+      line-height: 29px; }
+  .customization-upload .remark {
+    margin-top: 10px;
+    background-color: #FFF;
+    padding: 0 10px; }
+    .customization-upload .remark .title {
+      padding-left: 34px;
+      background: url("/images/customization/2.png") no-repeat 2px center;
+      background-size: 22px auto; }
+    .customization-upload .remark textarea {
+      width: 100%;
+      background-color: whitesmoke;
+      border: 1px solid #e0e0e0;
+      margin: 10px 0; }
+  .customization-upload .supply-remark {
+    margin-top: 10px;
+    background-color: #FFF;
+    overflow: hidden; }
+    .customization-upload .supply-remark .title {
+      background: url("/images/customization/3.png") no-repeat 12px center;
+      background-size: 22px auto; }
+    .customization-upload .supply-remark p {
+      margin: 10px 20px;
+      font-size: 1.2em; }
+  .customization-upload .upload-img {
+    margin-top: 10px;
+    background-color: #FFF; }
+    .customization-upload .upload-img .title {
+      background: url("/images/customization/4.png") no-repeat 12px center;
+      background-size: 22px auto; }
+    .customization-upload .upload-img .img-box {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+              flex-wrap: wrap;
+      margin: 0 2.66%; }
+    .customization-upload .upload-img .img-upload-box {
+      -webkit-flex: 0 0 28%;
+              flex: 0 0 28%;
+      padding-top: 29.33%;
+      margin: 2%;
+      position: relative;
+      border: 1px dashed #b3b3b3;
+      overflow: hidden;
+      cursor: pointer;
+      display: inline-block; }
+      .customization-upload .upload-img .img-upload-box img {
+        background: #fff;
+        display: inline-block;
+        margin: 0 auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%; }
+      .customization-upload .upload-img .img-upload-box .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20px;
+        height: 20px;
+        background: rgba(0, 0, 0, 0.2);
+        z-index: 2;
+        color: #fff;
+        text-align: center;
+        line-height: 20px; }
+    .customization-upload .upload-img input[type="file"] {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 99;
+      opacity: 0; }
+  .customization-upload .submit {
+    margin: 20px 0; }
+    .customization-upload .submit .btn {
+      display: block;
+      width: 78%;
+      margin: 0 auto;
+      background-image: linear-gradient(0deg, #e53935 0%, #f2651b 42%, #ff9100 100%);
+      font-size: 1.5em;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+      border-radius: 40px; }
+
+.mask-fixed {
+  z-index: 100001;
+  position: fixed; }
+
+.wechat-car-brand-container {
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  top: 20%;
+  bottom: 0; }
+  .wechat-car-brand-container img {
+    max-width: 100%;
+    vertical-align: top; }
+  .in > .wechat-car-brand-container {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  .wechat-car-brand-container > .title {
+    font-size: 16px;
+    line-height: 44px;
+    text-align: center; }
+  .wechat-car-brand-container .select-box {
+    display: -webkit-flex;
+    display: flex;
+    position: absolute;
+    top: 44px;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .wechat-car-brand-container .left {
+    -webkit-flex: 0 0 15%;
+            flex: 0 0 15%;
+    background: #f0eff5;
+    text-align: center; }
+    .wechat-car-brand-container .left ul {
+      -webkit-overflow-scrolling: touch;
+      padding: 0; }
+    .wechat-car-brand-container .left span {
+      display: inline-block;
+      width: 100%; }
+    .wechat-car-brand-container .left .active {
+      background-color: #FFF;
+      border-left: 3px solid #e53935; }
+  .wechat-car-brand-container .right {
+    -webkit-flex: 0 0 85%;
+            flex: 0 0 85%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 15%;
+    bottom: 0; }
+    .wechat-car-brand-container .right .title {
+      background: #f0eff5;
+      color: #666;
+      line-height: 20px; }
+      .wechat-car-brand-container .right .title span {
+        padding-left: 30px; }
+    .wechat-car-brand-container .right li {
+      position: relative; }
+    .wechat-car-brand-container .right .img {
+      width: 26px;
+      height: 26px;
+      padding: 8px 0 8px 40px; }
+      .wechat-car-brand-container .right .img img {
+        width: 100%;
+        height: 100%; }
+    .wechat-car-brand-container .right .brand-name {
+      position: absolute;
+      left: 40%; }
+  .wechat-car-brand-container ul {
+    padding: 0 5%;
+    height: 100%;
+    overflow: auto; }
+    .wechat-car-brand-container ul li {
+      line-height: 44px;
+      font-size: 16px;
+      border-bottom: 1px solid #f2f2f2;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+              align-items: center;
+      -webkit-justify-content: space-between;
+              justify-content: space-between; }
+      .wechat-car-brand-container ul li.actived i {
+        background: #cf4544; }
+    .wechat-car-brand-container ul i {
+      display: inline-block;
+      width: 16px;
+      height: 16px; }
+
+.wechat-car-type-container {
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  width: 100%;
+  height: 70%;
+  background: #fff;
+  position: absolute;
+  top: 30%;
+  bottom: 0; }
+  .in > .wechat-car-type-container {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  .wechat-car-type-container .btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    line-height: 44px;
+    width: 100%;
+    border: 0;
+    color: #fff;
+    font-size: 16px;
+    outline: 0;
+    background-image: linear-gradient(270deg, #e53935 0%, #ff9100 100%); }
+  .wechat-car-type-container .title {
+    font-size: 16px;
+    line-height: 44px;
+    text-align: center;
+    border-bottom: 1px solid #f2f2f2; }
+  .wechat-car-type-container ul {
+    padding: 0 5%;
+    height: 80%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch; }
+    .wechat-car-type-container ul li {
+      line-height: 44px;
+      font-size: 16px;
+      border-bottom: 1px solid #f2f2f2;
+      display: -webkit-flex;
+      display: flex; }
+    .wechat-car-type-container ul i {
+      display: inline-block;
+      width: 16px;
+      height: 16px; }
+  .wechat-car-type-container .img {
+    width: 26px;
+    height: 26px;
+    padding: 8px 0 8px; }
+    .wechat-car-type-container .img img {
+      width: 100%;
+      height: 100%;
+      vertical-align: top; }
+  .wechat-car-type-container .brand-name {
+    width: 70%;
+    padding-left: 5%; }

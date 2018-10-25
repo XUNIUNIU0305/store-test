@@ -1,0 +1,800 @@
+@@include('head.inc')
+<!-- header start -->
+<header class="admin-frame-header">
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#top">
+                <img alt="logo" src="/images/logo_white.png" height="24">
+            </a>
+        </div>
+        <ul class="nav navbar-nav navbar-left">
+            <li>管理控制中心</li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                476644346@qq.com
+            </li>
+            <li>
+                <a href="javascript:void(0)">退出</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<!-- header end -->
+<!-- aside nav start -->
+<aside class="admin-frame-aside" id="aside-menu">
+    <ul class="nav nav-pills nav-stacked">
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_1">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_2">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_3">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+    </ul>
+    <ul id="aside_menu_1" class="list-unstyled child-list collapse">
+        <li class="active"><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+    </ul>
+    <ul id="aside_menu_2" class="list-unstyled child-list collapse">
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+    </ul>
+    <ul id="aside_menu_3" class="list-unstyled child-list collapse">
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+    </ul>
+</aside>
+<!-- aside nav end -->
+<!-- main area start -->
+<div class="admin-frame-main">
+    <div class="admin-main-wrap">
+        <div class="admin-coupon-container">
+            <div class="admin-coupon-box clearfix">
+                <div class="col-xs-4">
+                    优惠券名称：代用名
+                </div>
+                <div class="col-xs-4">
+                    优惠券面额：100元
+                </div>
+                <div class="col-xs-4">
+                    有效期：2017.05.05-2017.06.06
+                </div>
+                <div class="col-xs-4">
+                    使用条件：满1000元使用
+                </div>
+                <div class="col-xs-4">
+                    单人持有上限：无限制
+                </div>
+                <div class="col-xs-4">
+                    使用对象：无限制
+                </div>
+                <div class="col-xs-4">
+                    总发行量：100,000张
+                </div>
+                <div class="col-xs-4">
+                    可发行量：5,000张 <button class="btn btn-danger">增加</button>
+                </div>
+            </div>
+            <!--nav tabs-->
+            <ul class="nav nav-tabs">
+                <li>
+                    <a href="#coupon_no_dist" data-toggle="tab">未分发</a>
+                </li>
+                <li>
+                    <a href="#coupon_inactive" data-toggle="tab">未激活</a>
+                </li>
+                <li>
+                    <a href="#coupon_actived" data-toggle="tab">已激活</a>
+                </li>
+                <li>
+                    <a href="#coupon_used" data-toggle="tab">已使用</a>
+                </li>
+                <li class="active">
+                    <a href="#coupon_expired" data-toggle="tab">已过期</a>
+                </li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane fade" id="coupon_no_dist">
+                    <div class="admin-coupon-detail-panel">
+                        <div class="header"></div>
+                        <div class="content with-header with-footer">
+                            <ul class="list-unstyled pull-left">
+                                <li class="active"><a href="#sub_dist" data-toggle="tab" class="btn btn-default btn-block">分发优惠券</a></li>
+                                <li><a href="#sub_release" data-toggle="tab" class="btn btn-default btn-block">发行实体券</a></li>
+                                <li><a href="#sub_karabiner" data-toggle="tab" class="btn btn-default btn-block">自动分发券</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="sub_dist">
+                                    <div class="title"><strong>分发优惠券</strong></div>
+                                    <form class="form-horizontal">
+                                        <div class="form-group">
+                                            <label for="" class="control-label col-xs-2">请输入用户ID：</label>
+                                            <div class="col-xs-10">
+                                                <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="例：2016358745，5598784512"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-10 col-xs-offset-2">
+                                                <button class="btn btn-danger btn-submit">分发</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="sub_release">
+                                    <div class="title"><strong>发行实体券</strong></div>
+                                    <form class="form-horizontal">
+                                        <div class="form-group">
+                                            <label for="" class="control-label col-xs-2">发行量：</label>
+                                            <div class="col-xs-7">
+                                                <input type="text" class="form-control" placeholder="例：2016358745，5598784512">
+                                            </div>
+                                            <p class="col-xs-3 form-control-static">（剩余可发行数量：5364）</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-10 col-xs-offset-2">
+                                                <button class="btn btn-danger btn-submit">确认发行</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="sub_karabiner">
+                                    <div class="title"><strong>自动分发券<span class="text-danger">（注：高亮文字，可选）</span></strong></div>
+                                    <form class="form-horizontal">
+                                        <div class="form-group">
+                                            <label for="" class="control-label col-xs-2">指定消费店：</label>
+                                            <div class="col-xs-6">
+                                                <select class="selectpicker" data-width="100%" data-live-search="true">
+                                                    <option data-tokens="上海宝山">上海宝山</option>
+                                                    <option data-tokens="上海黄浦">上海黄浦</option>
+                                                    <option data-tokens="上海静安">上海静安</option>
+                                                    <option data-tokens="苏州提篮桥">苏州提篮桥</option>
+                                                    <option data-tokens="上海宝山">上海宝山</option>
+                                                    <option data-tokens="上海黄浦">上海黄浦</option>
+                                                    <option data-tokens="上海静安">上海静安</option>
+                                                    <option data-tokens="苏州提篮桥">苏州提篮桥</option>
+                                                    <option data-tokens="上海宝山">上海宝山</option>
+                                                    <option data-tokens="上海黄浦">上海黄浦</option>
+                                                    <option data-tokens="上海静安">上海静安</option>
+                                                    <option data-tokens="苏州提篮桥">苏州提篮桥</option>
+                                                    <option data-tokens="上海宝山">上海宝山</option>
+                                                    <option data-tokens="上海黄浦">上海黄浦</option>
+                                                    <option data-tokens="上海静安">上海静安</option>
+                                                    <option data-tokens="苏州提篮桥">苏州提篮桥</option>
+                                                    <option data-tokens="上海宝山">上海宝山</option>
+                                                    <option data-tokens="上海黄浦">上海黄浦</option>
+                                                    <option data-tokens="上海静安">上海静安</option>
+                                                    <option data-tokens="苏州提篮桥">苏州提篮桥</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xs-3"><button class="btn btn-danger">添加</button></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-8 col-xs-offset-2">
+                                                <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
+                                            </div>
+                                            <p class="col-xs-2 form-control-static text-danger">此处不能为空</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-xs-2 control-label" for="">消费时间段：</label>
+                                            <div class="col-xs-3">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control date-picker" value="">
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-calendar"></i></button>
+                                                    </span>
+                                                </div>
+                                                <span class="suffix">到</span>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control date-picker" value="">
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-calendar"></i></button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group" required>
+                                            <label class="col-xs-2 control-label" for="">指定消费额：</label>
+                                            <div class="col-xs-3">
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="consumption" id="consumption1" value="" checked="checked">
+                                                        满<input type="text" class="form-control">元发放
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="consumption" id="consumption2" value="">
+                                                        无限额
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group" required>
+                                            <label class="col-xs-2 control-label" for="">发放数量：</label>
+                                            <div class="col-xs-3">
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="circulation" id="circulation1" value="" checked="checked">
+                                                        按发行量
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="circulation" id="circulation2" value="">
+                                                        无限量
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-10 col-xs-offset-2">
+                                                <button class="btn btn-submit btn-danger disabled">确认发行</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer"></div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="coupon_inactive">
+                    <div class="admin-coupon-detail-panel">
+                        <div class="header">
+                            <div class="col-xs-2">选择</div>
+                            <div class="col-xs-2">序列号</div>
+                            <div class="col-xs-2">生成时间</div>
+                            <div class="col-xs-2">密码</div>
+                            <div class="col-xs-2">关联用户</div>
+                            <div class="col-xs-2 text-center">操作</div>
+                        </div>
+                        <div class="content with-header with-footer iscroll_container">
+                            <ul class="list-unstyled dashed-split">
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer clearfix">
+                            <div class="col-xs-6 operation">
+                                <label>
+                                    <input type="checkbox" value=""> 全选
+                                </label>
+                                <label>
+                                    <input type="checkbox" value=""> 反选
+                                </label>
+                                <button class="btn btn-sm btn-danger">导出</button>
+                                <button class="btn btn-sm btn-danger">注销</button>
+                            </div>
+                            <div class="text-right col-xs-6">
+                                <!-- pagination -->
+                                <ul class="pagination pagination-sm">
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><span>...</span></li>
+                                    <li><a href="#">10</a></li>
+                                </ul>
+                                <div class="pagination-info">
+                                    <span>共100页，到第<input type="text" maxlength="3">页</span>
+                                    <a href="#" class="btn btn-danger btn-sm">确认</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="coupon_actived">
+                    ...
+                </div>
+                <div class="tab-pane fade" id="coupon_used">
+                    ...
+                </div>
+                <div class="tab-pane fade in active" id="coupon_expired">
+                    <div class="admin-coupon-detail-panel">
+                        <div class="header">
+                            <div class="col-xs-2">选择</div>
+                            <div class="col-xs-2">序列号</div>
+                            <div class="col-xs-2">生成时间</div>
+                            <div class="col-xs-2">密码</div>
+                            <div class="col-xs-2">关联用户</div>
+                            <div class="col-xs-2 text-center">操作</div>
+                        </div>
+                        <div class="content with-header with-footer iscroll_container">
+                            <ul class="list-unstyled dashed-split">
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                                <!--single li-->
+                                <li>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" value="">
+                                    </div>
+                                    <div class="col-xs-2">1234567890</div>
+                                    <div class="col-xs-2">1982-04-27 04:49:31</div>
+                                    <div class="col-xs-2">12345678</div>
+                                    <div class="col-xs-2">无</div>
+                                    <div class="col-xs-2 text-center"><button class="btn btn-sm btn-link"><span class="text-primary">注销</span></button></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer clearfix">
+                            <div class="col-xs-6 operation">
+                                <label>
+                                    <input type="checkbox" value=""> 全选
+                                </label>
+                                <label>
+                                    <input type="checkbox" value=""> 反选
+                                </label>
+                                <button class="btn btn-sm btn-danger disabled">导出</button>
+                                <button class="btn btn-sm btn-danger disabled">注销</button>
+                            </div>
+                            <div class="text-right col-xs-6">
+                                <!-- pagination -->
+                                <ul class="pagination pagination-sm">
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><span>...</span></li>
+                                    <li><a href="#">10</a></li>
+                                </ul>
+                                <div class="pagination-info">
+                                    <span>共100页，到第<input type="text" maxlength="3">页</span>
+                                    <a href="#" class="btn btn-danger btn-sm">确认</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- main area start -->
+<!-- 提示信息 -->
+<div class="apx-modal-admin-alert modal fade admin-management" id="apxModalAdminAlert" tabindex="-1">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span></a>
+                <h4 class="modal-title">提示信息</h4>
+            </div>
+            <div class="modal-body">
+                <div class="h4" style="padding: 36px 0;">请确认是否注销优惠券？</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-lg btn-danger">确认</button>
+                <button type="button" class="btn btn-lg btn-default" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('footer_admin.inc')
+<script>
+    $(function () {
+        var scrolls = [];
+        $('.iscroll_container').each(function () {
+            scrolls.push(new IScroll(this, {
+                mouseWheel: true,
+                scrollbars: true,
+                scrollbars: 'custom'
+            }))
+        })
+        // init the datepicker
+        $('.date-picker').datetimepicker({
+            locale: 'zh-cn',
+            format: "YYYY-MM-DD h:mm:ss",
+            defaultDate: new Date()
+        });
+        // show modal
+        $('#apxModalAdminAlert').modal('show');
+    })
+
+</script>

@@ -1,0 +1,186 @@
+.apx-price-container {
+    // car show case
+    .car-box {
+        height: 410px;
+        margin: 20px 0;
+        background: #fff url('/images/price/sticker_car.png') no-repeat center;
+        color: #fff;
+        position: relative;
+        >div {
+            position: absolute;
+            top: 120px;
+            text-align: center;
+            font-size: 12px;
+            line-height: 1.75
+        }
+        .h3 {
+            font-size: 24px;
+            margin: 8px 0;
+        }
+        .pull-left {
+            left: 180px;
+            +div {
+                left: 50%;
+                margin-left: -30px;
+            }
+        }
+        .pull-right {
+            right: 160px;
+        }
+    }
+    .price-box,
+    .fever-box,
+    .select-box {
+        background: #efefef linear-gradient(to bottom, #fff, transparent);
+        box-shadow: 0 2px 6px #999;
+    }
+    .price-box,
+    .fever-box {
+        height: 180px;
+    }
+    .price-box {
+        padding: 20px;
+        .h2 {
+            margin: 20px 50px 20px;
+            font-size: 36px;
+        }
+        small {
+            display: inline-block;
+            margin: 0 60px;
+            position: relative;
+            &:before {
+                content: '*';
+                position: absolute;
+                left: -8px;
+            }
+        }
+    }
+    .fever-box {
+        padding: 20px 80px;
+        .h4 {
+            margin: 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #f2f2f2;
+        }
+        .list-unstyled {
+            margin: 8px 0;
+        }
+        .progress-wrap {
+            margin-left: 18px;
+            width: 208px;
+            height: 22px;
+            background: transparent url('/images/price/thermometer.png') no-repeat center;
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .progress {
+            margin: 0;
+            width: 198px;
+            height: 2px;
+            position: absolute;
+            bottom: 6px;
+            left: 6px;
+            background: transparent;
+        }
+        .progress-inner {
+            height: 2px;
+            background: $brand-danger;
+        }
+    }
+    .select-box {
+        margin: 20px 0;
+        padding: 16px 20px;
+        height: 125px;
+        select {
+            width: 200px;
+            margin-right: 18px;
+            padding: 0;
+            line-height: 26px;
+            height: 26px;
+        }
+        .list-unstyled {
+            @include clearfix;
+            padding: 20px 0;
+            margin: 0 -10px;
+            >li {
+                float: left;
+                width: 20%;
+                padding: 0 10px;
+            }
+            .dropdown {
+                button {
+                    box-shadow: inset 0 2px 3px rgba(255, 255, 255, 0.5), 0 4px 3px -2px #666;
+                    width: 100%;
+                    line-height: 40px;
+                    font-size: 16px;
+                    background: $brand-danger;
+                    border: 0;
+                    color: #fff;
+                    border-radius: 6px;
+                    outline: 0;
+                    .caret {
+                        position: relative;
+                        top: -2px;
+                        right: -10px;
+                        color: transparent;
+                        &:before {
+                            position: absolute;
+                            width: 12px;
+                            height: 12px;
+                            background: #fff;
+                            content: '';
+                            border-radius: 50%;
+                            left: 50%;
+                            top: 50%;
+                            margin: -6px 0 0 -6px;
+                        }
+                        &:after {
+                            position: absolute;
+                            content: '';
+                            left: -4px;
+                            top: -2px;
+                            width: 0;
+                            height: 0;
+                            color: $brand-danger;
+                            vertical-align: middle;
+                            border-top: 6px solid;
+                            border-right: 4px solid transparent;
+                            border-left: 4px solid transparent;
+                        }
+                    }
+                    &.active {
+                        background: #ce4e45;
+                        color: #333;
+                    }
+                }
+            }
+            .dropdown-menu {
+                a {
+                    line-height: 2;
+                }
+                a:hover,
+                a:focus {
+                    background: #fce7e6;
+                }
+            }
+        }
+    }
+    .instruction-box {
+        margin: 20px 0;
+        line-height: 1.8;
+        .table-bordered {
+            margin-bottom: 8px;
+            th {
+                background: #ccc;
+            }
+            td {
+                background: #eee;
+            }
+            th,
+            td {
+                border-color: #fff
+            }
+        }
+    }
+}

@@ -1,0 +1,211 @@
+$blue: #459ae9;
+body {
+    overflow-x: auto;
+}
+
+.business-main-wrap {
+    background-color: #e9eef2;
+}
+
+.time-input {
+    display: block;
+    width: 60%;
+    border: none;
+    font-size: 12px;
+    color: #9d9d9d;
+    padding: 4px 0 4px 25px;
+    background: url('/images/business/data/total/menology20_icon.png') no-repeat left center;
+    background-size: 20px;
+    cursor: pointer;
+}
+
+.data-top-title {
+    height: 44px;
+    background-color: #FFF;
+    position: relative;
+    margin-left: 6px;
+    .tip {
+        position: absolute;
+        left: 0px;
+        display: block;
+        font-size: 16px;
+        color: #fff;
+        background-color: #459ae9;
+        margin: 10px 0;
+        padding: 0 10px;
+        transform: translatex(-6px);
+        z-index: 2;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            border-right: 3px solid #333;
+            border-top: 3px solid #333;
+            border-left: 3px solid transparent;
+            border-bottom: 3px solid transparent;
+        }
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            right: -22px;
+            top: 0;
+            border-left: 11px solid #459ae9;
+            border-right: 11px solid transparent;
+            border-top: 11px solid transparent;
+            border-bottom: 11px solid transparent;
+        }
+        &.ds {
+            background-color: #9f9f9f;
+            &:after {
+                border-left: 11px solid #9f9f9f;
+            }
+        }
+    }
+    .second {
+        position: absolute;
+        left: 94px;
+        display: block;
+        font-size: 16px;
+        color: #fff;
+        background-color: #459ae9;
+        margin: 10px 0;
+        padding: 0 10px;
+        padding-left: 20px;
+        transform: translatex(-6px);
+        z-index: 2;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            border-left: 11px solid #fff;
+            border-right: 11px solid transparent;
+            border-top: 11px solid transparent;
+            border-bottom: 11px solid transparent;
+        }
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            right: -22px;
+            top: 0;
+            border-left: 11px solid #459ae9;
+            border-right: 11px solid transparent;
+            border-top: 11px solid transparent;
+            border-bottom: 11px solid transparent;
+        }
+    }
+    .btn-back {
+        position: absolute;
+        right: 6px;
+        top: 10px;
+        color: #459ae9;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.has-shadow {
+    &:hover {
+        box-shadow: 0px 6px 8px 0px rgba(69, 154, 233, 0.2);
+    }
+}
+
+// loading 样式
+@-webkit-keyframes line-scale {
+    0% {
+        -webkit-transform: scaley(1);
+        transform: scaley(1);
+    }
+
+    50% {
+        -webkit-transform: scaley(0.4);
+        transform: scaley(0.4);
+    }
+
+    100% {
+        -webkit-transform: scaley(1);
+        transform: scaley(1);
+    }
+}
+
+@keyframes line-scale {
+    0% {
+        -webkit-transform: scaley(1);
+        transform: scaley(1);
+    }
+
+    50% {
+        -webkit-transform: scaley(0.4);
+        transform: scaley(0.4);
+    }
+
+    100% {
+        -webkit-transform: scaley(1);
+        transform: scaley(1);
+    }
+}
+
+.data-loading {
+	position: relative;
+	.loading-box {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #FFF;
+		z-index: 999;
+	}
+	.loader-inner {
+		width: 60px;
+		height: 43px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+	}
+}
+
+.data-loading .line-scale>div:nth-child(1) {
+    -webkit-animation: line-scale 1s 0.1s infinite cubic-bezier(.2, .68, .18, 1.08);
+    animation: line-scale 1s 0.1s infinite cubic-bezier(.2, .68, .18, 1.08);
+}
+
+.data-loading .line-scale>div:nth-child(2) {
+    -webkit-animation: line-scale 1s 0.2s infinite cubic-bezier(.2, .68, .18, 1.08);
+    animation: line-scale 1s 0.2s infinite cubic-bezier(.2, .68, .18, 1.08);
+}
+
+.data-loading .line-scale>div:nth-child(3) {
+    -webkit-animation: line-scale 1s 0.3s infinite cubic-bezier(.2, .68, .18, 1.08);
+    animation: line-scale 1s 0.3s infinite cubic-bezier(.2, .68, .18, 1.08);
+}
+
+.data-loading .line-scale>div:nth-child(4) {
+    -webkit-animation: line-scale 1s 0.4s infinite cubic-bezier(.2, .68, .18, 1.08);
+    animation: line-scale 1s 0.4s infinite cubic-bezier(.2, .68, .18, 1.08);
+}
+
+.data-loading .line-scale>div:nth-child(5) {
+    -webkit-animation: line-scale 1s 0.5s infinite cubic-bezier(.2, .68, .18, 1.08);
+    animation: line-scale 1s 0.5s infinite cubic-bezier(.2, .68, .18, 1.08);
+}
+
+.data-loading .line-scale>div {
+    background-color: #459ae9;
+    width: 4px;
+    height: 35px;
+    border-radius: 2px;
+    margin: 2px;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    display: inline-block;
+}

@@ -1,0 +1,532 @@
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+body {
+  font: 12px/1.5 'sans-serif';
+  color: #333;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-overflow-scrolling: touch; }
+
+a {
+  text-decoration: none;
+  color: #333;
+  display: block; }
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+main.container,
+nav.bottom-nav {
+  max-width: 640px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 9999; }
+
+main.container {
+  top: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  background: #f2f2f2;
+  -webkit-overflow-scrolling: touch; }
+
+nav.top-nav {
+  background: #fff;
+  position: relative;
+  height: 44px;
+  font-size: 16px; }
+  nav.top-nav > a {
+    position: absolute;
+    top: 0;
+    min-width: 60px;
+    height: 44px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: center;
+            justify-content: center; }
+    nav.top-nav > a:first-child {
+      left: 0; }
+      nav.top-nav > a:first-child img {
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg); }
+  nav.top-nav .title {
+    line-height: 44px;
+    text-align: center;
+    font-weight: 600; }
+    nav.top-nav .title + a {
+      right: 0; }
+  nav.top-nav ~ main.container {
+    top: 44px; }
+
+nav.bottom-nav {
+  background: #fff;
+  box-shadow: 0 1px 4px #ccc;
+  height: 49px;
+  display: -webkit-flex;
+  display: flex; }
+  nav.bottom-nav + main.container {
+    bottom: 50px; }
+  nav.bottom-nav a {
+    -webkit-flex: 1 1 25%;
+            flex: 1 1 25%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    font-size: 0; }
+    nav.bottom-nav a:active {
+      background: #ccc; }
+    nav.bottom-nav a i {
+      display: block;
+      width: 27px;
+      min-height: 27px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat; }
+    nav.bottom-nav a.active span {
+      color: #ff9100;
+      background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#ff9100), to(#e53935));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    nav.bottom-nav a span {
+      font-size: 13px;
+      color: #b0b0b0; }
+    nav.bottom-nav a.home i {
+      background-image: url("/images/nav1_n.png"); }
+    nav.bottom-nav a.home.active i {
+      background-image: url("/images/nav1_on_n.png"); }
+    nav.bottom-nav a.brand i {
+      background-image: url("/images/nav2_n.png"); }
+    nav.bottom-nav a.brand.active i {
+      background-image: url("/images/nav2_on_n.png"); }
+    nav.bottom-nav a.cart i {
+      background-image: url("/images/nav3_n.png"); }
+    nav.bottom-nav a.cart.active i {
+      background-image: url("/images/nav3_on_.png"); }
+    nav.bottom-nav a.account i {
+      background-image: url("/images/nav4_n.png"); }
+    nav.bottom-nav a.account.active i {
+      background-image: url("/images/nav4_on_n.png"); }
+
+.bottom-nav.J_footer_menu {
+  border-top: 1px solid #f2f2f2; }
+
+.btn-block-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 44px;
+  background: #fff;
+  font-size: 16px;
+  text-align: center;
+  background-image: -webkit-gradient(linear, 100% 100%, 0 0, from(#e53935), to(#ff9101));
+  color: #fff; }
+  .btn-block-bottom:active {
+    background: linear-gradient(to bottom, #fff, #eee); }
+
+.hidden {
+  display: none !important; }
+
+.mask-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s;
+  overflow: hidden; }
+  .mask-container.in {
+    opacity: 1;
+    pointer-events: auto; }
+  .mask-container .mask-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); }
+
+.wechat-shampoo {
+  background: #430688; }
+  .wechat-shampoo img {
+    display: block;
+    max-width: 100%;
+    height: auto; }
+  .wechat-shampoo .shampoo-section-2 {
+    position: relative; }
+  .wechat-shampoo .curtain-container {
+    position: relative;
+    padding: 12.5% 0 3.125%; }
+    .wechat-shampoo .curtain-container .img-slogen {
+      position: relative;
+      z-index: auto;
+      width: 84.375%;
+      margin: 0 auto; }
+    .wechat-shampoo .curtain-container .img-curtain {
+      position: absolute;
+      top: 0;
+      width: 31.71875%; }
+      .wechat-shampoo .curtain-container .img-curtain.left {
+        left: 0; }
+      .wechat-shampoo .curtain-container .img-curtain.right {
+        right: 0; }
+    .wechat-shampoo .curtain-container .img-ufo {
+      position: absolute;
+      width: 21.25%; }
+      .wechat-shampoo .curtain-container .img-ufo.left {
+        top: 34.375%;
+        left: 0; }
+      .wechat-shampoo .curtain-container .img-ufo.right {
+        top: 18.75%;
+        right: 0; }
+  .wechat-shampoo .shampoo-container {
+    padding: 3.125% 0;
+    position: relative; }
+    .wechat-shampoo .shampoo-container .img-right-bg,
+    .wechat-shampoo .shampoo-container .img-left-bg {
+      position: absolute;
+      bottom: 16%; }
+    .wechat-shampoo .shampoo-container .img-left-bg {
+      width: 36.875%;
+      left: 0; }
+    .wechat-shampoo .shampoo-container .img-right-bg {
+      width: 34.21875%;
+      right: 0; }
+    .wechat-shampoo .shampoo-container .shampoo {
+      position: relative; }
+      .wechat-shampoo .shampoo-container .shampoo .img-shampoo {
+        width: 31.25%;
+        margin: 0 auto;
+        position: relative;
+        z-index: auto; }
+      .wechat-shampoo .shampoo-container .shampoo .img-litre,
+      .wechat-shampoo .shampoo-container .shampoo .img-footer {
+        position: absolute; }
+      .wechat-shampoo .shampoo-container .shampoo .img-litre {
+        z-index: 1;
+        bottom: -5%;
+        right: 27.65625%;
+        width: 13.4375%; }
+      .wechat-shampoo .shampoo-container .shampoo .img-footer {
+        width: 70.78125%;
+        left: 14.60938%;
+        bottom: -55%; }
+    .wechat-shampoo .shampoo-container .img-text {
+      position: relative;
+      z-index: auto;
+      width: 56.5625%;
+      margin: 12% auto 6.25%; }
+    .wechat-shampoo .shampoo-container .img-btn {
+      width: 54.6875%;
+      margin: 0 auto 3.125%;
+      position: relative;
+      z-index: 1; }
+    .wechat-shampoo .shampoo-container .img-caret {
+      width: 10.9375%;
+      margin: 0 auto;
+      -webkit-animation: shampooImgCaret 1.5s infinite;
+              animation: shampooImgCaret 1.5s infinite;
+      position: relative;
+      z-index: 1; }
+
+@-webkit-keyframes shampooImgCaret {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1; }
+  to {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+    opacity: 0; } }
+
+@keyframes shampooImgCaret {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1; }
+  to {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+    opacity: 0; } }
+  .wechat-shampoo .shampoo-section-2,
+  .wechat-shampoo .shampoo-section-3 {
+    color: #fff;
+    overflow: hidden;
+    padding-bottom: 5.625%; }
+    .wechat-shampoo .shampoo-section-2 .title,
+    .wechat-shampoo .shampoo-section-3 .title {
+      width: 78.125%;
+      padding-top: 17.65625%;
+      margin: 4.6875% auto 0;
+      position: relative;
+      z-index: 1;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain; }
+    .wechat-shampoo .shampoo-section-2 .content-container,
+    .wechat-shampoo .shampoo-section-3 .content-container {
+      position: relative;
+      width: 86.40625%;
+      padding-top: 77.03125%;
+      background: url("/images/shampoo_1yuan/biamkuan_img.png") center/contain no-repeat;
+      margin: -5% auto 0; }
+    .wechat-shampoo .shampoo-section-2 .content,
+    .wechat-shampoo .shampoo-section-3 .content {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      overflow: hidden; }
+  .wechat-shampoo .shampoo-section-2 {
+    background: #6e15cf; }
+    .wechat-shampoo .shampoo-section-2 .title {
+      background-image: url("/images/shampoo_1yuan/chanpingjiesao_title.png"); }
+    .wechat-shampoo .shampoo-section-2 .shampoo {
+      width: 31.25%;
+      margin: 8.75% auto 6.25%;
+      position: relative; }
+      .wechat-shampoo .shampoo-section-2 .shampoo img {
+        position: relative;
+        z-index: auto; }
+      .wechat-shampoo .shampoo-section-2 .shampoo:before {
+        content: '';
+        position: absolute;
+        bottom: -5%;
+        left: -15%;
+        right: -15%;
+        height: 20%;
+        background: radial-gradient(farthest-side at center, #333 0%, transparent 100%); }
+    .wechat-shampoo .shampoo-section-2 p {
+      margin: 0;
+      padding: 0 9%;
+      font-size: 0.91667em; }
+  .wechat-shampoo .shampoo-section-3 .title {
+    background-image: url("/images/shampoo_1yuan/tidian_title_img.png"); }
+  .wechat-shampoo .shampoo-section-3 .content {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: flex-end;
+            align-items: flex-end; }
+  .wechat-shampoo .shampoo-section-3 ul {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+    padding: 0 4.375%;
+    margin-bottom: 4%;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: center;
+            justify-content: center; }
+  .wechat-shampoo .shampoo-section-3 li {
+    text-align: center;
+    -webkit-flex: 1 0 25%;
+            flex: 1 0 25%;
+    max-width: 25%;
+    font-size: 0.58333em;
+    margin-bottom: 4%; }
+    .wechat-shampoo .shampoo-section-3 li i {
+      font-size: 1.5em;
+      padding: 50%;
+      display: inline-block;
+      position: relative;
+      font-style: normal;
+      background: url("/images/shampoo_1yuan/yuan_bg.png") center/contain no-repeat; }
+    .wechat-shampoo .shampoo-section-3 li span {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: -webkit-flex;
+      display: flex;
+      white-space: normal;
+      -webkit-align-items: center;
+              align-items: center;
+      -webkit-justify-content: center;
+              justify-content: center; }
+  .wechat-shampoo .shampoo-section-4 {
+    background: #5513b5 url("/images/shampoo_1yuan/bg_yuan_img.png") bottom center/contain no-repeat;
+    color: #fff;
+    padding: 9.375% 0 13.75%; }
+    .wechat-shampoo .shampoo-section-4 .text-info-container {
+      width: 77.1875%;
+      padding-top: 63.4375%;
+      margin: 0 auto 13.90625%;
+      position: relative; }
+    .wechat-shampoo .shampoo-section-4 .h3 {
+      font-size: 1.25em;
+      font-weight: 600;
+      text-align: center; }
+    .wechat-shampoo .shampoo-section-4 .text-info {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: url("/images/shampoo_1yuan/text_2_bg.png") center/contain no-repeat;
+      padding: 0 7.5%; }
+      .wechat-shampoo .shampoo-section-4 .text-info .h3 {
+        margin: 5.625% 0 7.5%; }
+    .wechat-shampoo .shampoo-section-4 .text-rule {
+      width: 77.1875%;
+      margin: 0 auto; }
+      .wechat-shampoo .shampoo-section-4 .text-rule .h3 {
+        margin-bottom: 3.75%; }
+  .wechat-shampoo .ani-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-animation: shampooImgAni 3s infinite alternate;
+            animation: shampooImgAni 3s infinite alternate; }
+
+@-webkit-keyframes shampooImgAni {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  to {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); } }
+
+@keyframes shampooImgAni {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  to {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); } }
+    .wechat-shampoo .ani-container .img-rocket {
+      width: 2.96875%;
+      top: 5%;
+      right: 32%; }
+    .wechat-shampoo .ani-container .img-headset {
+      width: 2.96875%;
+      top: 5%;
+      left: 32%;
+      -webkit-animation-delay: .2s;
+              animation-delay: .2s; }
+    .wechat-shampoo .ani-container .img-bottle {
+      width: 3.28125%;
+      left: 6%;
+      top: 51%;
+      -webkit-animation-delay: .4s;
+              animation-delay: .4s; }
+    .wechat-shampoo .ani-container .img-cash {
+      width: 3.28125%;
+      right: 15%;
+      top: 50%;
+      -webkit-animation-delay: .2s;
+              animation-delay: .2s; }
+    .wechat-shampoo .ani-container .img-ball {
+      width: 7.96875%;
+      right: 8%;
+      top: 41%;
+      -webkit-animation-delay: .4s;
+              animation-delay: .4s; }
+    .wechat-shampoo .ani-container .img-balloon {
+      width: 7.03125%;
+      left: 15%;
+      top: 40%;
+      -webkit-animation-delay: .2s;
+              animation-delay: .2s; }
+    .wechat-shampoo .ani-container .img-ani {
+      position: absolute; }
+
+.wechat-shampoo-buy-btn {
+  position: absolute;
+  z-index: 999999999;
+  top: 77.5%;
+  right: 0;
+  font-size: 1.25em;
+  background: #d50000;
+  color: #fff;
+  width: 15.625%;
+  padding-top: 13.75%;
+  line-height: 1.2;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s; }
+  .wechat-shampoo-buy-btn.in {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  .wechat-shampoo-buy-btn span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 20%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: center;
+            justify-content: center; }
+
+@media screen and (min-width: 375px) {
+  .wechat-shampoo {
+    font-size: 14px; } }
+
+@media screen and (min-width: 414px) {
+  .wechat-shampoo {
+    font-size: 16px; } }
+
+@media screen and (min-width: 568px) {
+  .wechat-shampoo {
+    font-size: 20px; } }
+
+@media screen and (min-width: 667px) {
+  .wechat-shampoo {
+    font-size: 24px; } }
+
+.water-strategy {
+  z-index: 99999;
+  position: fixed;
+  right: 0;
+  top: 55%;
+  width: 21%; }
+  .water-strategy img {
+    width: 90%;
+    margin-left: 10%; }
+
+.water-strategy-content {
+  display: none;
+  position: absolute;
+  top: 0;
+  z-index: 99999; }
+  .water-strategy-content img {
+    width: 100%; }
+  .water-strategy-content p {
+    width: 12%;
+    position: fixed;
+    z-index: 99999;
+    right: 5%;
+    top: 10%; }
+  .water-strategy-content.show {
+    display: block; }

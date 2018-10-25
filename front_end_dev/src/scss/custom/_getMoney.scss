@@ -1,0 +1,133 @@
+.get-money-container {
+    min-width: 1440px;
+    overflow: hidden;
+    background-color: #ff784f;
+    .banner {
+        padding-top: 1230px;
+        background: url('/images/get_money/1.png') no-repeat center/100%;
+    }
+    .nav-list {
+        position: fixed;
+        top: 20%;
+        left: 50%;
+        margin-left: 600px;
+        text-align: center;
+        background: url('/images/get_money/4.png') no-repeat top center/100%;
+        padding: 30px 20px 50px 5px;
+        z-index: 99;
+        &::before {
+            content: '';
+            position: absolute;
+            top: -70px;
+            left: -24px;
+            width: 157px;
+            height: 77px;
+            background: url('/images/get_money/3.png') no-repeat top center/100%;
+        }
+        >div {
+            width: 100px;
+            border-bottom: 1px dashed #fff;
+            &:last-child {
+                border: none;
+            }
+            a {
+                display: inline-block;
+                padding: 0 6px;
+                color: #87421c;
+                font-size: 16px;
+                line-height: 1.5;
+                text-align: center;
+                margin: 4px 0;
+                &.active {
+                    color: #fff;
+                    background-color: #ff784f;
+                }
+            }
+        }
+    }
+    .section {
+        width: 1200px;
+        margin: 20px auto 0;
+    }
+    .sec-title {
+        width: 1920px;
+        margin-left: -360px;
+        font-size: 36px;
+        color: #191919;
+        text-align: center;
+        line-height: 2;
+        background: #fff url('/images/get_money/2.png') no-repeat center/cover;
+    }
+    .sec-banner {
+        position: relative;
+        height: 748px;
+        &.bg-1 {
+            background: url('/images/get_money/5.png') no-repeat center/cover;
+        }
+        &.bg-2 {
+            background: url('/images/get_money/12.png') no-repeat center/cover;
+        }
+        &.bg-3 {
+            background: url('/images/get_money/19.png') no-repeat center/cover;
+        }
+        margin: 8px 0;
+        >div {
+            position: absolute;
+            color: #fff;
+            font-size: 48px;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+        }
+        .text-top {
+            left: 32px;
+            top: 80px;
+            .top-title {
+                font-weight: bold;
+                position: relative;
+                color: #fff;
+                font-size: 48px;
+                &::before {
+                    content: '';
+                    width: 1em;
+                    height: 14px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 0;
+                    top: -16px;
+                }
+            }
+        }
+        .text-bottom {
+            width: 19em;
+            right: 50px;
+            bottom: 80px;
+            font-size: 22px;
+            line-height: 1.4;
+        }
+    }
+    .pro-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 10px;
+        .item {
+            flex: 40%;
+            margin: 12px;
+            position: relative;
+            img {
+                max-width: 100%;
+            }
+            .price {
+                position: absolute;
+                left: 50px;
+                bottom: 26px;
+                font-size: 22px;
+                font-weight: bold;
+                span {
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+}

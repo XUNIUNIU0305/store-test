@@ -1,0 +1,131 @@
+.group-activity-personnel-information {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  height: 100%; }
+  .group-activity-personnel-information .white, .group-activity-personnel-information .white1 {
+    background: #EFEFF4;
+    height: 2.66667vw; }
+  .group-activity-personnel-information .white1 {
+    height: 1.33333vw; }
+  .group-activity-personnel-information .head-personnel-information {
+    min-height: 41.33333vw;
+    background: white;
+    text-align: center;
+    overflow: hidden;
+    color: #515151; }
+    .group-activity-personnel-information .head-personnel-information .head-personnel-pic {
+      margin: 4vw auto 0;
+      width: 16vw;
+      height: 16vw;
+      border: 0.26667vw solid #f5222d;
+      border-radius: 50%;
+      position: relative; }
+      .group-activity-personnel-information .head-personnel-information .head-personnel-pic .head-personnel {
+        width: 16vw;
+        height: 8.66667vw;
+        background: url("/images/8-13/tz.png") no-repeat center;
+        background-size: 100%;
+        position: absolute;
+        bottom: -3.6vw; }
+    .group-activity-personnel-information .head-personnel-information .head-personnel-name {
+      font-size: 3.73333vw;
+      color: #2C2C2C;
+      margin: 5.86667vw auto;
+      margin-bottom: 4vw;
+      font-weight: 900; }
+    .group-activity-personnel-information .head-personnel-information .head-personnel-starttime {
+      font-size: 3.46667vw;
+      margin: 0;
+      padding-bottom: 5.33333vw; }
+  .group-activity-personnel-information .personnel-information {
+    -webkit-flex: 1;
+            flex: 1;
+    background: white;
+    overflow: hidden;
+    color: #4B4B4B; }
+    .group-activity-personnel-information .personnel-information .personnel-group {
+      margin-left: 4vw;
+      padding-right: 4vw;
+      border-bottom: 1px solid #dedede; }
+      .group-activity-personnel-information .personnel-information .personnel-group .personnel-group-info {
+        margin: 5.33333vw 0 3.33333vw;
+        font-size: 3.46667vw; }
+        .group-activity-personnel-information .personnel-information .personnel-group .personnel-group-info .personnel-group-premise {
+          background: #f5222d;
+          border-radius: 4vw;
+          padding: 0 1.73333vw;
+          color: white;
+          border: 1px solid #f5222d; }
+        .group-activity-personnel-information .personnel-information .personnel-group .personnel-group-info .personnel-group-way {
+          color: #f5222d;
+          background: #fff1f0;
+          box-sizing: border-box;
+          border: 1px solid #f5222d;
+          padding: 0vw 1.33333vw;
+          border-radius: 10px; }
+        .group-activity-personnel-information .personnel-information .personnel-group .personnel-group-info .personnel-group-nows {
+          float: right; }
+          .group-activity-personnel-information .personnel-information .personnel-group .personnel-group-info .personnel-group-nows .personnel-group-now {
+            margin-left: 2.13333vw;
+            font-style: inherit;
+            font-size: 3.46667vw; }
+      .group-activity-personnel-information .personnel-information .personnel-group .personnel-introduce {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin: 0;
+        padding-bottom: 5.33333vw; }
+    .group-activity-personnel-information .personnel-information .personnel-information-num .none-personnel-group {
+      text-align: center;
+      font-size: 3.46667vw;
+      font-weight: 900; }
+      .group-activity-personnel-information .personnel-information .personnel-information-num .none-personnel-group .none-personnel-pic {
+        margin: 14.66667vw auto 5.33333vw;
+        width: 14.66667vw;
+        height: 14.66667vw;
+        border-radius: 50%;
+        background: url("/images/8-13/ss.png") no-repeat center center;
+        background-size: 100% 100%; }
+    .group-activity-personnel-information .personnel-information .personnel-information-num .have-personnel-group {
+      margin-bottom: 11.86667vw; }
+      .group-activity-personnel-information .personnel-information .personnel-information-num .have-personnel-group .have-personnel-group-list {
+        padding: 5.33333vw 0;
+        margin: 0 4vw;
+        border-bottom: 1px solid #dedede;
+        display: -webkit-flex;
+        display: flex; }
+        .group-activity-personnel-information .personnel-information .personnel-information-num .have-personnel-group .have-personnel-group-list .have-personnel-group-pic {
+          width: 12vw;
+          height: 12vw;
+          border-radius: 50%;
+          border: 0.26667vw solid #f5222d;
+          overflow: hidden;
+          vertical-align: middle; }
+          .group-activity-personnel-information .personnel-information .personnel-information-num .have-personnel-group .have-personnel-group-list .have-personnel-group-pic .have-personnel-group-head-portrait {
+            width: 100%;
+            height: 100%; }
+        .group-activity-personnel-information .personnel-information .personnel-information-num .have-personnel-group .have-personnel-group-list .have-personnel-group-info {
+          margin-left: 2.93333vw;
+          -webkit-flex: 1;
+                  flex: 1; }
+          .group-activity-personnel-information .personnel-information .personnel-information-num .have-personnel-group .have-personnel-group-list .have-personnel-group-info .have-personnel-name {
+            font-size: 3.46667vw;
+            line-height: 6vw;
+            height: 6vw;
+            color: #2C2C2C;
+            font-weight: 900; }
+          .group-activity-personnel-information .personnel-information .personnel-information-num .have-personnel-group .have-personnel-group-list .have-personnel-group-info .have-personnel-spe {
+            color: #888888;
+            font-size: 3.46667vw; }
+            .group-activity-personnel-information .personnel-information .personnel-information-num .have-personnel-group .have-personnel-group-list .have-personnel-group-info .have-personnel-spe .have-personnel-spe-num {
+              float: right; }
+          .group-activity-personnel-information .personnel-information .personnel-information-num .have-personnel-group .have-personnel-group-list .have-personnel-group-info .have-personnel-time {
+            color: #888888;
+            font-size: 3.46667vw; }
+        .group-activity-personnel-information .personnel-information .personnel-information-num .have-personnel-group .have-personnel-group-list .personnel-num {
+          font-size: 3.46667vw;
+          margin: 0;
+          margin-top: 5.33333vw;
+          margin-bottom: 1.86667vw; }

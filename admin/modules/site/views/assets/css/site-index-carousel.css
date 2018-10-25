@@ -1,0 +1,144 @@
+.carousel > .title {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.carousel > .title > .fa {
+    margin-right: 10px;
+    color: #329ee2;
+}
+
+.carousel .header {
+    padding: 10px 0;
+}
+
+.carousel .carousel-item > span,
+.carousel .header > span {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.carousel .row-1 {
+    width: 15%;
+}
+
+.carousel .row-2 {
+    width: 30%;
+}
+
+.carousel .row-3 {
+    width: 35%;
+}
+
+.carousel .row-4 {
+    width: 20%;
+}
+
+.carousel .row-1 > input,
+.carousel .row-3 > input {
+    display: none;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-align: center;
+    outline: none;
+}
+
+.carousel .carousel-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.carousel .carousel-item .logo {
+    display: none;
+}
+
+.carousel .carousel-item .button.secondary {
+    margin-right: 10px;
+}
+
+.carousel .carousel-item .carousel-thumbnail {
+    position: relative;
+    display: block;
+    width: 300px;
+    height: 75px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.carousel .carousel-item .carousel-thumbnail .progress-bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #df483d;
+}
+
+.carousel .carousel-item .carousel-thumbnail .change {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/images/icons/plus.png");
+    background-size: 10%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.carousel .carousel-item.new,
+.carousel .carousel-item.on {
+    border-color: #df483d;
+}
+
+.carousel .carousel-item.on .row-1 > span,
+.carousel .carousel-item.on .row-3 > span {
+    display: none;
+}
+
+.carousel .carousel-item.on .row-1 > input,
+.carousel .carousel-item.on .row-3 > input {
+    display: block;
+}
+
+.carousel .carousel-item.on .carousel-thumbnail .change {
+    display: block;
+}
+
+.carousel .carousel-item.on .logo {
+    position: absolute;
+    top: 5px;
+    left: -23px;
+    display: block;
+    width: 80px;
+    padding: 2px;
+    font-size: 12px;
+    background-color: #df483d;
+    color: #fff;
+    transform: rotate(-45deg) scale(.8);
+    text-align: center;
+}
+
+.carousel .carousel-item .carousel-thumbnail .change input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}

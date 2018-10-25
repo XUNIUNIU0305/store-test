@@ -1,0 +1,169 @@
+@@include('head.inc')
+<div class="apx-cms-login user-sys">
+    <!--login box-->
+    <div class="apx-cms-login-box col-xs-8 col-sm-6 col-md-4 col-lg-3">
+        <h1 class="text-center">
+            <img src="/images/new_icon.png" width="240">
+        </h1>
+        <h3 class="text-center">用户管理系统登录</h3>
+        <form class="form-horizontal col-xs-10 col-xs-offset-1">
+            <div class="form-group error-msg">
+                <div class="col-xs-12">
+                    <!-- addClass 'hidden' to hide the error msg -->
+                    <p class="form-control-static text-center text-danger"><i class="glyphicon glyphicon-remove"></i>请填入用户名</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="username" class="col-xs-2 control-label">
+                	<i class="glyphicon glyphicon-user"></i>
+                </label>
+                <div class="col-xs-10">
+                    <input type="text" class="form-control" id="username" placeholder="请输入您的用户名">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password" class="col-xs-2 control-label">
+                	<i class="glyphicon glyphicon-lock"></i>
+                </label>
+                <div class="col-xs-10">
+                    <input type="password" class="form-control" id="password" placeholder="请输入您的密码">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="validate" class="col-xs-2 control-label">
+                	<i class="glyphicon glyphicon-ok-sign"></i>
+                </label>
+                <div class="col-xs-7">
+                    <input type="text" class="form-control" id="validate" placeholder="请输入验证码">
+                </div>
+                <div class="col-xs-3">
+                    <p class="form-control-static text-center text-white">A93r</p>
+                </div>
+            </div>
+            <div class="text-right">
+                <a href="javascript: void(0)" class="btn-link btn btn-xs J_login_panel_toggle"><span class="text-danger">找回密码</span></a>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-danger btn-block btn-lg">登陆</button>
+            </div>
+        </form>
+        <div class="clearfix"></div>
+        <div class="wechat-login col-xs-10 col-xs-offset-1">
+            <p>或者，您可以</p>
+            <a href="#" class="btn btn-link btn-sm">
+                <img class="img-responsive" src="../images/login_wechat.png" alt="wechat_login"> 微信一键登录
+            </a>
+        </div>
+    </div>
+    <!--find pwd-->
+    <div class="apx-cms-login-box col-xs-8 col-sm-6 col-md-4 col-lg-3" style="display: none;">
+        <h1 class="text-center">
+            <img src="/images/new_icon.png" width="240">
+        </h1>
+        <h3 class="text-center">找回密码</h3>
+        <form class="form-horizontal col-xs-10 col-xs-offset-1">
+            <div class="form-group error-msg">
+                <div class="col-xs-12">
+                    <!-- addClass 'hidden' to hide the error msg -->
+                    <p class="form-control-static text-center text-danger"><i class="glyphicon glyphicon-remove"></i>新密码不能为空</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password1" class="col-xs-3 control-label">
+                	设置新密码：
+                </label>
+                <div class="col-xs-9">
+                    <input type="password1" class="form-control" id="password1" placeholder="请填写新密码">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password" class="col-xs-3 control-label">
+                	确认新密码：
+                </label>
+                <div class="col-xs-9">
+                    <input type="password" class="form-control" id="password" placeholder="请重复填写新密码">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="username" class="col-xs-3 control-label">
+                	已绑手机号：
+                </label>
+                <div class="col-xs-9">
+                    <input type="text" class="form-control" id="username" placeholder="请填写您的手机号">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="verify" class="col-xs-3 control-label">
+                	手机验证码：
+                </label>
+                <div class="col-xs-6">
+                    <input type="text" class="form-control" id="verify" placeholder="">
+                </div>
+                <div class="col-xs-3">
+                    <button class="btn btn-default btn-sm btn-block J_get_verify_sms">点击获取</button>
+                </div>
+            </div>
+            <div class="text-right">
+                <a href="javascript: void(0)" class="btn-link btn btn-xs J_login_panel_toggle"><span class="text-danger">返回登陆页</span></a>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-danger btn-block btn-lg">提交</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- build:js(src) scripts/vendor.js -->
+<!-- bower:js -->
+<!-- run `gulp inject` to automatically populate bower script dependencies -->
+<!-- endbower -->
+<!-- endbuild -->
+<!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/index.js -->
+<!-- inject:js -->
+<!-- js files will be automatically insert here -->
+<!-- endinject -->
+<!-- inject:partials -->
+<!-- angular templates will be automatically converted in js and inserted here -->
+<!-- endinject -->
+<!-- endbuild -->
+<script>
+    $(function () {
+        var timer, interval;
+        // toggle login and forget pwd
+        $('.J_login_panel_toggle').click(function () {
+            $('.apx-cms-login-box').addClass('static');
+            var $currentPanel = $(this).parents('.apx-cms-login-box');
+            // toggle
+            $currentPanel.fadeOut(function () {
+                $currentPanel.siblings('.apx-cms-login-box').fadeIn();
+            });
+            // clear timer and interval
+            timer && clearTimeout(timer);
+            interval && clearInterval(interval);
+        })
+        // get sms
+        $('.J_get_verify_sms').click(function (e) {
+            e.preventDefault();
+            var $this = $(this);
+            var countDown = 60;
+            // disable it
+            if ($this.hasClass('disabled')) return;
+            $this.addClass('disabled');
+            // revert changes after 60s
+            timer = setTimeout(function () {
+                $this.text('点击获取');
+                $this.removeClass('disabled');
+                interval && clearInterval(interval);
+            }, 60 * 1000);
+            // set count down text
+            $this.text(countDown + '秒后重试');
+            interval = setInterval(function () {
+                countDown--;
+                $this.text(countDown + '秒后重试');
+            }, 1000)
+        })
+    })
+
+</script>
+</body>
+
+</html>

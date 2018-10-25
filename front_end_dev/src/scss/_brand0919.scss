@@ -1,0 +1,58 @@
+.brand-0919 {
+	min-width: 1200px;
+	overflow: auto;
+	background-color: #FFF;
+	img {
+		max-width: 100%;
+		vertical-align: top;
+	}
+	.header {
+		width: 60%;
+		display: flex;
+		margin: 50px auto;
+		.img {
+			flex: 0 0 34%;
+		}
+		.content {
+			flex: 1;
+			margin-left: 30px;
+			font-weight: 700;
+			.h2 {
+				font-size: 48px;
+				margin: 0;
+			}
+			.h4 {
+				font-size: 26px;
+				margin: 0;
+				text-align: right;
+				margin-right: 5px;
+				margin-bottom: 10px;
+			}
+			.text {
+				margin: 0;
+				margin-left: 20%;
+				font-size: 28px;
+				span {
+					font-size: 38px;
+				}
+				img {
+					width: 100px;
+				}
+				&:nth-child(4) {
+					text-align: right;
+					margin-right: 10%;
+				}
+			}
+			.btn {
+				width: 346px;
+				border-radius: 100px;
+				line-height: 72px;
+				background-color: #000;
+				color: #fff;
+				text-align: center;
+				font-size: 38px;
+				margin: 70px 0 0 60px;
+			}
+		}
+	}
+}

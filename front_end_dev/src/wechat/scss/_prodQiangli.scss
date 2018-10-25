@@ -1,0 +1,121 @@
+.wechat-product-ql {
+	img {
+		max-width: 100%;
+		vertical-align: top;
+	}
+	.head {
+		position: relative;
+		.text {
+			width: 50%;
+			position: absolute;
+			left: 0;
+			top: 40%;
+			.h1 {
+				width: 80%;
+				color: #fff;
+				font-weight: 700;
+				font-size: 20px;
+				margin: 0;
+				text-align: center;
+			}
+		}
+	}
+	.content {
+		background: url('/images/qiangli_brand/bg.jpg') no-repeat center top;
+		background-size: 100%;
+		padding-bottom: 80px; 
+		.item {
+			position: relative;
+			>img {
+				max-width: 60%;
+			}
+			.head {
+				padding-top: 8%;
+				p {
+					margin: 0 6%;
+					font-size: 18px;
+					color: #fff;
+					text-align: center;
+				}
+				.h2 {
+					text-align: right;
+				}
+			}
+			.title {
+				width: 40%;
+				position: absolute;
+				right: 0;
+				top: 42%;
+				color: #fff;
+				font-size: 0;
+				span {
+					display: inline-block;
+					height: 45px;
+					text-align: center;
+					vertical-align: middle;
+					border: 2px solid #280063;
+					padding: 0 2%;
+				}
+				.price {
+					font-size: 30px;
+					font-weight: 700;
+				}
+				.text {
+					font-size: 20px;
+					background-color: #280063;
+					line-height: 45px;
+					font-weight: 700;
+				}
+				.btn {
+					width: 86%;
+					margin-top: 20%;
+					background: #280063;
+					border-radius: 50px;
+					text-align: center;
+					font-size: 24px;
+					color: #fff;
+				}
+			}
+			&.even {
+				.title {
+					right: 56%;
+				}
+				>img {
+					padding-left: 40%;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 374px) {
+	.wechat-product-ql {
+		.head {
+			.text {
+				.h1 {
+					font-size: 18px!important;
+				}
+			}
+		}
+		.content {
+			.item {
+				.head {
+					p {
+						font-size: 14px;
+					}
+				}
+				.title {
+					.price {
+						font-size: 24px;
+						line-height: 45px;
+					}
+					.text {
+						font-size: 16px;
+					}
+					.btn {
+						font-size: 18px;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,230 @@
+.wechat-product-aohe {
+	.clear{
+	  clear:both;
+	}
+img {
+	max-width: 100%;
+	vertical-align: top;
+}
+h4 {
+	margin: 0;
+}
+/*--------------主体内容---------------*/
+.main{
+  max-width:100%;
+  margin:0 auto;
+}
+
+.banner .car{
+  width:100%;
+  height: 1.67rem;
+  margin-top: -1.00rem;
+}
+
+.container{
+  width:100%;
+}
+
+.container .title{
+  max-width:100%;
+  height: 0.72rem;
+  background:url(/images/aohe_brand/TITLE.png) no-repeat;
+  background-size:100% 100%;
+  text-align: center;
+  line-height: 0.72rem;
+  font-size: 0.28rem;
+  color:#ec0101;
+}
+
+.list ul {
+  max-width:100%;
+  padding:0.20rem;
+  text-align: center;
+}
+
+.flex-space{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+   -moz-justify-content: space-around;
+   -webkit-justify-content: space-around;
+   justify-content: space-around;
+}
+
+.type1 ul li img{
+  width:2.78rem;
+  height: 1.60rem;
+}
+
+.list ul p{
+  font-size: 0.28rem;
+  margin:0.10rem;
+}
+
+.type2 ul li img{
+  width:1.73rem;
+  height: 1.60rem;
+}
+
+.type3{
+  max-width: 100%;
+  height: 2.93rem;
+  background:url(/images/aohe_brand/img.jpg) no-repeat;
+  background-size:100% 100%;
+  padding:0.20rem;
+}
+
+.type3 .des{
+  width:3.60rem;
+}
+
+.type3 .des p:nth-child(1){
+  font-size: 0.30rem;
+}
+
+.type3 .des p:nth-child(2){
+  font-size: 0.22rem;
+  margin-left: 1.10rem;
+}
+
+.type3 .des p:nth-child(3){
+  font-size: 0.46rem;
+}
+
+.type3 .des p:nth-child(3) span{
+  font-size: 0.24rem;
+}
+
+.type3 .des p:nth-child(4){
+  font-size: 0.16rem;
+  display:inline-block;
+  padding:0px 3px;
+  border:1px solid #999;
+  margin-left: 1.30rem;
+  margin-bottom: 0.20rem;
+  color:#999;
+}
+
+.type3 .des p:nth-child(5){
+  display:inline-block;
+  width:1.95rem;
+  height: 0.52rem;
+  background:#d70101;
+  color:#fff;
+  line-height: 0.52rem;
+  text-align: center;
+  font-size: 0.26rem;
+}
+
+.type4{
+  margin-bottom: 0.30rem;
+}
+
+.type4 ul li{
+  width:100%;
+  padding:0.20rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.type4 ul li .left{
+  float:left;
+}
+
+.type4 ul li .right{
+  float:right;
+}
+
+.type4 ul li .text{
+  width:2.26rem;
+  height:4.16rem;
+  background:url(/images/aohe_brand/bg_information.png) no-repeat;
+  background-size:100% 100%;
+  text-align: center;
+  color:#fff;
+  padding:0.20rem 0;
+  position:relative;
+}
+
+.type4 ul li:first-child img{
+  width:3.60rem;
+  height: 2.95rem;
+}
+
+.type4 ul li:first-child{
+  position:relative;
+  z-index:3;
+}
+
+.type4 ul li:nth-child(2){
+  padding:0;
+  position:relative;
+  z-index:2;
+  margin-top: -1.85rem;
+}
+
+.type4 ul li:last-child{
+  position:relative;
+  z-index:1;
+  margin-top: -1.10rem;
+}
+
+.type4 ul li:nth-child(2) img{
+  width:100%;
+  height: 5.21rem;
+}
+
+.type4 ul li:last-child img{
+  width:3.59rem;
+  height: 3.22rem;
+}
+
+.type4 ul li .text h4{
+  font-size: 0.48rem;
+}
+
+.type4 ul li .text .tip{
+  display:inline-block;
+  width:1.65rem;
+  height: 1.12rem;
+  border:1px solid #fff;
+  margin:0.20rem 0;
+}
+
+.type4 ul li .text .tip span{
+  display:inline-block;
+  width:1.44rem;
+  height: 0.96rem;
+  background:rgba(255,255,255,.5);
+  color:#fff;
+  font-size: 0.26rem;
+  margin-top: 0.06rem;
+  padding-top:0.08rem;
+}
+
+.type4 ul li .text .price{
+  font-size: 0.32rem;
+}
+
+.type4 ul li .text .price span{
+  font-size: 0.48rem;
+}
+
+.type4 ul li .text .buy{
+    position: absolute;
+    bottom: 0.03rem;
+    right: 0.20rem;
+    font-size: 0.34rem;
+}
+
+.type4 ul li:last-child .text h4{
+  margin-top: 0.50rem;
+}
+
+.type4 ul li:last-child img{
+  margin:0.50rem -0.30rem 0 0;
+}
+}

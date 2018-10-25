@@ -1,0 +1,110 @@
+.supply-orders-container {
+    overflow: hidden;
+    @include nav-tabs-danger();
+    .nav-tabs {
+        overflow: hidden;
+        margin-top: 0;
+        margin-bottom: 10px;
+        box-shadow: 0 4px 6px -2px #999;
+    }
+    .panel-default{
+        // height: 210px;
+        .date-picker{
+            width: auto;
+            width: 103px;
+            display: inline-block;
+            float: none;
+            border-radius: 4px !important;
+        }
+        label{
+            &[class^="col-xs"] {
+                margin-top: 7px;
+            }
+        }
+        .col-xs-12{
+            .pull-left .form-group{
+                margin-bottom: 0;
+            }
+        }
+        .btn-row{
+            .btn{
+                margin-left: 13px;
+                min-width: 120px;
+            }
+        }
+    }
+    .panel-danger{
+        &.disabled{
+            .panel-heading{
+                background: #f2f2f2;
+            }
+            .panel-body{
+                .row{
+                    border-bottom: 0;
+                }
+            }
+        }
+        .panel-heading{
+            color: #333;
+            span{
+                margin-right: 36px;
+            }
+            a{
+                text-decoration: none;
+                color: #1f66d1;
+            }
+        }
+        .panel-body{
+            font-size: 14px;
+            .row{
+                border-bottom: 1px dashed #ccc;
+                padding: 0;
+                margin: 0 15px;
+                .col-xs-6{
+                    padding: 0 0 15px;
+                    &:first-child{
+                        padding-right: 23px;
+                        border-right: 1px dashed #ccc;
+                    }
+                    &:last-child{
+                        padding-left: 22px;
+                    }
+                    p{
+                        margin: 14px 0 0;
+                    }
+                }
+            }
+            >.list-unstyled{
+                padding-top: 12px;
+                padding-left: 15px;
+                line-height: 2;
+            }
+            .btn-row{
+                padding-right: 15px;
+                margin-top: -36px;
+                .h4{
+                    font-size: 18px;
+                }
+                .btn{
+                    margin-top: 5px;
+                    margin-left: 13px;
+                    min-width: 120px;
+                }
+            }
+        }
+        .media{
+            .media-left{
+                img{
+                    width: 90px;
+                    height: 90px;
+                    border: 1px solid;
+                }
+            }
+        }
+    }
+    .col-xs-4.time {
+        .form-group {
+            width: 101%;
+        }
+    }
+}

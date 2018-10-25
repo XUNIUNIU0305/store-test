@@ -1,0 +1,137 @@
+.brand-N-main-container img {
+  display: block; }
+
+.brand-N-main-container .title {
+  display: block;
+  height: 47.33333vw;
+  width: 100vw; }
+
+.brand-N-main-container .brand-N-body-container {
+  background: #040405;
+  padding: 0 4vw;
+  text-align: center;
+  overflow: hidden; }
+  .brand-N-main-container .brand-N-body-container .brand-title {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-align-items: center;
+            align-items: center;
+    width: 100%;
+    margin-top: 4.53333vw;
+    margin-bottom: 3.46667vw; }
+    .brand-N-main-container .brand-N-body-container .brand-title a {
+      background-color: #040405; }
+      .brand-N-main-container .brand-N-body-container .brand-title a img {
+        height: 12.8vw;
+        width: 27.33333vw; }
+  .brand-N-main-container .brand-N-body-container .hot-brand a {
+    margin: 0 auto; }
+    .brand-N-main-container .brand-N-body-container .hot-brand a img {
+      height: 35.2vw;
+      width: 92.4vw; }
+  .brand-N-main-container .brand-N-body-container .first-brand {
+    background: linear-gradient(#2900C1, #4000A4);
+    width: 92vw;
+    overflow: hidden; }
+    .brand-N-main-container .brand-N-body-container .first-brand .item-box {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-justify-content: flex-start;
+              justify-content: flex-start;
+      -webkit-align-items: center;
+              align-items: center;
+      margin: 3.2vw 4vw;
+      margin-bottom: 0; }
+      .brand-N-main-container .brand-N-body-container .first-brand .item-box .product-item {
+        display: block;
+        width: 40.53333vw;
+        height: 58vw;
+        background-color: #fff;
+        text-align: center;
+        margin-right: 2.93333vw;
+        margin-bottom: 2.93333vw; }
+        .brand-N-main-container .brand-N-body-container .first-brand .item-box .product-item:nth-child(2n) {
+          margin-right: 0; }
+        .brand-N-main-container .brand-N-body-container .first-brand .item-box .product-item img {
+          width: 100%;
+          height: auto;
+        }
+        .brand-N-main-container .brand-N-body-container .first-brand .item-box .product-item p {
+          margin: 0;
+          font-size: 3.2vw; }
+        .brand-N-main-container .brand-N-body-container .first-brand .item-box .product-item .price {
+          font-size: 4.53333vw;
+          color: #E60012; }
+        .brand-N-main-container .brand-N-body-container .first-brand .item-box .product-item .describe {
+          text-align: center;
+          width: 34vw;
+          height: 9.33333vw;
+          margin: 0 auto;
+          text-align: center;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          overflow: hidden; }
+  .brand-N-main-container .brand-N-body-container .experience-version {
+    position: relative; }
+    .brand-N-main-container .brand-N-body-container .experience-version:after {
+      display: block;
+      content: '';
+      height: 9.6vw;
+      width: 13.6vw;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: url("/images/18-6-29/N+/tiyanzhuang_lable.png") no-repeat center/cover; }
+  .brand-N-main-container .brand-N-body-container .tools-brand {
+    background: linear-gradient(#4000A4, #7600A1);
+    width: 92vw;
+    overflow: hidden; }
+    .brand-N-main-container .brand-N-body-container .tools-brand .item-box {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-justify-content: flex-start;
+              justify-content: flex-start;
+      -webkit-align-items: center;
+              align-items: center;
+      margin: 0 4vw; }
+      .brand-N-main-container .brand-N-body-container .tools-brand .item-box .product-item {
+        display: block;
+        width: 40.53333vw;
+        height: 58vw;
+        background-color: #fff;
+        text-align: center;
+        margin-right: 2.93333vw;
+        margin-bottom: 2.93333vw; }
+        .brand-N-main-container .brand-N-body-container .tools-brand .item-box .product-item:nth-child(2n) {
+          margin-right: 0; }
+        .brand-N-main-container .brand-N-body-container .tools-brand .item-box .product-item img {
+          width: 100%;
+          height: auto;
+        }
+        .brand-N-main-container .brand-N-body-container .tools-brand .item-box .product-item p {
+          margin: 0;
+          font-size: 3.2vw; }
+        .brand-N-main-container .brand-N-body-container .tools-brand .item-box .product-item .price {
+          font-size: 4.53333vw;
+          color: #E60012; }
+        .brand-N-main-container .brand-N-body-container .tools-brand .item-box .product-item .describe {
+          text-align: center;
+          width: 34vw;
+          height: 9.33333vw;
+          margin: 0 auto;
+          text-align: center;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          overflow: hidden; }
+
+.brand-N-main-container .to-top {
+  display: block; }
+  .brand-N-main-container .to-top img {
+    height: 13.06667vw;
+    width: 100vw; }

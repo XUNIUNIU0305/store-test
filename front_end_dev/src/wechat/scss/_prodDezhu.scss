@@ -1,0 +1,115 @@
+.wechat-product-dezhu {
+	* {
+          padding:0;
+          margin:0;
+          font-family: 'Microsoft Yahei',sans-serif,;
+          -ms-text-size-adjust: 100%;
+          -webkit-text-size-adjust: 100%;
+          box-sizing: border-box;
+        }
+	a {
+          background-color: transparent; 
+          text-decoration: none;
+      }
+
+        a:active,
+        a:hover,strong{
+          outline: 0; 
+          text-decoration: none;
+      }
+        img {
+          border: 0; 
+          max-width: 100%;
+          vertical-align: middle;
+          outline: none;
+          border:none;
+        }
+
+        div.main{
+          max-width: 640px;
+          margin:0 auto;
+        }
+
+        .clearfix{
+            clear:both;
+        }
+
+        .product{
+            position:relative;
+        }
+
+        .product-img{
+            width:55%;
+            float:left;
+        }
+
+        .product-img img{
+            position:relative;
+            top:-25px;
+        }
+
+        .des{
+            width: 45%;
+            float:right;
+            padding:5px;
+            overflow: hidden;
+        }
+        
+        .des h2{
+            color:#014099;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+
+        .des .price{
+            color:#ff6a2a;
+            font-weight: bold;
+            font-size: 30px;
+            margin-bottom: 5px;
+        }
+
+        .des p{
+            font-size: 20px;
+            color:#ff6a2a;
+            margin-bottom: 30px;
+        }
+
+        .des .buy a{
+            display:inline-block;
+            padding:10px 20px;
+            background:#cf4d44;
+            color:#fff;
+            font-size: 18px;
+            border-radius:5px;
+        }
+
+        @media screen and (max-width:450px){
+            .des{
+                padding:5px 5px 5px 15px;
+            }
+            .des h2,.des .price{
+                font-size: 20px;
+            }
+
+            .des h2{
+                color:#014099;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .des p{
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+
+            .des .buy a{
+                display:inline-block;
+                padding:5px 10px;
+                background:#cf4d44;
+                color:#fff;
+                font-size: 12px;
+                border-radius:5px;
+            }
+        }
+}

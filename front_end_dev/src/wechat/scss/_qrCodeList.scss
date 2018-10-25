@@ -1,0 +1,103 @@
+body {
+	background: #f2f2f2;
+}
+.qr-code-list {
+	margin-bottom: 50px;
+	.header {
+		background: #fff;
+		overflow: hidden;
+		margin-top: 1px;
+		.info {
+			position: relative;
+			padding-left: 4%;
+			p {
+				font-size: 14px;
+				color: #999;
+				span {
+               		font-size: 18px; 
+               		color: #333;
+               		font-weight: 700;
+				}
+			}
+			.btn {
+				position: absolute;
+				top: 0;
+				right: 4%;
+				img {
+					width: 80%;
+				}
+			}
+		}
+		.search {
+			padding: 4%;
+			position: relative;
+			input {
+				width: 70%;
+				border: 1px solid #ff9100;
+				border-radius: 2px;
+				padding: 4px;
+				height: 22px;
+			}
+			.btn {
+				height: 30px;
+				display: inline-block;
+				margin-left: 10px;
+				border-radius: 4px;
+				width: 20%;
+				background: #ff9100;
+				color: #fff;
+				text-align: center;
+				line-height: 30px;
+			}
+			.btn-search {
+				position: absolute;
+				top: 22px;
+				right: 29%;
+				img {
+					width: 60%;
+				}
+			}
+		}
+	}
+	.code-list {
+		background: #fff;
+		margin-top: 10px;
+		.list-head {
+		    border-bottom: 1px solid #ff9100;
+			span {
+				font-size: 1.2em;
+				display: inline-block;
+				width: 22%;
+				line-height: 2.5em;
+				padding-left: 10%;
+				&:nth-child(1) {
+					background: url('/images/qrCode/mendian.png') no-repeat 10% center;
+					background-size: 20%;
+				}
+				&:nth-child(2) {
+					background: url('/images/qrCode/zhuangtai1.png') no-repeat 10% center;
+					background-size: 20%;
+				}
+				&:nth-child(3) {
+					background: url('/images/qrCode/tele.png') no-repeat 10% center;
+					background-size: 20%;
+				}
+			}
+		}
+		.list-items {
+			.item {
+				border-bottom: 1px solid #f2f2f2;
+				span {
+					display: inline-block;
+					width: 32%;
+					font-size: 1.3em;
+					text-align: center;
+					line-height: 3em;
+					&:nth-child(2) {
+						color: #ff9100;
+					}
+				}
+			}
+		}
+	}
+}

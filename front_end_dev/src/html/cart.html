@@ -1,0 +1,716 @@
+@@include('head.inc') @@include('banner.inc') @@include('cart_progress_nav.inc')
+<!-- cart table start -->
+<div class="container-fluid apx-cart-container">
+    <div class="container">
+        <div class="cart-none">
+            <p class="none-title">
+                购物车空空的哦~，去看看心仪的商品吧~
+            </p>
+            <a href="/" class="none-go">去购物</a>
+        </div>
+        <div class="row">
+            <h3 class="apx-cart-title text-danger"><strong>全部商品 <span>3</span></strong></h3>
+            <table class="table">
+                <!-- 列表头 -->
+                <thead>
+                    <tr>
+                        <th width="30">
+                            <input type="checkbox" id="apx_cart_checkAll">
+                        </th>
+                        <th width="108">
+                            <label for="apx_cart_checkAll">全选</label>
+                        </th>
+                        <th>商品信息</th>
+                        <th width="100">单价</th>
+                        <th width="100">数量</th>
+                        <th width="100">金额</th>
+                        <th width="140">操作</th>
+                    </tr>
+                </thead>
+                <!-- 内容 -->
+                <tbody>
+                    <!-- 商店 -->
+                    <tr class="apx-cart-shop">
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td colspan="6">
+                            <strong><a href="#">嘉实多官方旗舰店</a></strong>
+                        </td>
+                    </tr>
+                    <!-- 过期商品 -->
+                    <tr class="apx-cart-product expire">
+                        <td>
+                            <input type="checkbox" disabled>
+                        </td>
+                        <td>
+                            <img src="/images/slider03.jpg" class="img-responsive">
+                        </td>
+                        <td class="clearfix">
+                            <div class="col-xs-6">
+                                <a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a>
+                            </div>
+                            <ul class="col-xs-6 list-unstyled">
+                                <li>颜色：大地皇</li>
+                                <li>尺码：4L</li>
+                            </ul>
+                        </td>
+                        <td>¥ 329.00</td>
+                        <td>
+                            <div class="input-group input-group-sm">
+                                <div class="input-group-addon">-</div>
+                                <input class="form-control" value="1" maxlength="2" type="text" disabled>
+                                <div class="input-group-addon">+</div>
+                            </div>
+                        </td>
+                        <td>
+                            <strong>¥ 329.00</strong>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-block btn-xs btn-link">删除</a>
+                            <a href="#" class="btn btn-block btn-xs btn-link disabled">移入收藏夹</a>
+                        </td>
+                    </tr>
+                    <tr class="apx-cart-product">
+                        <td colspan="7"><strong class="high-lighted">此商品已失效，请选购其他商品</strong></td>
+                    </tr>
+                    <!-- 缺货商品 -->
+                    <tr class="apx-cart-product selected lack">
+                        <td>
+                            <input type="checkbox" checked>
+                        </td>
+                        <td>
+                            <img src="/images/slider03.jpg" class="img-responsive">
+                        </td>
+                        <td class="clearfix">
+                            <div class="col-xs-6">
+                                <a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a>
+                            </div>
+                            <ul class="col-xs-6 list-unstyled">
+                                <li>颜色：大地皇</li>
+                                <li>尺码：4L</li>
+                            </ul>
+                        </td>
+                        <td>¥ 329.00</td>
+                        <td>
+                            <div class="input-group input-group-sm">
+                                <div class="input-group-addon">-</div>
+                                <input class="form-control" value="1" maxlength="2" type="text">
+                                <div class="input-group-addon">+</div>
+                            </div>
+                            <strong class="high-lighted">库存量 1</strong>
+                        </td>
+                        <td>
+                            <strong>¥ 329.00</strong>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-block btn-xs btn-link">删除</a>
+                            <a href="#" class="btn btn-block btn-xs btn-link">移入收藏夹</a>
+                        </td>
+                    </tr>
+                    <tr class="apx-cart-product selected">
+                        <td colspan="7"><strong class="high-lighted">库存总量为1件，请调整购买数量！！！</strong></td>
+                    </tr>
+                    <!-- 商品 -->
+                    <tr class="apx-cart-product">
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td>
+                            <img src="/images/slider03.jpg" class="img-responsive">
+                        </td>
+                        <td class="clearfix">
+                            <div class="col-xs-6">
+                                <a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a>
+                            </div>
+                            <ul class="col-xs-6 list-unstyled">
+                                <li>颜色：大地皇</li>
+                                <li>尺码：4L</li>
+                            </ul>
+                        </td>
+                        <td>¥ 329.00</td>
+                        <td>
+                            <div class="input-group input-group-sm">
+                                <div class="input-group-addon">-</div>
+                                <input class="form-control" value="1" maxlength="2" type="text">
+                                <div class="input-group-addon">+</div>
+                            </div>
+                        </td>
+                        <td>
+                            <strong>¥ 329.00</strong>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-block btn-xs btn-link">删除</a>
+                            <a href="#" class="btn btn-block btn-xs btn-link">移入收藏夹</a>
+                        </td>
+                    </tr>
+                    <!-- 商品 -->
+                    <tr class="apx-cart-product">
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td>
+                            <img src="/images/slider03.jpg" class="img-responsive">
+                        </td>
+                        <td class="clearfix">
+                            <div class="col-xs-6">
+                                <a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a>
+                            </div>
+                            <ul class="col-xs-6 list-unstyled">
+                                <li>颜色：大地皇</li>
+                                <li>尺码：4L</li>
+                            </ul>
+                        </td>
+                        <td>¥ 329.00</td>
+                        <td>
+                            <div class="input-group input-group-sm">
+                                <div class="input-group-addon">-</div>
+                                <input class="form-control" value="1" maxlength="2" type="text">
+                                <div class="input-group-addon">+</div>
+                            </div>
+                        </td>
+                        <td>
+                            <strong>¥ 329.00</strong>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-block btn-xs btn-link">删除</a>
+                            <a href="#" class="btn btn-block btn-xs btn-link">移入收藏夹</a>
+                        </td>
+                    </tr>
+                    <!-- 商店 -->
+                    <tr class="apx-cart-shop">
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td colspan="6">
+                            <strong><a href="#">嘉实多官方旗舰店</a></strong>
+                        </td>
+                    </tr>
+                    <!-- 商品 -->
+                    <tr class="apx-cart-product selected">
+                        <td>
+                            <input type="checkbox" checked>
+                        </td>
+                        <td>
+                            <img src="/images/slider03.jpg" class="img-responsive">
+                        </td>
+                        <td class="clearfix">
+                            <div class="col-xs-6">
+                                <a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a>
+                            </div>
+                            <ul class="col-xs-6 list-unstyled">
+                                <li>颜色：大地皇</li>
+                                <li>尺码：4L</li>
+                            </ul>
+                        </td>
+                        <td>¥ 329.00</td>
+                        <td>
+                            <div class="input-group input-group-sm">
+                                <div class="input-group-addon">-</div>
+                                <input class="form-control" value="1" maxlength="2" type="text">
+                                <div class="input-group-addon">+</div>
+                            </div>
+                        </td>
+                        <td>
+                            <strong>¥ 329.00</strong>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-block btn-xs btn-link">删除</a>
+                            <a href="#" class="btn btn-block btn-xs btn-link">移入收藏夹</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="apx-cart-bar J_cart_affix_bar">
+                <div class="container">
+                    <input type="checkbox" id="apx_cart_checkAll2">
+                    <label for="apx_cart_checkAll2">全选</label>
+                    <a href="#">删除选中的商品</a>
+                    <a href="#">移入收藏夹</a>
+                    <div class="pull-right">
+                        <span>已选中 <span class="high-lighted">1</span> 件商品</span>
+                        <span>总价：<span class="high-lighted">￥180.00</span></span>
+                        <a class="apx-cart-bar-submit" href="#"><strong>去结算</strong></a>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#tab_like" role="tab" data-toggle="tab">猜你喜欢
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#tab_focus" role="tab" data-toggle="tab">我的关注
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#tab_recent" role="tab" data-toggle="tab">最近浏览
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="tab_like">
+                    <div id="apx-cart-carousel-list-1" class="apx-cart-product-slider carousel slide" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item clearfix active">
+                                <!-- single item -->
+                                <div class="apx-item pull-left">
+                                    <div class="item-pic">
+                                        <a href="#"><img src="/images/slider01.jpg" alt="" class="img-responsive"></a>
+                                    </div>
+                                    <div class="item-cnt">
+                                        <div class="item-cnt-title ellipsis"><a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></div>
+                                        <div class="text-center">
+                                            ¥129.00
+                                        </div>
+                                        <button class="add-cart"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</button>
+                                    </div>
+                                </div>
+                                <!-- single item -->
+                                <div class="apx-item pull-left">
+                                    <div class="item-pic">
+                                        <a href="#"><img src="/images/slider01.jpg" alt="" class="img-responsive"></a>
+                                    </div>
+                                    <div class="item-cnt">
+                                        <div class="item-cnt-title ellipsis"><a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></div>
+                                        <div class="text-center">
+                                            ¥129.00
+                                        </div>
+                                        <button class="add-cart"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</button>
+                                    </div>
+                                </div>
+                                <!-- single item -->
+                                <div class="apx-item pull-left">
+                                    <div class="item-pic">
+                                        <a href="#"><img src="/images/slider01.jpg" alt="" class="img-responsive"></a>
+                                    </div>
+                                    <div class="item-cnt">
+                                        <div class="item-cnt-title ellipsis"><a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></div>
+                                        <div class="text-center">
+                                            ¥129.00
+                                        </div>
+                                        <button class="add-cart"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</button>
+                                    </div>
+                                </div>
+                                <!-- single item -->
+                                <div class="apx-item pull-left">
+                                    <div class="item-pic">
+                                        <a href="#"><img src="/images/slider01.jpg" alt="" class="img-responsive"></a>
+                                    </div>
+                                    <div class="item-cnt">
+                                        <div class="item-cnt-title ellipsis"><a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></div>
+                                        <div class="text-center">
+                                            ¥129.00
+                                        </div>
+                                        <button class="add-cart"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</button>
+                                    </div>
+                                </div>
+                                <!-- single item -->
+                                <div class="apx-item pull-left">
+                                    <div class="item-pic">
+                                        <a href="#"><img src="/images/slider01.jpg" alt="" class="img-responsive"></a>
+                                    </div>
+                                    <div class="item-cnt">
+                                        <div class="item-cnt-title ellipsis"><a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></div>
+                                        <div class="text-center">
+                                            ¥129.00
+                                        </div>
+                                        <button class="add-cart"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item clearfix">
+                                <!-- single item -->
+                                <div class="apx-item pull-left">
+                                    <div class="item-pic">
+                                        <a href="#"><img src="/images/slider01.jpg" alt="" class="img-responsive"></a>
+                                    </div>
+                                    <div class="item-cnt">
+                                        <div class="item-cnt-title ellipsis"><a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></div>
+                                        <div class="text-center">
+                                            ¥129.00
+                                        </div>
+                                        <button class="add-cart"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</button>
+                                    </div>
+                                </div>
+                                <!-- single item -->
+                                <div class="apx-item pull-left">
+                                    <div class="item-pic">
+                                        <a href="#"><img src="/images/slider01.jpg" alt="" class="img-responsive"></a>
+                                    </div>
+                                    <div class="item-cnt">
+                                        <div class="item-cnt-title ellipsis"><a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></div>
+                                        <div class="text-center">
+                                            ¥129.00
+                                        </div>
+                                        <button class="add-cart"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</button>
+                                    </div>
+                                </div>
+                                <!-- single item -->
+                                <div class="apx-item pull-left">
+                                    <div class="item-pic">
+                                        <a href="#"><img src="/images/slider01.jpg" alt="" class="img-responsive"></a>
+                                    </div>
+                                    <div class="item-cnt">
+                                        <div class="item-cnt-title ellipsis"><a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></div>
+                                        <div class="text-center">
+                                            ¥129.00
+                                        </div>
+                                        <button class="add-cart"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</button>
+                                    </div>
+                                </div>
+                                <!-- single item -->
+                                <div class="apx-item pull-left">
+                                    <div class="item-pic">
+                                        <a href="#"><img src="/images/slider01.jpg" alt="" class="img-responsive"></a>
+                                    </div>
+                                    <div class="item-cnt">
+                                        <div class="item-cnt-title ellipsis"><a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></div>
+                                        <div class="text-center">
+                                            ¥129.00
+                                        </div>
+                                        <button class="add-cart"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</button>
+                                    </div>
+                                </div>
+                                <!-- single item -->
+                                <div class="apx-item pull-left">
+                                    <div class="item-pic">
+                                        <a href="#"><img src="/images/slider01.jpg" alt="" class="img-responsive"></a>
+                                    </div>
+                                    <div class="item-cnt">
+                                        <div class="item-cnt-title ellipsis"><a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></div>
+                                        <div class="text-center">
+                                            ¥129.00
+                                        </div>
+                                        <button class="add-cart"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Wrapper for slides -->
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#apx-cart-carousel-list-1" data-slide-to="0" class="active"></li>
+                            <li data-target="#apx-cart-carousel-list-1" data-slide-to="1"></li>
+                        </ol>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="tab_focus">
+                    <div id="apx-cart-carousel-list-2" class="apx-cart-product-slider carousel slide" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item clearfix active">
+                                <!-- single item -->
+                                <div class="apx-item pull-left">
+                                    <div class="item-pic">
+                                        <a href="#"><img src="/images/slider01.jpg" alt="" class="img-responsive"></a>
+                                    </div>
+                                    <div class="item-cnt">
+                                        <div class="item-cnt-title ellipsis"><a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></div>
+                                        <div class="text-center">
+                                            ¥129.00
+                                        </div>
+                                        <button class="add-cart"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</button>
+                                    </div>
+                                </div>
+                                <!-- single item -->
+                                <div class="apx-item pull-left">
+                                    <div class="item-pic">
+                                        <a href="#"><img src="/images/slider01.jpg" alt="" class="img-responsive"></a>
+                                    </div>
+                                    <div class="item-cnt">
+                                        <div class="item-cnt-title ellipsis"><a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></div>
+                                        <div class="text-center">
+                                            ¥129.00
+                                        </div>
+                                        <button class="add-cart"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</button>
+                                    </div>
+                                </div>
+                                <!-- single item -->
+                                <div class="apx-item pull-left">
+                                    <div class="item-pic">
+                                        <a href="#"><img src="/images/slider01.jpg" alt="" class="img-responsive"></a>
+                                    </div>
+                                    <div class="item-cnt">
+                                        <div class="item-cnt-title ellipsis"><a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></div>
+                                        <div class="text-center">
+                                            ¥129.00
+                                        </div>
+                                        <button class="add-cart"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</button>
+                                    </div>
+                                </div>
+                                <!-- single item -->
+                                <div class="apx-item pull-left">
+                                    <div class="item-pic">
+                                        <a href="#"><img src="/images/slider01.jpg" alt="" class="img-responsive"></a>
+                                    </div>
+                                    <div class="item-cnt">
+                                        <div class="item-cnt-title ellipsis"><a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></div>
+                                        <div class="text-center">
+                                            ¥129.00
+                                        </div>
+                                        <button class="add-cart"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</button>
+                                    </div>
+                                </div>
+                                <!-- single item -->
+                                <div class="apx-item pull-left">
+                                    <div class="item-pic">
+                                        <a href="#"><img src="/images/slider01.jpg" alt="" class="img-responsive"></a>
+                                    </div>
+                                    <div class="item-cnt">
+                                        <div class="item-cnt-title ellipsis"><a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></div>
+                                        <div class="text-center">
+                                            ¥129.00
+                                        </div>
+                                        <button class="add-cart"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item clearfix">
+                                <!-- single item -->
+                                <div class="apx-item pull-left">
+                                    <div class="item-pic">
+                                        <a href="#"><img src="/images/slider01.jpg" alt="" class="img-responsive"></a>
+                                    </div>
+                                    <div class="item-cnt">
+                                        <div class="item-cnt-title ellipsis"><a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></div>
+                                        <div class="text-center">
+                                            ¥129.00
+                                        </div>
+                                        <button class="add-cart"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</button>
+                                    </div>
+                                </div>
+                                <!-- single item -->
+                                <div class="apx-item pull-left">
+                                    <div class="item-pic">
+                                        <a href="#"><img src="/images/slider01.jpg" alt="" class="img-responsive"></a>
+                                    </div>
+                                    <div class="item-cnt">
+                                        <div class="item-cnt-title ellipsis"><a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></div>
+                                        <div class="text-center">
+                                            ¥129.00
+                                        </div>
+                                        <button class="add-cart"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</button>
+                                    </div>
+                                </div>
+                                <!-- single item -->
+                                <div class="apx-item pull-left">
+                                    <div class="item-pic">
+                                        <a href="#"><img src="/images/slider01.jpg" alt="" class="img-responsive"></a>
+                                    </div>
+                                    <div class="item-cnt">
+                                        <div class="item-cnt-title ellipsis"><a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></div>
+                                        <div class="text-center">
+                                            ¥129.00
+                                        </div>
+                                        <button class="add-cart"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</button>
+                                    </div>
+                                </div>
+                                <!-- single item -->
+                                <div class="apx-item pull-left">
+                                    <div class="item-pic">
+                                        <a href="#"><img src="/images/slider01.jpg" alt="" class="img-responsive"></a>
+                                    </div>
+                                    <div class="item-cnt">
+                                        <div class="item-cnt-title ellipsis"><a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></div>
+                                        <div class="text-center">
+                                            ¥129.00
+                                        </div>
+                                        <button class="add-cart"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</button>
+                                    </div>
+                                </div>
+                                <!-- single item -->
+                                <div class="apx-item pull-left">
+                                    <div class="item-pic">
+                                        <a href="#"><img src="/images/slider01.jpg" alt="" class="img-responsive"></a>
+                                    </div>
+                                    <div class="item-cnt">
+                                        <div class="item-cnt-title ellipsis"><a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></div>
+                                        <div class="text-center">
+                                            ¥129.00
+                                        </div>
+                                        <button class="add-cart"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Wrapper for slides -->
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#apx-cart-carousel-list-2" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#apx-cart-carousel-list-2" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#apx-cart-carousel-list-2" data-slide-to="0" class="active"></li>
+                            <li data-target="#apx-cart-carousel-list-2" data-slide-to="1"></li>
+                        </ol>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="tab_recent">
+                    <div id="apx-cart-carousel-list-3" class="apx-cart-product-slider carousel slide" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item clearfix active">
+                                <!-- single item -->
+                                <div class="apx-item pull-left">
+                                    <div class="item-pic">
+                                        <a href="#"><img src="/images/slider01.jpg" alt="" class="img-responsive"></a>
+                                    </div>
+                                    <div class="item-cnt">
+                                        <div class="item-cnt-title ellipsis"><a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></div>
+                                        <div class="text-center">
+                                            ¥129.00
+                                        </div>
+                                        <button class="add-cart"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</button>
+                                    </div>
+                                </div>
+                                <!-- single item -->
+                                <div class="apx-item pull-left">
+                                    <div class="item-pic">
+                                        <a href="#"><img src="/images/slider01.jpg" alt="" class="img-responsive"></a>
+                                    </div>
+                                    <div class="item-cnt">
+                                        <div class="item-cnt-title ellipsis"><a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></div>
+                                        <div class="text-center">
+                                            ¥129.00
+                                        </div>
+                                        <button class="add-cart"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</button>
+                                    </div>
+                                </div>
+                                <!-- single item -->
+                                <div class="apx-item pull-left">
+                                    <div class="item-pic">
+                                        <a href="#"><img src="/images/slider01.jpg" alt="" class="img-responsive"></a>
+                                    </div>
+                                    <div class="item-cnt">
+                                        <div class="item-cnt-title ellipsis"><a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></div>
+                                        <div class="text-center">
+                                            ¥129.00
+                                        </div>
+                                        <button class="add-cart"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</button>
+                                    </div>
+                                </div>
+                                <!-- single item -->
+                                <div class="apx-item pull-left">
+                                    <div class="item-pic">
+                                        <a href="#"><img src="/images/slider01.jpg" alt="" class="img-responsive"></a>
+                                    </div>
+                                    <div class="item-cnt">
+                                        <div class="item-cnt-title ellipsis"><a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></div>
+                                        <div class="text-center">
+                                            ¥129.00
+                                        </div>
+                                        <button class="add-cart"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</button>
+                                    </div>
+                                </div>
+                                <!-- single item -->
+                                <div class="apx-item pull-left">
+                                    <div class="item-pic">
+                                        <a href="#"><img src="/images/slider01.jpg" alt="" class="img-responsive"></a>
+                                    </div>
+                                    <div class="item-cnt">
+                                        <div class="item-cnt-title ellipsis"><a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></div>
+                                        <div class="text-center">
+                                            ¥129.00
+                                        </div>
+                                        <button class="add-cart"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item clearfix">
+                                <!-- single item -->
+                                <div class="apx-item pull-left">
+                                    <div class="item-pic">
+                                        <a href="#"><img src="/images/slider01.jpg" alt="" class="img-responsive"></a>
+                                    </div>
+                                    <div class="item-cnt">
+                                        <div class="item-cnt-title ellipsis"><a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></div>
+                                        <div class="text-center">
+                                            ¥129.00
+                                        </div>
+                                        <button class="add-cart"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</button>
+                                    </div>
+                                </div>
+                                <!-- single item -->
+                                <div class="apx-item pull-left">
+                                    <div class="item-pic">
+                                        <a href="#"><img src="/images/slider01.jpg" alt="" class="img-responsive"></a>
+                                    </div>
+                                    <div class="item-cnt">
+                                        <div class="item-cnt-title ellipsis"><a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></div>
+                                        <div class="text-center">
+                                            ¥129.00
+                                        </div>
+                                        <button class="add-cart"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</button>
+                                    </div>
+                                </div>
+                                <!-- single item -->
+                                <div class="apx-item pull-left">
+                                    <div class="item-pic">
+                                        <a href="#"><img src="/images/slider01.jpg" alt="" class="img-responsive"></a>
+                                    </div>
+                                    <div class="item-cnt">
+                                        <div class="item-cnt-title ellipsis"><a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></div>
+                                        <div class="text-center">
+                                            ¥129.00
+                                        </div>
+                                        <button class="add-cart"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</button>
+                                    </div>
+                                </div>
+                                <!-- single item -->
+                                <div class="apx-item pull-left">
+                                    <div class="item-pic">
+                                        <a href="#"><img src="/images/slider01.jpg" alt="" class="img-responsive"></a>
+                                    </div>
+                                    <div class="item-cnt">
+                                        <div class="item-cnt-title ellipsis"><a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></div>
+                                        <div class="text-center">
+                                            ¥129.00
+                                        </div>
+                                        <button class="add-cart"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</button>
+                                    </div>
+                                </div>
+                                <!-- single item -->
+                                <div class="apx-item pull-left">
+                                    <div class="item-pic">
+                                        <a href="#"><img src="/images/slider01.jpg" alt="" class="img-responsive"></a>
+                                    </div>
+                                    <div class="item-cnt">
+                                        <div class="item-cnt-title ellipsis"><a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></div>
+                                        <div class="text-center">
+                                            ¥129.00
+                                        </div>
+                                        <button class="add-cart"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Wrapper for slides -->
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#apx-cart-carousel-list-3" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#apx-cart-carousel-list-3" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#apx-cart-carousel-list-3" data-slide-to="0" class="active"></li>
+                            <li data-target="#apx-cart-carousel-list-3" data-slide-to="1"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- cart table end -->
+@@include('ensurance.inc') @@include('sitemap.inc') @@include('footer.inc')

@@ -1,0 +1,113 @@
+@@include('head.inc') @@include('admin_header.inc')
+<!-- aside nav end -->
+<!-- main area start -->
+<div class="admin-frame-main">
+    <div class="admin-main-wrap">
+        <!--editor container-->
+        <div class="admin-wechat-editor">
+            <!--nav-->
+            <ul class="nav nav-tabs">
+                <li><strong>文章发布编辑</strong></li>
+            </ul>
+            <!--panel-->
+            <div class="admin-management-panel">
+                <div class="header"></div>
+                <div class="content with-header with-footer clearfix">
+                    <div class="col-xs-6">
+                        <div class="title h4 text-danger text-center">
+                            <strong>标题</strong>
+                        </div>
+                        <textarea class="textarea-title" rows="4"></textarea>
+                        <div class="lint">还可以输入20字</div>
+                        <hr>
+                        <div class="title h4 text-danger text-center">
+                            <strong>封面</strong>
+                        </div>
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <label class="img-upload-box media-object" for="upload_img_1">
+                                    <input type="file" id="upload_img_1">
+                                    <img src="/images/brands/middle_banner.jpg">
+                                </label>
+                            </div>
+                            <div class="media-body media-middle">
+                                九大爷陪你读新闻 全程表情包伺候
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="col-xs-6 text-center">
+                        <div class="title h4 text-danger">
+                            <strong>正文</strong>
+                        </div>
+                        <textarea id="apx_editor" name="content" style="width: 320px;height: 340px"></textarea>
+                    </div>
+                </div>
+                <div class="footer"></div>
+            </div>
+            <div class="text-center">
+                <div class="btn-group">
+                    <button class="btn btn-default btn-lg" data-toggle="modal" data-target="#apxModalPreview">预览</button>
+                    <button class="btn btn-danger btn-lg" data-toggle="modal" data-target="#apxModalAdminAlert">发布</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- main area start -->
+
+<!-- 删除警示 -->
+<div class="apx-modal-admin-alert modal fade" id="apxModalAdminAlert" tabindex="-1">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span></a>
+                <h4 class="modal-title">提示信息</h4>
+            </div>
+            <div class="modal-body" style="padding: 80px 0 40px">
+                点击发布后，内容将不可再编辑，确定现在发布吗？
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-lg btn-danger">确认</button>
+                <button type="button" class="btn btn-lg btn-default" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="apx-modal-wechat-preview modal fade" id="apxModalPreview" tabindex="-1">
+    <!--<div class="modal-dialog modal-sm">-->
+    <!--<div class="modal-content">-->
+    <div class="iphone-container">
+        <div class="wechat-content-wrap">
+            <!--true content-->
+            <div class="wechat-content" style="overflow-y: hidden;">
+                <div class="wechat-hint-wrap" onclick="document.querySelector('.wechat-content').style.overflowY = 'auto';document.querySelector('.wechat-hint-wrap').style.opacity = 0;">
+                    <div class="wechat-hint"></div>
+                </div>
+                <h1>标题h1</h1>
+                <h2>标题h2</h2>
+                <h3>标题h3</h3>
+                <h4>标题h4</h4>
+                <h5>标题h5</h5>
+                <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+                <small>small标签</small>
+                <img src="../images/slider03.jpg">
+            </div>
+        </div>
+    </div>
+    <!--</div>-->
+    <!--</div>-->
+</div>
+
+<script src="/scripts/vender/kindeditor/kindeditor-all-min.js"></script>
+@@include('footer_admin.inc')
+
+<script>
+    $(function () {
+        $('#apxModalPreview').modal('show');
+    })
+
+</script>

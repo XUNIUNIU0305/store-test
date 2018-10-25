@@ -1,0 +1,108 @@
+.bank-funds {
+	color: #333;
+	@include nav-tabs-danger();
+	.title {
+		color: #333;
+		background-color: #fce7e6;
+		margin: 0;
+		padding: 16px 20px;
+	}
+	.pay_out_box {
+		width: 320px;
+		margin: 80px auto;
+		.form-group {
+			margin: 8px 0;
+		}
+		.form-control {
+			width: 296px;
+		}
+		.code {
+			.form-control {
+				width: 180px;
+				margin-right: 14px;
+			}
+			.btn {
+				color: #df483d;
+				border: 1px solid #df483d;
+			}
+		}
+		.out-btn-group {
+			margin-top: 32px;
+			text-align: center;
+			.btn {
+				margin: 0 23px;
+				border: 1px solid #df483d;
+				padding: 6px 30px;
+				border-radius: 40px;
+				&:first-child {
+					color: #df483d;
+				}
+			}
+		}
+	}
+    .modal-loading-box {
+        position: absolute;
+        left: 45%;
+        top: 40%;
+    }
+	.detail {
+		.header {
+			background-color: #fce7e6;
+			padding: 6px 0;
+		}
+		.form-group {
+			margin: 6px 0;
+			label {
+				display: inline-block;
+			}
+		}
+		.input-group-btn {
+			.btn {
+				line-height: 20px;
+			}
+		}
+		.date-picker-box {
+			.input-group {
+				width: 70%;
+				vertical-align: middle;
+				display: inline-table;
+			}
+		}
+	}
+	.table-panel {
+		margin-top: 20px;
+        font-size: 12px;
+        &.dashed {
+            th,
+            td {
+                position: relative;
+                border-top: 1px dashed #ccc;
+                border-bottom: 1px dashed #ccc;
+                overflow: visible;
+            }
+        }
+        thead {
+            background: #e6e6e6;
+            th {
+                text-align: center !important;
+            }
+        }
+        tbody{
+            tr{
+                
+            }
+            td {
+                &:last-child {
+                    .link {
+                        color: #df483d;                       
+                    }
+                }
+            }
+        }
+    }
+    .add-more {
+    	font-size: 16px;
+    	color: #999;
+    	cursor: pointer;
+    }
+}

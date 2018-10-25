@@ -1,0 +1,389 @@
+$size : 1/750 * 100vw;
+
+@mixin floating-layer{
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.self-lifting-cancellation-box {
+    color: #333;
+    .self-lifting-nav {
+        height: 225 * $size;
+        background: url('/images/self_lifting_cancellation/bg.png') no-repeat;
+        background-size: 100%;
+        padding: 20 * $size 30 * $size;
+        box-sizing: border-box;
+        position: relative;
+        .nav-tit {
+            color: #fff;
+            display: block;
+            font-size: 48 * $size;
+        }
+        .nav-prompt {
+            width: 592 * $size;
+            height: 76 * $size;
+            background-color: #fff;
+            border-radius: 40 * $size;
+            margin-top: 20 * $size;
+            overflow: hidden;
+            .nav-input {
+                width: 440 * $size;
+                height: 72 * $size;
+                border-style: none;
+                outline-style: none;
+                font-size: 30 * $size;
+                border-radius: 40 * $size;
+                padding-left: 40 * $size;
+            }
+            .nav-pic {
+                width: 40 * $size;
+                margin-left: 10 * $size;
+                margin-bottom: -7 * $size;
+            }
+        }
+        .nav-btn {
+            color: #fff;
+            position: absolute;
+            right: 40 * $size;
+            bottom: 50 * $size;
+            font-size: 36 * $size;
+        }
+    }
+    .filter-cont {
+        height: 58 * $size;
+        line-height: 58 * $size;
+        background-color: #fff;
+        padding: 30 * $size;
+        border-bottom: 2 * $size solid #efeff4;
+        .filter-txt {
+            float: right;
+            font-size: 28 * $size;
+            cursor: pointer;
+            &:after {
+                content: '';
+                padding: 12 * $size;
+                background: url('/images/self_lifting_cancellation/screening_icon.png') no-repeat center;
+                background-size: 100%;
+                margin-left: 20 * $size;
+            }
+        }
+    }
+    .self-lifting-section {
+        .section-item {
+            padding-left: 30 *$size;
+            margin-bottom: 20 * $size;
+            background-color: #fff;
+            .section-tit {
+                height: 88 * $size;
+                line-height: 88 * $size;
+                border-bottom: 2 * $size solid #efeff4;
+                padding-right: 30 * $size;
+                .section-txt {
+                    font-size: 30 * $size;
+                    font-weight: bold;
+                    margin-right: 20 * $size;
+                }
+                .section-status {
+                    color: #F6434D;
+                    float: right;
+                    font-size: 28 * $size;
+                }
+            }
+            .attribute-list {
+                padding: 10 * $size 30 * $size 10 * $size 0;
+                .attribute-item {
+                    height: 60 * $size;
+                    line-height: 60 * $size;
+                    font-size: 28 * $size;
+                    .attribte-tit {
+                        float: left;
+                        color: #AAA;
+                        width: 160 * $size;
+                    }
+                    .attribute-cont {
+                        float: left;
+                        width: 510 * $size;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+    .unrelated {
+        color: #888;
+        width: 320 * $size;
+        font-size: 28 * $size;
+        margin: 150 * $size auto 0;
+        &-pic {
+            width: 214 * $size;
+            margin-left: 40 * $size;
+            margin-bottom: 10 * $size;
+        }
+        &-btn {
+            color: #F5222D;
+            display: block;
+            width: 226 * $size;
+            height: 58 * $size;
+            line-height: 58 * $size;
+            border: 2 * $size solid #F5222D;
+            text-align: center; 
+            border-radius: 30 * $size;
+            margin-left: 40 * $size;
+            margin-top: 30 * $size;
+        }
+    }
+    .self-lifting-footer {
+        height: 100 * $size;
+        padding: 30 * $size;
+        text-align: center;
+        >span {
+            float: left;
+            &.footer-line {
+                width: 220 * $size;
+                height: 2 * $size;
+                background-color: #E2E3E5;
+                margin-top: 40 * $size;
+            }
+            &.footer-txt {
+                color: #B2B2B3;
+                font-size: 26 * $size;
+                margin: 20 * $size 30 * $size 0;
+            }
+        }
+    }
+}
+
+.condition-screening-box {
+    @include floating-layer;
+    .condition-screening {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 634 * $size;
+        padding: 30 * $size;
+        background-color: #fff;
+        height: 100vh;
+        overflow: scroll;
+        .order-status {
+            .status-tit {
+                display: block;
+                font-size: 30 * $size;
+                font-weight: bold;
+            }
+            .status-list {
+                height: 180 * $size;
+                margin-top: 30 * $size;
+                &.status-date {
+                    height: 240 * $size;
+                }
+                .status-item {
+                    float: left;
+                    color: #858585;
+                    width: 164 * $size;
+                    height: 60 * $size;
+                    line-height: 60 * $size;
+                    text-align: center;
+                    font-size: 26 * $size;
+                    margin-right: 62 * $size;
+                    margin-bottom: 20 * $size;
+                    border: 2 * $size solid #ddd;
+                    cursor: pointer;
+                    &:nth-child(3n) {
+                        margin-right: 0;
+                    }
+                    &.active {
+                        color: #F6434D;
+                        border-color: #F6434D;
+                    }
+                }
+            }
+        }
+        .order-attr {
+            margin-top: 40 * $size;
+            padding-bottom: 162 * $size;
+            &-tit {
+                display: block;
+                font-size: 30 * $size;
+                font-weight: bold;
+            }
+            &-prompt {
+                width: 608 * $size;
+                height: 74 * $size;
+                background-color: #EFEFF4;
+                outline-style: none;
+                border-style: none;
+                border-radius: 30 * $size;
+                font-size: 28 * $size;
+                padding-left: 20 * $size;
+                margin: 30 * $size 0;
+            }
+        }
+    }
+    .order-footer {
+        position: fixed;
+        bottom: 0;
+        left: 56 * $size;
+        width: 100%;
+        height: 96 * $size;
+        .order-btn {
+            float: left;
+            width: 347* $size;
+            line-height: 96 * $size;
+            text-align: center;
+            font-size: 30 * $size;
+            background-color: #fff;
+            &.btn-reset {
+                border-top: 2 * $size solid #efeff4;
+            }
+            &.btn-confirm {
+                color: #fff;
+                background: url('/images/self_lifting_cancellation/bg2.png') no-repeat;
+                background-size: 100%;
+            }
+        }
+    }
+}
+
+.pick-up-goods {
+    @include floating-layer;
+    .goods-box {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 900 * $size;
+        background-color: #fff;
+        .goods-tit {
+            height: 98 * $size;
+            line-height: 98 * $size;
+            text-align: center;
+            font-size: 36 * $size;
+            border-bottom: 2 * $size solid #efeff4;
+            position: relative;
+            .goods-icon {
+                position: absolute;
+                top: 40 * $size;
+                right: 30 * $size;
+                padding: 13 * $size;
+                background: url('/images/self_lifting_cancellation/close_44_icon.png') no-repeat;
+                background-size: 100%;
+                cursor: pointer;
+            }
+        }
+        .goods-sec {
+            margin-left: 30 * $size;
+            height: 170 * $size;
+            padding: 40 * $size 30 * $size 40 * $size 0;
+            border-bottom: 2 * $size solid #efeff4;
+            .goods-pic {
+                float: left;
+                width: 170 * $size;
+                height: 170 * $size;
+                background-color: #ccc;
+                >img {
+                    width: 170 * $size;
+                }
+            }
+            .goods-cont {
+                float: left;
+                margin-left: 30 * $size;
+                >span {
+                    display: block;
+                    &.J-txt-1 {
+                        width: 480 * $size;
+                        font-size: 28 * $size;
+                        height: 92 * $size;
+                    }
+                    &.J-txt-2 {
+                        color: #aaa;
+                        font-size: 24 * $size;
+                        height: 40 * $size;
+                        >span {
+                            display: block;
+                            width: 470 * $size;
+                            overflow:hidden;
+                            text-overflow:ellipsis;
+                            white-space:nowrap
+                        }
+                    }
+                }
+            }
+        }
+        .goods-attr {
+            padding: 30 * $size;
+            margin-left: 30 * $size;
+            padding: 30 * $size 30 * $size 30 * $size 0;
+            border-bottom: 2 * $size solid #efeff4;
+            .g-tit {
+                display: block;
+                color: #B6B6B6;
+                font-size: 28 * $size;
+                >span {
+                    color: #333;
+                    margin-left: 50 * $size;
+                }
+            }
+        }
+        .goods-number {
+            font-size: 28 * $size;
+            height: 60 * $size;
+            line-height: 60 * $size;
+            padding: 20 * $size 30 * $size;
+            >span {
+                color: #B6B6B6;
+                &.btn-box {
+                    float: right;
+                    width: 220 * $size;
+                    .number-btn {
+                        color: #000;
+                        float: left;
+                        width: 60 * $size;
+                        height: 60 * $size;
+                        line-height: 60 * $size;
+                        background-color: #F5F5F5;
+                        text-align: center;
+                        &.btn-sty {
+                            width: 50 * $size;
+                            height: 56 * $size;
+                            margin: 0 10 * $size;
+                            padding: 0 10 * $size;
+                            -webkit-appearance: none;
+                            border-radius: 0;
+                            border-style: none;
+                            outline-style: none;
+                        }
+                     }
+                }
+            }
+        }
+    }
+    .goods-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 96 * $size;
+        .order-btn {
+            float: left;
+            width: 375 * $size;
+            line-height: 96 * $size;
+            text-align: center;
+            font-size: 34 * $size;
+            &.btn-reset {
+                border-top: 2 * $size solid #EFEFF4;
+            }
+            &.btn-confirm {
+                color: #fff;
+                background: url('/images/self_lifting_cancellation/bg2.png') no-repeat;
+                background-size: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,190 @@
+.business-data-invite {
+  min-width: 1200px;
+  color: #333; }
+  .business-data-invite ul {
+    padding: 0; }
+  .business-data-invite li {
+    list-style: none; }
+  .business-data-invite .bootstrap-select.btn-group .dropdown-toggle .filter-option {
+    font-size: 16px;
+    line-height: 2; }
+  .business-data-invite .data-top-title .tabs-btn {
+    position: absolute;
+    right: 100px;
+    top: 8px; }
+    .business-data-invite .data-top-title .tabs-btn .btn-tab {
+      display: inline-block;
+      width: 120px;
+      font-size: 16px;
+      line-height: 1.6;
+      border: 1px solid #459ae9;
+      margin: 0 5px;
+      text-align: center;
+      border-radius: 4px;
+      color: #459ae9; }
+      .business-data-invite .data-top-title .tabs-btn .btn-tab.active {
+        background-color: #459ae9;
+        color: #fff; }
+  .business-data-invite .sell-search {
+    background-color: #FFF;
+    margin-top: 1px;
+    padding: 20px; }
+    .business-data-invite .sell-search label {
+      display: block;
+      font-size: 16px; }
+    .business-data-invite .sell-search .time-input {
+      width: 100%;
+      border: 1px solid #999;
+      border-radius: 4px;
+      font-size: 16px;
+      line-height: 1.5; }
+    .business-data-invite .sell-search .btn-search {
+      color: #fff;
+      background-color: #459ae9; }
+    .business-data-invite .sell-search .time-box {
+      width: 30%;
+      margin: 20px 0;
+      padding-left: 15px; }
+  .business-data-invite .invite-total-data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 20px;
+    background-color: #FFF;
+    padding: 30px 20px; }
+    .business-data-invite .invite-total-data .total-item {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 25%;
+              flex: 0 0 25%;
+      position: relative; }
+      .business-data-invite .invite-total-data .total-item .item-title {
+        color: #808080;
+        font-size: 12px;
+        margin-bottom: 5px; }
+      .business-data-invite .invite-total-data .total-item .item-num {
+        font-size: 18px; }
+      .business-data-invite .invite-total-data .total-item:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: -16px;
+        width: 1px;
+        height: 44px;
+        background-color: #f2f2f2; }
+      .business-data-invite .invite-total-data .total-item:first-child:before {
+        display: none; }
+  .business-data-invite .invite-detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 10px; }
+  .business-data-invite .chart-container {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 70%;
+            flex: 0 0 70%;
+    height: 600px;
+    background-color: #FFF; }
+    .business-data-invite .chart-container .tab-list {
+      text-align: right;
+      padding: 8px 20px 0 0; }
+      .business-data-invite .chart-container .tab-list span {
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        padding: 10px;
+        cursor: pointer; }
+      .business-data-invite .chart-container .tab-list .line {
+        background: url("/images/business/data/total/linechart20_icon.png") no-repeat center; }
+        .business-data-invite .chart-container .tab-list .line.active {
+          background-image: url("/images/business/data/total/linechart20_bule_icon.png"); }
+      .business-data-invite .chart-container .tab-list .bar {
+        background: url("/images/business/data/total/histogram20_icon.png") no-repeat center; }
+        .business-data-invite .chart-container .tab-list .bar.active {
+          background-image: url("/images/business/data/total/histogram20_bule_icon.png"); }
+    .business-data-invite .chart-container .chart-box {
+      height: 400px; }
+  .business-data-invite .pro-box {
+    margin-left: 1.2%;
+    width: 98.8%;
+    background-color: #FFF;
+    height: 600px; }
+    .business-data-invite .pro-box .nav-tabs li {
+      width: 33%;
+      text-align: center; }
+    .business-data-invite .pro-box .nav-tabs a {
+      color: #999; }
+    .business-data-invite .pro-box .nav-tabs li.active a {
+      border: none;
+      color: #459ae9;
+      position: relative; }
+      .business-data-invite .pro-box .nav-tabs li.active a:after {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 20%;
+        bottom: -1px;
+        width: 60%;
+        height: 4px;
+        background-color: #459ae9; }
+    .business-data-invite .pro-box .pro-scroll {
+      height: 540px;
+      overflow: hidden;
+      position: relative; }
+      .business-data-invite .pro-box .pro-scroll li {
+        font-size: 14px;
+        margin-right: 10px;
+        border-bottom: 4px solid #efeff4; }
+      .business-data-invite .pro-box .pro-scroll p {
+        margin: 8px 16px; }
+      .business-data-invite .pro-box .pro-scroll .item-title {
+        font-weight: 700; }
+      .business-data-invite .pro-box .pro-scroll .item-area {
+        font-size: 20px; }
+      .business-data-invite .pro-box .pro-scroll .sort {
+        color: #459ae9; }
+      .business-data-invite .pro-box .pro-scroll .item-detail {
+        height: 38px;
+        overflow: hidden; }
+      .business-data-invite .pro-box .pro-scroll .address {
+        color: #666; }
+      .business-data-invite .pro-box .pro-scroll .br {
+        margin: 0 16px;
+        height: 1px;
+        background: #efeff4; }
+      .business-data-invite .pro-box .pro-scroll .total {
+        margin: 18px 16px;
+        color: #459ae9; }
+  .business-data-invite .table {
+    background-color: #FFF;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    text-align: center; }
+    .business-data-invite .table .table-title {
+      margin: 0;
+      padding-top: 20px;
+      font-size: 18px; }
+    .business-data-invite .table .table-subhead {
+      font-size: 12px;
+      color: #999; }
+  .business-data-invite .table-box table {
+    width: calc(100% - 20px);
+    margin: 0 10px; }
+  .business-data-invite .table-box tr:nth-child(2n-1) {
+    background-color: #f9f9fa; }
+  .business-data-invite .table-box tr:first-child {
+    border-top: 1px solid #ccccd1;
+    border-bottom: 1px solid #ccccd1; }
+    .business-data-invite .table-box tr:first-child td {
+      font-weight: 700; }
+  .business-data-invite .table-box td {
+    font-size: 14px;
+    color: #777272;
+    text-align: center;
+    line-height: 2;
+    border-right: 1px solid #ccccd1; }
+    .business-data-invite .table-box td:first-child {
+      padding-left: 20px; }
+    .business-data-invite .table-box td:last-child {
+      padding-left: 20px;
+      border-right: none;
+      text-align: left; }

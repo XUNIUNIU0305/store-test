@@ -1,0 +1,276 @@
+.new-account-submit {
+  min-height: 200px;
+  background: #efeff4;
+  font-size: 14px;
+  padding-bottom: 30px;
+  margin-bottom: 20px; }
+  .new-account-submit .header-tip {
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff9100;
+    padding: 10px 15px; }
+  .new-account-submit img {
+    max-width: 100%;
+    vertical-align: top; }
+  .new-account-submit input {
+    border: 0;
+    outline: none; }
+  .new-account-submit input[placeholder], .new-account-submit [placeholder], .new-account-submit *[placeholder] {
+    color: #9d9d9d !important; }
+  .new-account-submit select {
+    border: 0;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+    text-align: center;
+    padding-right: 15px;
+    margin: 0 auto; }
+  .new-account-submit .head {
+    padding-left: 15px;
+    color: #e53935;
+    padding-top: 13.5px;
+    padding-bottom: 13.5px; }
+  .new-account-submit .red {
+    color: #e53935;
+    margin-right: 2px; }
+  .new-account-submit .info {
+    background: #fff;
+    padding-left: 15px;
+    margin-bottom: 10px; }
+    .new-account-submit .info > div {
+      height: 44px;
+      line-height: 44px;
+      border-bottom: 1px solid #dedfe0; }
+      .new-account-submit .info > div > div {
+        float: left;
+        width: 33%; }
+        .new-account-submit .info > div > div span {
+          color: #e53935;
+          margin-right: 2px; }
+      .new-account-submit .info > div .select-con {
+        width: 67%; }
+        .new-account-submit .info > div .select-con select {
+          border: 0;
+          outline: none;
+          -webkit-appearance: none;
+                  appearance: none;
+          background: url("/images/new_account/ic_arrowdown.png") no-repeat scroll right center transparent;
+          background-size: 14px;
+          width: 30%;
+          height: 44px;
+          text-align: center;
+          text-overflow: clip; }
+          .new-account-submit .info > div .select-con select option {
+            width: 100%;
+            text-align: center; }
+    .new-account-submit .info .respon-person {
+      border: 0; }
+    .new-account-submit .info .business-license-img {
+      border: 0; }
+    .new-account-submit .info .stores-img-text {
+      border: 0; }
+    .new-account-submit .info .store-adress {
+      border: 0; }
+    .new-account-submit .info .contact-email {
+      border: 0; }
+    .new-account-submit .info .respon-person {
+      line-height: 20px;
+      margin-top: 10px;
+      overflow: hidden;
+      padding-right: 15px; }
+    .new-account-submit .info .imgcon {
+      min-height: 100px;
+      overflow: hidden;
+      padding-bottom: 15px;
+      padding-right: 15px;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: space-between;
+              justify-content: space-between;
+      border: 0; }
+      .new-account-submit .info .imgcon > div {
+        box-flex: 1;
+        width: 45%;
+        height: 100px;
+        border: 1px dashed #b3b3b3;
+        margin: 0 auto;
+        text-align: center;
+        position: relative; }
+        .new-account-submit .info .imgcon > div input {
+          width: 100%;
+          height: 100%;
+          background: #f00;
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 0; }
+        .new-account-submit .info .imgcon > div img {
+          width: 100%;
+          height: 100%; }
+        .new-account-submit .info .imgcon > div b {
+          font-weight: 300;
+          display: block;
+          line-height: 20px;
+          text-align: center;
+          width: 100%;
+          margin-top: 0;
+          color: #9d9d9d; }
+        .new-account-submit .info .imgcon > div .text {
+          position: absolute;
+          bottom: 2px; }
+      .new-account-submit .info .imgcon .img3 {
+        float: left;
+        margin-left: 10px; }
+  .new-account-submit .infos {
+    background: #fff;
+    padding-left: 15px;
+    margin-bottom: 10px; }
+    .new-account-submit .infos > div {
+      border-bottom: 1px solid #dedfe0; }
+      .new-account-submit .infos > div > div {
+        float: left;
+        width: 33%; }
+        .new-account-submit .infos > div > div span {
+          color: #e53935;
+          margin-right: 2px; }
+    .new-account-submit .infos .respon-person-img {
+      height: 44px;
+      line-height: 44px; }
+    .new-account-submit .infos .respon-person {
+      border: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 15px; }
+    .new-account-submit .infos .imgcon {
+      min-height: 100px;
+      overflow: hidden;
+      padding-bottom: 15px;
+      padding-right: 15px;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: space-between;
+              justify-content: space-between;
+      border: 0; }
+      .new-account-submit .infos .imgcon > div {
+        box-flex: 1;
+        width: 45%;
+        height: 100px;
+        border: 1px dashed #b3b3b3;
+        margin: 0 auto;
+        text-align: center;
+        position: relative; }
+        .new-account-submit .infos .imgcon > div input {
+          width: 100%;
+          height: 100%;
+          background: #f00;
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 0; }
+        .new-account-submit .infos .imgcon > div img {
+          width: 100%;
+          height: 100px; }
+        .new-account-submit .infos .imgcon > div .text {
+          position: absolute;
+          bottom: 2px; }
+        .new-account-submit .infos .imgcon > div b {
+          font-weight: 300;
+          display: block;
+          line-height: 20px;
+          text-align: center;
+          width: 100%;
+          margin-top: 0;
+          color: #9d9d9d;
+          position: absolute; }
+      .new-account-submit .infos .imgcon .img3 {
+        float: left;
+        margin-left: 10px; }
+  .new-account-submit .agree {
+    width: 100%;
+    height: 13px;
+    line-height: 13px;
+    text-align: center;
+    margin-top: 12px; }
+    .new-account-submit .agree b {
+      width: 13px;
+      height: 13px;
+      display: inline-block;
+      background: url("/images/new_account/ic_choose_def.png") no-repeat 14% center;
+      background-size: 13px;
+      margin-right: 10px; }
+    .new-account-submit .agree .blue {
+      display: inline-block;
+      color: #2578f5; }
+    .new-account-submit .agree span {
+      color: #9d9d9d; }
+  .new-account-submit .agree-active b {
+    background: url("/images/new_account/ic_choose_clicked.png") no-repeat 14% center;
+    background-size: 13px; }
+  .new-account-submit .btn {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 26px;
+    margin-bottom: 25px; }
+    .new-account-submit .btn button {
+      border: 0;
+      outline: none;
+      width: 100%;
+      font-size: 17px;
+      height: 44px;
+      border-radius: 22px;
+      color: #fff;
+      background: #ccc; }
+  .new-account-submit .btn-active button {
+    border: 0;
+    outline: none;
+    width: 100%;
+    font-size: 17px;
+    height: 44px;
+    border-radius: 22px;
+    background-image: linear-gradient(-120deg, #e53935 0%, #f2651b 42%, #ff9100 100%);
+    color: #fff; }
+  .new-account-submit .model {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+    padding-top: 47px; }
+    .new-account-submit .model .content {
+      background: #fff;
+      width: 86%;
+      margin-left: 7%;
+      min-height: 300px;
+      border-radius: 5px;
+      padding-bottom: 15px;
+      box-shadow: 0px 2px 6px 0px; }
+      .new-account-submit .model .content .title {
+        text-align: center;
+        font-size: 16px;
+        color: #333;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid #f2f2f2;
+        font-weight: 700; }
+      .new-account-submit .model .content .main {
+        margin-top: 10px;
+        color: #333;
+        font-size: 12px;
+        text-indent: 10px;
+        overflow-y: scroll;
+        height: 230px;
+        padding: 0 15px; }
+      .new-account-submit .model .content .close {
+        padding: 0 15px;
+        padding-top: 15px; }
+        .new-account-submit .model .content .close button {
+          border: 0;
+          outline: none;
+          width: 100%;
+          border-radius: 4px;
+          height: 40px;
+          color: #fff;
+          font-size: 17px;
+          background-color: #ff9100; }

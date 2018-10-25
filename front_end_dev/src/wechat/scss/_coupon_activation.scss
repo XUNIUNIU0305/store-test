@@ -1,0 +1,120 @@
+nav.bottom-nav-coupon {
+    max-width: 640px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: inherit;
+    margin: auto;
+    z-index: 999;
+}
+main.containers {
+    button: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+nav.bottom-nav-coupon {
+    background: #fff;
+    height: 44px;
+    display: flex;
+    + main.containers{
+        top: 44px;
+        padding-top: 44px;
+    }
+    span{
+        -webkit-box-flex: 1;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        font-size: 16px;
+        text-align: right;
+        padding-left: 0%;
+        font-weight: bold;
+        letter-spacing:3px;
+        width: 52%;
+        .spam-first{
+            padding-left: 10px;
+        }
+        &:last-child{
+            font-size: 14px;
+            font-weight: 100;
+            color: #333333;
+            padding-right: 10px;
+            width: 32%;
+        }
+    }
+    a{
+        -ms-flex: 1 1 15%;
+        flex: 1 1 15%;
+        &:first-child {
+            border-right: 0px solid #ccc;
+            i {
+                background-image: url('/images/icons/back_hei.png');
+                background-size: 40%;
+            }
+        }
+    }
+}
+.coupon-activation{
+    .coupon-height{
+        height: 5px;
+        width: 100%;
+        background: #f2f2f2;
+    }
+    .coupon-input{
+        padding: 0 15px;
+        .coupon-no-pass{
+            height: 60px;
+            line-height: 70px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .coupon-input-no-pass{
+            height: 32px;
+            border-bottom: 1px solid #333333;
+            input{
+                border: 0px;
+                height: 30px;
+                font-size: 16px;
+                color: #b2b2b2;
+                outline:none;
+                width: 85%;
+            }
+            .input-active::-webkit-input-placeholder{
+                color: #cf4d44;
+                //::-webkit-input-placeholder { /* WebKit browsers */
+                //    color:#999;
+                //}
+                //:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                //    color:#999;
+                //}
+                //::-moz-placeholder { /* Mozilla Firefox 19+ */
+                //    color:#999;
+                //}
+                //:-ms-input-placeholder { /* Internet Explorer 10+ */
+                //    color:#999;
+                //}
+            }
+        }
+        button{
+            color: #FFFFFF;
+            background-color: #cf4d44;
+            border: 0px;
+            width: 260px;
+            height: 44px;
+            border-radius: 5px;
+            font-size: 16px;
+            margin:30px calc(50% - 130px);
+            outline:none;
+        }
+    }
+}

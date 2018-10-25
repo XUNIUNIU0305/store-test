@@ -1,0 +1,33 @@
+
+.selectShoping .box label{
+	position: absolute;
+  display: table;
+  width: 550px;
+  height: 60px;
+  margin: 0;
+  margin-left: auto;
+  z-index: 99;
+}
+.editShoping .row:last-child{
+	padding-bottom: 0;
+	margin-bottom: 0
+}
+.editShoping .row img{
+	display: inline-block;
+	width: 73px;
+	height: 50px;
+}
+.editShoping .row .img-upload-box {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 80px;
+    width: 146px;
+    background: url(/images/icons/plus-red.png) no-repeat center 50%;
+    border: 1px solid #ccc;
+}
+.editShoping .row .img-upload-box .file-upload{
+	position: absolute;
+	background-color: transparent;
+	clip: rect(0,0,0,0);
+}

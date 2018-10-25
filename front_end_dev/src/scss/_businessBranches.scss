@@ -1,0 +1,95 @@
+.business-branches-container {
+    padding: 40px 100px;
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    .root {
+        font-size: 14px;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 4px;
+            top: 20px;
+            bottom: 20px;
+            background: #0080ff;
+        }
+        .branch > li,
+        > li {
+            list-style: none;
+            padding-left: 50px;
+            position: relative;
+            line-height: 40px;
+            display: flex;
+            flex-direction: column-reverse;
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 20px - 2;
+                width: 60px;
+                height: 4px;
+                background: #0080ff;
+            }
+            .content {
+                position: relative;
+                i {
+                    display: none;
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    .branch {
+        display: none;
+        position: relative;
+        left: 8px;
+        +.content {
+            cursor: pointer;
+            i {
+                background-image: url('/images/business/branches/+.png')
+            }
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            width: 4px;
+            top: -20px;
+            bottom: 20px;
+            background: #0080ff;
+        }
+        &.opened {
+            display: block;
+            +.content {
+                i {
+                    background-image: url('/images/business/branches/-.png')
+                }
+            }
+        }
+    }
+    .btn-edit {
+        color: #0080ff;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+    .area-box {
+        display: inline-block;
+    }
+    .select-box {
+        display: inline-block;
+        margin-right: 4px;
+    }
+}
+.popover-box {
+    span {
+        display: inline-block;
+        width: 85px;
+        font-weight: bold;
+    }
+}

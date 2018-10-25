@@ -1,0 +1,86 @@
+$baseV: 1 / 750 * 100vw;
+
+.wechat-express {
+    color: #333;
+    img {
+        max-width: 100%;
+        vertical-align: top;
+    }
+    .bottom-nav-express {
+        width: 100%;
+        line-height: 44px;
+        text-align: center;
+        font-size: 16px;
+        border-bottom: 1 * $baseV solid #dedfe0;
+        z-index: 1;
+        background-color: #fff;
+    }
+    .order-info {
+        display: flex;
+        padding: 30 * $baseV 40 * $baseV;
+        .img-box {
+            flex: 0 0 108 * $baseV;
+            padding-right: 44 * $baseV;
+        }
+        p {
+            margin: 0;
+        }
+        .title-1 {
+            font-size: 30 * $baseV;
+            span {
+                color: #56b169;
+            }
+        }
+        .title-2 {
+            font-size: 26 * $baseV;
+            color: #b2b2b2;
+        }
+    }
+    .express-list {
+        margin-left: 20 * $baseV;
+        li {
+            padding: 20 * $baseV 80 * $baseV;
+            position: relative;
+            p {
+                margin: 0;
+                line-height: 1.6;
+                font-size: 28 * $baseV;
+            }
+            &:first-child {
+                color: #55ab67;
+                &::before {
+                    left: 16 * $baseV;
+                    width: 20 * $baseV;
+                    height: 20 * $baseV;
+                    border: 4 * $baseV solid #bbddc2;
+                    background-color: #56b169;
+                    z-index: 1;
+                }
+            }
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                left: 20 * $baseV;
+                top: 32 * $baseV;
+                width: 18 * $baseV;
+                height: 18 * $baseV;
+                border-radius: 50px;
+                background-color: #b2b2b2;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                left: 27 * $baseV;
+                top: 32 * $baseV;
+                width: 2 * $baseV;
+                height: 100%;
+                background-color: #b2b2b2;
+            }
+        }
+    }
+}

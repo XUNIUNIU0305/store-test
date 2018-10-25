@@ -1,0 +1,106 @@
+.brand-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+.brand-panel .brand-panel-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+.brand-panel .brand-panel-content {
+    width: 560px;
+    height: 420px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.brand-panel .brand-panel-content header {
+    position: relative;
+    padding: 10px;
+    background-color: #CF4D44;
+    color: #fff;
+}
+.brand-panel .brand-panel-content header .fa {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.brand-panel .brand-panel-content .searching {
+    width: 90%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+.brand-panel .brand-panel-content .searching input {
+    width: 94%;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+}
+.brand-panel .brand-panel-content .searching .fa {
+    color: #ccc;
+}
+.brand-panel .brand-panel-content .title-bar {
+    width: 90%;
+    padding: 0;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #E5E5E5;
+    list-style: none;
+}
+.brand-panel .brand-panel-content li span {
+    display: inline-block;
+    padding: 8px 0;
+    text-align: center;
+    vertical-align: middle;
+}
+.brand-panel .brand-panel-content .row-1 {
+    width: 10%;
+}
+.brand-panel .brand-panel-content .row-2,
+.brand-panel .brand-panel-content .row-3,
+.brand-panel .brand-panel-content .row-4 {
+    width: 30%;
+}
+.brand-panel .brand-panel-content .row-2 span {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.brand-panel .brand-panel-content .data-wrapper {
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    overflow: auto;
+}
+.brand-panel .brand-panel-content .data-wrapper ul {
+    padding: 0;
+    list-style: none;
+}
+.brand-panel .brand-panel-content .data-wrapper ul li {
+    border-bottom: 1px dashed #ccc;
+}
+.brand-panel .brand-panel-content .data-wrapper .row-2 span {
+    display: block;
+    width: 60px;
+    height: 40px;
+    margin: 0 auto;
+}
+.brand-panel .brand-panel-content footer {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 15px;
+    text-align: center;
+}

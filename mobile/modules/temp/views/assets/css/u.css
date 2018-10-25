@@ -1,0 +1,106 @@
+.brand-activity-detail img {
+  max-width: 100%;
+  vertical-align: top; }
+
+.brand-activity-detail .quan {
+  position: relative; }
+  .brand-activity-detail .quan .free-modal {
+    position: absolute;
+    display: block;
+    width: 18%;
+    height: 48px;
+    top: 51%;
+    left: 51%; }
+
+.brand-activity-detail .product {
+  position: relative; }
+  .brand-activity-detail .product a {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 175px; }
+    .brand-activity-detail .product a:nth-child(2) {
+      top: 60px; }
+    .brand-activity-detail .product a:nth-child(3) {
+      top: 235px; }
+    .brand-activity-detail .product a:nth-child(4) {
+      top: 410px; }
+    .brand-activity-detail .product a:nth-child(5) {
+      top: 585px; }
+
+.brand-activity-detail .nav {
+  width: 20%;
+  position: fixed;
+  right: -20%;
+  top: 30%;
+  transition: .5s; }
+  .brand-activity-detail .nav img {
+    width: 100%; }
+  .brand-activity-detail .nav.show {
+    right: 0; }
+
+.wechat-free-lunch .close-btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 12px;
+  right: 12px;
+  background: url("/images/free_lunch/new_cloes_icon.png") center/contain no-repeat; }
+
+.wechat-free-lunch .sub-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-flex-direction: column;
+          flex-direction: column; }
+  .wechat-free-lunch .sub-content.in {
+    display: -webkit-flex;
+    display: flex; }
+
+.wechat-free-lunch .img-box {
+  position: relative; }
+  .wechat-free-lunch .img-box p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 218px;
+    bottom: 50px;
+    font-size: 14px;
+    color: #2e5c9e;
+    margin: 0 auto; }
+
+.wechat-free-lunch .img-responsive {
+  width: 278px;
+  margin: 0 auto 30px; }
+
+.wechat-free-lunch .entrance .img-responsive {
+  width: 233px;
+  margin-bottom: 50px; }
+
+.wechat-free-lunch .btn-row {
+  display: -webkit-flex;
+  display: flex;
+  text-align: center; }
+
+.wechat-free-lunch .btn {
+  background: transparent url("/images/free_lunch/pingpai_but_bg.png") center/contain no-repeat;
+  padding: 0;
+  width: 95px;
+  height: 42px;
+  line-height: 35px;
+  margin: 0 15px;
+  color: #fff;
+  font-size: 15px;
+  transition: -webkit-transform .1s;
+  transition: transform .1s;
+  transition: transform .1s, -webkit-transform .1s; }
+  .wechat-free-lunch .btn:active {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98); }

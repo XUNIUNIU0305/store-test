@@ -1,0 +1,270 @@
+@charset "UTF-8";
+body {
+  overflow-x: hidden; }
+
+.bg-muted {
+  background: #f2f2f2; }
+
+.table-fix {
+  table-layout: fixed; }
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.container {
+  width: 1190px;
+  max-width: none !important; }
+
+.high-lighted {
+  color: #df483d; }
+
+.custom-account-view {
+  min-height: 100vh;
+  background: #f6f6f6; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0; }
+
+.custom-order-group-main {
+  padding: 0 20px;
+  background: #fff;
+  overflow: hidden;
+  min-height: 750px;
+  color: #333; }
+  .custom-order-group-main .nav-tabs {
+    margin: 30px 0;
+    border-bottom: 3px solid #eb2f2f; }
+    .custom-order-group-main .nav-tabs li {
+      margin-bottom: 0;
+      text-align: center; }
+      .custom-order-group-main .nav-tabs li.active a {
+        border: 0;
+        background: #eb2f2f;
+        color: #fff; }
+      .custom-order-group-main .nav-tabs li a {
+        min-width: 100px;
+        line-height: 1;
+        height: 34px;
+        background: #ffe9cc;
+        border: 0;
+        margin-right: 20px; }
+        .custom-order-group-main .nav-tabs li a:focus {
+          background-color: #eb2f2f; }
+  .custom-order-group-main .order-title-box > table {
+    margin-top: 10px; }
+    .custom-order-group-main .order-title-box > table td {
+      font-weight: bold; }
+  .custom-order-group-main .order-title-box .sort-time {
+    background-color: #eb2f2f; }
+    .custom-order-group-main .order-title-box .sort-time a {
+      color: #fff; }
+  .custom-order-group-main .order-group-list .table {
+    font-size: 12px; }
+    .custom-order-group-main .order-group-list .table thead tr {
+      color: #999;
+      background: #f6f6f6; }
+    .custom-order-group-main .order-group-list .table thead span:not([class^='col-']) {
+      margin-right: 34px; }
+    .custom-order-group-main .order-group-list .table thead .text-blue {
+      color: #1f66d1; }
+    .custom-order-group-main .order-group-list .table .media {
+      font-size: 13px; }
+      .custom-order-group-main .order-group-list .table .media .list-unstyled {
+        margin-bottom: 0;
+        font-size: 0; }
+        .custom-order-group-main .order-group-list .table .media .list-unstyled li {
+          display: inline-block;
+          font-size: 12px;
+          margin-right: 12px; }
+      .custom-order-group-main .order-group-list .table .media .media-heading {
+        cursor: pointer; }
+        .custom-order-group-main .order-group-list .table .media .media-heading:hover {
+          color: #eb2f2f; }
+    .custom-order-group-main .order-group-list .table .media-left img {
+      width: 87px;
+      max-width: none;
+      max-height: 87px; }
+    .custom-order-group-main .order-group-list .table .h4 {
+      margin: 0; }
+    .custom-order-group-main .order-group-list .table .text-default {
+      color: #333; }
+    .custom-order-group-main .order-group-list .table td {
+      line-height: 2;
+      vertical-align: middle; }
+    .custom-order-group-main .order-group-list .table .no-border {
+      border: 0; }
+    .custom-order-group-main .order-group-list .table .group-buy-info {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      text-align: left;
+      margin: 10px 0;
+      position: relative; }
+      .custom-order-group-main .order-group-list .table .group-buy-info .info-person {
+        -ms-flex: 0 0 515px;
+            flex: 0 0 515px; }
+      .custom-order-group-main .order-group-list .table .group-buy-info .head-img {
+        display: -ms-flexbox;
+        display: flex;
+        margin-left: 20px; }
+        .custom-order-group-main .order-group-list .table .group-buy-info .head-img span {
+          display: inline-block;
+          width: 48px;
+          height: 48px;
+          border: 1px #eb2f2f solid;
+          border-radius: 50px;
+          background: url("/images/new_icon.png") no-repeat center/48px 48px;
+          position: relative; }
+          .custom-order-group-main .order-group-list .table .group-buy-info .head-img span:nth-child(1) {
+            z-index: 5; }
+            .custom-order-group-main .order-group-list .table .group-buy-info .head-img span:nth-child(1)::before {
+              content: '团长';
+              font-size: 12px;
+              position: absolute;
+              left: -12px;
+              top: -5px;
+              color: #fff;
+              padding: 0 5px;
+              border-radius: 50px;
+              background-color: #eb2f2f; }
+          .custom-order-group-main .order-group-list .table .group-buy-info .head-img span:nth-child(2) {
+            left: -10px;
+            z-index: 4; }
+          .custom-order-group-main .order-group-list .table .group-buy-info .head-img span:nth-child(3) {
+            left: -20px;
+            z-index: 3; }
+          .custom-order-group-main .order-group-list .table .group-buy-info .head-img span:nth-child(4) {
+            left: -30px;
+            z-index: 2; }
+          .custom-order-group-main .order-group-list .table .group-buy-info .head-img span:nth-child(5) {
+            left: -40px;
+            z-index: 1; }
+          .custom-order-group-main .order-group-list .table .group-buy-info .head-img span.none {
+            border-style: dashed;
+            background-image: none; }
+            .custom-order-group-main .order-group-list .table .group-buy-info .head-img span.none::before {
+              content: '?';
+              font-size: 30px;
+              color: #eb2f2f;
+              position: absolute;
+              left: 15px;
+              top: -8px; }
+      .custom-order-group-main .order-group-list .table .group-buy-info .end-time {
+        margin: 10px 0 0 15px; }
+      .custom-order-group-main .order-group-list .table .group-buy-info .info-address p {
+        margin: 0; }
+      .custom-order-group-main .order-group-list .table .group-buy-info .info-detail {
+        position: absolute;
+        left: 240px;
+        top: 0;
+        background-color: #fff;
+        border: 1px solid #e3e4e5;
+        z-index: 9;
+        box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.1); }
+        .custom-order-group-main .order-group-list .table .group-buy-info .info-detail::before {
+          content: '';
+          position: absolute;
+          left: -8px;
+          top: 12px;
+          width: 15px;
+          height: 15px;
+          background-color: #fff;
+          border-left: 1px solid #e3e4e5;
+          border-bottom: 1px solid #e3e4e5;
+          transform: rotate(45deg);
+          z-index: 11; }
+        .custom-order-group-main .order-group-list .table .group-buy-info .info-detail ul {
+          width: 350px;
+          height: 390px;
+          overflow: auto; }
+        .custom-order-group-main .order-group-list .table .group-buy-info .info-detail li {
+          display: -ms-flexbox;
+          display: flex;
+          margin: 10px 20px;
+          padding: 10px 0;
+          border-bottom: 1px dashed #e3e4e5; }
+          .custom-order-group-main .order-group-list .table .group-buy-info .info-detail li .img-box {
+            -ms-flex: 0 0 50px;
+                flex: 0 0 50px;
+            height: 50px;
+            border: 1px solid #eb2f2f;
+            border-radius: 50px;
+            margin-right: 10px;
+            padding: 1px; }
+            .custom-order-group-main .order-group-list .table .group-buy-info .info-detail li .img-box img {
+              width: 48px;
+              height: 48px;
+              border-radius: 100px; }
+          .custom-order-group-main .order-group-list .table .group-buy-info .info-detail li > div {
+            -ms-flex: 1;
+                flex: 1; }
+          .custom-order-group-main .order-group-list .table .group-buy-info .info-detail li p {
+            margin: 0; }
+          .custom-order-group-main .order-group-list .table .group-buy-info .info-detail li .name {
+            font-size: 14px;
+            font-weight: bold; }
+          .custom-order-group-main .order-group-list .table .group-buy-info .info-detail li:first-child .img-box {
+            position: relative; }
+            .custom-order-group-main .order-group-list .table .group-buy-info .info-detail li:first-child .img-box::before {
+              content: '团长';
+              position: absolute;
+              left: -10px;
+              top: -5px;
+              color: #fff;
+              background-color: #eb2f2f;
+              padding: 0 5px;
+              border-radius: 50px; }
+  .custom-order-group-main .order-group-list .acc-pay-again {
+    position: relative;
+    width: 64px;
+    height: 22px;
+    margin: 0 auto; }
+    .custom-order-group-main .order-group-list .acc-pay-again > a {
+      display: block;
+      border: 1px solid #cf4d44;
+      color: #cf4d44;
+      line-height: 20px;
+      height: 22px;
+      background: #fff;
+      border-bottom-color: #fff;
+      position: relative;
+      z-index: 1; }
+      .custom-order-group-main .order-group-list .acc-pay-again > a.collapsed {
+        border-bottom-color: #cf4d44; }
+        .custom-order-group-main .order-group-list .acc-pay-again > a.collapsed i {
+          transform: rotate(180deg); }
+    .custom-order-group-main .order-group-list .acc-pay-again i {
+      margin-left: 2px;
+      transition: transform .2s linear; }
+    .custom-order-group-main .order-group-list .acc-pay-again .collapse-box {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+      position: absolute;
+      top: 21px;
+      right: 0px;
+      background: #fff;
+      text-align: left;
+      width: 130px;
+      border: 1px solid #cf4d44; }
+      .custom-order-group-main .order-group-list .acc-pay-again .collapse-box .radio {
+        margin: 12px 0 0 30px;
+        z-index: 2; }
+      .custom-order-group-main .order-group-list .acc-pay-again .collapse-box .input-group-btn {
+        display: block;
+        margin: 16px auto 15px;
+        width: auto;
+        text-align: center; }
+        .custom-order-group-main .order-group-list .acc-pay-again .collapse-box .input-group-btn .btn {
+          border-radius: 2px;
+          margin: 0 4px; }
+
+#J_page_box .noImg{
+  width:300px;
+  display:block;
+  border:none;
+  margin:90px auto 0;
+}

@@ -1,0 +1,208 @@
+@@include('head.inc') @@include('banner.inc') @@include('search.inc') @@include('main_nav.inc')
+<div class="container">
+    <div class="row">
+        <ol class="breadcrumb">
+            <li><a href="#">商城首页</a></li>
+            <li class="active">用户中心</li>
+        </ol>
+        @@include('account_aside.inc')
+        <div class="apx-acc-main">
+            <div class="apx-acc-title">
+                我的订单
+            </div>
+            <table class="table table-bordered text-center">
+                <thead>
+                    <tr>
+                        <td class="no-border row">
+                            <span class="col-xs-5 text-left">订单编号：1201231545</span>
+                            <span class="col-xs-7">订单时间：2016.11.11 23:12:11</span>
+                        </td>
+                        <td class="no-border">状态</td>
+                        <td class="no-border">单价</td>
+                        <td class="no-border">数量</td>
+                        <td class="no-border">操作</td>
+                        <td class="no-border">总金额</td>
+                        <td class="no-border">操作</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="row acc-media-box">
+                            <div class="col-xs-12 ">
+                                <div class="media text-left">
+                                    <a class="media-left media-middle" href="#">
+                                        <img src="/images/slider02.jpg">
+                                    </a>
+                                    <div class="media-body media-middle">
+                                        <h5 class="media-heading">车内除臭剂车内除臭剂车内除臭剂车内除臭剂车内除臭剂车内除臭车内</h5>
+                                        <ul class="list-unstyled text-muted">
+                                            <li>颜色分类: 白色</li>
+                                            <li>制动种类: 自动</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>已付款</td>
+                        <td>¥123.00</td>
+                        <td>3</td>
+                        <td>
+                            <div><a href="#" class="text-primary">联系我们</a></div>
+                            <div><a href="#" class="text-primary">退货</a></div>
+                        </td>
+                        <td>
+                            <div class="h4 text-danger">¥123.00</div>
+                            <small class="text-muted">(运费: ¥0.00)</small>
+                        </td>
+                        <td>
+                            <div><a href="#">订单详情</a></div>
+                            <div><a href="#" class="text-primary">查看物流</a></div>
+                            <div><a href="#" class="text-warning">提醒发货</a></div>
+                            <div class="acc-pay-again">
+                                <a class="collapsed" data-toggle="collapse" href="#collapsePayAgain">再付款<i class="glyphicon glyphicon-chevron-up"></i></a>
+                                <div class="collapse-box collapse" id="collapsePayAgain">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="payType" id="payTypeA" value="alipay" checked="checked">
+                                            支付宝
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="payType" id="payTypeW" value="wepay">
+                                            微信支付
+                                        </label>
+                                    </div>
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn btn-xs btn-danger">付款</button>
+                                        <button type="button" class="btn btn-xs btn-default" data-toggle="collapse" href="#collapsePayAgain">取消</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered text-center">
+                <thead>
+                    <tr>
+                        <td class="no-border row">
+                            <span class="col-xs-5 text-left">订单编号：1201231545</span>
+                            <span class="col-xs-7">订单时间：2016.11.11 23:12:11</span>
+                        </td>
+                        <td class="no-border">状态</td>
+                        <td class="no-border">单价</td>
+                        <td class="no-border">数量</td>
+                        <td class="no-border">操作</td>
+                        <td class="no-border">总金额</td>
+                        <td class="no-border">操作</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="row acc-media-box">
+                            <div class="col-xs-12 ">
+                                <div class="media text-left">
+                                    <a class="media-left media-middle" href="#">
+                                        <img src="/images/slider02.jpg">
+                                    </a>
+                                    <div class="media-body media-middle">
+                                        <h5 class="media-heading">车内除臭剂车内除臭剂车内除臭剂车内除臭剂车内除臭剂车内除臭车内</h5>
+                                        <ul class="list-unstyled text-muted">
+                                            <li>颜色分类: 白色</li>
+                                            <li>制动种类: 自动</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>已付款</td>
+                        <td>¥123.00</td>
+                        <td>3</td>
+                        <td>
+                            <div><a href="#" class="text-primary">联系我们</a></div>
+                            <div><a href="#" class="text-primary">退货</a></div>
+                        </td>
+                        <td rowspan="2">
+                            <div class="h4 text-danger">¥246.00</div>
+                            <small class="text-muted">(运费: ¥0.00)</small>
+                        </td>
+                        <td>
+                            <div><a href="#">订单详情</a></div>
+                            <div><a href="#" class="text-primary">查看物流</a></div>
+                            <div><a href="#" class="text-warning">提醒发货</a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="row acc-media-box">
+                            <div class="col-xs-12 ">
+                                <div class="media text-left">
+                                    <a class="media-left media-middle" href="#">
+                                        <img src="/images/slider02.jpg">
+                                    </a>
+                                    <div class="media-body media-middle">
+                                        <h5 class="media-heading">车内除臭剂车内除臭剂车内除臭剂车内除臭剂车内除臭剂车内除臭车内</h5>
+                                        <ul class="list-unstyled text-muted">
+                                            <li>颜色分类: 白色</li>
+                                            <li>制动种类: 自动</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>已付款</td>
+                        <td>¥123.00</td>
+                        <td>3</td>
+                        <td>
+                            <div><a href="#" class="text-primary">联系我们</a></div>
+                            <div><a href="#" class="text-primary">退货</a></div>
+                        </td>
+                        <td>
+                            <div><a href="#">订单详情</a></div>
+                            <div><a href="#" class="text-primary">查看物流</a></div>
+                            <div><a href="#" class="text-warning">提醒发货</a></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="apx-acc-title">
+                我的交易
+            </div>
+            <table class="table text-center">
+                <thead>
+                    <tr class="table-bordered">
+                        <td>交易单号</td>
+                        <td>交易类型</td>
+                        <td>交易金额</td>
+                        <td>交易状态</td>
+                        <td>交易时间</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-bordered">
+                        <td>1234343</td>
+                        <td>车载香水退款</td>
+                        <td class="text-success">+¥152.00</td>
+                        <td class="text-warning">完成</td>
+                        <td>2016.11.11 23:12:11</td>
+                        <td class="table-bordered">
+                            <a class="text-primary" href="#">交易详情</a>
+                        </td>
+                    </tr>
+                    <tr class="table-bordered">
+                        <td>1234343</td>
+                        <td>车载香水退款</td>
+                        <td class="text-danger">-¥152.00</td>
+                        <td class="text-warning">完成</td>
+                        <td>2016.11.11 23:12:11</td>
+                        <td class="table-bordered">
+                            <a class="text-primary" href="#">交易详情</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+@@include('ensurance.inc') @@include('sitemap.inc') @@include('footer.inc')

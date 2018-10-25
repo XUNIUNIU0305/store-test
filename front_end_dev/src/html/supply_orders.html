@@ -1,0 +1,730 @@
+@@include('head.inc') @@include('banner_seller.inc')
+<div class="container">
+    <div class="row">
+        @@include('seller_aside.inc')
+        <div class="apx-has-seller-aside clearfix">
+            <!-- 退换货tabs -->
+            <div class="supply-orders-container">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#order_untreated" data-toggle="tab">未处理</a>
+                    </li>
+                    <li>
+                        <a href="#order_treated" data-toggle="tab">已处理</a>
+                    </li>
+                    <li>
+                        <a href="#order_received" data-toggle="tab">已收货</a>
+                    </li>
+                    <li>
+                        <a href="#order_cancel" data-toggle="tab">已取消</a>
+                    </li>
+                    <li>
+                        <a href="#order_close" data-toggle="tab">已关闭</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <!-- 未处理 -->
+                    <div role="tabpanel" class="tab-pane fade active in" id="order_untreated">
+                        <!-- 订单筛选 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <strong class="high-lighted">订单筛选</strong>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-xs-4 form-horizontal">
+                                        <div class="form-group">
+                                            <label for="order_num" class="col-xs-4">订单号:</label>
+                                            <div class="col-xs-8">
+                                                <input id="order_num" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="order_client" class="col-xs-4">收货人:</label>
+                                            <div class="col-xs-8">
+                                                <input id="order_client" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4 form-horizontal">
+                                        <div class="form-group">
+                                            <label for="buy_acc" class="col-xs-4">购买帐号:</label>
+                                            <div class="col-xs-8">
+                                                <input id="buy_acc" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="order_address" class="col-xs-4">收货地址:</label>
+                                            <div class="col-xs-8">
+                                                <input id="order_address" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4 time">
+                                        <div class="form-group">
+                                            <label>下单时间：</label>
+                                            <input type="text" class="form-control date-picker" value="20170315">
+                                            <span>-</span>
+                                            <input type="text" class="form-control date-picker" value="20170316">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>付款时间：</label>
+                                            <input type="text" class="form-control date-picker" value="20170315">
+                                            <span>-</span>
+                                            <input type="text" class="form-control date-picker" value="20170316">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 text-right">
+                                        <div class="btn-row">
+                                            <a href="#" class="btn btn-danger">搜索</a>
+                                            <a href="#" class="btn btn-default">导出订单</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 订单详情 -->
+                        <div class="panel panel-danger">
+                              <div class="panel-heading">
+                                    <span>订单编号：1234567890</span>
+                                    <span>下单时间：2004-01-07 19:54:05</span>
+                                    <span>付款时间：2004-01-07 19:54:05</span>
+                                    <a href="#" class="pull-right">订单详情 <i class="glyphicon glyphicon-chevron-right"></i></a>
+                              </div>
+                              <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <div class="media text-left">
+                                                <a class="media-left media-middle" href="#">
+                                                    <img src="/images/slider02.jpg">
+                                                </a>
+                                                <div class="media-body media-middle">
+                                                    <h5 class="media-heading">车内除臭剂车内除臭剂车内除臭剂车内除臭剂车内除臭剂车内除臭车内</h5>
+                                                    <ul class="list-unstyled text-muted">
+                                                        <li>颜色分类: 白色</li>
+                                                    </ul>
+                                                    <div>￥<strong>1080.00</strong><span class="pull-right">×1</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <strong>备注：</strong>
+                                            <p class="text-muted">备注内容备注内容备注内容备注内容备注内容备注内容</p>
+                                        </div>
+                                    </div>
+                                    <ul class="list-unstyled">
+                                        <li><strong>收货人：</strong>张三</li>
+                                        <li><strong>联系电话：</strong>13777777777</li>
+                                        <li><strong>收货地址：</strong>地址地址地址地址地址地址地址地址地址地址</li>
+                                    </ul>
+                                    <div class="btn-row text-right">
+                                        <p>
+                                            <strong>订单金额:</strong> 
+                                            <span class="high-lighted">￥<span class="h4">1280.00</span></span>
+                                        </p>
+                                        <a href="#modalDealOrder" data-toggle="modal" class="btn btn-danger">发货</a>
+                                        <a href="#" class="btn btn-default">打印发货单</a>
+                                    </div>
+                              </div>
+                        </div>
+                        <!--pagination-->
+                        <div class="pull-right">
+                            <ul class="pagination">
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><span>...</span></li>
+                                <li><a href="#">10</a></li>
+                            </ul>
+                            <div class="pagination-info">
+                                <span>共100页，到第<input type="text" maxlength="3">页</span>
+                                <a href="#" class="btn btn-default">确认</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 已处理 -->
+                    <div role="tabpanel" class="tab-pane fade" id="order_treated">
+                        <!-- 订单筛选 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <strong class="high-lighted">订单筛选</strong>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-xs-4 form-horizontal">
+                                        <div class="form-group">
+                                            <label for="order_num" class="col-xs-4">订单号:</label>
+                                            <div class="col-xs-8">
+                                                <input id="order_num" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="order_client" class="col-xs-4">收货人:</label>
+                                            <div class="col-xs-8">
+                                                <input id="order_client" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="order_trans" class="col-xs-4">物流公司:</label>
+                                            <div class="col-xs-8">
+                                                <select name="" id="order_trans" class="form-control">
+                                                    <option value="">顺丰快递</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4 form-horizontal">
+                                        <div class="form-group">
+                                            <label for="buy_acc" class="col-xs-4">购买帐号:</label>
+                                            <div class="col-xs-8">
+                                                <input id="buy_acc" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="order_address" class="col-xs-4">收货地址:</label>
+                                            <div class="col-xs-8">
+                                                <input id="order_address" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="trans_code" class="col-xs-4">物流单号:</label>
+                                            <div class="col-xs-8">
+                                                <input id="trans_code" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4 time">
+                                        <div class="form-group">
+                                            <label>下单时间：</label>
+                                            <input type="text" class="form-control date-picker" value="20170315">
+                                            <span>-</span>
+                                            <input type="text" class="form-control date-picker" value="20170316">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>付款时间：</label>
+                                            <input type="text" class="form-control date-picker" value="20170315">
+                                            <span>-</span>
+                                            <input type="text" class="form-control date-picker" value="20170316">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>发货时间：</label>
+                                            <input type="text" class="form-control date-picker" value="20170315">
+                                            <span>-</span>
+                                            <input type="text" class="form-control date-picker" value="20170316">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 text-right">
+                                        <div class="btn-row">
+                                            <a href="#" class="btn btn-danger">搜索</a>
+                                            <a href="#" class="btn btn-default">导出订单</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 订单详情 -->
+                        <div class="panel panel-danger">
+                              <div class="panel-heading">
+                                    <span>订单编号：1234567890</span>
+                                    <span>下单时间：2004-01-07 19:54:05</span>
+                                    <span>付款时间：2004-01-07 19:54:05</span>
+                                    <a href="#" class="pull-right">订单详情 <i class="glyphicon glyphicon-chevron-right"></i></a>
+                              </div>
+                              <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <div class="media text-left">
+                                                <a class="media-left media-middle" href="#">
+                                                    <img src="/images/slider02.jpg">
+                                                </a>
+                                                <div class="media-body media-middle">
+                                                    <h5 class="media-heading">车内除臭剂车内除臭剂车内除臭剂车内除臭剂车内除臭剂车内除臭车内</h5>
+                                                    <ul class="list-unstyled text-muted">
+                                                        <li>颜色分类: 白色</li>
+                                                    </ul>
+                                                    <div>￥<strong>1080.00</strong><span class="pull-right">×1</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <strong>备注：</strong>
+                                            <p class="text-muted">备注内容备注内容备注内容备注内容备注内容备注内容</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <div class="media text-left">
+                                                <a class="media-left media-middle" href="#">
+                                                    <img src="/images/slider02.jpg">
+                                                </a>
+                                                <div class="media-body media-middle">
+                                                    <h5 class="media-heading">车内除臭剂车内除臭剂车内除臭剂车内除臭剂车内除臭剂车内除臭车内</h5>
+                                                    <ul class="list-unstyled text-muted">
+                                                        <li>颜色分类: 白色</li>
+                                                    </ul>
+                                                    <div>￥<strong>1080.00</strong><span class="pull-right">×1</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <strong>备注：</strong>
+                                            <p class="text-muted">备注内容备注内容备注内容备注内容备注内容备注内容</p>
+                                        </div>
+                                    </div>
+                                    <ul class="list-unstyled">
+                                        <li><strong>收货人：</strong>张三</li>
+                                        <li><strong>联系电话：</strong>13777777777</li>
+                                        <li><strong>收货地址：</strong>地址地址地址地址地址地址地址地址地址地址</li>
+                                    </ul>
+                                    <div class="btn-row text-right">
+                                        <p>
+                                            <strong>订单金额:</strong> 
+                                            <span class="high-lighted">￥<span class="h4">1280.00</span></span>
+                                        </p>
+                                    </div>
+                              </div>
+                        </div>
+                        <!--pagination-->
+                        <div class="pull-right">
+                            <ul class="pagination">
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><span>...</span></li>
+                                <li><a href="#">10</a></li>
+                            </ul>
+                            <div class="pagination-info">
+                                <span>共100页，到第<input type="text" maxlength="3">页</span>
+                                <a href="#" class="btn btn-default">确认</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 已收货 -->
+                    <div role="tabpanel" class="tab-pane fade" id="order_received"></div>
+                    <!-- 已取消 -->
+                    <div role="tabpanel" class="tab-pane fade" id="order_cancel">
+                        <!-- 订单筛选 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <strong class="high-lighted">订单筛选</strong>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-xs-4 form-horizontal">
+                                        <div class="form-group">
+                                            <label for="order_num" class="col-xs-4">订单号:</label>
+                                            <div class="col-xs-8">
+                                                <input id="order_num" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="order_client" class="col-xs-4">收货人:</label>
+                                            <div class="col-xs-8">
+                                                <input id="order_client" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4 form-horizontal">
+                                        <div class="form-group">
+                                            <label for="buy_acc" class="col-xs-4">购买帐号:</label>
+                                            <div class="col-xs-8">
+                                                <input id="buy_acc" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="order_address" class="col-xs-4">收货地址:</label>
+                                            <div class="col-xs-8">
+                                                <input id="order_address" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4 time">
+                                        <div class="form-group">
+                                            <label>下单时间：</label>
+                                            <input type="text" class="form-control date-picker" value="20170315">
+                                            <span>-</span>
+                                            <input type="text" class="form-control date-picker" value="20170316">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>付款时间：</label>
+                                            <input type="text" class="form-control date-picker" value="20170315">
+                                            <span>-</span>
+                                            <input type="text" class="form-control date-picker" value="20170316">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 text-right">
+                                        <div class="btn-row">
+                                            <a href="#" class="btn btn-danger">搜索</a>
+                                            <a href="#" class="btn btn-default">导出订单</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 订单详情 -->
+                        <div class="panel panel-danger disabled">
+                              <div class="panel-heading">
+                                    <span>订单编号：1234567890</span>
+                                    <span>下单时间：2004-01-07 19:54:05</span>
+                                    <span>付款时间：2004-01-07 19:54:05</span>
+                                    <a href="#" class="pull-right">订单详情 <i class="glyphicon glyphicon-chevron-right"></i></a>
+                              </div>
+                              <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <div class="media text-left">
+                                                <a class="media-left media-middle" href="#">
+                                                    <img src="/images/slider02.jpg">
+                                                </a>
+                                                <div class="media-body media-middle">
+                                                    <h5 class="media-heading">车内除臭剂车内除臭剂车内除臭剂车内除臭剂车内除臭剂车内除臭车内</h5>
+                                                    <ul class="list-unstyled text-muted">
+                                                        <li>颜色分类: 白色</li>
+                                                    </ul>
+                                                    <div>￥<strong>1080.00</strong><span class="pull-right">×1</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <strong>备注：</strong>
+                                            <p class="text-muted">备注内容备注内容备注内容备注内容备注内容备注内容</p>
+                                        </div>
+                                    </div>
+                              </div>
+                        </div>
+                        <!-- 订单详情 -->
+                        <div class="panel panel-danger disabled">
+                              <div class="panel-heading">
+                                    <span>订单编号：1234567890</span>
+                                    <span>下单时间：2004-01-07 19:54:05</span>
+                                    <span>付款时间：2004-01-07 19:54:05</span>
+                                    <a href="#" class="pull-right">订单详情 <i class="glyphicon glyphicon-chevron-right"></i></a>
+                              </div>
+                              <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <div class="media text-left">
+                                                <a class="media-left media-middle" href="#">
+                                                    <img src="/images/slider02.jpg">
+                                                </a>
+                                                <div class="media-body media-middle">
+                                                    <h5 class="media-heading">车内除臭剂车内除臭剂车内除臭剂车内除臭剂车内除臭剂车内除臭车内</h5>
+                                                    <ul class="list-unstyled text-muted">
+                                                        <li>颜色分类: 白色</li>
+                                                    </ul>
+                                                    <div>￥<strong>1080.00</strong><span class="pull-right">×1</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <strong>备注：</strong>
+                                            <p class="text-muted">备注内容备注内容备注内容备注内容备注内容备注内容</p>
+                                        </div>
+                                    </div>
+                              </div>
+                        </div>
+                        <!--pagination-->
+                        <div class="pull-right">
+                            <ul class="pagination">
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><span>...</span></li>
+                                <li><a href="#">10</a></li>
+                            </ul>
+                            <div class="pagination-info">
+                                <span>共100页，到第<input type="text" maxlength="3">页</span>
+                                <a href="#" class="btn btn-default">确认</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 已关闭 -->
+                    <div role="tabpanel" class="tab-pane fade" id="order_close">
+                        <!-- 订单筛选 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <strong class="high-lighted">订单筛选</strong>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-xs-4 form-horizontal">
+                                        <div class="form-group">
+                                            <label for="order_num" class="col-xs-4">订单号:</label>
+                                            <div class="col-xs-8">
+                                                <input id="order_num" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="order_client" class="col-xs-4">收货人:</label>
+                                            <div class="col-xs-8">
+                                                <input id="order_client" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="order_trans" class="col-xs-4">物流公司:</label>
+                                            <div class="col-xs-8">
+                                                <select name="" id="order_trans" class="form-control">
+                                                    <option value="">顺丰快递</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4 form-horizontal">
+                                        <div class="form-group">
+                                            <label for="buy_acc" class="col-xs-4">购买帐号:</label>
+                                            <div class="col-xs-8">
+                                                <input id="buy_acc" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="order_address" class="col-xs-4">收货地址:</label>
+                                            <div class="col-xs-8">
+                                                <input id="order_address" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="trans_code" class="col-xs-4">物流单号:</label>
+                                            <div class="col-xs-8">
+                                                <input id="trans_code" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4 time">
+                                        <div class="form-group">
+                                            <label>下单时间：</label>
+                                            <input type="text" class="form-control date-picker" value="20170315">
+                                            <span>-</span>
+                                            <input type="text" class="form-control date-picker" value="20170316">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>付款时间：</label>
+                                            <input type="text" class="form-control date-picker" value="20170315">
+                                            <span>-</span>
+                                            <input type="text" class="form-control date-picker" value="20170316">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>发货时间：</label>
+                                            <input type="text" class="form-control date-picker" value="20170315">
+                                            <span>-</span>
+                                            <input type="text" class="form-control date-picker" value="20170316">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 text-right">
+                                        <div class="pull-left">
+                                            <div class="form-group">
+                                                <label>关闭时间：</label>
+                                                <input type="text" class="form-control date-picker" value="20170315">
+                                                <span>-</span>
+                                                <input type="text" class="form-control date-picker" value="20170316">
+                                            </div>
+                                        </div>
+                                        <div class="btn-row">
+                                            <a href="#" class="btn btn-danger">搜索</a>
+                                            <a href="#" class="btn btn-default">导出订单</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 订单详情 -->
+                        <div class="panel panel-danger disabled">
+                              <div class="panel-heading">
+                                    <span>订单编号：1234567890</span>
+                                    <span>下单时间：2004-01-07 19:54:05</span>
+                                    <span>付款时间：2004-01-07 19:54:05</span>
+                                    <a href="#" class="pull-right">订单详情 <i class="glyphicon glyphicon-chevron-right"></i></a>
+                              </div>
+                              <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <div class="media text-left">
+                                                <a class="media-left media-middle" href="#">
+                                                    <img src="/images/slider02.jpg">
+                                                </a>
+                                                <div class="media-body media-middle">
+                                                    <h5 class="media-heading">车内除臭剂车内除臭剂车内除臭剂车内除臭剂车内除臭剂车内除臭车内</h5>
+                                                    <ul class="list-unstyled text-muted">
+                                                        <li>颜色分类: 白色</li>
+                                                    </ul>
+                                                    <div>￥<strong>1080.00</strong><span class="pull-right">×1</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <strong>备注：</strong>
+                                            <p class="text-muted">备注内容备注内容备注内容备注内容备注内容备注内容</p>
+                                        </div>
+                                    </div>
+                              </div>
+                        </div>
+                        <!-- 订单详情 -->
+                        <div class="panel panel-danger">
+                              <div class="panel-heading">
+                                    <span>订单编号：1234567890</span>
+                                    <span>下单时间：2004-01-07 19:54:05</span>
+                                    <span>付款时间：2004-01-07 19:54:05</span>
+                                    <a href="#" class="pull-right">订单详情 <i class="glyphicon glyphicon-chevron-right"></i></a>
+                              </div>
+                              <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <div class="media text-left">
+                                                <a class="media-left media-middle" href="#">
+                                                    <img src="/images/slider02.jpg">
+                                                </a>
+                                                <div class="media-body media-middle">
+                                                    <h5 class="media-heading">车内除臭剂车内除臭剂车内除臭剂车内除臭剂车内除臭剂车内除臭车内</h5>
+                                                    <ul class="list-unstyled text-muted">
+                                                        <li>颜色分类: 白色</li>
+                                                    </ul>
+                                                    <div>￥<strong>1080.00</strong><span class="pull-right">×1</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <strong>备注：</strong>
+                                            <p class="text-muted">备注内容备注内容备注内容备注内容备注内容备注内容</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <div class="media text-left">
+                                                <a class="media-left media-middle" href="#">
+                                                    <img src="/images/slider02.jpg">
+                                                </a>
+                                                <div class="media-body media-middle">
+                                                    <h5 class="media-heading">车内除臭剂车内除臭剂车内除臭剂车内除臭剂车内除臭剂车内除臭车内</h5>
+                                                    <ul class="list-unstyled text-muted">
+                                                        <li>颜色分类: 白色</li>
+                                                    </ul>
+                                                    <div>￥<strong>1080.00</strong><span class="pull-right">×1</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <strong>备注：</strong>
+                                            <p class="text-muted">备注内容备注内容备注内容备注内容备注内容备注内容</p>
+                                        </div>
+                                    </div>
+                                    <ul class="list-unstyled">
+                                        <li><strong>收货人：</strong>张三</li>
+                                        <li><strong>联系电话：</strong>13777777777</li>
+                                        <li><strong>收货地址：</strong>地址地址地址地址地址地址地址地址地址地址</li>
+                                    </ul>
+                                    <div class="btn-row text-right">
+                                        <p>
+                                            <strong>订单金额:</strong> 
+                                            <span class="high-lighted">￥<span class="h4">1280.00</span></span>
+                                        </p>
+                                    </div>
+                              </div>
+                        </div>
+                        <!--pagination-->
+                        <div class="pull-right">
+                            <ul class="pagination">
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><span>...</span></li>
+                                <li><a href="#">10</a></li>
+                            </ul>
+                            <div class="pagination-info">
+                                <span>共100页，到第<input type="text" maxlength="3">页</span>
+                                <a href="#" class="btn btn-default">确认</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal -->
+<div class="apx-modal-deal-order modal fade" id="modalDealOrder" tabindex="-1">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <div class="modal-title" id="myModalLabel">
+                    <strong><span>订单号 : </span>20170110213412412</strong>
+                </div>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-xs-4 text-right control-label">订单金额：</label>
+                        <div class="col-xs-7">
+                            <p class="form-control-static text-danger h3"><strong>¥2000.00</strong></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-4 text-right control-label">付款日期：</label>
+                        <div class="col-xs-7">
+                            <p class="form-control-static">2016-01-10 12:00:00</p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="logisticName" class="col-xs-4 text-right control-label">物流公司：</label>
+                        <div class="col-xs-7">
+                            <select class="form-control">
+                                <option value="">选择物流</option>
+                                <option value="顺丰快递">顺丰快递</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="logisticSeries" class="col-xs-4 text-right control-label">物流单号：</label>
+                        <div class="col-xs-7 cash-after">
+                            <input type="text" id="logisticSeries" placeholder="请输入物流单号后确认发货" class="form-control" value="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-offset-4 col-xs-7">
+                            <p class="form-control-static text-danger">*请确认物流信息准确无误</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger">确认发货</button>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('footer_seller.inc')
+
+<script>
+    $(function () {
+        // add locale
+        $.fn.datepicker.dates["zh-CN"] = {
+            days: ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"],
+            daysShort: ["周日", "周一", "周二", "周三", "周四", "周五", "周六"],
+            daysMin: ["日", "一", "二", "三", "四", "五", "六"],
+            months: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+            monthsShort: ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
+            today: "今日",
+            clear: "清除",
+            format: "yyyy年mm月dd日",
+            titleFormat: "yyyy年mm月",
+            weekStart: 1
+        }
+        // init the datepicker
+        $('.date-picker').datepicker({
+            format: 'yyyymmdd',
+            language: 'zh-CN'
+        });
+        $('#modalDealOrder').modal('show')
+    })
+
+</script>

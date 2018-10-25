@@ -1,0 +1,18 @@
+.apx-admin-order {
+    padding: 40px 0;
+    @include supplyAndAdminOrder();
+    .nav-bar {
+        .form-group {
+            >div {
+                position: relative;
+                top: -24px;
+                margin-bottom: 8px;
+            }
+        }
+    }
+    .panel-order {
+        .panel-body {
+            padding-bottom: 40px;
+        }
+    }
+}

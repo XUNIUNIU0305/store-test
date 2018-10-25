@@ -1,0 +1,43 @@
+.acc-edit-pwd {
+    .title {
+        padding: 20px 0 20px 20px;
+        position: relative;
+        &::before {
+            content: ' ';
+            position: absolute;
+            left: 10px;
+            top: 22px;
+            width: 4px;
+            height: 16px;
+            background: #eb2f2f;
+        }
+    }
+    .form-box {
+        margin-left: 185px;
+        padding-bottom: 40px;
+        .error-msg {
+            margin-right: 185px;
+        }
+        .form-group {
+            display: flex;
+            .control-label {
+                width: 200px;
+                margin-top: 6px;
+                font-weight: normal;
+            }
+            input {
+                width: 285px;
+            }
+            &:last-child {
+                input {
+                    width: 200px;
+                }
+            }
+        }
+        .btn {
+            padding: 6px 40px;
+            margin-left: 240px;
+            margin-top: 20px;
+        }
+    }
+}

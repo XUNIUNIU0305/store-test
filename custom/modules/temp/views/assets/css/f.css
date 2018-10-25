@@ -1,0 +1,203 @@
+.seckill-container {
+  position: relative;
+  padding-top: 136px;
+  overflow: hidden; }
+  .seckill-container .header {
+    height: 116px;
+    text-align: center;
+    line-height: 116px;
+    width: 1920px;
+    overflow: hidden;
+    background: url("/images/seckill/header315.jpg") no-repeat center;
+    background-size: 1920px auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -960px; }
+    .seckill-container .header .img-l {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -757px; }
+    .seckill-container .header .miaosha-img {
+      position: absolute;
+      top: 36px;
+      left: 50%;
+      margin-left: -324px; }
+    .seckill-container .header .img-r {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: 410px; }
+    .seckill-container .header .header-contain {
+      float: right;
+      height: 116px;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .seckill-container .header .header-contain img {
+        display: inline-block;
+        width: 36px;
+        height: 36px; }
+      .seckill-container .header .header-contain span {
+        font-size: 20px;
+        color: #fff; }
+        .seckill-container .header .header-contain span .countstyle {
+          font-size: 48px;
+          color: #fff; }
+      .seckill-container .header .header-contain .countdown {
+        font-size: 48px;
+        font-weight: bold; }
+        .seckill-container .header .header-contain .countdown > span {
+          padding: 0 6px;
+          border-radius: 10px;
+          background: #755eeb; }
+  .seckill-container .rotation {
+    width: 1190px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 14px; }
+    .seckill-container .rotation .imgstyle {
+      width: 20px;
+      line-height: 65px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.3);
+      z-index: 888;
+      cursor: pointer; }
+    .seckill-container .rotation .prev {
+      position: absolute;
+      left: 0;
+      top: 0; }
+    .seckill-container .rotation .next {
+      position: absolute;
+      right: 0;
+      top: 0; }
+    .seckill-container .rotation .rotation-contain {
+      margin: 0;
+      padding: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      z-index: 777;
+      transition: .5s; }
+      .seckill-container .rotation .rotation-contain li {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 238px;
+                flex: 0 0 238px;
+        height: 65px;
+        text-align: center;
+        background-color: #282730;
+        color: #fff;
+        list-style: none;
+        cursor: pointer;
+        position: relative;
+        margin-bottom: 10px; }
+        .seckill-container .rotation .rotation-contain li span {
+          font-size: 17px; }
+        .seckill-container .rotation .rotation-contain li p {
+          margin-top: 5px;
+          font-size: 16px;
+          font-weight: bold; }
+      .seckill-container .rotation .rotation-contain .active {
+        background-color: #e01222;
+        position: relative; }
+        .seckill-container .rotation .rotation-contain .active:after {
+          content: ' ';
+          display: block;
+          width: 0;
+          height: 0;
+          border-top: 10px solid #e01222;
+          border-right: 10px solid transparent;
+          border-bottom: 10px solid transparent;
+          border-left: 10px solid transparent;
+          position: absolute;
+          left: 50%;
+          bottom: -19px;
+          z-index: 10;
+          margin-left: -10px; }
+  .seckill-container .triangle-down {
+    position: absolute;
+    top: 181px;
+    left: 119px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #e01222; }
+  .seckill-container .seckill-goods {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1190px;
+    margin: 0 auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .seckill-container .seckill-goods .goods-detail {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 390px;
+              flex: 0 0 390px;
+      height: 434px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      background-color: #fff;
+      text-align: center;
+      padding: 24px 20px 10px 20px;
+      border: 1px solid #ccc; }
+      .seckill-container .seckill-goods .goods-detail:nth-child(3n) {
+        margin-right: 0; }
+      .seckill-container .seckill-goods .goods-detail:hover {
+        border-color: #e01222; }
+      .seckill-container .seckill-goods .goods-detail > a {
+        display: block;
+        margin: 0 auto;
+        width: 230px;
+        height: 230px; }
+      .seckill-container .seckill-goods .goods-detail p {
+        text-align: left; }
+      .seckill-container .seckill-goods .goods-detail .describe {
+        height: 42px;
+        margin: 0;
+        font-size: 16px;
+        margin-top: 14px;
+        color: #333;
+        overflow: hidden; }
+      .seckill-container .seckill-goods .goods-detail .price {
+        color: #e01222;
+        font-size: 16px; }
+        .seckill-container .seckill-goods .goods-detail .price span {
+          font-size: 28px; }
+      .seckill-container .seckill-goods .goods-detail .button-contain {
+        height: 63px;
+        padding-top: 12px;
+        border-top: 1px dashed #999;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .seckill-container .seckill-goods .goods-detail .button-contain div {
+          -webkit-box-flex: 1;
+              -ms-flex: 1 1 169px;
+                  flex: 1 1 169px;
+          font-size: 16px;
+          text-align: center;
+          height: 49px;
+          line-height: 50px;
+          color: #e01222;
+          background-color: #fff;
+          cursor: pointer; }
+        .seckill-container .seckill-goods .goods-detail .button-contain .shopping-cart {
+          border: 1px solid #e01222;
+          margin-right: 10px; }
+        .seckill-container .seckill-goods .goods-detail .button-contain .buying-now {
+          background-color: #e01222; }
+          .seckill-container .seckill-goods .goods-detail .button-contain .buying-now a {
+            display: inline-block;
+            width: 100%;
+            color: #fff;
+            text-decoration: none; }

@@ -1,0 +1,26 @@
+.statement-container {
+  .style-search {
+    border-radius: 4px;
+  }
+}
+
+.statement-tab {
+  .style-thead {
+    background-color: #F6F6F6;
+    .style-control {
+      th {
+        font-weight: bold;
+      }
+    }
+  }
+  tbody {
+    .style-control {
+      a {
+        color: #1f66b1;
+      }
+    }
+    .style-success{
+      color: #48b95d;
+    }
+  }
+}

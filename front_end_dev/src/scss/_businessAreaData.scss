@@ -1,0 +1,154 @@
+.business-area-data {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .nav {
+        width: 30px;
+        margin-bottom: 0;
+        padding-left: 0; // Override default ul/ol
+        list-style: none;
+        @include clearfix;
+        > li {
+            position: relative;
+            display: block;
+            > a {
+                position: relative;
+                display: block;
+                padding: 8px;
+                height: 80px;
+                writing-mode: vertical-lr;
+                text-align: center;
+                color: #fff;
+                background-color: #a3b0cc;
+                &:hover,
+                &:focus {
+                    text-decoration: none;
+                    background-color: #0080ff;
+                }
+            }
+            // Disabled state sets text to gray and nukes hover/tab effects
+            &.disabled > a {
+                color: $nav-disabled-link-color;
+                &:hover,
+                &:focus {
+                    color: $nav-disabled-link-hover-color;
+                    text-decoration: none;
+                    background-color: transparent;
+                    cursor: $cursor-disabled;
+                }
+            }
+        }
+    }
+    .nav-tabs {
+        border-bottom: none;
+        > li {
+            float: left;
+            // Make the list-items overlay the bottom border
+            margin-bottom: 20px;
+            // Actual tabs (as links)
+            > a {
+                margin-right: 2px;
+                line-height: $line-height-base;
+                border-radius: 0;
+                &:hover {
+                    border-color: $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-border-color;
+                }
+            }
+            // Active state, and its :hover to override normal :hover
+            &.active > a {
+                &,
+                &:hover,
+                &:focus {
+                    color: #fff;
+                    background-color: #0080ff;
+                    border: 1px solid #0080ff;
+                    border-bottom-color: transparent;
+                    cursor: default;
+                }
+            }
+        }
+        // pulling this in mainly for less shorthand
+        &.nav-justified {
+            @extend .nav-justified;
+            @extend .nav-tabs-justified;
+        }
+    }
+    // Hide tabbable panes to start, show them when `.active`
+    .tab-content {
+        position: absolute;
+        top: 0;
+        left: 37px;
+        bottom: 0;
+        right: 0;
+        border-left: 6px #0080ff solid;
+        > .tab-pane {
+            display: none;
+        }
+        > .active {
+            display: block;
+        }
+        .header {
+            margin: 30px 20px;
+            .dropdown-toggle {
+                height: 33px;
+            }
+            .input-group {
+                input {
+                    height: 34px;
+                }
+            }
+            .btn-business {
+                background-color: #0080ff;
+                color: #fff;
+                border-radius: 16px;
+            }
+        }
+        .table-box {
+            margin: 0 20px;
+            height: 275px;
+            overflow: auto;
+            table {
+                width: 100%;
+                th {
+                    width: 20%;
+                    background-color: #e9eef2;
+                    position: relative;
+                    i {
+                        font-size: 16px;
+                        position: absolute;
+                        top: 12px;
+                        right: 30px;
+                        cursor: pointer;
+                        color: #b3b3b3;
+                        &.active {
+                            color: #f88311;
+                        }
+                        &.top {
+                           transform: rotate(180deg); 
+                        }
+                    }
+                }
+                th, td {
+                    text-align: center;
+                    border: 1px solid #ccc;
+                    height: 40px;
+                    line-height: 40px;
+                }
+            }
+        }
+        .br {
+            height: 20px;
+            background-color: #e9eef2;
+            margin: 20px 0;
+        }
+        .legend {
+            h4 {
+                font-size: 16px;
+                font-weight: 700;
+                margin-left: 50px;
+            }
+        }
+    }
+}

@@ -1,0 +1,175 @@
+@charset "UTF-8";
+.apex-ximei-container {
+  min-width: 1190px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #3cba9c; }
+  .apex-ximei-container .banner {
+    height: 650px;
+    background: url("/images/ximei180410/banner.png") no-repeat center/cover; }
+  .apex-ximei-container .body-container {
+    width: 1000px;
+    padding: 82px 0 54px;
+    margin: 0 auto; }
+    .apex-ximei-container .body-container .buy-now {
+      height: 30px;
+      line-height: 30px;
+      margin: 6px;
+      margin-top: 4px;
+      background-color: #3cba9c;
+      color: #fff;
+      position: relative; }
+      .apex-ximei-container .body-container .buy-now:after {
+        content: '';
+        height: 16px;
+        width: 16px;
+        background: url("/images/ximei180410/jinru.png") no-repeat center;
+        position: absolute;
+        top: 7px;
+        right: 66px; }
+    .apex-ximei-container .body-container .item-detail {
+      display: block;
+      height: 360px;
+      width: 242px;
+      margin-right: 8px;
+      background-color: #fff;
+      text-decoration: none; }
+      .apex-ximei-container .body-container .item-detail img {
+        margin-bottom: 6px; }
+      .apex-ximei-container .body-container .item-detail p {
+        color: #3cba9c;
+        font-size: 14px;
+        text-align: center;
+        line-height: 24px; }
+        .apex-ximei-container .body-container .item-detail p:nth-child(2) {
+          border-bottom: 1px solid #3cba9c;
+          margin-bottom: 29px; }
+        .apex-ximei-container .body-container .item-detail p:nth-child(3) {
+          text-align: right;
+          margin-right: 10px;
+          margin-bottom: 0px;
+          line-height: 18px;
+          overflow: hidden;
+          font-size: 14px; }
+          .apex-ximei-container .body-container .item-detail p:nth-child(3) .old-price {
+            float: left;
+            margin-left: 20px;
+            text-decoration: line-through; }
+          .apex-ximei-container .body-container .item-detail p:nth-child(3) .now-price {
+            float: right;
+            margin-right: 12px; }
+            .apex-ximei-container .body-container .item-detail p:nth-child(3) .now-price span {
+              font-size: 22px; }
+        .apex-ximei-container .body-container .item-detail p:nth-child(4) {
+          color: #fff;
+          line-height: 30px; }
+    .apex-ximei-container .body-container .item-special img {
+      margin-bottom: 0px; }
+    .apex-ximei-container .body-container .item-special p {
+      color: #3cba9c;
+      font-size: 14px;
+      text-align: center;
+      line-height: 24px; }
+      .apex-ximei-container .body-container .item-special p:nth-child(2) {
+        border-bottom: 1px solid #3cba9c;
+        margin-bottom: 11px; }
+    .apex-ximei-container .body-container .hot-project {
+      text-align: center;
+      margin-bottom: 42px; }
+      .apex-ximei-container .body-container .hot-project .title {
+        margin-bottom: 34px; }
+      .apex-ximei-container .body-container .hot-project .project-detail {
+        display: -ms-flexbox;
+        display: flex; }
+        .apex-ximei-container .body-container .hot-project .project-detail .hot-left {
+          height: 360px;
+          width: 742px;
+          margin-right: 8px;
+          background: url("/images/ximei180410/1.png") no-repeat center/cover; }
+        .apex-ximei-container .body-container .hot-project .project-detail .hot-right {
+          display: block;
+          height: 360px;
+          width: 242px;
+          background-color: #fff;
+          text-decoration: none; }
+          .apex-ximei-container .body-container .hot-project .project-detail .hot-right img {
+            margin-bottom: 6px; }
+          .apex-ximei-container .body-container .hot-project .project-detail .hot-right p {
+            color: #3cba9c;
+            font-size: 14px;
+            text-align: center;
+            line-height: 24px; }
+            .apex-ximei-container .body-container .hot-project .project-detail .hot-right p:nth-child(2) {
+              border-bottom: 1px solid #3cba9c;
+              margin-bottom: 29px; }
+            .apex-ximei-container .body-container .hot-project .project-detail .hot-right p:nth-child(3) {
+              text-align: right;
+              margin-right: 10px;
+              margin-bottom: 0px;
+              line-height: 18px; }
+              .apex-ximei-container .body-container .hot-project .project-detail .hot-right p:nth-child(3) span {
+                font-size: 22px;
+                font-weight: bold; }
+            .apex-ximei-container .body-container .hot-project .project-detail .hot-right p:nth-child(4) {
+              color: #fff;
+              line-height: 30px; }
+    .apex-ximei-container .body-container .discount-goods {
+      text-align: center;
+      margin-bottom: 53px; }
+      .apex-ximei-container .body-container .discount-goods .title {
+        margin-bottom: 38px; }
+      .apex-ximei-container .body-container .discount-goods .goods-detail {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .apex-ximei-container .body-container .more-preferential {
+      text-align: center; }
+      .apex-ximei-container .body-container .more-preferential .title {
+        margin-bottom: 33px; }
+      .apex-ximei-container .body-container .more-preferential .goods-detail .goods-top {
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 10px; }
+        .apex-ximei-container .body-container .more-preferential .goods-detail .goods-top .goods-top-left {
+          margin-right: 8px; }
+        .apex-ximei-container .body-container .more-preferential .goods-detail .goods-top .goods-top-right {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+          .apex-ximei-container .body-container .more-preferential .goods-detail .goods-top .goods-top-right .item-detail {
+            margin-bottom: 8px;
+            position: relative; }
+            .apex-ximei-container .body-container .more-preferential .goods-detail .goods-top .goods-top-right .item-detail:nth-child(2):before, .apex-ximei-container .body-container .more-preferential .goods-detail .goods-top .goods-top-right .item-detail:nth-child(3):before {
+              display: block;
+              content: '【超划算】买2桶送1桶';
+              height: 30px;
+              line-height: 30px;
+              width: 242px;
+              background-color: #545454;
+              color: #fff;
+              position: absolute;
+              top: 218px;
+              left: 0; }
+            .apex-ximei-container .body-container .more-preferential .goods-detail .goods-top .goods-top-right .item-detail:nth-child(3):before {
+              content: '【超划算】买6袋送1袋'; }
+            .apex-ximei-container .body-container .more-preferential .goods-detail .goods-top .goods-top-right .item-detail:nth-child(3n) {
+              margin-right: 0px; }
+      .apex-ximei-container .body-container .more-preferential .goods-detail .goods-middle {
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 18px; }
+        .apex-ximei-container .body-container .more-preferential .goods-detail .goods-middle:nth-child(1) {
+          background-color: #fff; }
+        .apex-ximei-container .body-container .more-preferential .goods-detail .goods-middle .goods-middle-left {
+          margin-right: 8px; }
+        .apex-ximei-container .body-container .more-preferential .goods-detail .goods-middle .goods-middle-right {
+          display: -ms-flexbox;
+          display: flex; }
+    .apex-ximei-container .body-container .to-top {
+      margin-top: 20px; }
+      .apex-ximei-container .body-container .to-top a {
+        display: block;
+        text-align: center; }

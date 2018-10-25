@@ -1,0 +1,250 @@
+html {
+  font-size: 50px;
+}
+.wechat-product-gigi {
+	.main{
+  max-width:640px;
+  margin:0 auto;
+  background: #fff3d0;
+}
+
+.banner{
+  width:100%;
+  height: 4.87rem;
+  background:url(/images/gigi_brand/bg_pic.png) no-repeat;
+  background-size:100% 100%;
+  position:relative;
+  padding-top: 15%;
+}
+
+.banner .side{
+  width:2.66rem;
+  height: 1.03rem;
+  position:absolute;
+  right:0;
+  top:50%;
+  margin-top:-0.60rem;
+}
+
+.product{
+  background:url(/images/gigi_brand/bg_spot.png);
+  background-size:cover;
+  padding:0.2rem;
+}
+
+.product .title {
+  text-align: center;
+}
+
+.product .title span{
+  display:inline-block;
+  width: 2.58rem;
+  height: 0.70rem;
+  background:url(/images/gigi_brand/bg_title.png) center;
+  background-size:100% 100%;
+  line-height: 0.70rem;
+  font-size: 0.35rem;
+  color:#fff;
+  font-weight: bold;
+}
+
+.product1{
+  margin-bottom: 0.50rem;
+}
+.product1 .list{
+  margin:0.30rem 0;
+}
+
+.product1 .list ul li{
+  max-width:6.00rem;
+  height: 2.60rem;
+  background:#fff;
+  border-radius:1.30rem;
+  margin:0 auto 0.20rem;
+  padding:0.1rem;
+}
+
+.product1 .list ul li .list-item{
+  max-width:5.80rem;
+  height: 2.40rem;
+  background:#fff;
+  border-radius:1.20rem;
+  border:2px dashed #ffe400;
+  padding:0.1rem 0.50rem;
+}
+
+.product1 .list ul li .list-item .img{
+  float:left;
+}
+
+.product1 .list ul li .list-item .img img{
+  width:1.82rem;
+  height: 1.82rem;
+}
+
+.product1 .list ul li .list-item .product-des{
+  float:right;
+}
+
+.product1 .list ul li .list-item .product-des h4{
+  font-size: 0.28rem;
+  font-weight: bold;
+  margin: 0; 
+  margin-top: 0.10rem;
+}
+
+.product1 .list ul li .list-item .product-des .description{
+  display:inline-block;
+  padding:0 5px;
+  background:#fffa0f;
+  color:#fc9191;
+  font-size: 0.22rem;
+  border-radius:0.20rem;
+  margin:0.10rem 0;
+}
+
+.product1 .list ul li .list-item .product-des .price{
+  color:#e52a3f;
+  text-shadow: 0px 3px 2px #ccc;
+  font-size: 0.30rem;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0.10rem;
+}
+
+.product1 .list ul li .list-item .product-des .price span{
+  font-size: 0.20rem;
+}
+
+.product1 .list ul li .list-item .product-des .buy span{
+  display:block;
+  width:0.86rem;
+  height: 0.42rem;
+  text-align: center;
+  line-height: 0.42rem;
+  font-size: 0.24rem;
+  float:left;
+}
+
+.product1 .list ul li .list-item .product-des .buy span:first-child{
+  background:#fffa0f;
+  color:#333;
+}
+
+.product1 .list ul li .list-item .product-des .buy span:last-child{
+  width:1.20rem;
+  background:#e52a3f;
+  color:#fff;
+}
+
+div.clear{
+  clear:both;
+}
+
+
+/*靠枕*/
+.product2-item{
+    max-width:6.00rem;
+    background:#fff;
+    margin:0 auto;
+    padding:0.25rem;
+    margin-top:0.30rem;
+    position:relative;
+    box-shadow: 0px 2px 10px #ece1c0;
+    h4, p {
+      margin: 0;
+    }
+}
+
+.product2-item .img{
+  max-width:3.30rem;
+  float:left;
+  text-align: center;
+}
+
+.product2-item .img img{
+  width:3.20rem;
+  height: 3.20rem;
+}
+
+.product2-item .img h4{
+  font-size: 0.36rem;
+  font-weight: bold;
+}
+
+.product2-item .img p{
+  font-size: 0.30rem;
+  color:#ff2a2a;
+}
+
+.product2-item .price-item{
+  width:1.56rem;
+  text-align: center;
+  float:right;
+  color:#fff;
+  margin-top: 1.00rem;
+}
+
+.product2-item .buy{
+  width: 100%;
+  height: 0.65rem;
+  line-height: 0.65rem;
+  background:#ff4a4a;
+  margin-bottom: 0.20rem;
+  font-size: 0.30rem;
+  font-weight: bold;
+} 
+
+.product2-item .buy a{
+  color:#fff;
+}
+
+.product2-item .price{
+  width:100%;
+  height: 2.50rem;
+  background:#ff4a4a;
+  padding: 0.20rem 0;
+}
+
+.product2-item .price p:first-child{
+  font-size: 0.50rem;
+  font-weight: bold;
+}
+
+.product2-item .price p:last-child{
+  font-size: 0.34rem;
+}
+
+.product2-item ul li:last-child .img{
+    float:right;
+}
+
+.product2-item ul li:last-child .price-item{
+    float:left;
+    margin-top: 0.50rem;
+}
+
+.product2-item ul li:last-child .price-item .buy{
+  margin-top:0.20rem;
+}
+
+.product2-item ul li:last-child{
+  margin-top: 2.30rem;
+}
+
+.pic{
+  max-width: 100%;
+  position:absolute;
+  top:32%;
+  left:0;
+}
+
+
+.product2-item ul li:last-child .price-item p:first-child{
+  margin-top: 0.80rem;
+}
+
+.product2-item ul li:last-child .img{
+  margin-top: 0.50rem;
+}
+}

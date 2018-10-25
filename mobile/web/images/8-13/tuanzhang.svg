@@ -1,0 +1,18 @@
+<svg id="团长_标签" data-name="团长/标签" xmlns="http://www.w3.org/2000/svg" width="54" height="28" viewBox="0 0 54 28">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f5222d;
+      }
+
+      .cls-2 {
+        font-size: 18px;
+        fill: #fff;
+        text-anchor: middle;
+        font-family: "PingFang SC";
+      }
+    </style>
+  </defs>
+  <rect id="圆角矩形_1029" data-name="圆角矩形 1029" class="cls-1" width="54" height="28" rx="14" ry="14"/>
+  <text id="团长" class="cls-2" x="26.332" y="20.516">团长</text>
+</svg>

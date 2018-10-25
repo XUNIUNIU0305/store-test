@@ -1,0 +1,152 @@
+@charset "UTF-8";
+.wechat-product-aohe {
+  /*--------------主体内容---------------*/ }
+  .wechat-product-aohe .clear {
+    clear: both; }
+  .wechat-product-aohe img {
+    max-width: 100%;
+    vertical-align: top; }
+  .wechat-product-aohe h4 {
+    margin: 0; }
+  .wechat-product-aohe .main {
+    max-width: 100%;
+    margin: 0 auto; }
+  .wechat-product-aohe .banner .car {
+    width: 100%;
+    height: 1.67rem;
+    margin-top: -1.00rem; }
+  .wechat-product-aohe .container {
+    width: 100%; }
+  .wechat-product-aohe .container .title {
+    max-width: 100%;
+    height: 0.72rem;
+    background: url(/images/aohe_brand/TITLE.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 0.72rem;
+    font-size: 0.28rem;
+    color: #ec0101; }
+  .wechat-product-aohe .list ul {
+    max-width: 100%;
+    padding: 0.20rem;
+    text-align: center; }
+  .wechat-product-aohe .flex-space {
+    display: -webkit-flex;
+    display: flex;
+    -moz-justify-content: space-around;
+    -webkit-justify-content: space-around;
+    justify-content: space-around; }
+  .wechat-product-aohe .type1 ul li img {
+    width: 2.78rem;
+    height: 1.60rem; }
+  .wechat-product-aohe .list ul p {
+    font-size: 0.28rem;
+    margin: 0.10rem; }
+  .wechat-product-aohe .type2 ul li img {
+    width: 1.73rem;
+    height: 1.60rem; }
+  .wechat-product-aohe .type3 {
+    max-width: 100%;
+    height: 2.93rem;
+    background: url(/images/aohe_brand/img.jpg) no-repeat;
+    background-size: 100% 100%;
+    padding: 0.20rem; }
+  .wechat-product-aohe .type3 .des {
+    width: 3.60rem; }
+  .wechat-product-aohe .type3 .des p:nth-child(1) {
+    font-size: 0.30rem; }
+  .wechat-product-aohe .type3 .des p:nth-child(2) {
+    font-size: 0.22rem;
+    margin-left: 1.10rem; }
+  .wechat-product-aohe .type3 .des p:nth-child(3) {
+    font-size: 0.46rem; }
+  .wechat-product-aohe .type3 .des p:nth-child(3) span {
+    font-size: 0.24rem; }
+  .wechat-product-aohe .type3 .des p:nth-child(4) {
+    font-size: 0.16rem;
+    display: inline-block;
+    padding: 0px 3px;
+    border: 1px solid #999;
+    margin-left: 1.30rem;
+    margin-bottom: 0.20rem;
+    color: #999; }
+  .wechat-product-aohe .type3 .des p:nth-child(5) {
+    display: inline-block;
+    width: 1.95rem;
+    height: 0.52rem;
+    background: #d70101;
+    color: #fff;
+    line-height: 0.52rem;
+    text-align: center;
+    font-size: 0.26rem; }
+  .wechat-product-aohe .type4 {
+    margin-bottom: 0.30rem; }
+  .wechat-product-aohe .type4 ul li {
+    width: 100%;
+    padding: 0.20rem;
+    text-align: center;
+    overflow: hidden; }
+  .wechat-product-aohe .type4 ul li .left {
+    float: left; }
+  .wechat-product-aohe .type4 ul li .right {
+    float: right; }
+  .wechat-product-aohe .type4 ul li .text {
+    width: 2.26rem;
+    height: 4.16rem;
+    background: url(/images/aohe_brand/bg_information.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    color: #fff;
+    padding: 0.20rem 0;
+    position: relative; }
+  .wechat-product-aohe .type4 ul li:first-child img {
+    width: 3.60rem;
+    height: 2.95rem; }
+  .wechat-product-aohe .type4 ul li:first-child {
+    position: relative;
+    z-index: 3; }
+  .wechat-product-aohe .type4 ul li:nth-child(2) {
+    padding: 0;
+    position: relative;
+    z-index: 2;
+    margin-top: -1.85rem; }
+  .wechat-product-aohe .type4 ul li:last-child {
+    position: relative;
+    z-index: 1;
+    margin-top: -1.10rem; }
+  .wechat-product-aohe .type4 ul li:nth-child(2) img {
+    width: 100%;
+    height: 5.21rem; }
+  .wechat-product-aohe .type4 ul li:last-child img {
+    width: 3.59rem;
+    height: 3.22rem; }
+  .wechat-product-aohe .type4 ul li .text h4 {
+    font-size: 0.48rem; }
+  .wechat-product-aohe .type4 ul li .text .tip {
+    display: inline-block;
+    width: 1.65rem;
+    height: 1.12rem;
+    border: 1px solid #fff;
+    margin: 0.20rem 0; }
+  .wechat-product-aohe .type4 ul li .text .tip span {
+    display: inline-block;
+    width: 1.44rem;
+    height: 0.96rem;
+    background: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    font-size: 0.26rem;
+    margin-top: 0.06rem;
+    padding-top: 0.08rem; }
+  .wechat-product-aohe .type4 ul li .text .price {
+    font-size: 0.32rem; }
+  .wechat-product-aohe .type4 ul li .text .price span {
+    font-size: 0.48rem; }
+  .wechat-product-aohe .type4 ul li .text .buy {
+    position: absolute;
+    bottom: 0.03rem;
+    right: 0.20rem;
+    font-size: 0.34rem; }
+  .wechat-product-aohe .type4 ul li:last-child .text h4 {
+    margin-top: 0.50rem; }
+  .wechat-product-aohe .type4 ul li:last-child img {
+    margin: 0.50rem -0.30rem 0 0; }

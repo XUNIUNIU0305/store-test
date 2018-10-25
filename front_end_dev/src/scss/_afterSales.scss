@@ -1,0 +1,141 @@
+.apx-after-sales-container {
+    >.btn-block {
+        width: 180px;
+        margin: 50px auto;
+    }
+    .h3 {
+        margin: 0 0 30px;
+        padding: 28px 0 10px;
+        border-bottom: 2px solid $brand-danger;
+    }
+    .panel {
+        border-top-color: transparent;
+    }
+    .panel-heading {
+        background: #fce7e6;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 0 30px;
+        text-indent: 6px;
+        line-height: 50px;
+        position: relative;
+        &:before {
+            position: absolute;
+            content: '';
+            width: 6px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            background: $brand-danger;
+        }
+        .high-lighted {
+            color: $brand-danger;
+            font-weight: 400;
+            font-size: 12px;
+        }
+    }
+    .panel-body {
+        padding: 0;
+        // table
+        table.table {
+            margin: 0;
+            font-size: 12px;
+            table-layout: fixed;
+            .input-group-sm {
+                width: 70px;
+                margin: 0 auto 8px;
+                .input-group-addon {
+                    border-radius: 0;
+                    background: #fff;
+                    padding: 2px 6px;
+                    height: 22px;
+                    line-height: 1;
+                    cursor: pointer;
+                }
+                .form-control {
+                    padding: 2px;
+                    text-align: center;
+                    height: 22px;
+                    line-height: 1
+                }
+            }
+        }
+        .media {
+            font-size: 12px;
+            img {
+                border: 1px solid #ccc;
+                width: 90px;
+                height: 90px;
+            }
+            .media-left {
+                padding: 6px 34px 6px 0;
+            }
+        }
+        // form
+        form {
+            padding: 0 24px;
+            .form-group {
+                >label {
+                    line-height: 40px;
+                    display: block;
+                }
+                textarea {
+                    resize: none;
+                }
+                &:first-child {
+                    padding-bottom: 20px;
+                    border-bottom: 1px dashed #ccc;
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .gallary {
+            .item {
+                position: relative;
+                width: 180px;
+                height: 180px;
+                border: 1px solid #ccc;
+                display: inline-block;
+                margin: 20px;
+                vertical-align: bottom;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                .close {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 1;
+                    text-align: center;
+                    background: rgba(0, 0, 0, .8);
+                    color: #fff;
+                    font-weight: 100;
+                    font-size: 24px;
+                }
+            }
+        }
+        .upload-btn {
+            width: 120px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            position: relative;
+            background: #fff;
+            color: $brand-danger;
+            &:hover,
+            &:focus,
+            &:active {
+                background: $brand-danger;
+                color: #fff
+            }
+            input {
+                position: absolute;
+                clip: rect(0, 0, 0, 0);
+                pointer-events: none;
+            }
+        }
+    }
+}

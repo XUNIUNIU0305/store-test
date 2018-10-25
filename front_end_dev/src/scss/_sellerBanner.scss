@@ -1,0 +1,85 @@
+.#{$global_cname}seller-banner {
+	background: #414b90;
+	background: linear-gradient(-45deg, #414b90 14%, #4c5697 14%, #4c5697 36%, transparent 36%),
+				linear-gradient(-60deg, #4c5697 40%, #414b90 40%, #414b90 42%, transparent 42%),
+				linear-gradient(-35deg, #414b90 50%, transparent 50%),
+				linear-gradient(-50deg, darken(#4c5697, 3%) 54%, transparent 54%),
+				linear-gradient(-120deg, #4c5697 70%, transparent 70%),
+				linear-gradient(-45deg, #414b90 86%, #4c5697 86%);
+	color: #fff;
+	font-size: 12px;
+	margin-bottom: 52px;
+	>.container>.row {
+		height: 165px;
+		display: flex;
+		align-items: center;
+		> div {
+			padding: 0;
+		}
+	}
+	.media{
+		position: relative;
+		top: 24px;
+		overflow: visible;
+		h3{
+			font-size: 22px;
+			margin-bottom: 16px;
+		}
+	}
+	.media-left{
+		padding-right: 24px;
+	}
+	.media-left-inner{
+		width: 152px;
+		height: 152px;
+		border: 6px solid #fff;
+		box-shadow: 8px 8px 8px rgba(0,0,0,.2);
+		overflow: hidden;
+		img {
+			width: 140px;
+			height: 140px;
+		}
+	}
+	.media-body{
+		position: relative;
+		top: -8px;
+	}
+	.seller-icon,
+	.round-icon {
+		width: 56px;
+		height: 56px;
+		border-radius: 50%;
+		border: 1px solid #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto 20px;
+	}
+	.seller-icon {
+		border-color: transparent;
+		margin-bottom: 12px;
+	}
+	.list-inline {
+		li {
+			padding: 0 16px;
+		}
+		a{
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+	.with-seperator {
+	    > div:not(:last-child) {
+	        position: relative;
+	        &:after {
+	            content: " ";
+	            border-right: 1px solid #ccc;
+	            height: 80px;
+	            position: absolute;
+	            right: 0;
+	            top: 50%;
+	            margin-top: -40px;
+	        }
+	    }
+	}
+}

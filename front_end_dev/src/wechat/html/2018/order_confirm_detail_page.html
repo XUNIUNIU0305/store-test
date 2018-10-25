@@ -1,0 +1,205 @@
+@@include('../head.inc')
+
+<main class="container">
+    <div class="order-confirm-complete-wrap">
+        <div class="order-confirm-complete">
+            <div class="collage-detail-head">
+                <div class="head-cont">
+                    <div class="head-tit">收货地址</div>
+                    <!-- 选择收货地址 -->
+                    <div class="address-main">
+                        <div class="choose-address">
+                            请选择收货地址
+                            <div class="address-more"></div>
+                        </div>
+                    </div>
+                    <!-- 收货地址信息 -->
+                    <!-- <div class="address-mess">
+                        <div class="head-user">
+                            <span class="user-name">昂子李</span>
+                            <span class="user-number">7837587458</span>
+                            <div class="head-user-more"></div>
+                        </div>
+                        <span class="head-addr">上海宝山区水利水电01</span>
+                    </div> -->
+
+                    <img class="head-pic" src="/images/order_confirm_detail_page/caitiao.png" alt="">
+                </div>
+
+            </div>
+            <div class="collage-detail-section">
+                <div class="sec-box">
+                    <div class="sec-tit">
+                        <img class="sec-icon" src="/images/order_confirm_detail_page/store_32_icon.png" alt="">
+                        <span>永泰和</span>
+                    </div>
+                    <div class="sec-main">
+                        <div class="sec-cont">
+                            <div class="sec-pic">
+                                <img src="" alt="">
+                            </div>
+                            <div class="cont-txt">
+                                <span class="c-txt">文本文本文本文本文本文本文本文本文本</span>
+                                <span class="txt-gray">一套;合成机油</span>
+                                <div class="txt-box">
+                                    <span class="txt-money">￥
+                                        <span class="price">2323.00</span>
+                                    </span>
+                                    <div class="number-button">
+                                        <div class="button">
+                                            <span class="reduce"></span>
+                                            <input class="text" type="text" value="1">
+                                            <span class="add"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-policy">
+                        <div class="policy">
+                            <div class="item">
+                                <span class="icon">
+                                    <img src="/images/order_confirm_detail_page/confirm_28_icon.png" alt="">
+                                </span>
+                                商家发货&售后
+                            </div>
+                            <div class="item">
+                                <span class="icon">
+                                    <img src="/images/order_confirm_detail_page/confirm_28_icon.png" alt="">
+                                </span>
+                                七天退换货
+                            </div>
+                            <div class="item">
+                                <span class="icon">
+                                    <img src="/images/order_confirm_detail_page/no_28_icon.png" alt="">
+                                </span>
+                                不可使用优惠券
+                            </div>
+                        </div>
+                        <div class="service-policy-more" id="service-policy-more"></div>
+                    </div>
+                    <!-- <div class="sec-tips">
+                        <span class="tips-icon-1"></span>
+                        <span>商家发货至自提点，不支持7天退换货</span>
+                        <span class="tips-icon-2"></span>
+                    </div> -->
+                </div>
+            </div>
+            <!-- 配送服务 -->
+            <div class="delvivery-service-wrap">
+                <div class="delvivery-service">
+                    <div class="title">配送服务</div>
+                    <div class="mess">
+                        <div class="left">
+                            <p>快递运输</p>
+                            <p>工作日、双休日与节假日均可送货</p>
+                        </div>
+                        <div class="right">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="sec-footer">
+                    <h4 class="foot-txt-1">备注</h4>
+                    <textarea style="resize:none; outline-style:none;" class="foot-txt-2" name="" placeholder="选填，给商家留言" id="J_remark_input"></textarea>
+                </div>
+            </div>
+            <!-- 优惠券 -->
+            <div class="discount-coupon-wrap">
+                <div class="discount-coupon">
+                    <div class="title">优惠券</div>
+                    <!-- 暂无可使用优惠券 -->
+                    <div class="discount-coupon-no common">暂无可使用优惠券
+                        <span class="discount-coupon-more-logo"></span>
+                    </div>
+
+                    <!-- 拥有可用张数 -->
+                    <!-- <div class="discount-coupon-possess common">拥有<span class="num">3</span>张可用
+                        <span class="discount-coupon-more-logo"></span>
+                    </div> -->
+
+                    <!-- 已选优惠 -->
+                    <!-- <div class="discount-coupon-selected common">已选：满<span class="price">300</span>减<span class="price">80</span>
+                        <span class="discount-coupon-more-logo"></span>
+                    </div> -->
+                </div>
+            </div>
+            <!-- 支付方式 -->
+            <div class="mode-payment-wrap">
+                <div class="mode-payment">
+                    <div class="mode-payment-title">选择支付方式</div>
+                    <div class="mode-payment-way">
+                        <div class="mode-payment-left">
+                            <div class="logo">
+                                <img src="/images/order_confirm_detail_page/yue_zhifu.png" alt="">
+
+                            </div>
+                            <div class="mode-payment-center">
+                                <p>余额支付</p>
+                                <p class="mode-payment-else">账户余额
+                                    <span>￥8800</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mode-payment-right">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="mode-payment-way">
+                        <div class="mode-payment-left">
+                            <div class="logo">
+                                <img src="/images/order_confirm_detail_page/weixinzhifu_logo.png" alt="">
+                            </div>
+
+                            <div class="mode-payment-center">
+                                <p>微信支付</p>
+                                <p class="mode-payment-else safety">微信安全支付</p>
+                            </div>
+                        </div>
+
+                        <div class="mode-payment-right">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 金额信息 -->
+            <div class="collage-detail-cost">
+                <ul class="cost-list">
+                    <li class="cost-item">
+                        <span class="cost-tit">商品金额</span>
+                        <span class="cost-txt">￥ 23232.00</span>
+                    </li>
+                    <li class="cost-item">
+                        <span class="cost-tit">优惠券金额</span>
+                        <span class="cost-txt">￥ 0.00</span>
+                    </li>
+                    <li class="cost-item">
+                        <span class="cost-tit">立减</span>
+                        <span class="cost-txt">￥ 0.00</span>
+                    </li>
+                    <li class="cost-item">
+                        <span class="cost-tit">运费</span>
+                        <span class="cost-txt">+￥ 0.00</span>
+                    </li>
+                </ul>
+                <div class="cost-footer">
+                    <span class="cost-number">数量：
+                        <span>1</span>件</span>
+                    <span class="cost-money">实付金额：
+                        <span class="money-total">￥43433.00</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="confirm">确认支付
+                <span class="price">￥11750.00</span>
+            </div>
+        </div>
+    </div>
+</main>
+@@include('../footer.inc')
+<script src="/js/2018/order_confirm_detail_page.js"></script>

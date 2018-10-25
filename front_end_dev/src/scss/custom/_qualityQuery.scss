@@ -1,0 +1,248 @@
+.custom-qulity-query {
+    color: #333;
+    a {
+        color: #333;
+    }
+    background: url('/images/qulity-query/bg_img.jpg') no-repeat center bottom;
+    .query-title {
+        font-size: 36px;
+        text-align: center;
+        span {
+            display: inline-block;
+            color: #000;
+            padding-left: 86px;
+            line-height: 156px;
+            background: url('/images/qulity-query/logo.png') no-repeat left center;
+        }
+    }
+	.content {
+        height: calc(100vh - 156px);
+        min-height: 666px;
+		position: relative;
+		.tab-container {
+			width: 740px;
+			height: 509px;
+			background: #fff;
+			position: absolute;
+			top:14%;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+            box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.14);
+			.nav {
+                display: flex;
+                border-bottom: 1px solid #e0e0e0;
+                li {
+                    flex: 1;
+                    text-align: center;
+                    line-height: 60px;
+                    &:first-child {
+                        position: relative;
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            right: 0;
+                            top: 25px;
+                            width: 1px;
+                            height: 32px;
+                            background-color: #b0b0b0;
+                        }
+                    }
+                    &.active {
+                        a {
+                            font-weight: bold;
+                            color: #ff6700;
+                        }
+                    }
+                    a {
+                        font-size: 20px;
+                        background-color: #fff;
+                        &:hover {
+                            color: #ff6700;
+                            background-color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        .form-horizontal {
+            margin: 70px 170px;
+            &.service {
+                .form-group {
+                    &.error {
+                        &:nth-child(1) {
+                            &::before {
+                                content: '用户名或手机号码长度错误';
+                            }
+                        }
+                        &:nth-child(2) {
+                            &::before {
+                                content: '请输入正确的账号密码';
+                            }
+                        }
+                    }
+                }
+            }
+            .form-group {
+                position: relative;
+                margin-bottom: 30px;
+                &.error {
+                    border-color: #ff6700; 
+                    &::before {
+                        content: "请正确填写验证码";
+                        position: absolute;
+                        left: 10px;
+                        top: -24px;
+                        color: #fff;
+                        padding: 4px 10px;
+                        background-color: #eb2f2f;
+                        z-index: 3;
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 3px;
+                        left: 15px;
+                        border-top: 5px solid #eb2f2f;
+                        border-bottom: 5px solid transparent;
+                        border-left: 5px solid transparent;
+                        border-right: 5px solid transparent;
+                    }
+                    &:nth-child(1) {
+                        &::before {
+                            content: '车牌号或车架号格式错误';
+                        }
+                    }
+                    &:nth-child(2) {
+                        &::before {
+                            content: '手机号格式错误';
+                        }
+                    }
+                }
+                label {
+                    position: absolute;
+                    left: 13px;
+                    top: 4px;
+                    cursor: text;
+                    font-weight: normal;
+                    transition: all 0.2s linear;
+                    z-index: 2;
+                }
+                input {
+                    border-radius: 0;
+                    border: 1px solid #e0e0e0;
+                    position: relative;
+                    font-size: 14px;
+                    height: 42px;
+                    padding: 10px 12px;
+                    &::-moz-placeholder { 
+                        color: #fff; 
+                        transition: color 0.8s;
+                    }
+                    &::-webkit-input-placeholder { 
+                        color: #fff; 
+                        transition: color 0.8s;
+                    }
+                    &:-ms-input-placeholder {
+                        color: #fff; 
+                        transition: color 0.8s;
+                    }
+                    &:hover {
+                        border-color: #b0b0b0;
+                    }
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+                label,
+                input {
+                    font-size: 14px;
+                    color: #b0b0b0;
+                }
+                &.active {
+                    label {
+                        font-size: 12px;
+                        top: -14px;
+                        background-color: #fff;
+                    }
+                    input {
+                        &::-moz-placeholder { 
+                            color: #b0b0b0; 
+                        }
+                        &::-webkit-input-placeholder { 
+                            color:#b0b0b0; 
+                        }
+                        &:-ms-input-placeholder {
+                            color:#b0b0b0; 
+                        }
+                    }
+                }
+                &.focus {
+                    label {
+                        color: #ff6700;
+                    }
+                    input {
+                        border-color: #ff6700;
+                    }
+                }
+            }
+            .captcha {
+                display: flex;
+                input {
+                    flex: 0 0 280px;
+                }
+                span {
+                    flex: auto;
+                    margin-left: 10px;
+                    font-size: 14px;
+                    color: #ff6700;
+                    border: 1px solid #ff6700;
+                    line-height: 40px;
+                    cursor: pointer;
+                    &.disabled {
+                        color: #e0e0e0;
+                        border-color: #e0e0e0;
+                        pointer-events: none;
+                    }
+                }
+            }
+            .btn-search {
+                width: 100%;
+                border-radius: 0;
+                color: #fff;
+                line-height: 2;
+                background-color: #ff6700;
+                margin-top: 40px;
+                &:hover {
+                    background-color: #e65100;
+                }
+            }
+        }
+	}
+    .apx-footer.container-fluid {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: rgba(255, 255, 255, 0.5);
+        a,
+        span {
+            color: #333;
+        }
+    }
+    .apx-footer {
+        height: 55px;
+        color: #b3b3b3;
+        background: #eee;
+        position: relative;
+        line-height: 55px;
+        a {
+            color: #b3b3b3;
+            text-decoration: none;
+        }
+    }
+}
+input:-webkit-autofill {
+    background-color: #fff!important;
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}

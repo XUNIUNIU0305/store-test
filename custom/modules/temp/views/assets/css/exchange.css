@@ -1,0 +1,76 @@
+body {
+  overflow-x: hidden; }
+
+.bg-muted {
+  background: #f2f2f2; }
+
+.table-fix {
+  table-layout: fixed; }
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.container {
+  width: 1190px;
+  max-width: none !important; }
+
+.high-lighted {
+  color: #df483d; }
+
+.custom-account-view {
+  min-height: 100vh;
+  background: #f6f6f6; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0; }
+
+.coupon-water-container {
+  padding: 10px 0; }
+  .coupon-water-container .coupon-water {
+    margin-bottom: 30px; }
+    .coupon-water-container .coupon-water.coupon-water-used .coupon-water-inner:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 92px;
+      height: 92px;
+      background: url(/images/water/used.png) no-repeat center; }
+    .coupon-water-container .coupon-water .coupon-water-inner {
+      box-shadow: 0 2px 8px #ccc;
+      position: relative; }
+    .coupon-water-container .coupon-water .img-container {
+      height: 146px;
+      background: url("/images/water/coupon_bg.jpg") no-repeat center;
+      position: relative; }
+    .coupon-water-container .coupon-water .info {
+      position: absolute;
+      color: #fff;
+      border: 1px solid;
+      top: 15px;
+      right: 15px;
+      bottom: 15px;
+      left: 15px;
+      text-align: center;
+      line-height: 116px;
+      font-size: 0px; }
+      .coupon-water-container .coupon-water .info strong,
+      .coupon-water-container .coupon-water .info span {
+        font-size: 40px; }
+      .coupon-water-container .coupon-water .info small {
+        font-size: 16px; }
+      .coupon-water-container .coupon-water .info span {
+        margin-left: 28px; }
+    .coupon-water-container .coupon-water .content {
+      padding: 8px; }
+    .coupon-water-container .coupon-water p {
+      margin: 4px 0;
+      font-size: 12px;
+      overflow: hidden;
+      width: 100%;
+      text-overflow: ellipsis;
+      white-space: nowrap; }

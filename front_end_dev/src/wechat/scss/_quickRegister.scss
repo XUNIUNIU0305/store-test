@@ -1,0 +1,48 @@
+.quick-register {
+    border-top: 10px solid #f2f2f2;
+    padding: 0 15px;
+    font-size: 14px;
+    .input-group {
+        .label {
+            margin: 20px 0 10px;
+        }
+        input {
+            width: calc(100% - 30px);
+            font-size: 14px;
+            color: #9d9d9d;
+            border: none;
+            background-color: #efeff4;
+            padding: 13px 15px;
+            border-radius: 8px;
+            outline: none;
+        }
+        .input-flex {
+            display: flex;
+            align-content: space-around;
+            input {
+                flex: auto;
+                vertical-align: middle;
+            }
+            .btn {
+                flex: 0 0 110px;
+                margin-left: 8px;
+                color: #fff;
+                text-align: center;
+                line-height: 44px;
+                vertical-align: middle;
+                background-color: #ff9100;
+                border-radius: 8px;
+            }
+        }
+    }
+    .btn-register {
+        margin-top: 80px;
+        padding: 8px 0;
+        text-align: center;
+        color: #fff;
+        font-size: 17px;
+        background-image: linear-gradient(90deg, #ff9100 0%, #ef5a22 50%, #e53935 100%),
+        linear-gradient( #9d9d9d, #9d9d9d);
+        border-radius: 8px;
+    }
+}

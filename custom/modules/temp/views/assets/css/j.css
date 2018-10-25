@@ -1,0 +1,95 @@
+.year-go-on {
+  min-width: 1440px;
+  overflow-x: auto;
+  background-color: #ffebd2; }
+  .year-go-on img {
+    width: 100%;
+    vertical-align: top; }
+  .year-go-on .banner {
+    margin-bottom: 44px; }
+  .year-go-on .float-nav {
+    width: 119px;
+    height: 364px;
+    background: url("/images/year_go_on/r_nav_bg.png") no-repeat center;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    margin-left: 615px; }
+    .year-go-on .float-nav ul, .year-go-on .float-nav li {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+    .year-go-on .float-nav ul {
+      margin-top: 32px; }
+    .year-go-on .float-nav li {
+      text-align: center;
+      line-height: 28px; }
+      .year-go-on .float-nav li:hover {
+        background-color: #ffd471; }
+      .year-go-on .float-nav li a {
+        color: #fff;
+        text-decoration: none; }
+        .year-go-on .float-nav li a:hover {
+          color: #db100c; }
+    .year-go-on .float-nav .qr-code {
+      margin-top: 20px;
+      text-align: center; }
+      .year-go-on .float-nav .qr-code img {
+        width: 80%; }
+  .year-go-on .pro-title {
+    font-size: 50px;
+    color: #ffebd2;
+    font-weight: bold;
+    line-height: 1;
+    padding: 120px 0 30px;
+    text-align: center;
+    background: #ffebd2 url("/images/year_go_on/title.png") no-repeat left center; }
+  .year-go-on .items-container {
+    width: 1189px;
+    margin: 60px auto;
+    padding: 14px;
+    background-color: #e11823;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .year-go-on .items-container .item {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 387px;
+              flex: 0 0 387px;
+      padding: 6px;
+      box-sizing: border-box;
+      text-align: center; }
+      .year-go-on .items-container .item a {
+        text-align: center;
+        background-color: #ffebd2;
+        text-decoration: none; }
+      .year-go-on .items-container .item .item-detail {
+        padding-bottom: 50px;
+        background-color: #ffebd2; }
+      .year-go-on .items-container .item p {
+        color: #e11823;
+        margin: 0; }
+      .year-go-on .items-container .item .item-title {
+        font-size: 24px;
+        padding-top: 26px; }
+      .year-go-on .items-container .item .item-sub {
+        font-size: 18px;
+        padding-top: 4px;
+        color: #797676; }
+      .year-go-on .items-container .item .price {
+        font-size: 18px; }
+        .year-go-on .items-container .item .price .num {
+          font-size: 32px; }
+      .year-go-on .items-container .item .buy-btn {
+        width: 220px;
+        font-size: 22px;
+        text-align: center;
+        color: #f7da15;
+        line-height: 46px;
+        margin: 10px auto;
+        background: url("/images/year_go_on/buy_bg.png") no-repeat center; }
+  .year-go-on .pro-explain {
+    width: 1200px;
+    margin: 0 auto 100px; }

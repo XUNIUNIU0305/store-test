@@ -1,0 +1,70 @@
+.admin-main-wrap {
+    min-width: 1190px;
+    padding: 0 30px;
+    font-size: 14px;
+}
+.admin-deposit {
+    @include nav-tabs-danger();
+    /* 共享样式 */
+    
+    // 标题 
+    .h4 {
+        margin: 0;
+        padding: 0 30px;
+        line-height: 36px;
+        border-bottom: 1px dashed #999;
+        i {
+            color: cadetblue;
+            margin-right: 10px;
+        }
+    }
+    .btn-container {
+        margin: 20px 0;
+        .btn {
+            margin: 0 10px;
+        }
+    }
+    .table-panel {
+       border: 1px solid #ccc;
+       font-size: 12px;
+       &.dashed {
+           th,
+           td {
+               position: relative;
+               border-top: 1px dashed #ccc;
+               border-bottom: 1px dashed #ccc;
+               overflow: visible;
+           }
+       }
+       thead {
+           background: #e6e6e6;
+           th {
+               text-align: center !important;
+           }
+       }
+       tbody {
+           tr {
+               cursor: pointer;
+               &.active {
+                   td {
+                       background-color: #fce7e6;
+                   }
+               }
+           }
+           td {
+               &:last-child {
+                   .link {
+                       color: #df483d;
+                   }
+               }
+               &:nth-child(2) {
+                   max-width: 175;
+                   overflow: hidden;
+                   text-overflow: ellipsis;
+                   white-space: nowrap;
+               }
+           }
+       }
+    }
+ }
+

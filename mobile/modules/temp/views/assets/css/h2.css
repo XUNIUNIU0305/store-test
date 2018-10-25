@@ -1,0 +1,38 @@
+html,body{
+    min-height: 100%;
+}
+
+#hdpage {
+    background: url(/images/huodong/bgp.jpg)repeat-y;
+    height: 100%;
+   background-size: 100% 100%;
+}
+#hdpage header{
+    width: 100%;
+    margin: 0 auto 0.76rem;
+    overflow: hidden;
+    margin-bottom: 0.12rem;
+}
+#hdpage header img{
+    width: 100%;
+}
+
+#hdpage a{
+    box-sizing: border-box;
+}
+#hdpage a img{
+    width: 93%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.08rem;
+}
+
+#hdpage footer{
+    width: 100%;
+    margin: 0.3rem auto 0;
+    margin-bottom: 0;
+}
+#hdpage footer img{
+    width: 100%;
+    display: block;
+}

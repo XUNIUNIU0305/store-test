@@ -1,0 +1,173 @@
+.custom-group-cancel-main {
+    background: #fff;
+    overflow: hidden;
+    min-height: 750px;
+    color: #333;
+    .cancel-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        border-bottom: 10px solid #f6f6f6;
+        .handle-box {
+            display: flex;
+            label {
+                font-weight: normal;
+                line-height: 32px;
+                padding-right: 20px;
+            }
+            input {
+                width: 170px;
+                height: 32px;
+                border: 1px solid #e3e4e5;
+                padding: 0 12px;
+            }
+            .btn {
+                height: 32px;
+                margin-left: 10px;
+            }
+        }
+    }
+    .group-cancel-container {
+        margin: 10px 20px;
+        .form-box {
+            >div {
+                margin: 10px 0;
+            }
+            label {
+                font-weight: normal;
+            }
+            select,
+            input {
+                border: 1px solid #e3e4e5;
+                border-radius: 4px;
+                &:focus {
+                    outline: none;
+                }
+            }
+            .order-status {
+                font-size: 14px;
+                padding: 0 8px;
+                height: 32px;
+            }
+            .input-middle {
+                width: 313px;
+                height: 32px;
+                padding: 0 12px;
+            }
+            .time-form {
+                display: flex;
+                align-items: center;
+                span {
+                    &:nth-child(3) {
+                        margin: 0 10px;
+                    }
+                }
+            }
+            .time-box {
+                width: 140px;
+                input {
+                    height: 32px;
+                }
+            }
+            .input-group-btn {
+                button {
+                    height: 34px;
+                }
+            }
+        }
+        .group-order-list {
+            table {
+                width: 100%;
+            }
+            th {
+                background-color: #e3e4e5;
+            }
+            th,
+            td {
+                text-align: center;
+                line-height: 50px;
+            }
+            tbody {
+                tr {
+                    border-bottom: 1px dashed #e3e4e5;
+                    &:hover {
+                        background-color: #f6f6f6;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.custom-group-order-cancel-modal {
+    .modal-dialog {
+        width: 800px;
+        height: 392px;
+    }
+    .modal-body {
+        margin: 0 20px;
+    }
+    .pro-info {
+        table {
+            width: 100%;
+        }
+        tr {
+            &:first-child {
+                line-height: 40px;
+                font-size: 14px;
+                font-weight: bold;
+                background-color: #f6f6f6;
+            }
+            td {
+                font-size: 14px;
+                &:nth-child(2) {
+                    text-align: left;
+                }
+            }
+        }
+        .img-title {
+            display: flex;
+            .img-box {
+                flex: 0 0 80px;
+                border: 1px solid #e3e4e5;
+                margin: 10px;
+                img {
+                    max-width: 100%;
+                }
+            }
+            .title-box {
+                margin-top: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+    .num-box {
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+        .input-group {
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        input {
+            flex: 0 0 70px;
+            height: 32px;
+            margin: 0 4px;
+            text-align: center;
+        }
+        .input-group-addon {
+            border-radius: 0;
+            cursor: pointer;
+            width: 36px;
+            height: 32px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .input-group-addon {
+            border: 1px solid #e3e4e5;
+            background: #fff;
+        }
+    }
+}

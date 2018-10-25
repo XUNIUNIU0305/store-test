@@ -1,0 +1,630 @@
+body {
+  overflow-x: hidden; }
+
+.bg-muted {
+  background: #f2f2f2; }
+
+.table-fix {
+  table-layout: fixed; }
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.container {
+  width: 1190px;
+  max-width: none !important; }
+
+.high-lighted {
+  color: #df483d; }
+
+body.lb-disable-scrolling {
+  overflow: hidden; }
+
+.lightboxOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: black;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  display: none; }
+
+.lightbox {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  text-align: center;
+  line-height: 0;
+  font-weight: normal; }
+
+.lightbox .lb-image {
+  display: block;
+  height: auto;
+  max-width: inherit;
+  max-height: none;
+  border-radius: 3px;
+  /* Image border */
+  border: 4px solid white; }
+
+.lightbox a img {
+  border: none; }
+
+.lb-outerContainer {
+  position: relative;
+  *zoom: 1;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 4px;
+  /* Background color behind image.
+     This is visible during transitions. */
+  background-color: white; }
+
+.lb-outerContainer:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.lb-loader {
+  position: absolute;
+  top: 43%;
+  left: 0;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  line-height: 0; }
+
+.lb-cancel {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto; }
+
+.lb-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10; }
+
+.lb-container > .nav {
+  left: 0; }
+
+.lb-nav a {
+  outline: none;
+  background-image: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="); }
+
+.lb-prev,
+.lb-next {
+  height: 100%;
+  cursor: pointer;
+  display: block; }
+
+.lb-nav a.lb-prev {
+  width: 34%;
+  left: 0;
+  float: left;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  transition: opacity 0.6s; }
+
+.lb-nav a.lb-prev:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1; }
+
+.lb-nav a.lb-next {
+  width: 64%;
+  right: 0;
+  float: right;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  transition: opacity 0.6s; }
+
+.lb-nav a.lb-next:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1; }
+
+.lb-dataContainer {
+  margin: 0 auto;
+  padding-top: 5px;
+  *zoom: 1;
+  width: 100%;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px; }
+
+.lb-dataContainer:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.lb-data {
+  padding: 0 4px;
+  color: #ccc; }
+
+.lb-data .lb-details {
+  width: 85%;
+  float: left;
+  text-align: left;
+  line-height: 1.1em; }
+
+.lb-data .lb-caption {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1em; }
+
+.lb-data .lb-caption a {
+  color: #4ae; }
+
+.lb-data .lb-number {
+  display: block;
+  clear: left;
+  padding-bottom: 1em;
+  font-size: 12px;
+  color: #999999; }
+
+.lb-data .lb-close {
+  display: block;
+  float: right;
+  width: 30px;
+  height: 30px;
+  text-align: right;
+  outline: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  transition: opacity 0.2s; }
+
+.lb-data .lb-close:hover {
+  cursor: pointer;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1; }
+
+.supplyListDetail-container {
+  font-family: "Microsoft YaHei"; }
+  .supplyListDetail-container img {
+    max-width: 100%;
+    vertical-align: top; }
+  .supplyListDetail-container ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .supplyListDetail-container a {
+    text-decoration: none; }
+  .supplyListDetail-container .order-status {
+    border: 1px solid #b3b3b3; }
+    .supplyListDetail-container .order-status .order-top {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding: 0 20px;
+      border-top: 4px solid #808080;
+      background: #f2f2f2; }
+      .supplyListDetail-container .order-status .order-top h2, .supplyListDetail-container .order-status .order-top h3 {
+        line-height: 4px;
+        font-weight: bold; }
+      .supplyListDetail-container .order-status .order-top h2 {
+        font-size: 16px;
+        color: #d60916; }
+      .supplyListDetail-container .order-status .order-top h3 {
+        font-size: 14px;
+        color: #808080; }
+    .supplyListDetail-container .order-status .order-inform {
+      padding: 20px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .supplyListDetail-container .order-status .order-inform li {
+        width: 32%; }
+        .supplyListDetail-container .order-status .order-inform li img {
+          float: left;
+          width: 90px;
+          height: 90px;
+          margin-right: 20px; }
+        .supplyListDetail-container .order-status .order-inform li .info-txt h3 {
+          font-size: 14px;
+          margin-bottom: 20px;
+          margin-top: 2px;
+          color: #333; }
+        .supplyListDetail-container .order-status .order-inform li .info-txt p {
+          font-size: 12px;
+          color: #808080;
+          margin-bottom: 6px; }
+      .supplyListDetail-container .order-status .order-inform .order-txt {
+        padding-left: 20px; }
+        .supplyListDetail-container .order-status .order-inform .order-txt p {
+          line-height: 20px; }
+          .supplyListDetail-container .order-status .order-inform .order-txt p span {
+            font-weight: bold; }
+          .supplyListDetail-container .order-status .order-inform .order-txt p .order-mg {
+            margin-right: 15px; }
+        .supplyListDetail-container .order-status .order-inform .order-txt .address {
+          height: 36px;
+          overflow: hidden; }
+    .supplyListDetail-container .order-status .info-text {
+      margin: 0 20px 10px;
+      padding: 20px 0;
+      border-top: 1px solid #ededed; }
+  .supplyListDetail-container .car-inform {
+    margin-top: 40px; }
+    .supplyListDetail-container .car-inform .car-wrap {
+      width: 480px;
+      height: 530px;
+      border: 1px solid #b3b3b3;
+      border-top: 4px solid #808080; }
+      .supplyListDetail-container .car-inform .car-wrap .img-box {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        .supplyListDetail-container .car-inform .car-wrap .img-box .item {
+          -webkit-box-flex: 0;
+              -ms-flex: 0 0 29.33%;
+                  flex: 0 0 29.33%;
+          width: 128px;
+          height: 128px;
+          margin: 2%;
+          position: relative;
+          overflow: hidden; }
+          .supplyListDetail-container .car-inform .car-wrap .img-box .item img {
+            cursor: pointer;
+            width: 100%;
+            height: 100%; }
+          .supplyListDetail-container .car-inform .car-wrap .img-box .item .item-hover {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
+            -webkit-transform: translate(0, -100%);
+                    transform: translate(0, -100%); }
+            .supplyListDetail-container .car-inform .car-wrap .img-box .item .item-hover p {
+              position: absolute;
+              top: 40%;
+              left: 0;
+              right: 0;
+              margin: 0;
+              color: #fff; }
+    .supplyListDetail-container .car-inform .car-txt {
+      float: left;
+      padding: 20px; }
+      .supplyListDetail-container .car-inform .car-txt .car-txt-fir {
+        border-bottom: 1px solid #b3b3b3;
+        padding-bottom: 20px; }
+        .supplyListDetail-container .car-inform .car-txt .car-txt-fir p strong {
+          margin-right: 10px; }
+        .supplyListDetail-container .car-inform .car-txt .car-txt-fir p .car-str {
+          margin-right: 40px; }
+        .supplyListDetail-container .car-inform .car-txt .car-txt-fir p .car-log {
+          width: 25px;
+          height: 25px;
+          margin-right: 10px;
+          vertical-align: baseline; }
+        .supplyListDetail-container .car-inform .car-txt .car-txt-fir .car-txt-time {
+          margin-bottom: 0; }
+      .supplyListDetail-container .car-inform .car-txt .car-txt-sec {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 20px; }
+        .supplyListDetail-container .car-inform .car-txt .car-txt-sec strong {
+          display: block;
+          font-size: 14px;
+          color: #d60916;
+          margin: 20px 0 10px; }
+        .supplyListDetail-container .car-inform .car-txt .car-txt-sec p {
+          background: #f7f7f7;
+          padding: 6px;
+          font-size: 14px; }
+      .supplyListDetail-container .car-inform .car-txt .car-txt-thr strong {
+        display: block;
+        font-size: 14px;
+        color: #d60916;
+        margin: 20px 0 10px; }
+      .supplyListDetail-container .car-inform .car-txt .car-txt-thr .input-text {
+        padding: 10px 10px 0;
+        background: #f7f7f7; }
+        .supplyListDetail-container .car-inform .car-txt .car-txt-thr .input-text select {
+          display: block;
+          border: 1px solid #b3b3b3;
+          width: 180px;
+          height: 30px;
+          padding: 4px;
+          margin-bottom: 10px; }
+        .supplyListDetail-container .car-inform .car-txt .car-txt-thr .input-text textarea {
+          display: block;
+          height: 84px;
+          width: 100%;
+          padding: 10px; }
+        .supplyListDetail-container .car-inform .car-txt .car-txt-thr .input-text p {
+          font-size: 12px;
+          line-height: 14px; }
+          .supplyListDetail-container .car-inform .car-txt .car-txt-thr .input-text p .textCount {
+            margin: 0; }
+          .supplyListDetail-container .car-inform .car-txt .car-txt-thr .input-text p .input-last {
+            color: #d60916;
+            display: inline-block; }
+    .supplyListDetail-container .car-inform .car-pic {
+      float: right;
+      padding: 20px;
+      position: relative; }
+      .supplyListDetail-container .car-inform .car-pic ul li {
+        margin-bottom: 10px; }
+        .supplyListDetail-container .car-inform .car-pic ul li .img-wrap {
+          width: 140px;
+          height: 140px;
+          margin-right: 9px;
+          float: left;
+          position: relative; }
+          .supplyListDetail-container .car-inform .car-pic ul li .img-wrap:last-child {
+            margin-right: 0px; }
+          .supplyListDetail-container .car-inform .car-pic ul li .img-wrap .car-mask-text {
+            font-size: 14px;
+            color: #fff;
+            width: 140px;
+            height: 140px;
+            line-height: 140px;
+            text-align: center;
+            background: #000;
+            opacity: 0.6;
+            position: absolute;
+            left: 0;
+            display: none;
+            top: -140px; }
+          .supplyListDetail-container .car-inform .car-pic ul li .img-wrap:hover .car-mask-text {
+            top: 0;
+            display: block; }
+      .supplyListDetail-container .car-inform .car-pic .car-btn {
+        border: 0;
+        background: #f7f7f7;
+        border-radius: 4px;
+        border: 1px solid #b3b3b3;
+        position: absolute;
+        left: 50%;
+        bottom: 16px;
+        margin-left: -62px;
+        padding: 4px 8px;
+        font-size: 14px;
+        color: #1f66d1;
+        padding-left: 20px;
+        background: url("/images/customization/icon1.png") no-repeat 4px center;
+        background-size: 15px; }
+        .supplyListDetail-container .car-inform .car-pic .car-btn .download {
+          width: 15px;
+          height: 15px;
+          display: inline-block;
+          vertical-align: middle;
+          background: url("/images/supply_list/supplyList_detail-icon-2.png");
+          margin: 4px; }
+  .supplyListDetail-container .footer-box {
+    margin: 20px auto;
+    text-align: center; }
+    .supplyListDetail-container .footer-box > p {
+      text-align: left; }
+    .supplyListDetail-container .footer-box .btn {
+      display: inline-block;
+      width: 120px;
+      margin: 0 10px;
+      border-radius: 4px;
+      color: #fff;
+      font-weight: 700;
+      font-size: 14px; }
+      .supplyListDetail-container .footer-box .btn.sub_mark, .supplyListDetail-container .footer-box .btn.agree {
+        background-color: #d60916; }
+      .supplyListDetail-container .footer-box .btn.reject {
+        background-color: #ff9100; }
+  .supplyListDetail-container #mask {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(102, 102, 102, 0.9); }
+    .supplyListDetail-container #mask .mask-content {
+      max-width: 800px;
+      background: #fff;
+      margin: 50px auto;
+      padding-top: 40px;
+      position: relative; }
+      .supplyListDetail-container #mask .mask-content #close {
+        position: absolute;
+        right: 30px;
+        top: -12px;
+        font-size: 40px;
+        color: #666; }
+      .supplyListDetail-container #mask .mask-content .connected-carousels {
+        padding: 0 30px;
+        background: #e6e6e6; }
+        .supplyListDetail-container #mask .mask-content .connected-carousels .stage .carousel-stage {
+          padding: 0;
+          border: 0;
+          box-shadow: none;
+          height: 610px; }
+          .supplyListDetail-container #mask .mask-content .connected-carousels .stage .carousel-stage li {
+            width: 740px;
+            height: 610px; }
+            .supplyListDetail-container #mask .mask-content .connected-carousels .stage .carousel-stage li img {
+              width: 740px;
+              height: 610px; }
+        .supplyListDetail-container #mask .mask-content .connected-carousels .stage .prev-stage, .supplyListDetail-container #mask .mask-content .connected-carousels .stage .next-stage {
+          height: 610px; }
+          .supplyListDetail-container #mask .mask-content .connected-carousels .stage .prev-stage span, .supplyListDetail-container #mask .mask-content .connected-carousels .stage .next-stage span {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 60px;
+            line-height: 38px; }
+        .supplyListDetail-container #mask .mask-content .connected-carousels .navigation {
+          width: 520px;
+          margin: 10px auto;
+          padding-bottom: 4px; }
+          .supplyListDetail-container #mask .mask-content .connected-carousels .navigation .prev-navigation, .supplyListDetail-container #mask .mask-content .connected-carousels .navigation .next-navigation {
+            font-size: 90px;
+            background: #e6e6e6;
+            text-shadow: none;
+            box-shadow: none;
+            color: #333;
+            top: 18px; }
+          .supplyListDetail-container #mask .mask-content .connected-carousels .navigation .prev-navigation {
+            left: -45px; }
+          .supplyListDetail-container #mask .mask-content .connected-carousels .navigation .next-navigation {
+            right: -20px; }
+          .supplyListDetail-container #mask .mask-content .connected-carousels .navigation .carousel-navigation {
+            background: #e6e6e6; }
+            .supplyListDetail-container #mask .mask-content .connected-carousels .navigation .carousel-navigation ul li {
+              width: 74px;
+              height: 74px;
+              border: 2px #b3b3b3;
+              margin-right: 13px; }
+              .supplyListDetail-container #mask .mask-content .connected-carousels .navigation .carousel-navigation ul li:hover {
+                border: 2px solid #b3b3b3; }
+            .supplyListDetail-container #mask .mask-content .connected-carousels .navigation .carousel-navigation ul .active {
+              border: 2px solid #d60916; }
+      .supplyListDetail-container #mask .mask-content .mask-bottom {
+        padding: 20px 0;
+        margin-top: -10px;
+        box-shadow: 0 0 6px #666; }
+        .supplyListDetail-container #mask .mask-content .mask-bottom .icon-bottom {
+          width: 300px;
+          margin: 0 auto; }
+          .supplyListDetail-container #mask .mask-content .mask-bottom .icon-bottom i {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            margin-right: 30px; }
+          .supplyListDetail-container #mask .mask-content .mask-bottom .icon-bottom #icon-look {
+            background: url("/images/supply_list/icon6.png"); }
+            .supplyListDetail-container #mask .mask-content .mask-bottom .icon-bottom #icon-look:hover {
+              background: url("/images/supply_list/icon6_hover.png"); }
+          .supplyListDetail-container #mask .mask-content .mask-bottom .icon-bottom #icon-large {
+            background: url("/images/supply_list/icon7.png"); }
+            .supplyListDetail-container #mask .mask-content .mask-bottom .icon-bottom #icon-large:hover {
+              background: url("/images/supply_list/icon7_hover.png"); }
+          .supplyListDetail-container #mask .mask-content .mask-bottom .icon-bottom #icon-small {
+            background: url("/images/supply_list/icon8.png") no-repeat; }
+            .supplyListDetail-container #mask .mask-content .mask-bottom .icon-bottom #icon-small:hover {
+              background: url("/images/supply_list/icon8_hover.png") no-repeat; }
+          .supplyListDetail-container #mask .mask-content .mask-bottom .icon-bottom #icon-screen {
+            background: url("/images/supply_list/icon9.png") no-repeat; }
+            .supplyListDetail-container #mask .mask-content .mask-bottom .icon-bottom #icon-screen:hover {
+              background: url("/images/supply_list/icon9_hover.png") no-repeat; }
+          .supplyListDetail-container #mask .mask-content .mask-bottom .icon-bottom #icon-keep {
+            background: url("/images/supply_list/icon10.png") no-repeat;
+            margin-right: 0; }
+            .supplyListDetail-container #mask .mask-content .mask-bottom .icon-bottom #icon-keep:hover {
+              background: url("/images/supply_list/icon10_hover.png") no-repeat; }
+  .supplyListDetail-container .prom_txt {
+    font-size: 14px;
+    color: #d60916;
+    margin-top: 14px; }
+  .supplyListDetail-container .action {
+    margin-bottom: 200px;
+    position: relative; }
+    .supplyListDetail-container .action .handle {
+      display: none; }
+      .supplyListDetail-container .action .handle .reject, .supplyListDetail-container .action .handle .sub_mark_two {
+        border-radius: 4px;
+        right: 50%;
+        margin-right: 10px;
+        top: 50px;
+        background: linear-gradient(90deg, #ff9100 0%, #ffb24c 100%); }
+      .supplyListDetail-container .action .handle .agree, .supplyListDetail-container .action .handle .sub_goods {
+        border-radius: 4px;
+        left: 50%;
+        top: 50px;
+        margin-left: 10px;
+        background: linear-gradient(90deg, #cf4d44 0%, #eb584d 100%); }
+      .supplyListDetail-container .action .handle .sub_mark_one {
+        left: 50%;
+        top: 50px;
+        margin-left: -60px;
+        background: linear-gradient(90deg, #cf4d44 0%, #eb584d 100%); }
+    .supplyListDetail-container .action button {
+      display: inline-block;
+      width: 120px;
+      height: 32px;
+      line-height: 4px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 16px;
+      border-radius: 4px;
+      position: absolute;
+      z-index: 94;
+      border: 0; }
+  .supplyListDetail-container .goods-mask {
+    display: none;
+    position: fixed;
+    z-index: 102;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(102, 102, 102, 0.9); }
+    .supplyListDetail-container .goods-mask .goods-msg {
+      background: #fff;
+      width: 430px;
+      height: 270px;
+      border: 6px solid #b3b3b3;
+      margin: 280px auto; }
+      .supplyListDetail-container .goods-mask .goods-msg .top-msg {
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 0 15px;
+        border-bottom: 1px solid #b3b3b3; }
+        .supplyListDetail-container .goods-mask .goods-msg .top-msg p {
+          float: left; }
+        .supplyListDetail-container .goods-mask .goods-msg .top-msg span {
+          float: right;
+          color: #b3b3b3;
+          font-size: 30px;
+          margin-top: -4px; }
+      .supplyListDetail-container .goods-mask .goods-msg form {
+        padding-top: 30px; }
+        .supplyListDetail-container .goods-mask .goods-msg form .form-content {
+          width: 280px;
+          margin: 0 auto;
+          margin-bottom: 14px; }
+          .supplyListDetail-container .goods-mask .goods-msg form .form-content select, .supplyListDetail-container .goods-mask .goods-msg form .form-content input {
+            width: 200px;
+            height: 30px;
+            padding-left: 10px;
+            border-radius: 4px;
+            border: 1px solid #b3b3b3; }
+          .supplyListDetail-container .goods-mask .goods-msg form .form-content .msg {
+            margin-top: 6px;
+            color: #d60916;
+            padding-left: 74px; }
+        .supplyListDetail-container .goods-mask .goods-msg form .btn {
+          width: 100%;
+          margin-top: 20px;
+          position: relative; }
+          .supplyListDetail-container .goods-mask .goods-msg form .btn button {
+            width: 60px;
+            height: 30px;
+            border-radius: 4px;
+            border: 2px solid #b3b3b3;
+            background: #fff;
+            position: absolute;
+            top: 0; }
+            .supplyListDetail-container .goods-mask .goods-msg form .btn button:hover {
+              background: #b3b3b3; }
+          .supplyListDetail-container .goods-mask .goods-msg form .btn .ensure {
+            left: 50%;
+            margin-left: 15px; }
+          .supplyListDetail-container .goods-mask .goods-msg form .btn .cancel {
+            right: 50%;
+            margin-right: 5px; }

@@ -1,0 +1,116 @@
+$base: 1 / 750 * 100vw;
+.activity-315-4 {
+    background-color: #040d29;
+    img {
+        max-width: 100%;
+        vertical-align: top;
+    }
+    .nav-tabs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 10 * $base 30 * $base;
+        .tab {
+            flex: 1;
+            min-width: 330 * $base;
+        }
+    }
+    .sec-title {
+        text-align: center;
+        margin: 20 * $base 40 * $base;
+    }
+    .items-box {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10 * $base;
+        .item {
+            min-width: 35%;
+            flex: 1;
+            margin: 10 * $base;
+            background: url('/images/activity_315/section_4/item_bg.png') no-repeat center top/cover;
+            text-align: center;
+            &.single {
+                flex: 0 0 100%;
+                background: url('/images/activity_315/section_4/single.png') no-repeat center top/cover;
+                a {
+                    display: flex;
+                }
+                .img-box {
+                    margin: 10 * $base 20 * $base;
+                }
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 150 * $base;
+                    left: 180 * $base;
+                    width: 280 * $base;
+                    height: 17 * $base;
+                    transform: rotatez(90deg);
+                    background: url('/images/activity_315/section_4/335_line.png') no-repeat center;
+                }
+                .item-title {
+                    padding-top: 20 * $base;
+                    &::before {
+                        display: none;
+                    }
+                }
+                .item-content {
+                    flex: 1;
+                    margin-left: 80 * $base;
+                }
+                .sub-title {
+                    font-size: 18 * $base;
+                }
+            }
+            a {
+                color: #fff;
+            }
+            img {
+                width: 230 * $base;
+                margin: 26 * $base 0 0 0;
+            }
+            p,
+            .buy {
+                margin: 0;
+            }
+            .item-title {
+                margin-top: 30 * $base;
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: -15 * $base;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    width: 280 * $base;
+                    height: 17 * $base;
+                    background: url('/images/activity_315/section_4/335_line.png') no-repeat center;
+                }
+            }
+            .price {
+                font-size: 24 * $base;
+                span {
+                    font-size: 28 * $base;
+                    color: #ed880c;
+                    line-height: 2;
+                }
+            }
+            .buy {
+                padding: 12 * $base 0 30 * $base;
+            }
+        }
+    }
+    .footer {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        a {
+            flex: 1;
+            img {
+                width: 220 * $base;
+            }
+        }
+    }
+}

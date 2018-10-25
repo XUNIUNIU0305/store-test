@@ -1,0 +1,243 @@
+.water-activity-container {
+    position: relative;
+    background-color: #43068e;
+    &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 1920px;
+        left: 50%;
+        margin-left: -960px;
+        background: #44068f;
+        background-image: linear-gradient(to right, #43068e, #bb02ff, #43068e);
+    }
+    color: #fff;
+    min-height: 1600px;
+    overflow: hidden;
+    >div{
+        position: relative;
+    }
+    // bubbles
+    .bubbles-container{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: auto;
+        .bubble {
+            position: absolute;
+            width: 420px;
+            height: 420px;
+            background: url('/images/water/bubble.png') center no-repeat;
+        }
+        .x1{
+            transform: scale(.3) rotate(30deg);
+            left: -5%;
+            animation: bubbleMove 11s linear infinite, sideWays 5s ease-in-out infinite alternate;
+        }
+        .x2{
+            transform: scale(.5) rotate(45deg);
+            left: 4%;
+            animation: bubbleMove 7s linear infinite, sideWays 3s ease-in-out infinite alternate;
+        }
+        .x3{
+            transform: scale(.4) rotate(60deg);
+            left: 10%;
+            animation: bubbleMove 13s linear infinite, sideWays 3s ease-in-out infinite alternate;
+        }
+        .x4{
+            transform: scale(.2) rotate(75deg);
+            left: 15%;
+            animation: bubbleMove 8s linear infinite, sideWays 5s ease-in-out infinite alternate;
+        }
+        .x5{
+            transform: scale(.65) rotate(90deg);
+            left: 20%;
+            animation: bubbleMove 15s linear infinite, sideWays 7s ease-in-out infinite alternate;
+        }
+        .x6{
+            transform: scale(.3) rotate(30deg);
+            right: -5%;
+            animation: bubbleMove 17s linear infinite, sideWays 5s ease-in-out infinite alternate;
+        }
+        .x7{
+            transform: scale(.5) rotate(45deg);
+            right: 4%;
+            animation: bubbleMove 13s linear infinite, sideWays 3s ease-in-out infinite alternate;
+        }
+        .x8{
+            transform: scale(.4) rotate(60deg);
+            right: 10%;
+            animation: bubbleMove 9s linear infinite, sideWays 3s ease-in-out infinite alternate;
+        }
+        .x9{
+            transform: scale(.2) rotate(75deg);
+            right: 15%;
+            animation: bubbleMove 10s linear infinite, sideWays 5s ease-in-out infinite alternate;
+        }
+        .x10{
+            transform: scale(.65) rotate(90deg);
+            right: 20%;
+            animation: bubbleMove 21s linear infinite, sideWays 7s ease-in-out infinite alternate;
+        }
+        .x11{
+            transform: scale(.65) rotate(90deg) translateY(-50%);
+            left: 50%;
+            animation: bubbleMove 11s linear infinite, sideWays 7s ease-in-out infinite alternate;
+        }
+        @keyframes bubbleMove {
+            0% { 
+                top: 100%;
+            }
+            100% { 
+                top: -100%;
+            }
+        }
+
+        @keyframes sideWays {
+            0% {
+                opacity: .7;
+                margin-left: 0;
+            }
+            100% {
+                opacity: 1;
+                margin-left: 400px;
+            }
+        }
+    }
+    // top section banner
+    .section-banner{
+        background: url('/images/water/activity_banner.jpg') top center no-repeat;
+        min-height: 735px;
+        z-index: auto;
+    }
+    .product-box {
+        font-size: 22px;
+        position: relative;
+        z-index: 1;
+        overflow: visible;
+        .media-body {
+            position: relative;
+            overflow: visible;
+            .water-strategy {
+                position: absolute;
+                cursor: pointer;
+                bottom: -36px;
+            }
+        }
+        &:before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -120px;
+            width: 208px;
+            height: 208px;
+            background: url('/images/water/bajiaoxing.png') center no-repeat;
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: -80px;
+            width: 187px;
+            height: 136px;
+            background: url('/images/water/ufo.png') center no-repeat;
+        }
+        h4{
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        p{
+            margin: 0;
+        }
+        .hr{
+            width: 350px;
+            height: 2px;
+            background: #a1bce3;
+            margin: 25px 0;
+        }
+        .btn-default{
+            z-index: 99;
+            margin-top: 31px;
+            font-size: 24px;
+            color: #fff;
+            background: $brand-danger;
+            background-image: linear-gradient(to top, #c70516, #f71393);
+            border: 0;
+            padding: 7px 6px;
+            line-height: 1;
+            strong{
+                font-size: 67px;
+                font-weight: 400;
+            }
+            span{
+                display: inline-block;
+                margin-left: 16px;
+                color: #333;
+                width: 118px;
+                height: 50px;
+                backgorund: #fff7cd;
+                background-image: linear-gradient(to right, #f5d67d, #fff7cd,#f5d67d);
+                line-height: 50px;
+                position: relative;
+                vertical-align: top;
+                top: 8px;
+            }
+        }
+    }
+    .light-box{
+        margin: 30px auto 124px;
+        background: url('/images/water/light-box.jpg') center -2px no-repeat;
+        width: 680px;
+        height: 200px;
+        border-radius: 28px;
+    }
+    .intro-box{
+        margin: 50px 0;
+        .img-responsive{
+            margin: 0 auto;
+        }
+        .img-offset{
+            position: relative;
+            left: -100px;
+        }
+        &.has-planet{
+            position: relative;
+            &:before{
+                content: '';
+                position: absolute;
+                left: -20px;
+                bottom: -120px;
+                width: 128px;
+                height: 128px;
+                background: url('/images/water/planet.png') center no-repeat;
+            }
+        }
+    }
+}
+.water-strategy-content {
+    margin: 0 auto;
+    z-index: 22;
+    text-align: center;
+    background-color: RGBA(0, 0, 0, 0.6);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    p {
+        position: fixed;
+        right: 100px;
+        top: 260px;
+        width: 60px;
+        height: 60px;
+        border-radius: 60px;
+        font-size: 30px;
+        text-align: center;
+        line-height: 60px;
+        color: #000;
+        background-color: RGBA(255, 255, 255, 1);
+        opacity: 0.6;
+    }
+}

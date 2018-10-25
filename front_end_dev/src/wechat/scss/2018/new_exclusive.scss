@@ -1,0 +1,152 @@
+$base: 1 / 750 * 100vw;
+.new-exclusive {
+    padding-top: 980 * $base;
+    background: #ffd304 url('/images/new_exclusive/beijing.jpg') no-repeat top center/100%;
+    overflow: hidden;
+    img {
+        max-width: 100%;
+        vertical-align: top;
+    }
+    .tip-c-1 {
+        background-color: #fda702;
+    }
+    .tip-c-2 {
+        background-color: #f712bf;
+    }
+    .tip-c-3 {
+        background-color: #ee0c06;
+    }
+    .tip-c-4 {
+        background-color: #5b02fc;
+    }
+    .exclusive-coupon {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 40 * $base 30 * $base;
+        a {
+            flex: 0 0 340 * $base;
+            padding: 4 * $base 10 * $base;
+            box-sizing: border-box;
+            &:first-child {
+                flex: 682 * $base;
+            }
+        }
+    }
+    .nav-box {
+        .nav-title {
+            font-size: 44 * $base;
+            color: #fff;
+            p {
+                margin: 0 auto;
+                width: 452 * $base;
+                border: 4 * $base solid #000;
+                border-radius: 20 * $base;
+                background-color: #fd5626;
+                text-align: center;
+            }
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            margin: 14 * $base 0;
+            li {
+                flex: 1;
+                font-size: 32 * $base;
+                text-align: center;
+                border: 2 * $base solid #000;
+                background-color: #fd5626;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .items-list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0 59 * $base;
+        .item {
+            flex: 0 0 300 * $base;
+            box-sizing: border-box;
+            border: 4 * $base solid #000;
+            border-radius: 16 * $base;
+            background-color: #fff;
+            margin: 8 * $base;
+            padding: 0 6 * $base;
+            .img {
+                padding: 8 * $base 4 * $base;
+                width: 202 * $base;
+                height: 202 * $base;
+                margin: 0 auto;
+            }
+            .title {
+                font-size: 22 * $base;
+                color: #fd5626;
+                height: 3em;
+                overflow: hidden;
+            }
+            .tip {
+                span {
+                    font-size: 14 * $base;
+                    color: #fff;
+                    padding: 0 6 * $base;
+                    border-radius: 6 * $base;
+                }
+            }
+            .price {
+                text-align: right;
+                .old-price {
+                    text-decoration: line-through;
+                    color: #999;
+                }
+                .new-price {
+                    font-size: 16 * $base;
+                    color: #ff0000;
+                    span {
+                        font-size: 48 * $base;
+                    }
+                }
+            }
+        }
+    }
+    .back-top {
+        width: 270 * $base;
+        font-size: 32 * $base;
+        color: #ffd302;
+        text-align: center;
+        border: 4 * $base solid #000;
+        border-radius: 16 * $base;
+        background-color: #fd5626;
+        padding: 8 * $base;
+        margin: 30 * $base auto;
+    }
+}
+
+.nav-box-float {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: -52 * $base;
+    z-index: 9999;
+    transform: translateZ(0);
+    transition: top 0.3s;
+    &.in {
+        top: 0;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        li {
+            flex: 1;
+            font-size: 32 * $base;
+            text-align: center;
+            border: 2 * $base solid #000;
+            background-color: #fd5626;
+            a {
+                color: #fff;
+            }
+        }
+    }
+}

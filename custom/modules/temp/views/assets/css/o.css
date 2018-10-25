@@ -1,0 +1,149 @@
+.apex-maintenance-1801315 {
+  min-width: 1190px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto; }
+  .apex-maintenance-1801315 .float-nav {
+    position: fixed;
+    right: 50px;
+    top: 50%;
+    z-index: 9999; }
+    .apex-maintenance-1801315 .float-nav .nav {
+      background: url("/images/maintenance_180315/right_nav_bg.png") no-repeat center; }
+      .apex-maintenance-1801315 .float-nav .nav li a {
+        height: 68px;
+        width: 203px; }
+        .apex-maintenance-1801315 .float-nav .nav li a:hover, .apex-maintenance-1801315 .float-nav .nav li a:focus {
+          background-color: rgba(255, 255, 255, 0); }
+      .apex-maintenance-1801315 .float-nav .nav li:nth-child(1) {
+        background: url("/images/maintenance_180315/text1.png") no-repeat center; }
+      .apex-maintenance-1801315 .float-nav .nav li:nth-child(2) {
+        background: url("/images/maintenance_180315/text2.png") no-repeat center; }
+      .apex-maintenance-1801315 .float-nav .nav li:nth-child(3) {
+        background: url("/images/maintenance_180315/text3.png") no-repeat center; }
+      .apex-maintenance-1801315 .float-nav .nav li:nth-child(4) {
+        background: url("/images/maintenance_180315/text4.png") no-repeat center; }
+      .apex-maintenance-1801315 .float-nav .nav li:nth-child(5) {
+        background: url("/images/maintenance_180315/text5.png") no-repeat center; }
+      .apex-maintenance-1801315 .float-nav .nav li:nth-child(6) {
+        background: url("/images/maintenance_180315/text6.png") no-repeat center; }
+  .apex-maintenance-1801315 .banner {
+    height: 990px;
+    background: url("/images/maintenance_180315/banner.jpg") center/cover no-repeat; }
+  .apex-maintenance-1801315 .row-container {
+    min-width: 1190px;
+    margin: 0 auto;
+    background: url("/images/maintenance_180315/bg.jpg"); }
+    .apex-maintenance-1801315 .row-container a {
+      text-decoration: none; }
+    .apex-maintenance-1801315 .row-container .row-detail {
+      width: 1190px;
+      margin: 0 auto;
+      padding-top: 60px; }
+      .apex-maintenance-1801315 .row-container .row-detail .maintenance-control {
+        width: 100%;
+        text-align: center; }
+        .apex-maintenance-1801315 .row-container .row-detail .maintenance-control .title {
+          height: 72px;
+          width: 895px;
+          margin: 0 auto;
+          margin-bottom: 44px;
+          background: url("/images/maintenance_180315/title.png") no-repeat; }
+        .apex-maintenance-1801315 .row-container .row-detail .maintenance-control .two-goods {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          margin-bottom: 30px; }
+          .apex-maintenance-1801315 .row-container .row-detail .maintenance-control .two-goods .goods-box {
+            background: url("/images/maintenance_180315/585_bg.png");
+            margin-bottom: 30px; }
+            .apex-maintenance-1801315 .row-container .row-detail .maintenance-control .two-goods .goods-box a {
+              display: block;
+              height: 598px;
+              width: 585px;
+              background: url("/images/maintenance_180315/right_icon.png") no-repeat top right, url("/images/maintenance_180315/left_icon.png") no-repeat bottom left; }
+              .apex-maintenance-1801315 .row-container .row-detail .maintenance-control .two-goods .goods-box a img {
+                margin-top: 20px; }
+              .apex-maintenance-1801315 .row-container .row-detail .maintenance-control .two-goods .goods-box a span:nth-child(2) {
+                display: block;
+                height: 17px;
+                width: 518px;
+                margin: 0 auto;
+                margin-bottom: 20px;
+                background: url("/images/maintenance_180315/504_line.png") no-repeat center; }
+              .apex-maintenance-1801315 .row-container .row-detail .maintenance-control .two-goods .goods-box a p {
+                color: #fff;
+                font-size: 36px; }
+                .apex-maintenance-1801315 .row-container .row-detail .maintenance-control .two-goods .goods-box a p:nth-child(4) {
+                  font-size: 20px;
+                  margin-bottom: 18px; }
+              .apex-maintenance-1801315 .row-container .row-detail .maintenance-control .two-goods .goods-box a .price {
+                font-size: 36px;
+                color: #ed880c; }
+              .apex-maintenance-1801315 .row-container .row-detail .maintenance-control .two-goods .goods-box a .buy-now {
+                height: 50px;
+                width: 220px;
+                background: url("/images/maintenance_180315/buy.png") no-repeat center; }
+        .apex-maintenance-1801315 .row-container .row-detail .maintenance-control .three-goods {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          margin-bottom: 30px; }
+          .apex-maintenance-1801315 .row-container .row-detail .maintenance-control .three-goods .goods-box {
+            background: url("/images/maintenance_180315/380_bg.png") no-repeat center;
+            margin-right: 25px;
+            margin-bottom: 30px; }
+            .apex-maintenance-1801315 .row-container .row-detail .maintenance-control .three-goods .goods-box:nth-child(3n) {
+              margin-right: 0; }
+            .apex-maintenance-1801315 .row-container .row-detail .maintenance-control .three-goods .goods-box a {
+              display: block;
+              height: 550px;
+              width: 380px;
+              background: url("/images/maintenance_180315/right_icon.png") no-repeat top right, url("/images/maintenance_180315/left_icon.png") no-repeat bottom left; }
+              .apex-maintenance-1801315 .row-container .row-detail .maintenance-control .three-goods .goods-box a img {
+                margin-top: 20px; }
+              .apex-maintenance-1801315 .row-container .row-detail .maintenance-control .three-goods .goods-box a span:nth-child(2) {
+                display: block;
+                height: 17px;
+                width: 314px;
+                margin: 0 auto;
+                margin-bottom: 20px;
+                background: url("/images/maintenance_180315/396_ pro_line.png") no-repeat center; }
+              .apex-maintenance-1801315 .row-container .row-detail .maintenance-control .three-goods .goods-box a p {
+                color: #fff;
+                font-size: 20px; }
+                .apex-maintenance-1801315 .row-container .row-detail .maintenance-control .three-goods .goods-box a p:nth-child(4) {
+                  font-size: 20px;
+                  margin-bottom: 18px; }
+              .apex-maintenance-1801315 .row-container .row-detail .maintenance-control .three-goods .goods-box a .price {
+                font-size: 36px;
+                color: #ed880c; }
+              .apex-maintenance-1801315 .row-container .row-detail .maintenance-control .three-goods .goods-box a .buy-now {
+                height: 50px;
+                width: 220px;
+                background: url("/images/maintenance_180315/buy.png") no-repeat center; }
+      .apex-maintenance-1801315 .row-container .row-detail .maintenance-control:nth-child(2) .title {
+        background: url("/images/maintenance_180315/title2.png") no-repeat; }
+      .apex-maintenance-1801315 .row-container .row-detail .maintenance-control:nth-child(2) .two-goods .goods-box a .buy-now {
+        background: url("/images/maintenance_180315/buy2.png") no-repeat center; }
+      .apex-maintenance-1801315 .row-container .row-detail .maintenance-control:nth-child(2) .three-goods .goods-box a .buy-now {
+        background: url("/images/maintenance_180315/buy2.png") no-repeat center; }
+      .apex-maintenance-1801315 .row-container .row-detail .maintenance-control:nth-child(3) .title {
+        background: url("/images/maintenance_180315/title3.png") no-repeat; }
+      .apex-maintenance-1801315 .row-container .row-detail .maintenance-control:nth-child(3) .two-goods .goods-box a .buy-now {
+        background: url("/images/maintenance_180315/buy3.png") no-repeat center; }
+      .apex-maintenance-1801315 .row-container .row-detail .maintenance-control:nth-child(3) .three-goods .goods-box a .buy-now {
+        background: url("/images/maintenance_180315/buy3.png") no-repeat center; }
+      .apex-maintenance-1801315 .row-container .row-detail .maintenance-control:nth-child(4) .title {
+        background: url("/images/maintenance_180315/title4.png") no-repeat; }
+      .apex-maintenance-1801315 .row-container .row-detail .maintenance-control:nth-child(4) .two-goods .goods-box a .buy-now {
+        background: url("/images/maintenance_180315/buy3.png") no-repeat center; }
+      .apex-maintenance-1801315 .row-container .row-detail .maintenance-control:nth-child(4) .three-goods .goods-box a .buy-now {
+        background: url("/images/maintenance_180315/buy3.png") no-repeat center; }

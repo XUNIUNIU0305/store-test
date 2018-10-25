@@ -1,0 +1,250 @@
+.brand-week-20170905{
+    background: #1260d4;
+    .float-nav{
+        background: #1260d4;
+        z-index: 99;
+        position: fixed;
+        top: 20%;
+        left: 5%;
+        width: 118px;
+        border: 4px solid #000;
+        color: #fff;
+        text-align: center;
+        line-height: 40px;
+        a{
+            display: block;
+        }
+        .header{
+            height: 110px;
+            background: url('/images/brand_week_20170905/nav-logo.png') center no-repeat;
+        }
+        .list-unstyled{
+            border-top: 1px solid #000;
+            .title{
+                font-size: 15px;
+                font-weight: 600;
+            }
+            &.blue{
+                li{
+                    background: #2e78e6;
+                    &.title{
+                        background: #1260d4;
+                    }
+                    &:not(.title):hover{
+                        background: #4c90f5;
+                    }
+                }
+            }
+            &.green{
+                li{
+                    background: #3db770;
+                    &.title{background: #3aab69;}
+                    &:not(.title):hover{
+                        background: #49d282;
+                    }
+                }
+            }
+        }
+        li{
+            border-bottom: 1px solid #000;
+        }
+        .top{
+            border-top: 1px solid #000;
+            background: url('/images/brand_week_20170905/nav-top.png') 12px center no-repeat;
+        }
+    }
+    .banner{
+        background: url('/images/brand_week_20170905/banner.jpg') center no-repeat;
+        height: 480px;
+        margin-bottom: 60px;
+    }
+    .bg-blue{
+        background-color: #1260d4;
+    }
+    .bg-green{
+        background-color: #3aab69;
+        padding-top: 60px;
+    }
+    .container > .row{
+        margin-bottom: 50px;
+    }
+
+    #sec_daza,
+    #sec_goodview {
+        .title{
+            background: url('/images/brand_week_20170905/T_1.png') center no-repeat;
+            height: 137px;
+            margin-bottom: 12px;
+            img{
+                margin: 20px auto 0;
+            }
+        }
+        .col-xs-6{
+            padding: 0 5px;
+        }
+    }
+    a{
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .prod-item{
+        height: 336px;
+        background: #ffffff;
+        position: relative;
+        &.slim{
+            height: 288px;
+            margin-bottom: 10px;
+        }
+        &.large{
+            height: 586px;
+            .high-lighted{
+                font-size: 16px;
+                vertical-align: middle;
+            }
+            p{
+                padding: 0 32px;
+                font-size: 24px;
+            }
+            .text-muted{
+                display: block;
+                font-size: 20px;
+                margin-top: 28px;
+            }
+        }
+        .logo{
+            position: absolute;
+            top: 11px;
+            left: 11px;
+        }
+        p{
+            margin: 14px 0;
+            padding: 0 14px;
+        }
+        .high-lighted{
+            display: inline-block;
+            line-height: 1.1;
+            background: #f00;
+            border-radius: 2px;
+            padding: 0 2px;
+            color: #fff;
+        }
+    }
+    
+    #sec_caska {
+        .title{
+            background: url('/images/brand_week_20170905/T_2.png') center no-repeat;
+            height: 137px;
+            margin-bottom: 12px;
+            img{
+                margin: 20px auto 0;
+            }
+        }
+        [class*='col-xs'] {
+            padding: 0 5px;
+        }
+    }
+    #sec_qiangli,
+    #sec_yanan,
+    #sec_mubo,
+    #sec_gigi
+    {
+        .title{
+            background: url('/images/brand_week_20170905/T_3.png') center no-repeat;
+            height: 137px;
+            margin-bottom: 12px;
+            img{
+                margin: 20px auto 0;
+            }
+        }
+    }
+    #sec_qiangli{
+        [class*='col-xs'] {
+            padding: 0 5px;
+        }
+    }
+    #sec_yanan{
+        .prod-item{
+            height: 276px;
+            .pull-left{
+                margin: 22px 0 0 70px;
+            }
+            .high-lighted{
+                font-size: 16px;
+                vertical-align: middle;
+            }
+            p{
+                min-width: 475px;
+                font-size: 24px;
+                padding: 28px 0;
+            }
+            .text-muted{
+                margin-top: 60px;
+                display: block;
+                font-size: 20px;
+                line-height: 1.8;
+            }
+        }
+    }
+    #sec_mubo{
+        [class*='col-xs'] {
+            padding: 0 5px;
+        }
+        .prod-item.large{
+            height: 336px;
+            .pull-left{
+                // margin: 22px 0 0 70px;
+                img{
+                    width: 250px;
+                }
+            }
+            .high-lighted{
+                font-size: 16px;
+                vertical-align: middle;
+            }
+            p{
+                width: 312px;
+                font-size: 24px;
+                padding: 28px;
+            }
+            .text-muted{
+                margin-top: 60px;
+                display: block;
+                font-size: 20px;
+                line-height: 1.8;
+            }
+        }
+    }
+    #sec_gigi{
+        [class*='col-xs'] {
+            padding: 0 5px;
+        }
+        .prod-item{
+            margin-bottom: 10px;
+        }
+        .prod-item.large{
+            height: 336px;
+            .pull-left{
+                // margin: 22px 0 0 70px;
+                img{
+                    width: 250px;
+                }
+            }
+            .high-lighted{
+                font-size: 16px;
+                vertical-align: middle;
+            }
+            p{
+                width: 312px;
+                font-size: 24px;
+                padding: 28px;
+            }
+            .text-muted{
+                margin-top: 60px;
+                display: block;
+                font-size: 20px;
+                line-height: 1.8;
+            }
+        }
+    }
+}

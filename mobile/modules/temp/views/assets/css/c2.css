@@ -1,0 +1,75 @@
+.maintenance-18-629 {
+  background: url("/images/18629/section1/629logo.png") no-repeat 11.73333vw top/15.3vw, url("/images/18629/section1/banner.jpg") no-repeat center top/100vw;
+  padding-top: 77.33333vw; }
+  .maintenance-18-629 .product-content {
+    background: url("/images/18629/section1/bg_1.png") no-repeat center top/100vw, url("/images/18629/section1/bg_3.png") no-repeat center bottom/100vw, url("/images/18629/section1/bg_2.png") repeat center top/100vw;
+    padding-top: 9.6vw;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px); }
+  .maintenance-18-629 .nav-box {
+    display: -webkit-flex;
+    display: flex;
+    color: #fff;
+    background-color: #8b1dcf; }
+    .maintenance-18-629 .nav-box > div {
+      -webkit-flex: 1;
+              flex: 1;
+      text-align: center; }
+    .maintenance-18-629 .nav-box span {
+      display: inline-block;
+      font-weight: bold;
+      border-bottom: 1px solid #fff;
+      line-height: 8.26667vw;
+      color: #fff; }
+  .maintenance-18-629 .section-title {
+    text-align: center;
+    margin: 5.06667vw 0; }
+    .maintenance-18-629 .section-title img {
+      width: 46.13333vw; }
+  .maintenance-18-629 .item-list {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .maintenance-18-629 .item-list .item {
+      -webkit-flex: 0 0 45.6vw;
+              flex: 0 0 45.6vw;
+      margin: 2.93333vw 2.13333vw;
+      text-align: center;
+      border-radius: 6px;
+      background-color: #6c00a5;
+      overflow: hidden; }
+    .maintenance-18-629 .item-list .img-box {
+      height: 45.6vw;
+      background-color: #fff;
+      margin-bottom: 1.33333vw; }
+      .maintenance-18-629 .item-list .img-box img {
+        max-width: 100%; }
+    .maintenance-18-629 .item-list .item-title {
+      font-size: 3.73333vw;
+      color: #fff;
+      height: 3em;
+      overflow: hidden;
+      border-bottom: 1px solid #8933b7;
+      margin: 4px 6px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      overflow: hidden; }
+    .maintenance-18-629 .item-list .item-price {
+      color: #fff;
+      margin: 10px 0; }
+      .maintenance-18-629 .item-list .item-price .price-box span {
+        font-size: 4.53333vw; }
+      .maintenance-18-629 .item-list .item-price .btn-box {
+        margin: 6px 0; }
+      .maintenance-18-629 .item-list .item-price .btn {
+        color: #5d4c45;
+        background-color: #f1e1cf;
+        padding: 1.06667vw 6.66667vw;
+        border-radius: 4px; }
+  .maintenance-18-629 .back-top {
+    display: block;
+    text-align: center;
+    margin: 8vw 0; }
+    .maintenance-18-629 .back-top img {
+      width: 46.13333vw; }

@@ -1,0 +1,285 @@
+@@include('head.inc') @@include('banner.inc') @@include('search.inc')
+<!-- @@include('main_nav.inc') -->
+<!-- cart table start -->
+<div class="container-fluid apx-cart-container bg-muted">
+    <div class="container">
+        <div class="row">
+            <h3 class="text-danger apx-cart-title"><strong>订单详情</strong></h3>
+
+            <!--订单状态-->
+            <!--五种状态分别加类名：status-pay status-ship status-receive status-confirm status-cancel-->
+            <div class="apx-order-status text-center status-cancel">
+                <div class="pull-left">
+                    <strong>订单号：1201234561</strong>
+                    <h3></h3>
+                    <a href="#" class="btn"></a>
+                </div>
+                <div class="clearfix">
+                    <div class="text-left text-muted">您的订单已确认收货，感谢您在本商城购物，欢迎您对本次交易及所购商品进行评价。</div>
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <div class="status-icon pay"></div>
+                            <p>待付款</p>
+                            <small>2016-12-26</small>
+                            <small>00 : 30 : 53</small>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="status-icon ship"></div>
+                            <p>待发货</p>
+                            <small>2016-12-26</small>
+                            <small>00 : 30 : 53</small>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="status-icon receive"></div>
+                            <p>待收货</p>
+                            <small>2016-12-26</small>
+                            <small>00 : 30 : 53</small>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="status-icon confirm"></div>
+                            <p>确认收货</p>
+                            <small>2016-12-26</small>
+                            <small>00 : 30 : 53</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--订单时序-->
+            <ul class="apx-order-sequence list-unstyled">
+                <li>
+                    <div class="pull-left"><strong>订单处理时间</strong></div>
+                    <strong>订单处理事项</strong>
+                </li>
+                <li>
+                    <div class="pull-left">2016-05-28 13:09:58</div>
+                    示例示例示例示例示例示例示例示例
+                </li>
+                <li>
+                    <div class="pull-left">2016-05-28 13:09:58</div>
+                    示例示例示例示例示例示例示例示例
+                </li>
+                <li>
+                    <div class="pull-left">2016-05-28 13:09:58</div>
+                    示例示例示例示例示例示例示例示例
+                </li>
+                <li>
+                    <div class="pull-left">2016-05-28 13:09:58</div>
+                    示例示例示例示例示例示例示例示例
+                </li>
+                <li>
+                    <div class="pull-left">2016-05-28 13:09:58</div>
+                    示例示例示例示例示例示例示例示例
+                </li>
+                <li>
+                    <div class="pull-left">2016-05-28 13:09:58</div>
+                    示例示例示例示例示例示例示例示例
+                </li>
+                <li>
+                    <div class="pull-left">2016-05-28 13:09:58</div>
+                    示例示例示例示例示例示例示例示例
+                </li>
+                <li>
+                    <div class="pull-left">2016-05-28 13:09:58</div>
+                    示例示例示例示例示例示例示例示例
+                </li>
+            </ul>
+
+            <!-- 订单轮播 -->
+            <div id="apx-order-carousel" class="carousel slide apx-order-carousel" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#apx-order-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#apx-order-carousel" data-slide-to="1"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item clearfix active">
+                        <div class="col-xs-3">
+                            <strong>收货人信息</strong>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <span class="pull-left">收件人:</span>
+                                    <div>淫笑惠</div>
+                                </li>
+                                <li>
+                                    <span class="pull-left">地址:</span>
+                                    <div>上海市 上海市 整理路580弄33号楼202室</div>
+                                </li>
+                                <li>
+                                    <span class="pull-left">手机号码:</span>
+                                    <div>173*****550</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-3">
+                            <strong>配送信息</strong>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <span class="pull-left">配送方式:</span>
+                                    <div>普通快递</div>
+                                </li>
+                                <li>
+                                    <span class="pull-left">运费:</span>
+                                    <div>¥0.00</div>
+                                </li>
+                                <li>
+                                    <span class="pull-left">送货日期:</span>
+                                    <div>2016-12-26</div>
+                                </li>
+                                <li>
+                                    <span class="pull-left">配送时间:</span>
+                                    <div>19:00-22:00</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-3">
+                            <strong>付款信息</strong>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <span class="pull-left">付款方式:</span>
+                                    <div>在线支付</div>
+                                </li>
+                                <li>
+                                    <span class="pull-left">商品总额:</span>
+                                    <div>¥304.00</div>
+                                </li>
+                                <li>
+                                    <span class="pull-left">应支付金额:</span>
+                                    <div>¥304.00</div>
+                                </li>
+                                <li>
+                                    <span class="pull-left">运费金额:</span>
+                                    <div>¥0.00</div>
+                                </li>
+                                <li>
+                                    <span class="pull-left">优惠券:</span>
+                                    <div>¥0.00</div>
+                                </li>
+                                <li>
+                                    <span class="pull-left">订单优惠:</span>
+                                    <div>¥0.00</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-3">
+                            <strong>发票信息</strong>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <span class="pull-left">发票类型:</span>
+                                    <div>普通发票</div>
+                                </li>
+                                <li>
+                                    <span class="pull-left">发票抬头:</span>
+                                    <div>个人</div>
+                                </li>
+                                <li>
+                                    <span class="pull-left">发票内容:</span>
+                                    <div>明细</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item clearfix">
+                        <div class="col-xs-3">待添加</div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#apx-order-carousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#apx-order-carousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <!--商品信息-->
+            <table class="table apx-cart-bill-table">
+                <!-- 列表头 -->
+                <thead class="thead">
+                    <tr>
+                        <th width="32">
+                        </th>
+                        <th width="128">
+                        </th>
+                        <th>商品信息</th>
+                        <th width="160">商品编码</th>
+                        <th width="140">单价</th>
+                        <th width="100">数量</th>
+                        <th width="140">金额</th>
+                    </tr>
+                </thead>
+                <!-- 内容 -->
+                <tbody>
+                    <!-- 商品 -->
+                    <tr class="apx-cart-product">
+                        <td></td>
+                        <td>
+                            <img src="/images/slider03.jpg" class="img-responsive">
+                        </td>
+                        <td class="clearfix">
+                            <div class="col-xs-6">
+                                <a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a>
+                            </div>
+                            <ul class="col-xs-6 list-unstyled">
+                                <li>颜色：大地皇</li>
+                                <li>尺码：4L</li>
+                            </ul>
+                        </td>
+                        <td>23213223</td>
+                        <td>¥ 329.00</td>
+                        <td>2</td>
+                        <td>
+                            <strong>¥ 329.00</strong>
+                        </td>
+                    </tr>
+                    <!-- 商品 -->
+                    <tr class="apx-cart-product">
+                        <td></td>
+                        <td>
+                            <img src="/images/slider03.jpg" class="img-responsive">
+                        </td>
+                        <td class="clearfix">
+                            <div class="col-xs-6">
+                                <a href="#">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a>
+                            </div>
+                            <ul class="col-xs-6 list-unstyled">
+                                <li>颜色：大地皇</li>
+                                <li>尺码：4L</li>
+                            </ul>
+                        </td>
+                        <td>23213223</td>
+                        <td>¥ 329.00</td>
+                        <td>2</td>
+                        <td>
+                            <strong>¥ 329.00</strong>
+                        </td>
+                    </tr>
+                    <!-- 总结 -->
+                    <tr class="apx-cart-product">
+                        <td></td>
+                        <td colspan="6">
+                            <div class="apx-order-total text-right">
+                                <ul class="list-unstyled">
+                                    <li>共4件商品 金额:
+                                        <div class="pull-right">¥450.00</div>
+                                    </li>
+                                    <li>运费(已免运费):
+                                        <div class="pull-right">¥0.00</div>
+                                    </li>
+                                    <li class="h4">
+                                        订单金额: <strong class="pull-right">¥450.00</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- cart table end -->
+@@include('ensurance.inc') @@include('sitemap.inc') @@include('footer.inc')

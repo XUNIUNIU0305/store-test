@@ -1,0 +1,153 @@
+*{
+	padding:0;
+	margin:0;
+	list-style-type:none;
+	box-sizing:content-box;
+	font-family:'微软雅黑';
+}
+body{
+	background:#000000;
+}
+img{
+	display:block;
+	border:none;
+}
+a,a:hover{
+	text-decoration:none;
+}
+
+.mainCon{
+	width：100%;
+	height:auto;
+	position:relative;
+	overflow:hidden;
+}
+.mainCon .bgImg{
+	width:100%;
+}
+.mainCon #bgImg{
+	top:0;
+	left:0;
+	position:absolute;
+}
+
+.headerCon{
+	width:5rem;
+	height:5rem;
+	top:2rem;
+	left:50%;
+	margin-left:-6.5rem;
+	position:absolute;
+}
+.headerCon img{
+	width:5rem;
+	height:5rem;
+	top:0;
+	left:0;
+	position:absolute;
+}
+.headerCon img:last-child{
+	width:4.5rem;
+	height:4.5rem;
+	padding:0.25rem;
+	top:0;
+	left:0;
+	position:absolute;
+	border-radius:25px;
+}
+
+.infoCon{
+	width:8.5rem;
+	height:5rem;
+	top:2rem;
+	right:50%;
+	margin-right:-8.5rem;
+	position:absolute;
+}
+.infoCon strong{
+	width:100%;
+	height:1rem;
+	line-height:1rem;
+	font-weight:bold;
+	color:#e0b06a;
+	font-size:0.7rem;
+	display:block;
+}
+.infoCon span{
+	width:100%;
+	height:1rem;
+	line-height:1rem;
+	color:#e0b06a;
+	font-size:0.6rem;
+	display:block;
+}
+.infoCon em{
+	width:100;
+	height:1rem;
+	line-height:1rem;
+	font-style:normal;
+	color:#e0b06a;
+	font-size:0.6rem;
+	display:block;
+}
+
+.mapCon{
+	width:90%;
+	height:8rem;
+	top:2.5rem;
+	left:5%;
+	position:absolute;
+}
+.mapCon iframe{
+	width:100%;
+	height:8rem;
+	border:none;
+}
+
+.ruleCon{
+	width:90%;
+	top:2.5rem;
+	left:5%;
+	position:absolute;
+}
+.ruleCon p{
+	width:100%;
+	line-height:1.2rem;
+	font-size:0.8rem;
+	color:#e0b06a;
+	margin-bottom:0.65rem;
+}
+
+.imgCon{
+	width:90%;
+	margin:0 auto;
+	padding:2.5rem 0 6rem;
+}
+.imgCon img{
+	width:100%;
+	position:relative;
+}
+
+.backTo{
+	width:100%;
+	height:2.4rem;
+	bottom:2.8rem;
+	left:0;
+	position:fixed;
+}
+.backTo a{
+	width:35%;
+	height:2.4rem;
+	line-height:2.4rem;
+	display:inline;
+	font-size:0.8rem;
+	background:#fef3dd;
+	color:#aa7f3e;
+	text-align:center;
+	float:left;
+}
+.backTo a:last-child{
+	background:#aa7f3e;
+	color:#fef3dd;
+	width:65%;
+}

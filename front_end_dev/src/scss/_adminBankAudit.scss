@@ -1,0 +1,126 @@
+.admin-bank-audit-list-container {
+    min-width: 1200px;
+    .admin-audit-list-title {
+        margin-top: 30px;
+        line-height: 46px;
+        padding: 0 26px;
+        font-size: 14px;
+        background: #e5e5e5;
+        margin-bottom: 20px;
+        &.bg-danger {
+            background: #fce7e6;
+        }
+        .apx-acc-order-nav {
+            border: 0;
+            margin: 0 -26px;
+            padding: 10px;
+            a {
+                line-height: 30px;
+            }
+        }
+        .btn {
+            border-radius: 0;
+        }
+        .nav {
+            .pull-left {
+                margin-right: 20px;
+            }
+            .btn {
+                border-radius: 4px;
+            }
+        }
+        .pull-left {
+            padding: 8px 0;
+            line-height: 1;
+            .input-group {
+                max-width: 250px;
+                display: inline-table;
+                float: left;
+                margin-right: -2px;
+                .form-control {
+                    height: 34px;
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+    
+    .table-panel {
+        border: 1px solid #ccc;
+        font-size: 12px;
+        &.dashed {
+            th,
+            td {
+                position: relative;
+                border-top: 1px dashed #ccc;
+                border-bottom: 1px dashed #ccc;
+                overflow: visible;
+            }
+        }
+        thead {
+            background: #e6e6e6;
+            th {
+                text-align: center !important;
+            }
+        }
+        tbody{
+            tr{
+                cursor: pointer;
+                &.active {
+                    td {
+                        background-color: #fce7e6;
+                    }
+                }
+            }
+            td {
+                &:last-child {
+                    .link {
+                        color: #df483d;                       
+                    }
+                }
+                &:nth-child(2) {
+                    max-width: 175;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+    .pay-box {
+        border: 1px solid #fce7e6;
+        .go-pay {
+            color: #459ae9;
+            margin: 0 20px;
+            cursor: pointer;
+            .icon {
+                font-size: 14px;
+            }
+            &.active {
+                .icon {
+                    display: inline-block;
+                    transform: rotate(-90deg);
+                }
+            }
+        }
+        .pay-handle {
+            background-color: #fce7e6;
+            padding: 16px 20px;
+        }
+        .form-inline {
+            padding: 2px 0;
+        }
+        .form-group {
+            margin: 10px 15px;
+            .btn-code {
+                color: #df483d;
+            }
+            .btn {
+                border: 1px solid #df483d;
+            }
+        }
+        .btn-money {
+            margin-left: 30px;
+        }
+    }
+}

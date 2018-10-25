@@ -1,0 +1,83 @@
+@@include('../head.inc')
+
+<div class="self-delivery-box">
+    <div class="self-delivery-head">
+        <div class="search">
+            <div class="search-box">
+                <img class="search-pic" src="/images/self_delivery/search_26_ixon.png" alt="">
+                <input class="search-prompt" type="text" placeholder="商品名称/订单号"/>
+            </div>
+            <a href="#" class="search-txt">搜索</a>
+        </div>
+        <ul class="head-list" id="head-list">
+            <li class="head-item active" data-index="0">全部</li>
+            <li class="head-item" data-index="1">未提货</li>
+            <li class="head-item" data-index="2">部分提货</li>
+            <li class="head-item" data-index="3">提货完成</li>
+        </ul>
+    </div>
+
+    <div class="section" id="section">
+        <ul class="self-delivery-section">
+            <li class="section-item">
+                <div class="item-tit">
+                    <img class="tit-pic" src="/images/self_delivery/store_32_icon.png" alt="">
+                    <span>永泰和</span>
+                    <span class="section-status">未提货</span>
+                </div>
+                <div class="item-section">
+                    <div class="section-pic"><img src="" alt=""></div>
+                    <div class="item-cont">
+                        <i class="sec-icon zt-icon"></i>
+                        <span class="item-txt-1">自提 你打开i说到底机打开你打开i说到底机打开你打开i说到底</span>
+                        <span class="item-txt-2">达到沸点</span>
+                        <div class="item-txt-3">
+                            <span>5</span>人&nbsp;
+                            拼团价：<span class="item-money">￥2323.00</span>
+                            <span class="number">x2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-total">
+                    <span>实付金额：<span class="amount-payment">￥4343.00</span></span>
+                </div>
+                <div class="item-footer">
+                    <div class="J-footer">
+                        <a class="J-pic" href="#"><img src="/images/self_delivery/code_icon.png" alt=""></a>
+                        <span class="J-txt">提货码</span>
+                        <span class="J-number">8888</span>
+                    </div>
+                    <a href="#">订单详情</a>
+                </div>
+            </li>
+            <li class="no-more">
+                <span class="more-line"></span>
+                <span>没有更多拼购了哟~</span>
+                <span class="more-line"></span>
+            </li>
+        </ul>
+
+        <ul class="self-delivery-section hidden">
+            <li class="section-item">
+                未提货
+            </li>
+        </ul>
+
+        <ul class="self-delivery-section hidden">
+            <li class="section-item">
+                部分提货
+            </li>
+        </ul>
+
+        <ul class="self-delivery-section hidden">
+            <li class="section-item">
+                提货完成
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+@@include('../footer.inc')
+
+<script src="/js/2018/self_delivery.js"></script>

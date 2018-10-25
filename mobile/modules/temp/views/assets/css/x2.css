@@ -1,0 +1,26 @@
+
+nav.bottom-nav {
+    display: none; 
+}
+
+.shouhou {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 170vw;
+    background: url("/images/cyr_active_1017/shouhou.png") no-repeat;
+    background-size: 100% 163vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.shouhou a {
+    position: absolute;
+    top: 66.5%;
+    display: block;
+    width: 40.267vw;
+    height: 10.667vw;
+}

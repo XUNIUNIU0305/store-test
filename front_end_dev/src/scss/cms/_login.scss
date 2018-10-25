@@ -1,0 +1,130 @@
+.apx-cms-login {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    &.shop-sys {
+        background: #000 url('/images/cms/login_bg1.jpg') center no-repeat;
+        background-size: cover;
+    }
+    &.user-sys {
+        background: #000 url('/images/cms/user_sys_login_bg.jpg') center no-repeat;
+        background-size: cover;
+    }
+}
+
+.apx-cms-login-box {
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 30%;
+    opacity: 0;
+    min-width: 480px;
+    transform-style: preserve-3d;
+    // will-change: transform;
+    animation: fadeIn .6s ease-in forwards;
+    left: 50%;
+    color: #ccc;
+    transform: translate(-50%, -50%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    &.static {
+        animation: none;
+        opacity: 1;
+        top: 40%;
+    }
+    .col-xs-3:not(.control-label) {
+        padding: 0;
+    }
+    .col-xs-3.control-label {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .form-control-static.hidden {
+        visibility: hidden;
+        display: block!important;
+    }
+    h3 {
+        margin-bottom: 60px;
+    }
+    .form-group {
+        border-bottom: 1px solid #ccc;
+        margin-top: 12px;
+        margin-bottom: 24px;
+        &:first-child,
+        &:last-child {
+            margin-top: 0;
+            margin-bottom: 0;
+            border-bottom: 0;
+        }
+    }
+    .text-right {
+        margin: 0 -15px;
+        position: relative;
+        top: -12px
+    }
+    .form-control {
+        color: #fff;
+        background: transparent;
+        border-color: transparent;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    .btn-block.btn-danger {
+        background: red;
+        border: 0;
+        color: #fff;
+        letter-spacing: 8px;
+        border-radius: 0;
+        margin-bottom: -1px;
+        &:active {
+            background: red;
+            color: #fff;
+            outline: 0;
+            box-shadow: inset 0 2px 8px #444;
+        }
+    }
+    .btn-link {
+        color: #ccc;
+        text-decoration: none;
+    }
+    .wechat-login {
+        margin-top: 40px;
+        text-align: center;
+        p {
+            margin-bottom: 8px;
+            position: relative;
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                width: 35%;
+                height: 1px;
+            }
+            &:before {
+                left: 0;
+                background: linear-gradient(to left, #fff, transparent)
+            }
+            &:after {
+                right: 0;
+                background: linear-gradient(to right, #fff, transparent)
+            }
+        }
+        img {
+            margin: 0 auto 4px;
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        top: 25%;
+        opacity: 0;
+    }
+    to {
+        top: 40%;
+        opacity: 1;
+    }
+}

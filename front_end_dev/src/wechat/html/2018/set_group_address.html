@@ -1,0 +1,65 @@
+@@include('../head.inc')
+<main class="container">
+    <div class="group-address-set-container">
+        <div class="address-title">请添加自提点</div>
+        <div class="group-tip-info">
+            一旦拼购成功，参团成员将至您设置的自提点领取相应商品。发起拼购后，自提点将不可更改，请谨慎填写！
+        </div>
+        <div class="form-box">
+            <ul class="register-form">
+                <li>
+                    <label for="reg_code">自提点名称</label>
+                    <input type="text" id="reg_code" placeholder="请填写自提点名称">
+                </li>
+                <li>
+                    <label for="location">选择地区</label>
+                    <div class="cascade-location">
+                        <span>
+                            <select>
+                                <option>内蒙古自治州</option>
+                            </select>
+                        </span>
+                        <span>
+                            <select>
+                                <option>内蒙古自治州</option>
+                            </select>
+                        </span>
+                        <span>
+                            <select>
+                                <option>内蒙古自治州</option>
+                            </select>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <label for="mail">地址</label>
+                    <input type="text" id="mail" placeholder="请填写详细地址">
+                </li>
+                <li>
+                    <label for="valid">联系人</label>
+                    <input type="text" id="valid" placeholder="请填写联系人姓名">
+                </li>
+                <li>
+                    <label for="mobile">手机号</label>
+                    <input type="text" id="mobile" placeholder="请填写联系人电话">
+                </li>
+            </ul>
+            <div class="set-default-address">
+                <p for="">设为默认地址</p>
+                <div class="tip">
+                    <div class="tip-text">
+                        提醒：每次下单是会优先选择该地址，实际发团时请根据实际情况确认哦！
+                    </div>
+                    <div class="tip-btn">
+                        <label class="switch-btn">
+                            <input type="checkbox" checked/>
+                            <div><div></div></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="register-btn">确定</a>
+        </div>
+    </div>
+</main>
+@@include('../footer.inc')

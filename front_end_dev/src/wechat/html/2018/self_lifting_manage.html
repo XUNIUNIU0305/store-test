@@ -1,0 +1,89 @@
+@@include('../head.inc')
+
+<div class="self-lifting-manage-box">
+    <!-- 暂无收货地址 -->
+    <div class="self-lifting-manage-no">
+        <div class="addr-no-box">
+            <span class="user-pic"></span>
+            <span>暂无自提点</span>
+            <a class="add-btn" href="#">自提点管理</a>
+        </div>
+    </div>
+    <!--收货地址管理  -->
+    <div class="self-lifting-manage hidden" id="self-lifting-manage">
+        <ul class="addr-list" id="addr-list">
+            <li class="addr-item">
+                <div class="addr-info">
+                    <span class="addr-default"></span>
+                    <span class="addr-txt">xxxxxxxxx自提点</span>
+                    <span class="addr-user">锤子兄</span>
+                    <span class="addr-user">347373673</span>
+                    <span class="addr-detail">上海市 宝山区 xxxxx</span>
+                </div>
+                <div class="addr-set">
+                    <img class="addr-sele" data-flag="true" src="/images/self_lifting_manage/checkbox_sele_44_icon.png" alt="">
+                    <span>已设为默认</span>
+                    <span class="addr-right">
+                        <a class="addr-btn edit-btn" href="#">编辑</a>
+                        <a class="addr-btn del-btn active" href="#">删除</a>
+                    </span>
+                </div>
+            </li>
+            <li class="addr-item">
+                    <div class="addr-info">
+                        <span class="addr-default"></span>
+                        <span class="addr-txt">xxxxxxxxx自提点</span>
+                        <span class="addr-user">锤子兄</span>
+                        <span class="addr-user">347373673</span>
+                        <span class="addr-detail">上海市 宝山区 xxxxx</span>
+                    </div>
+                    <div class="addr-set">
+                        <img class="addr-sele" data-flag="false" src="/images/self_lifting_manage/checkbox_no_44_icon.png" alt="">
+                        <span>设为默认</span>
+                        <span class="addr-right">
+                            <a class="addr-btn edit-btn" href="#">编辑</a>
+                            <a class="addr-btn del-btn" href="#">删除</a>
+                        </span>
+                    </div>
+                </li>
+        </ul>
+        <a class="push-btn p-btn" href="#">新增自提点</a>
+    </div>
+    <!-- 新增地址 -->
+    <div class="newly-added hidden" id="newly-added">
+        <div class="newly-added-top">一旦拼购成功，参团成员将至您设置的自提点领取相应商品发起拼购后，自提点将不可更改，请谨慎填写！ </div>
+        <ul class="new-addr-list">
+            <li class="new-addr-item">
+                <span>收货人</span>
+                <input class="new-addr-prompt" type="text" />
+            </li>
+            <li class="new-addr-item">
+                <span>手机号码</span>
+                <input class="new-addr-prompt" type="text" />
+                <span class="new-addr-icon"></span>
+            </li>
+            <li class="new-addr-item">
+                <span>邮政编码</span>
+                <input class="new-addr-prompt" type="text" />
+            </li>
+            <li class="new-addr-item">
+                <span>所在区域</span>
+                <input class="new-addr-prompt" type="text" placeholder="请选择 省/市/区"/>
+            </li>
+            <li class="new-addr-item">
+                <span>详细地址</span>
+                <input class="new-addr-prompt" type="text" placeholder="街道、楼牌号"/>
+            </li>
+        </ul>
+        <div class="new-addr-alone">
+            <img class="no-set" src="/images/self_lifting_manage/checkbox_no_44_icon.png" id="default-btn" data-flag="true">
+            <span>是否设为默认地址</span>
+        </div>
+        <div class="remind">提醒：每次下单时会优先选择该地址，发团时请根据实际情况确认哦！</div>
+        <a class="push-btn" id="push-btn" href="#">保存</a>
+    </div>
+</div>
+
+@@include('../footer.inc')
+
+<script src="/js/2018/self_lifting_manage.js"></script>

@@ -1,0 +1,275 @@
+@charset "UTF-8";
+.order-item {
+  display: -webkit-flex;
+  display: flex;
+  margin: 0 4px;
+  padding: 4px; }
+  .order-item aside {
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    min-height: 80px;
+    margin-right: 8px;
+    border: 1px solid #ccc; }
+    .order-item aside img {
+      max-width: 100%;
+      max-height: 100%; }
+  .order-item main {
+    position: relative;
+    -webkit-flex: auto;
+            flex: auto; }
+    .order-item main .description {
+      font-size: 14px;
+      height: 21px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2; }
+    .order-item main .param {
+      color: #999; }
+      .order-item main .param span {
+        margin-right: 4px; }
+    .order-item main .price {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      font-size: 13px; }
+      .order-item main .price span {
+        color: #ff9100; }
+    .order-item main .ammount {
+      position: absolute;
+      right: 0;
+      bottom: 0; }
+      .order-item main .ammount:before {
+        content: '×'; }
+
+nav.bottom-navs {
+  max-width: 640px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: inherit;
+  margin: auto; }
+
+nav.bottom-navs + main.containers {
+  top: 44px;
+  bottom: 0; }
+
+nav.bottom-navs {
+  background: #fff;
+  height: 44px;
+  display: -webkit-flex;
+  display: flex; }
+  nav.bottom-navs span {
+    -webkit-flex: 1 1 100%;
+            flex: 1 1 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 3px; }
+
+.wechat-order {
+  background: #f2f2f2;
+  margin-bottom: 64px; }
+  .wechat-order .order-hidden {
+    height: 8px;
+    background: #f2f2f2; }
+  .wechat-order .panel {
+    margin-bottom: 8px;
+    background: #fff;
+    padding: 0 10px;
+    overflow: hidden; }
+    .wechat-order .panel .order-shop-info {
+      padding: 5px 0;
+      color: #b2b2b2; }
+      .wechat-order .panel .order-shop-info li {
+        line-height: 1.5; }
+        .wechat-order .panel .order-shop-info li:first-child {
+          color: #333333;
+          font-size: 14px;
+          font-weight: bold;
+          line-height: 2; }
+          .wechat-order .panel .order-shop-info li:first-child em {
+            color: #cf4d44;
+            font-style: normal;
+            float: right; }
+        .wechat-order .panel .order-shop-info li:nth-child(3) em {
+          font-style: normal;
+          color: #ff6a2a; }
+        .wechat-order .panel .order-shop-info li:nth-child(4) {
+          text-indent: 5em; }
+    .wechat-order .panel .order-panel-heading {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+              align-items: center;
+      -webkit-justify-content: space-between;
+              justify-content: space-between;
+      margin: 5px 0;
+      border-bottom: 1px solid #f2f2f2; }
+      .wechat-order .panel .order-panel-heading p {
+        margin: 0;
+        font-size: 14px;
+        line-height: 50px;
+        padding-left: 25px;
+        background: url("/images/icons/shop_38_icon.png") no-repeat left center;
+        background-size: 19px; }
+      .wechat-order .panel .order-panel-heading a {
+        display: none;
+        height: 24px;
+        color: #999;
+        padding-right: 1em;
+        background: url(/images/account/arrow-right.png) no-repeat center right;
+        background-size: auto 60%; }
+    .wechat-order .panel .order-shop-acc-info {
+      margin: 5px 0;
+      position: relative;
+      padding-bottom: 6px; }
+      .wechat-order .panel .order-shop-acc-info:after {
+        content: ' ';
+        display: block;
+        width: 106%;
+        height: 6px;
+        position: absolute;
+        left: -10px;
+        bottom: -5px;
+        background: url("/images/icons/xinfeng.png") no-repeat;
+        background-size: 100% 6px; }
+      .wechat-order .panel .order-shop-acc-info li {
+        font-size: 14px;
+        line-height: 2; }
+        .wechat-order .panel .order-shop-acc-info li:first-child {
+          color: #333333; }
+          .wechat-order .panel .order-shop-acc-info li:first-child em {
+            color: #333333;
+            font-style: normal;
+            float: right; }
+        .wechat-order .panel .order-shop-acc-info li:last-child {
+          font-size: 12px; }
+  .wechat-order .shop-latest-order .remark {
+    border: 1px dashed #ff9100;
+    padding: 10px;
+    background-color: #fdfdfd; }
+  .wechat-order .shop-latest-order .border-box a {
+    border-bottom: 1px solid #f2f2f2; }
+    .wechat-order .shop-latest-order .border-box a:last-child {
+      border: none; }
+  .wechat-order .shop-latest-order .order-item {
+    display: -webkit-flex;
+    display: flex;
+    margin-top: 4px;
+    padding: 4px; }
+    .wechat-order .shop-latest-order .order-item aside {
+      width: 80px;
+      height: 80px;
+      min-width: 80px;
+      min-height: 80px;
+      margin-right: 8px;
+      border: 1px solid #ccc; }
+    .wechat-order .shop-latest-order .order-item main {
+      position: relative; }
+      .wechat-order .shop-latest-order .order-item main .description {
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; }
+      .wechat-order .shop-latest-order .order-item main .param {
+        color: #999; }
+        .wechat-order .shop-latest-order .order-item main .param span {
+          margin-right: 4px; }
+      .wechat-order .shop-latest-order .order-item main .price {
+        font-size: 13px; }
+        .wechat-order .shop-latest-order .order-item main .price span {
+          color: #fe5e5e; }
+      .wechat-order .shop-latest-order .order-item main .ammount {
+        position: absolute;
+        right: 0;
+        bottom: 0; }
+        .wechat-order .shop-latest-order .order-item main .ammount:before {
+          content: 'x'; }
+  .wechat-order .shop-latest-order .order-but {
+    border-bottom: 1px solid #b2b2b2; }
+    .wechat-order .shop-latest-order .order-but button {
+      background-color: #FFFFFF;
+      border: 1px solid #cf4d44;
+      width: 64px;
+      color: #cf4d44;
+      font-weight: bold;
+      padding: 4px;
+      border-radius: 3px;
+      margin: 5px 5px 8px 5px; }
+      .wechat-order .shop-latest-order .order-but button:nth-child(2) {
+        float: right; }
+    .wechat-order .shop-latest-order .order-but .remarks-but {
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px #ccc; }
+    .wechat-order .shop-latest-order .order-but .tag {
+      width: 100%;
+      height: 80px;
+      border: 1px solid #ccc;
+      position: relative;
+      background-color: #FFF;
+      margin-bottom: 10px;
+      border-radius: 3px;
+      box-shadow: 0 0 10px #ccc; }
+    .wechat-order .shop-latest-order .order-but .tag em {
+      display: block;
+      border-width: 8px;
+      position: absolute;
+      bottom: 81px;
+      left: 30px;
+      border-style: solid dashed dashed;
+      border-color: transparent transparent #ccc;
+      font-size: 0;
+      line-height: 0; }
+    .wechat-order .shop-latest-order .order-but .tag span {
+      display: block;
+      border-width: 8px;
+      position: absolute;
+      bottom: 80px;
+      left: 30px;
+      border-style: solid dashed dashed;
+      border-color: transparent transparent #FFF;
+      font-size: 0;
+      line-height: 0; }
+  .wechat-order .order-acc-shop-info {
+    color: #9e9e9e; }
+    .wechat-order .order-acc-shop-info ul {
+      padding: 15px 5px;
+      border-bottom: 1px solid #f2f2f2; }
+    .wechat-order .order-acc-shop-info li {
+      font-size: 13px;
+      line-height: 2; }
+      .wechat-order .order-acc-shop-info li em {
+        font-style: normal;
+        float: right; }
+    .wechat-order .order-acc-shop-info .total {
+      font-size: 14px;
+      text-align: right;
+      color: #333; }
+      .wechat-order .order-acc-shop-info .total span {
+        font-size: 17px;
+        color: #e53935; }
+
+.query-express {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #FFF;
+  text-align: right;
+  z-index: 9999; }
+  .query-express .btn {
+    display: inline-block;
+    padding: 6px 16px;
+    border: 1px solid #ff9100;
+    border-radius: 100px;
+    margin: 15px 15px;
+    color: #ff9100; }

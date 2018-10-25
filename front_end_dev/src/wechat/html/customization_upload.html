@@ -1,0 +1,123 @@
+@@include('head.inc') 
+<div class="customization-upload">
+	<!-- class: reject masking transiting 3个状态 -->
+	<div class="tip-title reject">
+		<p>生产中</p>
+	</div>
+	<div class="express-info">
+		<div class="title">厂家留言</div>
+		<p>产品已经寄出，快递单号：<span>1351515135</span>，请注意查收。</p>
+	</div>
+	<div class="order-info">
+		<div class="img"><img src="/images/index/prod1.jpg"></div>
+		<div class="text">
+			<p class="h1">什么什么什么什么脚垫</p>
+			<p class="attr">大小：大；颜色：黑；</p>
+			<p class="time">付款时间：<span>2017-08-11 12:12:12</span></p>
+			<p class="price">单价：<span>￥560.00</span></p>
+		</div>
+	</div>
+	<div class="select-car">
+		<div class="title">请选择需要定制车型：</div>
+		<ul>
+			<li><span class="left">汽车品牌</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTMyIDc5LjE1OTI4NCwgMjAxNi8wNC8xOS0xMzoxMzo0MCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUuNSAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NzcwNjU4RTM3RTY5MTFFNzlFMTREQjM4Qjk3M0JCOEQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NzcwNjU4RTQ3RTY5MTFFNzlFMTREQjM4Qjk3M0JCOEQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo3NzA2NThFMTdFNjkxMUU3OUUxNERCMzhCOTczQkI4RCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo3NzA2NThFMjdFNjkxMUU3OUUxNERCMzhCOTczQkI4RCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pmp7MZ4AAAAPSURBVHjaYvj//z9AgAEABf4C/i3Oie4AAAAASUVORK5CYII=" alt=""><span>宝马</span></li>
+			<li><span class="left">汽车型号</span><span>X5</span></li>
+		</ul>
+	</div>
+	<div class="remark">
+		<div class="title">请输入特殊备注（60字内）：</div>
+		<textarea rows="4" maxlength="60"></textarea>
+	</div>
+    <div class="supply-remark">
+        <div class="title">厂家备注</div>
+        <p>我是备注</p>
+    </div>
+	<div class="upload-img">
+		<div class="title">请上传部位图片</div>
+		<div class="img-box">
+			<label class="img-upload-box" for="upload_img_1">
+                <div class="close hidden">X</div>
+                <input type="file" id="upload_img_1">
+                <img src="/images/customization/add_p.png">
+            </label>
+		</div>
+	</div>
+	<div class="submit">
+		<a href="" class="btn">提交</a>
+	</div>
+</div>
+<div class="mask-container mask-fixed mask-car-brand" id="mask_select_payment">
+    <div class="mask-bg"></div>
+    <div class="wechat-car-brand-container">
+        <div class="title">请选择品牌</div>
+        <div class="select-box">
+        	<div class="left">
+        		<ul>
+        			<li class="active"><span>A</span></li>
+        			<li><span>B</span></li>
+        			<li><span>C</span></li>
+        			<li><span>D</span></li>
+        			<li><span>E</span></li>
+        			<li class="active"><span>F</span></li>
+        			<li><span>D</span></li>
+        			<li><span>H</span></li>
+        			<li><span>I</span></li>
+        			<li><span>J</span></li>
+        		</ul>
+        	</div>
+        	<div class="right">
+        		<ul>
+        		    <li class="title"><span>A</span></li>
+        		    <li><span class="img"><img src="/images/index/prod1.jpg" alt=""></span><span>G30(深)</span></li>
+        		    <li><span class="img"><img src="/images/index/prod1.jpg" alt=""></span><span>G30(深)</span></li>
+        		    <li><span class="img"><img src="/images/index/prod1.jpg" alt=""></span><span>G30(深)</span></li>
+        		    <li><span class="img"><img src="/images/index/prod1.jpg" alt=""></span><span>G30(深)</span></li>
+        		    <li><span class="img"><img src="/images/index/prod1.jpg" alt=""></span><span>G30(深)</span></li>
+        		    <li><span class="img"><img src="/images/index/prod1.jpg" alt=""></span><span>G30(深)</span></li>
+        		    <li><span class="img"><img src="/images/index/prod1.jpg" alt=""></span><span>G30(深)</span></li>
+        		    <li><span class="img"><img src="/images/index/prod1.jpg" alt=""></span><span>G30(深)</span></li>
+        		    <li><span class="img"><img src="/images/index/prod1.jpg" alt=""></span><span>G30(深)</span></li>
+        		    <li class="title"><span>B</span></li>
+        		    <li><span class="img"><img src="/images/index/prod1.jpg" alt=""></span><span>G30(深)</span></li>
+        		    <li><span class="img"><img src="/images/index/prod1.jpg" alt=""></span><span>G30(深)</span></li>
+        		    <li><span class="img"><img src="/images/index/prod1.jpg" alt=""></span><span>G30(深)</span></li>
+        		    <li><span class="img"><img src="/images/index/prod1.jpg" alt=""></span><span>G30(深)</span></li>
+        		    <li><span class="img"><img src="/images/index/prod1.jpg" alt=""></span><span>G30(深)</span></li>
+        		    <li><span class="img"><img src="/images/index/prod1.jpg" alt=""></span><span>G30(深)</span></li>
+        		    <li><span class="img"><img src="/images/index/prod1.jpg" alt=""></span><span>G30(深)</span></li>
+        		    <li><span class="img"><img src="/images/index/prod1.jpg" alt=""></span><span>G30(深)</span></li>
+        		    <li><span class="img"><img src="/images/index/prod1.jpg" alt=""></span><span>G30(深)</span></li>
+        		    <li class="title"><span>C</span></li>
+        		    <li><span class="img"><img src="/images/index/prod1.jpg" alt=""></span><span>G30(深)</span></li>
+        		    <li><span class="img"><img src="/images/index/prod1.jpg" alt=""></span><span>G30(深)</span></li>
+        		    <li><span class="img"><img src="/images/index/prod1.jpg" alt=""></span><span>G30(深)</span></li>
+        		    <li><span class="img"><img src="/images/index/prod1.jpg" alt=""></span><span>G30(深)</span></li>
+        		    <li><span class="img"><img src="/images/index/prod1.jpg" alt=""></span><span>G30(深)</span></li>
+        		    <li><span class="img"><img src="/images/index/prod1.jpg" alt=""></span><span>G30(深)</span></li>
+        		    <li><span class="img"><img src="/images/index/prod1.jpg" alt=""></span><span>G30(深)</span></li>
+        		    <li><span class="img"><img src="/images/index/prod1.jpg" alt=""></span><span>G30(深)</span></li>
+        		    <li><span class="img"><img src="/images/index/prod1.jpg" alt=""></span><span>G30(深)</span></li>
+        		</ul>
+        	</div>
+        </div>
+    </div>
+</div>
+<div class="mask-container mask-fixed mask-car-type" >
+    <div class="mask-bg"></div>
+    <div class="wechat-car-type-container">
+        <div class="title">请选择品牌</div>
+		<ul>
+			<li><span class="img"><img src="/images/index/prod1.jpg" alt=""></span><span>G30(深)</span></li>
+			<li><span>B</span></li>
+			<li><span>C</span></li>
+			<li><span>D</span></li>
+			<li><span>E</span></li>
+			<li><span>F</span></li>
+			<li><span>D</span></li>
+			<li><span>H</span></li>
+			<li><span>I</span></li>
+			<li><span>J</span></li>
+		</ul>
+    </div>
+</div>
+@@include('footer.inc')

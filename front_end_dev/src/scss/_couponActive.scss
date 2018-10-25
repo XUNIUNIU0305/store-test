@@ -1,0 +1,143 @@
+.apx-coupon-active {
+    background: #fce7e6 url('/images/account/coupon_redpack_bg.png') no-repeat top center;
+    min-height: 677px;
+    padding: 230px 0 40px;
+    margin-bottom: 20px;
+    .form-horizontal {
+        padding: 100px 0 0;
+        input {
+            font-size: 16px;
+        }
+        .error-msg {
+            display: none;
+            line-height: 34px;
+        }
+        .list-inline {
+            overflow: hidden;
+            li {
+                width: 20%;
+                float: left;
+                position: relative;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 1px;
+                    background: #ccc;
+                    left: -5px;
+                    top: 50%;
+                }
+                &:first-child {
+                    &:before {
+                        content: none;
+                    }
+                }
+            }
+        }
+        .btn-link {
+            position: relative;
+            z-index: 3;
+            left: -40px;
+        }
+    }
+    .coupon-box {
+        background: #fff;
+        width: 600px;
+        height: 200px;
+        margin: 50px auto 30px;
+        display: table;
+        color: #ccc;
+        .expire {
+            display: table-cell;
+            width: 2000px;
+            vertical-align: middle;
+            text-align: center;
+            line-height: 1.5;
+            border-left: 3px dashed #fce7e6;
+            position: relative;
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                background: #fce7e6;
+                left: -10px;
+            }
+            &:before {
+                top: -8px;
+            }
+            &:after {
+                bottom: -8px;
+            }
+            p {
+                padding-bottom: 16px;
+            }
+        }
+        .pull-left {
+            width: 480px;
+            position: relative;
+            text-align: center;
+            .info-left-top,
+            .info-left-bottom,
+            .stamp {
+                position: absolute;
+                font-size: 16px;
+            }
+            .info-left-top {
+                top: 20px;
+                left: 20px;
+            }
+            .info-left-bottom {
+                bottom: 20px;
+                left: 20px;
+            }
+            .stamp {
+                top: 18px;
+                right: 20px;
+                width: 80px;
+                height: 80px;
+                border: 2px solid;
+                border-radius: 50%;
+                padding: 12px;
+                line-height: 1.7;
+            }
+            .legend {
+                font-size: 90px;
+                font-weight: 600;
+                height: 200px;
+                line-height: 200px;
+                small {
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        } // 未激活
+        &.actived,
+        &.inactived {
+            .stamp {
+                font-size: 20px;
+                line-height: 76px;
+                padding: 0;
+            }
+        } // 已激活
+        &.actived {
+            background-color: #f7d05b;
+            color: #333;
+            .stamp {
+                color: $brand-danger;
+            }
+            .legend {
+                color: #fff;
+            }
+        }
+    }
+    .btn-lg {
+        width: 140px;
+        margin: 40px 24px 0;
+        &.btn-default {
+            background: transparent;
+        }
+    }
+}

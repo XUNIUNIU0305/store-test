@@ -1,0 +1,203 @@
+.wechat-invite-pay {
+	background-color: #FFF;
+	font-size: 12px;
+	p {
+		margin: 0;
+	}
+	img {
+		max-width: 100%;
+		vertical-align: top;
+	}
+	.header {
+		width: 100%;
+		background: url('/images/invite_pay/head_bg_1.jpg') no-repeat top;
+		background-size: 100%;
+		padding-top: 100%;
+		position: relative;
+		.logo {
+			position: absolute;
+			width: 30%;
+			top: 5%;
+			left: 4%;
+		}
+		.content {
+			width: 96%;
+			height: 200px;
+			border-radius: 10px;
+			margin: 0 auto;
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: -10%;
+			background: url('/images/invite_pay/yaoqing_bg.png') no-repeat center;
+			background-size: 100%;
+			p {
+				text-align: center;
+			}
+			.h1 {
+				margin-top: 75px;
+				font-size: 1.2em;
+				span {
+					font-weight: 700;
+				}
+			}
+			.h2 {
+				font-size: 1.2em;
+			}
+			.price {
+				font-size: 1.2em;
+				margin-bottom: 2.5%;
+				font-weight: 700;
+				span {
+					font-size: 1.6em;
+					font-weight: 700;
+				}
+			}
+			.btn-group {
+				width: 94%;
+				margin-top: 4%;
+				padding: 0 3%;
+				display: flex;
+				text-align: center;
+				a {
+					color: #333;
+				}
+				span {
+					flex: 0 0 35%;
+					margin: 0 8%;
+					padding: 4px 0;
+					border: 1px solid #333;
+					border-radius: 50px;
+					&:first-child {
+						background-color: #333;
+						a {
+							color: #caba6f;
+						}
+					}
+				}
+			}
+		}
+	}
+	.title {
+		text-align: center;
+		margin-bottom: 2%;
+		img {
+			width: 35%;
+		}
+	}
+	.power {
+		width: 100%;
+		text-align: center;
+		margin-top: 15%;
+		margin-bottom: 5%;
+		.items {
+			// display: flex;
+			// flex-wrap: wrap;
+			.item {
+				flex: 0 0 40%;
+				padding: 5%;
+				img {
+					width: 30%;
+					margin-bottom: 2%;
+				}
+				p {
+					margin: 3% 0;
+					&:nth-child(2) {
+						color: #8d7a2b;
+						font-weight: 700;
+					}
+					&:nth-child(3) {
+						color: #9d9d9d;
+					}
+				}
+			}
+		}
+	}
+	.condition {
+		margin: 5% 2%;
+		.condition-content {
+			background-color: #d7c581;
+			border-radius: 10px;
+			padding: 2% 0;
+			p {
+				margin: 2% 5%;
+				padding: 0 4%;
+				background: url('/images/invite_pay/sanjiao_icon.png') no-repeat left center;
+				background-size: 10px;
+				font-size: 24 / 750 * 100vw;
+			}
+		}
+	}
+	.form {
+		margin: 0 2%;
+		.tip {
+			font-weight: 700;
+		}
+		input {
+			border: none;
+			background-color: #f2f2f2;
+			padding: 3%;
+			border-radius: 4px;
+		}
+		.label {
+			margin: 6px 0;
+		}
+		.mobile {
+			input {
+				width: 94%;
+			}
+		}
+		.group {
+			input {
+				width: 60%;
+			}
+			.btn {
+				width: 31%;
+				display: inline-block;
+				text-align: center;
+				color: #cab96e;
+				background: #27231f;
+				padding: 2.6% 0;
+				margin-left: 1%;
+				border-radius: 4px;
+				&.disabled {
+					background-color: #dedfe0;
+					color: #999;
+				}
+			}
+		}
+		.tip-group {
+			margin-top: 30px;
+			text-align: center;
+			p {
+				padding: 0 5%;
+				color: #d9d9d9;
+				span {
+					color: #cab96e;
+					font-weight: 700;
+				}
+			}
+			.danger {
+				color: #000;
+				font-weight: 700;
+			}
+		}
+	}
+	.footer {
+		width: 94%;
+		padding: 2% 0;
+		margin: 0 auto;
+		.btn {
+			width: 100%;
+			border-radius: 4px;
+			line-height: 4em;
+			font-size: 1.3em;
+			text-align: center;
+			font-weight: 700;
+			color: #caba6f;
+			display: inline-block;
+			background: url('/images/invite_pay/chengweijinpai_but_bg.png') no-repeat center;
+			background-size: 100%;
+		}
+	}
+}

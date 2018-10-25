@@ -1,0 +1,124 @@
+.film-order-detail {
+	background-color: #f2f2f2;
+	margin-top: 10px;
+	margin-bottom: 50px;
+	p {
+		margin: 0;
+	}
+	.address {
+		background-color: #FFF;
+		padding: 16px;
+		border-bottom: 4px solid transparent;
+		border-image: 4 repeating-linear-gradient(135deg, red -0.5em, red 0.8em, transparent 0.8em, transparent 2.1em, #58a 2.1em, #58a 3.4em, transparent 3.4em, transparent 4.7em);
+		.top {
+			position: relative;
+			p {
+				&:nth-child(2) {
+					position: absolute;
+					right: 0;
+					top: 0;
+				}
+			}
+		}
+	}
+	.pro {
+		margin-top: 10px;
+		padding: 10px 16px;
+        display: flex;
+        background: #fff;
+        .img {
+			width: 30%;
+			img {
+				width: 100%;
+			}
+        }
+        .pro-text {
+        	padding-left: 10px;
+        	position: relative;
+        	.title {
+        		font-size: 1.2em;
+        	}
+        	.attr {
+				color: #999;
+        	}
+        	.price {
+        		color: #ff9100;
+        		position: absolute;
+        		bottom: -15px;
+        		left: 10px;
+        	}
+        	.ammount {
+                position: absolute;
+                right: 0;
+                bottom: -15px;
+                &:before {
+                    content: 'x'
+                }
+            }
+        }
+	}
+	.remark {
+		background-color: #FFF;
+		padding: 12px;
+		// padding-top: 0;
+	}
+	.info {
+		background-color: #FFF;
+		margin-top: 10px;
+		padding: 0 16px;
+		color: #333;
+		.title {
+			font-size: 1.5em;
+			line-height: 44px;
+			position: relative;
+			border-bottom: 1px solid #f2f2f2;
+			span {
+				position: absolute;
+				top: 0;
+				right: 0;
+				color: #ff9100;
+			}
+		}
+		ul {
+			li {
+				line-height: 44px;
+				font-size: 1.4em;
+				position: relative;
+				border-bottom: 1px solid #f2f2f2;
+				span {
+					position: absolute;
+					top: 0;
+					right: 0;
+					color: #999;
+				}
+			}
+		}
+	}
+	.total {
+		background-color: #FFF;
+		margin-top: 10px;
+		padding: 16px;
+		color: #333;
+		>p {
+            font-size: 1.3em;
+            position: relative;
+            span {
+				position: absolute;
+				top: 0;
+				right: 0;
+				color: #999;
+            }
+		}
+		.price {
+			text-align: right;
+			font-size: 1.5em;
+			border-top: 1px solid #f2f2f2;
+			margin-top: 10px;
+			line-height: 44px;
+			span {
+				color: #e53935;
+				font-weight: 700;
+			}
+		}
+	}
+}

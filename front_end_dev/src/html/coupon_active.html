@@ -1,0 +1,115 @@
+@@include('head.inc') @@include('banner.inc') @@include('search.inc') @@include('main_nav.inc')
+<div class="container">
+    <div class="row">
+        <ol class="breadcrumb">
+            <li><a href="#">商城首页</a></li>
+            <li class="active">用户中心</li>
+        </ol>
+        @@include('account_aside.inc')
+        <div class="apx-acc-main">
+            <div class="apx-acc-title bg-danger">
+                激活优惠券
+            </div>
+            <!--表单-->
+            <div class="apx-coupon-active">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="control-label col-xs-3" for="">优惠券序列号：</label>
+                        <div class="col-xs-6">
+                            <ul class="list-inline">
+                                <li><input type="text" class="form-control"></li>
+                                <li><input type="text" class="form-control"></li>
+                                <li><input type="text" class="form-control"></li>
+                                <li><input type="text" class="form-control"></li>
+                                <li><input type="text" class="form-control"></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-3 text-danger error-msg" style="display: block">请填写有效序列号</div>
+                        <div class="col-xs-6 col-xs-offset-3 text-muted form-control-static">请输入优惠券15位序列号</div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-xs-3" for="">优惠券密码：</label>
+                        <div class="col-xs-4">
+                            <!--<input type="text" class="form-control" id="" placeholder="请输入优惠券4位密码">-->
+                            <div class="input-group">
+                                <input type="password" class="form-control">
+                                <div class="input-group-btn">
+                                    <a href="javascript: void(0)" class="btn btn-link" onclick="$(this).parent().siblings().attr('type') === 'password' ? $(this).children('i').attr('class','glyphicon glyphicon-eye-close').parents('.input-group-btn').siblings().attr('type', 'text') : $(this).children('i').attr('class','glyphicon glyphicon-eye-open').parents('.input-group-btn').siblings().attr('type', 'password');">
+                                        <i class="glyphicon glyphicon-eye-open"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-xs-offset-2 text-danger error-msg" style="display: block">请填写有效密码</div>
+                        <div class="col-xs-6 col-xs-offset-3 text-muted form-control-static">请输入优惠券8位密码</div>
+                    </div>
+                </form>
+                <div class="text-center">
+                    <button class="btn btn-danger btn-lg">激活</button>
+                </div>
+            </div>
+            <!--已被激活-->
+            <div class="apx-coupon-active">
+                <div class="coupon-box clearfix">
+                    <div class="pull-left">
+                        <div class="info-left-top">五一新品大放送</div>
+                        <div class="info-left-bottom">每个账户现持有5张</div>
+                        <div class="legend">￥50 <small>满 500 可用</small></div>
+                        <div class="stamp">已被他人激活</div>
+                    </div>
+                    <!--有效期-->
+                    <div class="expire">
+                        <p>试用有效期</p>
+                        <span>2017.05.03 <br> 至 <br> 2017.05.03</span>
+                    </div>
+                </div>
+                <div class="text-danger h4 text-center">此优惠券已被他人激活！</div>
+                <div class="text-center">
+                    <button class="btn btn-danger btn-lg">取消</button>
+                </div>
+            </div>
+            <!--未激活-->
+            <div class="apx-coupon-active">
+                <div class="coupon-box clearfix inactived">
+                    <div class="pull-left">
+                        <div class="info-left-top">五一新品大放送</div>
+                        <div class="info-left-bottom">每个账户现持有5张</div>
+                        <div class="legend">￥50 <small>满 500 可用</small></div>
+                        <div class="stamp">未激活</div>
+                    </div>
+                    <!--有效期-->
+                    <div class="expire">
+                        <p>试用有效期</p>
+                        <span>2017.05.03 <br> 至 <br> 2017.05.03</span>
+                    </div>
+                </div>
+                <div class="text-danger h4 text-center">请确认是否激活此优惠券！</div>
+                <div class="text-center">
+                    <button class="btn btn-danger btn-lg">确认激活</button>
+                    <button class="btn btn-default btn-lg">取消</button>
+                </div>
+            </div>
+            <!--已激活-->
+            <div class="apx-coupon-active">
+                <div class="coupon-box clearfix actived">
+                    <div class="pull-left">
+                        <div class="info-left-top">五一新品大放送</div>
+                        <div class="info-left-bottom">每个账户现持有5张</div>
+                        <div class="legend">￥50 <small>满 500 可用</small></div>
+                        <div class="stamp">已激活</div>
+                    </div>
+                    <!--有效期-->
+                    <div class="expire">
+                        <p>试用有效期</p>
+                        <span>2017.05.03 <br> 至 <br> 2017.05.03</span>
+                    </div>
+                </div>
+                <div class="text-danger h4 text-center">恭喜您！激活成功！</div>
+                <div class="text-center">
+                    <button class="btn btn-danger btn-lg">立即使用</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('ensurance.inc') @@include('sitemap.inc') @@include('footer.inc')

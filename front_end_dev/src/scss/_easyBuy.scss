@@ -1,0 +1,213 @@
+.easy-buy-container {
+  text-align: center;
+  overflow-x: hidden;
+  background: url('/images/easy_buy/new_bg.png') repeat-y center top;
+  padding-bottom: 30px;
+  .part-container {
+    width: 1190px;
+    margin: 0 auto;
+    margin-top: 130px;
+    &.Auto-spare-parts {
+      margin-top: 600px;
+    }
+    .title-img {
+      margin-bottom: 30px;
+    }
+    .goods-container {
+      background-color: #55037F;
+      padding: 20px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      .goods-item {
+        flex: auto;
+        text-align: left;
+        text-decoration: none;
+        margin-right: 10px;
+        border: 1px solid #fff;
+        &:last-child {
+          margin-right: 0px;
+        }
+        .item-detail {
+          padding: 18px 0 30px 10px;
+          position: relative;
+          background-color: #8506C4;
+          .item-describe {
+            width: 366px;
+            font-size: 20px;
+            color: #fff;
+          }
+          .price {
+            color: #fefa00;
+            font-size: 24px;
+            margin-bottom: 0px;
+            font-weight: bold;
+          }
+          .buy-now {
+            position: absolute;
+            right: 40px;
+            bottom: 36px;
+            display: block;
+            width: 97px;
+            height: 24px;
+            background: url('/images/easy_buy/s_y_buy.png');
+          }
+        }
+      }
+    }
+    .goods-box {
+      display: flex;
+      width: 100%;
+      margin-top: 8px;
+      .box-item {
+        flex: auto;
+        display: flex;
+        border: 1px solid #fff;
+        text-decoration: none;
+        &:first-child {
+          margin-right: 10px;
+        }
+        .item-detail {
+          flex: auto;
+          padding: 48px 0 16px 16px;
+          text-align: left;
+          background-color: #9A17DC;
+          width: 290px;
+          .describe {
+            font-size: 20px;
+            color: #fff;
+            margin-bottom: 42px;            
+          }
+          .short {
+            font-size: 18px;
+            color: #CCC;
+            margin-bottom: 28px;
+          }
+          .price {
+            color: #fefa00;
+            font-size: 30px;
+            margin-bottom: 26px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  .goods-container-layout {
+    display: auto;
+    .goods-part {
+      display: flex;
+      .goods-item {
+        flex: auto;
+      }
+    }
+  }
+  .On-board-electrical {
+    .goods-container {
+      background-color: #9E029C;
+      .goods-part {
+        .goods-item {
+          .item-detail {
+            background-color: #8506C4;
+            
+          }
+        }
+      }
+      .goods-box {
+        .buy-now {
+          display: block;
+          height: 48px;
+          width: 188px;
+          background: url('/images/easy_buy/b_y_buy.png')
+        }
+      }
+    }
+  }
+  .Seiketsu {
+    .goods-container {
+      background-color: #FFFCEC;
+      .goods-part {
+        margin-top: 10px;
+        .goods-item {
+          border-color: #fe0100;
+          background-color: #fff;
+          .item-detail {
+            width: 278px;
+            background-color: #fff;
+            .item-describe {
+              color: #fe0100;
+              font-size: 20px;
+              width: 100%;
+            }
+            .price {
+              color: #fe0100;
+              font-weight: bold;
+              font-size: 20px;
+            }
+            .buy-now {
+              display: block;
+              height: 20px;
+              width: 78px;
+              bottom: 34px;
+              background: url('/images/easy_buy/r_s_buy.png')
+            }
+          }
+        }
+      }
+      .goods-box {
+        margin-top: 0;
+        .box-item {
+          border-color: #fe0100;
+          .item-detail {
+            background: #fff;
+            .describe {
+              color: #fe0100;
+              font-size: 28px;
+            }
+            .price {
+              color: #fe0100;
+              font-weight: bold;
+            }
+            .buy-now {
+              display: block;
+              height: 48px;
+              width: 188px;
+              background: url('/images/easy_buy/r_b_buy.png')
+            }
+          }
+        }
+      }
+    }
+  }
+  .Car-decoration {
+    .goods-container {
+      background-color: #FFFCEC;
+      .goods-item {
+        border-color: #fe0100;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        &:nth-child(4n) {
+          margin-right: 0;
+        }
+        .item-detail {
+          background-color: #fff;
+          width: 278px;
+          .item-describe {
+            color: #fe0100;
+            width: 100%;
+          }
+          .price {
+            color: #fe0100;
+          }
+          .buy-now {
+            display: block;
+              height: 20px;
+              width: 78px;
+              bottom: 34px;
+              background: url('/images/easy_buy/r_s_buy.png')
+          }
+        }
+      }
+    }
+  }
+}

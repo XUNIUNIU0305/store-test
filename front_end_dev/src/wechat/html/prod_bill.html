@@ -1,0 +1,182 @@
+@@include('head.inc')
+<!--@@include('nav.inc')-->
+<!--main container-->
+<main class="container">
+    <!--product bill-->
+    <div class="wechat-product-bill">
+        <!--banner 大图-->
+        <div class="banner">
+            <img src="/images/bill/bg_pic.jpg">
+        </div>
+        <ul>
+            <li>
+                <a data-link-section href="#genesis">
+                    <img src="/images/bill/genesis.jpg">
+                </a>
+            </li>
+            <li>
+                <a data-link-section href="#element">
+                    <img src="/images/bill/element.jpg">
+                </a>
+            </li>
+            <li>
+                <a data-link-section href="#endorphin">
+                    <img src="/images/bill/endorphin.jpg">
+                </a>
+            </li>
+        </ul>
+        <!--创世纪-->
+        <section id="genesis">
+            <div class="title"><img src="/images/bill/title_genesis.png"></div>
+            <ul>
+                <li>
+                    <div class="prod-left">
+                        <img src="/images/bill/left1.jpg">
+                    </div>
+                    <div class="prod-right">
+                        <a href="#">
+                            <img src="/images/bill/right1.jpg">
+                            <p class="prod-price"><small>￥</small>138</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="prod-left">
+                        <img src="/images/bill/left2.jpg">
+                    </div>
+                    <div class="prod-right">
+                        <a href="#">
+                            <img src="/images/bill/right2.jpg">
+                            <p class="prod-price"><small>￥</small>138</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="prod-left">
+                        <img src="/images/bill/left3.jpg">
+                    </div>
+                    <div class="prod-right">
+                        <a href="#">
+                            <img src="/images/bill/right3.jpg">
+                            <p class="prod-price"><small>￥</small>138</p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <!--新元素-->
+        <section id="element">
+            <div class="title"><img src="/images/bill/title_element.png"></div>
+            <div class="prod-wrap">
+                <a href="#">
+                    <div class="prod-left">
+                        <img src="/images/bill/sweet.png">
+                        <div class="h3">比尔环保尖兵</div>
+                        <div class="h4">——新元素香膏</div>
+                        <p class="prod-price"><small>￥</small>138</p>
+                        <div>两件包邮</div>
+                        <div>两件以上送展柜</div>
+                    </div>
+                    <div class="prod-right">
+                        <img src="/images/bill/02.jpg">
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!--安多芬-->
+        <section id="endorphin">
+            <div class="title"><img src="/images/bill/title_endorphin.png"></div>
+            <div class="prod-wrap">
+                <a href="#">
+                    <div class="prod-left">
+                        <img src="/images/bill/03.jpg">
+                    </div>
+                    <div class="prod-right">
+                        <div class="col-2">
+                            <p class="prod-price"><small>￥</small>138</p>
+                            <div><img src="/images/bill/new.png"></div>
+                        </div>
+                        <div class="h2">安多芬香膏</div>
+                        <div>两件包邮</div>
+                        <div>两件以上送展柜</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+</main>
+@@include('footer.inc')
+
+<script>
+    // fallbacks
+    (function() {
+        var lastTime = 0;
+        var vendors = ['webkit', 'moz'];
+        for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+            window.requestAnimationFrame = window[vendors[x] + 'RequestAnimationFrame'];
+            window.cancelAnimationFrame = window[vendors[x] + 'CancelAnimationFrame'] || window[vendors[x] + 'CancelRequestAnimationFrame'];
+        }
+
+        if (!window.requestAnimationFrame) {
+            window.requestAnimationFrame = function(callback, element) {
+                var currTime = new Date().getTime();
+                var timeToCall = Math.max(0, 16.7 - (currTime - lastTime));
+                var id = window.setTimeout(function() {
+                    callback(currTime + timeToCall);
+                }, timeToCall);
+                lastTime = currTime + timeToCall;
+                return id;
+            };
+        }
+        if (!window.cancelAnimationFrame) {
+            window.cancelAnimationFrame = function(id) {
+                clearTimeout(id);
+            };
+        }
+    }());
+    
+    var raf_scroll;
+    
+    // scroll animation
+    function scrollTo(topVal) {
+        var scrollArea = $('main.container')[0];
+        var currentTop = scrollArea.scrollTop;
+        var maxTop = $('.wechat-product-bill').height() - $('main.container').height();
+        if(maxTop < topVal) topVal = maxTop;
+
+        switch(true) {
+            case topVal > currentTop:
+                currentTop += 30;
+                if (currentTop >= topVal) currentTop = topVal;
+                scrollArea.scrollTop = currentTop;
+                raf_scroll = requestAnimationFrame(function(){
+                    scrollTo(topVal);
+                });
+                break;
+            case topVal < currentTop:
+                currentTop -= 30;
+                if (currentTop <= topVal) currentTop = topVal;
+                scrollArea.scrollTop = currentTop;
+                raf_scroll = requestAnimationFrame(function(){
+                    scrollTo(topVal);
+                });
+                break;
+            default:
+                raf_scroll && cancelAnimationFrame(raf_scroll);
+                break;
+        }
+    }
+
+    $(function(){
+        // bind scrollTo evt 
+        $('[data-link-section]').click(function(e){
+            e.stopPropagation();
+            e.preventDefault();
+            scrollTo(Math.floor($($(this).attr('href'))[0].offsetTop - 20));
+            // touch to stop 
+            $('main.container').one('touchstart', function(){
+                raf_scroll && cancelAnimationFrame(raf_scroll);
+            })
+        })
+    });
+</script>

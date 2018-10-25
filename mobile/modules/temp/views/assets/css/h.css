@@ -1,0 +1,280 @@
+@charset "UTF-8";
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+body {
+  font: 12px/1.5 'sans-serif';
+  color: #333;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-overflow-scrolling: touch; }
+
+a {
+  text-decoration: none;
+  color: #333;
+  display: block; }
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+main.container,
+nav.bottom-nav {
+  max-width: 640px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 9999; }
+
+main.container {
+  top: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  background: #f2f2f2;
+  -webkit-overflow-scrolling: touch; }
+
+nav.top-nav {
+  background: #fff;
+  position: relative;
+  height: 44px;
+  font-size: 16px; }
+  nav.top-nav > a {
+    position: absolute;
+    top: 0;
+    min-width: 60px;
+    height: 44px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: center;
+            justify-content: center; }
+    nav.top-nav > a:first-child {
+      left: 0; }
+      nav.top-nav > a:first-child img {
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg); }
+  nav.top-nav .title {
+    line-height: 44px;
+    text-align: center;
+    font-weight: 600; }
+    nav.top-nav .title + a {
+      right: 0; }
+  nav.top-nav ~ main.container {
+    top: 44px; }
+
+nav.bottom-nav {
+  background: #fff;
+  box-shadow: 0 1px 4px #ccc;
+  height: 49px;
+  display: -webkit-flex;
+  display: flex; }
+  nav.bottom-nav + main.container {
+    bottom: 50px; }
+  nav.bottom-nav a {
+    -webkit-flex: 1 1 25%;
+            flex: 1 1 25%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    font-size: 0; }
+    nav.bottom-nav a:active {
+      background: #ccc; }
+    nav.bottom-nav a i {
+      display: block;
+      width: 27px;
+      min-height: 27px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat; }
+    nav.bottom-nav a.active span {
+      color: #ff9100;
+      background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#ff9100), to(#e53935));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    nav.bottom-nav a span {
+      font-size: 13px;
+      color: #b0b0b0; }
+    nav.bottom-nav a.home i {
+      background-image: url("/images/nav1_n.png"); }
+    nav.bottom-nav a.home.active i {
+      background-image: url("/images/nav1_on_n.png"); }
+    nav.bottom-nav a.brand i {
+      background-image: url("/images/nav2_n.png"); }
+    nav.bottom-nav a.brand.active i {
+      background-image: url("/images/nav2_on_n.png"); }
+    nav.bottom-nav a.cart i {
+      background-image: url("/images/nav3_n.png"); }
+    nav.bottom-nav a.cart.active i {
+      background-image: url("/images/nav3_on_.png"); }
+    nav.bottom-nav a.account i {
+      background-image: url("/images/nav4_n.png"); }
+    nav.bottom-nav a.account.active i {
+      background-image: url("/images/nav4_on_n.png"); }
+
+.bottom-nav.J_footer_menu {
+  border-top: 1px solid #f2f2f2; }
+
+.btn-block-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 44px;
+  background: #fff;
+  font-size: 16px;
+  text-align: center;
+  background-image: -webkit-gradient(linear, 100% 100%, 0 0, from(#e53935), to(#ff9101));
+  color: #fff; }
+  .btn-block-bottom:active {
+    background: linear-gradient(to bottom, #fff, #eee); }
+
+.hidden {
+  display: none !important; }
+
+.mask-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s;
+  overflow: hidden; }
+  .mask-container.in {
+    opacity: 1;
+    pointer-events: auto; }
+  .mask-container .mask-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); }
+
+.wechat-product-dazhi {
+  /*--------------主体内容---------------*/ }
+  .wechat-product-dazhi img {
+    max-width: 100%; }
+  .wechat-product-dazhi .main {
+    max-width: 640px;
+    margin: 0 auto; }
+  .wechat-product-dazhi .logo {
+    text-align: center;
+    padding: 0.30rem 0; }
+  .wechat-product-dazhi .logo img {
+    width: 2.77rem;
+    height: 0.49rem; }
+  .wechat-product-dazhi .p1 {
+    background: url(/images/dazhi_brand/board.png) bottom no-repeat;
+    padding: 0.10rem 0.30rem;
+    background-size: 100% auto; }
+    .wechat-product-dazhi .p1:before, .wechat-product-dazhi .p1:after {
+      content: " ";
+      display: table; }
+    .wechat-product-dazhi .p1:after {
+      clear: both; }
+  .wechat-product-dazhi .main .left {
+    float: left; }
+  .wechat-product-dazhi .main .right {
+    float: right; }
+  .wechat-product-dazhi .p1 .left img {
+    width: 2.03rem;
+    height: 3.62rem; }
+  .wechat-product-dazhi .p1 .right h4 {
+    font-size: 0.38rem;
+    margin-top: 0.20rem; }
+  .wechat-product-dazhi .p1 .right .price {
+    padding: 0.30rem 0; }
+  .wechat-product-dazhi .p1 .right .price img {
+    width: 1.46rem;
+    height: 0.35rem; }
+  .wechat-product-dazhi .p1 .right .package img {
+    width: 1.62rem;
+    height: 0.26rem; }
+  .wechat-product-dazhi .p1 .right .buy {
+    margin-top: 0.30rem; }
+  .wechat-product-dazhi .p1 .right .buy a {
+    display: inline-block;
+    width: 2.70rem;
+    height: 0.78rem;
+    background: #ff0730;
+    text-align: center;
+    line-height: 0.78rem;
+    color: #fff;
+    font-size: 0.36rem;
+    border-radius: 10px; }
+  .wechat-product-dazhi .p1 .right .buy a span {
+    display: inline-block;
+    width: 0.44rem;
+    height: 0.32rem;
+    margin-top: -0.10rem; }
+  .wechat-product-dazhi .p2 {
+    background: url(/images/dazhi_brand/bg_board.png) 0 1.4rem no-repeat;
+    background-size: 100% auto;
+    margin: 0.20rem 0; }
+    .wechat-product-dazhi .p2 ul:before, .wechat-product-dazhi .p2 ul:after {
+      content: " ";
+      display: table; }
+    .wechat-product-dazhi .p2 ul:after {
+      clear: both; }
+  .wechat-product-dazhi .p2 ul li {
+    width: 100%;
+    position: relative;
+    margin-bottom: 1.00rem; }
+    .wechat-product-dazhi .p2 ul li:before, .wechat-product-dazhi .p2 ul li:after {
+      content: " ";
+      display: table; }
+    .wechat-product-dazhi .p2 ul li:after {
+      clear: both; }
+  .wechat-product-dazhi .p2 ul li:nth-child(2n) img {
+    float: right; }
+  .wechat-product-dazhi .p2 ul li .text {
+    position: absolute;
+    font-size: 0.32rem; }
+  .wechat-product-dazhi .p2 ul li:first-child img {
+    width: 6.28rem;
+    height: 3.35rem; }
+  .wechat-product-dazhi .p2 ul li:first-child .text {
+    left: 3.20rem;
+    top: 1.20rem; }
+  .wechat-product-dazhi .p2 ul li:nth-child(2) img {
+    width: 6.06rem;
+    height: 3.33rem; }
+  .wechat-product-dazhi .p2 ul li:nth-child(2) .text {
+    left: 0.45rem;
+    top: 1.55rem; }
+  .wechat-product-dazhi .p2 ul li:nth-child(3) img {
+    width: 5.48rem;
+    height: 3.35rem; }
+  .wechat-product-dazhi .p2 ul li:nth-child(3) .text {
+    left: 3.20rem;
+    top: 1.60rem; }
+  .wechat-product-dazhi .p2 ul li:nth-child(4) img {
+    width: 6.02rem;
+    height: 3.33rem; }
+  .wechat-product-dazhi .p2 ul li:nth-child(4) .text {
+    left: 0.55rem;
+    top: 1.60rem; }
+  .wechat-product-dazhi #returTop {
+    width: 100%;
+    height: 1.04rem;
+    font-size: 0.40rem;
+    text-align: center;
+    line-height: 1.04rem;
+    color: #fff;
+    background: #61c6f8; }

@@ -1,0 +1,73 @@
+.bank-audit-detail {
+	.title {
+		margin-top: 30px;
+	    line-height: 46px;
+	    padding: 0 26px;
+	    font-size: 14px;
+	    background: #e5e5e5;
+	    .btn {
+	    	// color: #459ae9;
+	    }
+	}
+	.table {
+		width: calc(100% - 100px);
+		margin: 40px 50px;
+		text-align: center;
+		color: #666;
+		border: 1px solid #d9d9d9;
+		td {
+			width: 50%;
+			line-height: 2;
+			border: none;
+			border-right: 1px solid #d9d9d9;
+		}
+		tr {
+			&:nth-child(2n - 1) {
+                background: #f8f9fa;  
+			}
+		}
+	}
+	.handle-box {
+		text-align: center;
+		.btn {
+			margin: 0 20px;
+			padding: 6px 20px;
+		}
+	}
+	.pay-box {
+		border: 1px solid #fce7e6;
+		.go-pay {
+			color: #459ae9;
+			margin: 0 20px;
+			cursor: pointer;
+			.icon {
+				font-size: 14px;
+			}
+			&.active {
+				.icon {
+					display: inline-block;
+					transform: rotate(-90deg);
+				}
+			}
+		}
+		.pay-handle {
+			background-color: #fce7e6;
+			padding: 16px 20px;
+		}
+		.form-inline {
+			padding: 2px 0;
+		}
+		.form-group {
+			margin: 10px 15px;
+			.btn-code {
+				color: #df483d;
+			}
+			.btn {
+				border: 1px solid #df483d;
+			}
+		}
+		.btn-money {
+			margin-left: 30px;
+		}
+	}
+}

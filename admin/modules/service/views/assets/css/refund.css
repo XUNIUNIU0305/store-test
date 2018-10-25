@@ -1,0 +1,923 @@
+body {
+  overflow-x: hidden; }
+
+.bg-muted {
+  background: #f2f2f2; }
+
+.table-fix {
+  table-layout: fixed; }
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.container {
+  width: 1190px;
+  max-width: none !important; }
+
+.high-lighted {
+  color: #df483d; }
+
+body.lb-disable-scrolling {
+  overflow: hidden; }
+
+.lightboxOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: black;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  display: none; }
+
+.lightbox {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  text-align: center;
+  line-height: 0;
+  font-weight: normal; }
+
+.lightbox .lb-image {
+  display: block;
+  height: auto;
+  max-width: inherit;
+  max-height: none;
+  border-radius: 3px;
+  /* Image border */
+  border: 4px solid white; }
+
+.lightbox a img {
+  border: none; }
+
+.lb-outerContainer {
+  position: relative;
+  *zoom: 1;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 4px;
+  /* Background color behind image.
+     This is visible during transitions. */
+  background-color: white; }
+
+.lb-outerContainer:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.lb-loader {
+  position: absolute;
+  top: 43%;
+  left: 0;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  line-height: 0; }
+
+.lb-cancel {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto; }
+
+.lb-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10; }
+
+.lb-container > .nav {
+  left: 0; }
+
+.lb-nav a {
+  outline: none;
+  background-image: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="); }
+
+.lb-prev,
+.lb-next {
+  height: 100%;
+  cursor: pointer;
+  display: block; }
+
+.lb-nav a.lb-prev {
+  width: 34%;
+  left: 0;
+  float: left;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  transition: opacity 0.6s; }
+
+.lb-nav a.lb-prev:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1; }
+
+.lb-nav a.lb-next {
+  width: 64%;
+  right: 0;
+  float: right;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  transition: opacity 0.6s; }
+
+.lb-nav a.lb-next:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1; }
+
+.lb-dataContainer {
+  margin: 0 auto;
+  padding-top: 5px;
+  *zoom: 1;
+  width: 100%;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px; }
+
+.lb-dataContainer:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.lb-data {
+  padding: 0 4px;
+  color: #ccc; }
+
+.lb-data .lb-details {
+  width: 85%;
+  float: left;
+  text-align: left;
+  line-height: 1.1em; }
+
+.lb-data .lb-caption {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1em; }
+
+.lb-data .lb-caption a {
+  color: #4ae; }
+
+.lb-data .lb-number {
+  display: block;
+  clear: left;
+  padding-bottom: 1em;
+  font-size: 12px;
+  color: #999999; }
+
+.lb-data .lb-close {
+  display: block;
+  float: right;
+  width: 30px;
+  height: 30px;
+  text-align: right;
+  outline: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  transition: opacity 0.2s; }
+
+.lb-data .lb-close:hover {
+  cursor: pointer;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1; }
+
+.admin-frame-header {
+  background: #2a2f36; }
+  .admin-frame-header .navbar {
+    height: 50px;
+    margin-bottom: 0;
+    border: 0; }
+  .admin-frame-header .navbar-header {
+    height: 100%; }
+  .admin-frame-header .navbar-nav {
+    margin: 0; }
+  .admin-frame-header .navbar-brand {
+    width: 180px;
+    height: 100%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-right: 1px solid #15181a;
+    border-bottom: 1px solid #15181a; }
+    .admin-frame-header .navbar-brand img {
+      margin: 0 auto; }
+  .admin-frame-header .navbar-nav.navbar-right > li {
+    border-left: 1px solid #15181a; }
+    .admin-frame-header .navbar-nav.navbar-right > li a {
+      color: #fff;
+      padding: 0;
+      line-height: 45px;
+      display: block; }
+      .admin-frame-header .navbar-nav.navbar-right > li a:hover, .admin-frame-header .navbar-nav.navbar-right > li a:focus, .admin-frame-header .navbar-nav.navbar-right > li a:active {
+        color: #ccc; }
+  .admin-frame-header .navbar-nav > li {
+    color: #fff;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 20px;
+    transition: color .2s linear; }
+
+.admin-frame-aside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 180px;
+  padding-top: 50px; }
+  .admin-frame-aside .child-list {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    left: 180px;
+    width: 180px;
+    margin: 0;
+    box-shadow: 2px 2px 4px #ccc;
+    background: #fff;
+    z-index: 9;
+    display: block !important;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    height: auto !important;
+    box-shadow: none;
+    background: #f2f2f2; }
+    .admin-frame-aside .child-list.collapsing, .admin-frame-aside .child-list.in {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      z-index: 10; }
+    .admin-frame-aside .child-list li {
+      position: relative;
+      font-size: 12px; }
+      .admin-frame-aside .child-list li:not(:last-child):after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: #e1e2e5; }
+      .admin-frame-aside .child-list li:hover, .admin-frame-aside .child-list li.active {
+        background: #fff; }
+    .admin-frame-aside .child-list a {
+      display: block;
+      line-height: 45px;
+      padding: 0;
+      text-align: center;
+      text-decoration: none; }
+  .admin-frame-aside .nav {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    bottom: 0;
+    width: 180px;
+    background: #2a2f36;
+    color: #fff;
+    z-index: 11; }
+    .admin-frame-aside .nav > li {
+      margin: 0;
+      border-top: 1px solid #15181a; }
+      .admin-frame-aside .nav > li:first-child {
+        border-top: 0; }
+      .admin-frame-aside .nav > li:after {
+        position: absolute;
+        content: ' ';
+        right: 0;
+        top: 50%;
+        margin-top: -6px;
+        border-right: 6px solid #f2f2f2;
+        border-top: 6px solid transparent;
+        border-bottom: 6px solid transparent;
+        opacity: 1;
+        transition: opacity 0s .2s linear; }
+      .admin-frame-aside .nav > li.collapsed > a {
+        background: transparent; }
+      .admin-frame-aside .nav > li.collapsed:after {
+        opacity: 0; }
+      .admin-frame-aside .nav > li > a {
+        border-radius: 0;
+        padding: 0;
+        line-height: 44px;
+        height: 44px;
+        display: block;
+        background: #ce4e45;
+        color: #fff;
+        text-align: center;
+        font-size: 12px; }
+        .admin-frame-aside .nav > li > a.hover, .admin-frame-aside .nav > li > a:hover, .admin-frame-aside .nav > li > a.active {
+          background: #ce4e45; }
+
+.admin-frame-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-x: auto;
+  overflow-y: auto;
+  margin: 50px 0 0 180px;
+  font-size: 0; }
+
+.admin-main-wrap {
+  min-width: 1190px;
+  padding: 0 30px;
+  font-size: 14px; }
+
+body {
+  overflow-x: auto; }
+
+.iScrollVerticalScrollbar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 8px;
+  background: #fff;
+  box-shadow: inset 0 0 6px #666; }
+
+.iScrollIndicator {
+  position: absolute;
+  width: 100%;
+  background: #df483d;
+  border-radius: 6px; }
+
+.admin-role-edit > .nav-tabs {
+  margin: 30px 0;
+  border-bottom: 3px solid #df483d; }
+  .admin-role-edit > .nav-tabs li {
+    margin-bottom: 0;
+    text-align: center; }
+    .admin-role-edit > .nav-tabs li.active a {
+      border: 0;
+      background: #df483d;
+      color: #fff; }
+    .admin-role-edit > .nav-tabs li a {
+      min-width: 100px;
+      line-height: 1;
+      height: 34px;
+      background: #fce7e6;
+      border: 0;
+      margin-right: 20px; }
+
+.admin-management-container {
+  margin: 20px 0; }
+  .admin-management-container > .clearfix {
+    margin: 20px 0; }
+  .admin-management-container .btn-round {
+    min-width: 208px;
+    padding: 6px 16px;
+    border-radius: 18px; }
+  .admin-management-container .form-inline select.form-control {
+    width: 120px; }
+  .admin-management-container .form-inline .form-group {
+    margin: 0 10px 0 30px; }
+    .admin-management-container .form-inline .form-group + .input-group {
+      margin-left: 30px; }
+  .admin-management-container .form-inline .input-group {
+    background: #fff; }
+    .admin-management-container .form-inline .input-group input {
+      border-radius: 17px;
+      width: 360px;
+      padding-right: 40px;
+      background: transparent; }
+    .admin-management-container .form-inline .input-group .btn {
+      position: relative;
+      z-index: 3;
+      margin-top: 1px;
+      margin-left: -40px;
+      background: transparent; }
+  .admin-management-container.admin-management-store .admin-management-panel {
+    height: 530px; }
+  .admin-management-container.admin-management-store > .admin-management-panel {
+    margin: 40px 0;
+    height: auto; }
+    .admin-management-container.admin-management-store > .admin-management-panel .header .col-xs-3 {
+      position: relative; }
+      .admin-management-container.admin-management-store > .admin-management-panel .header .col-xs-3:last-child:after {
+        display: none; }
+      .admin-management-container.admin-management-store > .admin-management-panel .header .col-xs-3:after {
+        font-family: 'Glyphicons Halflings';
+        content: "\e258";
+        position: absolute;
+        right: 0;
+        color: #999; }
+    .admin-management-container.admin-management-store > .admin-management-panel li {
+      line-height: 48px;
+      border-bottom: 1px dashed #ccc;
+      font-size: 16px; }
+    .admin-management-container.admin-management-store > .admin-management-panel .btn {
+      width: 140px;
+      height: 34px;
+      border-radius: 17px;
+      border-color: #df483d;
+      color: #df483d;
+      font-size: 16px;
+      font-weight: 600; }
+      .admin-management-container.admin-management-store > .admin-management-panel .btn:hover {
+        background: #df483d;
+        color: #fff; }
+  .admin-management-container.admin-management-store .btn-round {
+    min-width: 120px; }
+
+.admin-management-panel {
+  height: 700px;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #b2b2b2;
+  box-shadow: 0 0 4px #b2b2b2;
+  font-size: 12px;
+  position: relative; }
+  .admin-management-panel.admin-manage-role {
+    height: 400px;
+    margin-bottom: 30px; }
+    .admin-management-panel.admin-manage-role + .admin-management-panel {
+      height: 270px; }
+  .admin-management-panel .header {
+    text-align: center;
+    line-height: 40px;
+    font-weight: 600;
+    border-bottom: 1px solid #b2b2b2;
+    box-shadow: 0 4px 4px -1px #b2b2b2;
+    position: relative;
+    z-index: 1;
+    font-size: 14px; }
+    .admin-management-panel .header:before, .admin-management-panel .header:after {
+      content: " ";
+      display: table; }
+    .admin-management-panel .header:after {
+      clear: both; }
+    .admin-management-panel .header > div {
+      white-space: nowrap; }
+    .admin-management-panel .header .btn-block {
+      margin: 5px 0; }
+  .admin-management-panel .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    display: table-cell;
+    padding: 10px 20px;
+    vertical-align: middle;
+    box-shadow: 0 -4px 4px -1px #b2b2b2; }
+    .admin-management-panel .footer .pagination,
+    .admin-management-panel .footer .pagination-info {
+      margin: 0;
+      font-size: 12px; }
+  .admin-management-panel .iscroll_container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden; }
+    .admin-management-panel .iscroll_container.with-header {
+      top: 40px; }
+    .admin-management-panel .iscroll_container.with-footer {
+      bottom: 50px; }
+  .admin-management-panel .list-unstyled {
+    margin: 0; }
+    .admin-management-panel .list-unstyled a {
+      text-decoration: none; }
+    .admin-management-panel .list-unstyled.dashed-split li {
+      border-bottom: 1px dashed #b2b2b2; }
+    .admin-management-panel .list-unstyled.has-col-8:before, .admin-management-panel .list-unstyled.has-col-8:after {
+      content: " ";
+      display: table; }
+    .admin-management-panel .list-unstyled.has-col-8:after {
+      clear: both; }
+    .admin-management-panel .list-unstyled.has-col-8 li {
+      width: 19%;
+      padding-left: 15px;
+      text-align: left;
+      float: left;
+      line-height: 50px; }
+      .admin-management-panel .list-unstyled.has-col-8 li.title {
+        width: 100%;
+        border-top: 2px solid #b2b2b2;
+        margin-top: 10px;
+        line-height: 32px;
+        font-size: 14px;
+        text-align: left;
+        padding: 0 15px; }
+        .admin-management-panel .list-unstyled.has-col-8 li.title:first-child {
+          border: 0; }
+    .admin-management-panel .list-unstyled.has-col-8 .checkbox {
+      line-height: 32px; }
+      .admin-management-panel .list-unstyled.has-col-8 .checkbox input {
+        margin-top: 10px; }
+    .admin-management-panel .list-unstyled li {
+      line-height: 42px;
+      text-align: center; }
+      .admin-management-panel .list-unstyled li:before, .admin-management-panel .list-unstyled li:after {
+        content: " ";
+        display: table; }
+      .admin-management-panel .list-unstyled li:after {
+        clear: both; }
+      .admin-management-panel .list-unstyled li a div {
+        background: #fce7e6; }
+      .admin-management-panel .list-unstyled li.active {
+        background: #fce7e6; }
+      .admin-management-panel .list-unstyled li a.collapsed div {
+        background: #fff; }
+      .admin-management-panel .list-unstyled li .btn {
+        margin: 0 4px;
+        padding: 4px 8px;
+        font-size: 12px;
+        line-height: 1.25; }
+      .admin-management-panel .list-unstyled li [class^='col-xs'] {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+    .admin-management-panel .list-unstyled .collapse-info {
+      box-shadow: inset 0 2px 4px #b2b2b2;
+      background: #e7e7e7; }
+      .admin-management-panel .list-unstyled .collapse-info li {
+        line-height: 30px; }
+
+#J_role_list li,
+#J_department_list li {
+  cursor: pointer; }
+
+.admin-refund-container {
+  margin: 30px 0; }
+  .admin-refund-container > .nav-tabs {
+    margin: 30px 0;
+    border-bottom: 3px solid #df483d; }
+    .admin-refund-container > .nav-tabs li {
+      margin-bottom: 0;
+      text-align: center; }
+      .admin-refund-container > .nav-tabs li.active a {
+        border: 0;
+        background: #df483d;
+        color: #fff; }
+      .admin-refund-container > .nav-tabs li a {
+        min-width: 100px;
+        line-height: 1;
+        height: 34px;
+        background: #fce7e6;
+        border: 0;
+        margin-right: 20px; }
+  .admin-refund-container .nav-tabs {
+    font-weight: bold; }
+  .admin-refund-container img {
+    max-width: none; }
+  .admin-refund-container .admin-refund-todo .admin-management-panel button,
+  .admin-refund-container .admin-refund-done .admin-management-panel button,
+  .admin-refund-container .admin-refund-confirm .admin-management-panel button {
+    outline: none; }
+  .admin-refund-container .admin-refund-todo .admin-management-panel .img-control,
+  .admin-refund-container .admin-refund-done .admin-management-panel .img-control,
+  .admin-refund-container .admin-refund-confirm .admin-management-panel .img-control {
+    max-width: 100%; }
+  .admin-refund-container .admin-refund-todo .admin-management-panel .header,
+  .admin-refund-container .admin-refund-done .admin-management-panel .header,
+  .admin-refund-container .admin-refund-confirm .admin-management-panel .header {
+    padding: 0 12px;
+    text-align: left; }
+    .admin-refund-container .admin-refund-todo .admin-management-panel .header .input-group,
+    .admin-refund-container .admin-refund-done .admin-management-panel .header .input-group,
+    .admin-refund-container .admin-refund-confirm .admin-management-panel .header .input-group {
+      margin-top: 5px;
+      background: #fff; }
+      .admin-refund-container .admin-refund-todo .admin-management-panel .header .input-group input,
+      .admin-refund-container .admin-refund-done .admin-management-panel .header .input-group input,
+      .admin-refund-container .admin-refund-confirm .admin-management-panel .header .input-group input {
+        border-radius: 17px;
+        width: 200px;
+        padding-right: 40px;
+        background: transparent; }
+      .admin-refund-container .admin-refund-todo .admin-management-panel .header .input-group .input-group-btn,
+      .admin-refund-container .admin-refund-done .admin-management-panel .header .input-group .input-group-btn,
+      .admin-refund-container .admin-refund-confirm .admin-management-panel .header .input-group .input-group-btn {
+        line-height: 30px; }
+      .admin-refund-container .admin-refund-todo .admin-management-panel .header .input-group .btn,
+      .admin-refund-container .admin-refund-done .admin-management-panel .header .input-group .btn,
+      .admin-refund-container .admin-refund-confirm .admin-management-panel .header .input-group .btn {
+        position: relative;
+        z-index: 3;
+        margin-left: -40px;
+        background: transparent; }
+  .admin-refund-container .admin-refund-todo .admin-management-panel .media,
+  .admin-refund-container .admin-refund-done .admin-management-panel .media,
+  .admin-refund-container .admin-refund-confirm .admin-management-panel .media {
+    padding: 12px 0;
+    border-bottom: 1px solid #b2b2b2; }
+    .admin-refund-container .admin-refund-todo .admin-management-panel .media img,
+    .admin-refund-container .admin-refund-done .admin-management-panel .media img,
+    .admin-refund-container .admin-refund-confirm .admin-management-panel .media img {
+      margin-left: 12px;
+      padding: 3px;
+      width: 52px;
+      height: 52px;
+      border: 2px solid #ccc; }
+  .admin-refund-container .admin-refund-todo .admin-management-panel .media-body,
+  .admin-refund-container .admin-refund-done .admin-management-panel .media-body,
+  .admin-refund-container .admin-refund-confirm .admin-management-panel .media-body {
+    line-height: 28px; }
+    .admin-refund-container .admin-refund-todo .admin-management-panel .media-body .media-heading,
+    .admin-refund-container .admin-refund-done .admin-management-panel .media-body .media-heading,
+    .admin-refund-container .admin-refund-confirm .admin-management-panel .media-body .media-heading {
+      font-weight: bold; }
+  .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg,
+  .admin-refund-container .admin-refund-done .admin-management-panel .header-lg,
+  .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg {
+    height: 96px; }
+    .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg + .iscroll_container,
+    .admin-refund-container .admin-refund-done .admin-management-panel .header-lg + .iscroll_container,
+    .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg + .iscroll_container {
+      left: 0;
+      right: auto; }
+      .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg + .iscroll_container.iscroll_container-full,
+      .admin-refund-container .admin-refund-done .admin-management-panel .header-lg + .iscroll_container.iscroll_container-full,
+      .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg + .iscroll_container.iscroll_container-full {
+        width: 100%;
+        right: 0; }
+    .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg ~ .iscroll_container,
+    .admin-refund-container .admin-refund-done .admin-management-panel .header-lg ~ .iscroll_container,
+    .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg ~ .iscroll_container {
+      top: 96px;
+      width: 50%;
+      left: auto; }
+      .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg ~ .iscroll_container .h5,
+      .admin-refund-container .admin-refund-done .admin-management-panel .header-lg ~ .iscroll_container .h5,
+      .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg ~ .iscroll_container .h5 {
+        color: #df483d;
+        font-weight: bold; }
+      .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg ~ .iscroll_container .table,
+      .admin-refund-container .admin-refund-done .admin-management-panel .header-lg ~ .iscroll_container .table,
+      .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg ~ .iscroll_container .table {
+        margin-bottom: 5px; }
+      .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg ~ .iscroll_container .total,
+      .admin-refund-container .admin-refund-done .admin-management-panel .header-lg ~ .iscroll_container .total,
+      .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg ~ .iscroll_container .total {
+        border: 1px solid #ddd;
+        background-color: #f7f7f7;
+        text-align: center; }
+        .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg ~ .iscroll_container .total tr,
+        .admin-refund-container .admin-refund-done .admin-management-panel .header-lg ~ .iscroll_container .total tr,
+        .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg ~ .iscroll_container .total tr {
+          border: none; }
+          .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg ~ .iscroll_container .total tr td,
+          .admin-refund-container .admin-refund-done .admin-management-panel .header-lg ~ .iscroll_container .total tr td,
+          .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg ~ .iscroll_container .total tr td {
+            border: none;
+            text-align: right;
+            padding: 2px; }
+          .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg ~ .iscroll_container .total tr .td-right,
+          .admin-refund-container .admin-refund-done .admin-management-panel .header-lg ~ .iscroll_container .total tr .td-right,
+          .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg ~ .iscroll_container .total tr .td-right {
+            text-align: left; }
+          .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg ~ .iscroll_container .total tr .active,
+          .admin-refund-container .admin-refund-done .admin-management-panel .header-lg ~ .iscroll_container .total tr .active,
+          .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg ~ .iscroll_container .total tr .active {
+            color: #df483d;
+            font-weight: bold; }
+      .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg ~ .iscroll_container .table-bordered,
+      .admin-refund-container .admin-refund-done .admin-management-panel .header-lg ~ .iscroll_container .table-bordered,
+      .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg ~ .iscroll_container .table-bordered {
+        table-layout: fixed; }
+        .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg ~ .iscroll_container .table-bordered .media,
+        .admin-refund-container .admin-refund-done .admin-management-panel .header-lg ~ .iscroll_container .table-bordered .media,
+        .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg ~ .iscroll_container .table-bordered .media {
+          border-bottom: 0; }
+          .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg ~ .iscroll_container .table-bordered .media img,
+          .admin-refund-container .admin-refund-done .admin-management-panel .header-lg ~ .iscroll_container .table-bordered .media img,
+          .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg ~ .iscroll_container .table-bordered .media img {
+            width: 70px;
+            height: 70px; }
+          .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg ~ .iscroll_container .table-bordered .media p,
+          .admin-refund-container .admin-refund-done .admin-management-panel .header-lg ~ .iscroll_container .table-bordered .media p,
+          .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg ~ .iscroll_container .table-bordered .media p {
+            margin-bottom: 0; }
+      .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg ~ .iscroll_container .img-responsive + .img-responsive,
+      .admin-refund-container .admin-refund-done .admin-management-panel .header-lg ~ .iscroll_container .img-responsive + .img-responsive,
+      .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg ~ .iscroll_container .img-responsive + .img-responsive {
+        margin-top: 12px; }
+      .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg ~ .iscroll_container .refund-amount,
+      .admin-refund-container .admin-refund-done .admin-management-panel .header-lg ~ .iscroll_container .refund-amount,
+      .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg ~ .iscroll_container .refund-amount {
+        margin-bottom: 20px; }
+        .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg ~ .iscroll_container .refund-amount .ipt-amount,
+        .admin-refund-container .admin-refund-done .admin-management-panel .header-lg ~ .iscroll_container .refund-amount .ipt-amount,
+        .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg ~ .iscroll_container .refund-amount .ipt-amount {
+          outline: none;
+          width: 220px;
+          height: 28px;
+          margin-bottom: 15px;
+          padding-left: 6px; }
+        .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg ~ .iscroll_container .refund-amount .detail-amount,
+        .admin-refund-container .admin-refund-done .admin-management-panel .header-lg ~ .iscroll_container .refund-amount .detail-amount,
+        .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg ~ .iscroll_container .refund-amount .detail-amount {
+          font-size: 12px;
+          color: #333; }
+          .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg ~ .iscroll_container .refund-amount .detail-amount img,
+          .admin-refund-container .admin-refund-done .admin-management-panel .header-lg ~ .iscroll_container .refund-amount .detail-amount img,
+          .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg ~ .iscroll_container .refund-amount .detail-amount img {
+            vertical-align: top; }
+          .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg ~ .iscroll_container .refund-amount .detail-amount .mark-point,
+          .admin-refund-container .admin-refund-done .admin-management-panel .header-lg ~ .iscroll_container .refund-amount .detail-amount .mark-point,
+          .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg ~ .iscroll_container .refund-amount .detail-amount .mark-point {
+            margin-right: 4px; }
+      .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg ~ .iscroll_container textarea,
+      .admin-refund-container .admin-refund-done .admin-management-panel .header-lg ~ .iscroll_container textarea,
+      .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg ~ .iscroll_container textarea {
+        resize: none; }
+      .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg ~ .iscroll_container .img-upload-box-wrap,
+      .admin-refund-container .admin-refund-done .admin-management-panel .header-lg ~ .iscroll_container .img-upload-box-wrap,
+      .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg ~ .iscroll_container .img-upload-box-wrap {
+        margin: 0 -4px; }
+        .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg ~ .iscroll_container .img-upload-box-wrap .lint,
+        .admin-refund-container .admin-refund-done .admin-management-panel .header-lg ~ .iscroll_container .img-upload-box-wrap .lint,
+        .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg ~ .iscroll_container .img-upload-box-wrap .lint {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          width: 100%;
+          text-align: center;
+          color: #b2b2b2;
+          font-size: 16px; }
+          .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg ~ .iscroll_container .img-upload-box-wrap .lint i,
+          .admin-refund-container .admin-refund-done .admin-management-panel .header-lg ~ .iscroll_container .img-upload-box-wrap .lint i,
+          .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg ~ .iscroll_container .img-upload-box-wrap .lint i {
+            display: block;
+            font-size: 30px; }
+      .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg ~ .iscroll_container .img-upload-box,
+      .admin-refund-container .admin-refund-done .admin-management-panel .header-lg ~ .iscroll_container .img-upload-box,
+      .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg ~ .iscroll_container .img-upload-box {
+        margin: 4px 4px 0;
+        position: relative;
+        width: 110px;
+        height: 80px;
+        border: 2px solid #b2b2b2;
+        overflow: hidden;
+        cursor: pointer;
+        display: inline-block; }
+        .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg ~ .iscroll_container .img-upload-box img,
+        .admin-refund-container .admin-refund-done .admin-management-panel .header-lg ~ .iscroll_container .img-upload-box img,
+        .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg ~ .iscroll_container .img-upload-box img {
+          position: relative;
+          z-index: 1;
+          width: 100%;
+          height: 100%;
+          cursor: default; }
+        .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg ~ .iscroll_container .img-upload-box .close,
+        .admin-refund-container .admin-refund-done .admin-management-panel .header-lg ~ .iscroll_container .img-upload-box .close,
+        .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg ~ .iscroll_container .img-upload-box .close {
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          top: 0;
+          right: 0;
+          z-index: 2; }
+      .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg ~ .iscroll_container input[type="file"],
+      .admin-refund-container .admin-refund-done .admin-management-panel .header-lg ~ .iscroll_container input[type="file"],
+      .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg ~ .iscroll_container input[type="file"] {
+        position: absolute;
+        clip: rect(0, 0, 0, 0);
+        pointer-events: none; }
+    .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg .pull-left,
+    .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg .pull-right,
+    .admin-refund-container .admin-refund-done .admin-management-panel .header-lg .pull-left,
+    .admin-refund-container .admin-refund-done .admin-management-panel .header-lg .pull-right,
+    .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg .pull-left,
+    .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg .pull-right {
+      width: 50%; }
+    .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg .pull-left,
+    .admin-refund-container .admin-refund-done .admin-management-panel .header-lg .pull-left,
+    .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg .pull-left {
+      border-right: 1px solid #b2b2b2; }
+    .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg .media,
+    .admin-refund-container .admin-refund-done .admin-management-panel .header-lg .media,
+    .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg .media {
+      padding: 0;
+      font-size: 12px;
+      border-bottom: 0; }
+      .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg .media .media-left,
+      .admin-refund-container .admin-refund-done .admin-management-panel .header-lg .media .media-left,
+      .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg .media .media-left {
+        height: 96px; }
+        .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg .media .media-left img,
+        .admin-refund-container .admin-refund-done .admin-management-panel .header-lg .media .media-left img,
+        .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg .media .media-left img {
+          border-radius: 25px; }
+      .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg .media .media-body.list-unstyled li,
+      .admin-refund-container .admin-refund-done .admin-management-panel .header-lg .media .media-body.list-unstyled li,
+      .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg .media .media-body.list-unstyled li {
+        font-weight: 400;
+        text-align: left;
+        line-height: 1.4; }
+    .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg > .pull-right,
+    .admin-refund-container .admin-refund-done .admin-management-panel .header-lg > .pull-right,
+    .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg > .pull-right {
+      padding-left: 30px;
+      height: 96px;
+      line-height: 96px; }
+    .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg .radio,
+    .admin-refund-container .admin-refund-done .admin-management-panel .header-lg .radio,
+    .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg .radio {
+      display: inline-block;
+      line-height: 1.6; }
+      .admin-refund-container .admin-refund-todo .admin-management-panel .header-lg .radio + .btn,
+      .admin-refund-container .admin-refund-done .admin-management-panel .header-lg .radio + .btn,
+      .admin-refund-container .admin-refund-confirm .admin-management-panel .header-lg .radio + .btn {
+        margin-left: 30px; }
+  .admin-refund-container .admin-refund-done .admin-refund-done-info li {
+    text-align: left;
+    padding-left: 36px;
+    position: relative; }
+    .admin-refund-container .admin-refund-done .admin-refund-done-info li .time {
+      margin-right: 48px; }
+    .admin-refund-container .admin-refund-done .admin-refund-done-info li:first-child:after {
+      display: none; }
+    .admin-refund-container .admin-refund-done .admin-refund-done-info li:before {
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      top: 50%;
+      left: 173px;
+      margin-top: -4px;
+      background: currentColor; }
+    .admin-refund-container .admin-refund-done .admin-refund-done-info li:after {
+      content: '';
+      position: absolute;
+      border-left: 2px dotted;
+      height: 30px;
+      top: -15px;
+      left: 176px; }
+  .admin-refund-container .admin-refund-done .admin-refund-done-gallary {
+    margin: 0 -5px; }
+    .admin-refund-container .admin-refund-done .admin-refund-done-gallary:before, .admin-refund-container .admin-refund-done .admin-refund-done-gallary:after {
+      content: " ";
+      display: table; }
+    .admin-refund-container .admin-refund-done .admin-refund-done-gallary:after {
+      clear: both; }
+    .admin-refund-container .admin-refund-done .admin-refund-done-gallary li {
+      border: 5px solid #fff;
+      width: 140px;
+      height: 110px;
+      float: left; }
+      .admin-refund-container .admin-refund-done .admin-refund-done-gallary li img {
+        height: 100%;
+        width: 100%;
+        border: 4px solid #b2b2b2; }
+
+.apx-modal-admin-manage-staff textarea {
+  resize: none; }
+
+.apx-modal-admin-manage-staff .form-group {
+  text-align: left; }
+
+.apx-modal-admin-manage-staff .img-upload-box-wrap {
+  margin: 0 -4px; }
+  .apx-modal-admin-manage-staff .img-upload-box-wrap .lint {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #b2b2b2;
+    font-size: 16px; }
+    .apx-modal-admin-manage-staff .img-upload-box-wrap .lint i {
+      display: block;
+      font-size: 30px; }
+
+.apx-modal-admin-manage-staff .img-upload-box {
+  margin: 4px 4px 0;
+  position: relative;
+  width: 110px;
+  height: 80px;
+  border: 2px solid #b2b2b2;
+  overflow: hidden;
+  cursor: pointer;
+  display: inline-block; }
+  .apx-modal-admin-manage-staff .img-upload-box img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: default; }
+  .apx-modal-admin-manage-staff .img-upload-box .close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    right: 0;
+    z-index: 2; }
+
+.apx-modal-admin-manage-staff input[type="file"] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  pointer-events: none; }
+
+.refund-img li {
+  width: 122px;
+  height: 122px;
+  float: left;
+  margin: 5px; }
+  .refund-img li img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #b2b2b2; }

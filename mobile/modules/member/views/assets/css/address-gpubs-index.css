@@ -1,0 +1,91 @@
+.self-lifting-manage-box {
+  padding: 4vw 4vw 0; }
+  .self-lifting-manage-box .self-lifting-manage-no .addr-no-box {
+    width: 61.33333vw;
+    height: 53.33333vw;
+    margin: 26.66667vw auto 0;
+    font-size: 4vw;
+    text-align: center; }
+    .self-lifting-manage-box .self-lifting-manage-no .addr-no-box > span {
+      display: block; }
+      .self-lifting-manage-box .self-lifting-manage-no .addr-no-box > span.user-pic {
+        width: 18.66667vw;
+        height: 18.66667vw;
+        background-color: #DEDEDE;
+        border-radius: 50%;
+        margin: 0 auto 4vw; }
+    .self-lifting-manage-box .self-lifting-manage-no .addr-no-box .manage-btn {
+      color: #fff;
+      display: block;
+      width: 58.66667vw;
+      height: 14.4vw;
+      line-height: 12.66667vw;
+      background: url("/images/self_lifting_manage/but_bg.png") no-repeat;
+      background-size: 100%;
+      margin-top: 16vw;
+      text-align: center; }
+  .self-lifting-manage-box .self-lifting-manage .addr-list .addr-item {
+    padding: 4vw 4vw 0;
+    background-color: #fff;
+    margin-bottom: 2.66667vw; }
+    .self-lifting-manage-box .self-lifting-manage .addr-list .addr-item .addr-info {
+      border-bottom: 0.26667vw solid #efeff4;
+      padding-bottom: 2.66667vw; }
+      .self-lifting-manage-box .self-lifting-manage .addr-list .addr-item .addr-info .addr-default {
+        display: inline-block;
+        width: 10.66667vw;
+        height: 5.06667vw;
+        background: url("/images/self_lifting_manage/default.png") no-repeat;
+        background-size: 100%;
+        margin-right: 1.86667vw;
+        padding-bottom: 1.33333vw; }
+      .self-lifting-manage-box .self-lifting-manage .addr-list .addr-item .addr-info .addr-txt {
+        display: inline-block;
+        width: 66.66667vw;
+        font-size: 4.26667vw;
+        margin-bottom: 1.33333vw;
+        font-weight: bold;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+      .self-lifting-manage-box .self-lifting-manage .addr-list .addr-item .addr-info .addr-user {
+        font-size: 4.26667vw;
+        font-weight: bold;
+        margin-right: 2.66667vw; }
+      .self-lifting-manage-box .self-lifting-manage .addr-list .addr-item .addr-info .addr-detail {
+        color: #AEAEAE;
+        display: block;
+        margin: 1.33333vw 0;
+        font-size: 3.46667vw; }
+    .self-lifting-manage-box .self-lifting-manage .addr-list .addr-item .addr-set {
+      font-size: 3.73333vw;
+      height: 13.33333vw;
+      line-height: 13.33333vw; }
+      .self-lifting-manage-box .self-lifting-manage .addr-list .addr-item .addr-set .addr-sele {
+        width: 5.86667vw;
+        margin-bottom: -1.6vw;
+        margin-right: 1.33333vw;
+        cursor: pointer; }
+      .self-lifting-manage-box .self-lifting-manage .addr-list .addr-item .addr-set .addr-right {
+        float: right; }
+        .self-lifting-manage-box .self-lifting-manage .addr-list .addr-item .addr-set .addr-right .addr-btn {
+          display: inline-block;
+          width: 13.33333vw;
+          height: 7.46667vw;
+          line-height: 7.46667vw;
+          text-align: center;
+          margin-top: 2.93333vw; }
+          .self-lifting-manage-box .self-lifting-manage .addr-list .addr-item .addr-set .addr-right .addr-btn.active {
+            background-color: #F1F1F1; }
+  .self-lifting-manage-box .push-btn {
+    color: #fff;
+    display: block;
+    width: 92vw;
+    height: 14.4vw;
+    line-height: 13.06667vw;
+    background: url("/images/self_lifting_manage/btn_bg.png") no-repeat;
+    background-size: 100%;
+    border-radius: 8vw;
+    margin: 6.66667vw 0;
+    font-size: 4.53333vw;
+    text-align: center; }

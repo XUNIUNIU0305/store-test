@@ -1,0 +1,68 @@
+.newly-added .newly-added-top {
+  color: #FF5F61;
+  padding: 4vw;
+  font-size: 3.2vw;
+  background-color: #fff; }
+
+.newly-added .new-addr-list {
+  margin-top: 2.66667vw;
+  padding-left: 4vw;
+  background-color: #fff; }
+  .newly-added .new-addr-list .new-addr-item {
+    height: 13.33333vw;
+    line-height: 13.33333vw;
+    font-size: 4vw;
+    border-bottom: 0.26667vw solid #efeff4; }
+    .newly-added .new-addr-list .new-addr-item > span {
+      display: inline-block;
+      color: #333;
+      width: 21.33333vw; }
+    .newly-added .new-addr-list .new-addr-item .new-addr-sel {
+      width: 21.6vw;
+      border-style: none; }
+    .newly-added .new-addr-list .new-addr-item .new-addr-prompt {
+      width: 60vw;
+      height: 13.33333vw;
+      background-color: transparent;
+      border-style: none;
+      outline-style: none; }
+    .newly-added .new-addr-list .new-addr-item .new-addr-icon {
+      display: inline-block;
+      width: 4vw;
+      height: 4vw;
+      background: url("/images/address_gpubs_add/errio_icon.png") no-repeat;
+      background-size: 100%;
+      margin-bottom: -0.8vw;
+      margin-left: 1.33333vw; }
+
+.newly-added .new-addr-alone {
+  height: 13.33333vw;
+  line-height: 13.33333vw;
+  font-size: 4vw;
+  margin-top: 2.66667vw;
+  background-color: #fff; }
+  .newly-added .new-addr-alone .no-set {
+    width: 5.86667vw;
+    margin: 0 1.33333vw -1.33333vw 4vw;
+    cursor: pointer; }
+
+.newly-added .remind {
+  color: #FF5F61;
+  font-size: 2.93333vw;
+  padding: 0 4vw 1.33333vw 12.53333vw;
+  background-color: #fff;
+  margin-top: -3.46667vw; }
+
+.newly-added .push-btn {
+  color: #fff;
+  display: block;
+  width: 92vw;
+  height: 14.4vw;
+  line-height: 13.06667vw;
+  background: url("/images/address_gpubs_add/btn_bg.png") no-repeat;
+  background-size: 100%;
+  border-radius: 8vw;
+  margin-top: 13.33333vw;
+  font-size: 4.53333vw;
+  text-align: center;
+  margin-left: 4vw; }

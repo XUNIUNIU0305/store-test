@@ -1,0 +1,134 @@
+.new-exclusive {
+  padding-top: 130.66667vw;
+  background: #ffd304 url("/images/new_exclusive/beijing.jpg") no-repeat top center/100%;
+  overflow: hidden; }
+  .new-exclusive img {
+    max-width: 100%;
+    vertical-align: top; }
+  .new-exclusive .tip-c-1 {
+    background-color: #fda702; }
+  .new-exclusive .tip-c-2 {
+    background-color: #f712bf; }
+  .new-exclusive .tip-c-3 {
+    background-color: #ee0c06; }
+  .new-exclusive .tip-c-4 {
+    background-color: #5b02fc; }
+  .new-exclusive .exclusive-coupon {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-align-items: center;
+            align-items: center;
+    margin: 5.33333vw 4vw; }
+    .new-exclusive .exclusive-coupon a {
+      -webkit-flex: 0 0 45.33333vw;
+              flex: 0 0 45.33333vw;
+      padding: 0.53333vw 1.33333vw;
+      box-sizing: border-box; }
+      .new-exclusive .exclusive-coupon a:first-child {
+        -webkit-flex: 90.93333vw;
+                flex: 90.93333vw; }
+  .new-exclusive .nav-box .nav-title {
+    font-size: 5.86667vw;
+    color: #fff; }
+    .new-exclusive .nav-box .nav-title p {
+      margin: 0 auto;
+      width: 60.26667vw;
+      border: 0.53333vw solid #000;
+      border-radius: 2.66667vw;
+      background-color: #fd5626;
+      text-align: center; }
+  .new-exclusive .nav-box ul {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    margin: 1.86667vw 0; }
+    .new-exclusive .nav-box ul li {
+      -webkit-flex: 1;
+              flex: 1;
+      font-size: 4.26667vw;
+      text-align: center;
+      border: 0.26667vw solid #000;
+      background-color: #fd5626; }
+      .new-exclusive .nav-box ul li a {
+        color: #fff; }
+  .new-exclusive .items-list {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-align-items: center;
+            align-items: center;
+    margin: 0 7.86667vw; }
+    .new-exclusive .items-list .item {
+      -webkit-flex: 0 0 40vw;
+              flex: 0 0 40vw;
+      box-sizing: border-box;
+      border: 0.53333vw solid #000;
+      border-radius: 2.13333vw;
+      background-color: #fff;
+      margin: 1.06667vw;
+      padding: 0 0.8vw; }
+      .new-exclusive .items-list .item .img {
+        padding: 1.06667vw 0.53333vw;
+        width: 26.93333vw;
+        height: 26.93333vw;
+        margin: 0 auto; }
+      .new-exclusive .items-list .item .title {
+        font-size: 2.93333vw;
+        color: #fd5626;
+        height: 3em;
+        overflow: hidden; }
+      .new-exclusive .items-list .item .tip span {
+        font-size: 1.86667vw;
+        color: #fff;
+        padding: 0 0.8vw;
+        border-radius: 0.8vw; }
+      .new-exclusive .items-list .item .price {
+        text-align: right; }
+        .new-exclusive .items-list .item .price .old-price {
+          text-decoration: line-through;
+          color: #999; }
+        .new-exclusive .items-list .item .price .new-price {
+          font-size: 2.13333vw;
+          color: #ff0000; }
+          .new-exclusive .items-list .item .price .new-price span {
+            font-size: 6.4vw; }
+  .new-exclusive .back-top {
+    width: 36vw;
+    font-size: 4.26667vw;
+    color: #ffd302;
+    text-align: center;
+    border: 0.53333vw solid #000;
+    border-radius: 2.13333vw;
+    background-color: #fd5626;
+    padding: 1.06667vw;
+    margin: 4vw auto; }
+
+.nav-box-float {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: -6.93333vw;
+  z-index: 9999;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  transition: top 0.3s; }
+  .nav-box-float.in {
+    top: 0; }
+  .nav-box-float ul {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center; }
+    .nav-box-float ul li {
+      -webkit-flex: 1;
+              flex: 1;
+      font-size: 4.26667vw;
+      text-align: center;
+      border: 0.26667vw solid #000;
+      background-color: #fd5626; }
+      .nav-box-float ul li a {
+        color: #fff; }

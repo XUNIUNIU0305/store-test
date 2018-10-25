@@ -1,0 +1,95 @@
+.film-order-detail {
+  background-color: #f2f2f2;
+  margin-top: 10px;
+  margin-bottom: 50px; }
+  .film-order-detail p {
+    margin: 0; }
+  .film-order-detail .address {
+    background-color: #FFF;
+    padding: 16px;
+    border-bottom: 4px solid transparent;
+    border-image: 4 repeating-linear-gradient(135deg, red -0.5em, red 0.8em, transparent 0.8em, transparent 2.1em, #58a 2.1em, #58a 3.4em, transparent 3.4em, transparent 4.7em); }
+    .film-order-detail .address .top {
+      position: relative; }
+      .film-order-detail .address .top p:nth-child(2) {
+        position: absolute;
+        right: 0;
+        top: 0; }
+  .film-order-detail .pro {
+    margin-top: 10px;
+    padding: 10px 16px;
+    display: -webkit-flex;
+    display: flex;
+    background: #fff; }
+    .film-order-detail .pro .img {
+      width: 30%; }
+      .film-order-detail .pro .img img {
+        width: 100%; }
+    .film-order-detail .pro .pro-text {
+      padding-left: 10px;
+      position: relative; }
+      .film-order-detail .pro .pro-text .title {
+        font-size: 1.2em; }
+      .film-order-detail .pro .pro-text .attr {
+        color: #999; }
+      .film-order-detail .pro .pro-text .price {
+        color: #ff9100;
+        position: absolute;
+        bottom: -15px;
+        left: 10px; }
+      .film-order-detail .pro .pro-text .ammount {
+        position: absolute;
+        right: 0;
+        bottom: -15px; }
+        .film-order-detail .pro .pro-text .ammount:before {
+          content: 'x'; }
+  .film-order-detail .remark {
+    background-color: #FFF;
+    padding: 12px; }
+  .film-order-detail .info {
+    background-color: #FFF;
+    margin-top: 10px;
+    padding: 0 16px;
+    color: #333; }
+    .film-order-detail .info .title {
+      font-size: 1.5em;
+      line-height: 44px;
+      position: relative;
+      border-bottom: 1px solid #f2f2f2; }
+      .film-order-detail .info .title span {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #ff9100; }
+    .film-order-detail .info ul li {
+      line-height: 44px;
+      font-size: 1.4em;
+      position: relative;
+      border-bottom: 1px solid #f2f2f2; }
+      .film-order-detail .info ul li span {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #999; }
+  .film-order-detail .total {
+    background-color: #FFF;
+    margin-top: 10px;
+    padding: 16px;
+    color: #333; }
+    .film-order-detail .total > p {
+      font-size: 1.3em;
+      position: relative; }
+      .film-order-detail .total > p span {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #999; }
+    .film-order-detail .total .price {
+      text-align: right;
+      font-size: 1.5em;
+      border-top: 1px solid #f2f2f2;
+      margin-top: 10px;
+      line-height: 44px; }
+      .film-order-detail .total .price span {
+        color: #e53935;
+        font-weight: 700; }

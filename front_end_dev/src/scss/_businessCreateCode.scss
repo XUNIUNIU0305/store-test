@@ -1,0 +1,101 @@
+.business-main-wrap {
+	background-color: #eee;
+}
+.business-create-code {
+	max-width: 100%;
+	overflow-x: hidden;
+	.header {
+		background-color: #FFF;
+		text-align: center;
+		margin-top: 10px;
+		font-size: 16px;
+		padding-bottom: 20px;
+		p {
+			margin: 10px 0;
+		}
+		a {
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		.msg {
+			border-right: 1px solid #e9eef2;
+			span {
+				color: #f88311;
+				font-weight: 700;
+				font-size: 20px;
+			}
+		}
+		.price {
+			color: #e11144;
+			margin: 20px 0 0;
+			font-size: 20px;
+			font-weight: 700;
+			+span {
+				font-size: 14px;
+				color: #8fa2cc;
+			}
+		}
+		.btn {
+			margin-top: 20px;
+		}
+	}
+	.code-list {
+		border-top: 20px solid #eee;
+		.item {
+			float: left;
+			width: 277px;
+			padding: 0;
+			background-color: #FFF;
+			font-size: 14px;
+			border-right: 20px solid #eee;
+			border-bottom: 20px solid #eee;
+			text-align: center;
+			img {
+				max-width: 100%;
+			}
+			input {
+				width: 80%;
+				padding: 2px;
+				border-radius: 2px;
+				outline: none;
+			}
+			.code {
+				font-weight: 700;
+				margin-top: 20px;
+			}
+			.remark {
+				color: #333;
+				margin: 5px 0;
+				height: 30px;
+			}
+			.handle-group {
+				.btn {
+					width: 90px;
+					margin: 12px;
+				}
+			}
+			.img {
+				width: 100%;
+				padding-top: 50%;
+				&.usable {
+					background: url('/images/business/qrCode/keshiyong.png') no-repeat center;
+				}
+				&.disabled {
+					background: url('/images/business/qrCode/yijinyong.png') no-repeat center;
+				}
+			}
+		}
+	}
+	.footer {
+		background: #fff;
+	}
+}
+.btn-business {
+	color: #fff;
+	background-color: #0080ff;
+	border-radius: 50px;
+	&.disabled {
+		background: #a3b0cc;
+	}
+}

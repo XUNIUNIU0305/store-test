@@ -1,0 +1,66 @@
+.apx-seller-form-wrap {
+	position: relative;
+	.goods-key-words {
+		position: absolute;
+		right: -267px;
+		top: -1px;
+		width: 255px;
+	  	background-color: rgb(255, 255, 255);
+	  	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.13);
+		.key-title {
+			height: 40px;
+			line-height: 40px;
+			font-size: 16px;
+			color: #333;
+			background-color: #f8f8f8;
+			text-align: center;
+			margin-bottom: 30px;
+		}
+		.key-ipt-list {
+			padding: 0 12px 0 12px;
+			display: flex;
+			flex-wrap: wrap;
+			.input-detail {
+				span {
+					display: block;
+					width: 105px;
+					height: 30px;
+					color: #333;
+					margin-bottom: 20px;
+					&:nth-child(2n+1) {
+						margin-right: 10px;
+					}
+				}
+				
+				input {
+					width: 105px;
+					height: 30px;
+					color: #333;
+			 	 	border-width: 1px;
+				  	border-color: rgb(179, 179, 179);
+				  	border-style: solid;
+				  	border-radius: 2px;
+				  	background-color: rgb(255, 255, 255);
+					margin-bottom: 20px;
+					&:nth-child(2n+1){
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+		.key-words-btn {
+			display: block;
+			height: 40px;
+			width: 100;
+			color: #fff;
+			cursor: pointer;
+			margin-top: 10px;		
+			background-color: #D04D43;
+			text-align: center;
+			line-height: 40px;
+		}
+	}
+	.show-key-words {
+		display: block;
+	}
+}

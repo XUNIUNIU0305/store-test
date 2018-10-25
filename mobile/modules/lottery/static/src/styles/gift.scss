@@ -1,0 +1,365 @@
+@import 'shared';
+@import 'mask';
+@mixin genMoney($w, $h, $order) {
+    width: $w / 750 * 100vw;
+    height: $h / 750 * 100vw;
+    background-image: url('../images/money/qian_' + $order + '.png');
+}
+
+.gift-container {
+    height: 100%;
+    background: #9edceb url('../images/theme_bg.jpg') center bottom no-repeat;
+    background-size: cover;
+    position: relative;
+    .btn-box {
+        position: absolute;
+        top: 72%;
+        left: 50%;
+        font-size: 0;
+        width: 476 / 750 * 100vw;
+        height: 240 / 750 * 100vw;
+        margin-left: -476 / 750 * 100vw / 2;
+        .btn {
+            // width: 100%;
+            height: 120 / 750 * 100vw;
+            display: block
+        }
+        .btn-record {
+            background: url('../images/p5_btn1.png') center/contain no-repeat;
+            &:active {
+                transform: scale(1.05);
+            }
+        }
+        .btn-game {
+            margin-bottom: 2vw;
+            background: url('../images/p9_btn2.png') center/contain no-repeat;
+            &:active {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+.broadcast-wrap {
+    width: 702 / 750 * 100vw;
+    height: 113 / 750 * 100vw;
+    border-radius: 113 / 750 * 100vw / 2;
+    background-color: rgba(116, 183, 215, 1);
+    box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.2), inset 0px 0px 3px 0px rgba(0, 0, 0, 0.15);
+    position: absolute;
+    top: 34 / 750 * 100vw;
+    left: 50%;
+    margin-left: -702 / 750 * 100vw / 2;
+    font-size: 26 / 750 * 100vw;
+    display: flex;
+    align-items: center;
+    i {
+        font-size: 0;
+        display: inline-block;
+        background: url('../images/p5_bg3.png') center/contain no-repeat;
+        width: 92 / 750 * 100vw;
+        height: 90 / 750 * 100vw;
+        margin: 0 15 / 750 * 100vw;
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 79 / 750 * 100vw;
+            height: 78 / 750 * 100vw;
+            margin: auto;
+            background: url('../images/head.png') center/contain no-repeat;
+        }
+    }
+    .scroll-box {
+        position: relative;
+        width: 100%;
+        height: 2em;
+        overflow: hidden;
+        ul {
+            display: block;
+            position: absolute;
+            top: 0;
+            transition: all .5s
+        }
+        li {
+            color: #fff;
+            line-height: 2;
+            height: 2em;
+            span {
+                color: #ff522f;
+            }
+        }
+    }
+    
+}
+
+.gift-content {
+    width: 673 / 750 * 100vw;
+    height: 641 / 750 * 100vw;
+    background: url('../images/p5_bg1.png') center/contain no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    font-size: 0;
+    flex-direction: column;
+    justify-content: center;
+    .title {
+        position: absolute;
+        width: 593 / 750 * 100vw;
+        height: 150 / 750 * 100vw;
+        left: 50%;
+        transform: translateX(-50%);
+        top: - 150 / 750 * 100vw * 5 / 11;
+    }
+    &.empty {
+        .title {
+            background: url('../images/p9_t.png') center/contain no-repeat
+        }
+    }
+    &.not-empty {
+        .title {
+            background-image: url('../images/p5_t.png') center/contain no-repeat
+        }
+    }
+    .gift-cash,
+    .gift-normal,
+    .gift-empty {
+        p {
+            font-weight: 600;
+            margin: 0;
+            font-size: 36 / 750 * 100vw;
+            width: 100%;
+            text-align: center;
+            line-height: 1.75;
+        }
+    }
+    .gift-empty {
+        .box {
+            width: 239 / 750 * 100vw;
+            height: 222 / 750 * 100vw;
+            margin: 12% auto 2%;
+            background: url('../images/p9_gift.png') center/contain no-repeat
+        }
+    }
+    .gift-normal {
+        .box {
+            width: 239 / 750 * 100vw;
+            height: 222 / 750 * 100vw;
+            margin: 12% auto 2%;
+            position: relative;
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+            &:before {
+                width: 100%;
+                height: 100%;
+                background: url('../images/p4_giftbg.png') center/contain no-repeat;
+            }
+            &:after {
+                width: 160 / 750 * 100vw;
+                height: 153 / 750 * 100vw;
+                margin: auto;
+                background: url('../images/gift.gif') center/contain no-repeat;
+            }
+        }
+    }
+    .gift-cash {
+        .box {
+            width: 200 / 750 * 100vw;
+            height: 200 / 750 * 100vw;
+            display: flex;
+            margin: 22% auto 2.5%;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .cash {
+            i {
+                position: absolute;
+                top: 35%;
+                left: 35%;
+                background: transparent center/contain no-repeat;
+                animation-timing-function: linear;
+                animation-fill-mode: forwards; // animation-iteration-count: infinite;
+                &:nth-child(1) {
+                    @include genMoney(60,
+                    39,
+                    1);
+                    animation-name: money-fall-1;
+                    animation-duration: 1.1s;
+                }
+                &:nth-child(2) {
+                    @include genMoney(31,
+                    29,
+                    2);
+                    animation-name: money-fall-2;
+                    animation-duration: 1.2s;
+                }
+                &:nth-child(3) {
+                    @include genMoney(27,
+                    45,
+                    3);
+                    animation-name: money-fall-3;
+                    animation-duration: 1.3s;
+                }
+                &:nth-child(4) {
+                    @include genMoney(40,
+                    22,
+                    4);
+                    animation-name: money-fall-4;
+                    animation-duration: 1.3s;
+                }
+                &:nth-child(5) {
+                    @include genMoney(40,
+                    22,
+                    5);
+                    animation-name: money-fall-5;
+                    animation-duration: 1.5s;
+                }
+                &:nth-child(6) {
+                    @include genMoney(64,
+                    43,
+                    6);
+                    animation-name: money-fall-6;
+                    animation-duration: 1.5s;
+                }
+            }
+        }
+        .bag {
+            width: 78 / 750 * 100vw;
+            height: 105 / 750 * 100vw;
+            background: url('../images/money/qiangdai.png') center/contain no-repeat;
+            animation: bag-scale 1.2s linear forwards; // animation-iteration-count: infinite;
+        }
+    }
+    .footer {
+        position: absolute;
+        bottom: 48 / 750 * 100vw;
+        font-size: 26 / 750 * 100vw;
+        text-align: center;
+        width: 100%;
+        line-height: 1.4;
+        color: #3a230a;
+        a {
+            color: #3a230a;
+        }
+    }
+}
+
+@keyframes bag-scale {
+    0% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(.8);
+    }
+    60% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes money-fall-1 {
+    0% {
+        transform: translate(100 / 750 * 100vw, -300 / 750 * 100vw);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(-10 / 750 * 100vw, -150 / 750 * 100vw);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+}
+
+@keyframes money-fall-2 {
+    0% {
+        transform: translate(-150 / 750 * 100vw, -150 / 750 * 100vw);
+        opacity: 1;
+    }
+    40% {
+        transform: translate(-100 / 750 * 100vw, -100 / 750 * 100vw);
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+}
+
+@keyframes money-fall-3 {
+    0% {
+        transform: translate(180 / 750 * 100vw, -240 / 750 * 100vw);
+        opacity: 1;
+    }
+    60% {
+        transform: translate(40 / 750 * 100vw, -100 / 750 * 100vw);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+}
+
+@keyframes money-fall-4 {
+    0% {
+        transform: translate(80 / 750 * 100vw, -240 / 750 * 100vw);
+        opacity: 1;
+    }
+    60% {
+        transform: translate(30 / 750 * 100vw, -110 / 750 * 100vw);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+}
+
+@keyframes money-fall-5 {
+    0% {
+        transform: translate(-80 / 750 * 100vw, -200 / 750 * 100vw);
+        opacity: 1;
+    }
+    60% {
+        transform: translate(-30 / 750 * 100vw, -100 / 750 * 100vw);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+}
+
+@keyframes money-fall-6 {
+    0% {
+        transform: translate(-100 / 750 * 100vw, -280 / 750 * 100vw);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(-60 / 750 * 100vw, -130 / 750 * 100vw);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+}

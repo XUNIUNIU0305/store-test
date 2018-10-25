@@ -1,0 +1,160 @@
+$base: 1 / 750 * 100vw;
+
+.brand-N-main-container {
+    img {
+        display: block;
+    }
+    .title {
+        display: block;
+        height: 355 * $base;
+        width: 750 * $base;
+    }
+    .brand-N-body-container {
+        background: #040405;
+        padding:0 30 * $base;
+        text-align: center;
+        overflow: hidden;
+        .brand-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-top: 34 * $base;
+            margin-bottom: 26 * $base;
+            a {
+                background-color: #040405;
+                img {
+                    height: 96 * $base;
+                    width: 205 * $base;
+                }
+            }
+        }
+
+        .hot-brand {
+            a {
+                margin: 0 auto;
+                img {
+                    height: 264 * $base;
+                    width: 693 * $base;
+                }
+            }
+        }
+
+        .first-brand {
+            background: linear-gradient(#2900C1, #4000A4);
+            width: 690 * $base;
+            overflow: hidden;
+            .item-box {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 24 * $base 30 * $base;
+                margin-bottom: 0;
+                .product-item {
+                    display: block;
+                    width: 304 * $base;
+                    height: 330 * $base;
+                    background-color: #fff;
+                    text-align: center;
+                    margin-right: 22 * $base;
+                    margin-bottom: 22 * $base;
+
+                    &:nth-child(2n) {
+                        margin-right: 0;
+                    }
+                    img {
+                        height: 200 * $base;
+                        width: 200 * $base;
+                        margin: 0 auto;
+                    }
+                    p {
+                        margin: 0;
+                        font-size: 24 * $base;
+                    }
+                    .price {
+                        font-size: 34 * $base;
+                        color: #E60012;
+                    }
+                    .describe {
+                        text-align: center;
+                        width: 255 * $base;
+                        height: 70 * $base;
+                        margin: 0 auto;
+                        overflow : hidden;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .experience-version {
+            position: relative;
+            &:after {
+                display: block;
+                content: '';
+                height: 72 * $base;
+                width: 102 * $base;
+                position: absolute;
+                top: 0;
+                right: 0;
+                background: url('/images/18-6-29/N+/tiyanzhuang_lable.png') no-repeat center/cover;
+            }
+        }
+        .tools-brand {
+            background: linear-gradient(#4000A4, #7600A1);
+            width: 690 * $base;
+            overflow: hidden;
+            .item-box {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 0 30 * $base;
+
+                .product-item {
+                    display: block;
+                    width: 304 * $base;
+                    height: 330 * $base;
+                    background-color: #fff;
+                    text-align: center;
+                    margin-right: 22 * $base;
+                    margin-bottom: 22 * $base;
+
+                    &:nth-child(2n) {
+                        margin-right: 0;
+                    }
+                    img {
+                        height: 200 * $base;
+                        width: 200 * $base;
+                        margin: 0 auto;
+                    }
+                    p {
+                        margin: 0;
+                        font-size: 24 * $base;
+                    }
+                    .price {
+                        font-size: 34 * $base;
+                        color: #E60012;
+                    }
+                    .describe {
+                        text-align: center;
+                        width: 255 * $base;
+                        height: 70 * $base;
+                        margin: 0 auto;
+                        overflow : hidden;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .to-top {
+        display: block;
+        img {
+            height: 98 * $base;
+            width: 750 *$base;
+        }
+    }
+}

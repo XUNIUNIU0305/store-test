@@ -1,0 +1,446 @@
+// 账户中心边栏 
+ .apx-acc-aside {
+     background: #181516;
+     color: #fff;
+     width: 240px;
+     padding-bottom: 140px;
+     margin-bottom: 240 + 12px + 60;
+     position: relative;
+     &.acc_expand {
+         .acc-aside-expand {
+             transform: translateX(934px);
+         }
+         .acc-aside-expand-btn {
+             i.glyphicon {
+                 transform: rotate(-180deg);
+             }
+         }
+         ~.apx-acc-main {
+             transform: translateY(260px);
+             margin-bottom: 260px;
+         }
+     }
+     .acc-aside-recmmend {
+         position: absolute;
+         bottom: -12px;
+         left: 0;
+         right: 0;
+         max-height: 240px;
+         overflow: hidden;
+         transform: translate(0, 100%);
+     }
+     a {
+         color: inherit;
+         text-decoration: none;
+     }
+     .acc-aside-avatar-wrap {
+         height: 241px;
+         position: relative;
+         .acc-aside-avatar {
+             border-bottom: 1px solid #959595;
+             position: absolute;
+             top: 0;
+             bottom: 0;
+             left: 0;
+             right: 0;
+             padding: 40px 64px;
+             background: #181516;
+             z-index: 2;
+             white-space: nowrap;
+             line-height: 1.8;
+             text-align: center;
+             img {
+                width: 112px;
+                height: 112px;
+             }
+             div {
+                margin: 0 -32px;
+             }
+         }
+         &:after,
+         .acc-aside-expand {
+             content: '';
+             position: absolute;
+             top: 0;
+             bottom: 0;
+             right: 0;
+             background: #fff;
+             width: 1190 - 240px;
+             z-index: 1;
+         }
+         .acc-aside-expand-btn {
+             position: absolute;
+             top: 0;
+             bottom: 0;
+             right: 0;
+             width: 16px;
+             background: rgba(#fff, .3);
+             color: #414b90;
+             line-height: 240px;
+             cursor: pointer;
+             transition: transform .2s linear;
+             text-align: center
+         }
+         .acc-aside-expand {
+             right: -16px;
+             width: 1190 - 240 - 20px;
+             content: none;
+             transition: transform .4s;
+             background: #414b90;
+             background: linear-gradient(-45deg, #414b90 14%, #4c5697 14%, #4c5697 36%, transparent 36%), linear-gradient(-60deg, #4c5697 40%, #414b90 40%, #414b90 42%, transparent 42%), linear-gradient(-35deg, #414b90 50%, transparent 50%), linear-gradient(-50deg, darken(#4c5697, 3%) 54%, transparent 54%), linear-gradient(-130deg, #4c5697 70%, transparent 70%), linear-gradient(-45deg, #414b90 86%, #4c5697 86%);
+             .media {
+                 position: absolute;
+                 top: 50%;
+                 margin-top: -112px;
+             }
+             .media-body {
+                 font-size: 14px;
+                 li {
+                     padding: 0 16px;
+                     font-size: 13px;
+                 }
+                 strong {
+                     font-size: 14px;
+                 }
+             }
+             .media-right {
+                 min-width: 180px;
+                 padding: 0;
+                 // 修正对齐问题
+                 vertical-align: baseline;
+                 padding-top: 55px;
+                 .img-responsive {
+                     margin: 0 auto 10px;
+                 }
+                 strong {
+                     letter-spacing: 2px;
+                     font-size: 16px;
+                     display: block;
+                     margin-bottom: 1em;
+                 }
+             }
+             .img-circle {
+                 margin: 42px auto 30px;
+                 width: 75px;
+                 height: 75px;
+                 line-height: 75px;
+                 border: 1px solid;
+                 text-align: center;
+                 img {
+                     display: inline;
+                 }
+             }
+         }
+     }
+     .acc-aside-list {
+         border-bottom: 1px solid #959595;
+         >a {
+             display: block;
+             line-height: 70px;
+             font-size: 16px;
+             padding: 0 28px 0 36px;
+             &.collapsed {
+                 i.glyphicon {
+                     transform: rotate(0deg);
+                 }
+             }
+             i.glyphicon {
+                 transition: transform .2s linear;
+                 transform: rotate(-180deg);
+                 float: right;
+                 &:before {
+                     line-height: 70px;
+                 }
+             }
+         }
+     }
+     .list-unstyled {
+         margin-bottom: 0;
+         >li {
+             margin: 12px 0;
+             line-height: 40px;
+             padding: 0 28px 0 36px;
+             &.active {
+                 background: #cf4d44
+             }
+             a {
+                 display: block;
+                 span {
+                     margin-left: 8px;
+                 }
+             }
+         }
+     }
+ }
+ 
+ // 账户中心主要区域
+ .apx-acc-main {
+     transition: transform .4s .4s;
+     margin-left: 240px;
+     padding-left: 20px;
+     overflow: hidden;
+     a {
+         text-decoration: none
+     }
+     #tab_all {
+         padding-bottom: 120px;
+     }
+     // 订单导航
+     .apx-acc-order-nav,
+     .apx-add-order-nav {
+         border: 0;
+         font-weight: 600;
+         border-bottom: 2px solid #e5e5e5;
+         margin-bottom: 20px;
+         li {
+             color: #333;
+             margin-bottom: -2px;
+             // margin-right: 40px;
+             a {
+                 border: 0;
+                 padding: 0 30px;
+                 line-height: 40px;
+                 border-bottom: 2px solid transparent;
+                 position: relative;
+                 &:hover,
+                 &:active,
+                 &:focus {
+                     border: 0;
+                     border-bottom: 2px solid transparent;
+                     background: none;
+                 }
+                 &:after {
+                     content: '';
+                     position: absolute;
+                     top: 50%;
+                     margin-top: -.5em;
+                     right: 0;
+                     width: 1px;
+                     height: 1em;
+                     background: #e5e5e5;
+                 }
+             }
+             &.active {
+                 a {
+                     background: transparent;
+                     color: #cf4d44;
+                     border-color: #cf4d44;
+                 }
+             }
+         }
+     }
+     .h3+.apx-acc-title {
+         margin-top: 20px;
+     }
+     .apx-acc-title {
+         line-height: 46px;
+         padding: 0 26px;
+         font-size: 14px;
+         background: #e5e5e5;
+         margin-bottom: 20px;
+         &.bg-danger {
+             background: #fce7e6;
+         }
+         .apx-acc-order-nav {
+             border: 0;
+             margin: 0 -26px;
+             padding: 10px;
+             a {
+                 line-height: 30px;
+             }
+         }
+         .btn {
+             border-radius: 0;
+         }
+         .pull-right {
+             line-height: 1;
+             .input-group {
+                 max-width: 250px;
+                 display: inline-table;
+                 float: left;
+                 margin-right: -2px;
+                 .form-control {
+                     height: 34px;
+                     border-radius: 0;
+                 }
+             }
+         }
+         .apx-acc-datepicker-nav {
+             .pull-right {
+                 padding: 8px 0;
+                 .form-control {
+                     width: 120px;
+                     display: inline-block;
+                     vertical-align: middle;
+                 }
+                 >div {
+                     display: none;
+                     >span {
+                         margin: 0 8px;
+                     }
+                     &.in {
+                         display: inline-block;
+                     }
+                     >.btn-default {
+                         margin-left: 8px;
+                     }
+                 }
+                 .input-group {
+                     float: none;
+                     vertical-align: middle;
+                     max-width: 150px;
+                     &:last-child {
+                         margin-left: 4px;
+                     }
+                 }
+             }
+         }
+     }
+     .apx-acc-table-title {
+         td {
+             background: #cf4d44;
+             color: #fff;
+             a {
+                 display: block;
+                 color: #fff;
+             }
+         }
+         ~.table {
+             margin-bottom: 40px;
+         }
+     }
+     .table {
+         font-size: 12px;
+         thead {
+             span:not([class^='col-']) {
+                 margin-right: 34px;
+             }
+         }
+         .acc-media-box {
+             width: 410px;
+         }
+         .media {
+             font-size: 13px;
+             .list-unstyled {
+                 margin-bottom: 0;
+                 font-size: 0;
+                 li {
+                     display: inline-block;
+                     font-size: 12px;
+                     margin-right: 12px;
+                 }
+             }
+         }
+         .media-left img {
+             width: 87px;
+         }
+         .h4 {
+             margin: 0;
+         }
+         td {
+             line-height: 2;
+             vertical-align: middle
+         }
+         .no-border {
+             border: 0;
+         }
+     }
+     .table-panel {
+         border: 1px solid #ccc;
+         &.dashed {
+             th,
+             td {
+                 position: relative;
+                 border-top: 1px dashed #ccc;
+                 border-bottom: 1px dashed #ccc;
+                 overflow: visible;
+             }
+         }
+         thead {
+             background: #e6e6e6;
+             th {
+                 font-size: 14px;
+                 font-weight: 400;
+                 text-align: center !important;
+             }
+         }
+         .tooltip-arrow {
+             border-bottom-color: #ccc;
+             position: relative;
+             // left: 20% !important;
+             &:after {
+                 content: '';
+                 position: absolute;
+                 top: 2px;
+                 left: -5px;
+                 border-color: transparent;
+                 border-style: solid;
+                 border-width: 0 5px 5px;
+                 border-bottom-color: #fff;
+             }
+         }
+         .tooltip-inner {
+             background: #fff;
+             color: #333;
+             border: 1px solid #ccc;
+             box-shadow: 0 0 4px #999;
+             padding: 8px 12px;
+         }
+     }
+     // 再付款按钮
+     .acc-pay-again {
+         position: relative;
+         width: 64px;
+         height: 22px;
+         margin: 0 auto;
+         >a {
+             display: block;
+             border: 1px solid #cf4d44;
+             color: #cf4d44;
+             line-height: 20px;
+             height: 22px;
+             background: #fff;
+             border-bottom-color: #fff;
+             position: relative;
+             z-index: 1;
+             &.collapsed {
+                 border-bottom-color: #cf4d44;
+                 i {
+                     transform: rotate(180deg);
+                 }
+             }
+         }
+         i {
+             margin-left: 2px;
+             transition: transform .2s linear;
+         }
+         .collapse-box {
+             box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+             position: absolute;
+             top: 21px;
+             right: 0px;
+             background: #fff;
+             // padding-left: 36px;
+             text-align: left;
+             width: 130px;
+             border: 1px solid #cf4d44;
+             .radio {
+                 margin: 12px 0 0 30px;
+                 z-index: 2;
+             }
+             .input-group-btn {
+                 display: block;
+                 margin: 16px auto 15px;
+                 width: auto;
+                 text-align: center;
+                 .btn {
+                     border-radius: 2px;
+                     margin: 0 4px;
+                 }
+             }
+         }
+     }
+ }
+#J_statement_box a {
+    color: blue;
+}

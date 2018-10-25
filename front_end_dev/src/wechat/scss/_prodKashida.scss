@@ -1,0 +1,125 @@
+.wechat-product-ksd {
+	img {
+		max-width: 100%;
+		vertical-align: top;
+	}
+	p {
+		margin: 0;
+	}
+	.target {
+		margin-top: 2%;
+		@include clearfix;
+		>div {
+			font-size: 0;
+			float: left;
+			&:nth-child(1) {
+				width: 31.61%;
+				padding-right: 0.2%;
+			}
+			&:nth-child(2) {
+				width: 36.2%;
+				img {
+					&:first-child {
+						margin-bottom: 1%;
+					}
+				}
+			}
+			&:nth-child(3) {
+				width: 30.7%;
+				padding-left: 0.8%;
+			}
+		}
+	}
+	.content {
+		.header {
+			text-align: center;
+			margin: 4% 0;
+			img {
+				max-width: 70%;
+			}
+		}
+		.item-1 {
+			font-size: 0;
+			a {
+				@include clearfix;
+				>div {
+					float: left;
+					&:nth-child(1) {
+						max-width: 62%;
+						margin-left: 2%;
+					}
+				}
+				.right {
+					max-width: 30%;
+					text-align: center;
+					margin-left: 3%;
+					img {
+						max-width: 100%;
+						&:first-child {
+							margin-bottom: 7%;
+						}
+					}
+				}
+			}
+			.title {
+				font-size: 12px;
+				position: relative;
+				background-color: #000;
+				margin-top: 2%;
+				padding-left: 2%;
+				.left {
+						color: #fff;
+					.h1 {
+						font-size: 16px;
+					}
+					.h3 {
+						font-size: 16px;
+					}
+				}
+				.right {
+					position: absolute;
+					top: 26%;
+					right: 6%;
+					width: 20%;
+					text-align: center;
+					a {
+						background-color: #ff4457;
+						border-radius: 4px;
+						width: 100%;
+						color: #fff;
+						padding: 8%;
+					}
+				}
+			}
+		}
+		.item-2 {
+			margin-top: 6%;
+			position: relative;
+			a {
+				position: absolute;
+				bottom: 6%;
+				left: 50%;
+				width: 50%;
+				padding-top: 50%;
+			}
+		}
+		.item-3 {
+			margin-top: 6%;
+			position: relative;
+			a {
+				position: absolute;
+				bottom: 0%;
+				left: 0%;
+				width: 100%;
+				padding-top: 50%;
+			}
+		}
+	}
+	footer {
+		text-align: center;
+		img {
+			max-width: 20%;
+			padding: 6% 0;
+		}
+	}
+}

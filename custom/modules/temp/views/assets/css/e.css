@@ -1,0 +1,52 @@
+.brand-0919 {
+  min-width: 1200px;
+  overflow: auto;
+  background-color: #FFF; }
+  .brand-0919 img {
+    max-width: 100%;
+    vertical-align: top; }
+  .brand-0919 .header {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 50px auto; }
+    .brand-0919 .header .img {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 34%;
+              flex: 0 0 34%; }
+    .brand-0919 .header .content {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      margin-left: 30px;
+      font-weight: 700; }
+      .brand-0919 .header .content .h2 {
+        font-size: 48px;
+        margin: 0; }
+      .brand-0919 .header .content .h4 {
+        font-size: 26px;
+        margin: 0;
+        text-align: right;
+        margin-right: 5px;
+        margin-bottom: 10px; }
+      .brand-0919 .header .content .text {
+        margin: 0;
+        margin-left: 20%;
+        font-size: 28px; }
+        .brand-0919 .header .content .text span {
+          font-size: 38px; }
+        .brand-0919 .header .content .text img {
+          width: 100px; }
+        .brand-0919 .header .content .text:nth-child(4) {
+          text-align: right;
+          margin-right: 10%; }
+      .brand-0919 .header .content .btn {
+        width: 346px;
+        border-radius: 100px;
+        line-height: 72px;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        font-size: 38px;
+        margin: 70px 0 0 60px; }

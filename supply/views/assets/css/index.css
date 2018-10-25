@@ -1,0 +1,134 @@
+body {
+  overflow-x: hidden; }
+
+.bg-muted {
+  background: #f2f2f2; }
+
+.table-fix {
+  table-layout: fixed; }
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.container {
+  width: 1190px;
+  max-width: none !important; }
+
+.high-lighted {
+  color: #df483d; }
+
+.apx-cms-login {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+  .apx-cms-login.shop-sys {
+    background: #000 url("/images/cms/login_bg1.jpg") center no-repeat;
+    background-size: cover; }
+  .apx-cms-login.user-sys {
+    background: #000 url("/images/cms/user_sys_login_bg.jpg") center no-repeat;
+    background-size: cover; }
+
+.apx-cms-login-box {
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 30%;
+  opacity: 0;
+  min-width: 480px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-animation: fadeIn .6s ease-in forwards;
+          animation: fadeIn .6s ease-in forwards;
+  left: 50%;
+  color: #ccc;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .apx-cms-login-box.static {
+    -webkit-animation: none;
+            animation: none;
+    opacity: 1;
+    top: 40%; }
+  .apx-cms-login-box .col-xs-3:not(.control-label) {
+    padding: 0; }
+  .apx-cms-login-box .col-xs-3.control-label {
+    padding-left: 0;
+    padding-right: 0; }
+  .apx-cms-login-box .form-control-static.hidden {
+    visibility: hidden;
+    display: block !important; }
+  .apx-cms-login-box h3 {
+    margin-bottom: 60px; }
+  .apx-cms-login-box .form-group {
+    border-bottom: 1px solid #ccc;
+    margin-top: 12px;
+    margin-bottom: 24px; }
+    .apx-cms-login-box .form-group:first-child, .apx-cms-login-box .form-group:last-child {
+      margin-top: 0;
+      margin-bottom: 0;
+      border-bottom: 0; }
+  .apx-cms-login-box .text-right {
+    margin: 0 -15px;
+    position: relative;
+    top: -12px; }
+  .apx-cms-login-box .form-control {
+    color: #fff;
+    background: transparent;
+    border-color: transparent; }
+    .apx-cms-login-box .form-control:focus {
+      box-shadow: none; }
+  .apx-cms-login-box .btn-block.btn-danger {
+    background: red;
+    border: 0;
+    color: #fff;
+    letter-spacing: 8px;
+    border-radius: 0;
+    margin-bottom: -1px; }
+    .apx-cms-login-box .btn-block.btn-danger:active {
+      background: red;
+      color: #fff;
+      outline: 0;
+      box-shadow: inset 0 2px 8px #444; }
+  .apx-cms-login-box .btn-link {
+    color: #ccc;
+    text-decoration: none; }
+  .apx-cms-login-box .wechat-login {
+    margin-top: 40px;
+    text-align: center; }
+    .apx-cms-login-box .wechat-login p {
+      margin-bottom: 8px;
+      position: relative; }
+      .apx-cms-login-box .wechat-login p:before, .apx-cms-login-box .wechat-login p:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 35%;
+        height: 1px; }
+      .apx-cms-login-box .wechat-login p:before {
+        left: 0;
+        background: linear-gradient(to left, #fff, transparent); }
+      .apx-cms-login-box .wechat-login p:after {
+        right: 0;
+        background: linear-gradient(to right, #fff, transparent); }
+    .apx-cms-login-box .wechat-login img {
+      margin: 0 auto 4px; }
+
+@-webkit-keyframes fadeIn {
+  from {
+    top: 25%;
+    opacity: 0; }
+  to {
+    top: 40%;
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    top: 25%;
+    opacity: 0; }
+  to {
+    top: 40%;
+    opacity: 1; } }

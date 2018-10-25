@@ -1,0 +1,231 @@
+.classify {
+    width: 100%;
+    height: 600px;
+}
+
+.classify > .classify-panel {
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+}
+
+.classify > .classify-panel:nth-of-type(n + 1) {
+    margin-left: -1px;
+}
+
+.classify > .classify-panel > header {
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+.classify > .classify-panel > .classify-panel-content {
+    height: 497px;
+    overflow: auto;
+}
+
+.classify > .classify-panel > footer {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.classify > .classify-panel > footer > button {
+    border-radius: 15px;
+}
+
+.classify #titleContent {
+    padding: 10px;
+}
+
+.classify #titleContent ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.classify #titleContent ul li {
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.classify #titleContent ul li.on {
+    background-color: #FCE7E6;
+}
+
+.classify #titleContent ul li.on > div {
+    display: block;
+}
+
+.classify #titleContent ul li > div {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    display: none;
+}
+
+.classify #titleContent ul li > div > .button {
+    font-size: 12px;
+}
+
+.classify #titleContent ul li > div > .button.secondary {
+    margin-right: 10px;
+}
+
+.classify #groupContent {
+    padding: 10px;
+}
+
+.classify #groupContent ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.classify #groupContent ul li {
+    position: relative;
+    padding: 5px 10px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.classify #groupContent ul li > span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.classify #groupContent ul li > span {
+    margin-right: 10px;
+}
+
+.classify #groupContent ul li > span:nth-of-type(2) {
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #ccc;
+}
+
+.classify #groupContent ul li.on {
+    background-color: #FCE7E6;
+}
+
+.classify #groupContent ul li.on > div {
+    display: block;
+}
+
+.classify #groupContent ul li > div {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    display: none;
+    font-size: 12px;
+}
+
+.classify #groupContent ul li > div .secondary {
+    margin-right: 10px;
+}
+
+.classify #groupContent .fa-link {
+    color: #df483d !important;
+}
+
+.classify #brandContent {
+    padding: 10px;
+}
+
+.classify #brandContent ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.classify #brandContent ul li {
+    position: relative;
+    padding: 5px 10px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.classify #brandContent ul li .brand-thumbnail {
+    display: inline-block;
+    width: 100px;
+    height: 60px;
+    border: 1px solid #ccc;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.classify #brandContent ul li > div {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    display: none;
+    margin-top: -16px;
+}
+
+.classify #brandContent ul li.on {
+    background-color: #FCE7E6;
+}
+
+.classify #brandContent ul li.on > div {
+    display: block;
+}
+
+.classify #brandContent ul li > div .secondary {
+    margin-right: 10px;
+}
+
+.classify #relationshipContent {
+    padding: 10px;
+}
+
+.classify #relationshipContent > ul ul {
+    display: none;
+}
+
+.classify #relationshipContent ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.classify #relationshipContent ul li {
+    position: relative;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.classify #relationshipContent ul li > div > .button.primary {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    font-size: 12px;
+}
+
+.classify #relationshipContent ul li > div:hover > .button.primary {
+    display: block !important;
+}
+
+.classify #relationshipContent ul li > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.classify #relationshipContent ul li > span {
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+    border-bottom: 1px dashed #ccc;
+}
+
+.classify #relationshipContent ul li .fa {
+    margin-right: 10px;
+}

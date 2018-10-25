@@ -1,0 +1,234 @@
+@@include('head.inc') @@include('banner_seller.inc')
+<div class="container">
+    <div class="row">
+        @@include('seller_aside.inc')
+        <div class="apx-acc-main cus-container">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+                <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+            </ul>
+             <div class="order-select">
+	               <h2>订单筛选</h2>
+	               <div class="order-msg">
+		               <ul class="clearfix">
+		                   <li>
+		                       <label>订单号：</label>
+		                       <input type="text" name="order_number">
+		                   </li>
+		                   <li>
+		                       <label>购买账号：</label>
+		                       <input type="text" name="buy_account" class="long-length">
+		                   </li>  
+		                   <li class="msg-time">
+		                       <label>下单时间：</label>
+		                       <input type="text" id="datetimepicker" name="pay_date_start">
+		                       <i class="time-line"></i>
+		                       <input type="text" name="pay_date_end">        
+		                   </li> 
+		                   <li>
+		                       <label>收货人：</label>
+		                       <input type="text" name="buy_person">
+		                   </li>
+		                   <li>
+		                       <label>收货地址：</label>
+		                       <input type="text" name="address" class="long-length">
+		                   </li> 
+		                   <li>
+		                       <label>订单状态：</label>
+		                       <select name="" id="">
+		                       	    <option value="">全部状态</option>
+		                            <option value="">部分状态</option>
+		                       </select>
+		                   </li>
+		               </ul>  
+		               <button class="btn">查询</button>
+	               </div>
+             </div>  
+
+
+             <div class="order-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="tab_all">
+                    <table class="table table-fix top-table">
+                        <tr>
+	                        <td class="pro-detail" width="335">商品详情</td>
+	                        <td width="100" class="text-center">单价</td>
+	                        <td width="186">用户备注</td>
+	                        <td width="220">收货人信息</td>
+	                        <td width="110">状态</td>
+                        </tr>
+                    </table>
+
+                    <table class="table table-bordered text-center">
+                        <thead>
+                            <tr>
+                                <td colspan="7" class="no-border row text-left top-msg">
+                                    <strong class="text-left order-msg">
+                                        <span>订单编号：1201231254</span>
+                                        <span class="orser-time">下单时间：2017-05-26 23:00:00</span>
+                                    </strong>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tr-content">
+                                <td class="row acc-media-box " id="des-content">
+                                    <div class="col-xs-8 ">
+                                        <div class="media text-left">
+                                            <a class="media-left media-middle" href="#">
+                                                <img src="/images/slider02.jpg">
+                                            </a>
+                                            <div class="media-body media-middle">
+                                                <div class="descipe-txt">车内除发生过是大法官阿斯蒂芬的省申达股份大师傅...</div>
+                                                <ul class="list-unstyled text-muted list-attr">
+                                                    <li>颜色：黑色&nbsp;大小：小&nbsp;前挡：U9</li>
+                                                    <li>后档：V8</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td width="99" class="pro-price">¥2000.00</td>
+                                <td width="188" class="text-left">
+                                    麻烦尽快发货，所以是是的一麻烦尽快发货
+                                </td>
+                                <td width="220" class="text-left txt-msg">
+                                    <div class="person"><i></i>张三</div>
+                                    <div class="address"><i></i>上海市宝山区宝山区宝山区58号</div>
+                                </td>
+                                <td width="110">已完成</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="table table-bordered text-center">
+                        <thead>
+                            <tr>
+                                <td colspan="7" class="no-border row text-left top-msg">
+                                    <strong class="text-left order-msg">
+                                        <span>订单编号：1201231254</span>
+                                        <span class="orser-time">下单时间：2017-05-26 23:00:00</span>
+                                    </strong>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tr-content">
+                                <td class="row acc-media-box " id="des-content">
+                                    <div class="col-xs-8 ">
+                                        <div class="media text-left">
+                                            <a class="media-left media-middle" href="#">
+                                                <img src="/images/slider02.jpg">
+                                            </a>
+                                            <div class="media-body media-middle">
+                                                <div class="descipe-txt">车内除发生过是大法官阿斯蒂芬的省申达股份大师傅...</div>
+                                                <ul class="list-unstyled text-muted list-attr">
+                                                    <li>颜色：黑色&nbsp;大小：小&nbsp;前挡：U9</li>
+                                                    <li>后档：V8</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td width="99" class="pro-price">¥2000.00</td>
+                                <td width="188" class="text-left">
+                                    麻烦尽快发货，所以是是的一麻烦尽快发货
+                                </td>
+                                <td width="220" class="text-left txt-msg">
+                                    <div class="person"><i></i>张三</div>
+                                    <div class="address"><i></i>上海市宝山区宝山区宝山区58号</div>
+                                </td>
+                                <td width="110">已完成</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-bordered text-center">
+                        <thead>
+                            <tr>
+                                <td colspan="7" class="no-border row text-left top-msg">
+                                    <strong class="text-left order-msg">
+                                        <span>订单编号：1201231254</span>
+                                        <span class="orser-time">下单时间：2017-05-26 23:00:00</span>
+                                    </strong>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tr-content">
+                                <td class="row acc-media-box " id="des-content">
+                                    <div class="col-xs-8 ">
+                                        <div class="media text-left">
+                                            <a class="media-left media-middle" href="#">
+                                                <img src="/images/slider02.jpg">
+                                            </a>
+                                            <div class="media-body media-middle">
+                                                <div class="descipe-txt">车内除发生过是大法官阿斯蒂芬的省申达股份大师傅...</div>
+                                                <ul class="list-unstyled text-muted list-attr">
+                                                    <li>颜色：黑色&nbsp;大小：小&nbsp;前挡：U9</li>
+                                                    <li>后档：V8</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td width="99" class="pro-price">¥2000.00</td>
+                                <td width="188" class="text-left">
+                                    麻烦尽快发货，所以是是的一麻烦尽快发货
+                                </td>
+                                <td width="220" class="text-left txt-msg">
+                                    <div class="person"><i></i>张三</div>
+                                    <div class="address"><i></i>上海市宝山区宝山区宝山区58号</div>
+                                </td>
+                                <td width="110">已完成</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-bordered text-center">
+                        <thead>
+                            <tr>
+                                <td colspan="7" class="no-border row text-left top-msg">
+                                    <strong class="text-left order-msg">
+                                        <span>订单编号：1201231254</span>
+                                        <span class="orser-time">下单时间：2017-05-26 23:00:00</span>
+                                    </strong>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tr-content">
+                                <td class="row acc-media-box " id="des-content">
+                                    <div class="col-xs-8 ">
+                                        <div class="media text-left">
+                                            <a class="media-left media-middle" href="#">
+                                                <img src="/images/slider02.jpg">
+                                            </a>
+                                            <div class="media-body media-middle">
+                                                <div class="descipe-txt">车内除发生过是大法官阿斯蒂芬的省申达股份大师傅...</div>
+                                                <ul class="list-unstyled text-muted list-attr">
+                                                    <li>颜色：黑色&nbsp;大小：小&nbsp;前挡：U9</li>
+                                                    <li>后档：V8</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td width="99" class="pro-price">¥2000.00</td>
+                                <td width="188" class="text-left">
+                                    麻烦尽快发货，所以是是的一麻烦尽快发货
+                                </td>
+                                <td width="220" class="text-left txt-msg">
+                                    <div class="person"><i></i>张三</div>
+                                    <div class="address"><i></i>上海市宝山区宝山区宝山区58号</div>
+                                </td>
+                                <td width="110">已完成</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('footer_seller.inc')

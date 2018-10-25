@@ -1,0 +1,240 @@
+.group-buying-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 1200px;
+    height: 100%;
+    padding: 10px 15px;
+    overflow: hidden;
+}
+
+.group-buying-wrapper > .button.primary {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#prods,
+#list {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+#prods .mask,
+#list .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,.5)
+}
+#prods .mask.show,
+#list .mask.show {
+    display: block;
+}
+
+#prods {
+    width: 40%;
+    padding-right: 10px;
+}
+#list {
+    width: 60%;
+    padding-left: 10px;
+}
+
+#prodsContent,
+#listContent {
+    position: relative;
+    height: 100%;
+    border: 1px solid #ccc;
+}
+
+#prodsContent header,
+#listContent header {
+    position: relative;
+    z-index: 1;
+    height: 50px;
+    line-height: 50px;
+    background-color: #e5e5e5;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+#prodsContent header > button,
+#listContent header > button {
+    position: absolute;
+    left: 10px;
+    top: 9px;
+    line-height: normal;
+}
+#prodsContent header span,
+#listContent header span {
+    margin: 0 10px;
+}
+
+#prodsContent .body,
+#listContent .body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: auto;
+}
+
+#prodsContent .body ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+#prodsContent .body ul li {
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+#prodsContent .body ul li.on {
+    background-color: #fce7e6;
+}
+#prodsContent .body ul li .photo {
+    display: inline-block;
+    width: 80px;
+    height: 60px;
+    border: 1px solid #ccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: middle;
+}
+#prodsContent .body ul li .info {
+    display: inline-block;
+    width: 60%;
+    margin-left: 15px;
+    vertical-align: middle;
+    font-size: 12px;
+}
+#prodsContent .body ul li .info .title {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+#prodsContent .body ul li .info .photo {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#prodsContent .body ul li .content span {
+    margin-right: 10px;
+}
+#prodsContent .body ul li .info h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+#prodsContent .body ul li .interaction {
+    display: inline-block;
+    padding-left: 15px;
+    vertical-align: middle;
+}
+#prodsContent .body ul li .button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -16px;
+}
+#prodsContent footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 49px;
+    padding-top: 9px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    background-color: #fff;
+}
+
+#prodsContent footer .paging > div {
+    display: inline-block;
+    margin: 0 10px;
+}
+#prodsContent footer .paging > div .js-prev {
+    margin-right: 5px
+}
+#prodsContent footer .paging > div .js-prev:disabled {
+    color: #ccc;
+    border-color: #ccc;
+    cursor: not-allowed;
+}
+#prodsContent footer .paging > div .js-next {
+    margin-left: 5px
+}
+#prodsContent footer .paging > div .js-next:disabled {
+    color: #ccc;
+    border-color: #ccc;
+    cursor: not-allowed;
+}
+#prodsContent footer .paging > div .js-goto {
+    margin-left: 5px;
+}
+#prodsContent footer .paging input {
+    width: 40px;
+    margin: 0 5px;
+    outline: none;
+    text-align: center;
+}
+
+#listContent header {
+    background-color: #fff;
+}
+
+#listContent .table-header {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #eee;
+}
+#listContent .table-header > li > div {
+    display: inline-block;
+    width: 14.285%;
+    padding: 10px 0;
+    text-align: center;
+}
+#listContent .table-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 90px;
+    list-style: none;
+    overflow: auto;
+}
+#listContent .table-body > li {
+    border-bottom: 1px dashed #eee;
+}
+#listContent .table-body > li > div {
+    display: inline-block;
+    width: 14.285%;
+    padding: 10px 0;
+    text-align: center;
+}

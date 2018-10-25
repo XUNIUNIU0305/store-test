@@ -1,0 +1,159 @@
+@@include('head.inc')
+<!-- header start -->
+<header class="business-frame-header">
+    <nav class="navbar navbar-default">
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <i class="glyphicon glyphicon-time"></i>2005-11-11 19:38:07
+            </li>
+            <li>
+                <a href="javascript:void(0)"><i class="glyphicon glyphicon-wrench"></i>设置</a>
+            </li>
+            <li>
+                <i class="glyphicon glyphicon-map-marker"></i>上海松江
+            </li>
+            <li>
+                <i class="glyphicon glyphicon-user"></i>476644346@qq.com
+            </li>
+            <li>
+                <a href="javascript:void(0)"><i class="glyphicon glyphicon-off"></i>退出</a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="sub-nav">
+        <div class="pull-left">
+            ◀
+        </div>
+        <ul class="list-inline">
+            <li>品牌馆 <span>&times;</span></li>
+            <li class="active">品牌馆 <span>&times;</span></li>
+            <li>品牌馆 <span>&times;</span></li>
+        </ul>
+        <div class="pull-right">
+            ▶
+        </div>
+    </nav>
+</header>
+<!-- header end -->
+<!-- aside nav start -->
+<aside class="business-frame-aside">
+    <div class="aside-logo">
+        <img alt="logo" src="/images/logo_white.png" height="24">
+    </div>
+    <div class="aside-list">
+        <a data-toggle="collapse" href="#aside_panel_1" class="collapsed">
+            <i class="glyphicon glyphicon-home"></i> 主菜单#1 <i class="glyphicon glyphicon-chevron-down"></i>
+        </a>
+        <div class="collapse" id="aside_panel_1">
+            <ul class="list-unstyled clearfix">
+                <li class="active">
+                    <a href="#">子菜单#1</a>
+                </li>
+                <li>
+                    <a href="#">子菜单#2</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="aside-list">
+        <a data-toggle="collapse" href="#aside_panel_2" class="">
+            <i class="glyphicon glyphicon-tags"></i> 主菜单#2 <i class="glyphicon glyphicon-chevron-down"></i>
+        </a>
+        <div class="collapse in" id="aside_panel_2">
+            <ul class="list-unstyled clearfix">
+                <li class="active">
+                    <a href="#">子菜单#1</a>
+                </li>
+                <li>
+                    <a href="#">子菜单#2</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="aside-list">
+        <a data-toggle="collapse" href="#aside_panel_3" class="collapsed">
+            <i class="glyphicon glyphicon-star-empty"></i> 主菜单#3 <i class="glyphicon glyphicon-chevron-down"></i>
+        </a>
+        <div class="collapse" id="aside_panel_3">
+            <ul class="list-unstyled clearfix">
+                <li class="active">
+                    <a href="#">子菜单#1</a>
+                </li>
+                <li>
+                    <a href="#">子菜单#2</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</aside>
+<!-- aside nav end -->
+<!-- main area start -->
+<div class="business-frame-main">
+    <div class="business-main-wrap">
+        <div class="business-water-container">
+            <!--search bar-->
+            <div class="business-water-form">
+                <!-- /input-group -->
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="请输入兑换ID">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                    </span>
+                </div>
+                <a class="water-strategy">查看攻略</a>
+            </div>
+            <!--info-->
+            <div class="business-water-info">
+                <div class="h3">领水信息</div>
+                <ul class="list-unstyled">
+                    <li>
+                        <i class="cyan">1</i> 领水ID：1234567890
+                    </li>
+                    <li>
+                        <i class="red">2</i> 购买时间：1973-12-22 22:07:02
+                    </li>
+                    <li>
+                        <i class="orange">3</i> 购买人：1234567890
+                    </li>
+                    <!--error-->
+                    <li class="error">
+                        所属运营商错误！请前往<a href="#">虹口运营商</a>兑换。
+                    </li>
+                    <li class="error">
+                        错误ID，请核对后在尝试兑换。
+                    </li>
+                </ul>
+                <button class="btn btn-default">立即兑换</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 攻略 -->
+<div class="water-strategy-content">
+    <p class="close">X</p>
+    <img src="/images/business/water/strategy.jpg">
+</div>
+<!-- 删除提示 -->
+<div class="apx-modal-business-alert modal fade apx-modal-business-water" id="apxModalBusinessAlert" tabindex="-1">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span></a>
+                <h4 class="modal-title">&nbsp;</h4>
+            </div>
+            <div class="modal-body">
+                <img src="/images/business/water/check.png">兑换成功
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-lg btn-business">确认</button>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('business_footer.inc')
+
+<script>
+    $('#apxModalBusinessAlert').modal('show');
+</script>

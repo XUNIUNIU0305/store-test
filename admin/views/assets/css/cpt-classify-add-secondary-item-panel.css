@@ -1,0 +1,119 @@
+.classify-add-secondary-item-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: table;
+    background-color: rgba(0,0,0,.5);
+}
+.classify-add-secondary-item-panel .inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+.classify-add-secondary-item-panel .content {
+    position: relative;
+    width: 540px;
+    height: 330px;
+    margin: 0 auto;
+    border-radius: 8px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.classify-add-secondary-item-panel .content header {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background-color: #CF4D44;
+    color: #fff;
+}
+.classify-add-secondary-item-panel .content header .fa {
+    position: absolute;
+    right: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.classify-add-secondary-item-panel .content footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.classify-add-secondary-item-panel .content .body {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.classify-add-secondary-item-panel .content .body ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.classify-add-secondary-item-panel .content .body li {
+    margin-bottom: 10px;
+}
+.classify-add-secondary-item-panel .content .body li > div {
+    display: inline-block;
+}
+.classify-add-secondary-item-panel .content .body li > label {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+}
+.classify-add-secondary-item-panel .content .body .input-field {
+    width: 300px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+.classify-add-secondary-item-panel .content .body .input-field input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+.classify-add-secondary-item-panel .content .body .upload-field {
+    position: relative;
+    width: 150px;
+    height: 100px;
+    border: 1px solid #ccc;
+    vertical-align: top;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.classify-add-secondary-item-panel .content .body .upload-field .progress-bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #df483d;
+}
+.classify-add-secondary-item-panel .content .body .upload-field .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-image: url('/images/icons/plus.png');
+}
+.classify-add-secondary-item-panel .content .body .upload-field input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.classify-add-secondary-item-panel .content footer button {
+    border-radius: 15px;
+}

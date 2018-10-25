@@ -1,0 +1,80 @@
+body {
+  background: #f2f2f2; }
+
+.qr-code-list {
+  margin-bottom: 50px; }
+  .qr-code-list .header {
+    background: #fff;
+    overflow: hidden;
+    margin-top: 1px; }
+    .qr-code-list .header .info {
+      position: relative;
+      padding-left: 4%; }
+      .qr-code-list .header .info p {
+        font-size: 14px;
+        color: #999; }
+        .qr-code-list .header .info p span {
+          font-size: 18px;
+          color: #333;
+          font-weight: 700; }
+      .qr-code-list .header .info .btn {
+        position: absolute;
+        top: 0;
+        right: 4%; }
+        .qr-code-list .header .info .btn img {
+          width: 80%; }
+    .qr-code-list .header .search {
+      padding: 4%;
+      position: relative; }
+      .qr-code-list .header .search input {
+        width: 70%;
+        border: 1px solid #ff9100;
+        border-radius: 2px;
+        padding: 4px;
+        height: 22px; }
+      .qr-code-list .header .search .btn {
+        height: 30px;
+        display: inline-block;
+        margin-left: 10px;
+        border-radius: 4px;
+        width: 20%;
+        background: #ff9100;
+        color: #fff;
+        text-align: center;
+        line-height: 30px; }
+      .qr-code-list .header .search .btn-search {
+        position: absolute;
+        top: 22px;
+        right: 29%; }
+        .qr-code-list .header .search .btn-search img {
+          width: 60%; }
+  .qr-code-list .code-list {
+    background: #fff;
+    margin-top: 10px; }
+    .qr-code-list .code-list .list-head {
+      border-bottom: 1px solid #ff9100; }
+      .qr-code-list .code-list .list-head span {
+        font-size: 1.2em;
+        display: inline-block;
+        width: 22%;
+        line-height: 2.5em;
+        padding-left: 10%; }
+        .qr-code-list .code-list .list-head span:nth-child(1) {
+          background: url("/images/qrCode/mendian.png") no-repeat 10% center;
+          background-size: 20%; }
+        .qr-code-list .code-list .list-head span:nth-child(2) {
+          background: url("/images/qrCode/zhuangtai1.png") no-repeat 10% center;
+          background-size: 20%; }
+        .qr-code-list .code-list .list-head span:nth-child(3) {
+          background: url("/images/qrCode/tele.png") no-repeat 10% center;
+          background-size: 20%; }
+    .qr-code-list .code-list .list-items .item {
+      border-bottom: 1px solid #f2f2f2; }
+      .qr-code-list .code-list .list-items .item span {
+        display: inline-block;
+        width: 32%;
+        font-size: 1.3em;
+        text-align: center;
+        line-height: 3em; }
+        .qr-code-list .code-list .list-items .item span:nth-child(2) {
+          color: #ff9100; }

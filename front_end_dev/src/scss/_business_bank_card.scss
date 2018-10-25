@@ -1,0 +1,225 @@
+$blue: #459ea9;
+.business-main-wrap {
+	background-color: #e9eef2;
+}
+.business-bank-card {
+	background-color: #FFF;
+	color: #333;
+	.title {
+		font-size: 16px;
+		line-height: 2;
+		margin: 0 30px;
+		padding: 10px 0;
+		font-weight: 700;
+		border-bottom: 1px solid #e9eef2;
+		.tip {
+			float: right;
+			font-weight: 400;
+			cursor: pointer;
+			position: relative;
+			&:before {
+				content: '?';
+                position: absolute;
+                left: -26px;
+                top: 7px;
+                background-color: #9d9d9d;
+                width: 20px;
+                height: 20px;
+                text-align: center;
+                line-height: 20px;
+                color: #fff;
+                border-radius: 40px;
+			}
+			&:hover span {
+				opacity: 1;
+			}
+			span {
+				display: block;
+				background-color: #FFF;
+				width: 212px;
+				border: 1px solid #e9eef2;
+				position: absolute;
+				left: -80%;
+				top: 36px;
+				border-radius: 8px;
+				padding: 14px;
+				font-size: 12px;
+				color: #999;
+				opacity: 0;
+				transition: .5s;
+				box-shadow: 2px 3px 8px 0px rgba(0, 0, 0, 0.3);
+				&:before {
+					content: ' ';
+					display: block;
+					width: 12px;
+					height: 12px;
+					border-top: 1px solid #e9eef2;
+					border-left: 1px solid #e9eef2;
+					transform: rotate(45deg);
+					position: absolute;
+					top: -7px;
+					left: 50%;
+					background-color: #FFF;
+				}
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	.bank-card {
+		height: 450px;
+		position: relative;
+		.card {
+			width: 488px;
+			height: 300px;
+			background-color: #efeff4;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+			border-radius: 6px;
+			p {
+				width: 100%;
+				text-align: center;
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 10%;
+				font-size: 20px;
+				color: #9d9d9d;
+			}
+			&:after {
+				content: ' ';
+				position: absolute;
+				left: 39%;
+				top: 43%;
+				width: 120px;
+				height: 10px;
+				border-radius: 10px;
+				background-color: rgb(222, 223, 224);
+			}
+			&:before {
+				content: ' ';
+				position: absolute;
+				top: 25%;
+				left: 50%;
+				width: 10px;
+				height: 120px;
+				border-radius: 10px;
+				background-color: rgb(222, 223, 224);
+			}
+		}
+		.have-card {
+			width: 488px;
+			height: 300px;
+			background-color: #000;
+			background: url('/images/bank/card_bg.png') no-repeat center;
+			background-size: 100%;
+			box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.3);
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: 80px auto 40px;
+			border-radius: 6px;
+			color: #fff;
+			.head {
+				margin: 20px 0 0 30px;
+			}
+			.logo {
+				width: 56px;
+				height: 56px;
+				background-color: rgba(255, 255, 255, 0.6);
+				border-radius: 100px;
+				text-align: center;
+				img {
+					margin-top: 8px;
+					width: 40px;
+				}
+			}
+			.bank-name {
+				p {
+					margin: 5px 10px;
+					&:first-child {
+						font-size: 18px;
+					}
+				}
+			}
+			.status {
+				padding-right: 30px;
+				font-size: 16px;
+			}
+			.number {
+				font-size: 32px;
+				text-align: center;
+				margin: 30px 0 50px;
+			}
+			.detail {
+				margin: 20px 58px 0 56px;
+				>div {
+					width: 55%;
+					&:last-child {
+						width: 45%;
+					}
+				}
+				.h4 {
+					max-width: 88%;
+					padding-bottom: 5px;
+					border-bottom: 1px solid #fff;
+				}
+			}
+		}
+	}
+	.handle-box {
+		text-align: center;
+		padding-bottom: 50px;
+		.btn {
+			margin: 0 20px;
+		}
+		.btn-yellow {
+			font-size: 16px;
+			color: #ff9100;
+			border: 1px solid #ff9100;
+		}
+		.form-group {
+			label {
+				display: inline-block;
+				padding-right: 10px;
+			}
+			.form-control {
+				display: inline-block;
+				width: 200px;
+			}
+			.btn {
+				margin: 0 10px;
+			}
+		}
+	}
+}
+.apx-modal-business-alert {
+	.modal-dialog {
+		width: 460px;
+	}
+}
+.modal-footer {
+	.btn-primary {
+		background-color: $blue;
+		border-color: $blue;
+	}
+}
+.bank-modal-card {
+	.modal-header {
+		background-color: transparent;
+	}
+	.modal-content {
+		background: url('/images/bank/window_bg.png') no-repeat center;
+		background-size: 100%;
+	}
+	.modal-footer {
+		padding: 10px;
+	}
+}

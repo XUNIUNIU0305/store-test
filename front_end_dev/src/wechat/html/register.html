@@ -1,0 +1,131 @@
+@@include('head.inc')
+<!--main container-->
+<main class="container">
+    <!--index-->
+    <div class="wechat-register-container">
+        <div class="logo"></div>
+        <div class="hr-split"></div>
+        <ul class="register-form">
+            <li>
+                <label for="reg_code"><i class="icon reg_code"></i></label>
+                <input type="text" id="reg_code" placeholder="请输入注册码">
+            </li>
+            <li>
+                <label for="pwd"><i class="icon pwd"></i></label>
+                <input type="password" id="pwd" placeholder="请设置新密码">
+            </li>
+            <li>
+                <label for="pwd_confirm"><i class="icon pwd_confirm"></i></label>
+                <input type="password" id="pwd_confirm" placeholder="请确认密码">
+            </li>
+            <li>
+                <label for="location"><i class="icon location"></i></label>
+                <div class="cascade-location">
+                    <span>
+                        <select>
+                            <option>内蒙古自治州</option>
+                        </select>
+                    </span>
+                    <span>
+                        <select>
+                            <option>内蒙古自治州</option>
+                        </select>
+                    </span>
+                    <span>
+                        <select>
+                            <option>内蒙古自治州</option>
+                        </select>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <label for="mail"><i class="icon mail"></i></label>
+                <input type="text" id="mail" placeholder="请输入注册码">
+            </li>
+            <li>
+                <label for="mobile"><i class="icon mobile"></i></label>
+                <input type="text" id="mobile" placeholder="请输入注册码">
+            </li>
+            <li>
+                <label for="valid"><i class="icon valid"></i></label>
+                <input type="text" id="valid" placeholder="请输入注册码">
+                <a href="javascript:void(0)" class="valid-btn">获取验证码</a>
+            </li>
+        </ul>
+        <a href="javascript:void(0)" class="register-btn">立即注册</a>
+    </div>
+</main>
+@@include('footer.inc')
+<script>
+    // $(function () {
+    //     $('.cascade-location').on('click', showPicker)
+    //     // 级联选择器
+    //     function showPicker() {
+    //         weui.picker([{
+    //             label: '广东',
+    //             value: 0,
+    //             children: [{
+    //                 label: '广州',
+    //                 value: 0,
+    //                 children: [{
+    //                     label: '海珠',
+    //                     value: 0
+    //                 }, {
+    //                     label: '番禺',
+    //                     value: 1
+    //                 }]
+    //             }, {
+    //                 label: '佛山',
+    //                 value: 1,
+    //                 children: [{
+    //                     label: '禅城',
+    //                     value: 0
+    //                 }, {
+    //                     label: '南海',
+    //                     value: 1
+    //                 }]
+    //             }]
+    //         }, {
+    //             label: '广西',
+    //             value: 1,
+    //             children: [{
+    //                 label: '南宁',
+    //                 value: 0,
+    //                 children: [{
+    //                     label: '青秀',
+    //                     value: 0
+    //                 }, {
+    //                     label: '兴宁',
+    //                     value: 1
+    //                 }]
+    //             }, {
+    //                 label: '桂林',
+    //                 value: 1,
+    //                 children: [{
+    //                     label: '象山',
+    //                     value: 0
+    //                 }, {
+    //                     label: '秀峰',
+    //                     value: 1
+    //                 }]
+    //             }]
+    //         },{
+    //             label: '台湾',
+    //             value: 1
+    //         }], {
+    //             className: 'wechat-register-picker',
+    //             depth: 3,
+    //             defaultValue: [0, 0, 0],
+    //             onChange: function onChange(result) {
+    //                 var locations = $('.cascade-location span');
+    //                 result.forEach(function (res, idx) {
+    //                     locations.eq(idx).html(res.label)
+    //                 });
+    //             },
+    //             // onConfirm: function onConfirm(result) {},
+    //             id: 'registerPicker'
+    //         });
+    //     }
+    // });
+
+</script>

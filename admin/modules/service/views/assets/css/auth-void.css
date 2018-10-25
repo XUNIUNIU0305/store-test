@@ -1,0 +1,77 @@
+body {
+  overflow-x: hidden; }
+
+.bg-muted {
+  background: #f2f2f2; }
+
+.table-fix {
+  table-layout: fixed; }
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.container {
+  width: 1190px;
+  max-width: none !important; }
+
+.high-lighted {
+  color: #df483d; }
+
+.admin-audit-cancel-container .admin-audit-cancel-title {
+  margin-top: 30px;
+  line-height: 46px;
+  padding: 0 26px;
+  font-size: 14px;
+  background: #e5e5e5;
+  margin-bottom: 20px; }
+  .admin-audit-cancel-container .admin-audit-cancel-title.bg-danger {
+    background: #fce7e6; }
+  .admin-audit-cancel-container .admin-audit-cancel-title .apx-acc-order-nav {
+    border: 0;
+    margin: 0 -26px;
+    padding: 10px; }
+    .admin-audit-cancel-container .admin-audit-cancel-title .apx-acc-order-nav a {
+      line-height: 30px; }
+  .admin-audit-cancel-container .admin-audit-cancel-title .btn {
+    border-radius: 0; }
+  .admin-audit-cancel-container .admin-audit-cancel-title .pull-left {
+    padding: 8px 0;
+    line-height: 1; }
+    .admin-audit-cancel-container .admin-audit-cancel-title .pull-left .input-group {
+      max-width: 250px;
+      display: inline-table;
+      float: left;
+      margin-right: -2px; }
+      .admin-audit-cancel-container .admin-audit-cancel-title .pull-left .input-group .form-control {
+        height: 34px;
+        border-radius: 0; }
+
+.admin-audit-cancel-container .cancel-list div {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 30px; }
+  .admin-audit-cancel-container .cancel-list div span {
+    font-weight: 400; }
+
+.admin-audit-cancel-container .cancel-list .item {
+  border: 1px solid #d9d9d9; }
+
+.admin-audit-cancel-container .cancel-list .item-title {
+  line-height: 40px;
+  background-color: #d9d9d9; }
+
+.admin-audit-cancel-container .cancel-list .item-info {
+  margin-top: 5px; }
+
+.admin-audit-cancel-container .cancel-list .btn-box {
+  margin-bottom: 5px; }
+  .admin-audit-cancel-container .cancel-list .btn-box .btn {
+    margin-right: 20px; }
+    .admin-audit-cancel-container .cancel-list .btn-box .btn:nth-child(1) {
+      border: 1px solid #df483d;
+      color: #df483d; }
+    .admin-audit-cancel-container .cancel-list .btn-box .btn:nth-child(2) {
+      color: #fff;
+      background: #df483d; }

@@ -1,0 +1,66 @@
+.business-bank-bill {
+  min-width: 1200px;
+  color: #333; }
+  .business-bank-bill .title {
+    padding: 0 50px;
+    line-height: 50px;
+    font-weight: 700;
+    font-size: 18px;
+    border-bottom: 1px solid #efeef2; }
+    .business-bank-bill .title .btn-back {
+      color: #459ae9;
+      text-decoration: underline;
+      margin-top: 10px; }
+  .business-bank-bill .search-box {
+    padding: 5px 50px 15px;
+    border-bottom: 1px dashed #c2c2c2; }
+    .business-bank-bill .search-box .time-box {
+      margin-right: 80px; }
+      .business-bank-bill .search-box .time-box .input-group {
+        width: 150px; }
+      .business-bank-bill .search-box .time-box .date-icon {
+        height: 34px; }
+    .business-bank-bill .search-box .form-label, .business-bank-bill .search-box .form-control {
+      display: table-cell;
+      vertical-align: middle; }
+    .business-bank-bill .search-box .stream .form-control {
+      margin: 0 10px;
+      width: 200px;
+      border-radius: 4px; }
+    .business-bank-bill .search-box .btn-business {
+      background-color: #459ae9;
+      padding: 6px 20px; }
+  .business-bank-bill .tab-box {
+    padding: 14px 50px;
+    border-bottom: 16px solid #efeef2; }
+    .business-bank-bill .tab-box .tab-label {
+      font-size: 14px; }
+    .business-bank-bill .tab-box .btn-tab {
+      color: #459ae9;
+      border: 1px solid #459ae9;
+      margin: 0 5px;
+      padding: 4px 20px; }
+      .business-bank-bill .tab-box .btn-tab.active {
+        color: #fff;
+        background-color: #459ae9;
+        box-shadow: none; }
+  .business-bank-bill .table table {
+    width: 100%; }
+  .business-bank-bill .table td {
+    text-align: center;
+    line-height: 2.5;
+    border-bottom: 1px solid #efeef2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+    .business-bank-bill .table td:nth-child(5) {
+      max-width: 200px; }
+    .business-bank-bill .table td:last-child {
+      width: 100px; }
+      .business-bank-bill .table td:last-child a {
+        color: #459ae9; }
+  .business-bank-bill .table thead tr {
+    border-bottom: 2px solid #144fcc; }
+  .business-bank-bill .table thead td {
+    font-size: 16px;
+    font-weight: 700; }

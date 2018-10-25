@@ -1,0 +1,528 @@
+@@include('head.inc') @@include('admin_header.inc')
+<!-- aside nav end -->
+<!-- main area start -->
+<div class="admin-frame-main">
+    <div class="admin-main-wrap">
+        <!--management main content-->
+        <div class="admin-publish-product admin-manage-products">
+            <ul class="nav nav-tabs">
+                <li><strong>商品列表 > 商品修改</strong></li>
+                <li class="pull-right">
+                    <strong>供应商：</strong>供应商A
+                </li>
+            </ul>
+            <!--nav tabs-->
+            <ul class="nav nav-tabs bg-white border-danger">
+                <li class="active">
+                    <a href="#product_attr" data-toggle="tab">属性价格</a>
+                </li>
+                <li>
+                    <a href="#product_info" data-toggle="tab">基本信息</a>
+                </li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="product_attr">
+                    <div class="admin-pp-add-attr">
+                        <div class="apx-seller-attr-wrap pull-left">
+                            <a data-toggle="collapse" href="#form_attr_box_1" class="btn btn-default collapsed">添加属性价格</a>
+                            <div class="collapse in" id="form_attr_box_1">
+                                <div class="apx-seller-attr-box clearfix">
+                                    <div class="col-xs-12 title"><strong>分类类别：</strong></div>
+                                    <div class="col-xs-3">
+                                        <input type="text" class="form-control" placeholder="输入分类类别">
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="col-xs-12 title"><strong>分类名称：</strong></div>
+                                    <div class="col-xs-3">
+                                        <input type="text" class="form-control" placeholder="输入分类名称">
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <input type="text" class="form-control" placeholder="输入分类名称">
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <input type="text" class="form-control" placeholder="输入分类名称">
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <input type="text" class="form-control" placeholder="输入分类名称">
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <input type="text" class="form-control" placeholder="输入分类名称">
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <input type="text" class="form-control" placeholder="输入分类名称">
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <input type="text" class="form-control" placeholder="输入分类名称">
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <input type="text" class="form-control" placeholder="输入分类名称">
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <input type="text" class="form-control" placeholder="输入分类名称">
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <input type="text" class="form-control" placeholder="输入分类名称">
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <input type="text" class="form-control" placeholder="输入分类名称">
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <input type="text" class="form-control" placeholder="输入分类名称">
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <a href="#" class="btn btn-danger btn-block">添加</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <p><span class="high-lighted">*</span>分类类别:</p>
+                            <div class="apx-seller-attr-box">
+                                <!-- <div class="btn-toggle" data-toggle="buttons"> -->
+                                <div class="btn-toggle">
+                                    <label class="btn btn-default">
+                            <!-- <input type="checkbox"> -->特大
+                        </label>
+                                    <label class="btn btn-default">
+                            <!-- <input type="checkbox"> -->大
+                        </label>
+                                    <label class="btn btn-default">
+                            <!-- <input type="checkbox"> -->中
+                        </label>
+                                    <label class="btn btn-default">
+                            <!-- <input type="checkbox"> -->小
+                        </label>
+                                    <label class="btn btn-default">
+                            <!-- <input type="checkbox"> -->特小
+                        </label>
+                                </div>
+                                <a href="#" class="can-delete">删除</a>
+                            </div>
+                        </div>
+                        <div class="apx-seller-attr-wrap pull-left">
+                            <table class="table table-bordered text-center">
+                                <tr class="text-center active">
+                                    <td>基本大小</td>
+                                    <td>基本颜色</td>
+                                    <td>基本款式</td>
+                                    <td width="125">单价</td>
+                                    <td width="125">数量</td>
+                                    <td width="125">商品内部ID</td>
+                                    <td width="125">商品条形码</td>
+                                </tr>
+                                <tr>
+                                    <td style="max-width: 150px" rowspan="4">
+                                        <div class="text-ellipsis">大大大大大大大大大大大大大大大大大大大大大大大大</div>
+                                    </td>
+                                    <td rowspan="2">红</td>
+                                    <td>老</td>
+                                    <td>
+                                        <div class="col-xs-10">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                        <div class="col-xs-2">元</div>
+                                    </td>
+                                    <td>
+                                        <div class="col-xs-10">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                        <div class="col-xs-2">份</div>
+                                    </td>
+                                    <td>
+                                        <input class="form-control" type="text">
+                                    </td>
+                                    <td>
+                                        <input class="form-control" type="text">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>新</td>
+                                    <td>
+                                        <div class="col-xs-10">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                        <div class="col-xs-2">元</div>
+                                    </td>
+                                    <td>
+                                        <div class="col-xs-10">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                        <div class="col-xs-2">份</div>
+                                    </td>
+                                    <td>
+                                        <input class="form-control" type="text">
+                                    </td>
+                                    <td>
+                                        <input class="form-control" type="text">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">黑</td>
+                                    <td>老</td>
+                                    <td>
+                                        <div class="col-xs-10">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                        <div class="col-xs-2">元</div>
+                                    </td>
+                                    <td>
+                                        <div class="col-xs-10">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                        <div class="col-xs-2">份</div>
+                                    </td>
+                                    <td>
+                                        <input class="form-control" type="text">
+                                    </td>
+                                    <td>
+                                        <input class="form-control" type="text">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>新</td>
+                                    <td>
+                                        <div class="col-xs-10">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                        <div class="col-xs-2">元</div>
+                                    </td>
+                                    <td>
+                                        <div class="col-xs-10">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                        <div class="col-xs-2">份</div>
+                                    </td>
+                                    <td>
+                                        <input class="form-control" type="text">
+                                    </td>
+                                    <td>
+                                        <input class="form-control" type="text">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="apx-seller-attr-wrap pull-left">
+                            <table class="table table-bordered text-center">
+                                <tr class="text-center active">
+                                    <td width="170">商品颜色</td>
+                                    <td width="125">未含税价格</td>
+                                    <td width="125">指导价</td>
+                                    <td width="125">单价</td>
+                                    <td width="125">数量</td>
+                                    <td width="125">商品内部ID</td>
+                                    <td width="125">商品条形码</td>
+                                </tr>
+                                <tr>
+                                    <td style="max-width: 170px">
+                                        <div class="text-ellipsis">咖啡红</div>
+                                    </td>
+                                    <td>
+                                        <div class="col-xs-10">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                        <div class="col-xs-2">元</div>
+                                    </td>
+                                    <td>
+                                        <div class="col-xs-10">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                        <div class="col-xs-2">元</div>
+                                    </td>
+                                    <td>
+                                        <div class="col-xs-10" data-toggle="tooltip" data-placement="bottom" title="此价格为系统自动生成，不可更改">
+                                            <input class="form-control" type="text" value="48" disabled>
+                                        </div>
+                                        <div class="col-xs-2">元</div>
+                                    </td>
+                                    <td>
+                                        <div class="col-xs-10">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                        <div class="col-xs-2">份</div>
+                                    </td>
+                                    <td>
+                                        <input class="form-control" type="text">
+                                    </td>
+                                    <td>
+                                        <input class="form-control" type="text">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="max-width: 170px">
+                                        <div class="text-ellipsis">咖啡红</div>
+                                    </td>
+                                    <td>
+                                        <div class="col-xs-10">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                        <div class="col-xs-2">元</div>
+                                    </td>
+                                    <td>
+                                        <div class="col-xs-10">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                        <div class="col-xs-2">元</div>
+                                    </td>
+                                    <td>
+                                        <div class="col-xs-10" data-toggle="tooltip" data-placement="bottom" title="此价格为系统自动生成，不可更改">
+                                            <input class="form-control" type="text" value="48" disabled>
+                                        </div>
+                                        <div class="col-xs-2">元</div>
+                                    </td>
+                                    <td>
+                                        <div class="col-xs-10">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                        <div class="col-xs-2">份</div>
+                                    </td>
+                                    <td>
+                                        <input class="form-control" type="text">
+                                    </td>
+                                    <td>
+                                        <input class="form-control" type="text">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="max-width: 170px">
+                                        <div class="text-ellipsis">咖啡红</div>
+                                    </td>
+                                    <td>
+                                        <div class="col-xs-10">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                        <div class="col-xs-2">元</div>
+                                    </td>
+                                    <td>
+                                        <div class="col-xs-10">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                        <div class="col-xs-2">元</div>
+                                    </td>
+                                    <td>
+                                        <div class="col-xs-10" data-toggle="tooltip" data-placement="bottom" title="此价格为系统自动生成，不可更改">
+                                            <input class="form-control" type="text" value="48" disabled>
+                                        </div>
+                                        <div class="col-xs-2">元</div>
+                                    </td>
+                                    <td>
+                                        <div class="col-xs-10">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                        <div class="col-xs-2">份</div>
+                                    </td>
+                                    <td>
+                                        <input class="form-control" type="text">
+                                    </td>
+                                    <td>
+                                        <input class="form-control" type="text">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <button type="submit" class="btn btn-danger btn-block">发布</button>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="product_info">
+                    <div class="admin-pp-basic-info">
+                        <!-- 表单 -->
+                        <form class="apx-seller-form form-horizontal clearfix">
+                            <!--商品属性-->
+                            <div class="form-group ">
+                                <label class="col-xs-1 control-label">商品属性:</label>
+                                <div class="col-xs-11">
+                                    <div class="apx-seller-form-box clearfix">
+                                        <div class="form-group ">
+                                            <label for="brand" class="col-xs-1 control-label">品牌:</label>
+                                            <div class="col-xs-3 ">
+                                                <select id="brand" class="form-control ">
+                                            <option>AIDIVEI/艾迪威</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                            </div>
+                                            <label for="brand" class="col-xs-1 control-label">品牌:</label>
+                                            <div class="col-xs-3 ">
+                                                <select id="brand" class="form-control ">
+                                            <option>AIDIVEI/艾迪威</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                            </div>
+                                            <label for="brand" class="col-xs-1 control-label">品牌:</label>
+                                            <div class="col-xs-3 ">
+                                                <select id="brand" class="form-control ">
+                                            <option>AIDIVEI/艾迪威</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                            </div>
+                                            <label for="brand" class="col-xs-1 control-label">品牌:</label>
+                                            <div class="col-xs-3 ">
+                                                <select id="brand" class="form-control ">
+                                            <option>AIDIVEI/艾迪威</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                            </div>
+                                            <label for="brand" class="col-xs-1 control-label">品牌:</label>
+                                            <div class="col-xs-3 ">
+                                                <select id="brand" class="form-control ">
+                                            <option>AIDIVEI/艾迪威</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                            </div>
+                                            <label for="brand" class="col-xs-1 control-label">品牌:</label>
+                                            <div class="col-xs-3 ">
+                                                <select id="brand" class="form-control ">
+                                            <option>AIDIVEI/艾迪威</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--商品标题-->
+                            <div class="form-group ">
+                                <label for="title" class="col-xs-1 control-label">商品标题:</label>
+                                <div class="col-xs-8 ">
+                                    <input type="text" class="form-control" id="title">
+                                </div>
+                                <div class="col-xs-3">
+                                    <p class="form-control-static">还能输入 <span class="high-lighted">30</span> 字</p>
+                                </div>
+                            </div>
+                            <!--商品卖点-->
+                            <div class="form-group ">
+                                <label for="spotlight" class="col-xs-1 control-label">商品卖点:</label>
+                                <div class="col-xs-8">
+                                    <textarea rows="3" class="form-control" id="spotlight"></textarea>
+                                </div>
+                                <div class="col-xs-3">
+                                    <p class="form-control-static">还能输入 <span class="high-lighted">150</span> 字</p>
+                                </div>
+                            </div>
+                            <!--采购地-->
+                            <div class="form-group ">
+                                <label for="locale" class="col-xs-1 control-label">采购地:</label>
+                                <div class="col-xs-11 ">
+                                    <label class="radio-inline">
+                                <input type="radio" name="locale" id="inlineRadio1" value="option1"> 国内
+                            </label>
+                                    <label class="radio-inline">
+                                <input type="radio" name="locale" id="inlineRadio2" value="option2"> 海外及港澳台
+                            </label>
+                                </div>
+                            </div>
+                            <!--发票-->
+                            <div class="form-group ">
+                                <label for="locale" class="col-xs-1 control-label">发票:</label>
+                                <div class="col-xs-11 ">
+                                    <label class="radio-inline">
+                                <input type="radio" name="locale" id="inlineRadio1" value="option1"> 有
+                            </label>
+                                    <label class="radio-inline">
+                                <input type="radio" name="locale" id="inlineRadio2" value="option2"> 无
+                            </label>
+                                </div>
+                            </div>
+                            <!--保修-->
+                            <div class="form-group ">
+                                <label for="locale" class="col-xs-1 control-label">保修:</label>
+                                <div class="col-xs-11 ">
+                                    <label class="radio-inline">
+                                <input type="radio" name="locale" id="inlineRadio1" value="option1"> 有
+                            </label>
+                                    <label class="radio-inline">
+                                <input type="radio" name="locale" id="inlineRadio2" value="option2"> 无
+                            </label>
+                                </div>
+                            </div>
+                            <!--是否定制-->
+                            <div class="form-group ">
+                                <label for="locale" class="col-xs-1 control-label">是否定制:</label>
+                                <div class="col-xs-11 ">
+                                    <label class="radio-inline">
+                                <input type="radio" name="locale" id="inlineRadio1" value="option1"> 有
+                            </label>
+                                    <label class="radio-inline">
+                                <input type="radio" name="locale" id="inlineRadio2" value="option2"> 无
+                            </label>
+                                </div>
+                            </div>
+                            <!--商品图片-->
+                            <div class="form-group ">
+                                <label class="col-xs-1 control-label">商品图片:</label>
+                                <div class="col-xs-11">
+                                    <div class="apx-seller-form-box pic-box clearfix">
+                                        <div class="title">本地上传</div>
+                                        <div class="text-left">选择本地图片:
+                                            <span class="input_file_btn btn btn-default btn-sm">
+                                	文件上传
+                                	<input type="file" name="img_upload" id="img_upload">
+                                </span>
+
+                                            <ol class="text-muted text-left">
+                                                <li>本地上传图片大小不能超过3M。</li>
+                                                <li>本类目下您最多可以上传5张图片。</li>
+                                            </ol>
+                                        </div>
+                                        <div class="pic-box-gallary">
+                                            <p><span class="high-lighted">700*700</span>以上图片可以在详情页主图提供图片放大功能</p>
+                                            <div class="pic-box-item">
+                                                <img src="../images/slider05.jpg" alt="" class="img-responsive">
+                                                <span class="close" style="display: block">&times;</span>
+                                            </div>
+                                            <div class="pic-box-item">
+                                                <!-- <img src="#" alt="" class="img-responsive"> -->
+                                                <span class="close">&times;</span>
+                                            </div>
+                                            <div class="pic-box-item">
+                                                <!-- <img src="#" alt="" class="img-responsive"> -->
+                                                <span class="close">&times;</span>
+                                            </div>
+                                            <div class="pic-box-item">
+                                                <!-- <img src="#" alt="" class="img-responsive"> -->
+                                                <span class="close">&times;</span>
+                                            </div>
+                                            <div class="pic-box-item">
+                                                <!-- <img src="#" alt="" class="img-responsive"> -->
+                                                <span class="close">&times;</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--商品描述-->
+                            <div class="form-group ">
+                                <label class="col-xs-1 control-label">商品描述:</label>
+                                <div class="col-xs-11 edit-box">
+                                    <div class="apx-seller-form-box clearfix">
+                                        <div class="title">电脑端</div>
+                                    </div>
+                                    <textarea class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                        <button type="submit" class="btn btn-danger btn-block">发布</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- main area start -->
+@@include('footer_admin.inc')

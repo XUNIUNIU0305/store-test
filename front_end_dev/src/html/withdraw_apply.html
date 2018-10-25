@@ -1,0 +1,137 @@
+@@include('head.inc') @@include('banner.inc') @@include('search.inc') @@include('main_nav.inc')
+<div class="container">
+    <div class="row">
+        <ol class="breadcrumb">
+            <li><a href="#">商城首页</a></li>
+            <li class="active">用户中心</li>
+        </ol>
+        @@include('account_aside.inc')
+        <div class="apx-acc-main">
+            <div class="apx-acc-title bg-danger"><strong>提现申请</strong></div>
+            <div class="panel panel-default apx-acc-withdraw-form">
+                <div class="panel-body">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <div class="col-xs-9 col-xs-offset-3">
+                                <p class="text-danger">为了确保您的款项能够及时到账，请准确填写以下信息。</p>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="col-xs-3" for="card_id">卡号：</label>
+                            <div class="col-xs-9">
+                                <input type="text" class="form-control" id="card_id" placeholder="请填写银行卡号">
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="col-xs-3" for="card_owner">持卡人姓名：</label>
+                            <div class="col-xs-9">
+                                <input type="text" class="form-control" id="card_owner" placeholder="请填写持卡人姓名">
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="col-xs-3" for="bank">开户行：</label>
+                            <div class="col-xs-9">
+                                <input type="text" class="form-control" id="bank" placeholder="请填写开户行名称">
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="col-xs-3" for="branch">支行：</label>
+                            <div class="col-xs-9">
+                                <input type="text" class="form-control" id="branch" placeholder="请填写支行名称">
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="col-xs-3" for="">银行所在地：</label>
+                            <div class="col-xs-9 ">
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <select class="selectpicker" data-width="100%">
+                                            <option value="">请选择</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <select class="selectpicker" data-width="100%">
+                                            <option value="">请选择</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <select class="selectpicker" data-width="100%">
+                                            <option value="">请选择</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="col-xs-3" for="amount">金额：</label>
+                            <div class="col-xs-9">
+                                <input type="text" class="form-control" id="amount" placeholder="请输入金额">
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="col-xs-3" for="pwd">密码：</label>
+                            <div class="col-xs-9">
+                                <input type="password" class="form-control" id="pwd" placeholder="请输入密码">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-3" for="verify">验证码：</label>
+                            <div class="col-xs-7">
+                                <input type="text" class="form-control" id="verify">
+                            </div>
+                            <div class="col-xs-2"><button class="btn btn-block btn-default J_get_verify_sms">获取验证码</button></div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-9 col-xs-offset-3">
+                                <p class="text-danger">警告：卡号不能为空！</p>
+                            </div>
+                        </div>
+                    </form>
+                    <button class="btn btn-danger btn-lg btn-block">提交申请</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('ensurance.inc') @@include('sitemap.inc') @@include('footer.inc')
+
+<script>
+    $(function () {
+        // get sms
+        var timerAll = [],
+            intervalAll = [];
+        $('.J_get_verify_sms').click(function (e) {
+            var timer, interval;
+            e.preventDefault();
+            var $this = $(this);
+            var countDown = 60;
+            // disable it
+            if ($this.hasClass('disabled')) return;
+            $this.addClass('disabled');
+            // revert changes after 60s
+            timer = setTimeout(function () {
+                $this.text('点击获取');
+                $this.removeClass('disabled');
+                interval && clearInterval(interval);
+            }, 60 * 1000);
+            timerAll.push(timer);
+            // set count down text
+            $this.text(countDown + '秒后重试');
+            interval = setInterval(function () {
+                countDown--;
+                $this.text(countDown + '秒后重试');
+            }, 1000);
+            intervalAll.push(interval);
+        })
+    })
+
+</script>

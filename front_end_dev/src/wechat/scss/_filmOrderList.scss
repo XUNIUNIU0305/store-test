@@ -1,0 +1,111 @@
+html {
+	font-size: 50px;
+}
+.film-order-list {
+    background: #efeff4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+	p {
+		margin: 0;
+	}
+    nav{
+        width: 100%;
+        height: .8rem;
+        background: #fff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        font-size: 15px;
+     }
+    nav .active{
+          color: #ff9100;
+          padding: .2rem 0; 
+          border-bottom: .04rem solid #ff9100;
+     }
+    .list-content{
+        margin-top: .2rem;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        overflow: auto;
+        .list-cancel {
+            background-color: #FFF;
+            padding: 10px 0;
+            text-align: right;
+            .btn {
+                padding: 4px 8px;
+                margin-right: 10px;
+                color: #fff;
+                background-color: #ff9100;
+                border-radius: 50px;
+            }
+        }
+    }
+    .list-content li{
+         margin-bottom: .1rem;
+    }
+    .list-top{
+         background: #fff;
+         height: .88rem;
+         padding: 0 .2rem;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+    }
+    .list-top span:nth-child(2){
+         color: #ff9100;
+    }
+    .list-main{
+         padding:.2rem;
+         display: flex;
+         background: #fafafa;
+    }
+    .list-main img{
+        width: 1.48rem;
+        height: 1.48rem;
+        margin-right: .24rem;
+        border: .02rem solid #efeff4;
+     }
+    .list-txt{
+         position: relative;
+         width: 100%;
+         margin-bottom: -9px;
+    }
+    .list-txt p:nth-child(1){
+        font-size: .28rem;
+    }
+    .list-txt p:nth-child(2){
+        margin-top: .1rem;
+        font-size: .22rem;
+        color: #999;
+    }
+    .bottom{
+        font-size: .28rem;
+        position: absolute;
+        bottom: 0;
+    }
+    .price{
+        left: 0;
+        color: #ff9100;
+    }
+    .account{
+        right: 0;
+        color: #999;
+    }
+    footer{
+        bottom: .3rem;
+        left: 50%;
+        font-size: .24rem;
+        color: #9d9d9d;
+        text-align: center;
+    }
+}

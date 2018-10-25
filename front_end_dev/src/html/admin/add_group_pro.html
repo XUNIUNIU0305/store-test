@@ -1,0 +1,219 @@
+@@include('../head.inc')
+<style>
+    .admin-frame-main {
+        background-color: #fff;
+    }
+</style>
+<!-- header start -->
+<header class="admin-frame-header">
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#top">
+                <img alt="logo" src="/images/logo_white.png" height="24">
+            </a>
+        </div>
+        <ul class="nav navbar-nav navbar-left">
+            <li>管理控制中心</li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                476644346@qq.com
+            </li>
+            <li>
+                <a href="javascript:void(0)">退出</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<!-- header end -->
+<!-- aside nav start -->
+<aside class="admin-frame-aside" id="aside-menu">
+    <ul class="nav nav-pills nav-stacked">
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_1">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_2">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_3">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+    </ul>
+    <ul id="aside_menu_1" class="list-unstyled child-list collapse">
+        <li class="active">
+            <a href="#">内容内容1</a>
+        </li>
+        <li>
+            <a href="#">内容内容1</a>
+        </li>
+        <li>
+            <a href="#">内容内容1</a>
+        </li>
+        <li>
+            <a href="#">内容内容1</a>
+        </li>
+        <li>
+            <a href="#">内容内容1</a>
+        </li>
+        <li>
+            <a href="#">内容内容1</a>
+        </li>
+    </ul>
+    <ul id="aside_menu_2" class="list-unstyled child-list collapse">
+        <li>
+            <a href="#">内容内容2</a>
+        </li>
+        <li>
+            <a href="#">内容内容2</a>
+        </li>
+        <li>
+            <a href="#">内容内容2</a>
+        </li>
+        <li>
+            <a href="#">内容内容2</a>
+        </li>
+        <li>
+            <a href="#">内容内容2</a>
+        </li>
+        <li>
+            <a href="#">内容内容2</a>
+        </li>
+    </ul>
+    <ul id="aside_menu_3" class="list-unstyled child-list collapse">
+        <li>
+            <a href="#">内容内容3</a>
+        </li>
+        <li>
+            <a href="#">内容内容3</a>
+        </li>
+        <li>
+            <a href="#">内容内容3</a>
+        </li>
+        <li>
+            <a href="#">内容内容3</a>
+        </li>
+        <li>
+            <a href="#">内容内容3</a>
+        </li>
+        <li>
+            <a href="#">内容内容3</a>
+        </li>
+    </ul>
+</aside>
+<!-- aside nav end -->
+<!-- main area start -->
+<div class="admin-frame-main">
+    <div class="admin-main-wrap">
+        <div class="add-group-pro-container">
+            <div class="container-title">
+                <span>拼购商品</span>
+                <span class="btn btn-danger">返回</span>
+            </div>
+            <div class="add-search-container">
+                <div class="input-group">
+                    <label for="">商品ID：</label>
+                    <input type="text" placeholder="请输入商品ID查询" name="" id="">
+                </div>
+                <span class="btn btn-danger">查询</span>
+                <div class="error-info hidden">
+                    请输入正确的商品ID！
+                </div>
+            </div>
+            <div class="pro-info-container">
+                <div class="img-title">
+                    <div class="img-box">
+                        <img src="/images/930.jpg" alt="">
+                    </div>
+                    <div class="item-text">
+                        <p>
+                            商品类目：<span>汽车用品>汽车装饰>脚垫</span>
+                        </p>
+                        <p>
+                            商品标题：<span>少时诵诗书所所所</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="">拼购类型：</label>
+                    <select name="" id="">
+                        <option value="">自提拼购</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="">拼购类型：</label>
+                    <input type="text" name="" id="">
+                    次
+                </div>
+                <div class="input-group">
+                    <label for="">拼购类型：</label>
+                    <input type="text" name="" id="">
+                    次
+                </div>
+                <div class="input-group">
+                    <label for="">拼购类型：</label>
+                    <input type="text" name="" id="">
+                    次
+                </div>
+                <div class="input-group">
+                    <label for="">活动时间：</label>
+                    <input type="text" name="" id="">
+                    至
+                    <input type="text" name="" id="">
+                </div>
+                <div class="input-group set-box">
+                    <label for="">统一设置：</label>
+                    <div class="set-container">
+                        <div class="common-set">
+                            <div class="input-group">
+                                <input type="text" placeholder="拼购价格" name="" id="">
+                                元
+                            </div>
+                            <div class="input-group">
+                                <input type="text" placeholder="拼购总量" name="" id="">
+                                元
+                            </div>
+                            <span class="btn">确定</span>
+                        </div>
+                        <table class="attr-box">
+                            <thead>
+                                <tr>
+                                    <th>属性</th>
+                                    <th>颜色</th>
+                                    <th>原单价</th>
+                                    <th>拼购价格</th>
+                                    <th>拼购总量</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>搜索</td>
+                                    <td>搜索</td>
+                                    <td>搜索</td>
+                                    <td>
+                                        <div class="input-group">
+                                            <input type="text" name="" id="">
+                                            元
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="input-group">
+                                            <input type="text" name="" id="">
+                                            元
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="handle-box">
+                    <span class="btn btn-danger">新增</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- main area start -->
+
+
+@@include('../footer_admin.inc')

@@ -1,0 +1,111 @@
+$base: 1 / 750 * 100vw;
+.group-address-set-container {
+    color: #333;
+    .address-title {
+        line-height: 88 * $base;
+        text-align: center;
+        font-size: 28 * $base;
+    }
+    .group-tip-info {
+        padding: 20 * $base 40 * $base 20 * $base 60 * $base;
+        background: #fff7de url('/images/icon_tishi1.png') no-repeat 20 * $base 24 * $base;
+        background-size: 30 * $base;
+        color: #ff9641;
+    }
+    .form-box {
+        .register-form {
+            padding: 0 5%;
+            li {
+                line-height: 4em;
+                color: #b2b2b2;
+                border-bottom: 1px solid #d8d8d8;
+                position: relative;
+                display: flex;
+                &:last-child {
+                    border: none;
+                }
+            }
+            label {
+                flex: 0 0 5.2em;
+                display: inline-block;
+                color: #333;
+                font-size: 26 * $baseV;
+            }
+            input:disabled {
+                background-color: #fff;
+            }
+            .cascade-location {
+                flex: 0 0 82%;
+                display: flex;
+                span {
+                    flex: 1 1 auto;
+                    padding: 0 10px 0 6px;
+                    width: 28%;
+                    position: relative;
+                    background: #fff url('/images/account/arrow-right.png') no-repeat right center;
+                    background-size: auto 14px;
+                    overflow: hidden;
+                    &:first-child {
+                        padding-left: 0;
+                    }
+                    select {
+                        border: 0;
+                        width: 100%;
+                        line-height: 2em;
+                        outline: 0;
+                        border: 0;
+                        flex: 1 1 auto;
+                        outline: 0;
+                        line-height: normal;
+                        appearance:none;
+                        -moz-appearance:none;
+                        -webkit-appearance:none;
+                        background-color: #FFF;
+                        &:disabled {
+                            background-color: #FFF;
+                        }
+                    }
+                }
+            }
+            input {
+                font-size: 26 * $baseV;
+                border: 0;
+                outline: 0;
+                &::-webkit-input-placeholder {
+                    color: #b2b2b2;
+                }
+            }
+        }
+        .set-default-address {
+            padding: 0 5%;
+            border-top: 10 * $base solid #f5f5f5;
+            overflow: hidden;
+            >p {
+                margin: 0;
+                padding: 10 * $base 0;
+                font-size: 28 * $base;
+            }
+            .tip {
+                display: flex;
+                justify-content: space-between;
+                .tip-text {
+                    flex: 0 0 70%;
+                    color: #9d9d9d;
+                    font-size: 12px;
+                }
+            }
+        }
+        .register-btn {
+            margin: 0 auto;
+            margin-top: 50px;
+            width: 90%;
+            border-radius: 6px;
+            text-align: center;
+            background: #cf4d44;
+            font-size: 20px;
+            line-height: 2.5em;
+            color: #fff;
+            background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#ff9100), to(#e53935));
+        }
+    }
+}

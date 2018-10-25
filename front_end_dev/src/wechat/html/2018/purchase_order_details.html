@@ -1,0 +1,135 @@
+@@include('../head.inc')
+
+<div class="purchase-order-details-box">
+    <div class="purchase-order-details-top">
+        <div class="waiting-for-delivery">
+            <span>未提货</span>
+        </div>
+        <div class="already-shipped already-alone hidden">
+            <span>部分提货</span>
+            <span class="top-alone">已提货:<span> 1 </span>件</span>
+        </div>
+        <div class="transaction-comp already-alone hidden">
+            <span>提货完成</span>
+            <span class="top-alone">已提货:<span> 1 </span>件</span>
+        </div>
+    </div>
+    <div class="lading-code-box">
+        <div class="lading-code">
+            <span>提货码</span>
+            <span class="lading-code-number">8888</span>
+            <img class="lading-code-pic" id="lading-code-pic" src="/images/purchase_order_details/code_icon_1.png" alt="">
+        </div>
+    </div>
+    <div class="purchase-order-details-head">
+        <div class="head-cont">
+            <span class="head-tit">自提点信息</span>
+            <div class="head-user">
+                <span class="user-name">昂子李</span><span class="user-number">7837587458</span>
+            </div>
+            <span class="head-addr">上海宝山区水利水电xxxx01</span>
+            <span class="self-lifting">九大爷-xxxxxx自提点</span>
+        </div>
+        <img class="head-pic" src="/images/collage_detail/caitiao.png" alt="">
+    </div>
+    <div class="purchase-order-details-section">
+        <div class="sec-box">
+            <div class="sec-tit">
+                <img class="sec-icon" src="/images/collage_detail/store_32_icon.png" alt="">
+                <span>永泰和</span>
+                <span class="sec-right">自提拼购</span>
+            </div>
+            <div class="sec-cont">
+                <div class="sec-pic"><img src="" alt=""></div>
+                <div class="cont-txt">
+                    <span class="c-txt">文本文本文本文本文本文本文本文本文本</span>
+                    <span class="txt-gray">一套;合成机油</span>
+                    <div class="txt-box">
+                        <span class="txt-money">￥2323.00</span>
+                        <span class="txt-number">x2</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sec-tips">
+                <span class="tips-icon-1"></span>
+                <span>商家发货至自提点，不支持7天退换货</span>
+                <span class="tips-icon-2"></span>
+            </div>
+        </div>
+        <div class="sec-footer">
+            <span class="foot-txt-1">备注</span>
+            <span class="foot-txt-2"><span class="no-txt">暂无</span></span>
+        </div>
+    </div>
+    <div class="purchase-order-details-cost">
+        <ul class="cost-list">
+            <li class="cost-item">
+                <span class="cost-tit">商品金额</span>
+                <span class="cost-txt">￥ 23232.00</span>
+            </li>
+            <li class="cost-item">
+                <span class="cost-tit">优惠券金额</span>
+                <span class="cost-txt">￥ 0.00</span>
+            </li>
+            <li class="cost-item">
+                <span class="cost-tit">立减</span>
+                <span class="cost-txt">￥ 0.00</span>
+            </li>
+            <li class="cost-item">
+                <span class="cost-tit">运费</span>
+                <span class="cost-txt">+￥ 0.00</span>
+            </li>
+        </ul>
+        <div class="cost-footer">
+            <span class="cost-number">数量：<span>1</span>件</span>
+            <span class="cost-money">实付金额：<span class="money-total">￥43433.00</span></span>
+        </div>
+    </div>
+    <div class="purchase-order-details-detail">
+        <ul class="detail-list">
+            <li class="detail-item">
+                <span class="detail-tit">订单编号：</span>
+                <span class="detail-txt">434343433</span>
+                <a class="detail-btn" href="#">复制</a>
+            </li>
+            <li class="detail-item">
+                <span class="detail-tit">支付方式：</span>
+                <span class="detail-txt">微信</span>
+            </li>
+            <li class="detail-item">
+                <span class="detail-tit">团&nbsp;&nbsp;编&nbsp;&nbsp;号：</span>
+                <span class="detail-txt">4454434</span>
+                <a class="detail-btn" href="#">复制</a>
+            </li>
+            <li class="detail-item">
+                <span class="detail-tit">下单时间：</span>
+                <span class="detail-txt">时间</span>
+            </li>
+            <li class="detail-item">
+                <span class="detail-tit">订单创建：</span>
+                <span class="detail-txt">时间</span>
+            </li>
+            <li class="detail-item">
+                <span class="detail-tit d-txt">提货记录：</span>
+                <span class="detail-txt d-txt">时间 第1次提货</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="cargo-floating-layer hidden" id="cargo-floating-layer">
+    <div class="layer-box">
+        <span class="layer-tit">提货二维码</span>
+        <div class="qr-code"><img src="" alt=""></div>
+        <div class="layer-close"><img id="layer-close" src="/images/purchase_order_details/close.png" alt=""></div>
+    </div>
+</div>
+
+<div class="purchase-order-details-footer">
+    <a class="footer-btn f-btn" href="#">返回提货列表</a>
+    <a class="footer-btn" href="#">联系客服</a>
+</div>
+
+@@include('../footer.inc')
+
+<script src="/js/2018/purchase_order_details.js"></script>

@@ -1,0 +1,123 @@
+.custom-quality-service {
+  width: 1200px;
+  margin: 0 auto; }
+  .custom-quality-service .quality-service-container .nav-tabs li.active a {
+    color: #ff6700;
+    border-bottom: 4px solid #ff6700; }
+  .custom-quality-service .quality-service-container .nav-tabs li a {
+    font-size: 16px;
+    color: #333;
+    border-radius: 0;
+    border: none;
+    background-color: transparent; }
+    .custom-quality-service .quality-service-container .nav-tabs li a:hover {
+      color: #ff6700; }
+  .custom-quality-service .quality-service-container .tab-content {
+    margin-top: 30px;
+    margin-bottom: 70px; }
+    .custom-quality-service .quality-service-container .tab-content .tab-pane {
+      min-height: 560px;
+      background-color: #fff; }
+  .custom-quality-service .quality-service-container .searvice-search-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    padding: 80px 0;
+    border-bottom: 1px dashed #f5f5f5;
+    margin: 0 30px; }
+    .custom-quality-service .quality-service-container .searvice-search-container label {
+      font-size: 14px;
+      font-weight: normal;
+      margin-right: 8px; }
+    .custom-quality-service .quality-service-container .searvice-search-container input {
+      width: 400px;
+      height: 42px;
+      border: 1px solid #e0e0e0;
+      outline: none;
+      padding: 0 4px; }
+      .custom-quality-service .quality-service-container .searvice-search-container input:focus {
+        border-color: #ff6700; }
+    .custom-quality-service .quality-service-container .searvice-search-container .btn {
+      color: #fff;
+      background-color: #ff6700;
+      border-radius: 0;
+      margin-left: 20px;
+      line-height: 28px;
+      padding: 6px 30px; }
+  .custom-quality-service .quality-service-container .search-result-container {
+    margin: 40px 30px;
+    overflow: hidden; }
+    .custom-quality-service .quality-service-container .search-result-container .sub-title {
+      font-size: 18px;
+      color: #ff6700; }
+    .custom-quality-service .quality-service-container .search-result-container .empty-tip {
+      text-align: center;
+      margin: 100px auto; }
+      .custom-quality-service .quality-service-container .search-result-container .empty-tip span {
+        font-size: 14px;
+        color: #9a9a9a;
+        padding: 6px 0 6px 34px;
+        background: url("/images/qulity-query/warn_24_icon.png") no-repeat left center; }
+    .custom-quality-service .quality-service-container .search-result-container .empty-result-tip {
+      text-align: center;
+      margin: 100px auto; }
+      .custom-quality-service .quality-service-container .search-result-container .empty-result-tip span {
+        font-size: 14px;
+        color: #9a9a9a;
+        padding: 6px 0 6px 34px;
+        background: url("/images/qulity-query/no_24_icon.png") no-repeat left center; }
+      .custom-quality-service .quality-service-container .search-result-container .empty-result-tip p {
+        margin-top: 40px;
+        font-size: 14px;
+        color: #9a9a9a; }
+    .custom-quality-service .quality-service-container .search-result-container .order-detail {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      margin: 20px 0; }
+      .custom-quality-service .quality-service-container .search-result-container .order-detail > div {
+        font-size: 14px;
+        color: #9a9a9a; }
+        .custom-quality-service .quality-service-container .search-result-container .order-detail > div span {
+          font-size: 18px;
+          color: #333; }
+    .custom-quality-service .quality-service-container .search-result-container .search-list {
+      width: 100%;
+      margin-bottom: 60px; }
+      .custom-quality-service .quality-service-container .search-result-container .search-list th {
+        font-size: 14px;
+        font-weight: normal;
+        color: #9a9a9a;
+        background: #f5f5f5; }
+      .custom-quality-service .quality-service-container .search-result-container .search-list th,
+      .custom-quality-service .quality-service-container .search-result-container .search-list td {
+        text-align: center;
+        line-height: 58px; }
+      .custom-quality-service .quality-service-container .search-result-container .search-list td a {
+        color: #30a5ff; }
+        .custom-quality-service .quality-service-container .search-result-container .search-list td a:hover {
+          color: #337ab7; }
+      .custom-quality-service .quality-service-container .search-result-container .search-list tbody tr {
+        border-bottom: 1px solid #f5f5f5; }
+        .custom-quality-service .quality-service-container .search-result-container .search-list tbody tr:hover td {
+          background-color: #f5f5f5; }
+    .custom-quality-service .quality-service-container .search-result-container .other-info {
+      display: -ms-flexbox;
+      display: flex;
+      border-top: 1px dashed #f5f5f5;
+      padding-top: 30px;
+      margin-bottom: 60px; }
+      .custom-quality-service .quality-service-container .search-result-container .other-info > div {
+        -ms-flex: 1;
+            flex: 1; }
+      .custom-quality-service .quality-service-container .search-result-container .other-info .item {
+        margin: 15px 0;
+        font-size: 14px;
+        color: #9a9a9a; }
+        .custom-quality-service .quality-service-container .search-result-container .other-info .item span {
+          margin-left: 100px;
+          color: #333; }

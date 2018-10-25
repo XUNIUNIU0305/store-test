@@ -1,0 +1,545 @@
+.business-frame-main {
+  background-color: #e9eef2; }
+
+.business-data-daily {
+  min-width: 1200px;
+  background: #e9eef2;
+  color: #333;
+  overflow: hidden; }
+  .business-data-daily p {
+    margin: 0; }
+  .business-data-daily img {
+    max-width: 100%;
+    vertical-align: top; }
+  .business-data-daily [class*="col-xs"] > div {
+    background: #fff; }
+  .business-data-daily .has-shadow:hover {
+    box-shadow: 0px 6px 8px 0px rgba(69, 154, 233, 0.2); }
+  .business-data-daily .pointer {
+    cursor: pointer; }
+  .business-data-daily > .title {
+    margin: 20px 0;
+    font-size: 24px; }
+  .business-data-daily .top .col-xs-4 {
+    padding: 0; }
+  .business-data-daily .top .data-chart {
+    padding-left: 15px;
+    height: 410px;
+    margin-bottom: 10px; }
+    .business-data-daily .top .data-chart .chart-box {
+      height: 220px; }
+    .business-data-daily .top .data-chart .detail {
+      margin-left: 10%; }
+      .business-data-daily .top .data-chart .detail p {
+        line-height: 1.5; }
+      .business-data-daily .top .data-chart .detail .h2 {
+        font-size: 18px;
+        padding-left: 20px;
+        position: relative; }
+        .business-data-daily .top .data-chart .detail .h2:after {
+          content: ' ';
+          display: block;
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          background-color: #459ae9; }
+      .business-data-daily .top .data-chart .detail .h3 {
+        color: #9f9f9f;
+        font-size: 12px;
+        padding-left: 20px; }
+      .business-data-daily .top .data-chart .detail:nth-child(3) {
+        margin-top: 20px; }
+        .business-data-daily .top .data-chart .detail:nth-child(3) .h2:after {
+          background-color: #f19149; }
+  .business-data-daily .top .right-box {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .business-data-daily .top .right-box > div {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 48%;
+              flex: 0 0 48%;
+      height: 200px;
+      background-color: #FFF;
+      margin: 0 0 10px 10px; }
+      .business-data-daily .top .right-box > div:nth-child(1) .content {
+        color: #459ae9; }
+      .business-data-daily .top .right-box > div:nth-child(1) .title:after {
+        background-color: #459ae9; }
+      .business-data-daily .top .right-box > div:nth-child(2) .title:after {
+        background-color: #f19149; }
+      .business-data-daily .top .right-box > div:nth-child(3) .title:after {
+        background-color: #66bb6a; }
+      .business-data-daily .top .right-box > div:nth-child(4) .title:after {
+        background-color: #8884d8; }
+    .business-data-daily .top .right-box .title {
+      font-size: 20px;
+      margin: 20px 0 0 20px;
+      position: relative; }
+      .business-data-daily .top .right-box .title:after {
+        content: ' ';
+        width: 4px;
+        height: 18px;
+        position: absolute;
+        left: -10px;
+        top: 6px; }
+    .business-data-daily .top .right-box .content {
+      text-align: center;
+      font-size: 20px;
+      margin: 35px 0; }
+      .business-data-daily .top .right-box .content > span {
+        font-size: 36px; }
+  .business-data-daily .data-middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .business-data-daily .data-middle > div {
+      height: 140px;
+      background-color: #FFF; }
+      .business-data-daily .data-middle > div .title {
+        font-size: 20px;
+        margin: 20px 0 0 20px;
+        position: relative; }
+        .business-data-daily .data-middle > div .title:after {
+          content: ' ';
+          width: 4px;
+          height: 18px;
+          position: absolute;
+          left: -10px;
+          top: 6px; }
+      .business-data-daily .data-middle > div .content {
+        text-align: center;
+        font-size: 20px;
+        margin: 20px 0; }
+        .business-data-daily .data-middle > div .content > span {
+          font-size: 36px; }
+      .business-data-daily .data-middle > div:nth-child(1), .business-data-daily .data-middle > div:nth-child(3) {
+        margin: 0 1% 1% 0;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 49%;
+                flex: 0 0 49%; }
+      .business-data-daily .data-middle > div:nth-child(2), .business-data-daily .data-middle > div:nth-child(4) {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 50%;
+                flex: 0 0 50%; }
+      .business-data-daily .data-middle > div:nth-child(1) .title:after {
+        background-color: #459ae9; }
+      .business-data-daily .data-middle > div:nth-child(2) .title:after {
+        background-color: #f19149; }
+      .business-data-daily .data-middle > div:nth-child(3) .title:after {
+        background-color: #66bb6a; }
+      .business-data-daily .data-middle > div:nth-child(4) .title:after {
+        background-color: #8884d8; }
+  .business-data-daily .data-sort {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .business-data-daily .data-sort > div {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 33.33%;
+              flex: 0 0 33.33%;
+      background-color: #FFF;
+      border-right: 10px solid #e9eef2; }
+      .business-data-daily .data-sort > div:nth-child(2) .title {
+        background-image: url("/images/business/data/trophy_24_icon.png"); }
+      .business-data-daily .data-sort > div:last-child {
+        border: none;
+        text-align: center; }
+        .business-data-daily .data-sort > div:last-child img {
+          border: none;
+          width: auto;
+          height: 60px;
+          margin: 40px auto; }
+        .business-data-daily .data-sort > div:last-child .title {
+          text-align: left;
+          background-image: url("/images/business/data/heart_24_icon.png"); }
+    .business-data-daily .data-sort .title {
+      font-size: 20px;
+      border-bottom: 1px solid #e9eef2;
+      line-height: 2;
+      padding-left: 50px;
+      background: url("/images/business/data/fire_24_icon.png") no-repeat 20px center;
+      background-size: 24px; }
+    .business-data-daily .data-sort .pro {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      border-bottom: 1px solid #e9eef2;
+      margin: 0 20px; }
+      .business-data-daily .data-sort .pro > img {
+        width: 120px;
+        height: 120px;
+        border: 1px solid #e9eef2;
+        margin: 10px 0; }
+      .business-data-daily .data-sort .pro .detail {
+        margin-top: 10px; }
+      .business-data-daily .data-sort .pro .h3 {
+        height: 2.2em;
+        margin: 0 8px;
+        overflow: hidden; }
+      .business-data-daily .data-sort .pro .price {
+        font-size: 20px;
+        margin-top: 40px;
+        margin-left: 10px; }
+    .business-data-daily .data-sort .count {
+      font-size: 22px;
+      line-height: 2;
+      margin-left: 20px; }
+  .business-data-daily .close {
+    font-size: 16px;
+    margin: 10px 10px 0 0;
+    background-color: #fff;
+    color: #459ae9;
+    padding: 8px;
+    opacity: 1;
+    text-shadow: none;
+    border-radius: 6px;
+    font-weight: 400; }
+    .business-data-daily .close:hover {
+      background-color: #f2f2f2; }
+  .business-data-daily .ranking-pro {
+    background-color: #FFF;
+    border-top: 1px solid transparent;
+    margin: 30px 0;
+    padding-bottom: 30px;
+    position: relative; }
+    .business-data-daily .ranking-pro.ranking-price:before {
+      left: 50%; }
+    .business-data-daily .ranking-pro:before {
+      content: ' ';
+      position: absolute;
+      display: block;
+      width: 0px;
+      height: 0px;
+      top: -30px;
+      left: 15%;
+      border-bottom: 15px solid #fff;
+      border-top: 15px solid transparent;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent; }
+    .business-data-daily .ranking-pro .pro-title {
+      margin: 30px 0 30px 20px;
+      font-size: 20px; }
+    .business-data-daily .ranking-pro table {
+      width: calc(100% - 80px);
+      margin: 0 40px; }
+      .business-data-daily .ranking-pro table td {
+        border-bottom: 1px solid #f2f2f2;
+        font-size: 16px;
+        line-height: 2;
+        color: #666; }
+        .business-data-daily .ranking-pro table td:first-child {
+          width: 3.5%;
+          text-align: center; }
+        .business-data-daily .ranking-pro table td:nth-child(2) {
+          width: 30%;
+          padding-left: 60px; }
+        .business-data-daily .ranking-pro table td:nth-child(3) {
+          width: 20%;
+          text-align: right;
+          padding-right: 6px;
+          color: #333;
+          font-weight: 700; }
+        .business-data-daily .ranking-pro table td:nth-child(4) {
+          width: 36%;
+          padding-right: 2%; }
+          .business-data-daily .ranking-pro table td:nth-child(4) span {
+            display: block;
+            height: 12px;
+            background-color: #459ae9; }
+        .business-data-daily .ranking-pro table td:nth-child(5) {
+          text-align: right; }
+      .business-data-daily .ranking-pro table .sort {
+        color: #42a5f5;
+        font-weight: 700;
+        padding-right: 12px;
+        cursor: pointer; }
+        .business-data-daily .ranking-pro table .sort.up {
+          background: url("/images/business/data/di_icon.png") no-repeat right center;
+          background-size: 10px 14px; }
+        .business-data-daily .ranking-pro table .sort.down {
+          background: url("/images/business/data/gao_icon.png") no-repeat right center;
+          background-size: 10px 14px; }
+  .business-data-daily .ranking-love {
+    margin: 25px 0;
+    background-color: #FFF;
+    border-top: 1px solid transparent;
+    position: relative; }
+    .business-data-daily .ranking-love:before {
+      content: ' ';
+      position: absolute;
+      display: block;
+      width: 0px;
+      height: 0px;
+      top: -30px;
+      right: 15%;
+      border-bottom: 15px solid #fff;
+      border-top: 15px solid transparent;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent; }
+    .business-data-daily .ranking-love .love-title {
+      margin: 30px 0 30px 20px; }
+    .business-data-daily .ranking-love .love-items {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+    .business-data-daily .ranking-love .item {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 31.33%;
+              flex: 0 0 31.33%;
+      margin: 0 1%;
+      margin-bottom: 20px; }
+      .business-data-daily .ranking-love .item:nth-child(1) .pro:before {
+        content: '1';
+        color: #fff;
+        background-image: url("/images/business/data/top1_icon.png"); }
+      .business-data-daily .ranking-love .item:nth-child(2) .pro:before {
+        content: '2';
+        color: #fff;
+        background-image: url("/images/business/data/top2_icon.png"); }
+      .business-data-daily .ranking-love .item:nth-child(3) .pro:before {
+        content: '3';
+        color: #fff;
+        background-image: url("/images/business/data/top3_icon.png"); }
+    .business-data-daily .ranking-love .pro {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      border-bottom: 1px solid #e9eef2;
+      position: relative; }
+      .business-data-daily .ranking-love .pro:before {
+        position: absolute;
+        content: '1';
+        display: block;
+        width: 42px;
+        height: 38px;
+        left: 0;
+        top: 10px;
+        font-size: 16px;
+        color: #78909c;
+        line-height: 35px;
+        text-align: center;
+        font-weight: 700;
+        background: url("/images/business/data/top_icon.png") no-repeat center;
+        background-size: 42px 38px; }
+      .business-data-daily .ranking-love .pro > img {
+        width: 120px;
+        height: 120px;
+        border: 1px solid #e9eef2;
+        margin: 10px 0; }
+      .business-data-daily .ranking-love .pro .detail {
+        margin-top: 10px; }
+      .business-data-daily .ranking-love .pro .h3 {
+        height: 2.2em;
+        margin: 0 8px;
+        overflow: hidden; }
+      .business-data-daily .ranking-love .pro .price {
+        font-size: 20px;
+        margin-top: 40px;
+        margin-left: 10px; }
+    .business-data-daily .ranking-love .count-title {
+      text-align: center;
+      line-height: 45px;
+      font-size: 16px; }
+    .business-data-daily .ranking-love .count {
+      line-height: 45px;
+      font-size: 25px;
+      text-align: center; }
+  .business-data-daily .data-ranking {
+    margin-top: 20px;
+    background-color: #FFF; }
+    .business-data-daily .data-ranking .ranking-title {
+      border-bottom: 1px solid #e9eef2; }
+      .business-data-daily .data-ranking .ranking-title p {
+        line-height: 70px;
+        font-size: 20px;
+        text-align: center; }
+        .business-data-daily .data-ranking .ranking-title p span {
+          margin: 0 10px;
+          position: relative;
+          cursor: pointer; }
+          .business-data-daily .data-ranking .ranking-title p span.active {
+            font-size: 22px;
+            color: #459ae9; }
+            .business-data-daily .data-ranking .ranking-title p span.active:after {
+              position: absolute;
+              left: 0;
+              right: 0;
+              bottom: -21px;
+              margin: auto;
+              content: ' ';
+              display: block;
+              width: 44px;
+              height: 4px;
+              background-color: #459ae9; }
+    .business-data-daily .data-ranking .ranking-area {
+      margin: 0 30px;
+      padding-bottom: 30px;
+      overflow: hidden; }
+      .business-data-daily .data-ranking .ranking-area .type {
+        text-align: center;
+        margin: 30px 0; }
+        .business-data-daily .data-ranking .ranking-area .type span {
+          margin: 0 5px;
+          border: 1px solid #459ae9;
+          background-color: #FFF;
+          color: #459ae9;
+          padding: 4px;
+          border-radius: 4px;
+          cursor: pointer; }
+          .business-data-daily .data-ranking .ranking-area .type span.active {
+            background-color: #459ae9;
+            color: #fff; }
+      .business-data-daily .data-ranking .ranking-area .content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        color: #fff;
+        height: 400px; }
+        .business-data-daily .data-ranking .ranking-area .content .left {
+          background-color: #82b1ff;
+          width: 40%; }
+        .business-data-daily .data-ranking .ranking-area .content .num-title {
+          margin: 20px 0 0 20px;
+          font-size: 22px; }
+          .business-data-daily .data-ranking .ranking-area .content .num-title span {
+            max-width: 80%;
+            display: inline-block;
+            vertical-align: top; }
+        .business-data-daily .data-ranking .ranking-area .content .info {
+          margin: 50px 0 0 70px; }
+          .business-data-daily .data-ranking .ranking-area .content .info p {
+            line-height: 2; }
+        .business-data-daily .data-ranking .ranking-area .content .right {
+          width: 60%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+          .business-data-daily .data-ranking .ranking-area .content .right .num-title {
+            margin: 20px 0 0 20px; }
+          .business-data-daily .data-ranking .ranking-area .content .right .info {
+            margin: 10px 20px 20px 20px; }
+            .business-data-daily .data-ranking .ranking-area .content .right .info p {
+              line-height: 1.8; }
+          .business-data-daily .data-ranking .ranking-area .content .right > div {
+            width: 50%;
+            height: 200px;
+            overflow: hidden; }
+            .business-data-daily .data-ranking .ranking-area .content .right > div:nth-child(1) {
+              background-color: #82b1ff;
+              opacity: 0.9; }
+            .business-data-daily .data-ranking .ranking-area .content .right > div:nth-child(2) {
+              background-color: #89ca82;
+              opacity: 0.9; }
+            .business-data-daily .data-ranking .ranking-area .content .right > div:nth-child(3) {
+              background-color: #82b1ff;
+              opacity: 0.8; }
+            .business-data-daily .data-ranking .ranking-area .content .right > div:nth-child(4) {
+              background-color: #89ca82;
+              opacity: 0.8; }
+    .business-data-daily .data-ranking .ranking-store {
+      margin: 0 20px; }
+      .business-data-daily .data-ranking .ranking-store .method {
+        text-align: right;
+        margin: 10px 0; }
+        .business-data-daily .data-ranking .ranking-store .method span {
+          color: #42a5f5;
+          font-weight: 700;
+          padding-right: 12px;
+          cursor: pointer; }
+          .business-data-daily .data-ranking .ranking-store .method span.up {
+            background: url("/images/business/data/di_icon.png") no-repeat right center;
+            background-size: 10px 14px; }
+          .business-data-daily .data-ranking .ranking-store .method span.down {
+            background: url("/images/business/data/gao_icon.png") no-repeat right center;
+            background-size: 10px 14px; }
+      .business-data-daily .data-ranking .ranking-store .items {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+      .business-data-daily .data-ranking .ranking-store .item {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+        background-color: #f7f7f9;
+        padding-bottom: 21px;
+        position: relative; }
+        .business-data-daily .data-ranking .ranking-store .item:nth-child(2n+1) {
+          border-right: 10px solid #fff;
+          border-bottom: 10px solid #fff; }
+        .business-data-daily .data-ranking .ranking-store .item:nth-child(2n) {
+          border-bottom: 10px solid #fff; }
+        .business-data-daily .data-ranking .ranking-store .item:before {
+          content: '1';
+          display: block;
+          width: 42px;
+          height: 38px;
+          position: absolute;
+          left: 10px;
+          font-size: 16px;
+          color: #78909c;
+          line-height: 35px;
+          text-align: center;
+          font-weight: 700;
+          background: url("/images/business/data/top_icon.png") no-repeat center;
+          background-size: 42px 38px; }
+        .business-data-daily .data-ranking .ranking-store .item:nth-child(1):before {
+          color: #fff;
+          background-image: url("/images/business/data/top1_icon.png"); }
+        .business-data-daily .data-ranking .ranking-store .item:nth-child(2):before {
+          content: '2';
+          color: #fff;
+          background-image: url("/images/business/data/top2_icon.png"); }
+        .business-data-daily .data-ranking .ranking-store .item:nth-child(3):before {
+          content: '3';
+          color: #fff;
+          background-image: url("/images/business/data/top3_icon.png"); }
+        .business-data-daily .data-ranking .ranking-store .item:nth-child(4):before {
+          content: '4'; }
+        .business-data-daily .data-ranking .ranking-store .item:nth-child(5):before {
+          content: '5'; }
+        .business-data-daily .data-ranking .ranking-store .item:nth-child(6):before {
+          content: '6'; }
+        .business-data-daily .data-ranking .ranking-store .item:nth-child(7):before {
+          content: '7'; }
+        .business-data-daily .data-ranking .ranking-store .item:nth-child(8):before {
+          content: '8'; }
+        .business-data-daily .data-ranking .ranking-store .item:nth-child(9):before {
+          content: '9'; }
+        .business-data-daily .data-ranking .ranking-store .item:nth-child(10):before {
+          content: '10'; }
+      .business-data-daily .data-ranking .ranking-store .item-title {
+        background-color: #efeff4;
+        font-size: 16px;
+        color: #000;
+        line-height: 40px;
+        padding-left: 82px; }
+      .business-data-daily .data-ranking .ranking-store .h5 {
+        font-size: 16px;
+        font-weight: 700;
+        margin: 18px 0 6px 10px;
+        position: relative; }
+        .business-data-daily .data-ranking .ranking-store .h5 span {
+          position: absolute;
+          right: 30px;
+          color: #42a5f5; }
+      .business-data-daily .data-ranking .ranking-store .address-info {
+        line-height: 28px;
+        margin-left: 10px;
+        color: #666;
+        font-size: 16px; }

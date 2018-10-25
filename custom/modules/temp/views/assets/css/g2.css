@@ -1,0 +1,227 @@
+ul, ol .li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a:hover {
+  text-decoration: none; }
+
+.cosmetic-cleaning-box {
+  background: url("/images/cosmetic_cleaning/bg.jpg") no-repeat;
+  background-size: 1920px 100%; }
+  .cosmetic-cleaning-box .top-pic {
+    height: 1060px;
+    background: url("/images/cosmetic_cleaning/banner.jpg") no-repeat center top;
+    background-size: 1920px auto; }
+  .cosmetic-cleaning-box .cosmetic-cleaning {
+    width: 1232px;
+    margin: 0 auto;
+    position: relative; }
+    .cosmetic-cleaning-box .cosmetic-cleaning-nav {
+      width: 200px;
+      position: fixed;
+      top: 12%;
+      left: 50%;
+      margin-left: 630px;
+      background: url("/images/cosmetic_cleaning/nav_bg.jpg") no-repeat;
+      background-size: 200px auto;
+      padding-top: 156px;
+      padding-bottom: 20px; }
+      .cosmetic-cleaning-box .cosmetic-cleaning-nav > ul {
+        width: 168px;
+        margin: 0 auto 70px; }
+        .cosmetic-cleaning-box .cosmetic-cleaning-nav > ul > li {
+          width: 168px;
+          height: 30px;
+          line-height: 27px;
+          font-size: 17px;
+          text-align: center;
+          margin-bottom: 10px;
+          font-weight: bolder;
+          border-radius: 30px;
+          background: url("/images/cosmetic_cleaning/weixuanzhong_but.png") no-repeat;
+          background-size: 168px auto; }
+          .cosmetic-cleaning-box .cosmetic-cleaning-nav > ul > li > a {
+            display: block;
+            color: rgba(255, 255, 255, 0.6); }
+          .cosmetic-cleaning-box .cosmetic-cleaning-nav > ul > li.active {
+            background: url("/images/cosmetic_cleaning/xuanzhong_but.png") no-repeat; }
+            .cosmetic-cleaning-box .cosmetic-cleaning-nav > ul > li.active > a {
+              color: #ffe100; }
+    .cosmetic-cleaning-box .cosmetic-cleaning .second-kill {
+      height: 692px;
+      background: url("/images/cosmetic_cleaning/f1_bg.png") no-repeat;
+      background-size: 1232px auto;
+      padding-top: 162px; }
+      .cosmetic-cleaning-box .cosmetic-cleaning .second-kill-nav {
+        width: 772px;
+        height: 80px;
+        background-color: #fff;
+        border-radius: 40px;
+        padding: 8px 65px;
+        margin: 0 auto 60px; }
+        .cosmetic-cleaning-box .cosmetic-cleaning .second-kill-nav > li {
+          color: #fff;
+          float: left;
+          width: 180px;
+          height: 64px;
+          line-height: 64px;
+          text-align: center;
+          border-radius: 40px;
+          font-size: 28px;
+          background-color: #bfbfbf;
+          cursor: pointer; }
+          .cosmetic-cleaning-box .cosmetic-cleaning .second-kill-nav > li:nth-child(2) {
+            margin: 0 51px; }
+          .cosmetic-cleaning-box .cosmetic-cleaning .second-kill-nav > li.active {
+            background-color: #f40022; }
+      .cosmetic-cleaning-box .cosmetic-cleaning .second-kill > div .second-kill-cont {
+        padding: 0 25px; }
+        .cosmetic-cleaning-box .cosmetic-cleaning .second-kill > div .second-kill-cont .list {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
+          .cosmetic-cleaning-box .cosmetic-cleaning .second-kill > div .second-kill-cont .list-item {
+            background-color: #fff;
+            margin-left: 8px;
+            overflow: hidden; }
+            .cosmetic-cleaning-box .cosmetic-cleaning .second-kill > div .second-kill-cont .list-item:nth-child(1) {
+              margin-left: 0; }
+            .cosmetic-cleaning-box .cosmetic-cleaning .second-kill > div .second-kill-cont .list-item > a {
+              display: block; }
+              .cosmetic-cleaning-box .cosmetic-cleaning .second-kill > div .second-kill-cont .list-item > a .list-item-pic {
+                display: block;
+                width: 288px;
+                height: 268px;
+                }
+              .cosmetic-cleaning-box .cosmetic-cleaning .second-kill > div .second-kill-cont .list-item > a .list-item-cont {
+                display: block;
+                width: 250px;
+                color: #3e3a39;
+                margin-left: 22px;
+                font-size: 14px;
+                height: 20px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap; }
+              .cosmetic-cleaning-box .cosmetic-cleaning .second-kill > div .second-kill-cont .list-item > a .list-item-price {
+                padding: 4px 12px;
+                height: 59px;
+                line-height: 59px;
+                background-color: #FF0033; }
+                .cosmetic-cleaning-box .cosmetic-cleaning .second-kill > div .second-kill-cont .list-item > a .list-item-price > img {
+                  margin-top: -10px; }
+                .cosmetic-cleaning-box .cosmetic-cleaning .second-kill > div .second-kill-cont .list-item > a .list-item-price .j_price {
+                  color: #fff;
+                  margin-left: 4px;
+                  font-size: 20px;
+                  height: 59px;
+                  margin-top: -5px; }
+                  .cosmetic-cleaning-box .cosmetic-cleaning .second-kill > div .second-kill-cont .list-item > a .list-item-price .j_price > span {
+                    display: inline-block;
+                    font-size: 28px;
+                    margin-top: -30px;
+                    font-weight: bolder; }
+                .cosmetic-cleaning-box .cosmetic-cleaning .second-kill > div .second-kill-cont .list-item > a .list-item-price .rush-buy {
+                  float: right;
+                  color: #fff;
+                  font-size: 16px;
+                  font-weight: bolder;
+                  margin-top: -4px; }
+    .cosmetic-cleaning-box .cosmetic-cleaning .selected-brand-box {
+      margin-top: 40px;
+      background: url("/images/cosmetic_cleaning/f2_bg.png") no-repeat;
+      background-size: 1232px 100%;
+      padding-top: 150px;
+      padding-bottom: 49px; }
+      .cosmetic-cleaning-box .cosmetic-cleaning .selected-brand-box .selected-brand {
+        margin: 0 25px; }
+        .cosmetic-cleaning-box .cosmetic-cleaning .selected-brand-box .selected-brand > a {
+          display: block; }
+          .cosmetic-cleaning-box .cosmetic-cleaning .selected-brand-box .selected-brand > a > img {
+            margin-bottom: 14px; }
+    .cosmetic-cleaning-box .cosmetic-cleaning .special-zone-box {
+      background: url("/images/cosmetic_cleaning/f3_bg.png") no-repeat;
+      background-size: 1232px 100%;
+      padding-top: 157px;
+      padding-bottom: 55px;
+      margin-top: 40px; }
+      .cosmetic-cleaning-box .cosmetic-cleaning .special-zone-box .special-zone {
+        margin: 0 26px; }
+        .cosmetic-cleaning-box .cosmetic-cleaning .special-zone-box .special-zone > ul {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
+          .cosmetic-cleaning-box .cosmetic-cleaning .special-zone-box .special-zone > ul .special-item {
+            flex: 0 0 286px;
+            position: relative;
+            margin-left: 10px;
+            margin-bottom: 22px;
+            background-color: #fff; }
+            .special-item-bz1 {
+              position: absolute;
+              left: 10px;
+              top: 0;
+            }
+            .special-item-bz2 {
+              position: absolute;
+              left: 60px;
+              top: 0;
+            }
+            .cosmetic-cleaning-box .cosmetic-cleaning .special-zone-box .special-zone > ul .special-item:nth-child(4n-3) {
+              margin-left: 0; }
+            .cosmetic-cleaning-box .cosmetic-cleaning .special-zone-box .special-zone > ul .special-item:last-child {
+              height: 298px; }
+              .cosmetic-cleaning-box .cosmetic-cleaning .special-zone-box .special-zone > ul .special-item:last-child > img {
+                width: 286px;
+                height: 100%; }
+            .cosmetic-cleaning-box .cosmetic-cleaning .special-zone-box .special-zone > ul .special-item > a {
+              display: block;
+              overflow: hidden; }
+              .cosmetic-cleaning-box .cosmetic-cleaning .special-zone-box .special-zone > ul .special-item > a .special-item-pic {
+                display: block;
+                width: 286px;
+                height: 286px; }
+              .cosmetic-cleaning-box .cosmetic-cleaning .special-zone-box .special-zone > ul .special-item > a > span {
+                display: block;
+                width: 240px;
+                height: 20px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap; }
+                .cosmetic-cleaning-box .cosmetic-cleaning .special-zone-box .special-zone > ul .special-item > a > span.special-item-cont1 {
+                  font-size: 14px;
+                  font-weight: bolder;
+                  margin-left: 12px; }
+              .cosmetic-cleaning-box .cosmetic-cleaning .special-zone-box .special-zone > ul .special-item > a .special-item-price {
+                height: 47px;
+                line-height: 47px;
+                background: url("/images/cosmetic_cleaning/bg_2.jpg") no-repeat;
+                background-size: 286px auto;
+                position: relative;
+                padding-left: 10px; }
+                .cosmetic-cleaning-box .cosmetic-cleaning .special-zone-box .special-zone > ul .special-item > a .special-item-price .s_price {
+                  color: #fff;
+                  font-size: 18px; }
+                  .cosmetic-cleaning-box .cosmetic-cleaning .special-zone-box .special-zone > ul .special-item > a .special-item-price .s_price > span {
+                    font-size: 20px; }
+                .cosmetic-cleaning-box .cosmetic-cleaning .special-zone-box .special-zone > ul .special-item > a .special-item-price > img {
+                  position: absolute;
+                  right: 9px;
+                  bottom: 12px; }
+  .cosmetic-cleaning-box .return-top {
+    height: 98px;
+    line-height: 98px;
+    background-color: #6A02AD;
+    font-size: 42px;
+    text-align: center;
+    margin-top: 50px; }
+    .cosmetic-cleaning-box .return-top > a {
+      color: #fff;
+      letter-spacing: 2px; }

@@ -1,0 +1,36 @@
+@@include('inc/head.inc') @@include('inc/top_nav.inc') @@include('inc/search.inc')
+<div class="custom-account-view">
+    <div class="container">
+        <!-- no-head 隐藏账户中心头部 -->
+        <div class="custom-account-container">
+            @@include('inc/account_menu.inc')
+            <div class="custom-acc-main">
+                <div class="acc-recharge">
+                    <div class="title">账户充值</div>
+                    <div class="form-box">
+                        <div class="form-group">
+                            <label for="" class="control-label text-right">充值金额：</label>
+                            <input type="number" class="form-control" name="" value="">
+                            <span>&nbsp;&nbsp;元</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="control-label text-right">选择支付方式：</label>
+                            <div class="pay-ment">
+                                <div class="select">
+                                    <img src="/images/new-account/Alipay.png" alt="">
+                                    <span>支付宝</span>
+                                </div>
+                                <div>
+                                    <img src="/images/new-account/wepay.png" alt="">
+                                    <span>微信</span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="btn btn-danger">确定</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('inc/footer.inc')

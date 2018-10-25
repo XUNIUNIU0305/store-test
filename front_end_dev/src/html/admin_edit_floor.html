@@ -1,0 +1,275 @@
+@@include('head.inc')
+<!-- header start -->
+<header class="admin-frame-header">
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#top">
+                <img alt="logo" src="/images/logo_white.png" height="24">
+            </a>
+        </div>
+        <ul class="nav navbar-nav navbar-left">
+            <li>管理控制中心</li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                476644346@qq.com
+            </li>
+            <li>
+                <a href="javascript:void(0)">退出</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<!-- header end -->
+<!-- aside nav start -->
+<aside class="admin-frame-aside" id="aside-menu">
+    <ul class="nav nav-pills nav-stacked">
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_1">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_2">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_3">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+    </ul>
+    <ul id="aside_menu_1" class="list-unstyled child-list collapse">
+        <li class="active"><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+    </ul>
+    <ul id="aside_menu_2" class="list-unstyled child-list collapse">
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+    </ul>
+    <ul id="aside_menu_3" class="list-unstyled child-list collapse">
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+    </ul>
+</aside>
+<!-- aside nav end -->
+<!-- main area start -->
+<div class="admin-frame-main">
+    <div class="admin-main-wrap">
+        <div class="admin-edit-index">
+            <!--楼层商品 start-->
+            <div class="admin-edit-index-floors admin-edit-floor-product">
+                <!--按钮-->
+                <a href="#" class="btn btn-danger"><i class="glyphicon glyphicon-plus-sign"></i>新增</a>
+                <a href="./admin_edit_index.html" class="btn btn-danger"><i class="glyphicon glyphicon-share-alt"></i>返回上一级</a>
+                <!--标题-->
+                <div class="h4"><i class="glyphicon glyphicon-th-large"></i>已有楼层</div>
+                <!--列表-->
+                <div class="row-group">
+                    <!--新增-->
+                    <div class="row list new">
+                        <div class="col-xs-2">
+                            <label class="img-upload-box" for="upload_img_1">
+                                <input type="file" id="upload_img_1">
+                            </label>
+                        </div>
+                        <div class="col-xs-2 form-horizontal">
+                            <div class="form-group form-group-sm">
+                                <label for="prod_name" class="col-xs-12 control-label">商品名称：</label>
+                                <div class="col-xs-9">
+                                    <input type="text" class="form-control" id="prod_name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 form-horizontal">
+                            <div class="form-group form-group-sm">
+                                <label for="sell_point_1" class="col-xs-6 control-label">商品卖点1：</label>
+                                <div class="col-xs-6">
+                                    <input type="text" class="form-control" id="sell_point_1">
+                                </div>
+                            </div>
+                            <div class="form-group form-group-sm">
+                                <label for="sell_point_2" class="col-xs-6 control-label">商品卖点2：</label>
+                                <div class="col-xs-6">
+                                    <input type="text" class="form-control" id="sell_point_2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 form-horizontal">
+                            <div class="form-group form-group-sm">
+                                <label for="sell_id_1" class="col-xs-6 control-label">商品id1：</label>
+                                <div class="col-xs-6">
+                                    <input type="text" class="form-control" id="sell_id_1">
+                                </div>
+                            </div>
+                            <div class="form-group form-group-sm">
+                                <label for="sell_id_2" class="col-xs-6 control-label">商品id2：</label>
+                                <div class="col-xs-6">
+                                    <input type="text" class="form-control" id="sell_id_2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-2">
+                            <a href="#" class="btn btn-warning btn-block btn-sm">确认添加</a>
+                        </div>
+                    </div>
+                    <!--现存列表-->
+                    <ul class="list-unstyled row">
+                        <!--item 修改-->
+                        <li class="col-xs-6">
+                            <div class="item text-center">
+                                <div class="media">
+                                    <div class="media-left media-middle ">
+                                        <label class="img-upload-box media-object" for="upload_img_1">
+                                            <input type="file" id="upload_img_1">
+                                            <img src="/images/index_section/item11.png">
+                                        </label>
+                                    </div>
+                                    <div class="media-body media-middle">
+                                        <div class="form-horizontal">
+                                            <div class="form-group form-group-sm">
+                                                <label class="col-xs-4 control-label">商品名称：</label>
+                                                <div class="col-xs-7">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-group-sm">
+                                                <label class="col-xs-4 control-label">商品卖点1：</label>
+                                                <div class="col-xs-7">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-group-sm">
+                                                <label class="col-xs-4 control-label">商品卖点2：</label>
+                                                <div class="col-xs-7">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-group-sm">
+                                                <label class="col-xs-4 control-label">商品ID：</label>
+                                                <div class="col-xs-7">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-group-sm">
+                                                <label class="col-xs-4 control-label">排序ID：</label>
+                                                <div class="col-xs-7">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn btn-warning">修改</div>
+                                <div class="btn btn-danger">删除</div>
+                            </div>
+                        </li>
+                        <!--item-->
+                        <li class="col-xs-6">
+                            <div class="item text-center">
+                                <div class="media">
+                                    <div class="media-left media-middle">
+                                        <img src="/images/index_section/item11.png" class="media-object">
+                                    </div>
+                                    <div class="media-body media-middle">
+                                        <div class="form-horizontal">
+                                            <div class="form-group form-group-sm">
+                                                <label class="col-xs-4 control-label">商品名称：</label>
+                                                <div class="col-xs-8">
+                                                    <p class="form-control-static">瑜伽私人订制脚垫</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-group-sm">
+                                                <label class="col-xs-4 control-label">商品卖点1：</label>
+                                                <div class="col-xs-8">
+                                                    <p class="form-control-static">防火阻燃</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-group-sm">
+                                                <label class="col-xs-4 control-label">商品卖点2：</label>
+                                                <div class="col-xs-8">
+                                                    <p class="form-control-static">原厂安全卡扣</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-group-sm">
+                                                <label class="col-xs-4 control-label">商品ID：</label>
+                                                <div class="col-xs-8">
+                                                    <p class="form-control-static">15</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-group-sm">
+                                                <label class="col-xs-4 control-label">排序ID：</label>
+                                                <div class="col-xs-8">
+                                                    <p class="form-control-static">1</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn btn-warning">修改</div>
+                                <div class="btn btn-danger">删除</div>
+                            </div>
+                        </li>
+                        <!--item-->
+                        <li class="col-xs-6">
+                            <div class="item text-center">
+                                <div class="media">
+                                    <div class="media-left media-middle">
+                                        <img src="/images/index_section/item11.png" class="media-object">
+                                    </div>
+                                    <div class="media-body media-middle">
+                                        <div class="form-horizontal">
+                                            <div class="form-group form-group-sm">
+                                                <label class="col-xs-4 control-label">商品名称：</label>
+                                                <div class="col-xs-8">
+                                                    <p class="form-control-static">瑜伽私人订制脚垫</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-group-sm">
+                                                <label class="col-xs-4 control-label">商品卖点1：</label>
+                                                <div class="col-xs-8">
+                                                    <p class="form-control-static">防火阻燃</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-group-sm">
+                                                <label class="col-xs-4 control-label">商品卖点2：</label>
+                                                <div class="col-xs-8">
+                                                    <p class="form-control-static">原厂安全卡扣</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-group-sm">
+                                                <label class="col-xs-4 control-label">商品ID：</label>
+                                                <div class="col-xs-8">
+                                                    <p class="form-control-static">15</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-group-sm">
+                                                <label class="col-xs-4 control-label">排序ID：</label>
+                                                <div class="col-xs-8">
+                                                    <p class="form-control-static">1</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn btn-warning">修改</div>
+                                <div class="btn btn-danger">删除</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--商品楼层 end-->
+        </div>
+    </div>
+</div>
+<!-- main area start -->
+
+@@include('footer_admin.inc')

@@ -1,0 +1,145 @@
+.summaryreductiondata{
+    background: url(/images/20181011/bg1.png)no-repeat center top;
+    /* background: url(/images/20181011/bg1.jpg)no-repeat center top; */
+	min-width: 1190px;
+    margin: auto;
+    height: 1080px;
+    overflow: hidden;
+}
+.summaryreductiondata .firsttitle{
+    background: url(/images/20181011/title.png)no-repeat center top;
+    width: 310PX;
+    height: 43px;
+    margin: 9px auto 0;
+}
+/* .summaryreductiondata .activitytime{
+    color:#13C8FC;
+    font-size: 30px;
+    margin: 20px auto 34px;
+    text-align: center;
+} */
+.summaryreductiondata .sales{
+    margin:  34px auto 20px;
+    display: flex;
+    justify-content:center;
+    overflow: hidden;
+}
+.summaryreductiondata .sales .salesleft{
+    width: 547px;
+    height: 335px;
+    display: inline-block;
+}
+.summaryreductiondata .sales .salesleft>div{
+    width: 547px;
+    height: 167px;
+    background: url(/images/20181011/sales.png)no-repeat center top;
+    overflow: hidden;
+}
+.summaryreductiondata .sales .salesleft p{
+    color: #DADADA;
+    font-size: 32px;
+    margin: 31px 0 0 70px;
+    font-weight: bold;
+}
+.summaryreductiondata .sales .salesleft .sales-price-num,.summaryreductiondata .sales .salesleft .sales-number-num{
+    font-size: 44px;
+    margin-left: 70px;
+    color: #13C8FC;
+    font-weight: bold;
+}
+.summaryreductiondata .sales .salesleft p span,.summaryreductiondata .sales .salesleft p span{
+    font-size: 24px;
+}
+.summaryreductiondata .sales .salesright{
+    box-sizing: border-box;
+    padding-right: 15px;
+    width: 572px;
+    height: 325px;
+    display: inline-block;
+    background: url(/images/20181011/salesright.png)no-repeat center -5px;
+    margin-left: 92px;
+    overflow: auto;
+}
+.summaryreductiondata .sales .salesright::-webkit-scrollbar {
+    width: 0px;
+}
+.summaryreductiondata .sales .salesright p{
+    font-size: 32px;
+    color: #DADADA;
+    text-align: center;
+    margin: 33px auto 24px;
+    font-weight: bold;
+}
+.summaryreductiondata .sales .salesright .productmodel-wrap{
+    padding: 0;
+    margin: 0;
+    list-style:none;
+    font-weight: bold;
+}
+.summaryreductiondata .sales .salesright .productmodel-wrap .productmodel{
+    margin-left: 15px;
+    font-size: 24px;
+    color: white;
+    margin-top: 5px;
+    padding-left:40px;
+    background:url(/images/20181011/dian.png) no-repeat left center;
+}
+.summaryreductiondata .sales .salesright .productmodel-wrap .productmodel:first-of-type{
+    margin-top: 0;
+}
+.productmodel span{
+    color: #13C8FC;
+}
+.realtimesummary-bar{
+    color: white;
+}
+/* .summaryreductiondata .sales .salesright .productmodel-wrap .productmodel span:last-of-type{
+    margin-right: 0;
+}
+.summaryreductiondata .sales .salesright .productmodel-wrap .productmodel span{
+    margin-right: 25px;
+} */
+.summaryreductiondata .realtimedata{
+    width: 1210px;
+    height: 533px;
+    margin: 0 auto;
+    background: url(/images/20181011/echatrs.png) no-repeat left center;
+    overflow: hidden;
+    position: relative;
+}
+.summaryreductiondata .realtimedata .real-time-summary{
+    text-align: center;
+    color:rgba(218,218,218,1);
+    font-size: 30px;
+    margin-top: 26px;
+    line-height:19px;
+    font-weight: bold;
+    position: relative;
+}
+.summaryreductiondata .realtimedata .real-time-summary .shengjihuizong{
+    color: #DADADA;
+}
+.summaryreductiondata .realtimedata .real-time-summary .realtimesummary-description{
+    position: absolute;
+    right: 55px;
+    top: 0;
+    font-size: 14px;
+    font-weight: 100;
+}
+.summaryreductiondata .realtimedata .real-time-summary .realtimesummary-description .realtimesummary-bar{
+    background: url(/images/20181011/icon0.png) no-repeat left center;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align:middle;
+    margin-right: 12px;
+}
+.summaryreductiondata .realtimedata #chartmain{
+    width: 100%;
+    height: 478px;
+    position: absolute;
+    bottom: 0;
+}
+#chartmain:hover{
+    cursor:pointer
+}

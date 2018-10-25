@@ -1,0 +1,207 @@
+.apx-brands-container {
+    background: #f2f2f2;
+    border-top: 2px solid $brand-danger;
+}
+
+.#{$global_cname}brands-carousel {
+    box-shadow: 4px 4px 8px #999;
+    margin: 4px auto 40px;
+    background: #fff;
+    transition: box-shadow .4s;
+    &:hover {
+        box-shadow: 4px 4px 16px #777;
+    }
+    .carousel-indicators {
+        margin-bottom: 0;
+        bottom: 0;
+        .active{
+            margin:8px;
+        }
+    }
+}
+
+.#{$global_cname}brands-box {
+    text-align: center;
+    background: #fff;
+    margin: 40px 0;
+    .brands-title {
+        line-height: 78px;
+        font-size: 36px;
+        color: #c23b27;
+        font-weight: 600;
+        position: relative;
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 60px;
+            height: 8px;
+            background: #992f1f;
+            margin-top: -4px;
+        }
+        &:before {
+            left: 420px;
+        }
+        &:after {
+            right: 420px;
+        }
+    }
+    .media {
+        padding-left: 12px;
+        margin: 0;
+        .media-left {
+            min-width: 435px;
+            height: 284px;
+            padding-right: 6px;
+            img {
+                width: 435px;
+                height: 284px;
+            }
+        }
+        .media-body {
+            padding-right: 6px;
+            .brand-item-wrap {
+                width: 20%;
+                float: left;
+                padding: 0 6px;
+                height: 136px;
+                &:nth-child(n+6) {
+                    margin-top: 12px;
+                }
+                a {
+                    text-decoration: none;
+                }
+                .brand-item {
+                    width: 100%;
+                    height: 136px;
+                    padding: 0px;
+                    border: 1px solid $brand-danger;
+                    .logo {
+                        height: 102px;
+                        display: table-cell;
+                        vertical-align: middle;
+                    }
+                    p {
+                        border-top: 1px solid;
+                        color: #999;
+                        margin: 0;
+                        line-height: 36px;
+                    }
+                }
+                .refresh-btn {
+                    background: #cf4d44;
+                    color: #fff;
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    cursor: pointer;
+                    &.refreshing {
+                        i {
+                            animation: spin 1s ease-in-out infinite;
+                            @keyframes spin {
+                                from {
+                                    transform: rotate(0deg);
+                                }
+                                to {
+                                    transform: rotate(360deg);
+                                }
+                            }
+                        }
+                    }
+                    i {
+                        font-size: 44px;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        margin-top: -32px;
+                        margin-left: -22px;
+                    }
+                    span {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: 26px;
+                    }
+                }
+            }
+        }
+    }
+    .banner {
+        padding: 12px 0;
+        img {
+            margin: 0 auto;
+        }
+    }
+    .col-xs-6 {
+        margin-bottom: 30px;
+        position: relative;
+        >img {
+            height: 330px;
+        }
+        &:hover {
+            .text-box {
+                transform: translateY(-10px);
+            }
+        }
+        .text-box {
+            transition: transform .4s;
+            position: absolute;
+            right: 32px;
+            bottom: -20px;
+            width: 230px;
+            height: 230px;
+            background: #fff;
+            background: rgba(#fff, .8);
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, .2);
+            padding: 12px;
+            .logo {
+                width: 2000px;
+                height: 80px;
+                display: table-cell;
+                vertical-align: middle;
+                img {
+                    margin: 0 auto;
+                }
+            }
+            p {
+                margin: 8px 0 0;
+                font-size: 12px;
+                line-height: 2;
+                font-weight: 600;
+                display: block;
+                text-align: left;
+                letter-spacing: 1px;
+                word-break: break-word;
+            }
+        }
+    }
+}
+.apx-brands-carousel .carousel-indicators .active{
+
+}
+.img-ebit-adjustment{
+    width: 565px;
+    height: 325px;
+    background-size: cover;
+}
+.img-brand-img{
+    width: 1190px;
+    height: 380px !important;
+    background-size: cover;
+}
+.img-hotbrand-img{
+    width: 135px;
+    height: 134px;
+    background-size: cover;
+}
+.img-responsive-img{
+    width: 1170px;
+    height: 139px;
+    background-size: cover;
+}
+.ebitmin-img{
+    width: 113px;
+    height: 80px;
+    background-size: cover;
+}

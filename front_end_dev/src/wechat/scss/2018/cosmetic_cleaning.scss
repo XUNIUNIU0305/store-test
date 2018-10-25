@@ -1,0 +1,236 @@
+$size : 1/750 * 100vw;
+
+ul , ol .li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a:hover {
+    text-decoration: none;
+}
+
+.cosmetic-cleaning-box {
+    background: url('/images/cosmetic_cleaning/bg.jpg') no-repeat;
+    background-size: 750 * $size 100%;
+    .top-pic {
+        height: 660 * $size;
+        background: url('/images/cosmetic_cleaning/banner.jpg') no-repeat center top;
+        background-size: 750 * $size auto;
+        >img {
+            width: 127 * $size;
+            margin-left: 85 * $size;
+        }
+    }
+    .cosmetic-cleaning {
+        width: 750 * $size;
+        margin: 0 auto;
+        .second-kill {
+            height: 672 * $size;
+            background: url('/images/cosmetic_cleaning/f1_bg.png') no-repeat center top;
+            background-size: 702 * $size auto;
+            padding: 0 60 * $size;
+            padding-top: 100 * $size;
+            &-nav {
+                width: 470 * $size;
+                height: 32 * $size;
+                background-color: #fff;
+                border-radius: 40 * $size;
+                padding: 4 * $size 20 * $size;
+                margin: 0 auto 20 * $size;
+                >li {
+                    color: #fff;
+                    float: left;
+                    width: 140 * $size;
+                    height: 32 * $size;
+                    line-height: 32 * $size;
+                    text-align: center;
+                    border-radius: 40 * $size;
+                    font-size: 26 * $size;
+                    background-color: #bfbfbf;
+                    cursor: pointer;
+                    &:nth-child(2) {
+                        margin: 0 22 * $size;
+                    }
+                    &.active {
+                        background-color: #f40022;
+                    }
+                } 
+            }
+            >div {
+                .second-kill-cont {
+                    padding: 0 36 * $size;
+                    .list {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: flex-start;
+                        &-item {
+                            background-color: #fff;
+                            margin-left: 10 * $size;
+                            margin-bottom: 10 * $size;
+                            overflow: hidden;
+                            &:nth-child(2n-1) {
+                                margin-left: 0;
+                            }
+                            >a {
+                                display: block;
+                                .list-item-pic {
+                                    display: block;
+                                    width: 220 * $size;
+                                    height: 179 * $size;
+                                    margin: 14 * $size 24 * $size;
+                                }
+                                .list-item-cont {
+                                    display: block;
+                                    width: 250 * $size;
+                                    color: #3e3a39;
+                                    margin-left: 22 * $size;
+                                    font-size: 14 * $size;
+                                    height: 20 * $size;   
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                }
+                                .list-item-price {
+                                    padding: 4 * $size 12 * $size;
+                                    height: 59 * $size;
+                                    line-height: 59 * $size;
+                                    background-color: #FF0033;
+                                    >img {
+                                        width: 79 * $size;
+                                    }
+                                    .j_price {
+                                        color: #fff;
+                                        margin-left: 4 * $size;
+                                        font-size: 20 * $size;
+                                        height: 59 * $size;
+                                        margin-top: -10 * $size;
+                                        >span {
+                                            display: inline-block;
+                                            font-size: 28 * $size;
+                                            margin-top: -40 * $size;
+                                            font-weight: bolder;
+                                        }
+                                    }
+                                    .rush-buy {
+                                        float: right;
+                                        color: #fff;
+                                        font-size: 16 * $size;
+                                        font-weight: bolder;
+                                        margin-top: -4 * $size;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .selected-brand-box {
+            margin-top: 40 * $size;
+            background: url('/images/cosmetic_cleaning/f2_bg.png') no-repeat center;
+            background-size: 702 * $size auto;
+            padding: 150 * $size 20 * $size 49 * $size 20 * $size;
+            .selected-brand {
+                margin: 0 25 * $size;
+                >a {
+                    display: block;
+                    >img {
+                        width: 660 * $size;
+                        margin-bottom: 8 * $size;
+                    }
+                }
+            }
+        }
+        .special-zone-box {
+            background: url('/images/cosmetic_cleaning/f3_bg.png') no-repeat center top;
+            background-size: 702 * $size auto;
+            padding: 120 * $size 72 * $size 100 * $size 72 * $size;
+            margin-top: 40 * $size;
+            .special-zone {
+                margin: 0 26 * $size;
+                >ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    .special-item {
+                        margin-left: 11 * $size;
+                        margin-bottom: 11 * $size;
+                        background-color: #fff;
+                        &:nth-child(2n-1) {
+                            margin-left: 0;
+                        }
+                        &:last-child {
+                            height: 304 * $size;                                
+                            >img {
+                                width: 270 * $size;
+                                height: 100%;
+                            }
+                        }
+                        >a {
+                            display: block;
+                            .special-item-bz1 {
+                                width: 55 * $size;
+                            }
+                            .special-item-bz2 {
+                                width: 55 * $size;
+                            }
+                            .special-item-pic {
+                                display: block;
+                                width: 140 * $size;
+                                height: 140 * $size;
+                                margin: 20 * $size 65 * $size 10 * $size;
+                            }
+                            >span {
+                                display: block;
+                                width: 240 * $size;
+                                height: 30 * $size;  
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;                                
+                                &.special-item-cont1 {
+                                    font-size: 14 * $size;
+                                    font-weight: bolder;
+                                    margin-left: 12 * $size;
+                                }
+                            }
+                            .special-item-price {
+                                height: 48 * $size;
+                                line-height: 48 * $size;
+                                background: url('/images/cosmetic_cleaning/bg_2.jpg') no-repeat;
+                                background-size: 286 * $size 100%;
+                                position: relative;
+                                padding-left: 10 * $size;
+                                .s_price {
+                                    color: #fff;
+                                    font-size: 18 * $size;
+                                    >span {
+                                        font-size: 20 * $size;
+                                    }
+                                }
+                                >img {
+                                    width: 72 * $size;
+                                    position: absolute;
+                                    right: 9 * $size;
+                                    bottom: 12 * $size;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .return-top {
+        height: 98 * $size;
+        line-height: 98 * $size;
+        background-color: #6A02AD;
+        font-size: 30 * $size;
+        text-align: center;
+        margin-top: 50 * $size;
+        >a {
+            color: #fff;
+            letter-spacing: 2 * $size;
+        }
+    }
+    
+}

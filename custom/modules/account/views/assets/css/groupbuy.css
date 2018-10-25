@@ -1,0 +1,484 @@
+.apex-group-buying{
+    height: 100%;
+    width: 100%;
+    background: url(/images/groupbuying/bg.png);
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.apex-activity-banner{
+    height: auto;
+    width: 100%;
+}
+.apex-brand-vip{
+    margin-bottom: 50px;
+    height: 432px;
+    background: url(/images/groupbuying/f1-bg.png);
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.apex-brand-vip .vip-box{
+    width: 1395px;
+    margin-top: 100px;
+    margin-left: -100px;
+    margin-right: -100px;
+}
+.apex-brand-vip .vip-box .default-brand-title,
+.apex-brand-vip .vip-box .default-brand-content{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.apex-brand-vip .default-brand-title{
+}
+.apex-brand-vip .default-brand-title p{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    text-align: left;
+    color: #ffb4fc;
+}
+.apex-brand-vip .default-brand-content{
+    margin-top: 30px;
+    border-radius: 12px;
+    background-color: #8c16af;
+    border: 1px solid #a122ce;
+}
+.apex-brand-vip .default-brand-content .content-top{
+    display: table;
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #a122ce
+}
+.apex-brand-vip .default-brand-content .content-top span,
+.apex-brand-vip .default-brand-content .content-bottom span{
+    display: table-cell;
+    float: left;
+    line-height: 50px;
+    width: 11.1111%;
+    text-align: center;
+    font-size: 14px;
+    vertical-align: middle;
+    color: #fff;
+}
+.apex-brand-vip .default-brand-content .content-top span i,
+.apex-brand-vip .default-brand-content .content-bottom span i{
+    display: inline-block;
+    float: left;
+    width: 1px;
+    height:54px;
+    background-color: #a122ce
+}
+.apex-brand-vip .default-brand-content .content-bottom{
+    height: 180px;
+}
+.apex-brand-vip .default-brand-content .content-bottom span{
+    display: inline-block;
+    vertical-align: top;
+}
+.apex-brand-vip .default-brand-content .content-bottom span i{
+    height: 180px;
+}
+.apex-brand-vip .default-brand-content .content-bottom span p{
+    display: block;
+    width: auto;
+    line-height: 16px;
+    padding: 5px 0 0 15px ;
+    margin: 0;
+    text-align: left;
+}
+.apex-brand-vip .default-brand-content .content-bottom span p:nth-of-type(1){
+    margin-top: 5px;
+}
+.apex-quickly-buy-hall{
+    padding: 15px 0;
+    margin: 10px 0;
+}
+.apex-quickly-buy-hall .default-head{
+    width: 1395px;
+    margin-left: -100px;
+    margin-right: -100px;
+    padding: 30px 0;
+    text-align: center;
+    background: url(/images/groupbuying/title-name.png);
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.apex-quickly-buy-hall .default-head .default-text{
+    margin: 0 auto;
+    font-size: 34px;
+    font-weight: bold;
+    color: #fff
+}
+.apex-quickly-buy-hall .default-main{
+    width: 1395px;
+    height: 590px;
+    margin-left: -100px;
+    margin-right: -100px;
+    margin-bottom: 15px;
+    background: url(/images/groupbuying/f2-bg.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.apex-quickly-buy-hall .default-main .default-setting-time{
+    padding-top: 30px;
+}
+.apex-quickly-buy-hall .default-main .default-setting-time .default-time-box{
+    margin-top: 10px;
+    padding-top: 30px;
+    margin-bottom: 15px;
+}
+.apex-quickly-buy-hall .default-main .default-setting-time .default-time-box .box-ready-start{
+    display: inline-block;
+    width: auto;
+    margin-left: 40px;
+}
+.apex-quickly-buy-hall .default-main .default-setting-time .default-time-box .once-loading{
+    display: inline-block;
+    float: right;
+    margin-right: 40px;
+}
+.apex-quickly-buy-hall .default-main .default-setting-time .default-time-box .once-loading p,
+.apex-quickly-buy-hall .default-main .default-setting-time .default-time-box .box-ready-start p{
+    font-size: 25px;
+    font-weight: bold;
+    color: #fef744
+}
+.apex-quickly-buy-hall .default-main .default-setting-time .default-time-box .box-ready-start p span{
+    background-color: #b1f5fe;
+    border-radius: 8px;
+    text-align: center;
+    vertical-align:middle;
+    padding: 3px 5px;
+    color: #47168c
+}
+.apex-quickly-buy-hall .default-main .default-setting-time .default-time-box .once-loading p span i{
+    font-style: normal;
+    font-size: 16px;
+    display: inline-block;
+    width: 10px;
+    height: 14px;
+    background: url(/images/groupbuying/right_icon.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.apex-quickly-buy-hall .default-main .default-setting-time .default-time-box .once-loading p{
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 22px;
+    border: 1px solid #fbf348;
+    text-align: center;
+    font-size:18px;
+    background-color: #b1f5fe;
+    color: #47168c;
+}
+.apex-quickly-buy-hall .default-main .default-list-item{
+    display: table;
+    text-align: center;
+    margin: 0 auto;
+}
+.apex-quickly-buy-hall .default-main .default-list-item .list-item{
+    display: inline-block;
+    margin: 0 10px;
+    padding: 20px;
+    background: #fff
+}
+.apex-quickly-buy-hall .default-main .default-list-item .list-item .default-picture-hall{
+    height: 206px;
+}
+.apex-quickly-buy-hall .default-main .default-list-item .list-item .default-title-hall{
+    text-align: left;
+    font-size: 14px;
+    color: #29274f
+}
+.apex-quickly-buy-hall .default-main .default-list-item .list-item .default-money-hall{
+    margin-top: 12px;
+    font-size: 16px;
+    color: #fb32af
+}
+.apex-quickly-buy-hall .default-main .default-list-item .list-item .default-once-hall-buy{}
+.apex-quickly-buy-hall .default-main .default-list-item .list-item .default-borderline-hall{
+    margin: 16px -20px;
+    border-top: 1px solid #8431fb;
+    overflow: hidden;
+}
+.apex-quickly-buy-hall .default-main .default-list-item .list-item .default-picture-hall,
+.apex-quickly-buy-hall .default-main .default-list-item .list-item .default-title-hall,
+.apex-quickly-buy-hall .default-main .default-list-item .list-item .default-money-hall,
+.apex-quickly-buy-hall .default-main .default-list-item .list-item .default-once-hall-buy{
+    display: block;
+    width: 206px;
+    text-align: left;
+}
+.apex-quickly-buy-hall .default-main .default-list-item .list-item .default-picture-hall > span,
+.apex-quickly-buy-hall .default-main .default-list-item .list-item .default-title-hall > span,
+.apex-quickly-buy-hall .default-main .default-list-item .list-item .default-money-hall > span,
+.apex-quickly-buy-hall .default-main .default-list-item .list-item .default-once-hall-buy > span{
+    display: inline-block;
+    text-align: left;
+}
+
+.apex-quickly-buy-hall .default-main .default-list-item .list-item .default-picture-hall span{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+.apex-quickly-buy-hall .default-main .default-list-item .list-item .default-picture-hall span img{
+    width: 100%;
+    height: 100%;
+}
+.apex-quickly-buy-hall .default-main .default-list-item .list-item .default-money-hall > span:first-child{
+    font-weight: bold;
+}
+.apex-quickly-buy-hall .default-main .default-list-item .list-item .default-money-hall > span:last-child{
+    font-size: 12px;
+    color: #999999
+}
+.apex-quickly-buy-hall .default-main .default-list-item .list-item .default-once-hall-buy{
+    padding-top: 24px;
+    text-align: center;
+}
+.apex-quickly-buy-hall .default-main .default-list-item .list-item .default-once-hall-buy span{
+    display: inline-block;
+    padding: 5px 0;
+    width: 100%;
+    background-color: #ffe21e;
+    box-shadow: 0px 2px 3px #a7e0ff;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.apex-one-of-earth{
+    padding: 15px 0;
+    margin: 10px 0;
+}
+.apex-one-of-earth .default-head-earth{
+    width: 1395px;
+    margin-left: -100px;
+    margin-right: -100px;
+    margin-bottom: 30px;
+    padding: 30px 0;
+    text-align: center;
+    background: url(/images/groupbuying/title-name.png);
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.apex-one-of-earth .default-head-earth .default-text{
+    margin: 0 auto;
+    font-size: 34px;
+    font-weight: bold;
+    color: #fff
+}
+.apex-one-of-earth .default-content{
+    width: 1395px;
+    margin-left: -100px;
+    margin-right: -100px;
+    background-color: #d00f51;
+    border-radius: 18px;
+}
+.apex-one-of-earth .default-content .default-content-text{
+    padding: 25px 30px;
+}
+.apex-one-of-earth .default-content .default-content-text .default-head{
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: #fff5d8;
+}
+.apex-one-of-earth .default-content .default-content-text > p{
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff5d8;
+}
+.apex-product-category{
+    padding: 15px 0;
+    margin: 10px 0;
+}
+.apex-product-category .default-main{
+    width: 1395px;
+    margin-left: -100px;
+    margin-right: -100px;
+    margin-bottom: 45px;
+    border-radius: 18px;
+    border: 2px solid #fff;
+}
+.apex-product-category .default-main .default-list-item{
+    display: table;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 16px;
+    background: -webkit-linear-gradient(top,#fe2588, #eb238c, #be1987, #991286 ,#7e0d85);
+    background: -moz-linear-gradient(top,#fe2588, #eb238c, #be1987, #991286 ,#7e0d85);
+    background: linear-gradient(top,#fe2588, #eb238c, #be1987, #991286 ,#7e0d85);
+}
+.apex-product-category .default-main .default-list-item .list-item{
+    display: inline-block;
+    float: left;
+    margin: 10px;
+    padding: 20px;
+    background: #fff
+}
+.apex-product-category .default-main .default-list-item .list-item.category-picture{
+    margin-top: 10px;
+    padding: 0;
+    width: 246px;
+    background: transparent
+}
+.apex-product-category .default-main .default-list-item .list-item.category-picture .default-picture-hall{
+    position: absolute;
+    margin-left: -20px;
+    width: 286px;
+    height: 376px;
+}
+.apex-product-category .default-main .default-list-item .list-item.category-picture .default-picture-hall span{
+    display: inline-block;
+}
+.apex-product-category .default-main .default-list-item .list-item .default-picture-hall{
+    height: 206px;
+}
+.apex-product-category .default-main .default-list-item .list-item .default-title-hall{
+    text-align: left;
+    font-size: 14px;
+    color: #29274f
+}
+.apex-product-category .default-main .default-list-item .list-item .default-money-hall{
+    margin-top: 14px;
+    font-size: 16px;
+    color: #fb32af
+}
+.apex-product-category .default-main .default-list-item .list-item .default-once-hall-buy{}
+.apex-product-category .default-main .default-list-item .list-item .default-once-hall-buy.default-understand-more{
+
+}
+.apex-product-category .default-main .default-list-item .list-item .default-borderline-hall{
+    margin: 16px -20px;
+    border-top: 1px solid #8431fb;
+    overflow: hidden;
+}
+.apex-product-category .default-main .default-list-item .list-item .default-picture-hall,
+.apex-product-category .default-main .default-list-item .list-item .default-title-hall,
+.apex-product-category .default-main .default-list-item .list-item .default-money-hall,
+.apex-product-category .default-main .default-list-item .list-item .default-once-hall-buy{
+    display: block;
+    width: 206px;
+    text-align: left;
+}
+.apex-product-category .default-main .default-list-item .list-item .default-picture-hall > span,
+.apex-product-category .default-main .default-list-item .list-item .default-title-hall > span,
+.apex-product-category .default-main .default-list-item .list-item .default-money-hall > span,
+.apex-product-category .default-main .default-list-item .list-item .default-once-hall-buy > span{
+    display: inline-block;
+    text-align: left;
+}
+.apex-product-category .default-main .default-list-item .list-item .default-picture-hall span{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+.apex-product-category .default-main .default-list-item .list-item .default-picture-hall span img{
+    width: 100%;
+    height: 100%;
+}
+.apex-product-category .default-main .default-list-item .list-item .default-money-hall > span em,
+.apex-product-category .default-main .default-list-item .list-item .default-money-hall > span i{
+    font-style: normal;
+}
+.apex-product-category .default-main .default-list-item .list-item .default-money-hall > span:first-child{
+    position: absolute;
+    margin-top: -18px;
+    margin-left: 170px;
+    float: right;
+}
+.apex-product-category .default-main .default-list-item .list-item .default-money-hall > span:last-child{
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    font-size: 12px;
+    color: #999999;
+}
+.apex-product-category .default-main .default-list-item .list-item .default-money-hall > span:last-child div > span:last-child{
+    float: right;
+    text-decoration: line-through;
+}
+.apex-product-category .default-main .default-list-item .list-item .default-once-hall-buy{
+    padding-top: 5px;
+    text-align: center;
+}
+.apex-product-category .default-main .default-list-item .list-item .default-once-hall-buy.default-understand-more span{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px solid #ff409e;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.apex-product-category .default-main .default-list-item .list-item .default-once-hall-buy.default-understand-more span:first-child{
+    float: left;
+}
+.apex-product-category .default-main .default-list-item .list-item .default-once-hall-buy.default-understand-more span:last-child{
+    float: right;
+}
+.apex-product-category .default-main .default-list-item .list-item .default-once-hall-buy.default-understand-more span.active{
+    color: #fff;
+    background-color: #ff409e;
+    box-shadow: 0px 2px 3px #ff409e;
+}
+.aside-bar-menu{
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 30px;
+    margin-top: -199px;
+    height: auto;
+    padding: 0 5px;
+    z-index: 999
+}
+.aside-bar-menu .list-nav{
+    padding: 0 10px 10px;
+    width: 138px;
+    overflow: hidden;
+    background-color: #000;
+}
+.aside-bar-menu .list-nav div{
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.aside-bar-menu .list-nav div img{
+    width: 100%;
+}
+.aside-bar-menu .list-nav a{
+    display: inline-block;
+    float: left;
+    width: 118px;
+    margin-top: 5px;
+    padding: 3px 5px;
+    background-color: #666666;
+    text-align: center;
+    text-decoration: none;
+    color: #fff
+}
+.aside-bar-menu .list-nav a:last-child{
+    margin-top: 15px;
+}
+.aside-bar-menu .list-nav a:hover{
+    background-color: #ffd819;
+    color: #333
+}

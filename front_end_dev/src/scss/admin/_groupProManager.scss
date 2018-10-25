@@ -1,0 +1,107 @@
+.group-pro-manager-container {
+    margin: 30px 0;
+    color: #333;
+    .container-title {
+        padding: 10px 20px;
+        background-color: #fff0f0;
+        span {
+            &:first-child {
+                display: inline-block;
+                margin: 0 20px;
+                font-weight: bold;
+            }
+        }
+        label {
+            margin-left: 40px;
+            font-weight: normal;
+        }
+        input {
+            width: 302px;
+            height: 30px;
+            border: 1px solid #ccc;
+            padding: 0 6px;
+        }
+        .btn {
+            width: 120px;
+            height: 30px;
+            color: #666;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            border-radius: 0;
+            vertical-align: baseline;
+            transform: translateY(2px);
+            margin-left: 10px;
+
+        }
+    }
+    .jump-box {
+        margin: 20px 0;
+    }
+    .group-pro-list-box {
+        min-height: 681px;
+    }
+    .group-pro-list {
+        width: 100%;
+        thead {
+            tr {
+                border: 1px solid #e6e6e6;
+                background-color: #f5f5f5;
+                th {
+                    text-align: center;
+                    padding: 10px 0;
+                }
+            }
+        }
+        tbody {
+            tr {
+                border-bottom: 1px dashed #ccc;
+            }
+            td {
+                height: 80px;
+            }
+        }
+        td {
+            text-align: center;
+            .img-box {
+                img {
+                    max-width: 76px;
+                }
+            }
+        }
+        .handle-box {
+            margin: 0 20px;
+            .btn {
+                padding: 4px 6px;
+                font-size: 12px;
+                margin: 4px 10px;
+
+            }
+            .btn-delete {
+                visibility: hidden;
+            }
+            .btn-disabled {
+               position: relative;
+               cursor: no-drop;
+               &:before {
+                   display: block;
+                   height: 100%;
+                   width: 100%;
+                   content: '';
+                   background: rgba(0, 0, 0, 0.6);
+                   z-index: 99;
+                   position: absolute;
+                   left: 0;
+                   top: 0;
+               }
+            }
+        }
+    }
+    .btn-green {
+        background-color: #26b99a;
+        color: #fff;
+    }
+    .btn-yellow {
+        color: #fff;
+        background-color: #f0ab4e;
+    }
+}

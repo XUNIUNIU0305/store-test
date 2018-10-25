@@ -1,0 +1,132 @@
+.wechat-product-st {
+	img {
+		max-width: 100%;
+		vertical-align: top;
+	}
+	.content {
+		background-color: #000;
+		.item {
+			position: relative;
+			background: url('/images/shengtian_brand/decoration.png') no-repeat center;
+			background-size: 100%;
+			text-align: center;
+			padding-bottom: 10%;
+			>img {
+				max-width: 80%;
+				margin-top: 5%;
+				&:nth-child(2) {
+					max-width: 60%;
+					position: absolute;
+					left: 20%;
+					top: -3%;
+				}
+				&:nth-child(3) {
+					max-width: 50%;
+					position: absolute;
+					left: 6%;
+					top: 10%;
+				}
+			}
+			.title {
+				width: 50%;
+				position: absolute;
+				text-align: left;
+				left: 50%;
+				top: 10%;
+				color: #fff;
+				font-size: 14px;
+				font-style: italic;
+				.table {
+					width: 66%;
+					position: absolute;
+					right: 20%;
+					top: 78%;
+					font-style: normal;
+					text-align: center;
+					border-top: 2px solid #666;
+					border-left: 1px #666 solid;
+					p {
+						margin: 0;
+						border-bottom: 2px solid #666;
+						font-size: 14px;
+						padding: 2% 0 2% 5%;
+					}
+					.row2 {
+						color: #9ce9f8;
+					}
+				}
+				.btn {
+					position: absolute;
+					right: 20%;
+					top: 220%;
+					font-style: normal;
+					color: #f6ff00;
+					background-color: #2194ff;
+					padding: 2% 4%;
+					span {
+						&:first-child {
+							font-weight: 700;
+							font-size: 14px;
+						}
+					}
+				}
+			}
+			&.even {
+				>img {
+					&:nth-child(3) {
+						left: 40%;
+					}
+				}
+				.title {
+					left: 0;
+					min-height:60px;
+					.h2 {
+						position: absolute;
+						right: -64%;
+					}
+					.table {
+						border: none;
+						p {
+							border: none;
+						}
+						.row2 {
+							font-size: 18px;
+						}
+						.row1 {
+							padding-left: 30%;
+						}
+					}
+					.btn {
+						top: 180%;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 374px) {
+	.wechat-product-st {
+		.content {
+			.item {
+				.title {
+					.table {
+						p {
+							font-size: 12px !important;
+							width: 100%;
+						}
+					}
+					.btn {
+						font-size: 12px;
+						top: 186%;
+					}
+				}
+				&.even {
+					.btn {
+						top: 150%!important;
+						right: 11%;
+					}
+				}
+			}
+		}
+	}
+}

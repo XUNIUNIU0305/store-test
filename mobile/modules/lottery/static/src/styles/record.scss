@@ -1,0 +1,157 @@
+@import 'shared';
+.record-container {
+    height: 100%;    
+    background: #9edceb url('../images/theme_bg.jpg') center bottom no-repeat;
+    background-size: cover;
+    position: relative;
+    /* assets */
+    // p6_bg2.png
+    .record-board {
+        width: 673 / 750 * 100vw;
+        height: 991 / 750 * 100vw;
+        background: url('../images/p6_bg.png') center/contain no-repeat;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .title {
+        position: absolute;
+        width: 593 / 750 * 100vw;
+        height: 150 / 750 * 100vw;
+        left: 50%;
+        transform: translateX(-50%);
+        top: - 150 / 750 * 100vw * 5 / 11;
+        background: url('../images/bg_t.png') center/contain no-repeat;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: url('../images/p6_t.png') center/contain no-repeat;
+        }
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        li {
+            width: 261 / 750 * 100vw;
+            height: 58 / 750 * 100vw;
+            line-height: 70 / 750 * 100vw;
+            margin: 0 1.5%;
+            color: #c29b5d;
+            background: url('../images/p6_tab2.png') center/contain no-repeat;
+            &.active {
+                background-image: url('../images/p6_tab1.png');
+                color: #3a230a;
+            }
+        }
+    }
+    .record-content {
+        width: 582 / 750 * 100vw;
+        height: 765 / 750 * 100vw;
+        margin: 0 auto;
+        background: url('../images/p6_bg2.png') center/contain no-repeat;
+        position: relative;
+        .content,
+        .empty {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            color: #3a230a;
+            &.hidden {
+                display: none;
+            }
+        }
+        .empty {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: space-around;
+            p {
+                font-weight: 600;
+                line-height: 2.5;
+            }
+            .btn {
+                display: block;
+                width: 210 / 750 * 100vw;
+                height: 69 / 750 * 100vw;
+                margin: 0 auto;
+                background: url('../images/p8_btn1.png') center/contain no-repeat;
+                &:active {
+                    transform: scale(1.05);
+                }
+            }
+        }
+        .content {
+            padding: 0 5%;
+        }
+        .col-3 {
+            height: 72 / 750 * 100vw;
+            display: flex;
+            align-items: center;
+            .time {
+                flex-basis: 30%;
+                max-width: 30%;
+            }
+            .desctiption {
+                flex-basis: 40%;
+                max-width: 40%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+            .img {
+                flex-basis: 25%;
+                max-width: 25%;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    width: 64 / 750 * 100vw;
+                    height: 64 / 750 * 100vw;
+                }
+                +.desctiption {
+                    align-items: flex-end;
+                }
+            }
+            &.header {
+                line-height: 72 / 750 * 100vw;
+                font-weight: 600;
+                font-size: 26 / 750 * 100vw;
+            }
+        }
+        .scroll {
+            font-size: 22 / 750 * 100vw;
+            line-height: 1.4;
+            height: 765 / 750 * 100vw - 72 / 750 * 100vw - 40 / 750 * 100vw;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            .col-3 {
+                border-bottom: 1px dashed #f4e1a7;
+            }
+        }
+        .badge {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            text-align: center;
+            width: 52/ 750 * 100vw;
+            height: 28 / 750 * 100vw;
+            line-height: 28 / 750 * 100vw;
+            border-radius: 14 / 750 * 100vw;
+            background: #eed698;
+        }
+    }
+}

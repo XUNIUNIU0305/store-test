@@ -1,0 +1,159 @@
+.business-data-comparison {
+    min-width: 780px;
+    width: 100%;
+    .business-comparison {
+        margin: 20px 0;
+        position: relative;
+        .btn-group {
+            margin: 4px 4px 4px 0;
+        }
+        .btn-add {
+            border: 2px solid #f88311;
+            color: #f88311;
+            font-weight: 700;
+            border-radius: 16px;
+        }
+        table {
+            width: 98%;
+            td,
+            th {
+                border: 1px solid #ccc;
+                text-align: center;
+                height: 40px;
+            }
+            th {
+                background-color: #e9eef2;
+            }
+        }
+        .nav-tabs {
+            >li {
+                width: 200px;
+                text-align: center;
+                font-size: 14px;
+                color: #000;
+                font-weight: 700;
+                &.active {
+                    >a {
+                        background-color: #fff;
+                        border: 1px solid #b2b2b2;
+                        border-top: 4px solid #144fcc;
+                        border-bottom-color: transparent;
+                    }
+                }
+                >a {
+                    border-top: 4px solid #e9eef2;
+                    background-color: #e9eef2;
+                    margin-right: 1px;
+                    border-radius: 1px;
+                }
+            }
+        }
+        .header {
+            border-bottom: 8px solid #e9eef2;
+            padding-left: 15px;
+            .date-box {
+                margin: 20px 0;
+                .input-group {
+                    width: 160px;
+                    input {
+                        height: 34px;
+                    }
+                }
+                .date-tab {
+                    margin: 10px 0;
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 14px;
+                    text-align: center;
+                    span {
+                        display: inline-block;
+                        width: 30px;
+                        height: 30px;
+                        background-color: #e9eef2;
+                        cursor: pointer;
+                    }
+                    .active {
+                        background-color: #0080ff;
+                        color: #fff;
+                    }
+                }
+            }
+            .search-box {
+                .form-group {
+                    width: 650px;
+                    
+                }
+                .content {
+                    margin: 10px 0;
+                }
+                .dropdown-toggle {
+                    height: 30px;
+                }
+            }
+            .search-btn-box {
+                margin: 20px;
+                .btn-business {
+                    color: #fff;
+                    background-color: #0080ff;
+                    border-radius: 16px;
+                    margin-right: 10px;
+                }
+            }
+        }
+        .table-box {
+            position: relative;
+            margin-left: 15px;
+            .table-content {
+                height: 280px;
+                overflow: auto;
+                margin-top: 20px;
+                width: 100%;
+                // position: absolute;
+                border-bottom: 1px dashed #ccc;
+                padding-bottom: 20px;
+                .iScrollVerticalScrollbar {
+                    bottom: 20px;
+                }
+            }
+        }
+        .same-area {
+            width: 100%;
+            .select-box {
+                height: 320px;
+                padding-right: 0;
+                border-right: 10px solid #e9eef2;
+                .select-top {
+                    margin: 20px 0;
+                }
+                .form-inline {
+                    height: 239px;
+                    margin: 0 15px;
+                    position: relative;
+                    .input-group {
+                        width: 200px;
+                        input {
+                            height: 34px;
+                        }
+                    }
+                    .add-content {
+                        position: absolute;
+                        .time-list {
+                            padding-right: 10px;
+                        }
+                    }
+                }
+                .btn-search {
+                    color: #fff;
+                    background-color: #0080ff;
+                    border-radius: 16px;
+                    position: absolute;
+                    left: 20px;
+                    bottom: 10px;
+                }
+            }
+            .table-box {
+                
+            }
+        }
+    }
+}

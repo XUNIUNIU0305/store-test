@@ -1,0 +1,122 @@
+.group-pro-manager-container {
+  margin: 30px 0;
+  color: #333; }
+  .group-pro-manager-container .container-title {
+    padding: 10px 20px;
+    background-color: #fff0f0; }
+    .group-pro-manager-container .container-title span:first-child {
+      display: inline-block;
+      margin: 0 20px;
+      font-weight: bold; }
+    .group-pro-manager-container .container-title label {
+      margin-left: 40px;
+      font-weight: normal; }
+    .group-pro-manager-container .container-title input {
+      width: 302px;
+      height: 30px;
+      border: 1px solid #ccc;
+      padding: 0 6px; }
+    .group-pro-manager-container .container-title select{
+      width:150px;
+      height:30px;
+      border:1px solid #ccc;
+      background:#ffffff; }
+    .group-pro-manager-container .container-title .btn {
+      width: 120px;
+      height: 30px;
+      color: #666;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      border-radius: 0;
+      vertical-align: baseline;
+      transform: translateY(2px);
+      margin-left: 10px; }
+  .group-pro-manager-container .jump-box {
+    margin: 20px 0; }
+  .group-pro-manager-container .group-pro-list-box {
+    min-height: 681px; }
+  .group-pro-manager-container .group-pro-list {
+    width: 100%; }
+    .group-pro-manager-container .group-pro-list thead tr {
+      border: 1px solid #e6e6e6;
+      background-color: #f5f5f5; }
+      .group-pro-manager-container .group-pro-list thead tr th {
+        text-align: center;
+        padding: 10px 0; }
+    .group-pro-manager-container .group-pro-list tbody tr {
+      border-bottom: 1px dashed #ccc; }
+    .group-pro-manager-container .group-pro-list tbody td {
+      position:relative;
+      height: 80px; }
+    .group-pro-manager-container .group-pro-list td {
+      text-align: center; }
+      .group-pro-manager-container .group-pro-list td .img-box img {
+        max-width: 76px; }
+      .group-pro-manager-container .group-pro-list td .hotSpan{
+        cursor:pointer;
+        width:50px;
+        height:25px;
+        border-radius:20px;
+        display:inline-block;
+        background:#dddddd;
+        position:relative;
+        box-sizing:content-box;
+        padding:2px;
+        top:25px;
+        right:15px; 
+        position:absolute; }
+      .group-pro-manager-container .group-pro-list td .hotSpan.ishot {
+        background:#009dff; }
+      .group-pro-manager-container .group-pro-list td .hotSpan span {
+        width:25px;
+        height:25px;
+        display:block;
+        border-radius:50%;
+        background:#ffffff;
+        top:2px;
+        left:2px;
+        position:absolute; }
+      .group-pro-manager-container .group-pro-list td .hotSpan.ishot span {
+        top:2px;
+        left:auto;
+        right:2px; }
+      .group-pro-manager-container .group-pro-list td .hotInfo{
+        top:25px;
+        left:15px;
+        position:absolute;
+        font-weight:normal;
+        line-height:30px;
+        display:block; }
+    .group-pro-manager-container .group-pro-list .handle-box {
+      margin: 0 20px; }
+      .group-pro-manager-container .group-pro-list .handle-box .btn {
+        padding: 4px 6px;
+        font-size: 12px;
+        margin: 4px 10px; }
+      .group-pro-manager-container .group-pro-list .handle-box .btn-delete {
+        visibility: hidden; }
+      .group-pro-manager-container .group-pro-list .handle-box .btn-disabled {
+        position: relative;
+        cursor: no-drop; }
+        .group-pro-manager-container .group-pro-list .handle-box .btn-disabled:before {
+          display: block;
+          height: 100%;
+          width: 100%;
+          content: '';
+          background: rgba(0, 0, 0, 0.6);
+          z-index: 99;
+          position: absolute;
+          left: 0;
+          top: 0; }
+  .group-pro-manager-container .btn-green {
+    background-color: #26b99a;
+    color: #fff; }
+  .group-pro-manager-container .btn-yellow {
+    color: #fff;
+    background-color: #f0ab4e; }
+  .group-pro-manager-container .btn-blue {
+    color: #fff;
+    background-color: #009dff; }
+  .group-pro-manager-container .btn-grey {
+    color: #fff;
+    background-color: #dddddd; }

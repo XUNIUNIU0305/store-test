@@ -1,0 +1,94 @@
+$blue: #459ae9;
+.business-bank-bill {
+	min-width: 1200px;
+	color: #333;
+	.title {
+		padding: 0 50px;
+		line-height: 50px;
+		font-weight: 700;
+		font-size: 18px;
+		border-bottom: 1px solid #efeef2;
+		.btn-back {
+			color: $blue;
+			text-decoration: underline;
+			margin-top: 10px;
+		}
+	}
+	.search-box {
+		padding: 5px 50px 15px;
+		border-bottom: 1px dashed #c2c2c2;
+		.time-box {
+			margin-right: 80px;
+			.input-group {
+				width: 150px;
+			}
+			.date-icon {
+				height: 34px;
+			}
+		}
+		.form-label, .form-control {
+			display: table-cell;
+			vertical-align: middle;
+		}
+		.stream {
+			.form-control {
+				margin: 0 10px;
+				width: 200px;
+				border-radius: 4px;
+			}
+		}
+		.btn-business {
+			background-color: $blue;
+			padding: 6px 20px;
+		}
+	}
+	.tab-box {
+		padding: 14px 50px;
+		border-bottom: 16px solid #efeef2;
+		.tab-label {
+			font-size: 14px;
+		}
+		.btn-tab {
+			color: $blue;
+			border: 1px solid $blue;
+			margin: 0 5px;
+			padding: 4px 20px;
+			&.active {
+				color: #fff;
+				background-color: $blue;
+				box-shadow: none;
+			}
+		}
+	}
+	.table {
+		table {
+			width: 100%;
+		}
+		td {
+			text-align: center;
+			line-height: 2.5;
+			border-bottom: 1px solid #efeef2;
+			overflow: hidden;
+  			text-overflow: ellipsis;
+  			white-space: nowrap;
+  			&:nth-child(5) {
+  				max-width: 200px;
+  			}
+  			&:last-child {
+  				width: 100px;
+  				a {
+  					color: $blue;
+  				}
+  			}
+		}
+		thead {
+			tr {
+				border-bottom: 2px solid #144fcc;
+			}
+			td {
+				font-size: 16px;
+				font-weight: 700;
+			}
+		}
+	}
+}

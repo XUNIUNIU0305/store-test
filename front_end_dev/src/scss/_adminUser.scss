@@ -1,0 +1,373 @@
+$admin-management-shadow: #b2b2b2;
+.admin-role-edit {
+    @include nav-tabs-danger();
+}
+
+.admin-management-container {
+    margin: 20px 0;
+    >.clearfix {
+        margin: 20px 0;
+        height: 50px;
+        background-color: #fce7e6;
+        label{
+            margin: 12px 0 12px 12px;
+        }
+        input{
+            width: 302px;
+            margin: 12px 20px;
+            padding: 0 10px;
+            line-height: 1.5;
+        }
+        button{
+            width: 120px;
+        }
+    }
+    .btn-round {
+        min-width: 208px;
+        padding: 6px 16px;
+        border-radius: 18px;
+    } // role management page
+    .form-inline {
+        select.form-control {
+            width: 120px;
+        }
+        .form-group {
+            margin: 0 10px 0 30px;
+            +.input-group {
+                margin-left: 30px;
+            }
+        }
+        .input-group {
+            background: #fff;
+            input {
+                border-radius: 17px;
+                width: 360px;
+                padding-right: 40px;
+                background: transparent; // border-top-left-radius: 17px;
+                // border-bottom-left-radius: 17px;
+            }
+            .btn {
+                position: relative;
+                z-index: 3;
+                margin-top: 1px;
+                margin-left: -40px;
+                background: transparent;
+            }
+        }
+    } // manage store
+    &.admin-management-store {
+        .admin-management-panel {
+            height: 530px;
+        }
+        >.admin-management-panel {
+            margin: 40px 0;
+            height: auto;
+            .header {
+                .col-xs-3 {
+                    position: relative;
+                    &:last-child {
+                        &:after {
+                            display: none;
+                        }
+                    }
+                    &:after {
+                        font-family: 'Glyphicons Halflings';
+                        content: "\e258";
+                        position: absolute;
+                        right: 0;
+                        color: #999
+                    }
+                }
+            }
+            li {
+                line-height: 48px;
+                border-bottom: 1px dashed #ccc;
+                font-size: 16px;
+            }
+            .btn {
+                width: 140px;
+                height: 34px;
+                border-radius: 17px;
+                border-color: $brand-danger;
+                color: $brand-danger;
+                font-size: 16px;
+                font-weight: 600;
+                &:hover {
+                    background: $brand-danger;
+                    color: #fff;
+                }
+            }
+        }
+        .btn-round {
+            min-width: 120px
+        }
+    }
+}
+
+.admin-management-panel {
+    height: 700px;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid $admin-management-shadow;
+    box-shadow: 0 0 4px $admin-management-shadow;
+    font-size: 12px;
+    position: relative;
+    &.admin-manage-role {
+        height: 400px;
+        margin-bottom: 30px;
+        +.admin-management-panel {
+            height: 270px;
+        }
+    }
+    .header {
+        text-align: center;
+        line-height: 40px;
+        font-weight: 600;
+        border-bottom: 1px solid $admin-management-shadow;
+        box-shadow: 0 4px 4px -1px $admin-management-shadow;
+        position: relative;
+        z-index: 1;
+        font-size: 14px;
+        @include clearfix();
+        >div {
+            white-space: nowrap
+        }
+        .btn-block {
+            margin: 5px 0
+        }
+    }
+    .header-rt{
+        height: 80px;
+        .J_header_rt{
+            text-align: left;
+            border-bottom: 1px dashed #ccc;
+        }
+        .col-xs-12 .col-xs-4{
+            text-align: left;
+        }
+    }
+    .footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        display: table-cell;
+        padding: 10px 20px;
+        vertical-align: middle;
+        box-shadow: 0 -4px 4px -1px $admin-management-shadow;
+        .pagination,
+        .pagination-info {
+            margin: 0;
+            font-size: 12px;
+        }
+    }
+    .iscroll_container {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        &.with-header {
+            top: 40px;
+        }
+        &.with-footer {
+            bottom: 50px;
+        }
+        &.with-header-rt {
+            top: 80px;
+        }
+    }
+
+    .list-unstyled {
+        margin: 0;
+        a {
+            text-decoration: none;
+        }
+        &.dashed-split {
+            li {
+                border-bottom: 1px solid $admin-management-shadow;
+                .j-accounts{
+                    text-align: left;
+                    i{
+                        width: 4px;
+                        height: 12px;
+                        background-color: red;
+                        display:block;
+                        float: left;
+                        margin-top: 15px;
+                        margin-right: 5px;
+                    }
+                }
+                .j-info-list{
+                    border-top: 1px dashed #ccc;
+                    .col-xs-4{
+                        margin: 10px 0px;
+                        img{
+                            width: 70px;
+                            height: 70px;
+                            border: 1px solid #CCCCCC;
+                            float: left;
+                        }
+                        p{
+                            width: 100px;
+                            margin-bottom:0px;
+                            font-weight:100;
+                            line-height: 145%;
+                        }
+                        div{
+                            width: calc(100% - 70px);
+                            float: left;
+                        }
+                    }
+                    .col-xs-2{
+                        height: 70px;
+                        margin-top: 10px;
+                        line-height: 70px;
+                    }
+                    .col-div-child{
+                        padding-top: 20px;
+                        line-height: 15px;
+                    }
+                }
+
+                .down-div{
+                    height: 12px;
+                    line-height: 12px;
+                }
+                .down-div img{
+                    float: right;
+                    margin-right: 20px;
+                    margin-top: -10px;
+                }
+                .j-details{
+                    border-top: 1px dashed #ccc;
+                    .col-xs-5{
+                        text-align: left;
+                        p{
+                            line-height: 145%;
+                            margin-bottom: 0;
+                        }
+                    }
+                    .col-xs-2{
+                        color: #aa0000;
+                    }
+                }
+            }
+        }
+        &.has-col-8 {
+            @include clearfix();
+            li {
+                width: 100%;
+                padding: 5px 0 5px 15px;
+                text-align: left;
+                float: left;
+                line-height: 1.5;
+                &.title {
+                    width: 100%;
+                    border-top: 2px solid $admin-management-shadow;
+                    margin-top: 10px;
+                    line-height: 32px;
+                    font-size: 14px;
+                    text-align: left;
+                    padding: 0 15px;
+                    &:first-child {
+                        border: 0;
+                    }
+                }
+                img{
+                    width: 100px;
+                    height: 100px;
+                    background-size: cover;
+                    margin-left: 30px;
+                }
+                label{
+                    font-weight: 100;
+                }
+                .label-text-rt{
+                    width: 20%;
+                    text-align: right;
+                }
+            }
+            .checkbox {
+                line-height: 32px;
+                input {
+                    margin-top: 10px;
+                }
+            }
+        }
+        li {
+            @include clearfix();
+            line-height: 42px;
+            text-align: center;
+            a {
+                div {
+                    background: #fce7e6;
+                }
+            }
+            &.active {
+                background: #fce7e6;
+            }
+            a.collapsed {
+                div {
+                    background: #fff;
+                }
+            }
+            .btn {
+                margin: 0 4px;
+                padding: 4px 8px;
+                font-size: 12px;
+                line-height: 1.25;
+            }
+            [class^='col-xs'] {
+                /*overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;*/
+            }
+        }
+        .collapse-info {
+            box-shadow: inset 0 2px 4px #b2b2b2;
+            background: #e7e7e7;
+            li {
+                line-height: 30px;
+            }
+        }
+    }
+    .list-margin{
+        margin: 35px;
+    }
+}
+
+#J_role_list,
+#J_department_list {
+    li {
+        cursor: pointer;
+    }
+}
+.modal-pass{
+    margin: 10px;
+    label{
+        text-align: right;
+        font-weight:100;
+        color: #333333;
+    }
+    input{
+        width: 120px;
+        height: 32px;
+        font-size: 14px;
+        border-radius: 4px;
+        border: 1px solid #CCCCCC;
+        color: #333333;
+    }
+}
+.new_active{
+    background-color: #fce7e6;
+}
+.img-chevron-down{
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg); /* IE 9 */
+    -moz-transform:rotate(180deg); /* Firefox */
+    -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+    -o-transform:rotate(180deg);
+}

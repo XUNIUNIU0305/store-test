@@ -1,0 +1,157 @@
+.business-chart-order-container {
+  background-color: #FFF; }
+  .business-chart-order-container .time-input {
+    width: 100%;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.5; }
+  .business-chart-order-container .chart-nav {
+    height: 58px;
+    line-height: 58px; }
+    .business-chart-order-container .chart-nav .btn {
+      color: #459ae9; }
+    .business-chart-order-container .chart-nav ul {
+      margin-bottom: 0; }
+    .business-chart-order-container .chart-nav .pull-left {
+      margin-left: 0; }
+      .business-chart-order-container .chart-nav .pull-left li {
+        line-height: 28px;
+        padding: 0 8px 0 28px;
+        background: #ccc;
+        color: #fff;
+        position: relative;
+        margin-right: 14px; }
+        .business-chart-order-container .chart-nav .pull-left li a {
+          color: #fff;
+          text-decoration: none; }
+        .business-chart-order-container .chart-nav .pull-left li:before, .business-chart-order-container .chart-nav .pull-left li:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          width: 0;
+          height: 0;
+          border-top: 14px solid transparent;
+          border-left: 18px solid #fff;
+          border-bottom: 14px solid transparent; }
+        .business-chart-order-container .chart-nav .pull-left li:before {
+          left: 0; }
+        .business-chart-order-container .chart-nav .pull-left li:after {
+          border-left-color: #ccc;
+          right: -18px; }
+        .business-chart-order-container .chart-nav .pull-left li:first-child {
+          padding-left: 12px; }
+          .business-chart-order-container .chart-nav .pull-left li:first-child:before {
+            content: none; }
+        .business-chart-order-container .chart-nav .pull-left li.actived {
+          background: #459ae9; }
+          .business-chart-order-container .chart-nav .pull-left li.actived:after {
+            border-left-color: #459ae9; }
+    .business-chart-order-container .chart-nav .nav-tabs {
+      text-align: right; }
+      .business-chart-order-container .chart-nav .nav-tabs > li {
+        float: none; }
+      .business-chart-order-container .chart-nav .nav-tabs .active .btn-sm {
+        border: 1px solid #459ae9;
+        color: #fff;
+        background: #459ae9; }
+    .business-chart-order-container .chart-nav .btn-sm {
+      border: 1px solid #459ae9;
+      border-radius: 4px; }
+      .business-chart-order-container .chart-nav .btn-sm:active, .business-chart-order-container .chart-nav .btn-sm:focus, .business-chart-order-container .chart-nav .btn-sm:hover {
+        border: 1px solid #459ae9;
+        color: #fff;
+        background: #459ae9; }
+    .business-chart-order-container .chart-nav .btn-link {
+      border: 0; }
+  .business-chart-order-container .form-content {
+    padding-bottom: 20px;
+    border-bottom: 20px solid #efeff4; }
+    .business-chart-order-container .form-content label {
+      margin-top: 20px;
+      margin-bottom: 14px;
+      display: block; }
+    .business-chart-order-container .form-content .no-padding {
+      padding: 0; }
+    .business-chart-order-container .form-content hr {
+      padding: 0; }
+    .business-chart-order-container .form-content .query_time > span {
+      float: left;
+      margin: 0 8px;
+      line-height: 33px; }
+    .business-chart-order-container .form-content .query_time > .btn-default {
+      margin-left: 8px; }
+    .business-chart-order-container .form-content .query_time .input-group {
+      float: left;
+      vertical-align: middle;
+      max-width: 150px; }
+      .business-chart-order-container .form-content .query_time .input-group:last-child {
+        margin-left: 4px; }
+    .business-chart-order-container .form-content .query_time .form-control {
+      height: 33px;
+      display: inline-block; }
+    .business-chart-order-container .form-content .tag-label {
+      border: 1px solid #459ae9;
+      color: #459ae9;
+      display: inline-block;
+      border-radius: 4px;
+      line-height: 30px;
+      padding: 0 10px;
+      margin-right: 10px; }
+      .business-chart-order-container .form-content .tag-label i {
+        line-height: 27px;
+        text-align: center;
+        color: #459ae9;
+        margin-left: 12px; }
+  .business-chart-order-container .chart-content {
+    border-bottom: 20px solid #efeff4;
+    position: relative; }
+    .business-chart-order-container .chart-content .nav-tabs {
+      border: 0;
+      text-align: right;
+      padding: 10px 20px; }
+      .business-chart-order-container .chart-content .nav-tabs li {
+        float: none; }
+    .business-chart-order-container .chart-content .btn-chart-dot,
+    .business-chart-order-container .chart-content .btn-chart-bar {
+      width: 20px;
+      height: 20px;
+      border-radius: 0;
+      display: inline-block;
+      background: #fff center no-repeat; }
+    .business-chart-order-container .chart-content .active .btn-chart-dot {
+      border: 0;
+      background-image: url("/images/charts/latticediagram20_bule_icon.png"); }
+    .business-chart-order-container .chart-content .active .btn-chart-bar {
+      border: 0;
+      background-image: url("/images/charts/histogram20_bule_icon.png"); }
+    .business-chart-order-container .chart-content .btn-chart-dot {
+      background-image: url("/images/charts/latticediagram20_icon.png"); }
+    .business-chart-order-container .chart-content .btn-chart-bar {
+      background-image: url("/images/charts/histogram20_icon.png"); }
+  .business-chart-order-container .chart-container {
+    width: 100%;
+    height: 565px; }
+    .business-chart-order-container .chart-container .highcharts-credits {
+      display: none; }
+  .business-chart-order-container .table-content .h3 {
+    font-size: 22px;
+    color: #333;
+    margin-top: 24px; }
+  .business-chart-order-container .table-content small {
+    font-size: 12px;
+    color: #999;
+    display: block;
+    margin: 12px 0; }
+  .business-chart-order-container .table-content .table {
+    color: #666;
+    table-layout: fixed; }
+    .business-chart-order-container .table-content .table th {
+      text-align: center; }
+    .business-chart-order-container .table-content .table .no-padding {
+      padding: 0; }
+      .business-chart-order-container .table-content .table .no-padding .scroll-area {
+        overflow: auto;
+        overflow-y: hidden; }
+      .business-chart-order-container .table-content .table .no-padding .table {
+        margin: 0; }

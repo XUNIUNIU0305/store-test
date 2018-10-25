@@ -1,0 +1,155 @@
+@@include('inc/head.inc') @@include('inc/top_nav.inc') @@include('inc/search.inc')
+<div class="custom-account-view">
+    <div class="container">
+        <!-- no-head 隐藏账户中心头部 -->
+        <div class="custom-account-container">
+            @@include('inc/account_menu.inc')
+            <div class="custom-acc-main">
+                <div class="acc-address">
+                    <div class="title">地址管理</div>
+                    <form class="apx-edit-address-form form-horizontal">
+                        <div class="collapse" id="collapseAddress">
+                            <div class="form-group">
+                                <label class="col-xs-3 control-label">收货人：</label>
+                                <div class="col-xs-2">
+                                    <input type="text" class="form-control" id="name" placeholder="收货人姓名">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-xs-3 control-label">所在地区：</label>
+                                <div class="col-xs-2 dropdown">
+                                    <button class="btn btn-block btn-default dropdown-toggle" type="button" id="address_area" data-toggle="dropdown">
+                                        <span>省／直辖市</span>
+                                        <i class="glyphicon glyphicon-chevron-down"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="address_area">
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#">北京</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#">上海</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-2 dropdown">
+                                    <button class="btn btn-block btn-default dropdown-toggle" type="button" id="address_city" data-toggle="dropdown">
+                                        <span>市</span>
+                                        <i class="glyphicon glyphicon-chevron-down"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="address_city">
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#">北京</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#">上海</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-2 dropdown">
+                                    <button class="btn btn-block btn-default dropdown-toggle" type="button" id="address_district" data-toggle="dropdown">
+                                        <span>区</span>
+                                        <i class="glyphicon glyphicon-chevron-down"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="address_district">
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#">宝山区</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#">虹口区</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-xs-3 control-label">详细地址：</label>
+                                <div class="col-xs-7">
+                                    <input type="text" class="form-control" id="name" placeholder="街道门牌楼层房间号">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-xs-3 control-label">手机号码：</label>
+                                <div class="col-xs-3">
+                                    <input type="text" class="form-control" id="name" placeholder="手机号">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-xs-3 control-label">邮政编码：</label>
+                                <div class="col-xs-3">
+                                    <input type="text" class="form-control" id="name" placeholder="请填写6位邮政编码">
+                                </div>
+                            </div>
+                            <div class="form-group text-center">
+                                <div class="btn btn-lg btn-danger">保存收货地址</div>
+                            </div>
+                        </div>
+                        <div class="form-group text-left">
+                            <a href="#collapseAddress" data-toggle="collapse" class="btn btn-lg btn-danger J_address_add">新增收货地址</a>
+                        </div>
+                    </form>
+                    <div class="address-list">
+                        <div class="acc-cart-address default active">
+                            <p class="user-name">
+                                收货人：
+                                <span>某某某</span>
+                                <span class="default-btn pull-right">默认地址</span>
+                            </p>
+                            <p class="address">地址：上海虹口区城区欧阳路196号</p>
+                            <p>电话：17300000000</p>
+                            <div class="handle">
+                                <a href="#" class="btn btn-link btn-xs">修改</a>
+                                <a href="javascript:void(0)" class="btn btn-link btn-xs J_address_delete_btn">删除</a>
+                            </div>
+                            <div class="del-confirm">
+                                <p class="del-title text-center">确定删除此地址？</p>
+                                <div class="btn-box text-center">
+                                    <span class="btn btn-danger">确定</span>
+                                    <span class="btn btn-default">取消</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acc-cart-address">
+                            <p class="user-name">
+                                收货人：
+                                <span>某某某</span>
+                                <span class="default-btn pull-right">默认地址</span>
+                            </p>
+                            <p class="address">地址：上海虹口区城区欧阳路196号</p>
+                            <p>电话：17300000000</p>
+                            <div class="handle">
+                                <a href="#" class="btn btn-link btn-xs">修改</a>
+                                <a href="javascript:void(0)" class="btn btn-link btn-xs J_address_delete_btn">删除</a>
+                            </div>
+                        </div>
+                        <div class="acc-cart-address">
+                            <p class="user-name">
+                                收货人：
+                                <span>某某某</span>
+                                <span class="default-btn pull-right">默认地址</span>
+                            </p>
+                            <p class="address">地址：上海虹口区城区欧阳路196号</p>
+                            <p>电话：17300000000</p>
+                            <div class="handle">
+                                <a href="#" class="btn btn-link btn-xs">修改</a>
+                                <a href="javascript:void(0)" class="btn btn-link btn-xs J_address_delete_btn">删除</a>
+                            </div>
+                        </div>
+                        <div class="acc-cart-address">
+                            <p class="user-name">
+                                收货人：
+                                <span>某某某</span>
+                                <span class="default-btn pull-right">默认地址</span>
+                            </p>
+                            <p class="address">地址：上海虹口区城区欧阳路196号</p>
+                            <p>电话：17300000000</p>
+                            <div class="handle">
+                                <a href="#" class="btn btn-link btn-xs">修改</a>
+                                <a href="javascript:void(0)" class="btn btn-link btn-xs J_address_delete_btn">删除</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('inc/footer.inc')

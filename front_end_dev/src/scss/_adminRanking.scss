@@ -1,0 +1,89 @@
+.admin-ranking-container {
+    padding: 20px 0;
+    // nav
+    .datepicker-nav {
+        line-height: 46px;
+        padding: 0 26px;
+        font-size: 14px;
+        background: #fce7e6;
+        margin-bottom: 20px;
+        border-bottom: 0;
+        .pull-right {
+            padding: 8px 0;
+            line-height: 1;
+            .form-control {
+                width: 120px;
+                display: inline-block;
+            }
+            >div {
+                display: none;
+                >span {
+                    margin: 0 8px;
+                }
+                &.in {
+                    display: inline-block;
+                }
+                >.btn-default {
+                    margin-left: 8px;
+                }
+            }
+            .input-group {
+                float: none;
+                vertical-align: middle;
+                display: inline-table;
+                max-width: 150px;
+                &:last-child {
+                    margin-left: 4px;
+                }
+                .form-control {
+                    height: 34px;
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+    .panel-heading {
+        background: $brand-danger;
+        color: #fff;
+    }
+    .panel-body {
+        padding: 0;
+    }
+    .table {
+        margin-bottom: 0;
+        th,
+        td {
+            vertical-align: middle;
+            // border: 0;
+            &:first-child {
+                text-align: center;
+            }
+            &:last-child {
+                text-align: right;
+                padding-right: 20px;
+            }
+        }
+        th {
+            font-weight: 400;
+            background: #f2dede;
+        }
+        td {
+            border-top-style: dashed;
+            i {
+                display: inline-block;
+                width: 20px;
+                line-height: 20px;
+                color: #fff;
+                background: #666;
+                font-style: normal;
+                &.high-lighted {
+                    background: $brand-danger;
+                }
+            }
+            .img-responsive {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+}

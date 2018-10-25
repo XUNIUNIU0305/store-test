@@ -1,0 +1,134 @@
+@@include('head.inc')
+<!-- header start -->
+<header class="admin-frame-header">
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#top">
+                <img alt="logo" src="/images/logo_white.png" height="24">
+            </a>
+        </div>
+        <ul class="nav navbar-nav navbar-left">
+            <li>管理控制中心</li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                476644346@qq.com
+            </li>
+            <li>
+                <a href="javascript:void(0)">退出</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<!-- header end -->
+<!-- aside nav start -->
+<aside class="admin-frame-aside" id="aside-menu">
+    <ul class="nav nav-pills nav-stacked">
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_1">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_2">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+        <li class="collapsed" data-parent="#aside-menu" data-toggle="collapse" href="#aside_menu_3">
+            <a href="javascript:void(0)">内容一级标题</a>
+        </li>
+    </ul>
+    <ul id="aside_menu_1" class="list-unstyled child-list collapse">
+        <li class="active"><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+        <li><a href="#">内容内容1</a></li>
+    </ul>
+    <ul id="aside_menu_2" class="list-unstyled child-list collapse">
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+        <li><a href="#">内容内容2</a></li>
+    </ul>
+    <ul id="aside_menu_3" class="list-unstyled child-list collapse">
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+        <li><a href="#">内容内容3</a></li>
+    </ul>
+</aside>
+<!-- aside nav end -->
+<!-- main area start -->
+<div class="admin-frame-main">
+    <div class="admin-main-wrap">
+        <div class="admin-audit-cancel-container">
+            <!--nav-->
+            <div class="admin-audit-cancel-title bg-danger">
+                <ul class="nav nav-tabs">
+                    <li class="pull-left">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="按手机号或账号搜索">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="pull-right">
+                        时间排序 &nbsp;&nbsp;
+                        <button class="btn btn-danger btn-xs">由近到远</button>
+                        <button class="btn btn-danger btn-xs">由远到近</button>
+                    </li>
+                    <li class="pull-right">
+                        操作状态 &nbsp;&nbsp;
+                        <button class="btn btn-danger btn-xs">已操作</button>
+                        <button class="btn btn-danger btn-xs">未操作</button>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                    </li>
+                </ul>
+            </div>
+            <div class="cancel-list">
+                <div class="item">
+                    <div class="item-title clearfix">
+                        <div class="col-xs-2">门店账号：<span>123123123</span></div>
+                        <div class="col-xs-3">注册手机号：<span>123123123</span></div>
+                    </div>
+                    <div class="item-info clearfix">
+                        <div class="col-xs-4">申请人：<span>某某某</span></div>
+                        <div class="col-xs-4">邀请人：<span>某某某</span></div>
+                        <div class="col-xs-4">商户单号：<span>某某某</span></div>
+                        <div class="col-xs-4">申请人手机号：<span>某某某</span></div>
+                        <div class="col-xs-4">邀请人电话：<span>某某某</span></div>
+                        <div class="col-xs-4">退款单号：<span>某某某</span></div>
+                        <div class="col-xs-4">提交时间：<span>某某某</span></div>
+                        <div class="col-xs-4">邀请二维码ID：<span>某某某</span></div>
+                        <div class="col-xs-4">微信支付单号：<span>某某某</span></div>
+                    </div>
+                    <div class="btn-box clearfix">
+                        <span class="btn pull-right">操作</span>
+                        <span class="btn pull-right">复制商户单号</span>
+                    </div>
+                </div>
+            </div>
+            <!-- pagination -->
+            <div class="text-right">
+                <ul class="pagination">
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><span>...</span></li>
+                    <li><a href="#">10</a></li>
+                </ul>
+                <div class="pagination-info">
+                    <span>共100页，到第<input type="text" maxlength="3">页</span>
+                    <a href="#" class="btn btn-default">确认</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- main area start -->
+@@include('footer_admin.inc')

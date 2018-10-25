@@ -1,0 +1,152 @@
+@@include('head.inc')
+<!-- header start -->
+<header class="business-frame-header">
+    <nav class="navbar navbar-default">
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <i class="glyphicon glyphicon-time"></i>2005-11-11 19:38:07
+            </li>
+            <li>
+                <a href="javascript:void(0)"><i class="glyphicon glyphicon-wrench"></i>设置</a>
+            </li>
+            <li>
+                <i class="glyphicon glyphicon-map-marker"></i>上海松江
+            </li>
+            <li>
+                <i class="glyphicon glyphicon-user"></i>476644346@qq.com
+            </li>
+            <li>
+                <a href="javascript:void(0)"><i class="glyphicon glyphicon-off"></i>退出</a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="sub-nav">
+        <div class="pull-left">
+            ◀
+        </div>
+        <ul class="list-inline">
+            <li>品牌馆 <span>&times;</span></li>
+            <li class="active">品牌馆 <span>&times;</span></li>
+            <li>品牌馆 <span>&times;</span></li>
+        </ul>
+        <div class="pull-right">
+            ▶
+        </div>
+    </nav>
+</header>
+<!-- header end -->
+<!-- aside nav start -->
+<aside class="business-frame-aside">
+    <div class="aside-logo">
+        <img alt="logo" src="/images/logo_white.png" height="24">
+    </div>
+    <div class="aside-list">
+        <a data-toggle="collapse" href="#aside_panel_1" class="collapsed">
+            <i class="glyphicon glyphicon-home"></i> 主菜单#1 <i class="glyphicon glyphicon-chevron-down"></i>
+        </a>
+        <div class="collapse" id="aside_panel_1">
+            <ul class="list-unstyled clearfix">
+                <li class="active">
+                    <a href="#">子菜单#1</a>
+                </li>
+                <li>
+                    <a href="#">子菜单#2</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="aside-list">
+        <a data-toggle="collapse" href="#aside_panel_2" class="">
+            <i class="glyphicon glyphicon-tags"></i> 主菜单#2 <i class="glyphicon glyphicon-chevron-down"></i>
+        </a>
+        <div class="collapse in" id="aside_panel_2">
+            <ul class="list-unstyled clearfix">
+                <li class="active">
+                    <a href="#">子菜单#1</a>
+                </li>
+                <li>
+                    <a href="#">子菜单#2</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="aside-list">
+        <a data-toggle="collapse" href="#aside_panel_3" class="collapsed">
+            <i class="glyphicon glyphicon-star-empty"></i> 主菜单#3 <i class="glyphicon glyphicon-chevron-down"></i>
+        </a>
+        <div class="collapse" id="aside_panel_3">
+            <ul class="list-unstyled clearfix">
+                <li class="active">
+                    <a href="#">子菜单#1</a>
+                </li>
+                <li>
+                    <a href="#">子菜单#2</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</aside>
+<!-- aside nav end -->
+<!-- main area start -->
+<div class="business-frame-main">
+    <div class="business-main-wrap">
+        <div class="business-bank-extract">
+            <div class="header">
+                <span class="h3">提取余额到银行卡</span>
+                <span class="balance">余额：<span>1200.00</span>元</span>
+                <span class="tip"><i class="glyphicon glyphicon-info-sign"></i>提现申请间隔不少于7天</span>
+                <a href="#" class="btn pull-right">返回上一级</a>
+                <a href="#" class="btn pull-right">提现记录</a>
+            </div>
+            <div class="info">
+                <div class="form-inline">
+                    <div class="form-group">
+                        <label>*银行卡信息：</label>
+                        <div class="add-new hidden"><a href="">添加新的银行卡</a></div>
+                        <div class="bank-info">
+                            <p class="name">上海市宝山运营公司</p>
+                            <div class="card">
+                                <img src="/images/bank/jianshe_logo.png" alt="">
+                                <span>招商银行</span>
+                                <span> 尾号：</span>
+                                <span>2048</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>*提现金额：</label>
+                        <input type="text" class="form-control" placeholder="请输入提现金额">元
+                        <p class="error text-danger">*提现金额必须为100的整数倍！</p>
+                        <p class="balance-tip">您还可以提现20000.00元，单笔最低提现金额100.00元</p>
+                    </div>
+                    <div class="form-group">
+                        <a href="" class="btn btn-business">下一步</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="apx-modal-business-alert modal fade" tabindex="-1" role="dialog" id="modalBandkConfirm">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content modal-sm">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">提示窗口</h4>
+            </div>
+            <div class="modal-body">
+                <p>我是提示文字</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('business_footer.inc')
+<script type="text/javascript">
+    // $('#modalBandkConfirm').modal('show');
+    $('#modalBandkTip').modal('show');
+</script>

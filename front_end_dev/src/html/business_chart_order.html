@@ -1,0 +1,839 @@
+@@include('head.inc')
+<!-- header start -->
+<header class="business-frame-header">
+    <nav class="navbar navbar-default">
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <i class="glyphicon glyphicon-time"></i>2005-11-11 19:38:07
+            </li>
+            <li>
+                <a href="javascript:void(0)"><i class="glyphicon glyphicon-wrench"></i>设置</a>
+            </li>
+            <li>
+                <i class="glyphicon glyphicon-map-marker"></i>上海松江
+            </li>
+            <li>
+                <i class="glyphicon glyphicon-user"></i>476644346@qq.com
+            </li>
+            <li>
+                <a href="javascript:void(0)"><i class="glyphicon glyphicon-off"></i>退出</a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="sub-nav">
+        <div class="pull-left">
+            ◀
+        </div>
+        <ul class="list-inline">
+            <li>品牌馆 <span>&times;</span></li>
+            <li class="active">品牌馆 <span>&times;</span></li>
+            <li>品牌馆 <span>&times;</span></li>
+        </ul>
+        <div class="pull-right">
+            ▶
+        </div>
+    </nav>
+</header>
+<!-- header end -->
+<!-- aside nav start -->
+<aside class="business-frame-aside">
+    <div class="aside-logo">
+        <img alt="logo" src="/images/logo_white.png" height="24">
+    </div>
+    <div class="aside-list">
+        <a data-toggle="collapse" href="#aside_panel_1" class="collapsed">
+            <i class="glyphicon glyphicon-home"></i> 主菜单#1 <i class="glyphicon glyphicon-chevron-down"></i>
+        </a>
+        <div class="collapse" id="aside_panel_1">
+            <ul class="list-unstyled clearfix">
+                <li class="active">
+                    <a href="#">子菜单#1</a>
+                </li>
+                <li>
+                    <a href="#">子菜单#2</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="aside-list">
+        <a data-toggle="collapse" href="#aside_panel_2" class="">
+            <i class="glyphicon glyphicon-tags"></i> 主菜单#2 <i class="glyphicon glyphicon-chevron-down"></i>
+        </a>
+        <div class="collapse in" id="aside_panel_2">
+            <ul class="list-unstyled clearfix">
+                <li class="active">
+                    <a href="#">子菜单#1</a>
+                </li>
+                <li>
+                    <a href="#">子菜单#2</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="aside-list">
+        <a data-toggle="collapse" href="#aside_panel_3" class="collapsed">
+            <i class="glyphicon glyphicon-star-empty"></i> 主菜单#3 <i class="glyphicon glyphicon-chevron-down"></i>
+        </a>
+        <div class="collapse" id="aside_panel_3">
+            <ul class="list-unstyled clearfix">
+                <li class="active">
+                    <a href="#">子菜单#1</a>
+                </li>
+                <li>
+                    <a href="#">子菜单#2</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</aside>
+<!-- aside nav end -->
+<!-- main area start -->
+<div class="business-frame-main">
+    <div class="business-main-wrap">
+        <!-- business chart order container -->
+        <div class="business-chart-order-container">
+            <!-- nav -->
+            <div class="chart-nav">
+                <ul class="pull-left list-inline">
+                    <li><a href="#">综合数据</a></li>
+                    <li class="actived">下单情况分析</li>
+                </ul>
+                <ul class="list-inline nav-tabs clearfix">
+                    <li>
+                        <a href="#refer_date" class="btn btn-sm btn-default" data-toggle="tab">
+                            按日期
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#refer_region" class="btn btn-sm btn-default" data-toggle="tab">
+                            按区域
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-link">返回上一级</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- tab panel -->
+            <div class="tab-content">
+                <!-- 按日期 -->
+                <div role="tabpanel" class="tab-pane clearfix fade" id="refer_date">
+                    <!-- form content -->
+                    <div class="form-content clearfix">
+                        <div class="col-xs-2">
+                            <label>对象：</label>
+                            <select class="selectpicker" data-width="100%">
+                                <option value="1">全部</option>
+                                <option value="1">体系内门店</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-4">
+                            <label>时间选择：</label>
+                            <input type="text" name="" class="time-input date-time-input">
+                        </div>
+                        <div class="col-xs-2">
+                            <label>显示设置</label>
+                            <select class="selectpicker" data-width="100%">
+                                <option value="1">按天</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-4 text-right">
+                            <label>&nbsp;</label>
+                            <a href="#" class="btn btn-primary">立即搜索</a>
+                        </div>
+                    </div>
+                    <!-- charts -->
+                    <div class="chart-content">
+                        <ul class="list-inline nav-tabs clearfix">
+                            <li class="active">
+                                <a href="#date_chart_dots" class="btn-chart-dot" data-toggle="tab"></a>
+                            </li>
+                            <li>
+                                <a href="#date_chart_bars" class="btn-chart-bar" data-toggle="tab"></a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane clearfix fade in active" id="date_chart_dots">
+                                <div id="date-chart-dot-container" class="chart-container"></div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane clearfix fade" id="date_chart_bars">
+                                <div id="date-chart-bar-container" class="chart-container"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- table -->
+                    <div class="clearfix"></div>
+                    <div class="table-content text-center">
+                        <div class="h3">下单情况</div>
+                        <small>2017-8-1至2017-8-14|本月</small>
+                        <table class="table table-hover table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th width="25%">时间</th>
+                                    <th width="25%">下单（元）</th>
+                                    <th width="25%">订单付款（元）</th>
+                                    <th width="25%">取消付款（元）</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>8-1</td>
+                                    <td>5000</td>
+                                    <td>5000</td>
+                                    <td>5000</td>
+                                </tr>
+                                <tr>
+                                    <td>8-1</td>
+                                    <td>5000</td>
+                                    <td>5000</td>
+                                    <td>5000</td>
+                                </tr>
+                                <tr>
+                                    <td>8-1</td>
+                                    <td>5000</td>
+                                    <td>5000</td>
+                                    <td>5000</td>
+                                </tr>
+                                <tr>
+                                    <td>8-1</td>
+                                    <td>5000</td>
+                                    <td>5000</td>
+                                    <td>5000</td>
+                                </tr>
+                                <tr>
+                                    <td>8-1</td>
+                                    <td>5000</td>
+                                    <td>5000</td>
+                                    <td>5000</td>
+                                </tr>
+                                <tr>
+                                    <td>8-1</td>
+                                    <td>5000</td>
+                                    <td>5000</td>
+                                    <td>5000</td>
+                                </tr>
+                                <tr>
+                                    <td>8-1</td>
+                                    <td>5000</td>
+                                    <td>5000</td>
+                                    <td>5000</td>
+                                </tr>
+                                <tr>
+                                    <td>8-1</td>
+                                    <td>5000</td>
+                                    <td>5000</td>
+                                    <td>5000</td>
+                                </tr>
+                                <tr>
+                                    <td>8-1</td>
+                                    <td>5000</td>
+                                    <td>5000</td>
+                                    <td>5000</td>
+                                </tr>
+                                <tr>
+                                    <td>8-1</td>
+                                    <td>5000</td>
+                                    <td>5000</td>
+                                    <td>5000</td>
+                                </tr>
+                                <tr>
+                                    <td>8-1</td>
+                                    <td>5000</td>
+                                    <td>5000</td>
+                                    <td>5000</td>
+                                </tr>
+                                <tr>
+                                    <td>8-1</td>
+                                    <td>5000</td>
+                                    <td>5000</td>
+                                    <td>5000</td>
+                                </tr>
+                                <tr>
+                                    <td>8-1</td>
+                                    <td>5000</td>
+                                    <td>5000</td>
+                                    <td>5000</td>
+                                </tr>
+                                <tr>
+                                    <td>8-1</td>
+                                    <td>5000</td>
+                                    <td>5000</td>
+                                    <td>5000</td>
+                                </tr>
+                                <tr>
+                                    <td>8-1</td>
+                                    <td>5000</td>
+                                    <td>5000</td>
+                                    <td>5000</td>
+                                </tr>
+                                <tr>
+                                    <td>8-1</td>
+                                    <td>5000</td>
+                                    <td>5000</td>
+                                    <td>5000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- 按区域 -->
+                <div role="tabpanel" class="tab-pane clearfix fade in active" id="refer_region">
+                    <!-- form content -->
+                    <div class="form-content clearfix">
+                        <div class="col-xs-10 no-padding">
+                            <div class="col-xs-2">
+                                <div class="form-group">
+                                    <label for="type">类型</label>
+                                    <select class="selectpicker" data-width="100%">
+                                        <option value="下单">下单</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xs-2">
+                                <div class="form-group">
+                                    <label for="zones">五级区域</label>
+                                    <select class="selectpicker" data-width="100%">
+                                        <option value="1">省</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xs-2">
+                                <div class="form-group">
+                                    <label>&nbsp;</label>
+                                    <select class="selectpicker" data-width="100%">
+                                        <option value="1">市</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xs-2">
+                                <div class="form-group">
+                                    <label>&nbsp;</label>
+                                    <select class="selectpicker" data-width="100%">
+                                        <option value="1">运营商</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xs-2">
+                                <div class="form-group">
+                                    <label>&nbsp;</label>
+                                    <select class="selectpicker" data-width="100%">
+                                        <option value="1">督导</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xs-2">
+                                <div class="form-group">
+                                    <label>&nbsp;</label>
+                                    <select class="selectpicker" data-width="100%">
+                                        <option value="1">小组</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-2 text-right">
+                            <label>&nbsp;</label>
+                            <a href="#" class="btn btn-primary">追加区域</a>
+                        </div>
+                        <div class="col-xs-4">
+                            <label>时间选择:</label>
+                            <input type="text" name="" class="time-input date-time-input">
+                        </div>
+                        <div class="col-xs-2">
+                            <label>显示设置</label>
+                            <select class="selectpicker" data-width="100%">
+                                <option value="1">按天</option>
+                            </select>
+                        </div>
+                        <hr class="col-xs-12">
+                        <div class="col-xs-10">
+                            <div class="tag-label">北京 | 订单付款 <i class="close">×</i></div>
+                            <div class="tag-label">浙江省 | 取消付款 <i class="close">×</i></div>
+                            <div class="tag-label">吉林省 | 下单 <i class="close">×</i></div>
+                        </div>
+                        <div class="col-xs-2 text-right">
+                            <a href="#" class="btn btn-primary">立即搜索</a>
+                        </div>
+                    </div>
+                    <!-- charts -->
+                    <div class="chart-content">
+                        <ul class="list-inline nav-tabs clearfix">
+                            <li class="active">
+                                <a href="#region_chart_dots" class="btn-chart-dot" data-toggle="tab"></a>
+                            </li>
+                            <li>
+                                <a href="#region_chart_bars" class="btn-chart-bar" data-toggle="tab"></a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane clearfix fade in active" id="region_chart_dots">
+                                <div id="region-chart-dot-container" class="chart-container"></div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane clearfix fade" id="region_chart_bars">
+                                <div id="region-chart-bar-container" class="chart-container"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- table -->
+                    <div class="clearfix"></div>
+                    <div class="table-content text-center">
+                        <div class="h3">下单情况</div>
+                        <small>2017-8-1至2017-8-14|本月</small>
+                        <table class="table table-hover table-bordered table-striped">
+                            <tbody>
+                                <tr>
+                                    <td class="no-padding" width="135">
+                                        <div class="scroll-area">
+                                            <table class="table table-hover table-bordered table-striped">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>时间</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>8-1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>8-1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>8-1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>8-1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>8-1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>8-1</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                    <td class="no-padding">
+                                        <div class="scroll-area">
+                                            <table class="table table-hover table-bordered table-striped">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="175">北京 | 订单付款</td>
+                                                        <td width="175">北京 | 订单付款</td>
+                                                        <td width="175">北京 | 订单付款</td>
+                                                        <td width="175">北京 | 订单付款</td>
+                                                        <td width="175">北京 | 订单付款</td>
+                                                        <td width="175">北京 | 订单付款</td>
+                                                        <td width="175">北京 | 订单付款</td>
+                                                        <td width="175">北京 | 订单付款</td>
+                                                        <td width="175">北京 | 订单付款</td>
+                                                        <td width="175">北京 | 订单付款</td>
+                                                        <td width="175">北京 | 订单付款</td>
+                                                        <td width="175">北京 | 订单付款</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                        <td width="175">2000</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+@@include('business_footer.inc')
+
+<script>
+    $(function () {
+        // add locale
+        $.fn.datepicker.dates["zh-CN"] = {
+            days: ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"],
+            daysShort: ["周日", "周一", "周二", "周三", "周四", "周五", "周六"],
+            daysMin: ["日", "一", "二", "三", "四", "五", "六"],
+            months: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+            monthsShort: ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
+            today: "今日",
+            clear: "清除",
+            format: "yyyy年mm月dd日",
+            titleFormat: "yyyy年mm月",
+            weekStart: 1
+        }
+        // init the datepicker
+        $('.date-picker').datepicker({
+            format: 'yyyy-mm-dd',
+            language: 'zh-CN'
+        });
+
+        // highcharts
+        Highcharts.chart('region-chart-dot-container', {
+
+            title: {
+                text: '下单情况'
+            },
+
+            subtitle: {
+                text: '数据来源：Heinz 2003'
+            },
+
+            yAxis: {
+                title: {
+                    text: '金额（元）'
+                },
+                labels: {
+                    formatter: function () {
+                        return this.value + '万';
+                    }
+                }
+            },
+
+            xAxis: {
+                categories: ['8-9', '8-10', '8-11', '8-12', '8-13', '8-14', '8-15']
+            },
+
+            legend: {
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'middle'
+            },
+
+            plotOptions: {
+                line: {
+                    lineWidth: 0
+                }
+            },
+
+            series: [{
+                name: '北京 | 订单付款',
+                data: [1, 1.2, 2, 1.5, 1.4, 1.6, 1.3]
+            }, {
+                name: '北京 | 取消付款',
+                data: [1.4, 1.1, 1.3, 2, 1.3, 1.1, 1]
+            }]
+
+        });
+
+        $('#refer_region [data-toggle="tab"][href="#region_chart_bars"]').on('shown.bs.tab', function (e) {
+            Highcharts.chart('region-chart-bar-container', {
+                chart: {
+                    type: 'column'
+                },
+
+                title: {
+                    text: '下单情况'
+                },
+
+                subtitle: {
+                    text: '数据来源：Heinz 2003'
+                },
+
+                yAxis: {
+                    title: {
+                        text: '金额（元）'
+                    },
+                    labels: {
+                        formatter: function () {
+                            return this.value + '万';
+                        }
+                    }
+                },
+
+                xAxis: {
+                    categories: ['8-9', '8-10', '8-11', '8-12', '8-13', '8-14', '8-15']
+                },
+
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'middle'
+                },
+
+                plotOptions: {
+                    line: {
+                        lineWidth: 0
+                    }
+                },
+
+                series: [{
+                    name: '北京 | 订单付款',
+                    data: [1, 1.2, 2, 1.5, 1.4, 1.6, 1.3]
+                }, {
+                    name: '北京 | 取消付款',
+                    data: [1.4, 1.1, 1.3, 2, 1.3, 1.1, 1]
+                }]
+
+            });
+        })
+
+        $('[data-toggle="tab"][href="#refer_date"]').on('shown.bs.tab', function (e) {
+            Highcharts.chart('date-chart-dot-container', {
+                
+                title: {
+                    text: '下单情况'
+                },
+
+                subtitle: {
+                    text: '数据来源：Heinz 2003'
+                },
+
+                yAxis: {
+                    title: {
+                        text: '金额（元）'
+                    },
+                    labels: {
+                        formatter: function () {
+                            return this.value + '万';
+                        }
+                    }
+                },
+
+                xAxis: {
+                    categories: ['8-9', '8-10', '8-11', '8-12', '8-13', '8-14', '8-15']
+                },
+
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'middle'
+                },
+
+                plotOptions: {
+                    line: {
+                        lineWidth: 0
+                    }
+                },
+
+                series: [{
+                    name: '北京 | 订单付款',
+                    data: [1, 1.2, 2, 1.5, 1.4, 1.6, 1.3]
+                }, {
+                    name: '北京 | 取消付款',
+                    data: [1.4, 1.1, 1.3, 2, 1.3, 1.1, 1]
+                }]
+
+            });
+        })
+        
+        $('#refer_date [data-toggle="tab"][href="#date_chart_bars"]').on('shown.bs.tab', function (e) {
+            Highcharts.chart('date-chart-bar-container', {
+                chart: {
+                    type: 'column'
+                },
+
+                title: {
+                    text: '下单情况'
+                },
+
+                subtitle: {
+                    text: '数据来源：Heinz 2003'
+                },
+
+                yAxis: {
+                    title: {
+                        text: '金额（元）'
+                    },
+                    labels: {
+                        formatter: function () {
+                            return this.value + '万';
+                        }
+                    }
+                },
+
+                xAxis: {
+                    categories: ['8-9', '8-10', '8-11', '8-12', '8-13', '8-14', '8-15']
+                },
+
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'middle'
+                },
+
+                plotOptions: {
+                    line: {
+                        lineWidth: 0
+                    }
+                },
+
+                series: [{
+                    name: '北京 | 订单付款',
+                    data: [1, 1.2, 2, 1.5, 1.4, 1.6, 1.3]
+                }, {
+                    name: '北京 | 取消付款',
+                    data: [1.4, 1.1, 1.3, 2, 1.3, 1.1, 1]
+                }]
+
+            });
+        })
+
+    })
+    $('.date-time-input').daterangepicker({
+        "showDropdowns": true,
+        "timePicker": true,
+        "timePicker24Hour": true,
+        "timePickerSeconds": true,
+        "autoApply": true,
+        "ranges": {
+            "今天": [
+                "2017-08-24T06:15:16.675Z",
+                "2017-08-24T06:15:16.675Z"
+            ],
+            "昨天": [
+                "2017-08-23T06:15:16.675Z",
+                "2017-08-23T06:15:16.675Z"
+            ],
+            "上周": [
+                "2017-08-18T06:15:16.676Z",
+                "2017-08-24T06:15:16.676Z"
+            ],
+            "本周": [
+                "2017-07-26T06:15:16.676Z",
+                "2017-08-24T06:15:16.676Z"
+            ],
+            "上月": [
+                "2017-07-31T16:00:00.000Z",
+                "2017-08-31T15:59:59.999Z"
+            ],
+            "本月": [
+                "2017-06-30T16:00:00.000Z",
+                "2017-07-31T15:59:59.999Z"
+            ],
+            "过去7天": [
+                "2017-07-31T16:00:00.000Z",
+                "2017-08-31T15:59:59.999Z"
+            ],
+            "过去30天": [
+                "2017-06-30T16:00:00.000Z",
+                "2017-07-31T15:59:59.999Z"
+            ],
+            "上线至今": [
+                "2017-06-30T16:00:00.000Z",
+                "2017-07-31T15:59:59.999Z"
+            ]
+        },
+        "locale": {
+            "direction": "ltr",
+            "format": "YYYY-MM-DD HH:mm",
+            "separator": " - ",
+            "applyLabel": "确定",
+            "cancelLabel": "取消",
+            "fromLabel": "From",
+            "toLabel": "To",
+            "daysOfWeek": [
+                "周日",
+                "周一",
+                "周二",
+                "周三",
+                "周四",
+                "周五",
+                "周六"
+            ],
+            "monthNames": [
+                "一月",
+                "二月",
+                "三月",
+                "四月",
+                "五月",
+                "六月",
+                "七月",
+                "八月",
+                "九月",
+                "十月",
+                "十一月",
+                "十二月"
+            ],
+            "firstDay": 1
+        },
+        "showCustomRangeLabel": false,
+        "alwaysShowCalendars": true,
+        "startDate": "2017-07-24 16:01",
+        "endDate": "2017-08-24 16:01",
+        "opens": "right",
+        "drops": "down"
+    });
+</script>

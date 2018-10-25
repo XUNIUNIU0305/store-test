@@ -1,0 +1,412 @@
+@@include('head.inc') @@include('admin_header.inc')
+<style>
+    body {
+        background-color: #fff;
+    }
+</style>
+<!-- main area start -->
+<div class="admin-frame-main">
+    <div class="admin-main-wrap">
+        <div class="admin-edit-shop">
+            <ul class="nav nav-tabs">
+                <li><strong>店铺页图片管理</strong></li>
+                <li class="pull-right">
+                    <label>店铺名称：</label>
+                    <select class="selectpicker" data-width="320" data-live-search="true">
+                        <option data-tokens="上海宝山">上海宝山</option>
+                        <option data-tokens="上海黄浦">上海黄浦</option>
+                        <option data-tokens="上海静安">上海静安</option>
+                        <option data-tokens="苏州提篮桥">苏州提篮桥</option>
+                        <option data-tokens="上海宝山">上海宝山</option>
+                        <option data-tokens="上海黄浦">上海黄浦</option>
+                        <option data-tokens="上海静安">上海静安</option>
+                        <option data-tokens="苏州提篮桥">苏州提篮桥</option>
+                        <option data-tokens="上海宝山">上海宝山</option>
+                        <option data-tokens="上海黄浦">上海黄浦</option>
+                        <option data-tokens="上海静安">上海静安</option>
+                        <option data-tokens="苏州提篮桥">苏州提篮桥</option>
+                        <option data-tokens="上海宝山">上海宝山</option>
+                        <option data-tokens="上海黄浦">上海黄浦</option>
+                        <option data-tokens="上海静安">上海静安</option>
+                        <option data-tokens="苏州提篮桥">苏州提篮桥</option>
+                        <option data-tokens="上海宝山">上海宝山</option>
+                        <option data-tokens="上海黄浦">上海黄浦</option>
+                        <option data-tokens="上海静安">上海静安</option>
+                        <option data-tokens="苏州提篮桥">苏州提篮桥</option>
+                    </select>
+                </li>
+            </ul>
+            <div class="edit-shop-content">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">电脑端</a></li>
+                    <li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">手机端</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane " id="home">
+                        <div class="apx-shop-upload-box row">
+                            <div class="col-xs-12" data-toggle="modal" data-target="#apxModalAdminShopImg">
+                                <img src="../images/shop/shop_banner_1.jpg">
+                            </div>
+                            <div class="col-xs-6" data-toggle="modal" data-target="#apxModalAdminShopImg">
+                                <img src="../images/shop/shop_banner_2.png">
+                            </div>
+                            <div class="col-xs-6" data-toggle="modal" data-target="#apxModalAdminShopImg">
+                                <img src="../images/shop/shop_banner_3.png">
+                            </div>
+                            <div class="col-xs-4" data-toggle="modal" data-target="#apxModalAdminShopImg">
+                                <img src="../images/shop/shop_prod_1.png">
+                            </div>
+                            <div class="col-xs-4" data-toggle="modal" data-target="#apxModalAdminShopImg">
+                                <img src="../images/shop/shop_prod_2.png">
+                            </div>
+                            <div class="col-xs-4" data-toggle="modal" data-target="#apxModalAdminShopImg">
+                                <img src="../images/shop/shop_prod_3.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane active" id="profile">
+                        <div class="mobile-store-content">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active"><a href="#storeBg" role="tab" data-toggle="tab">店铺主图</a></li>
+                                <li role="presentation"><a href="#bannerImg" role="tab" data-toggle="tab">轮播图</a></li>
+                                <li role="presentation"><a href="#pickPro" role="tab" data-toggle="tab">甄选商品</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <!-- 店铺主图部分 -->
+                                <div role="tabpanel" class="tab-pane active" id="storeBg">
+                                    <div class="main-img-upload">
+                                        <img src="/images/admin/shop/upload.png" alt="">
+                                        <span class="btn btn-upload">点击上传</span>
+                                        <input type="file" name="" id="upload-main-file">
+                                    </div>
+                                    <p class="annotation high-lighted">*注：图片尺寸为750*600像素，大小不得大于2M，支持格式为JPG、PNG。</p>
+                                </div>
+                                <!-- 轮播图部分 -->
+                                <div role="tabpanel" class="tab-pane" id="bannerImg">
+                                    <div class="row-group banner-img-box">
+                                        <!--轮播列表头-->
+                                        <div class="row header">
+                                            <div class="col-xs-3">序号</div>
+                                            <div class="col-xs-3">图片（750*600）</div>
+                                            <div class="col-xs-3">链接</div>
+                                            <div class="col-xs-3">操作</div>
+                                        </div>
+                                        <!--新增-->
+                                        <div class="row list new">
+                                            <div class="col-xs-3">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="col-xs-3 edit">
+                                                <label class="img-upload-box" for="upload_img_1">
+                                                    <input type="file" id="upload_img_1">
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <input type="text" class="form-control" value="">
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <a href="#" data-toggle="modal" data-target="#apxModalAdminAlert" class="btn btn-warning btn-sm">删除</a>
+                                                <a href="#" class="btn btn-danger btn-sm">确定</a>
+                                            </div>
+                                        </div>
+                                        <!--修改-->
+                                        <div class="row list edit">
+                                            <div class="col-xs-3">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <label class="img-upload-box" for="upload_img_2">
+                                                    <input type="file" id="upload_img_2">
+                                                    <img class="img-responsive" src="/images/custom_index/apex_banner.jpg">
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <input type="text" class="form-control" value="daxinwen/haha/too_young">
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <a href="#" data-toggle="modal" data-target="#apxModalAdminAlert" class="btn btn-warning btn-sm">删除</a>
+                                                <a href="#" class="btn btn-danger btn-sm">确定</a>
+                                            </div>
+                                        </div>
+                                        <!--普通-->
+                                        <div class="row list">
+                                            <div class="col-xs-3">1</div>
+                                            <div class="col-xs-3">
+                                                <div class="img-upload-box">
+                                                    <img class="img-responsive" src="/images/custom_index/apex_banner.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-3">daxinwen/haha/too_young</div>
+                                            <div class="col-xs-3">
+                                                <a href="#" data-toggle="modal" data-target="#apxModalAdminAlert" class="btn btn-warning btn-sm">删除</a>
+                                                <a href="#" class="btn btn-danger btn-sm">修改</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 甄选商品部分 -->
+                                <div role="tabpanel" class="tab-pane" id="pickPro">
+                                    <div class="selection-pro-container">
+                                        <div class="pro-tabs">
+                                            <div class="pro-list">
+                                                <span class="active">产品1</span>
+                                                <span>产品1</span>
+                                                <span>产品1</span>
+                                                <span>产品1</span>
+                                            </div>
+                                            <div class="pro-handle">
+                                                <span>删除</span>
+                                                <span>新增</span>
+                                            </div>
+                                        </div>
+                                        <div class="pro-content">
+                                            <ul>
+                                                <li>
+                                                    <div class="p-title">商品ID：</div>
+                                                    <div class="p-val">1021</div>
+                                                </li>
+                                                <li>
+                                                    <div class="p-title">商品名称：</div>
+                                                    <div class="p-val">高隔热什么鬼</div>
+                                                </li>
+                                                <li>
+                                                    <div class="p-title">价格区间：</div>
+                                                    <div class="p-val high-lighted">￥1-￥213</div>
+                                                </li>
+                                                <li>
+                                                    <div class="p-title">商品卖点：</div>
+                                                    <div class="p-val">保质保量保质保量保质保量保质保量保质保量保质保量保质保量保质保量保质保量保质保量保质保量</div>
+                                                </li>
+                                                <li>
+                                                    <div class="p-title">供应商：</div>
+                                                    <div class="p-val">你猜猜猜</div>
+                                                </li>
+                                                <li>
+                                                    <div class="p-title">展示用图片：</div>
+                                                    <div class="p-val upload-box">
+                                                        <img src="/images/admin/shop/upload.png" alt="">
+                                                        <input type="file" name="" id="">
+                                                        <span class="btn btn-upload">删除</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="p-title">展示标题：</div>
+                                                    <div class="p-val title-input-box">
+                                                        <input type="text" name="" id="">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="p-title">展示卖点：</div>
+                                                    <div class="p-val title-textarea-box">
+                                                        <textarea></textarea>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="pro-sure-handle">
+                                            <span class="btn btn-danger">保存</span>
+                                            <span class="btn btn-default">删除</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- main area start -->
+
+<!-- 图片相关信息 -->
+<div class="apx-modal-admin-brand-img modal fade" id="apxModalAdminShopImg" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span></a>
+                <h4 class="modal-title">图片相关信息</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <!--图片-->
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label">图片：</label>
+                        <div class="col-xs-3">
+                            <label class="upload-box" for="brand_img">
+                                <input id="brand_img" type="file">
+                                <!--<img src="/images/custom_index/1.jpg">-->
+                            </label>
+                        </div>
+                        <div class="col-xs-6 text-danger">（图片尺寸要求：478*287）</div>
+                    </div>
+                    <!--链接-->
+                    <div class="form-group">
+                        <label for="brand_url" class="col-xs-3 control-label">对应链接：</label>
+                        <div class="col-xs-7">
+                            <input type="text" class="form-control" id="brand_url">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger btn-block">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 选择商品 -->
+<div class="apx-modal-admin-select-pro modal fade" id="J_add_newpro_modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span></a>
+                <h4 class="modal-title">添加商品</h4>
+            </div>
+            <div class="modal-body">
+                <div class="input-box">
+                    <input value="" type="text" placeholder="请输入商品名称或ID" maxlength="140" ></input>
+                </div>
+                <div class="select-pro-list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th width="40"></th>
+                                <th>图片</th>
+                                <th>商品ID</th>
+                                <th width="150">商品名称</th>
+                                <th>价格</th>
+                                <th>所属供应商</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="checkbox active"></td>
+                                <td>
+                                    <div class="img">
+                                        <img src="/images/admin/piggy_bank.png" alt="">
+                                    </div>
+                                </td>
+                                <td>16515151153</td>
+                                <td>
+                                    <div class="pro-title">应急启动应急启动应急启动应急启动应急启动</div>
+                                </td>
+                                <td>1000-1111</td>
+                                <td>永泰和</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox"></td>
+                                <td>
+                                    <div class="img">
+                                        <img src="/images/admin/piggy_bank.png" alt="">
+                                    </div>
+                                </td>
+                                <td>16515151153</td>
+                                <td>
+                                    <div class="pro-title">应急启动应急启动应急启动应急启动应急启动</div>
+                                </td>
+                                <td>1000-1111</td>
+                                <td>永泰和</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox"></td>
+                                <td>
+                                    <div class="img">
+                                        <img src="/images/admin/piggy_bank.png" alt="">
+                                    </div>
+                                </td>
+                                <td>16515151153</td>
+                                <td>
+                                    <div class="pro-title">应急启动应急启动应急启动应急启动应急启动</div>
+                                </td>
+                                <td>1000-1111</td>
+                                <td>永泰和</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox"></td>
+                                <td>
+                                    <div class="img">
+                                        <img src="/images/admin/piggy_bank.png" alt="">
+                                    </div>
+                                </td>
+                                <td>16515151153</td>
+                                <td>
+                                    <div class="pro-title">应急启动应急启动应急启动应急启动应急启动</div>
+                                </td>
+                                <td>1000-1111</td>
+                                <td>永泰和</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox"></td>
+                                <td>
+                                    <div class="img">
+                                        <img src="/images/admin/piggy_bank.png" alt="">
+                                    </div>
+                                </td>
+                                <td>16515151153</td>
+                                <td>
+                                    <div class="pro-title">应急启动应急启动应急启动应急启动应急启动</div>
+                                </td>
+                                <td>1000-1111</td>
+                                <td>永泰和</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox"></td>
+                                <td>
+                                    <div class="img">
+                                        <img src="/images/admin/piggy_bank.png" alt="">
+                                    </div>
+                                </td>
+                                <td>16515151153</td>
+                                <td>
+                                    <div class="pro-title">应急启动应急启动应急启动应急启动应急启动</div>
+                                </td>
+                                <td>1000-1111</td>
+                                <td>永泰和</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox"></td>
+                                <td>
+                                    <div class="img">
+                                        <img src="/images/admin/piggy_bank.png" alt="">
+                                    </div>
+                                </td>
+                                <td>16515151153</td>
+                                <td>
+                                    <div class="pro-title">应急启动应急启动应急启动应急启动应急启动</div>
+                                </td>
+                                <td>1000-1111</td>
+                                <td>永泰和</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox"></td>
+                                <td>
+                                    <div class="img">
+                                        <img src="/images/admin/piggy_bank.png" alt="">
+                                    </div>
+                                </td>
+                                <td>16515151153</td>
+                                <td>
+                                    <div class="pro-title">应急启动应急启动应急启动应急启动应急启动</div>
+                                </td>
+                                <td>1000-1111</td>
+                                <td>永泰和</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger">确定</button>
+                <button type="button" class="btn btn-default">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('footer_admin.inc')

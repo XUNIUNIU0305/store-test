@@ -1,0 +1,61 @@
+body {
+  overflow-x: hidden; }
+
+.bg-muted {
+  background: #f2f2f2; }
+
+.table-fix {
+  table-layout: fixed; }
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.container {
+  width: 1190px;
+  max-width: none !important; }
+
+.high-lighted {
+  color: #df483d; }
+
+.apx-not-found {
+  position: relative;
+  height: 800px;
+  max-height: 800px;
+  height: 80vh;
+  background: url(/images/not_found_bg.png) no-repeat center;
+  background-size: contain; }
+  .apx-not-found.full {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-height: inherit;
+    height: 100%; }
+  .apx-not-found > .text-center {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 227px;
+    width: 100%; }
+  .apx-not-found img {
+    display: inline-block;
+    margin-right: 80px; }
+  .apx-not-found h4 {
+    display: inline-block;
+    font-size: 54px;
+    vertical-align: middle; }
+    .apx-not-found h4 small {
+      margin-top: 12px;
+      font-size: 32px;
+      display: block; }
+  .apx-not-found .high-lighted {
+    color: #ef2626; }
+  .apx-not-found .btn {
+    width: 240px;
+    margin: 60px auto; }

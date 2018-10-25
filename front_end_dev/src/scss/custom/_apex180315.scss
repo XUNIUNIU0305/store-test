@@ -1,0 +1,543 @@
+$default-transition-duration: 500ms;
+$perspective: 300;
+.apex-180315-container {
+    background: #061557;
+    min-width: 1190px;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    .float-nav {
+        position: fixed;
+        right: 28px;
+        top: 50%;
+        margin-top: -167.5px;
+        width: 110px;
+        height: 355px;
+        z-index: 99;
+        .img-box {
+            background: #061557;
+            background: url('/images/apex_180315/nav_img.png') center no-repeat;
+            width: 162px;
+            margin-left: -26px;
+            height: 110px;
+        }
+        background: #241a78;
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .nav-tabs {
+            border-bottom: 0;
+            li {
+                font-size: 14px;
+                width: 100%;
+                text-align: center;
+                &.active {
+                    a {
+                        &,
+                        &:focus,
+                        &:active,
+                        &:hover {
+                            background: #4a456f;
+                            color: #fff;
+                            border: 0;
+                        }
+                    }
+                }
+                a {
+                    padding: 0;
+                    line-height: 25px;
+                    margin: 0;
+                    border: 0;
+                    border-radius: 0;
+                    &:hover {
+                        background: #4a456f;
+                        border: 0;
+                    }
+                }
+            }
+        }
+    }
+    .banner {
+        height: 892px;
+        background: url('/images/apex_180315/banner.png') center/cover no-repeat;
+    }
+    .stage {
+        position: relative;
+        /* background */
+        .bg {
+            height: 335px + 945 + 177 + 2609 + 295 + 1651 + 212 + 1077 + 425;
+            max-width: 1920px;
+            overflow: hidden;
+            margin: 0 auto;
+            position: relative;
+            &:after {
+                content: '';
+                background: url('/images/apex_180315/zhuangshi_bg.png') center/cover no-repeat;
+                background-position: center 35px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            .bg-f1,
+            .bg-f2,
+            .bg-f3,
+            .bg-f4 {
+                background: transparent center/cover no-repeat;
+            }
+            .bg-f1 {
+                height: 945px;
+                margin-top: 335px;
+                background-image: url('/images/apex_180315/f1_bg.png');
+            }
+            .bg-f2 {
+                height: 2609px;
+                margin-top: 177px;
+                background-image: url('/images/apex_180315/f2_bg.png');
+            }
+            .bg-f3 {
+                height: 1651px;
+                margin-top: 295px;
+                background-image: url('/images/apex_180315/f3_bg.png');
+            }
+            .bg-f4 {
+                height: 1077px;
+                margin-top: 212px;
+                background-image: url('/images/apex_180315/f4_bg.png');
+            }
+        }
+        >.container {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+    }
+    /* 分会场 */
+    .sec-venue {
+        width: 993px;
+        height: 545px;
+        margin: 43px auto 0;
+        position: relative;
+        padding-top: 220px;
+        padding-left: 46px;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 545px;
+            width: 1200px;
+            background: url('/images/apex_180315/fenhuichang_title.png') center no-repeat;
+        }
+        .entrance {
+            display: inline-block;
+            width: 195px;
+            height: 227px;
+            position: relative;
+            margin-left: 28px;
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 286px;
+                height: 292px;
+                background: transparent center no-repeat;
+            }
+            a {
+                display: inline-block;
+                width: 195px;
+                height: 227px;
+                position: relative;
+                z-index: 1;
+            }
+        }
+        .entrance-1::before {
+            background-image: url('/images/apex_180315/qichezhuangshi.png');
+        }
+        .entrance-2::before {
+            background-image: url('/images/apex_180315/dianzigaizhuang.png');
+        }
+        .entrance-3::before {
+            background-image: url('/images/apex_180315/meirongqingjie.png');
+        }
+        .entrance-4::before {
+            background-image: url('/images/apex_180315/weixiuyanghu.png');
+        }
+    }
+    /* 秒杀专区 */
+    .sec-seckill {
+        position: relative;
+        height: 654px;
+        margin-top: 70px;
+        padding-top: 210px;
+        background: url('/images/apex_180315/miaoshazhuangqu_bg.png') center no-repeat;
+        color: #fff;
+        font-size: 0px;
+        text-align: center;
+        .btn-rule {
+            font-size: 16px;
+            position: absolute;
+            right: 320px;
+            top: 40px;
+            border-bottom: 1px dashed #fff;
+            cursor: pointer;
+        }
+        .rule {
+            font-size: 14px;
+            text-align: left;
+            width: 400px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 112px;
+            margin: 0 auto;
+            color: #fc0320;
+            border: 1px solid #fc0320;
+            border-radius: 16px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        .more-info {
+            width: 117px;
+            height: 20px;
+            background: url('/images/apex_180315/more_seckill.png') center no-repeat;
+            position: absolute;
+            top: 140px;
+            right: 60px;
+        }
+        .item {
+            display: inline-block;
+            text-align: left;
+            width: 256px;
+            height: 400px;
+            padding: 28px 22px 0;
+            margin: 0 3px;
+            background: url('/images/apex_180315/miao_bg.png') center no-repeat;
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                margin: 14px 0 10px;
+            }
+        }
+        .detail {
+            overflow: hidden;
+            small {
+                font-size: 10px;
+            }
+            span {
+                font-size: 16px;
+            }
+            .link-btn {
+                display: inline-block;
+                width: 100px;
+                height: 28px;
+                background: url('/images/apex_180315/lijigoumai_but.png') center no-repeat;
+                float: right;
+                margin-top: 8px;
+            }
+        }
+    }
+    /* 拼团专区 */
+    .sec-content {
+        margin: 300px auto 0;
+        width: 996px;
+        height: 4480px;
+        background: url('/images/apex_180315/f2_shangping_bg.png') center no-repeat;
+        position: relative;
+        color: #fff;
+        /* title */
+        &:before {
+            content: "";
+            position: absolute;
+            top: -272px + 74;
+            left: 50%;
+            background: url('/images/apex_180315/f2_pingtuanzhuangqu_title.png') center no-repeat;
+            height: 272px;
+            width: 878px;
+            margin-left: -439px;
+        }
+        .btn-rule {
+            font-size: 16px;
+            width: 140px;
+            height: 40px;
+            position: absolute;
+            right: 426px;
+            top: -63px;
+            cursor: pointer;
+        }
+        .rule {
+            font-size: 14px;
+            text-align: left;
+            width: 400px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 5px;
+            margin: 0 auto;
+            color: #fc0320;
+            border: 1px solid #fc0320;
+            border-radius: 16px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            z-index: 99;
+        }
+    }
+    .sec-stage {
+        margin-bottom: 18px;
+        position: relative;
+        top: -24px;
+        .title {
+            text-align: right;
+            width: 900px;
+            height: 114px;
+            background: url('/images/apex_180315/f2_kuang.png') right center no-repeat;
+            padding-right: 25px;
+            font-size: 52px;
+            line-height: 140px;
+        }
+        .item-wrap {
+            margin: 0 13px;
+            position: relative;
+            &:before {
+                content: "";
+                position: absolute;
+                width: 1015px;
+                height: 186px;
+                bottom: 0;
+                left: -19px;
+                background: url('/images/apex_180315/shangping_bg.png') bottom center no-repeat;
+            }
+        }
+        [class^="col-xs-"] {
+            padding: 42px 16px 16px;
+        }
+        .col-xs-6 {
+            .item {
+                p {
+                    margin-bottom: 6px;
+                }
+                .bottom {
+                    font-size: 24px;
+                }
+                .highlighted {
+                    font-size: 30px;
+                }
+                .buy-btn {
+                    margin-top: 8px;
+                }
+            }
+        }
+        .item {
+            p {
+                font-size: 18px;
+                line-height: 24px;
+                margin: 18px 0;
+                min-height: 48px;
+            }
+            .middle {
+                font-size: 16px;
+            }
+            .bottom {
+                margin-top: 8px;
+                font-size: 12px;
+            }
+            .link-btn {
+                display: inline-block;
+                width: 82px;
+                height: 24px;
+                background: url('/images/apex_180315/jiaonishenqiang.png') center no-repeat;
+            }
+            .buy-btn {
+                /* margin-top: 8px; */
+                float: right;
+                width: 100px;
+                height: 29px;
+                background: url('/images/apex_180315/lijigoumai_but2.png') center no-repeat;
+            }
+            .highlighted {
+                font-size: 16px;
+                color: #fbfe05;
+            }
+        }
+    }
+    .stage-shop {
+        .col-xs-6 {
+            img {
+                height: 268.53px;
+            }
+        }
+    }
+    /* 满减满赠 */
+    .sec-flip {
+        position: relative;
+        width: 996px;
+        margin: 107px auto 0;
+        height: 1120px;
+        /* padding-top: 210px;   */
+        padding: 125px 28px 0;
+        background: url('/images/apex_180315/f4_manjianmanzengzhuangqu_bg.png') center no-repeat;
+        color: #fff;
+        &:before {
+            content: "";
+            position: absolute;
+            left: 106px;
+            top: -74px;
+            width: 706px;
+            height: 153px;
+            background: url('/images/apex_180315/maijiangmanzengzhuanqu_title.png') center no-repeat;
+        }
+        .btn-rule {
+            font-size: 20px;
+            position: absolute;
+            right: 215px;
+            top: 5px;
+            border-bottom: 1px dashed #fff;
+            cursor: pointer;
+        }
+        .rule {
+            font-size: 14px;
+            text-align: left;
+            width: 400px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 80px;
+            margin: 0 auto;
+            color: #fc0320;
+            border: 1px solid #fc0320;
+            border-radius: 16px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            z-index: 9999;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .items-wrap {
+            text-align: center;
+            width: 100%;
+            font-size: 0;
+            a {
+                &:nth-child(5n) {
+                    .flip-card {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        .flip-card {
+            display: inline-block;
+            margin-right: 18px;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1000;
+            width: 173px;
+            height: 161px;
+            .card-front,
+            .card-back {
+                -webkit-backface-visibility: hidden;
+                transition: transform .5s;
+                display: block;
+                height: 100%;
+                position: absolute;
+                width: 100%;
+            }
+            .card-front {
+                background: #5e22a4;
+                transform: perspective(300) rotateY(0);
+                z-index: 900;
+            }
+            .card-back {
+                transform: perspective(300) rotateY(-180deg); //Using rotate instead of transform prevents the back of the card from flipping on page load because transition is only targeting transform. Super sweet. 
+                z-index: 800;
+            }
+            &:hover {
+                .card-front {
+                    transform: perspective(300) rotateY(180deg); //No 3D fallback
+                }
+                .card-back {
+                    z-index: 950; //No transform fallback
+                    transform: perspective(300) rotateY(0); //No 3D fallback
+                }
+            }
+            .text-box {
+                position: absolute;
+                top: 50%;
+                transform: translate(0, -50%);
+                width: 100%;
+                text-align: center;
+                font-size: 14px;
+                line-height: 30px;
+                &.variety {
+                    font-size: 13px;
+                    line-height: 20px;
+                }
+            }
+        }
+        .h5 {
+            margin-top: -22px;
+            line-height: 48px;
+            font-size: 22px;
+        }
+        .more-info-box {
+            width: 944px;
+            height: 168px;
+            margin: 0 auto;
+            border: 3px dashed #481fa1;
+            line-height: 30px;
+            padding: 18px;
+        }
+    }
+    .sec-tip-box {
+        font-size: 22px;
+        width: 996px;
+        height: 112px;
+        margin: 40px auto 0;
+        background: url('/images/apex_180315/tips_border.png') center no-repeat;
+        padding: 26px 40px;
+        color: #fff;
+    }
+    /* 返回顶部 */
+    .sec-to-top {
+        text-align: center;
+        font-size: 49px;
+        margin-top: 80px;
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        i {
+            display: block;
+            margin: 0 auto;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 20px 20px 20px;
+            border-color: transparent transparent #fff transparent;
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                top: 8px;
+                left: -12px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 12px 12px 12px;
+                border-color: transparent transparent #061454 transparent;
+            }
+            +i {
+                margin-top: -6px;
+            }
+        }
+    }
+}

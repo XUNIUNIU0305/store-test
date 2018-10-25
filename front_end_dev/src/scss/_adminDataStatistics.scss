@@ -1,0 +1,100 @@
+.admin-data-statistics {
+    h2 {
+        font-size: 24px;
+        +.row {
+            margin: 40px 0;
+            .list-unstyled {
+                @include clearfix;
+                padding: 0 10%;
+                margin-bottom: 0;
+                li {
+                    line-height: 48px;
+                    width: 33.33333%;
+                    float: left;
+                    text-align: center;
+                }
+                .indicator {
+                    display: inline-block;
+                    vertical-align: text-bottom;
+                    width: 30px;
+                    height: 15px;
+                    margin-right: 8px;
+                    border-radius: 2px;
+                }
+                .red {
+                    background: #d14a61;
+                }
+                .blue {
+                    background: #5793f3;
+                }
+                .purple {
+                    background: #675bba;
+                }
+            }
+        }
+    }
+    .date-picker-box {
+        padding: 8px 0;
+        text-align: center;
+        .input-group {
+            width: 160px;
+            display: inline-table;
+            float: left;
+            float: none;
+            vertical-align: middle;
+            margin-right: 24px;
+            &:last-child {
+                margin-left: 4px;
+            }
+            .form-control {
+                height: 34px;
+                border-radius: 0;
+            }
+        }
+        >div {
+            display: none;
+            >span {
+                margin: 0 8px;
+            }
+            &.in {
+                display: inline-block;
+            }
+            >.btn-default {
+                margin-left: 16px;
+            }
+        }
+    }
+    .chart-title {
+        color: #4d82b1;
+        font-size: 16px;
+        font-weight: 600;
+        position: relative;
+        line-height: 2;
+        margin-bottom: 40px;
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            right: 10%;
+            height: 3px;
+            background: #4d82b1;
+            background: #4d82b1 linear-gradient(to right, rgba(#fff, 0), rgba(#fff, 1));
+        }
+    }
+    .chart-wrap {
+        position: relative;
+        height: 550px;
+        // padding: 50%;
+    }
+    .chart-canvas {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 550px;
+        margin: auto;
+    }
+}

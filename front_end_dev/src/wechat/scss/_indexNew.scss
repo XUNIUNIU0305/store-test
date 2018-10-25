@@ -1,0 +1,504 @@
+.wechat-index-new {
+    background: #440062;
+    .high-lighted {
+        color: #cf4d44;
+    }
+    .h2 {
+        font-weight: 700;
+    }
+    .brand-activity {
+        transform: translatey(-10px);
+        position: relative;
+        img {
+            max-width: 100%;
+        }
+        .free-modal {
+            display: block;
+            position: absolute;
+            width: 20%;
+            height: 90px;
+            bottom: 10px;
+            left: 51%;
+            z-index: 9;
+        }
+    }
+    // background: #fff;
+    @include clearfix;
+    /* carousel */
+    .slide,
+    .slide-product {
+        position: relative;
+        overflow: hidden;
+        > ul {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            > li {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                /* 解决js阻塞页面显示首屏 */
+                &:last-child {
+                    z-index: 0;
+                }
+            }
+        }
+        .dot {
+            position: absolute;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            font-size: 0;
+            text-align: center;
+            span {
+                display: inline-block;
+                width: 5px;
+                height: 1px;
+                background: #fff;
+                margin-left: 5px;
+                position: relative;
+                top: -3px;
+            }
+        }
+    }
+    .slide {
+        &:before {
+            content: '';
+            display: block;
+            width: 100%;
+            padding-top: 50%;
+        }
+        // &:after{
+        //     content: '';
+        //     position: absolute;
+        //     bottom: 0;
+        //     left: 0;
+        //     right: 0;
+        //     height: 20px;
+        //     background: radial-gradient(farthest-corner at top center , transparent 0%, transparent 75%, #440062 75%, #440062 100%);
+        // }
+        li {
+            img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+        }
+        .dot {
+            .cur {
+                display: inline-block;
+                width: 5px;
+                height: 5px;
+                border: 1px solid #fff;
+                border-radius: 50%;
+                background-color: transparent;
+                top: 0;
+            }
+        }
+    }
+    .slide-product {
+        &:before {
+            content: '';
+            display: block;
+            width: 100%;
+            padding-top: 60%;
+        }
+        .dot {
+            span {
+                background: rgba(#fff, .5);
+            }
+            .cur{
+                background: #fff;
+            }
+        }
+        .slide-product-list{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 14px 14px;
+            li{
+                flex: 1 0 20%;
+                max-width: 20%;
+                padding: 6px;
+                box-sizing: border-box;
+                a{
+                    color: #fff;
+                    text-align: center;
+                }
+                div{
+                    position: relative;
+                    padding: 50%;
+                    margin-bottom: 5px;
+                }
+                img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    display: block;
+                }
+                span {
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+    //限购
+
+    // section 抢购
+    .index-section-1 {
+        padding-bottom: 10px;
+        .puban {
+            margin-top: 40px;
+            padding-top: 16.5625%;
+            background: url('/images/index_new/puban_bg.png') center/cover no-repeat;
+            position: relative;
+            z-index: 2;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 79.53125%;
+                padding-top: 15.15625%;
+                background: url('/images/index_new/xianshiqianggou_bg.png') center/cover no-repeat;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .prod-box-container{
+            position: relative;
+            width: 90.625%;
+            padding-top: 98.59375%;
+            margin: 0 auto;
+            margin-top: -10%;
+            >img {
+                position: absolute;
+                top: 12%;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                width: 80%;
+                z-index: 2;
+            }
+            .prod-box{
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: url('/images/index_new/dianshi_bg.png') bottom center no-repeat;
+                background-size: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                padding: 4%;
+                img{
+                    border-radius: 4px;
+                    width: 100%;
+                    display: block;
+                }
+                .row-1 {
+                    margin-bottom: 5px;
+                }
+                .row-2{
+                    display: flex;
+                    margin: 0 -2.5px;
+                    li{
+                        position: relative;
+                        padding: 0 2.5px;
+                    }
+                    a{
+                        color: #fff;
+                    }
+                    .h3{
+                        font-weight: 600;
+                        margin: 4px 0 2px;
+                        font-size: 11px;
+                    }
+                    p{
+                        margin: 0;
+                        font-size: 9px;
+                    }
+                    span{
+                        font-weight: 600;
+                        color: #fd407d;
+                        font-size: 12px;
+                        position: absolute;
+                        bottom: -3px;
+                        right: 2.5px;
+                    }
+                }
+            }
+        }
+    }
+    .index-section-new,
+    .index-section-2,
+    .index-section-3,
+    .index-section-4 {
+        padding-bottom: 10px;
+        .title{
+            margin: 10px auto 4px;
+            width: 53.90625%;
+            padding-top: 8.125%;
+            background: url('/images/index_new/zishe_title_bg.png') center/cover no-repeat;
+        }
+        .prod-box-container{
+            position: relative;
+            width: 93.4375%;
+            padding-top: 82.1875%;
+            margin: 0 auto;
+            .prod-box{
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: url('/images/index_new/shangxinping_bg.png') center/cover no-repeat;
+                padding: 4%;
+                display: flex;
+                justify-content: center;
+            }
+            img{
+                border-radius: 4px;
+                width: 100%;
+                display: block;
+            }
+            .row{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                margin: 0 -2.5px;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                li{
+                    flex: 1 0 50%;
+                    max-width: 50%;
+                    position: relative;
+                    padding: 0 2.5px;
+                    box-sizing: border-box;
+                }
+                a{
+                    color: #fff;
+                }
+                .h3{
+                    font-weight: 600;
+                    margin: 4px 0 2px;
+                    font-size: 11px;
+                }
+                p{
+                    margin: 0;
+                    font-size: 9px;
+                }
+                span{
+                    font-weight: 600;
+                    color: #fff100;
+                    font-size: 12px;
+                    position: absolute;
+                    bottom: -3px;
+                    right: 2.5px;
+                }
+            }
+        }
+    }
+    .index-section-new {
+        .title {
+            background: url('/images/index_new/mk/629_title.png') center/cover no-repeat;
+        }
+        .prod-box-container{
+            width: 93.4375%;
+            padding-top: 86.40625%;
+            .prod-box{
+                // position: absolute;
+                // top: 0;
+                // right: 0;
+                // bottom: 0;
+                // left: 0;
+                background: url('/images/index_new/zhuangbei_bg.png') center/cover no-repeat;
+                display: flex;
+                flex-direction: column;
+                // justify-content: flex-end;
+                // padding: 4%;
+                img{
+                    border-radius: 4px;
+                    width: 100%;
+                    display: block;
+                }
+                .row-1 {
+                    margin-bottom: 5px;
+                    a{
+                        color: #fff;
+                    }
+                    .h3{
+                        font-weight: 600;
+                        margin: 4px 0 2px;
+                        font-size: 11px;
+                    }
+                }
+                .row-2{
+                    display: flex;
+                    margin: 0 -2.5px;
+                    li{
+                        position: relative;
+                        padding: 0 2.5px;
+                    }
+                }
+            }
+        }
+    }
+    .index-section-3 {
+        .title{
+            background: url('/images/index_new/bimaiqingdan_title.png') center/cover no-repeat;
+        }
+        .prod-box-container{
+            width: 93.4375%;
+            padding-top: 75.3125%;
+            .prod-box{
+                background: url('/images/index_new/bimaiqingdan_bg.png') center/cover no-repeat;
+            }
+        }
+    }
+    .index-section-4 {
+        .title{
+            background: url('/images/index_new/zhuangbeitiandi_title.png') center/cover no-repeat;
+        }       
+        .prod-box-container{
+            width: 93.4375%;
+            padding-top: 86.40625%;
+            .prod-box{
+                // position: absolute;
+                // top: 0;
+                // right: 0;
+                // bottom: 0;
+                // left: 0;
+                background: url('/images/index_new/zhuangbei_bg.png') center/cover no-repeat;
+                display: flex;
+                flex-direction: column;
+                // justify-content: flex-end;
+                // padding: 4%;
+                img{
+                    border-radius: 4px;
+                    width: 100%;
+                    display: block;
+                }
+                .row-1 {
+                    margin-bottom: 5px;
+                    a{
+                        color: #fff;
+                    }
+                    .h3{
+                        font-weight: 600;
+                        margin: 4px 0 2px;
+                        font-size: 11px;
+                    }
+                }
+                .row-2{
+                    display: flex;
+                    margin: 0 -2.5px;
+                    li{
+                        position: relative;
+                        padding: 0 2.5px;
+                    }
+                }
+            }
+        }
+    }
+    // to btn
+    .top-btn {
+        display: block;
+        margin: 10px 0 0;
+        text-align: center;
+        background: #fb3083 url('/images/index_new/up_arrows.png') 40% center/11px 17px no-repeat;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 50px;
+        color: #fff;
+    }
+}
+// extra link img
+.wechat-index-extra-link{
+    position: absolute;
+    z-index: 99999;
+    right: 0;
+    bottom: 135px;
+    width: 60px;
+    height: 95px;
+    margin: 0;
+    img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.wechat-free-lunch{
+    .close-btn {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 12px;
+        right: 12px;
+        background: url('/images/free_lunch/new_cloes_icon.png') center/contain no-repeat;
+    }
+    .sub-content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        &.in {
+            display: flex;
+        }
+    }
+    .img-box{
+        position: relative;
+        p{
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: (436px / 2);
+            bottom: 50px;
+            font-size: 14px;
+            color: #2e5c9e;
+            margin: 0 auto;
+        }
+    }
+    .img-responsive {
+        width: (556px / 2);
+        margin: 0 auto 30px;
+    }
+    .entrance{
+        .img-responsive {
+            width: (466px / 2);
+            margin-bottom: 50px;
+        }
+    }
+    .btn-row{
+        display: flex;
+        text-align: center;
+    }
+    .btn {
+        background: transparent url('/images/free_lunch/pingpai_but_bg.png') center/contain no-repeat;
+        padding: 0;
+        width: (190px / 2);
+        height: (84px / 2);
+        line-height: 35px;
+        margin: 0 15px;
+        color: #fff;
+        font-size: 15px;
+        transition: transform .1s;
+        &:active {
+            transform: scale(.98);
+        }
+    }
+}

@@ -1,0 +1,365 @@
+.decorate-conical-abode-container {
+    a {
+        text-decoration: none;
+    }
+    p {
+        margin: 0;
+    }
+    min-width: 1190px;
+    .head-img {
+        min-width: 1190;
+        height: 600px;
+        margin: 0 auto;
+        background: url('/images/18-6-29/decorate/banner.jpg') no-repeat center;
+
+        position: relative;
+        &:before {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 13%;
+            content: '';
+            height: 174px;
+            width: 222px;
+            background: url('/images/18-6-29/decorate/logo.png') no-repeat;
+        }
+    }
+
+    .body-container {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        background-color: #751A1B;
+        background-size: 1920px auto;
+    }
+
+    .title {
+        height: 96px;
+        width: 100%;
+        background: url('/images/18-6-29/decorate/title1.png') no-repeat center;
+        background-size: 327px auto;
+        background-color: #fff;
+    }
+
+    .better-seckill {
+        .product-box {
+            height: 662px;
+            width: 1755px;
+            margin: 0 auto;
+            background: url('/images/18-6-29/decorate/f1.png') no-repeat center;
+            background-size: 1755px auto;
+            .time {
+                height: 118px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                span {
+                    cursor: pointer;
+                    color: rgba(206, 49, 51, 0.5);
+                    font-size: 24px;
+                    display: block;
+                    height: 38px;
+                    width: 38px;
+                    border-radius: 38px;
+                    background-color: #fff;
+                    line-height: 38px;
+                    font-weight: bold;
+                    margin-right: 17px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+                .time-on {
+                    color: #ce3133;
+                }
+            }
+
+            .product-items {
+                margin: 0 63px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                .item {
+                    text-decoration: none;
+                    display: block;
+                    position: relative;
+                    overflow: hidden;
+                    margin-right: 20px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    &:before {
+                        display: block;
+                        content: '';
+                        height: 46px;
+                        width: 124px;
+                        background: url('/images/18-6-29/decorate/chaozhi_lable.png') no-repeat center/cover;
+                        position: absolute;
+                        top: 0;
+                        left: 20px;
+                    }
+                    .img-box {
+                        height: 373px;
+                        width: 386px;
+                        display: flex;
+                        align-items: flex-end;
+                        overflow: hidden;
+                        background: url('/images/18-6-29/decorate/chanping_bg.jpg') no-repeat center/cover;
+                        .item-img {
+                            height: 250px;
+                            width: 250px;
+                            margin: 0 auto;
+                            margin-bottom: 20px;
+                        }
+                    }
+
+                    .item-detail {
+                        height: 110px;
+                        background-color: #c33133;
+                        color: #fff;
+                        width: 386px;
+                        overflow: hidden;
+                        p {
+                            font-size: 20px;
+                            margin: 0 14px;
+                        }
+                        .item-name {
+                            margin-top: 10px;
+                            text-align: left;
+                        }
+                        .item-footer {
+                            margin: 0 14px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            .item-describe {
+                                max-width: 140px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+                            p {
+                                margin: 0;
+                            }
+                            .item-price {
+                                span {
+                                    font-size: 26px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .product-style {
+        margin-top: 35px;
+        overflow: hidden;
+        .product-box {
+            margin-top: 82px;
+            .item {
+                text-decoration: none;
+                display: flex;
+                height: 338px;
+                width: 1146px;
+                margin: 0 auto;
+                justify-content: flex-start;
+                margin-bottom: 35px;
+                align-items: center;
+                background-color: #A1282A;
+                img {
+                    height: 338px;
+                    width: 338px;
+                }
+                .item-detail {
+                    height: 338px;
+                    padding-left: 50px;
+                    flex: 1;
+                    position: relative;
+                    overflow: hidden;
+                    p {
+                        text-align: left;
+                        color: #fff;
+                        &:first-child {
+                            margin-top: 20px;
+                            font-size: 24px;
+                        }
+                        &:nth-child(2) {
+                            font-size: 24px;
+                            margin-bottom: 30px;
+                        }
+                    }
+                    .discounts {
+                        span {
+                            font-size: 20px;
+                            display: block;
+                        }
+                    }
+
+                    .item-price {
+                        position: absolute;
+                        bottom: 26px;
+                        left: 35px;
+                        span {
+                            font-size: 50px;
+                            &:nth-child(2) {
+                                font-size: 28px;
+                            }
+                        }
+                    }
+                    .buy-now {
+                        display: block;
+                        height: 46px;
+                        width: 166px;
+                        background-color: #fff;
+                        color: #a2282a;
+                        text-align: center;
+                        line-height: 46px;
+                        border-radius: 6px;
+                        font-size: 24px;
+                        position: absolute;
+                        right: 80px;
+                        bottom: 26px;
+                    }
+                }
+            }
+        }
+    }
+
+    .better-product {
+        .title {
+            background: url('/images/18-6-29/decorate/title2.png') no-repeat center;
+            background-size: 327px;
+            background-color: #fff;
+        }
+
+    }
+
+    .cushion {
+        .title {
+            background: url('/images/18-6-29/decorate/title3.png') no-repeat center;
+            background-size: 327px;
+            background-color: #fff;
+        }
+        .product-box {
+            .itme-special {
+                margin-top: 110px;
+                position: relative;
+                .itme-header {
+                    display: block;
+                    height: 70px;
+                    line-height: 70px;
+                    position: absolute;
+                    text-align: left;
+                    padding-left: 30px;
+                    top: -70px;
+                    left: 0;
+                    font-size: 20px;
+                    background-color: #fde892;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .decorate-product {
+        margin-top: 20px;
+        overflow: hidden;
+        .title {
+            background: url('/images/18-6-29/decorate/title4.png') no-repeat center;
+            background-size: 327px;
+            background-color: #fff;
+        }
+        .product-box {
+            .item {
+                text-decoration: none;
+                display: flex;
+                height: 402px;
+                width: 1150px;
+                margin: 0 auto;
+                justify-content: flex-start;
+                margin-bottom: 50px;
+                margin-top: 50px;
+                align-items: center;
+                background-color: #A1282A;
+                .item-detail {
+                    flex: 1;
+                    padding: 0;
+                    text-align: left;
+                    padding: 0 36px;
+                    .item-title {
+                        font-size: 36px;
+                        color: #fff;
+                        text-align: left;
+                    }
+                    .item-describe {
+                        font-size: 30px;
+                        color: #fff8b1;
+                        text-align: left;
+                    }
+                }
+                img {
+                    &:first-child {
+                        height: 342px;
+                        width: 296px;
+                        position: relative;
+                        top: -50px;
+                        left: 0;
+                        margin-left: 34px;
+                    }
+                    &:last-child {
+                        height: 402px;
+                        width: 402px;
+                    }
+                }
+            }
+        }
+    }
+
+    .to-top {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 85px;
+        margin-bottom: 46px;
+        font-size: 36px;
+        color: #fff;
+    }
+
+    .fixed-nav {
+        z-index: 999;
+        position: fixed;
+        bottom: 40%;
+        right: 50px;
+        height: 318px;
+        width: 159px;
+        background: url('/images/18-6-29/decorate/nav_bg.jpg') no-repeat center/cover;
+        text-align: center;
+
+        a {
+            display: block;
+            border-bottom: 1px dashed #a2282a;
+            width: 80px;
+            text-align: center;
+            margin: 0 auto;
+            span {
+                color: #a71416;
+                display: block;
+                width: 100%;
+                font-size: 16px;
+                margin: 5px 0;
+                &:hover {
+                    background-color: #a71416;
+                    color: #fff;
+                }
+            }
+            &:first-child {
+                margin-top: 120px;
+            }
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}

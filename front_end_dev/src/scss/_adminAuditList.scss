@@ -1,0 +1,85 @@
+.admin-audit-list-container {
+    .admin-audit-list-title {
+        margin-top: 30px;
+        line-height: 46px;
+        padding: 0 26px;
+        font-size: 14px;
+        background: #e5e5e5;
+        margin-bottom: 20px;
+        &.bg-danger {
+            background: #fce7e6;
+        }
+        .apx-acc-order-nav {
+            border: 0;
+            margin: 0 -26px;
+            padding: 10px;
+            a {
+                line-height: 30px;
+            }
+        }
+        .btn {
+            border-radius: 0;
+        }
+        .pull-left {
+            padding: 8px 0;
+            line-height: 1;
+            .input-group {
+                max-width: 250px;
+                display: inline-table;
+                float: left;
+                margin-right: -2px;
+                .form-control {
+                    height: 34px;
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+    // 批量选择
+    .auth-check-box {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        .auth-btn {
+            margin-left: 20px;
+        }
+    }
+
+    .table-panel {
+        border: 1px solid #ccc;
+        font-size: 12px;
+        &.dashed {
+            th,
+            td {
+                position: relative;
+                border-top: 1px dashed #ccc;
+                border-bottom: 1px dashed #ccc;
+                overflow: visible;
+            }
+        }
+        thead {
+            background: #e6e6e6;
+            th {
+                text-align: center !important;
+            }
+        }
+        tbody{
+            tr{
+                cursor: pointer;
+                // td:last-child{
+                //     position: relative;
+                //     &:after{
+                //         content: '';
+                //         position: absolute;
+                //         top: 50%;
+                //         right: 20px;
+                //         margin-top: -7px;
+                //         width: 13px;
+                //         height: 14px;
+                //         background: url('/images/admin/arrow_right.png') center no-repeat;
+                //     }
+                // }
+            }
+        }
+    }
+}

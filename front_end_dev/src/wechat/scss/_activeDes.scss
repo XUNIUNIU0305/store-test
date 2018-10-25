@@ -1,0 +1,63 @@
+.wechat-product-active {
+	img {
+		max-width: 100%;
+		vertical-align: top;
+	}
+	background: url('/images/actives/jianbei_bg.png') center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	text-align: center;
+	.header {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		padding-top: 100%;
+		background: url('/images/actives/liuxin_ma.png') no-repeat top;
+		background-size: 100%;
+	}
+	>img {
+		max-width: 90%;
+		margin-top: 10%;
+	}
+	.btn {
+		text-align: center;
+		position: relative;
+		img {
+			max-width: 70%;
+			margin-top: 10%;
+		}
+		p {
+			font-size: 16px;
+			color: #fff;
+			position: absolute;
+			top: 40%;
+			left: 30%;
+		}
+	}
+	.description {
+		width: 100%;
+		display: none;
+		img {
+			width: 100%;
+		}
+		&.in {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 999;
+			.close {
+				width: 10%;
+				position: fixed;
+				right: 4%;
+				top: 3%;
+				z-index: 9999;
+			}
+		}
+	}
+}

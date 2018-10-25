@@ -1,0 +1,113 @@
+@@include('head.inc') @@include('banner.inc') @@include('search.inc') @@include('main_nav.inc')
+<div class="container">
+    <div class="row">
+        <ol class="breadcrumb">
+            <li><a href="#">商城首页</a></li>
+            <li class="active">用户中心</li>
+        </ol>
+        @@include('account_aside.inc')
+        <div class="apx-acc-main">
+            <div class="apx-acc-title bg-danger"><strong>提现详情</strong></div>
+            <div class="panel panel-default apx-acc-withdraw-form">
+                <div class="panel-body">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group ">
+                            <label class="col-xs-3">交易单号：</label>
+                            <div class="col-xs-9">
+                                <p class="form-control-static">321321564654</p>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="col-xs-3">卡号：</label>
+                            <div class="col-xs-9">
+                                <p class="form-control-static">321321564654</p>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="col-xs-3">持卡人姓名：</label>
+                            <div class="col-xs-9">
+                                <p class="form-control-static">九大爷</p>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="col-xs-3">开户行：</label>
+                            <div class="col-xs-9">
+                                <p class="form-control-static">中国工商银行 - 三门路支行（上海市 - 上海市 - 宝山区）</p>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="col-xs-3">金额：</label>
+                            <div class="col-xs-9">
+                                <p class="form-control-static">25000.00</p>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="col-xs-3">回复备注：</label>
+                            <div class="col-xs-9">
+                                <p class="form-control-static">内容内容</p>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="col-xs-3">状态：</label>
+                            <div class="col-xs-9">
+                                <p class="form-control-static">已成功</p>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="col-xs-3">联系手机号：</label>
+                            <div class="col-xs-9">
+                                <p class="form-control-static">13012345678</p>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="col-xs-3">生成时间：</label>
+                            <div class="col-xs-9">
+                                <p class="form-control-static">2010-08-15</p>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="col-xs-3">处理时间：</label>
+                            <div class="col-xs-9">
+                                <p class="form-control-static">2010-08-15</p>
+                            </div>
+                        </div>
+                    </form>
+                    <button class="btn btn-danger btn-lg btn-block">返回</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('ensurance.inc') @@include('sitemap.inc') @@include('footer.inc')
+
+<script>
+    $(function () {
+        // get sms
+        var timerAll = [],
+            intervalAll = [];
+        $('.J_get_verify_sms').click(function (e) {
+            var timer, interval;
+            e.preventDefault();
+            var $this = $(this);
+            var countDown = 60;
+            // disable it
+            if ($this.hasClass('disabled')) return;
+            $this.addClass('disabled');
+            // revert changes after 60s
+            timer = setTimeout(function () {
+                $this.text('点击获取');
+                $this.removeClass('disabled');
+                interval && clearInterval(interval);
+            }, 60 * 1000);
+            timerAll.push(timer);
+            // set count down text
+            $this.text(countDown + '秒后重试');
+            interval = setInterval(function () {
+                countDown--;
+                $this.text(countDown + '秒后重试');
+            }, 1000);
+            intervalAll.push(interval);
+        })
+    })
+
+</script>

@@ -1,0 +1,794 @@
+// main container
+.apx-settle-container {
+    border-top: 2px solid #cf4d44;
+    >.container {
+        position: relative;
+    }
+    .limit-height {
+        height: 168px;
+        overflow: hidden;
+    }
+    .apx-settle-title {
+        line-height: 20px;
+        font-size: 16px;
+        color: #666666;
+        margin: 40px 0 16px;
+    }
+    .apx-settle-box {
+        border: solid 1px #e3e4e5;
+        padding: 26px;
+        .apx-settle-title {
+            color: #333333;
+            margin: 0;
+        }
+    }
+    /* 收货人信息 */
+    .apx-settle-address-box {
+        position: relative;
+        padding: 26px 26px 16px;
+        border-bottom: 1px solid #e3e4e5;
+        margin-bottom: 26px;
+        font-size: 14px;
+        >.btn-add {
+            position: absolute;
+            right: 0;
+            top: -1.6em;
+            color: #1f66b1;
+            text-decoration: none;
+        }
+        .load-all {
+            color: #999999;
+            position: relative;
+            text-decoration: none;
+            &:after {
+                content: "";
+                display: inline-block;
+                width: 10px;
+                height: 8px;
+                background: url("/images/custom/settle/gengduo.png") center no-repeat;
+            }
+        }
+    }
+    .apx-settle-address {
+        border: 1px solid #e3e4e5;
+        margin-bottom: 26px;
+        padding: 18px 22px;
+        min-height: 145px;
+        position: relative;
+        h5 {
+            font-weight: 400;
+            color: #666666;
+            padding-bottom: 16px;
+            margin: 0;
+            border-bottom: 1px solid #e3e4e5;
+            strong {
+                margin-right: 8px;
+            }
+        }
+        p {
+            margin: 14px 0;
+            color: #999999;
+            line-height: 20px;
+            span {
+                margin-right: 12px;
+            }
+        }
+        &.default:after {
+            content: "默认地址";
+            width: 64px;
+            line-height: 22px;
+            background: rgba(0, 0, 0, 0.2);
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: #fff;
+            text-align: center;
+        }
+        &.active,
+        &:hover {
+            border: 2px solid #eb2f2f;
+            padding: 17px 21px;
+            &:before {
+                content: '';
+                position: absolute;
+                right: 56px;
+                bottom: 0;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 40px 40px 40px;
+                transform: rotate(135deg);
+                transform-origin: right bottom;
+                border-color: transparent transparent #eb2f2f transparent;
+            }
+        }
+        .icon-checked,
+        .icon-edit {
+            content: '';
+            position: absolute;
+            right: 7px;
+            bottom: 2px;
+            width: 22px;
+            height: 22px;
+            background: #eb2f2f center no-repeat;
+            display: none;
+        }
+        .icon-checked {
+            background-image: url("/images/custom/settle/daduihao.png");
+        }
+        .icon-edit {
+            background-image: url("/images/custom/settle/bianji.png");
+            cursor: pointer;
+        }
+        &.active {
+            .icon-checked {
+                display: block;
+            }
+        }
+        &:hover {
+            .icon-edit {
+                display: block;
+            }
+        }
+    }
+    /* 选择支付方式 */
+    .apx-settle-pay-box {
+        padding: 26px;
+        border-bottom: 1px solid #e3e4e5;
+        margin-bottom: 26px;
+        label.btn {
+            position: relative;
+            padding-top: 0;
+            padding-bottom: 0;
+            margin-left: 15px;
+            min-width: 118px;
+            line-height: 34px;
+            border: 1px solid #b3b3b3;
+            border-radius: 0;
+            box-shadow: none;
+            text-align: left;
+            outline: 0;
+            font-size: 14px;
+            color: #999999;
+            &.active {
+                border: 2px solid #eb2f2f;
+                line-height: 33px;
+                padding: 0 11px;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    right: 12px;
+                    bottom: 0;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 0 10px 10px 10px;
+                    transform: rotate(135deg);
+                    transform-origin: right bottom;
+                    border-color: transparent transparent #eb2f2f transparent;
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    right: -1px;
+                    bottom: -1px;
+                    width: 8px;
+                    height: 8px;
+                    background: url("/images/custom/settle/duihao.png") center no-repeat;
+                }
+            }
+            i {
+                display: inline-block;
+                width: 22px;
+                height: 22px;
+                background-repeat: no-repeat;
+                background-position: center;
+                vertical-align: middle;
+                margin-right: 8px;
+            }
+            &.btn-alipay i {
+                background-image: url("/images/custom/settle/zhifubao.png");
+            }
+            &.btn-wepay i {
+                background-image: url("/images/custom/settle/weixinzhifu.png");
+            }
+            &.btn-balance i {
+                background-image: url("/images/custom/settle/yue.png");
+            }
+            &.pay-company i {
+                background-image: url("/images/custom/settle/wangguan.png");
+            }
+            &.pay-person i {
+                background-image: url("/images/custom/settle/wangguan.png");
+            }
+            &.pay-abcbank i {
+                background-image: url("/images/custom/settle/abcbank.png");
+                background-size: 20px;
+            }
+        }
+        .balance-info {
+            position: relative;
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            vertical-align: middle;
+            margin-left: 15px;
+            background: url("/images/custom/settle/wenhao.png") center no-repeat;
+            &:hover {
+                .balance-info-cnt {
+                    display: block;
+                }
+            }
+        }
+        .balance-info-cnt {
+            display: none;
+            position: absolute;
+            top: 28px;
+            left: -14px;
+            min-width: 190px;
+            line-height: 42px;
+            text-align: center;
+            background-color: #fffded;
+            border: 2px solid #eed594;
+            &::before {
+                content: '';
+                position: absolute;
+                top: -10px;
+                left: 10px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 10px 10px 10px;
+                border-color: transparent transparent #eed594 transparent;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                top: -7px;
+                left: 13px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 7px 7px 7px;
+                border-color: transparent transparent #fffded transparent;
+            }
+        }
+    }
+    /* product detail */
+    .apx-settle-product-detail {
+        font-size: 12px;
+        /* title */
+        >.title {
+            margin: 26px 0;
+            border-bottom: 2px solid #e3e4e5;
+            li {
+                font-weight: 700;
+                line-height: 28px;
+                text-align: center;
+                &:first-child {
+                    width: 316px;
+                    text-align: left;
+                }
+                &:nth-child(2) {
+                    width: 465px;
+                    text-align: left;
+                }
+                &:nth-child(3) {
+                    width: 150px;
+                }
+                &:nth-child(4) {
+                    width: 72px;
+                }
+                &:nth-child(5) {
+                    width: 110px;
+                }
+            }
+        }
+        /* content */
+        .content {
+            background: #f7f7f7;
+            margin-bottom: 12px;
+            >.pull-left {
+                width: 316px;
+                padding: 16px 24px;
+                color: #999999;
+                .label {
+                    color: #999999;
+                    padding: 0;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+                .label-customed {
+                    width: 118px;
+                    line-height: 21px;
+                    border: 1px solid #eb2f2f;
+                    padding: 0 8px;
+                    margin-bottom: 16px;
+                    span {
+                        color: #333;
+                    }
+                    i {
+                        display: inline-block;
+                        width: 18px;
+                        height: 18px;
+                        vertical-align: middle;
+                        float: right;
+                        background: url("/images/custom/settle/wenhao.png") center no-repeat;
+                    }
+                }
+                .bootstrap-select {
+                    .dropdown-toggle {
+                        border-radius: 0;
+                        padding-top: 2px;
+                        padding-bottom: 2px;
+                    }
+                }
+                .coupon-select {
+                    margin-bottom: 16px;
+                    span {
+                        margin-right: 8px;
+                    }
+                }
+                .coupon-info {
+                    span {
+                        float: left;
+                        width: 44px;
+                        line-height: 14px;
+                        background-color: #eb2f2f;
+                        border-radius: 4px;
+                        color: #fff;
+                        text-align: center;
+                    }
+                    p {
+                        padding-left: 60px;
+                        margin: 0;
+                        color: #333;
+                    }
+                }
+            }
+            >.pull-right {
+                background: #f3fbfe;
+                width: 820px;
+                .result {
+                    text-align: right;
+                    padding: 0 24px 16px;
+                    font-size: 16px;
+                    span {
+                        color: #eb2f2f;
+                    }
+                }
+                .item {
+                    padding: 16px 24px;
+                    +.item {
+                        border-top: 1px solid #abd4e3;
+                    }
+                }
+                .title {
+                    font-size: 14px;
+                    margin-bottom: 16px;
+                    a {
+                        text-decoration: none;
+                        font-size: 12px;
+                        &:after {
+                            content: '';
+                            width: 18px;
+                            height: 18px;
+                            display: inline-block;
+                            background: url(/images/custom/settle/kefu.png) center no-repeat;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+                .detail {
+                    .param,
+                    .price,
+                    .amount,
+                    .sum {
+                        float: left;
+                        text-align: center;
+                        color: #999;
+                    }
+                    .param {
+                        text-align: left;
+                        width: 465px;
+                        .pull-left {
+                            width: 94px;
+                            height: 94px;
+                            border: 1px solid #e3e4e5;
+                        }
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            display: block
+                        }
+                        .pull-right {
+                            width: 370px;
+                            padding: 0 18px;
+                        }
+                        .title {
+                            color: #333;
+                            font-size: 12px;
+                            margin-bottom: 8px;
+                        }
+                        .list-unstyled {
+                            @include clearfix;
+                            li {
+                                width: 33.33333%;
+                                float: left;
+                                color: #999;
+                                line-height: 1.75;
+                            }
+                            a {
+                                color: #1f66b1;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                    .price {
+                        width: 140px;
+                    }
+                    .amount {
+                        width: 72px;
+                    }
+                    .sum {
+                        width: 95px;
+                        font-weight: 600;
+                        color: #eb2f2f
+                    }
+                }
+                .remark {
+                    .label {
+                        color: #333;
+                        font-size: 16px;
+                        padding: 0;
+                        font-weight: 400;
+                        text-align: right;
+                        display: inline-block;
+                        width: 94px;
+                        margin-right: 16px;
+                        vertical-align: top;
+                        margin-top: 10px;
+                    }
+                    textarea {
+                        width: 650px;
+                        resize: none;
+                        border: 1px solid #e3e4e5;
+                        padding: 8px 20px;
+                    }
+                }
+            }
+        }
+    }
+    /* 提交订单 */
+    .apx-settle-total {
+        // background: #e6e6e6;
+        padding: 20px 35px;
+        margin-bottom: 10px;
+        font-size: 12px;
+        position: relative;
+        .high-lighted {
+            color: #cf4d44;
+        }
+        .h3 {
+            font-size: 24px;
+            letter-spacing: .5px;
+        }
+        p {
+            margin: 12px 0;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            >span {
+                margin-left: 16px;
+            }
+            .price-detail {
+                display: inline-block;
+                min-width: 220px;
+                >span {
+                    display: inline-block;
+                    width: 140px;
+                    margin: 0;
+                }
+            }
+        }
+        .coupon-btn {
+            z-index: 1;
+            color: $brand-danger;
+            border-color: $brand-danger;
+            position: absolute;
+            left: 32px;
+            top: 14px;
+            i {
+                transform: rotate(-180deg);
+                transition: transform .2s linear;
+            }
+            &.collapsed {
+                i {
+                    transform: rotate(0deg);
+                }
+            }
+        }
+        .collapse-coupon {
+            background: #e6e6e6;
+            margin: 0 -35px;
+            .gap {
+                height: 40px;
+                background: #fff;
+            }
+        }
+        .coupon-list {
+            padding: 0 16px;
+            max-height: 400px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            .hr {
+                border-bottom: 1px solid #ccc;
+            }
+            [class^="col-xs"] {
+                padding: 15px;
+            }
+            .coupon-item {
+                cursor: pointer;
+                background: #fff;
+                border: 2px solid #e6e6e6;
+                position: relative;
+                .extra-info {
+                    position: absolute;
+                    bottom: -24px;
+                    left: 0;
+                    right: 0;
+                    font-size: 12px;
+                    text-align: left;
+                    color: #999
+                }
+                &.active {
+                    border-color: $brand-danger;
+                }
+                &.disable {
+                    cursor: not-allowed;
+                    .media {
+                        background: #ccc;
+                        color: #999 !important;
+                    }
+                    p {
+                        color: #999 !important;
+                    }
+                }
+                .media {
+                    background: #f8c631;
+                    text-align: left;
+                    padding: 6px 0 6px 24px;
+                    .media-left {
+                        font-size: 34px;
+                        font-weight: 600;
+                        padding-right: 16px;
+                        letter-spacing: 2px;
+                        small {
+                            font-size: 12px;
+                            vertical-align: 16px;
+                        }
+                    }
+                    .media-body {
+                        vertical-align: bottom;
+                        font-size: 12px;
+                        p {
+                            margin: 6px 0;
+                        }
+                        p+p {
+                            color: #333;
+                        }
+                    }
+                }
+                >p {
+                    padding-left: 24px;
+                    text-align: left;
+                    color: #333;
+                    margin: 4px 0;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    /* affix bar */
+    .apx-settle-bar {
+        line-height: 50px;
+        margin-bottom: 60px;
+        &.affix-top {
+            box-shadow: 0 -2px 4px #ccc;
+            background: #ffffff;
+            margin-bottom: 0;
+            .apx-settle-bill-submit {
+                position: relative;
+                z-index: 2;
+                border-radius: 0;
+                line-height: 50px;
+                font-size: 18px;
+            }
+            .affix-info {
+                display: block;
+            }
+        }
+        .affix-info {
+            display: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding-right: 60px;
+            color: #999999;
+            font-size: 12px;
+            line-height: 1.5;
+            >p {
+                margin: 7px 0;
+                float: left;
+                strong {
+                    display: block;
+                }
+            }
+            .pull-right {
+                margin: 6px 0;
+                font-size: 14px;
+                float: right;
+                p {
+                    margin: 0;
+                }
+            }
+        }
+        .apx-settle-bill-submit {
+            padding: 0 !important;
+            margin-right: -15px;
+            background: #eb2f2f;
+            min-width: 137px;
+            line-height: 34px;
+            font-size: 16px;
+            text-align: center;
+            color: #fff;
+            border: 0;
+            outline: 0;
+            letter-spacing: 4px;
+            &:active {
+                box-shadow: inset 0 0 12px #666;
+            }
+            &.disable {
+                pointer-events: none;
+                background: #f2f2f2;
+            }
+        }
+        .container {
+            position: relative;
+        }
+        .pull-right {
+            padding-right: 110px;
+        }
+        label {
+            margin: 0 20px;
+            font-weight: 400;
+        }
+        a,
+        span {
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .high-lighted {
+            margin: 0;
+            color: #cf4d44;
+        }
+        &.affix-top {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 2;
+        }
+        &.affix {
+            position: relative
+        }
+    }
+    /* coupon box */
+    .apx-settle-coupon-box {
+        position: absolute;
+        left: -240px;
+        top: 76px;
+        width: 232px;
+        height: 366px;
+        background-color: #ffffff;
+        border: solid 1px #e3e4e5;
+        color: #eb2f2f;
+        font-size: 12px;
+        .title {
+            line-height: 30px;
+            border-bottom: solid 1px #e3e4e5;
+            text-align: center;
+        }
+        .content {
+            height: 335px;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        .coupon {
+            margin: 8px auto;
+            width: 203px;
+            // height: 102px;
+            // padding: 8px 12px;
+            // background: url("/images/custom/settle/youhuiquan.png") center no-repeat;
+            line-height: 1.6;
+            .amount,
+            .expire {
+                padding: 8px 12px;
+                color: #fff;
+                background: #eb2f2f;
+            }
+            .amount {
+                padding-bottom: 0;
+            }
+            strong {
+                line-height: 1;
+                font-size: 24px;
+                margin-right: 4px;
+            }
+            .status {
+                // padding-top: 12px;
+                padding: 8px 8px;
+                border: 1px solid #eb2f2f;
+            }
+            &.disabled {
+                filter: grayscale(1);
+                opacity: .4;
+            }
+        }
+    }
+}
+
+// modal
+.modal-settle-address-info {
+    .modal-dialog {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 442px;
+        margin: auto;
+    }
+    .title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 3;
+        margin-bottom: 20px;
+        padding-left: 12px;
+    }
+    .form-horizontal {
+        .form-group {
+            &.required {
+                label:before {
+                    content: '*';
+                    color: #eb2f2f;
+                }
+            }
+            label {
+                font-weight: 400;
+            }
+        }
+        .col-xs-2 {
+            text-align: right;
+            padding-right: 0;
+            line-height: 34px;
+        }
+    }
+    .btn-danger {
+        display: block;
+        width: 72px;
+        text-align: center;
+        margin: 20px auto 40px;
+    }
+    .close {
+        position: absolute;
+        top: 32px;
+        right: 32px;
+        width: 18px;
+        height: 18px;
+        background: url(/images/custom/settle/guanbi.png) center no-repeat;
+        opacity: .8;
+    }
+}
